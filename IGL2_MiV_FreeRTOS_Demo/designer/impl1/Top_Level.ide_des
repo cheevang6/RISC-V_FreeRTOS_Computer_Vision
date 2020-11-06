@@ -1,0 +1,16 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\designer\impl1\Top_Level.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\constraint\Top_Level_derived_constraints.sdc;sdc"
+VALUE "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\constraint\JTAG_tck_constraint.sdc;sdc"
+VALUE "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\constraint\io\Creative_Rev1_IOs_def.pdc;pdc"
+VALUE "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.block.io.pdc;pdc"
+VALUE "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.block.fp.pdc;pdc"
+VALUE "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\constraint\fp\Top_Level_derived_constraints.pdc;pdc"
+VALUE "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\constraint\io\user.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\synthesis\Top_Level_vm.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

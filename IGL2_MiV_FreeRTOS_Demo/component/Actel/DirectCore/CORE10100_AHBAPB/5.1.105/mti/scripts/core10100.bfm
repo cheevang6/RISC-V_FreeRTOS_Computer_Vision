@@ -1,0 +1,689 @@
+-- *********************************************************************/ 
+-- Copyright 2008 Actel Corporation.  All rights reserved.
+-- IP Solutions Group
+--
+-- ANY USE OR REDISTRIBUTION IN PART OR IN WHOLE MUST BE HANDLED IN 
+-- ACCORDANCE WITH THE ACTEL LICENSE AGREEMENT AND MUST BE APPROVED 
+-- IN ADVANCE IN WRITING.  
+--  
+--     
+-- Description: Core10100
+--              BFM test Script  
+--
+-- SVN Revision Information:
+-- SVN $Revision: 6867 $
+-- SVN $Date: 2009-02-25 03:34:35 +0530 (Wed, 25 Feb 2009) $  
+--   
+--
+-- Notes: this version support variable datawidth cores
+--		  
+-- *********************************************************************/ 
+
+
+# BFM scriptlet for Testing MACS in the System
+# This uses the AMBA BFM Script Environment
+
+memmap RAM       0x00000000;
+memmap BASE_MAC1 0x11000000;
+memmap BASE_MAC2 0x12000000;
+
+constant CSR0  0x00
+constant CSR1  0x08
+constant CSR2  0x10
+constant CSR3  0x18
+constant CSR4  0x20
+constant CSR5  0x28
+constant CSR6  0x30
+constant CSR7  0x38
+constant CSR8  0x40
+constant CSR9  0x48
+constant CSR10 0x50
+constant CSR11 0x58
+
+int BUSWIDTH
+
+procedure main
+ int BYTES
+
+ debug 1
+ set BUSWIDTH $ARGVALUE2
+ timeout 5000
+ setup 4 1     -- stop  burst accesses i. force htrans to 10  
+
+ header "Core10100 AHB Test Harness 15Jan08 (FAMILY:%0d)",$ARGVALUE0
+ print "  MAC IS IN %0d BIT MODE" BUSWIDTH
+ print "  ADDRFILTER %0d", $ARGVALUE1
+ print " "
+
+ memtest RAM 0 256 0 500  0x4565          # Check AHB memory from BFM
+ call check_reset BASE_MAC1 
+ call check_reset BASE_MAC2
+
+ wait 10
+ call resetmacs
+
+ call resetmacs
+ call testmac BASE_MAC2 BASE_MAC1 0 1 100
+
+
+ if $ARGVALUE1 			                  # if address filtering then test
+   call resetmacs
+   call writefilter BASE_MAC1
+   call testmac BASE_MAC2 BASE_MAC1 1 1	 60
+   call testmac BASE_MAC2 BASE_MAC1 1 0	 60
+ endif
+
+
+ # test variable bit width packets
+ loop BYTES 252 260 1
+   call testmac BASE_MAC1 BASE_MAC2 0 1 BYTES
+ endloop
+
+ # Now Test with multiple Frames
+ call resetmacs
+ call writefilter BASE_MAC1
+ fill  w RAM 0x1000 64 0x11111111 0 
+ fill  w RAM 0x3000 64 0x11111111 0 
+ 		   
+  call testmacx BASE_MAC2 BASE_MAC1 5 61
+
+ flush 500
+
+ call testreset
+
+ label end
+ wait 10
+
+return
+
+
+ 
+##################################################################################
+# This are some tests used during Core debugging
+
+procedure debugtests1
+
+  call resetmacs
+  call writefilter BASE_MAC1
+
+  fill  w RAM 0x1000 64 0x11111111 0 
+  fill  w RAM 0x3000 64 0x11111111 0 
+  		   
+  call testmacx BASE_MAC2 BASE_MAC1 5 61
+ 
+
+return
+
+
+procedure debugtests2
+
+  call resetmacs
+
+  call read_csr BASE_MAC1 CSR5
+  flush	 5
+  call read_csr BASE_MAC1 CSR5
+  flush	 5
+
+
+return
+
+
+
+##################################################################################
+
+procedure resetmacs
+  #Reset Both MACS and wait a while
+  call write_csr BASE_MAC1 CSR0 0x00000001;
+  call write_csr BASE_MAC2 CSR0 0x00000001;
+  wait 20;  
+return
+
+
+##################################################################################
+# This transmits data between the two MACS with or without filtering
+#
+
+procedure testmac TXMAC RXMAC FILTER FILTEROK BYTES
+
+  int RXDESC0
+  int RXDESC1
+  int RXDESC2
+  int RXDESC3
+  int TXDESC0
+  int TXDESC1
+  int TXDESC2
+  int TXDESC3
+  int SVAL
+  int INC
+  int TDATA
+  int BYTESM8
+  INT BYTESX
+  int rxbuff
+
+  set rxbuff 0x33F0
+
+  set SVAL $RAND	 # Create Random dara sequence
+  set INC  $RAND
+  set BYTESM8 BYTES - 8	   
+
+  #Make RX buffer size DWORD aligned and  big enough
+  set BYTESX BYTES + 3
+  set BYTESX BYTESX and 0xFFFFFFFC
+
+  header "Testing with FILTER=%0d  FILTEROK=%0d  BYTES=%0d", FILTER FILTEROK BYTES
+  #Set MAC1 to Transmit
+  call write_csr TXMAC CSR0 0x00000000;     # write csr0 PBL=0
+  call write_csr TXMAC CSR4 0x00000000;     # write transmit list base address csr4 
+  call write_csr TXMAC CSR7 0x00010001;     # write interrupt enable register csr7                               
+
+  #Create and TX descriptors 
+  # Descriptor at  0x0000   Data Buffer at 0x1000
+  set TXDESC1 0xE0000000 + BYTES;
+  write w RAM 0x0000 0x80000000;                                   
+  write w RAM 0x0004 TXDESC1;
+  write w RAM 0x0008 0x00001000;
+  write w RAM 0x000C 0x00001000;
+
+  #Data Buffer, also clear RX buffer
+  fill  b RAM 0x1000 8 0 0			   # Space for IP Address
+  fill  b RAM 0x1008 BYTESM8 SVAL INC  # Data Values
+  #fill  w RAM 0x3000 32 0 0 		   # clear first 32*4 bytes
+
+  if FILTER
+    write w RAM 0x1000 0x04030201      # Put the MAC address in the data
+    write w RAM 0x1004 0x00000605
+    ifnot FILTEROK   
+      write w RAM 0x1004 0x00000603    # make filter reject it
+    endif
+  endif
+
+  # 2nd Descriptor
+  set TXDESC2 0x00001000 + BYTES
+  set TXDESC3 0x00001000 + BYTES
+  write w RAM 0x0010 0x00000000;
+  write w RAM 0x0014 TXDESC1;
+  write w RAM 0x0018 TXDESC2;
+  write w RAM 0x001C TXDESC3;
+
+  # CSR0 to zero
+  call write_csr TXMAC CSR0 0x00000000;                                   
+
+  #Set MAC2 to Recieve
+  call write_csr RXMAC CSR0 0x00000000;     # write csr0 PBL=0
+  call write_csr RXMAC CSR3 0x00002000;     # write receive list base address csr3
+  call write_csr RXMAC CSR7 0x00010040;     # write interrupt enable register csr7                                
+
+
+  #Create and RX descriptors 
+  # Descriptor at  0x2000 Data Buffer at 0x3000
+  set RXDESC0 0x80000000
+  set RXDESC1 0xE0000000 + BYTESX
+  set RXDESC2 rxbuff
+  set RXDESC3 rxbuff
+  write w RAM 0x2000 RXDESC0;                                   
+  write w RAM 0x2004 RXDESC1;
+  write w RAM 0x2008 RXDESC2;
+  write w RAM 0x200C RXDESC3;
+
+  # 2nd Descriptor
+  set RXDESC0 0x00000000
+  set RXDESC1 0xE0000000 + BYTESX
+  set RXDESC2 rxbuff + BYTESX
+  set RXDESC3 rxbuff + BYTESX
+  write w RAM 0x2010  RXDESC0;
+  write w RAM 0x2014  RXDESC1;
+  write w RAM 0x2018  RXDESC2;
+  write w RAM 0x201C  RXDESC3;
+
+  # Now Start MACS  
+  if FILTER
+    call write_csr RXMAC CSR6 0x0000000A;
+  endif
+  ifnot FILTER
+    call write_csr RXMAC CSR6 0x0000004A;
+  endif
+  flush
+
+  call write_csr TXMAC CSR6 0x00202200;
+  flush                                   
+  #Wait for processing to complete
+  wait 1000;            
+
+  # get RX DESC
+  readstore w RAM 0x2000 RXDESC0
+  readstore w RAM 0x2004 RXDESC1
+  readstore w RAM 0x2008 RXDESC2
+  readstore w RAM 0x200C RXDESC3
+  print "RX Descriptor %08u %08u %08u %08u",RXDESC0 RXDESC1 RXDESC2 RXDESC3
+
+  // Hari
+  flush 5000;
+
+  # See if the data put back in the RX buffer correctly
+  set rxbuff rxbuff + 8
+  if FILTEROK 
+    ifnot FILTER
+      fillcheck b RAM rxbuff BYTESM8 SVAL INC
+      print "Data Okay"
+    endif
+    if FILTER
+      fillcheck b RAM rxbuff BYTESM8 SVAL INC
+      print "Data Okay"
+    endif
+  endif
+  #Expected to be ignored
+  ifnot FILTEROK
+    compare RXDESC0 0x80000000 0x7FFFFFFF
+    print "No data recieved as expected"
+  endif
+
+  #Stop the MACS
+  call write_csr RXMAC CSR6 0x00000000;
+  flush
+  call write_csr TXMAC CSR6 0x00000000;
+  flush                                   
+
+return
+
+
+
+##################################################################################
+# This transmits data between the two MACS using multiple frames
+#
+
+procedure testmacx TXMAC RXMAC FRAMES BYTES
+
+  int RXDESC0
+  int RXDESC1
+  int RXDESC2
+  int RXDESC3
+  int TXDESC0
+  int TXDESC1
+  int TXDESC2
+  int TXDESC3
+  int SVAL
+  int INC
+  int TDATA
+  int BYTESM8
+  INT BYTESX
+
+int addr_txdesc addr_txbuff
+int addr_rxdesc addr_rxbuff
+int F
+int faddr fbytes
+int i
+int ivect
+
+debug 0
+
+  set SVAL $RAND	 # Create Random data sequence
+  set INC  $RAND
+  set BYTESM8 BYTES - 8	   
+
+  #Make RX buffer size DWORD aligned and  big enough
+  set BYTESX BYTES + 3
+  set BYTESX BYTESX and 0xFFFFFFFC
+
+  header "Multi Frame tests FRAMES=%0d BYTES=%0d", FRAMES BYTES
+
+  --------------------------------------------------------------
+  #Create and TX descriptors 
+  # Descriptors at  0x0000   Data Buffers at 0x1000
+  set addr_txdesc  0x0000
+  set addr_txbuff  0x1000
+  loop F 1 FRAMES 1
+    set TXDESC0 0x80000000;
+    set TXDESC1 0xE0000000 + BYTES;
+    set TXDESC2 addr_txbuff;
+    set TXDESC3 addr_txdesc + 16;
+    writemult w RAM addr_txdesc TXDESC0 TXDESC1 TXDESC2 TXDESC3                                   
+
+    #Put Address and data in buffer
+    writemult h RAM addr_txbuff 0x0201 0x0403 0x0605      # Put the MAC address in the data
+	set faddr addr_txbuff + 6
+	set fbytes BYTES - 6
+    fill  b RAM faddr fbytes 0xAA 1      
+
+    set addr_txdesc  addr_txdesc +  16
+    set addr_txbuff  addr_txbuff + 256
+    set BYTES BYTES + 1
+  endloop
+
+  #point back to previous descriptor and make end of list
+  set addr_txdesc  addr_txdesc -  16
+  set TXDESC0 0xA0000000;
+  write w RAM addr_txdesc TXDESC0
+
+  --------------------------------------------------------------
+  #Create and RX descriptors 
+  # Descriptors at  0x2000   Data Buffers at 0x3000
+  set addr_rxdesc  0x2000
+  set addr_rxbuff  0x3000
+  loop F 1 FRAMES 1
+    set RXDESC0 0x80000000;
+    set RXDESC1 0xE0000000 + 0x0100;
+    set RXDESC2 addr_rxbuff;
+    set RXDESC3 addr_rxdesc + 16;
+    writemult w RAM addr_rxdesc RXDESC0 RXDESC1 RXDESC2 RXDESC3                                   
+
+    #Clear RX buffer to common value
+    fill w RAM addr_rxbuff 0x40 0x111111111 0   
+
+    set addr_rxdesc  addr_rxdesc +  16
+    set addr_rxbuff  addr_rxbuff + 256
+    
+  endloop
+
+  #point back to previous descriptor and make end of list
+  set addr_rxdesc  addr_rxdesc -  16
+  set RXDESC0 0xA0000000;
+  write w RAM addr_rxdesc RXDESC0
+
+
+  ---------------------------------------------------------------
+  print "TX Descriptors"
+  call dispmemW RAM 0x0000 0x40
+  print "RX Descriptors"
+  call dispmemW RAM 0x2000 0x40
+
+  #Set MAC1 to Transmit
+  call write_csr TXMAC CSR0 0x00000000;     # write csr0 PBL=0
+  call write_csr TXMAC CSR4 0x00000000;     # write transmit list base address csr4 
+  call write_csr TXMAC CSR7 0x00010001;     # write interrupt enable register csr7                               
+                                                                                                                  
+  #Set MAC2 to Recieve                                                                                             
+  call write_csr RXMAC CSR0 0x00000000;     # write csr0 PBL=0                                                     
+  call write_csr RXMAC CSR3 0x00002000;     # write receive list base address csr3                                 
+  call write_csr RXMAC CSR7 0x00010040;     # write interrupt enable register csr7                                 
+   
+  call write_csr TXMAC CSR7 0xFFFFFFFF;     # All interrupts enabled                               
+  call write_csr RXMAC CSR7 0xFFFFFFFF;     #                                
+                                                                                                                    
+  # Now Start MACS  
+  call write_csr RXMAC CSR6 0x0000000A;
+  flush
+  call write_csr TXMAC CSR6 0x00202200;
+  flush                                   
+
+  #Wait for processing to complete, poll interrupts while waiting
+  loop i 1 40
+    wait 20
+    call read_csr TXMAC CSR5
+	set IVECT $RETVALUE
+	if IVECT
+	  set IVECT 0
+	  call write_csr TXMAC CSR5 IVECT
+	endif;
+    wait 20;            
+    call read_csr RXMAC CSR5
+	set IVECT $RETVALUE
+	if IVECT
+	  set IVECT 0
+	  call write_csr RXMAC CSR5 IVECT
+	endif;
+    wait 20;            
+  endloop
+
+  print "RX Descriptors"
+  call dispmemW RAM 0x2000 100
+  print "RXdata"
+  call dispmemW RAM 0x3000 0x40
+  call dispmemW RAM 0x3100 0x40
+  call dispmemW RAM 0x3200 0x40
+  call dispmemW RAM 0x3300 0x40
+  call dispmemW RAM 0x3400 0x40
+
+
+  # get RX DESC
+  # readstore w RAM 0x2000 RXDESC0
+  # readstore w RAM 0x2004 RXDESC1
+  # readstore w RAM 0x2008 RXDESC2
+  # readstore w RAM 0x200C RXDESC3
+  # print "RX Descriptor %08u %08u %08u %08u",RXDESC0 RXDESC1 RXDESC2 RXDESC3
+
+  # See if the data put back in the RX buffer correctly
+  #    fillcheck b RAM 0x3008 BYTESM8 SVAL INC
+
+
+  call read_csr RXMAC CSR0
+  flush	 5
+  call read_csr TXMAC CSR0
+  flush	 5
+
+  #Stop the MACS
+  call write_csr RXMAC CSR6 0x00000000;
+  flush
+  call write_csr TXMAC CSR6 0x00000000;
+  flush                                   
+
+return
+
+
+##################################################################################
+
+procedure writefilter TXMAC 
+
+  int filtertable[256]
+  int i
+  int x
+      
+  print "Programming Address Filter"      
+  # set filter to accept 01.02.03.04.05.06 and 07.08.09.0A.0B.0C
+  set filtertable[0] 0x00000201
+  set filtertable[1] 0x00000403
+  set filtertable[2] 0x00000605
+  set filtertable[3] 0x00000807
+  set filtertable[4] 0x00000A09
+  set filtertable[5] 0x00000C0B
+  loop i 6 63
+    set filtertable[i] 0
+  endloop
+
+  call write_csr TXMAC CSR0 0x00000000;
+  call write_csr TXMAC CSR4 0x00000000;
+  call write_csr TXMAC CSR7 0x00010001;                                   
+
+  #Create and TX descriptors 
+  # Descriptor at  0x0000
+  # Data Buffer at 0x1000
+
+  write w RAM 0x0000 0x80000000;                                   
+  write w RAM 0x0004 0x8C0000C0;
+  write w RAM 0x0008 0x00001000;
+  write w RAM 0x000C 0x00001000;
+
+  #Put Filter Table in RAM
+  writearray w RAM 0x1000 filtertable[0] 48
+
+  # Dummy 2nd Descriptor
+  write w RAM 0x0010 0x00000000;
+  write w RAM 0x0014 0xE000003C;
+  write w RAM 0x0018 0x0000103C;
+  write w RAM 0x001C 0x0000103C;
+
+  # CSR0 to zero and start
+  call write_csr TXMAC CSR0 0x00000000;                                   
+  call write_csr TXMAC CSR6 0x00202200;
+
+  wait 500
+
+return
+
+
+
+##################################################################################
+# This tests the reset logic, to check it comes out of RST
+
+
+procedure testreset	 
+
+ header "Testing Reset System"
+ iowrite 0       
+
+ call checkmdi
+
+ # Do a reset
+ print "Assert reset"
+ call write_csr BASE_MAC1 CSR0 0x00000001;
+ flush 20
+ call checkmdi			# Check that we can toggle the mden bit
+ 
+ # Do a reset with PHY clock stopped
+ iosetbit 2
+ print "Assert reset with to RX/TX clock"
+ call write_csr BASE_MAC1 CSR0 0x00000001;
+ flush 20
+ call checkmdi			# Check that we can toggle the mden bit
+ # restart rx clock	and rx/tx resets should deactivate
+ ioclrbit 2
+ call checkmdi			# Check that we can toggle the mden bit
+
+return
+
+
+
+procedure checkmdi
+
+ call write_csr BASE_MAC1 csr9 0x00000000	  # set mdo to 0
+ flush 1
+ iotstbit 0 0                                 # check it
+ call write_csr BASE_MAC1 csr9 0x00020000	  # set mdo to 1
+ flush 1
+ iotstbit 0 1                                 # check it
+
+return
+
+
+
+#######################################################
+# CSR access routines
+# vary based on width of CSR interface
+
+
+
+procedure check_reset MAC
+  call read_csr MAC CSR0 
+  compare $RETVALUE  0xFE000000
+  call read_csr MAC CSR1 
+  compare $RETVALUE  00x00000000
+  call read_csr MAC CSR2 
+  compare $RETVALUE  00x00000000
+  call read_csr MAC CSR3 
+  compare $RETVALUE  00xFFFFFFFF
+  call read_csr MAC CSR4 
+  compare $RETVALUE  00xFFFFFFFF
+  call read_csr MAC CSR5 
+  compare $RETVALUE  00xF0000000
+  call read_csr MAC CSR6 
+  compare $RETVALUE  00x32000040
+  call read_csr MAC CSR7 
+  compare $RETVALUE  00xF3Fe0000
+  call read_csr MAC CSR8 
+  compare $RETVALUE  00xE0000000
+  call read_csr MAC CSR9 
+  compare $RETVALUE  00xFFF483FB
+  call read_csr MAC CSR10 
+  compare $RETVALUE  00x00000000
+  call read_csr MAC CSR11
+  compare $RETVALUE  00xFFFE0000
+return
+
+
+procedure write_csr MAC CSR DATA
+int x;
+int a  d
+
+   set x BUSWIDTH == 8
+   if x
+    set a CSR + 3
+    set d DATA >> 24 and 0xff
+    write b MAC a d
+    set a CSR + 2
+    set d DATA >> 16 and 0xff
+    write b MAC a d
+    set a CSR + 1
+    set d DATA >> 8 and 0xff
+    write b MAC a d
+    set a CSR 
+    set d DATA and 0xff
+    write b MAC a d
+   endif
+
+   set x BUSWIDTH == 16
+   if x
+    set a CSR + 2
+    set d DATA >> 16 and 0x0ffff
+    write h MAC a d
+    set d DATA and 0x0ffff
+    write h MAC CSR d
+   endif
+
+   set x BUSWIDTH == 32
+   if x
+    write w MAC CSR DATA
+   endif
+
+return
+
+
+procedure read_csr MAC CSR 
+int x;
+int a d
+int value
+
+   set x BUSWIDTH == 8
+   if x
+     set a CSR + 3
+     readstore b MAC a d
+     set value d
+     set a CSR + 2
+     readstore b MAC a d
+     set value value << 8 + d
+     set a CSR + 1
+     readstore b MAC a d
+     set value value << 8 + d
+     set a CSR + 0
+     readstore b MAC a d
+     set value value << 8 + d
+   endif
+
+   set x BUSWIDTH == 16
+   if x
+     set a CSR + 2
+     readstore h MAC a d
+     set value  d
+     set a CSR
+     readstore h MAC a d
+     set value value << 16 + d
+   endif
+
+   set x BUSWIDTH == 32
+   if x
+     readstore w MAC CSR value
+   endif
+
+return value
+
+
+##################################################################
+
+procedure dispmemW  resource address length
+
+int endaddr
+int i j
+int addr
+int data[4]
+
+set endaddr address + length
+
+print "Memory Dump %08x  %0d" address length
+loop i address endaddr 16
+ loop j 0 3 1
+   set addr j * 4 + i
+   readstore w resource addr data[j]
+ endloop
+ set addr resource + i
+ print  "ADDR %08x = %08x %08x %08x %08x" addr data[0] data[1] data[2] data[3]
+endloop
+
+return

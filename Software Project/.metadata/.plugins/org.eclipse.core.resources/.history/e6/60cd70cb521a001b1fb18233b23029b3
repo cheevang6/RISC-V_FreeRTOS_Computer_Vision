@@ -1,0 +1,35 @@
+/*
+ * i2c_functions.h
+ *
+ *  Created on: Oct 29, 2020
+ *      Author: cheec
+ */
+
+#include "i2c_functions.h"
+#include "core_i2c.h"
+
+/*-----------------------------------------------------------------------------
+ * i2c_write_reg8() writes to val to register as addr
+ * releases the bus after transaction
+ */
+void i2c_write_reg8(uint8_t addr, uint8_t val) {
+	i2c_status_t status;
+
+	I2C_write(I2C_CAM, addr, &val, 1, I2C_RELEASE_BUS);
+	status = I2C_wait_complete(I2C_CAM, I2C_NO_TIMEOUT);
+}
+
+/*-----------------------------------------------------------------------------
+ * i2c_read_reg8() reads from register at addr into rx_buffer
+ * releases the bus after transaction
+ */
+uint8_t i2c_read_reg8(uint8_t addr) {
+	uint8_t rx_buffer;
+	i2c_status_t status;
+
+	I2C_write_read(I2C_CAM, I2C_SER_ADDR, &addr, 1, &rx_buffer, 1, I2C_RELEASE_BUS);
+	status = I2C_wait_complete(I2C_CAM, I2C_NO_TIMEOUT);
+
+	return rx_buffer;
+}
+

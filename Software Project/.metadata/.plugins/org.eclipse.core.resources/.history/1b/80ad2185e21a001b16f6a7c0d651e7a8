@@ -1,0 +1,27 @@
+/*
+ * i2c_camera.c
+ *
+ *  Created on: Oct 30, 2020
+ *      Author: cheec
+ */
+
+
+#include "core_i2c.h"
+#include "i2c_camera.h"
+
+void i2c_camera_write(uint8_t addr, uint8_t val) {
+	i2c_status_t status;
+
+	I2C_write(I2C_CAM, addr, &val, 1, I2C_RELEASE_BUS);
+	status = I2C_wait_complete(I2C_CAM, I2C_NO_TIMEOUT);
+}
+
+uint8_t i2c_camera_read(uint8_t addr){
+	uint8_t rx_buffer;
+	i2c_status_t status;
+
+	I2C_write_read(I2C_CAM, addr, tx_buffer, 1, rx_buffer, 1, I2C_RELEASE_BUS);
+	status = I2C_wait_complete(I2C_CAM, I2C_NO_TIMEOUT);
+
+	return rx_buffer;
+}

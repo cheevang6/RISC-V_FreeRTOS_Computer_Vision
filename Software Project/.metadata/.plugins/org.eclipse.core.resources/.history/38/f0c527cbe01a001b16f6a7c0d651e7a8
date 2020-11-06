@@ -1,0 +1,14 @@
+/*
+ * i2c_camera.c
+ *
+ *  Created on: Oct 30, 2020
+ *      Author: cheec
+ */
+
+
+#include "core_i2c.h"
+#include "i2c_camera.h"
+
+void i2c_camera_write(uint8_t addr, uint8_t val);
+
+void i2c_camera_read(uint8_t addr);

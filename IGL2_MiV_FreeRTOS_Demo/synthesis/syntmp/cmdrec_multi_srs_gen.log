@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  Top_Level  -multisrs  C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\synthesis\synwork\Top_Level_comp.srs  -osyn  C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\synthesis\synwork\Top_Level_mult.srs  -log  C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\synthesis\synlog\Top_Level_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe -link -top Top_Level -multisrs ..\synwork\Top_Level_comp.srs -osyn ..\synwork\Top_Level_mult.srs -log ..\synlog\Top_Level_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\Top_Level_comp.srs|io:i|time:1604008372|size:783494|exec:0|csum:42E0DA0344BF8D98D38A3A09073FA882
+file:..\synwork\Top_Level_mult.srs|io:o|time:1604008374|size:18679|exec:0|csum:
+file:..\synlog\Top_Level_multi_srs_gen.srr|io:o|time:1604008374|size:1173|exec:0|csum:
+file:..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1562075633|size:8810496|exec:1|csum:20DB59B568B25441B8251D61083745CC

@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Creative_MiV_FreeRTOS_Demo Debug,org.eclipse.launchbar.core.descriptorType.default\:PF_MiV_OTB_Morse Debug
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Creative_MiV_FreeRTOS_Demo\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Creative_MiV_FreeRTOS_Demo\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:PF_MiV_OTB_Morse\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:PF_MiV_OTB_Morse\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

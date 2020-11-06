@@ -1,0 +1,29 @@
+/*
+ * i2c_functions.h
+ *
+ *  Created on: Oct 29, 2020
+ *      Author: cheec
+ */
+
+#ifndef CREATIVE_I2C_FUNCTIONS_H_
+#define CREATIVE_I2C_FUNCTIONS_H_
+
+#include "core_i2c.h"
+#include "cpu_types.h"
+
+
+/*-----------------------------------------------------------------------------
+ * i2c_write_reg8() writes to val to register as addr
+ * releases the bus after transaction
+ */
+void i2c_write_reg8(uint8_t addr, uint8_t val);
+
+/*-----------------------------------------------------------------------------
+ * i2c_read_reg8() reads from register at addr into rx_buffer
+ * releases the bus after transaction
+ * returns the values in the register
+ */
+uint8_t i2c_read_reg8(uint8_t addr);
+
+
+#endif /* CREATIVE_I2C_FUNCTIONS_H_ */

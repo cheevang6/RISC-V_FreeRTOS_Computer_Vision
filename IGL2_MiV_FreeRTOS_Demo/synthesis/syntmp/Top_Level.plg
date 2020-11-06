@@ -1,0 +1,38 @@
+@P:  Worst Slack : -0.658
+@P:  COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock - Estimated Frequency : 88.4 MHz
+@P:  COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock - Estimated Period : 11.315
+@P:  COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock - Requested Period : 10.000
+@P:  COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock - Slack : -0.658
+@P:  MSS_SubSystem_sb_0/CCC_0/GL0 - Estimated Frequency : 56.0 MHz
+@P:  MSS_SubSystem_sb_0/CCC_0/GL0 - Requested Frequency : 50.0 MHz
+@P:  MSS_SubSystem_sb_0/CCC_0/GL0 - Estimated Period : 17.867
+@P:  MSS_SubSystem_sb_0/CCC_0/GL0 - Requested Period : 20.000
+@P:  MSS_SubSystem_sb_0/CCC_0/GL0 - Slack : 2.133
+@P:  MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Estimated Frequency : 452.7 MHz
+@P:  MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Requested Frequency : 50.0 MHz
+@P:  MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Estimated Period : 2.209
+@P:  MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Requested Period : 20.000
+@P:  MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Slack : 17.791
+@P:  MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/CLK_CONFIG_APB - Estimated Frequency : 135.6 MHz
+@P:  MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/CLK_CONFIG_APB - Requested Frequency : 12.5 MHz
+@P:  MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/CLK_CONFIG_APB - Estimated Period : 7.376
+@P:  MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/CLK_CONFIG_APB - Requested Period : 80.000
+@P:  MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/CLK_CONFIG_APB - Slack : 36.312
+@P:  TCK - Estimated Frequency : NA
+@P:  TCK - Requested Frequency : 6.0 MHz
+@P:  TCK - Estimated Period : NA
+@P:  TCK - Requested Period : 166.670
+@P:  TCK - Slack : NA
+@P:  System - Estimated Frequency : 154.4 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 6.477
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 3.523
+@P: Top_Level Part : m2gl025vf400std
+@P: Top_Level Register bits  : 6094 
+@P: Top_Level DSP Blocks  : 2
+@P: Top_Level I/O primitives : 61
+@P: Top_Level RAM1K18 :  8
+@P: Top_Level RAM64x18 :  8
+@P:  CPU Time : 0h:00m:56s

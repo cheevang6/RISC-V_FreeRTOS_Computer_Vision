@@ -1,0 +1,64 @@
+# Microsemi I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: v12.3 12.800.0.16
+
+# Family: IGLOO2 , Die: M2GL025 , Package: 256 VF
+
+# Date generated: Thu Oct 29 16:08:28 2020 
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+# 
+# User Locked I/O settings
+# 
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+set_io DEVRST_N       \
+    -pinname M11      \
+    -DIRECTION INPUT
+
+
+set_io TCK            \
+    -pinname R14      \
+    -DIRECTION INPUT
+
+
+set_io TDI            \
+    -pinname P16      \
+    -DIRECTION INPUT
+
+
+set_io TDO             \
+    -pinname P14       \
+    -DIRECTION OUTPUT
+
+
+set_io TMS            \
+    -pinname N11      \
+    -DIRECTION INPUT
+
+
+set_io TRSTB          \
+    -pinname N13      \
+    -DIRECTION INPUT
+
+

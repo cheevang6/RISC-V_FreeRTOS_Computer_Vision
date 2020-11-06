@@ -1,0 +1,113 @@
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(29009): WARNING: net 'N_9211' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(29010): WARNING: net 'N_9212' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(29011): WARNING: net 'N_9213' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(34613): WARNING: net 'N_9225' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(34614): WARNING: net 'N_9226' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(34615): WARNING: net 'N_9227' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(35373): WARNING: net 'N_9228' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(35374): WARNING: net 'N_9229' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(35375): WARNING: net 'N_9230' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(52239): WARNING: net 'N_9249' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(52240): WARNING: net 'N_9250' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(52241): WARNING: net 'N_9251' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(53195): WARNING: net 'N_9246' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(53196): WARNING: net 'N_9247' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(53197): WARNING: net 'N_9248' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(53201): WARNING: net 'N_9252' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(53202): WARNING: net 'N_9253' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(53203): WARNING: net 'N_9254' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(55512): WARNING: net 'N_9260' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(72229): WARNING: net 'N_9264' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(72230): WARNING: net 'N_9265' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(72231): WARNING: net 'N_9266' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113413): WARNING: net 'N_9285' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113414): WARNING: net 'N_9286' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113415): WARNING: net 'N_9287' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113416): WARNING: net 'N_9288' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113417): WARNING: net 'N_9289' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113418): WARNING: net 'N_9290' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113419): WARNING: net 'N_9291' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113420): WARNING: net 'N_9292' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113421): WARNING: net 'N_9293' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(113422): WARNING: net 'N_9294' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(120435): WARNING: net 'N_9304' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(121582): WARNING: net 'N_9305' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(134610): WARNING: net 'N_9307' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170259): WARNING: net 'N_9319' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170260): WARNING: net 'N_9320' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170261): WARNING: net 'N_9321' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170262): WARNING: net 'N_9322' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170263): WARNING: net 'N_9323' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170264): WARNING: net 'N_9324' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170265): WARNING: net 'N_9325' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170266): WARNING: net 'N_9326' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170275): WARNING: net 'N_9335' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170276): WARNING: net 'N_9336' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170277): WARNING: net 'N_9337' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170278): WARNING: net 'N_9338' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170279): WARNING: net 'N_9339' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(170280): WARNING: net 'N_9340' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(183514): WARNING: net 'N_9273' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(183515): WARNING: net 'N_9274' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(183516): WARNING: net 'N_9275' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(183517): WARNING: net 'N_9276' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(183518): WARNING: net 'N_9277' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(183600): WARNING: net 'N_9308' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(183614): WARNING: net 'N_9341' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(183615): WARNING: net 'N_9342' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(199871): WARNING: net 'N_9231' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(199872): WARNING: net 'N_9232' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(199873): WARNING: net 'N_9233' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(199959): WARNING: net 'N_9255' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(199960): WARNING: net 'N_9256' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(199961): WARNING: net 'N_9257' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(199962): WARNING: net 'N_9258' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(200081): WARNING: net 'N_9263' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(200106): WARNING: net 'N_9346' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(200107): WARNING: net 'N_9347' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(200108): WARNING: net 'N_9348' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(200109): WARNING: net 'N_9349' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(223199): WARNING: net 'N_9350' does not have a driver (VDB-1002)
+C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(223200): WARNING: net 'N_9351' does not have a driver (VDB-1002)
+Info: Loaded the definition of the cell BasicIO_Interface from the block.
+Warning: CMPG4-047: Deleted the global instance 'BasicIO_Interface_0/PCLK_RNIAB1A' because it's driven by a global net.
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       16 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     15 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    5919   0      0      'MSS_SubSystem_sb_0/CCC_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    312    0      0      'JTAG_0/JTAG_0/genblk3.genblk1.TGT_TCK_GLB' 
+    75     0      0      'MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST_RNI6K52' 
+    31     0      0      'MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT' 
+    17     0      1      'JTAG_0/JTAG_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIK1C2' 
+    0      484    0      'MSS_SubSystem_sb_0/CORERESETP_0/MSS_HPMS_READY_int_rep_RNIP3IE' 
+    0      461    0      'MSS_SubSystem_sb_0/CORERESETP_0/INIT_DONE_int_rep_RNIKEOF' 
+    0      198    0      'BasicIO_Interface_0/PRESETN_RNI1MJ2' 
+    0      76     0      'MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/FIC_2_APB_M_PRESET_N_keep_RNIV4UA' 
+    0      40     0      'MiV_Core32_0/MiV_Core32_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AHB_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep_RNIDLVA' 
+    0      30     0      'MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_49_RNICHDE' 
+    0      27     0      'MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_clk_base_RNIUDL' 
+    0      25     0      'JTAG_0/JTAG_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNIQRO2' 
+    0      24     0      'MiV_Core32_0/MiV_Core32_0/ChiselTop0/un1_reset_debug_RNIHR84' 
+    0      17     0      'MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4UVB' 
+    0      12     0      'MSS_SubSystem_sb_0/CORERESETP_0/sdif0_areset_n_RNIHQEF' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'JTAG_0/JTAG_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIK1C2'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

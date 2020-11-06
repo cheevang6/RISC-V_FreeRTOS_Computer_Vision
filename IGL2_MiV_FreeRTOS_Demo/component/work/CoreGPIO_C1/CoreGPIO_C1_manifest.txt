@@ -1,0 +1,31 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Mon Oct 26 20:53:20 2020
+Project   :  C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo
+Component :  CoreGPIO_C1
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/core/coregpio.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/bfmtovec_compile.do
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/coregpio_usertb_apb_master.bfm
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/coregpio_usertb_include.bfm
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/wave_vlog.do
+
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/coreparameters.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_ahbl.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_ahblapb.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_ahbslave.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_ahbslaveext.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_ahbtoapb.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_apb.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_apbslave.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_apbslaveext.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_apbtoapb.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/amba_bfm/bfm_main.v
+    C:/Users/cheec/Desktop/Master/IGL2_MiV_FreeRTOS_Demo/component/work/CoreGPIO_C1/CoreGPIO_C1_0/rtl/vlog/test/user/testbench.v
+

@@ -1,0 +1,13 @@
+/*
+ * i2c_camera.h
+ *
+ *  Created on: Oct 30, 2020
+ *      Author: cheec
+ */
+
+#ifndef CREATIVE_I2C_CAMERA_H_
+#define CREATIVE_I2C_CAMERA_H_
+
+
+
+#endif /* CREATIVE_I2C_CAMERA_H_ */

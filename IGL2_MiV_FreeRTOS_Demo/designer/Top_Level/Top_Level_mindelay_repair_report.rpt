@@ -1,0 +1,129 @@
+-------------------------------------
+ External Hold Repair Report 
+-------------------------------------
+ Iteration 1  
+ Total I/O input ports improved: 0       
+-------------------------------------
+
+
+
+-------------------------
+ Min-delay Repair Report 
+-------------------------
+ Iteration 1  
+ Total paths eligible for improvement: 5       
+ Total paths improved: 5       
+-------------------------
+
+Path 1
+------------------------
+From: MSS_SubSystem_sb_0/CORECONFIGP_0/pwdata[1]:CLK
+  To: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/INST_MSS_025_IP:MDDR_FABRIC_PWDATA[1]
+------------------------
+Path min-delay slack:      -124 ps
+------------------------
+  On sink pin: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_277:A
+-------------------------------------
+  Pin max-delay slack:    78321 ps
+  Min-delay inserted:       778 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_277_CFG1A_TEST
+
+
+Path 2
+------------------------
+From: MSS_SubSystem_sb_0/CORECONFIGP_0/paddr[3]:CLK
+  To: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/INST_MSS_025_IP:MDDR_FABRIC_PADDR[3]
+------------------------
+Path min-delay slack:       -85 ps
+------------------------
+  On sink pin: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_280:A
+-------------------------------------
+  Pin max-delay slack:    77983 ps
+  Min-delay inserted:       796 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_280_CFG1A_TEST
+
+
+Path 3
+------------------------
+From: MSS_SubSystem_sb_0/CORECONFIGP_0/pwdata[0]:CLK
+  To: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/INST_MSS_025_IP:MDDR_FABRIC_PWDATA[0]
+------------------------
+Path min-delay slack:       -61 ps
+------------------------
+  On sink pin: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_276:A
+-------------------------------------
+  Pin max-delay slack:    78263 ps
+  Min-delay inserted:       703 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_276_CFG1A_TEST
+
+
+Path 4
+------------------------
+From: MSS_SubSystem_sb_0/CORECONFIGP_0/paddr[8]:CLK
+  To: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/INST_MSS_025_IP:MDDR_FABRIC_PADDR[8]
+------------------------
+Path min-delay slack:       -40 ps
+------------------------
+  On sink pin: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_285:A
+-------------------------------------
+  Pin max-delay slack:    78146 ps
+  Min-delay inserted:       690 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_285_CFG1A_TEST
+
+
+Path 5
+------------------------
+From: MSS_SubSystem_sb_0/CORECONFIGP_0/paddr[4]:CLK
+  To: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/INST_MSS_025_IP:MDDR_FABRIC_PADDR[4]
+------------------------
+Path min-delay slack:       -35 ps
+------------------------
+  On sink pin: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_281:A
+-------------------------------------
+  Pin max-delay slack:    77915 ps
+  Min-delay inserted:       587 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST/IP_INTERFACE_281_CFG1A_TEST
+
+
+
+
+-------------------------------------
+ External Hold Repair Report 
+-------------------------------------
+ Iteration 2  
+ Total I/O input ports improved: 0       
+-------------------------------------
+
+
+
+-------------------------
+ Min-delay Repair Report 
+-------------------------
+ Iteration 2  
+ Total paths eligible for improvement: 0       
+ Total paths improved: 0       
+-------------------------
+
+
+Note:
+    [1]: A net cannot be modified for repair if:
+         - it is hardwired, preserved, or global;
+         - the sink pin is a clock pin;
+         - the sink pin has negative max-delay slack allowance;
+
+    [2]: A location is not feasible for inserting a delay buffer if the estimated minimum delay to be inserted might exceed the max-delay slack allowance of the sink pin.
+
+    [3]: The I/O delay taps cannot be used to fix hold violations in RTG4 design if it is a MSIO or MSIOD that drives a GB.
+
+
+

@@ -1,0 +1,52 @@
+Resource Usage Report for Top_Level 
+
+Mapping to part: m2gl025vf400std
+Cell usage:
+BasicIO_Interface  1 use
+CCC             1 use
+CLKINT          15 uses
+MSS_025         1 use
+RCOSC_25_50MHZ  1 use
+RCOSC_25_50MHZ_FAB  1 use
+SYSRESET        1 use
+UJTAG           1 use
+CFG1           23 uses
+CFG2           1490 uses
+CFG3           3967 uses
+CFG4           5309 uses
+
+Carry cells:
+ARI1            959 uses - used for arithmetic functions
+ARI1            391 uses - used for Wide-Mux implementation
+Total ARI1      1350 uses
+
+
+Sequential Cells: 
+SLE            6094 uses
+
+DSP Blocks:    2 of 34 (5%)
+ MACC:         1 MultAdd
+ MACC:         1 Mult
+
+I/O ports: 70
+I/O primitives: 61
+BIBUF          20 uses
+BIBUF_DIFF     2 uses
+INBUF          4 uses
+OUTBUF         34 uses
+OUTBUF_DIFF    1 use
+
+
+Global Clock Buffers: 15
+
+Total LUTs:    12139
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 288; LUTs = 288;
+RAM1K18  Interface Logic : SLEs = 288; LUTs = 288;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  6094 + 288 + 288 + 72 = 6742;
+Total number of LUTs after P&R:  12139 + 288 + 288 + 72 = 12787;
+

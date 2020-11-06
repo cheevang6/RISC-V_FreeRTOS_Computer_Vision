@@ -1,0 +1,24 @@
+#ifndef CREATIVE_I2C_CAMERA_H_
+#define CREATIVE_I2C_CAMERA_H_
+
+#include "cpu_types.h"
+#include "core_i2c.h"
+#include "hw_platform.h"
+
+
+// --------------- Public Functions -------------------------------------------
+
+/* ----------------------------------------------------------------------------
+ * i2c_camera_write()
+ * writes to register on camera and waits for transaction to complete
+ */
+void i2c_camera_write(uint8_t addr, uint8_t val);
+
+/* ----------------------------------------------------------------------------
+ * i2c_camera_red()
+ * writes and reads to/from register on camera and waits for transaction
+ * to complete
+ */
+void i2c_camera_read(uint8_t addr);
+
+#endif /* CREATIVE_I2C_CAMERA_H_ */

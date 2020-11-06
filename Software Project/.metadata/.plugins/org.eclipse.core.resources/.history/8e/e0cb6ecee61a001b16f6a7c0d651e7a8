@@ -1,0 +1,54 @@
+/*
+ * i2c_camera.c
+ *
+ *  Created on: Oct 30, 2020
+ *      Author: cheec
+ */
+
+
+#include "core_i2c.h"
+#include "i2c_camera.h"
+
+// -- Definitions -------------------------------------------------------------
+//#define CoreI2C_C0_0_ADDR		0x70003000UL
+
+// why is I2C_SER_ADDR = 0x30?
+//	0x60 = 0110000 0 where LSB is W = 0
+//	0x61 = 0110000 1 where LSB is R = 1
+//	---> so [7:1] = 0110000 = 0x30 is actual slave address
+#define I2C_SER_ADDR	0x30
+#define I2C_SLA_WR		0x60
+#define I2C_SLA_RE		0x61
+#define I2C_BANK_ADDR	0xFF
+// In the Bank 1 register, there is two product ID register (0x0A/0x0B)
+// which can help diagnose if the I2C bus is accessible and determine the
+// camera models.
+#define PIDH_ADDR		0x0A
+#define PIDL_ADDR		0x0B
+
+#define DATA_LENGTH 10
+#define RX_LENGTH 10
+
+#define I2C_CAM &i2c_camera
+//#define I2C_CH &i2c_channel
+static i2c_instance_t i2c_camera;
+//static i2c_instance_t i2c_channel;
+
+// -- Public Functions --------------------------------------------------------
+
+void i2c_camera_write(uint8_t addr, uint8_t val) {
+	i2c_status_t status;
+
+	I2C_write(I2C_CAM, addr, &val, 1, I2C_RELEASE_BUS);
+	status = I2C_wait_complete(I2C_CAM, I2C_NO_TIMEOUT);
+}
+
+uint8_t i2c_camera_read(uint8_t addr){
+	uint8_t rx_buffer;
+	i2c_status_t status;
+
+	I2C_write_read(I2C_CAM, addr, &addr, 1, rx_buffer, 1, I2C_RELEASE_BUS);
+	status = I2C_wait_complete(I2C_CAM, I2C_NO_TIMEOUT);
+
+	return rx_buffer;
+}

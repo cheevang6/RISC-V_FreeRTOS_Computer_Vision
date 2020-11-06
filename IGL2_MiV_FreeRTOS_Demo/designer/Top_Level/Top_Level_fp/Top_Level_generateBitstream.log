@@ -1,0 +1,20 @@
+Software Version: 12.800.0.16
+Opened 'C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level_fp\Top_Level.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.pdb' has been loaded successfully.
+DESIGN : Top_Level;  CHECKSUM : 5E10;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Thu Oct 29 14:57:41 2020 (Elapsed time 00:00:01)
+The 'load_programming_data' command succeeded.
+File/Folder 'C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.ppd'; file programs Fabric and eNVM.
+Fabric component bitstream digest: 5f3ae5b7584882c0ecc472ed734d07816f1dedb4006251793346ef5c1bed5d18
+eNVM component bitstream digest: d4cca9d6f7299587b19a7f9a0f9674f1008ecbe3dfc20b60b3222d769661eab9
+Finished: Thu Oct 29 14:57:53 2020 (Elapsed time 00:00:12)
+
+The 'export_single_ppd' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\Users\cheec\Desktop\Master\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level_fp\Top_Level.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

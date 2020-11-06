@@ -1,0 +1,12 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.0 (Version 12.500.0.22)
+
+Date      :  Tue Mar 19 11:34:35 2019
+Project   :  D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo
+Component :  AHB_Slave2MasterBridge
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/USER/UserCore/MIRSLV2MIRMSTRBRIDGE_AHB/1.0.3/rtl/core/mirslv2mirmstrbridge_ahb.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/AHB_Slave2MasterBridge/AHB_Slave2MasterBridge.v
+
