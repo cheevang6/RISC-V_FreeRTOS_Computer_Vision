@@ -6,13 +6,6 @@
     <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
     <message>Unconnected Bus Interface</message>
-    <detail>Unconnected bus interface pin AHB_MMIO_0:AHBmslave8</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/AHB_MMIO_0:AHBmslave8</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Unconnected Bus Interface</message>
     <detail>Unconnected bus interface pin APB3_Bus_0:APBmslave3</detail>
     <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/APB3_Bus_0:APBmslave3</crossprobe>
   </drc>

@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Microsemi SmartDesign Thu Oct 29 14:52:21 2020
+# Created by Microsemi SmartDesign Fri Nov 20 10:56:26 2020
 #
 # Syntax: 
 # ------- 
@@ -51,9 +51,8 @@ memmap MSS_SubSystem_sb_HPMS_0 0x40020800;
 # memmap BasicIO_Interface_0 0x70000000;
 # memmap Timer_0 0x70001000;
 # memmap CoreGPIO_C1_0 0x70002000;
-# memmap COREI2C_C0_0 0x70003000;
 #-----------------------------------------------------------
 # Include resource scriptlets
 #-----------------------------------------------------------
 
-# # # # # # # # 
+# # # # # # 
