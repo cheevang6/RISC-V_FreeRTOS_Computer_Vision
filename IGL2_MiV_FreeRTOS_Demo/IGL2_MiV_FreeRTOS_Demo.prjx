@@ -2087,8 +2087,15 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Top_Level\Top_Level.cxf,actgen_cxf"
 STATE="utd"
-TIME="1604351806"
-SIZE="11239"
+TIME="1605898587"
+SIZE="11116"
+ENDFILE
+VALUE "<project>\component\work\Top_Level\Top_Level.v,hdl"
+STATE="utd"
+TIME="1605898586"
+SIZE="32683"
+PARENT="<project>\component\work\Top_Level\Top_Level.cxf"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\constraint\fp\Top_Level_derived_constraints.pdc,fp_pdc"
 STATE="utd"
@@ -2130,6 +2137,16 @@ VALUE "<project>\designer\Top_Level\Top_Level.block.io.pdc,io_pdc"
 STATE="utd"
 TIME="1604351807"
 SIZE="3780"
+ENDFILE
+VALUE "<project>\hdl\SCCB_APB.v,hdl"
+STATE="utd"
+TIME="1605905920"
+SIZE="882"
+ENDFILE
+VALUE "<project>\hdl\SCCB_CTRL.v,hdl"
+STATE="utd"
+TIME="1605909886"
+SIZE="5728"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -2224,7 +2241,7 @@ TIME="1604351809"
 SIZE="245"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level.vm,syn_vm"
-STATE="utd"
+STATE="ood"
 TIME="1604351810"
 SIZE="5514484"
 ENDFILE
@@ -2334,18 +2351,6 @@ ENDLIST
 LIST TimingConstraints
 VALUE "<project>\constraint\Top_Level_derived_constraints.sdc,sdc"
 VALUE "<project>\constraint\JTAG_tck_constraint.sdc,sdc"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\Top_Level.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 LIST "CoreAHBLite::COREAHBLITE_LIB"
@@ -2597,11 +2602,6 @@ VALUE "<project>\component\work\CoreGPIO_C1\CoreGPIO_C1_0\rtl\vlog\test\user\tes
 VALUE "<project>\component\work\CoreGPIO_C1\CoreGPIO_C1_0\bfmtovec_compile.do,do"
 VALUE "<project>\component\work\CoreGPIO_C1\CoreGPIO_C1_0\wave_vlog.do,do"
 ENDLIST
-LIST COREI2C_C0_COREI2C_C0_0_COREI2C
-VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v,tb_hdl"
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\coreparameters.v,tb_hdl"
-ENDLIST
 LIST COREJTAGDEBUG
 VALUE "<project>\component\Actel\DirectCore\COREJTAGDEBUG\3.0.100\rtl\vlog\test\corejtagdebug_host_emulator.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\COREJTAGDEBUG\3.0.100\rtl\vlog\test\corejtagdebug_jtag_tap.v,tb_hdl"
@@ -2638,6 +2638,11 @@ VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\amba_bfm\
 VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\test\testbench.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\bfmtovec_compile.do,do"
 VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\wave.do,do"
+ENDLIST
+LIST COREI2C_C0_COREI2C_C0_0_COREI2C
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
+VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v,tb_hdl"
+VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\coreparameters.v,tb_hdl"
 ENDLIST
 ENDLIST
 LIST SimulationOptions
@@ -2744,18 +2749,6 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "Top_Level::work"
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\Top_Level.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 LIST "COREAHBTOAPB3::COREAHBTOAPB3_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -2817,8 +2810,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Memory Map:Top_Level_DataSheet.xml
+Constraint Manager;Constraint Manager;0
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;hdl\SCCB_APB.v;0
+HDL;hdl\SCCB_CTRL.v;0
+SmartDesign;Top_Level;0
+ACTIVEVIEW;Top_Level
 ENDLIST
 LIST ModuleSubBlockList
 LIST "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
@@ -3321,7 +3320,6 @@ SUBBLOCK "AHB_Slave2MasterBridge::work","component\work\AHB_Slave2MasterBridge\A
 SUBBLOCK "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.v","TRUE","FALSE"
 SUBBLOCK "BasicIO_Interface::work","component\work\BasicIO_Interface\BasicIO_Interface_syn.v","TRUE","FALSE"
 SUBBLOCK "CoreGPIO_C1::work","component\work\CoreGPIO_C1\CoreGPIO_C1.v","TRUE","FALSE"
-SUBBLOCK "COREI2C_C0::work","component\work\COREI2C_C0\COREI2C_C0.v","TRUE","FALSE"
 SUBBLOCK "JTAG::work","component\work\JTAG\JTAG.v","TRUE","FALSE"
 SUBBLOCK "MiV_Core32::work","component\work\MiV_Core32\MiV_Core32.v","TRUE","FALSE"
 SUBBLOCK "MSS_SubSystem_sb::work","component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.v","TRUE","FALSE"
