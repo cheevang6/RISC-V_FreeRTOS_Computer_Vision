@@ -3,10 +3,16 @@
 // 2-Wire SCCB Interface only
 module sccb 
 (
-    input XCLK, RST, PWDN,
+    input   XCLK,       // Master clock to camera
+            RST,        // Reset (camera)
+    //        PWDN,       // Power down (camera)
+    input   RW_REQ,     // Read/Write request
+    input   data_out,   // Address and data FROM camera to 
+            data_in,    // Data FROM camera
+            addr_,    // 
     //output VSYNC, HREF, PCLK, // used when retrieving pixels
-    inout SIO_D,
-    output reg SIO_C
+    inout SIO_D,        // SCCB data
+    output reg SIO_C    // SCCB clock
 );
 
 /* SCCB_E
@@ -74,11 +80,16 @@ module sccb
 //                STOP        = 3'd4,
 //                READ        = 3'd5,
 //                WRITEREAD   = 3'd6;
-    reg [7:0] step;
+    reg [7:0] step;     // state machine identifier
     reg idle;
+    reg data_send;      // data to send through SCCB
     
-    assign SIO_D = (idle) 1'bz : data_out; //
+    assign SIO_D = (idle) 1'bz : data_send; //
     
+    // To determine which state to go to
+    always @(posedge SCCB_CLK or negedge RST) begin
+        
+    end
     // FF
     always @(posedge SCCB_CLK or negedge RST) begin
         if(!RST) begin
@@ -87,59 +98,60 @@ module sccb
             SIO_C <= 0;
         end else begin
             // default values
-            SIO_C <= ;
-            SIO_D_send <= ;
+            SIO_C <= SCCB_CLK;
+            // Note: I will number the states once I finalize total states required
             case(step)
                 // initialize
-                7'd : data_out <= 0;
-                7'd : data_out <= 0;
+                7'd : data_send <= 0;
+                7'd : data_send <= 0;
                 
                 // Start transmission
                 7'd : SIO_C <= 1;
-                7'd : data_out <= 1; // driven to 1 for min of tPRC = 15 ns 
+                7'd : data_send <= 1; // driven to 1 for min of tPRC = 15 ns 
                 
                 // write device's ID address (write 0x60 OV2640)
-                7'd : data_out <= addr_in[7]; // need to check
-                7'd : data_out <= addr_in[6];
-                7'd : data_out <= addr_in[5];
-                7'd : data_out <= addr_in[4];
-                7'd : data_out <= addr_in[3];
-                7'd : data_out <= addr_in[2];
-                7'd : data_out <= addr_in[1];
-                7'd : data_out <= addr_in[0]; // read/write bit
-                7'd : data_out <= ;// Don't care bit
+                7'd : data_send <= addr_in[7]; // need to check
+                7'd : data_send <= addr_in[6];
+                7'd : data_send <= addr_in[5];
+                7'd : data_send <= addr_in[4];
+                7'd : data_send <= addr_in[3];
+                7'd : data_send <= addr_in[2];
+                7'd : data_send <= addr_in[1];
+                7'd : data_send <= addr_in[0]; // read/write bit
+                7'd : data_send <= ;// Don't care bit
                 
                 // write to reg address
-                7'd : data_out <= data_in[7];
-                7'd : data_out <= data_in[6];
-                7'd : data_out <= data_in[5];
-                7'd : data_out <= data_in[4];
-                7'd : data_out <= data_in[3];
-                7'd : data_out <= data_in[2];
-                7'd : data_out <= data_in[1];
-                7'd : data_out <= data_in[0];
-                7'd : data_out <= 0; // Don't care bit
+                7'd : data_send <= data_in[7];
+                7'd : data_send <= data_in[6];
+                7'd : data_send <= data_in[5];
+                7'd : data_send <= data_in[4];
+                7'd : data_send <= data_in[3];
+                7'd : data_send <= data_in[2];
+                7'd : data_send <= data_in[1];
+                7'd : data_send <= data_in[0];
+                7'd : data_send <= 0; // Don't care bit
                 
                 // write data
-                7'd : data_out <= [7];
-                7'd : data_out <= [6];
-                7'd : data_out <= [5];
-                7'd : data_out <= [4];
-                7'd : data_out <= [3];
-                7'd : data_out <= [2];
-                7'd : data_out <= [1];
-                7'd : data_out <= [0];
-                7'd : data_out <= 0; // Don't care bit
+                7'd : data_send <= data_in[7];
+                7'd : data_send <= data_in[6];
+                7'd : data_send <= data_in[5];
+                7'd : data_send <= data_in[4];
+                7'd : data_send <= data_in[3];
+                7'd : data_send <= data_in[2];
+                7'd : data_send <= data_in[1];
+                7'd : data_send <= data_in[0];
+                7'd : data_send <= 0; // Don't care bit
                 
                 // read data (Recall: 2-phase is write-to-reg-address then read)
-                7'd : data_out <= [7];
-                7'd : data_out <= [6];
-                7'd : data_out <= [5];
-                7'd : data_out <= [4];
-                7'd : data_out <= [3];
-                7'd : data_out <= [2];
-                7'd : data_out <= [1];
-                7'd : data_out <= [0];
+                // hence, if read it must go to write device's ID first then jump to here
+                7'd : data_out <= SIO_D;
+                7'd : data_out <= SIO_D;
+                7'd : data_out <= SIO_D;
+                7'd : data_out <= SIO_D;
+                7'd : data_out <= SIO_D;
+                7'd : data_out <= SIO_D;
+                7'd : data_out <= SIO_D;
+                7'd : data_out <= SIO_D;
                 7'd : data_out <= 0; // Don't care bit
                 
                 // stop transmission
