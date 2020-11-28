@@ -3,16 +3,17 @@
 // 2-Wire SCCB Interface only
 module sccb 
 (
-    input       XCLK,       // Master clock to camera (50 MHz)
-                RST,        // Reset (camera)
-    //        PWDN,       // Power down (camera)
-    input       RW_REQ,     // Read/Write request
-    input [7:0] data_out,   // Address and data FROM camera to 
-    input [7:0] data_in,    // Data read FROM camera
-    input [7:0] addr_id,    // deive id (bit 0 for R/W)   
-    //output VSYNC, HREF, PCLK, // used when retrieving pixels
-    inout SIO_D,        // SCCB data
-    output reg SIO_C    // SCCB clock
+    input            XCLK,       // Master clock to camera
+                     RST,        // Reset (camera)
+    //               PWDN,       // Power down (camera)
+    input            RW_REQ,     // Read/Write request
+    input reg  [7:0] data_in,    // Data write
+    input reg  [7:0] addr_id,    // Device ID
+    input reg  [7:0] addr_reg,   // Register address
+    output reg [7:0] data_out,   // Data read
+    //output VSYNC, HREF, PCLK,  // used when retrieving pixels
+    inout            SIO_D,      // SCCB data
+    output reg       SIO_C       // SCCB clock
 );
 
 /* SCCB_E
@@ -74,52 +75,58 @@ module sccb
     //reg idle;
     reg data_send;      // data to send through SCCB
     
-    assign SIO_D = (idle) 1'bz : data_send; //
+    // tristate SIO_D bus when idle
+    assign SIO_D = (idle) 1'bz : data_send;
+    
+    
+    assign SIO_C = ;
     
     // To determine which state to go to
     always @(posedge SCCB_CLK or negedge RST) begin
         
     end
     
-    //
     always @(posedge SCCB_CLK or negedge RST) begin
         if(!RST) begin
             data_in <= 0;
             data_out <= 0;
-            SIO_C <= 0;
+            SIO_C <= 1; // driven to 1 when idle
         end else begin
             // default values
-            SIO_C <= SCCB_CLK;
+            // SIO_C <= SCCB_CLK; // need to make sure that it is driven to 1 when idle
+            
             // Note: I will number the states once I finalize total states required
             case(step)
                 // initialize
                 7'd : data_send <= 0;
-                7'd : data_send <= 0;
                 
                 // Start transmission
-                7'd : SIO_C <= 1;
-                7'd : data_send <= 1; // driven to 1 for min of tPRC = 15 ns 
+                // SIO_D = 1 (driven to 1 for min of tPRC = 15 ns)
+                // SCCB_E high-to-low (3-wire, but since this is 2-wire not neccessary)
+                // SIO_C = 0 (after start of transmission)
+                7'd : data_send <= 1;
+                7'd : scc_clk_step <= 0;
                 
                 // write device's ID address (write 0x60 OV2640)
-                7'd : data_send <= addr_in[7]; // need to check
-                7'd : data_send <= addr_in[6];
-                7'd : data_send <= addr_in[5];
-                7'd : data_send <= addr_in[4];
-                7'd : data_send <= addr_in[3];
-                7'd : data_send <= addr_in[2];
-                7'd : data_send <= addr_in[1];
-                7'd : data_send <= addr_in[0]; // read/write bit
+                7'd : data_send <= addr_id[7];
+                7'd : data_send <= addr_id[6];
+                7'd : data_send <= addr_id[5];
+                7'd : data_send <= addr_id[4];
+                7'd : data_send <= addr_id[3];
+                7'd : data_send <= addr_id[2];
+                7'd : data_send <= addr_id[1];
+                7'd : data_send <= addr_id[0]; // read/write bit
                 7'd : data_send <= ;// Don't care bit
                 
                 // write to reg address
-                7'd : data_send <= data_in[7];
-                7'd : data_send <= data_in[6];
-                7'd : data_send <= data_in[5];
-                7'd : data_send <= data_in[4];
-                7'd : data_send <= data_in[3];
-                7'd : data_send <= data_in[2];
-                7'd : data_send <= data_in[1];
-                7'd : data_send <= data_in[0];
+                7'd : data_send <= addr_reg[7];
+                7'd : data_send <= addr_reg[6];
+                7'd : data_send <= addr_reg[5];
+                7'd : data_send <= addr_reg[4];
+                7'd : data_send <= addr_reg[3];
+                7'd : data_send <= addr_reg[2];
+                7'd : data_send <= addr_reg[1];
+                7'd : data_send <= addr_reg[0];
                 7'd : data_send <= 0; // Don't care bit
                 
                 // write data
@@ -146,12 +153,14 @@ module sccb
                 7'd : data_out <= 0; // Don't care bit
                 
                 // stop transmission
-                7'd : SIO_C <= 0;
-                7'd : SIO_C <= 1;
-                7'd : data <= 1; // must be driven to 1 for tPSC = 15ns (min)
+                // SIO_C = = 1
+                // SIO_D = 1 (for tPCS = 15ns) before SCCB_E deasserted
+                7'd : scc_clk_step <= 0;
+                7'd : scc_clk_step <= 1;
+                7'd : data_send <= 1;
                 
                 
-                default :
+                default: SIO_C <= 1; //
             endcase
         end
     end
