@@ -3,13 +3,13 @@
 // 2-Wire SCCB Interface only
 module sccb 
 (
-    input   XCLK,       // Master clock to camera
-            RST,        // Reset (camera)
+    input       XCLK,       // Master clock to camera (50 MHz)
+                RST,        // Reset (camera)
     //        PWDN,       // Power down (camera)
-    input   RW_REQ,     // Read/Write request
-    input   data_out,   // Address and data FROM camera to 
-            data_in,    // Data FROM camera
-            addr_,    // 
+    input       RW_REQ,     // Read/Write request
+    input [7:0] data_out,   // Address and data FROM camera to 
+    input [7:0] data_in,    // Data read FROM camera
+    input [7:0] addr_id,    // deive id (bit 0 for R/W)   
     //output VSYNC, HREF, PCLK, // used when retrieving pixels
     inout SIO_D,        // SCCB data
     output reg SIO_C    // SCCB clock
@@ -70,18 +70,8 @@ module sccb
         end
     end
     
-    // Finite State Machine for SCCB
-//    reg [2:0] state, state_next;
-//    reg = data;
-//    parameter   IDLE        = 3'd0,
-//                START       = 3'd1,
-//                WRITE_ID    = 3'd2,
-//                WRITE_REG   = 3'd3,
-//                STOP        = 3'd4,
-//                READ        = 3'd5,
-//                WRITEREAD   = 3'd6;
     reg [7:0] step;     // state machine identifier
-    reg idle;
+    //reg idle;
     reg data_send;      // data to send through SCCB
     
     assign SIO_D = (idle) 1'bz : data_send; //
@@ -90,7 +80,8 @@ module sccb
     always @(posedge SCCB_CLK or negedge RST) begin
         
     end
-    // FF
+    
+    //
     always @(posedge SCCB_CLK or negedge RST) begin
         if(!RST) begin
             data_in <= 0;

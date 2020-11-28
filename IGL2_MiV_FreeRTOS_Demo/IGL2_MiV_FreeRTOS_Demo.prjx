@@ -2145,8 +2145,8 @@ SIZE="882"
 ENDFILE
 VALUE "<project>\hdl\SCCB_CTRL.v,hdl"
 STATE="utd"
-TIME="1605909886"
-SIZE="5728"
+TIME="1606467276"
+SIZE="6225"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -2218,8 +2218,8 @@ PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1604351809"
-SIZE="2211"
+TIME="1605898586"
+SIZE="2172"
 PARENT="<project>\component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.cxf"
 PARENT="<project>\component\work\Top_Level\Top_Level.cxf"
 ENDFILE
@@ -2247,8 +2247,8 @@ SIZE="5514484"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level_syn.prj,prj"
 STATE="utd"
-TIME="1604351810"
-SIZE="28538"
+TIME="1605898561"
+SIZE="34010"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level_vm.sdc,syn_sdc"
 STATE="utd"
@@ -2343,7 +2343,7 @@ VALUE "<project>\simulation\peripheral_init.bfm,sim"
 ENDLIST
 ENDLIST
 LIST "Top_Level::work"
-FILE "<project>\component\work\Top_Level\Top_Level.cxf,actgen_cxf"
+FILE "<project>\component\work\Top_Level\Top_Level.v,hdl"
 LIST SynthesisConstraints
 VALUE "<project>\constraint\Top_Level_derived_constraints.sdc,sdc"
 VALUE "<project>\constraint\JTAG_tck_constraint.sdc,sdc"
@@ -2542,16 +2542,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\test\test
 ENDLIST
 ENDLIST
 LIST Other_Association
-LIST COREAHBTOAPB3
-VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
-VALUE "<project>\simulation\master.bfm,sim"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\coreparameters.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-ENDLIST
 LIST CoreAHBLite
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 VALUE "<project>\simulation\coreahblite_usertb_include.bfm,sim"
@@ -2566,6 +2556,16 @@ VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bf
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\mti\scripts\wave_user.do,do"
+ENDLIST
+LIST COREAHBTOAPB3
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
 LIST CoreAPB3
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
@@ -2810,14 +2810,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Memory Map:Top_Level_DataSheet.xml
-Constraint Manager;Constraint Manager;0
-StartPage;StartPage;0
-HDL;hdl\SCCB_APB.v;0
 HDL;hdl\SCCB_CTRL.v;0
 SmartDesign;Top_Level;0
-ACTIVEVIEW;Top_Level
+StartPage;StartPage;0
+Reports;Reports;0
+ReportsCurrentItem;Generate Memory Map:Top_Level_DataSheet.xml
+HDL;hdl\SCCB_APB.v;0
+Constraint Manager;Constraint Manager;0
+ACTIVEVIEW;hdl\SCCB_CTRL.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
@@ -3312,17 +3312,17 @@ ENDLIST
 LIST "Timer::work","component\work\Timer\Timer.v","TRUE","FALSE"
 SUBBLOCK "CoreTimer::CORETIMER_LIB","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v","FALSE","FALSE"
 ENDLIST
-LIST "Top_Level::work","component\work\Top_Level\Top_Level.cxf","TRUE","FALSE"
-SUBBLOCK "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
+LIST "Top_Level::work","component\work\Top_Level\Top_Level.v","TRUE","FALSE"
 SUBBLOCK "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
 SUBBLOCK "AHB_MMIO::work","component\work\AHB_MMIO\AHB_MMIO.v","TRUE","FALSE"
 SUBBLOCK "AHB_Slave2MasterBridge::work","component\work\AHB_Slave2MasterBridge\AHB_Slave2MasterBridge.v","TRUE","FALSE"
+SUBBLOCK "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
 SUBBLOCK "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.v","TRUE","FALSE"
 SUBBLOCK "BasicIO_Interface::work","component\work\BasicIO_Interface\BasicIO_Interface_syn.v","TRUE","FALSE"
 SUBBLOCK "CoreGPIO_C1::work","component\work\CoreGPIO_C1\CoreGPIO_C1.v","TRUE","FALSE"
 SUBBLOCK "JTAG::work","component\work\JTAG\JTAG.v","TRUE","FALSE"
-SUBBLOCK "MiV_Core32::work","component\work\MiV_Core32\MiV_Core32.v","TRUE","FALSE"
 SUBBLOCK "MSS_SubSystem_sb::work","component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.v","TRUE","FALSE"
+SUBBLOCK "MiV_Core32::work","component\work\MiV_Core32\MiV_Core32.v","TRUE","FALSE"
 SUBBLOCK "Timer::work","component\work\Timer\Timer.v","TRUE","FALSE"
 ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
