@@ -1,5 +1,5 @@
 // SCCB_APB.v
-module SCC_APB(PADDR, PCLK,PENABLE,PRESETN,PSEL,PWDATA,PWRITE,INT,PRDATA);
+module SCC_APB(PADDR,PCLK,PENABLE,PRESETN,PSEL,PWDATA,PWRITE,INT,PRDATA,SIO_C,SIO_D);
     input [8:0]     PADDR;
     input           PCLK; //
     input           PENABLE;
@@ -7,8 +7,10 @@ module SCC_APB(PADDR, PCLK,PENABLE,PRESETN,PSEL,PWDATA,PWRITE,INT,PRDATA);
     input           PSEL;
     input [7:0]     PWDATA;
     input           PWRITE;
+    input           SIO_C;
     output [0:0]    INT;
     output [7:0]    PRDATA;
+    inout           SIO_D;
 
     wire [8:0]      PADDR;
     wire            PCLK; //
@@ -32,9 +34,16 @@ module SCC_APB(PADDR, PCLK,PENABLE,PRESETN,PSEL,PWDATA,PWRITE,INT,PRDATA);
     wire   [0:0] SIO_C_0_net_0;
     wire   [0:0] SIO_D_0_net_0;
     
-    SCCB_CTRL (
+    SCCB_CTRL SCCB_CTRL_0(
         .addr_in(PADDR),
         .XCLK(PCLK),
-        .
+        .RW_REQ(PWRTIE),
+        .data_in(PWDATA),
+        .data_out(PRDATA),
+        .addr_id(),
+        .SIO_D(),
+        .SIO_C()
     );
+    
+    assign APBslave_PRDATA
 endmodue
