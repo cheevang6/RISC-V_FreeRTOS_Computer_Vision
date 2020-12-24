@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  sccb_design  -multisrs  C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\sccb_design_comp.srs  -osyn  C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\sccb_design_mult.srs  -log  C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synlog\sccb_design_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe -link -top sccb_design -multisrs ..\synwork\sccb_design_comp.srs -osyn ..\synwork\sccb_design_mult.srs -log ..\synlog\sccb_design_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\sccb_design_comp.srs|io:i|time:1608239872|size:5993|exec:0|csum:E14EEA5648CFBFD6C50114076A04F30C
+file:..\synwork\sccb_design_mult.srs|io:o|time:1608239873|size:2134|exec:0|csum:
+file:..\synlog\sccb_design_multi_srs_gen.srr|io:o|time:1608239873|size:1169|exec:0|csum:
+file:..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1562075633|size:8810496|exec:1|csum:20DB59B568B25441B8251D61083745CC

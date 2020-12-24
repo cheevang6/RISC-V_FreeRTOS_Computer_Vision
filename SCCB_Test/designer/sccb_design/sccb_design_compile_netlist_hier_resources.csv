@@ -1,0 +1,4 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,Chip Globals
+Primitives/Primitives,0,0,3,1
+SCCB_CTRL_0/Primitives,41,20,0,1

@@ -1,0 +1,471 @@
+#Build: Synplify Pro (R) O-2018.09M-SP1-1, Build 205R, Apr 25 2019
+#install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-95FBL6H
+
+# Fri Dec  4 17:21:18 2020
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Verilog Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v" (library work)
+@I::"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module sccb_design
+@N: CG364 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":4:7:4:15|Synthesizing module SCCB_CTRL in library work.
+Running optimization stage 1 on SCCB_CTRL .......
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":101:4:101:9|Optimizing register bit data_out[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":101:4:101:9|Optimizing register bit data_out[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":101:4:101:9|Optimizing register bit data_out[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":101:4:101:9|Optimizing register bit data_out[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":101:4:101:9|Optimizing register bit data_out[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":101:4:101:9|Optimizing register bit data_out[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":101:4:101:9|Optimizing register bit data_out[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":101:4:101:9|Pruning register bits 7 to 1 of data_out[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v":9:7:9:17|Synthesizing module sccb_design in library work.
+Running optimization stage 1 on sccb_design .......
+@W: CL318 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v":25:7:25:10|*Output siod has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL168 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v":50:10:50:20|Removing instance SCCB_CTRL_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Running optimization stage 2 on sccb_design .......
+@N: CL159 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v":20:7:20:9|Input rst is unused.
+@N: CL159 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v":21:7:21:10|Input xclk is unused.
+Running optimization stage 2 on SCCB_CTRL .......
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":62:4:62:9|Optimizing register bit SCCB_CLK_cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":62:4:62:9|Pruning register bit 8 of SCCB_CLK_cnt[8:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Dec  4 17:21:18 2020
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\cheec\desktop\libero_projects\sccb_test\component\work\sccb_design\sccb_design.v":9:7:9:17|Selected library: work cell: sccb_design view verilog as top level
+@N: NF107 :"c:\users\cheec\desktop\libero_projects\sccb_test\component\work\sccb_design\sccb_design.v":9:7:9:17|Selected library: work cell: sccb_design view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Dec  4 17:21:18 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Dec  4 17:21:18 2020
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\cheec\desktop\libero_projects\sccb_test\component\work\sccb_design\sccb_design.v":9:7:9:17|Selected library: work cell: sccb_design view verilog as top level
+@N: NF107 :"c:\users\cheec\desktop\libero_projects\sccb_test\component\work\sccb_design\sccb_design.v":9:7:9:17|Selected library: work cell: sccb_design view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Dec  4 17:21:19 2020
+
+###########################################################]
+Premap Report
+
+# Fri Dec  4 17:21:19 2020
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact2018q4p1, Build 026R, Built Apr 25 2019 10:01:09
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design_scck.rpt 
+Printing clock  summary report in "C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MO111 :"c:\users\cheec\desktop\libero_projects\sccb_test\component\work\sccb_design\sccb_design.v":25:7:25:10|Tristate driver siod (in view: work.sccb_design(verilog)) on net siod (in view: work.sccb_design(verilog)) has its enable tied to GND.
+syn_allowed_resources : blockrams=31  set on top level netlist sccb_design
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+
+Clock Summary
+******************
+
+          Start     Requested     Requested     Clock     Clock     Clock
+Level     Clock     Frequency     Period        Type      Group     Load 
+-------------------------------------------------------------------------
+=========================================================================
+
+
+
+Clock Load Summary
+***********************
+
+          Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
+Clock     Load      Pin        Seq Example     Seq Example       Comb Example 
+------------------------------------------------------------------------------
+==============================================================================
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: MO111 :"c:\users\cheec\desktop\libero_projects\sccb_test\component\work\sccb_design\sccb_design.v":25:7:25:10|Tristate driver siod (in view: work.sccb_design(verilog)) on net siod (in view: work.sccb_design(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec  4 17:21:20 2020
+
+###########################################################]
+Map & Optimize Report
+
+# Fri Dec  4 17:21:20 2020
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact2018q4p1, Build 026R, Built Apr 25 2019 10:01:09
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+@N: MO111 :"c:\users\cheec\desktop\libero_projects\sccb_test\component\work\sccb_design\sccb_design.v":25:7:25:10|Tristate driver siod (in view: work.sccb_design(verilog)) on net siod (in view: work.sccb_design(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 134MB)
+
+Writing Analyst data base C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\sccb_design_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 134MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 134MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Fri Dec  4 17:21:21 2020
+#
+
+
+Top view:               sccb_design
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+---------------------------------------
+Resource Usage Report for sccb_design 
+
+Mapping to part: m2gl025vf400std
+
+Sequential Cells: 
+SLE            0 uses
+
+DSP Blocks:    0 of 34 (0%)
+
+I/O ports: 3
+I/O primitives: 1
+TRIBUFF        1 use
+
+
+Total LUTs:    0
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  0 + 0 + 0 + 0 = 0;
+Total number of LUTs after P&R:  0 + 0 + 0 + 0 = 0;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec  4 17:21:21 2020
+
+###########################################################]

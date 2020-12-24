@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Fri Dec  4 17:33:41 2020
+Project   :  C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test
+Component :  sccb_design
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/component/work/sccb_design/sccb_design.v
+

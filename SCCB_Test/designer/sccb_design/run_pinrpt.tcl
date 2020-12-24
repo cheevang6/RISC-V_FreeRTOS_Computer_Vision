@@ -1,0 +1,10 @@
+DESIGN=sccb_design
+DESDIR=C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design
+TARGET_DIR=C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design
+FAM=IGLOO2
+DIE=PA4MGL2500_N
+PACKAGE=vf256
+PINRPT_BY_NAME=1
+PINRPT_BY_NUMBER=1
+BANK_REPORT=1
+IOREG_REPORT=1

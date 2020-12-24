@@ -1,0 +1,22 @@
+Selecting top level module sccb_design
+@N: CG364 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":4:7:4:15|Synthesizing module SCCB_CTRL in library work.
+Running optimization stage 1 on SCCB_CTRL .......
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Pruning register bits 7 to 1 of data_out[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v":9:7:9:17|Synthesizing module sccb_design in library work.
+Running optimization stage 1 on sccb_design .......
+Running optimization stage 2 on sccb_design .......
+Running optimization stage 2 on SCCB_CTRL .......
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":68:4:68:9|Optimizing register bit SCCB_CLK_cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":68:4:68:9|Pruning register bit 8 of SCCB_CLK_cnt[8:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\layer0.rt.csv
+

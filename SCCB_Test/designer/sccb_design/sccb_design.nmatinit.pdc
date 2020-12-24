@@ -1,0 +1,96 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.3 12.800.0.16
+
+# Design Name: sccb_design 
+
+# Input Netlist Format: EDIF 
+
+# Family: IGLOO2 , Die: M2GL025 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Fri Dec  4 17:34:58 2020 
+
+
+#
+# I/O constraints
+#
+
+set_io sio_c -DIRECTION OUTPUT -pinname T6 -fixed no
+set_io sio_d -DIRECTION OUTPUT -pinname T9 -fixed no
+set_io xclk -DIRECTION INPUT -pinname P9 -fixed no
+
+#
+# Core cell constraints
+#
+
+set_location SCCB_CTRL_0/un1_data_send42_0 -fixed no 331 21
+set_location SCCB_CTRL_0/SCCB_CLK_cnt\[4\] -fixed no 317 58
+set_location SCCB_CTRL_0/data_send42 -fixed no 332 21
+set_location SCCB_CTRL_0/data_send40_2 -fixed no 326 21
+set_location SCCB_CTRL_0/step\[3\] -fixed no 315 19
+set_location SCCB_CTRL_0/SCCB_CLK_cnt\[1\] -fixed no 314 58
+set_location SCCB_CTRL_0/step\[2\] -fixed no 314 19
+set_location SCCB_CTRL_0/data_send_26_0_a2 -fixed no 318 21
+set_location SCCB_CTRL_0/un1_data_send42_1_1_3 -fixed no 323 21
+set_location SCCB_CTRL_0/SCCB_CLK_inferred_clock_RNIPQ8/U0_RGB1 -fixed no 446 21
+set_location SCCB_CTRL_0/data_send69_3 -fixed no 313 24
+set_location SCCB_CTRL_0/data_send80_1 -fixed no 330 21
+set_location SCCB_CTRL_0/un1_data_send82_i_a0 -fixed no 322 24
+set_location SCCB_CTRL_0/un1_data_send40 -fixed no 329 21
+set_location SCCB_CTRL_0/step\[6\] -fixed no 318 19
+set_location SCCB_CTRL_0/data_send82_1_0 -fixed no 328 21
+set_location xclk_ibuf_RNIN1HC/U0_RGB1 -fixed no 446 57
+set_location SCCB_CTRL_0/un1_data_send42_1_1_1 -fixed no 319 24
+set_location SCCB_CTRL_0/step\[1\] -fixed no 322 19
+set_location SCCB_CTRL_0/step_RNI29KV\[6\] -fixed no 313 21
+set_location SCCB_CTRL_0/idle_RNIAA0D -fixed no 317 21
+set_location SCCB_CTRL_0/step\[4\] -fixed no 321 19
+set_location SCCB_CTRL_0/un1_data_send42_1_1_o7 -fixed no 312 24
+set_location xclk_ibuf_RNIN1HC -fixed no 305 72
+set_location SCCB_CTRL_0/SCCB_CLK_cnt\[0\] -fixed no 313 58
+set_location SCCB_CTRL_0/step\[0\] -fixed no 315 22
+set_location SCCB_CTRL_0/data_send -fixed no 318 22
+set_location SCCB_CTRL_0/SCCB_CLK_cnt\[7\] -fixed no 320 58
+set_location SCCB_CTRL_0/step_3_f0\[4\] -fixed no 321 18
+set_location SCCB_CTRL_0/data_send40 -fixed no 333 21
+set_location flash_freeze_inst/INST_FLASH_FREEZE_IP -fixed no 624 8
+set_location SCCB_CTRL_0/data_send78 -fixed no 316 21
+set_location SCCB_CTRL_0/step_3\[1\] -fixed no 322 18
+set_location SCCB_CTRL_0/SCCB_CLK_cnt\[3\] -fixed no 316 58
+set_location SCCB_CTRL_0/data_send69 -fixed no 323 24
+set_location SCCB_CTRL_0/idle -fixed no 313 22
+set_location SCCB_CTRL_0/un1_data_send42 -fixed no 335 21
+set_location SCCB_CTRL_0/SCCB_CLK_cnt12lto7_3 -fixed no 321 57
+set_location SCCB_CTRL_0/sccb_clk_step -fixed no 319 22
+set_location SCCB_CTRL_0/un1_data_send42_1_1_o3 -fixed no 318 24
+set_location SCCB_CTRL_0/SIO_C -fixed no 312 21
+set_location SCCB_CTRL_0/step_RNO\[0\] -fixed no 315 21
+set_location SCCB_CTRL_0/data_send69_1 -fixed no 317 24
+set_location SCCB_CTRL_0/data_send_RNO -fixed no 314 24
+set_location SCCB_CTRL_0/un1_data_send42_1_1_a7_0 -fixed no 315 24
+set_location SCCB_CTRL_0/data_send78_1 -fixed no 320 21
+set_location SCCB_CTRL_0/SCCB_CLK_cnt\[5\] -fixed no 318 58
+set_location SCCB_CTRL_0/un1_data_send82_i_a5_0_0 -fixed no 321 24
+set_location SCCB_CTRL_0/sccb_clk_step_RNO_0 -fixed no 321 21
+set_location SCCB_CTRL_0/SCCB_CLK_cnt12lto7 -fixed no 323 57
+set_location SCCB_CTRL_0/data_send40_2_0 -fixed no 325 21
+set_location SCCB_CTRL_0/SCCB_CLK_RNO -fixed no 322 57
+set_location SCCB_CTRL_0/step\[5\] -fixed no 320 19
+set_location SCCB_CTRL_0/SCCB_CLK_cnt\[6\] -fixed no 319 58
+set_location ip_interface_inst -fixed no 203 0
+set_location SCCB_CTRL_0/step\[7\] -fixed no 319 19
+set_location SCCB_CTRL_0/SCCB_CLK_inferred_clock_RNIPQ8 -fixed no 290 72
+set_location SCCB_CTRL_0/SCCB_CLK -fixed no 322 58
+set_location SCCB_CTRL_0/un1_data_send82_i_2 -fixed no 320 24
+set_location SCCB_CTRL_0/step_3_f0\[5\] -fixed no 320 18
+set_location SCCB_CTRL_0/data_send79_2 -fixed no 324 21
+set_location SCCB_CTRL_0/data_send78_2_0 -fixed no 322 21
+set_location SCCB_CTRL_0/un1_data_send42_1_1_a7_1_1 -fixed no 316 24
+set_location SCCB_CTRL_0/SCCB_CLK_cnt\[2\] -fixed no 315 58
+set_location SCCB_CTRL_0/data_send_26_0_a2_1 -fixed no 314 21
+set_location SCCB_CTRL_0/sccb_clk_step_RNO -fixed no 319 21
+set_location SCCB_CTRL_0/un7_step_s_1_25 -fixed no 312 18
+set_location SCCB_CTRL_0/SCCB_CLK_cnt_s_24 -fixed no 312 57
+set_location SCCB_CTRL_0/SCCB_CLK_inferred_clock_RNIPQ8/U0_RGB1_RGB0 -fixed no 446 18
+set_location SCCB_CTRL_0/SCCB_CLK_cnt_s_24_CC_0 -fixed no 312 59
+set_location SCCB_CTRL_0/un7_step_s_1_25_CC_0 -fixed no 312 20

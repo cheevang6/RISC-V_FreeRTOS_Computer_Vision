@@ -1,0 +1,783 @@
+//
+// Written by Synplify Pro 
+// Product Version "O-2018.09M-SP1-1"
+// Program "Synplify Pro", Mapper "mapact2018q4p1, Build 026R"
+// Thu Dec 17 13:24:42 2020
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\microsemi\libero_soc_v12.3\synplifypro\lib\generic\igloo2.v "
+// file 1 "\c:\microsemi\libero_soc_v12.3\synplifypro\lib\vlog\hypermods.v "
+// file 2 "\c:\microsemi\libero_soc_v12.3\synplifypro\lib\vlog\umr_capim.v "
+// file 3 "\c:\microsemi\libero_soc_v12.3\synplifypro\lib\vlog\scemi_objects.v "
+// file 4 "\c:\microsemi\libero_soc_v12.3\synplifypro\lib\vlog\scemi_pipes.svh "
+// file 5 "\c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v "
+// file 6 "\c:\users\cheec\desktop\libero_projects\sccb_test\component\work\sccb_design\sccb_design.v "
+// file 7 "\c:\microsemi\libero_soc_v12.3\synplifypro\lib\nlconst.dat "
+// file 8 "\c:\users\cheec\desktop\libero_projects\sccb_test\designer\sccb_design\synthesis.fdc "
+
+`timescale 100 ps/100 ps
+module SCCB_CTRL (
+  sio_c_c,
+  xclk_c,
+  data_send_1z,
+  idle_i
+)
+;
+output sio_c_c ;
+input xclk_c ;
+output data_send_1z ;
+output idle_i ;
+wire sio_c_c ;
+wire xclk_c ;
+wire data_send_1z ;
+wire idle_i ;
+wire [7:0] step;
+wire [7:0] step_s;
+wire [7:0] SCCB_CLK_cnt;
+wire [7:0] SCCB_CLK_cnt_s;
+wire [6:0] SCCB_CLK_cnt_cry;
+wire [6:0] SCCB_CLK_cnt_cry_Y;
+wire [7:7] SCCB_CLK_cnt_s_FCO;
+wire [7:7] SCCB_CLK_cnt_s_Y;
+wire [6:1] step_cry;
+wire [6:1] step_cry_Y;
+wire [7:7] step_s_FCO;
+wire [7:7] step_s_Y;
+wire SCCB_CLK_Z ;
+wire SCCB_CLK_0 ;
+wire idle_Z ;
+wire VCC ;
+wire data_send_26 ;
+wire un1_data_send42_1_0_i ;
+wire GND ;
+wire sccb_clk_step_Z ;
+wire data_send79_2_0_i ;
+wire un1_data_send42_0_Z ;
+wire N_92_i ;
+wire un1_data_send40_0_Z ;
+wire N_8_i ;
+wire SCCB_CLK_cnt_s_19_FCO ;
+wire SCCB_CLK_cnt_s_19_S ;
+wire SCCB_CLK_cnt_s_19_Y ;
+wire SCCB_CLK_cnt_lcry ;
+wire step_s_20_FCO ;
+wire step_s_20_S ;
+wire step_s_20_Y ;
+wire N_18 ;
+wire N_14 ;
+wire N_21 ;
+wire un1_data_send42_0_1_0_Z ;
+wire N_31 ;
+wire N_32 ;
+wire N_9 ;
+wire N_10 ;
+wire SCCB_CLK_cnt12lto7_3_Z ;
+wire un1_data_send40_0_a4_0_1_Z ;
+wire N_24 ;
+wire N_13 ;
+wire un1_data_send42_1_1_0_1_Z ;
+wire N_27 ;
+  CLKINT SCCB_CLK_inferred_clock_RNIPQ8 (
+	.Y(SCCB_CLK_Z),
+	.A(SCCB_CLK_0)
+);
+  CFG1 idle_RNIAA0D (
+	.A(idle_Z),
+	.Y(idle_i)
+);
+defparam idle_RNIAA0D.INIT=2'h1;
+  CFG1 \step_RNO[0]  (
+	.A(step[0]),
+	.Y(step_s[0])
+);
+defparam \step_RNO[0] .INIT=2'h1;
+// @5:111
+  SLE data_send (
+	.Q(data_send_1z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(data_send_26),
+	.EN(un1_data_send42_1_0_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:111
+  SLE sccb_clk_step (
+	.Q(sccb_clk_step_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(data_send79_2_0_i),
+	.EN(un1_data_send42_0_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:111
+  SLE idle (
+	.Q(idle_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(N_92_i),
+	.EN(un1_data_send40_0_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE SCCB_CLK (
+	.Q(SCCB_CLK_0),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(N_8_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:97
+  SLE \step[0]  (
+	.Q(step[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(step_s[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:97
+  SLE \step[1]  (
+	.Q(step[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(step_s[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:97
+  SLE \step[2]  (
+	.Q(step[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(step_s[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:97
+  SLE \step[3]  (
+	.Q(step[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(step_s[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:97
+  SLE \step[4]  (
+	.Q(step[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(step_s[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:97
+  SLE \step[5]  (
+	.Q(step[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(step_s[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:97
+  SLE \step[6]  (
+	.Q(step[6]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(step_s[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:97
+  SLE \step[7]  (
+	.Q(step[7]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(SCCB_CLK_Z),
+	.D(step_s[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE \SCCB_CLK_cnt[0]  (
+	.Q(SCCB_CLK_cnt[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(SCCB_CLK_cnt_s[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE \SCCB_CLK_cnt[1]  (
+	.Q(SCCB_CLK_cnt[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(SCCB_CLK_cnt_s[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE \SCCB_CLK_cnt[2]  (
+	.Q(SCCB_CLK_cnt[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(SCCB_CLK_cnt_s[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE \SCCB_CLK_cnt[3]  (
+	.Q(SCCB_CLK_cnt[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(SCCB_CLK_cnt_s[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE \SCCB_CLK_cnt[4]  (
+	.Q(SCCB_CLK_cnt[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(SCCB_CLK_cnt_s[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE \SCCB_CLK_cnt[5]  (
+	.Q(SCCB_CLK_cnt[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(SCCB_CLK_cnt_s[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE \SCCB_CLK_cnt[6]  (
+	.Q(SCCB_CLK_cnt[6]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(SCCB_CLK_cnt_s[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  SLE \SCCB_CLK_cnt[7]  (
+	.Q(SCCB_CLK_cnt[7]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(xclk_c),
+	.D(SCCB_CLK_cnt_s[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @5:68
+  ARI1 SCCB_CLK_cnt_s_19 (
+	.FCO(SCCB_CLK_cnt_s_19_FCO),
+	.S(SCCB_CLK_cnt_s_19_S),
+	.Y(SCCB_CLK_cnt_s_19_Y),
+	.B(SCCB_CLK_cnt_lcry),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam SCCB_CLK_cnt_s_19.INIT=20'h4AA00;
+// @5:68
+  ARI1 \SCCB_CLK_cnt_cry[0]  (
+	.FCO(SCCB_CLK_cnt_cry[0]),
+	.S(SCCB_CLK_cnt_s[0]),
+	.Y(SCCB_CLK_cnt_cry_Y[0]),
+	.B(SCCB_CLK_cnt[0]),
+	.C(SCCB_CLK_cnt_lcry),
+	.D(GND),
+	.A(VCC),
+	.FCI(SCCB_CLK_cnt_s_19_FCO)
+);
+defparam \SCCB_CLK_cnt_cry[0] .INIT=20'h48800;
+// @5:68
+  ARI1 \SCCB_CLK_cnt_cry[1]  (
+	.FCO(SCCB_CLK_cnt_cry[1]),
+	.S(SCCB_CLK_cnt_s[1]),
+	.Y(SCCB_CLK_cnt_cry_Y[1]),
+	.B(SCCB_CLK_cnt[1]),
+	.C(SCCB_CLK_cnt_lcry),
+	.D(GND),
+	.A(VCC),
+	.FCI(SCCB_CLK_cnt_cry[0])
+);
+defparam \SCCB_CLK_cnt_cry[1] .INIT=20'h48800;
+// @5:68
+  ARI1 \SCCB_CLK_cnt_cry[2]  (
+	.FCO(SCCB_CLK_cnt_cry[2]),
+	.S(SCCB_CLK_cnt_s[2]),
+	.Y(SCCB_CLK_cnt_cry_Y[2]),
+	.B(SCCB_CLK_cnt[2]),
+	.C(SCCB_CLK_cnt_lcry),
+	.D(GND),
+	.A(VCC),
+	.FCI(SCCB_CLK_cnt_cry[1])
+);
+defparam \SCCB_CLK_cnt_cry[2] .INIT=20'h48800;
+// @5:68
+  ARI1 \SCCB_CLK_cnt_cry[3]  (
+	.FCO(SCCB_CLK_cnt_cry[3]),
+	.S(SCCB_CLK_cnt_s[3]),
+	.Y(SCCB_CLK_cnt_cry_Y[3]),
+	.B(SCCB_CLK_cnt[3]),
+	.C(SCCB_CLK_cnt_lcry),
+	.D(GND),
+	.A(VCC),
+	.FCI(SCCB_CLK_cnt_cry[2])
+);
+defparam \SCCB_CLK_cnt_cry[3] .INIT=20'h48800;
+// @5:68
+  ARI1 \SCCB_CLK_cnt_cry[4]  (
+	.FCO(SCCB_CLK_cnt_cry[4]),
+	.S(SCCB_CLK_cnt_s[4]),
+	.Y(SCCB_CLK_cnt_cry_Y[4]),
+	.B(SCCB_CLK_cnt[4]),
+	.C(SCCB_CLK_cnt_lcry),
+	.D(GND),
+	.A(VCC),
+	.FCI(SCCB_CLK_cnt_cry[3])
+);
+defparam \SCCB_CLK_cnt_cry[4] .INIT=20'h48800;
+// @5:68
+  ARI1 \SCCB_CLK_cnt_cry[5]  (
+	.FCO(SCCB_CLK_cnt_cry[5]),
+	.S(SCCB_CLK_cnt_s[5]),
+	.Y(SCCB_CLK_cnt_cry_Y[5]),
+	.B(SCCB_CLK_cnt[5]),
+	.C(SCCB_CLK_cnt_lcry),
+	.D(GND),
+	.A(VCC),
+	.FCI(SCCB_CLK_cnt_cry[4])
+);
+defparam \SCCB_CLK_cnt_cry[5] .INIT=20'h48800;
+// @5:68
+  ARI1 \SCCB_CLK_cnt_s[7]  (
+	.FCO(SCCB_CLK_cnt_s_FCO[7]),
+	.S(SCCB_CLK_cnt_s[7]),
+	.Y(SCCB_CLK_cnt_s_Y[7]),
+	.B(SCCB_CLK_cnt[7]),
+	.C(SCCB_CLK_cnt_lcry),
+	.D(GND),
+	.A(VCC),
+	.FCI(SCCB_CLK_cnt_cry[6])
+);
+defparam \SCCB_CLK_cnt_s[7] .INIT=20'h48800;
+// @5:68
+  ARI1 \SCCB_CLK_cnt_cry[6]  (
+	.FCO(SCCB_CLK_cnt_cry[6]),
+	.S(SCCB_CLK_cnt_s[6]),
+	.Y(SCCB_CLK_cnt_cry_Y[6]),
+	.B(SCCB_CLK_cnt[6]),
+	.C(SCCB_CLK_cnt_lcry),
+	.D(GND),
+	.A(VCC),
+	.FCI(SCCB_CLK_cnt_cry[5])
+);
+defparam \SCCB_CLK_cnt_cry[6] .INIT=20'h48800;
+// @5:97
+  ARI1 step_s_20 (
+	.FCO(step_s_20_FCO),
+	.S(step_s_20_S),
+	.Y(step_s_20_Y),
+	.B(step[0]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam step_s_20.INIT=20'h4AA00;
+// @5:97
+  ARI1 \step_cry[1]  (
+	.FCO(step_cry[1]),
+	.S(step_s[1]),
+	.Y(step_cry_Y[1]),
+	.B(step[1]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(step_s_20_FCO)
+);
+defparam \step_cry[1] .INIT=20'h4AA00;
+// @5:97
+  ARI1 \step_cry[2]  (
+	.FCO(step_cry[2]),
+	.S(step_s[2]),
+	.Y(step_cry_Y[2]),
+	.B(step[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(step_cry[1])
+);
+defparam \step_cry[2] .INIT=20'h4AA00;
+// @5:97
+  ARI1 \step_cry[3]  (
+	.FCO(step_cry[3]),
+	.S(step_s[3]),
+	.Y(step_cry_Y[3]),
+	.B(step[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(step_cry[2])
+);
+defparam \step_cry[3] .INIT=20'h4AA00;
+// @5:97
+  ARI1 \step_cry[4]  (
+	.FCO(step_cry[4]),
+	.S(step_s[4]),
+	.Y(step_cry_Y[4]),
+	.B(step[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(step_cry[3])
+);
+defparam \step_cry[4] .INIT=20'h4AA00;
+// @5:97
+  ARI1 \step_cry[5]  (
+	.FCO(step_cry[5]),
+	.S(step_s[5]),
+	.Y(step_cry_Y[5]),
+	.B(step[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(step_cry[4])
+);
+defparam \step_cry[5] .INIT=20'h4AA00;
+// @5:97
+  ARI1 \step_s[7]  (
+	.FCO(step_s_FCO[7]),
+	.S(step_s[7]),
+	.Y(step_s_Y[7]),
+	.B(step[7]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(step_cry[6])
+);
+defparam \step_s[7] .INIT=20'h4AA00;
+// @5:97
+  ARI1 \step_cry[6]  (
+	.FCO(step_cry[6]),
+	.S(step_s[6]),
+	.Y(step_cry_Y[6]),
+	.B(step[6]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(step_cry[5])
+);
+defparam \step_cry[6] .INIT=20'h4AA00;
+// @5:121
+  CFG4 un1_data_send42_0 (
+	.A(N_18),
+	.B(N_14),
+	.C(N_21),
+	.D(un1_data_send42_0_1_0_Z),
+	.Y(un1_data_send42_0_Z)
+);
+defparam un1_data_send42_0.INIT=16'hFEFF;
+// @5:121
+  CFG4 un1_data_send42_0_1_0 (
+	.A(step[2]),
+	.B(step[1]),
+	.C(step[0]),
+	.D(N_31),
+	.Y(un1_data_send42_0_1_0_Z)
+);
+defparam un1_data_send42_0_1_0.INIT=16'h54FF;
+// @5:121
+  CFG2 un1_data_send42_0_a2_0 (
+	.A(step[5]),
+	.B(step[3]),
+	.Y(N_31)
+);
+defparam un1_data_send42_0_a2_0.INIT=4'h8;
+// @5:121
+  CFG2 un1_data_send42_0_a2_1 (
+	.A(step[0]),
+	.B(step[4]),
+	.Y(N_32)
+);
+defparam un1_data_send42_0_a2_1.INIT=4'h1;
+// @5:121
+  CFG2 un1_data_send40_0_o3 (
+	.A(step[1]),
+	.B(step[2]),
+	.Y(N_9)
+);
+defparam un1_data_send40_0_o3.INIT=4'hE;
+// @5:121
+  CFG2 un1_data_send42_0_o3 (
+	.A(step[3]),
+	.B(step[2]),
+	.Y(N_10)
+);
+defparam un1_data_send42_0_o3.INIT=4'hE;
+// @5:94
+  CFG3 SIO_C (
+	.A(sccb_clk_step_Z),
+	.B(idle_Z),
+	.C(SCCB_CLK_Z),
+	.Y(sio_c_c)
+);
+defparam SIO_C.INIT=8'hB8;
+// @5:73
+  CFG4 SCCB_CLK_cnt12lto7_3 (
+	.A(SCCB_CLK_cnt[7]),
+	.B(SCCB_CLK_cnt[6]),
+	.C(SCCB_CLK_cnt[4]),
+	.D(SCCB_CLK_cnt[3]),
+	.Y(SCCB_CLK_cnt12lto7_3_Z)
+);
+defparam SCCB_CLK_cnt12lto7_3.INIT=16'h7FFF;
+// @5:121
+  CFG3 un1_data_send40_0_a4_0_1 (
+	.A(step[5]),
+	.B(N_32),
+	.C(step[3]),
+	.Y(un1_data_send40_0_a4_0_1_Z)
+);
+defparam un1_data_send40_0_a4_0_1.INIT=8'h04;
+// @5:121
+  CFG4 un1_data_send42_1_1_0_a4_0 (
+	.A(step[2]),
+	.B(step[4]),
+	.C(step[1]),
+	.D(step[3]),
+	.Y(N_24)
+);
+defparam un1_data_send42_1_1_0_a4_0.INIT=16'h8000;
+// @5:121
+  CFG4 un1_data_send42_0_o4 (
+	.A(step[6]),
+	.B(step[7]),
+	.C(step[5]),
+	.D(step[4]),
+	.Y(N_14)
+);
+defparam un1_data_send42_0_o4.INIT=16'hFEEE;
+// @5:121
+  CFG2 data_send_26_0_a2_0_o2 (
+	.A(N_9),
+	.B(step[0]),
+	.Y(N_13)
+);
+defparam data_send_26_0_a2_0_o2.INIT=4'hB;
+// @5:73
+  CFG4 SCCB_CLK_cnt12lto7 (
+	.A(SCCB_CLK_cnt[5]),
+	.B(SCCB_CLK_cnt[2]),
+	.C(SCCB_CLK_cnt[1]),
+	.D(SCCB_CLK_cnt12lto7_3_Z),
+	.Y(SCCB_CLK_cnt_lcry)
+);
+defparam SCCB_CLK_cnt12lto7.INIT=16'hFF57;
+// @5:121
+  CFG4 data_send_26_0_a2_0_a4 (
+	.A(step[5]),
+	.B(N_13),
+	.C(step[4]),
+	.D(step[3]),
+	.Y(data_send_26)
+);
+defparam data_send_26_0_a2_0_a4.INIT=16'h0203;
+// @5:121
+  CFG4 un1_data_send42_0_a4 (
+	.A(step[5]),
+	.B(N_10),
+	.C(step[1]),
+	.D(step[0]),
+	.Y(N_18)
+);
+defparam un1_data_send42_0_a4.INIT=16'h8000;
+// @5:121
+  CFG4 un1_data_send42_0_a4_2 (
+	.A(step[5]),
+	.B(step[1]),
+	.C(N_10),
+	.D(N_32),
+	.Y(N_21)
+);
+defparam un1_data_send42_0_a4_2.INIT=16'h0400;
+// @5:111
+  CFG3 idle_RNO (
+	.A(step[7]),
+	.B(step[6]),
+	.C(step[5]),
+	.Y(N_92_i)
+);
+defparam idle_RNO.INIT=8'hFE;
+// @5:111
+  CFG4 sccb_clk_step_RNO (
+	.A(step[7]),
+	.B(step[6]),
+	.C(step[4]),
+	.D(step[3]),
+	.Y(data_send79_2_0_i)
+);
+defparam sccb_clk_step_RNO.INIT=16'hFFFE;
+// @5:121
+  CFG3 un1_data_send42_1_1_0_1 (
+	.A(N_21),
+	.B(N_24),
+	.C(N_14),
+	.Y(un1_data_send42_1_1_0_1_Z)
+);
+defparam un1_data_send42_1_1_0_1.INIT=8'hFE;
+// @5:121
+  CFG4 un1_data_send40_0 (
+	.A(N_31),
+	.B(N_9),
+	.C(N_14),
+	.D(un1_data_send40_0_a4_0_1_Z),
+	.Y(un1_data_send40_0_Z)
+);
+defparam un1_data_send40_0.INIT=16'hFBF8;
+// @5:68
+  CFG2 SCCB_CLK_RNO (
+	.A(SCCB_CLK_cnt_lcry),
+	.B(SCCB_CLK_0),
+	.Y(N_8_i)
+);
+defparam SCCB_CLK_RNO.INIT=4'h9;
+// @5:111
+  CFG4 data_send_RNO (
+	.A(N_13),
+	.B(un1_data_send42_1_1_0_1_Z),
+	.C(step[3]),
+	.D(step[5]),
+	.Y(un1_data_send42_1_0_i)
+);
+defparam data_send_RNO.INIT=16'h1033;
+//@6:60
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* SCCB_CTRL */
+
+module sccb_design (
+  xclk,
+  sio_c,
+  sio_d
+)
+;
+input xclk ;
+output sio_c ;
+output sio_d ;
+wire xclk ;
+wire sio_c ;
+wire sio_d ;
+wire VCC ;
+wire GND ;
+wire data_send ;
+wire xclk_c ;
+wire sio_c_c ;
+wire \SCCB_CTRL_0.idle_i  ;
+wire xclk_ibuf_Z ;
+  CLKINT xclk_ibuf_RNIN1HC (
+	.Y(xclk_c),
+	.A(xclk_ibuf_Z)
+);
+// @6:21
+  INBUF xclk_ibuf (
+	.Y(xclk_ibuf_Z),
+	.PAD(xclk)
+);
+// @6:25
+  OUTBUF sio_c_obuf (
+	.PAD(sio_c),
+	.D(sio_c_c)
+);
+// @6:29
+  TRIBUFF sio_d_obuft (
+	.PAD(sio_d),
+	.D(data_send),
+	.E(\SCCB_CTRL_0.idle_i )
+);
+// @6:60
+  SCCB_CTRL SCCB_CTRL_0 (
+	.sio_c_c(sio_c_c),
+	.xclk_c(xclk_c),
+	.data_send_1z(data_send),
+	.idle_i(\SCCB_CTRL_0.idle_i )
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* sccb_design */
+

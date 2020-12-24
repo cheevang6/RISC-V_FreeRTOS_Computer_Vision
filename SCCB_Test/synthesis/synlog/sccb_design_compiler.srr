@@ -1,0 +1,119 @@
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Verilog Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v" (library work)
+@I::"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v" (library work)
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module sccb_design
+@N: CG364 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":4:7:4:15|Synthesizing module SCCB_CTRL in library work.
+Running optimization stage 1 on SCCB_CTRL .......
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Pruning register bits 7 to 1 of data_out[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v":9:7:9:17|Synthesizing module sccb_design in library work.
+Running optimization stage 1 on sccb_design .......
+Running optimization stage 2 on sccb_design .......
+Running optimization stage 2 on SCCB_CTRL .......
+@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":68:4:68:9|Optimizing register bit SCCB_CLK_cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":68:4:68:9|Pruning register bit 8 of SCCB_CLK_cnt[8:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Dec 17 13:24:41 2020
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+
+Linker output is up to date. No re-linking necessary
+
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Dec 17 13:24:41 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Dec 17 13:24:41 2020
+
+###########################################################]

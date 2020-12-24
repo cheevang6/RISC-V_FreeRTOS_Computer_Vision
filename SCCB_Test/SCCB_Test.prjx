@@ -1,0 +1,284 @@
+KEY LIBERO "12.800"
+KEY CAPTURE "12.800.0.16"
+KEY DEFAULT_IMPORT_LOC "E:\Naveen\Projects\G4_i\G4i_AnalogPairs\trunk\HW\VL_33V_18V\proj01\hdl"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "SYSTEMVERILOG"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "IGLOO2"
+KEY VendorTechnology_Die "PA4MGL2500_N"
+KEY VendorTechnology_Package "vf256"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4MGL2500_N"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test"
+KEY ProjectDescription "SPI4.2"
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "sccb_design::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\work\sccb_design\sccb_design.cxf,actgen_cxf"
+STATE="utd"
+TIME="1607132021"
+SIZE="1763"
+ENDFILE
+VALUE "<project>\component\work\sccb_design\sccb_design.v,hdl"
+STATE="utd"
+TIME="1607132021"
+SIZE="2577"
+PARENT="<project>\component\work\sccb_design\sccb_design.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
+STATE="utd"
+TIME="1607132079"
+SIZE="1015"
+IS_TARGET="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\sccb_design.ide_des,ide_des"
+STATE="utd"
+TIME="1607132079"
+SIZE="391"
+ENDFILE
+VALUE "<project>\hdl\SCCB_CTRL.v,hdl"
+STATE="utd"
+TIME="1608242197"
+SIZE="7774"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1608240464"
+SIZE="661"
+ENDFILE
+VALUE "<project>\stimulus\SCCB_tb.v,tb_hdl"
+STATE="utd"
+TIME="1608241858"
+SIZE="754"
+ENDFILE
+VALUE "<project>\synthesis\sccb_design.so,so"
+STATE="utd"
+TIME="1608240283"
+SIZE="245"
+ENDFILE
+VALUE "<project>\synthesis\sccb_design.vm,syn_vm"
+STATE="ood"
+TIME="1608240282"
+SIZE="14407"
+ENDFILE
+VALUE "<project>\synthesis\sccb_design_syn.prj,prj"
+STATE="utd"
+TIME="1608240283"
+SIZE="2227"
+ENDFILE
+VALUE "<project>\synthesis\sccb_design_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1608240282"
+SIZE="1272"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1607131169"
+SIZE="159"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "sccb_design::work"
+FILE "<project>\component\work\sccb_design\sccb_design.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\SCCB_tb.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST sccb_design
+VALUE "<project>\stimulus\SCCB_tb.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1fs
+VsimOpt=
+EntityName=SCCB_tb
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v12.3\ModelSim\win32acoem\modelsim.exe"
+PARAM=" -l SCCB_tb_presynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v12.3\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "sccb_design::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+HDL;hdl\SCCB_CTRL.v;0
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:synplify.log
+HDL;stimulus\SCCB_tb.v;0
+Constraint Manager;Constraint Manager;0
+StartPage;StartPage;0
+SmartDesign;sccb_design;0
+ACTIVEVIEW;hdl\SCCB_CTRL.v
+ENDLIST
+LIST ModuleSubBlockList
+LIST "SCCB_CTRL::work","hdl\SCCB_CTRL.v","FALSE","FALSE"
+ENDLIST
+LIST "sccb_design::work","component\work\sccb_design\sccb_design.v","TRUE","FALSE"
+SUBBLOCK "SCCB_CTRL::work","hdl\SCCB_CTRL.v","FALSE","FALSE"
+ENDLIST
+LIST "SCCB_tb::work","stimulus\SCCB_tb.v","FALSE","TRUE"
+SUBBLOCK "SCCB_CTRL::work","hdl\SCCB_CTRL.v","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\user.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

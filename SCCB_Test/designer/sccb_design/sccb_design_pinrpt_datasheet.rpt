@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+-Pin Report - Date: Fri Dec  4 17:34:59 2020 Pinchecksum: NOT-AVAILABLE
+-Product: Designer
+-Release: v12.3
+-Version: 12.800.0.16
+-Design Name: sccb_design
+-Family: IGLOO2
+-Die: M2GL025
+-Package: 256 VF
+-----------------------------------------------------------------
+
+Port  |Pin |Fixed |Function                      |Bank     |I/O Std   |Direction                      |I/O state in Flash*Freeze mode |Resistor Pull                      |I/O available in Flash*Freeze mode |Schmitt Trigger |Odt_Static    |Odt Imp (Ohm)  |Low Power Exit |Input Delay |Slew         |Pre-Emphasis      |Output Drive (mA) |Output Load (pF) |
+------|----|------|------------------------------|---------|----------|-------------------------------|-------------------------------|-----------------------------------|-----------------------------------|----------------|--------------|---------------|---------------|------------|-------------|------------------|------------------|-----------------|
+sio_c  T6   Yes    MSIO120NB4/CCC_SW0_CLKI2       Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+sio_d  T9   Yes    MSIO130PB4/VCCC_SE0_CLKI       Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+xclk   P9   Yes    MSIO131PB4/GB11/VCCC_SE0_CLKI  Bank4     LVCMOS33   Input                           TRISTATE                        None                                No                                  Off              ---            ---             Off             Off          ---           ---                ---                ---               

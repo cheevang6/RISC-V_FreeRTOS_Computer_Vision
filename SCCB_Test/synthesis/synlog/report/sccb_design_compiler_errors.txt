@@ -1,0 +1,2 @@
+@E: CS153 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":71:25:71:25|Can't mix blocking and non-blocking assignments to a variable
+

@@ -1,0 +1,89 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/simulation
+vSCCB_CTRL
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1608240469
+!i10b 1
+!s100 zcebP>d>GSHPcT[^9XdLo1
+!s11b ccchj0GAnBceIPCR3`NEA3
+IcbEA]VCEQ[n<>3HB_XXS52
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z4 w1608240347
+Z5 8C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/synthesis/sccb_design.v
+Z6 FC:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/synthesis/sccb_design.v
+L0 5
+Z7 OW;L;2019.2;69
+r1
+!s85 0
+31
+Z8 !s108 1608240469.000000
+Z9 !s107 C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/synthesis/sccb_design.v|
+Z10 !s90 -reportprogress|300|-sv|-work|postsynth|C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/synthesis/sccb_design.v|
+!s101 -O0
+!i113 1
+Z11 o-sv -work postsynth -O0
+Z12 tCvgOpt 0
+n@s@c@c@b_@c@t@r@l
+vsccb_design
+R1
+R2
+!i10b 1
+!s100 <I<P;bHi=8dN7Ni6L;QNX2
+!s11b fZmX<W[2^JMT0GQGB9c<e0
+I2c<BzI4a=1CjIR0=JJPFH0
+R3
+S1
+R0
+R4
+R5
+R6
+L0 207
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+vSCCB_tb
+R1
+R2
+!i10b 1
+!s100 2a2oe?zcD8SaaJjV74TFU3
+!s11b GbcGFc=7o]CUc2RZh<A2W1
+IFf`IY^:Q_on:ZDHe[>Th=2
+R3
+S1
+R0
+w1608240274
+8C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v
+FC:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v
+L0 21
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v|
+!s90 -reportprogress|300|+incdir+C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus|-sv|-work|postsynth|C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v|
+!s101 -O0
+!i113 1
+R11
+!s92 +incdir+C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus -sv -work postsynth -O0
+R12
+n@s@c@c@b_tb

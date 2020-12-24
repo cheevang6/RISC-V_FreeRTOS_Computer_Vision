@@ -1,0 +1,89 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/simulation
+vSCCB_CTRL
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1608240951
+!i10b 1
+!s100 Mz2^SYb4l:n2c`k1NK?Pn0
+!s11b o@K0_M0ZFDIDCfUA]zfU=0
+I]9VEY7GbzngH642jSbe9D1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1608239475
+8C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/hdl/SCCB_CTRL.v
+FC:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/hdl/SCCB_CTRL.v
+L0 4
+Z4 OW;L;2019.2;69
+r1
+!s85 0
+31
+Z5 !s108 1608240951.000000
+!s107 C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/hdl/SCCB_CTRL.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/hdl/SCCB_CTRL.v|
+!s101 -O0
+!i113 1
+Z6 o-sv -work presynth -O0
+Z7 tCvgOpt 0
+n@s@c@c@b_@c@t@r@l
+vsccb_design
+R1
+R2
+!i10b 1
+!s100 6a]JlSELdNV588K82MVja1
+!s11b 9L6bQ2o9GJ>M52Hg;m2f93
+IH=]>KZT66NQhcloY_EXL=2
+R3
+S1
+R0
+w1607132021
+8C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/component/work/sccb_design/sccb_design.v
+FC:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/component/work/sccb_design/sccb_design.v
+L0 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/component/work/sccb_design/sccb_design.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/component/work/sccb_design/sccb_design.v|
+!s101 -O0
+!i113 1
+R6
+R7
+vSCCB_tb
+R1
+R2
+!i10b 1
+!s100 2a2oe?zcD8SaaJjV74TFU3
+!s11b GbcGFc=7o]CUc2RZh<A2W1
+IZFm_VTR8og=@i41Cf7RE@1
+R3
+S1
+R0
+w1608240274
+8C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v
+FC:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v
+L0 21
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v|
+!s90 -reportprogress|300|+incdir+C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus|-sv|-work|presynth|C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v|
+!s101 -O0
+!i113 1
+R6
+!s92 +incdir+C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus -sv -work presynth -O0
+R7
+n@s@c@c@b_tb
