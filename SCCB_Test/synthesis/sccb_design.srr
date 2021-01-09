@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-95FBL6H
 
-# Thu Dec 17 13:24:41 2020
+# Wed Jan  6 16:36:16 2021
 
 #Implementation: synthesis
 
@@ -49,41 +49,40 @@ Synopsys Verilog Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 0
 @I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v" (library work)
-@I::"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\component\work\sccb_design\sccb_design.v" (library work)
 Verilog syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+Options changed - recompiling
 Selecting top level module sccb_design
-@N: CG364 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":4:7:4:15|Synthesizing module SCCB_CTRL in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":4:7:4:15|Synthesizing module SCCB_CTRL in library work.
 Running optimization stage 1 on SCCB_CTRL .......
-@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Optimizing register bit data_out[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":111:4:111:9|Pruning register bits 7 to 1 of data_out[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CG364 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\component\work\sccb_design\sccb_design.v":9:7:9:17|Synthesizing module sccb_design in library work.
+@A: CL282 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":70:4:70:9|Feedback mux created for signal SCCB_MID_PULSE. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":120:4:120:9|Optimizing register bit data_out[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":120:4:120:9|Optimizing register bit data_out[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":120:4:120:9|Optimizing register bit data_out[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":120:4:120:9|Optimizing register bit data_out[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":120:4:120:9|Optimizing register bit data_out[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":120:4:120:9|Optimizing register bit data_out[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":120:4:120:9|Optimizing register bit data_out[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":120:4:120:9|Pruning register bits 7 to 1 of data_out[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\component\work\sccb_design\sccb_design.v":9:7:9:17|Synthesizing module sccb_design in library work.
 Running optimization stage 1 on sccb_design .......
 Running optimization stage 2 on sccb_design .......
 Running optimization stage 2 on SCCB_CTRL .......
-@W: CL190 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":68:4:68:9|Optimizing register bit SCCB_CLK_cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL260 :"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\hdl\SCCB_CTRL.v":68:4:68:9|Pruning register bit 8 of SCCB_CLK_cnt[8:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":70:4:70:9|Optimizing register bit SCCB_CLK_CNT[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\hdl\SCCB_CTRL.v":70:4:70:9|Pruning register bit 8 of SCCB_CLK_CNT[8:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
-@L: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\layer0.rt.csv
+@L: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 69MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Dec 17 13:24:41 2020
+# Wed Jan  6 16:36:16 2021
 
 ###########################################################]
 ###########################################################[
@@ -104,16 +103,14 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
 
 @N|Running in 64-bit mode
-
-Linker output is up to date. No re-linking necessary
-
+File C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Dec 17 13:24:41 2020
+# Wed Jan  6 16:36:16 2021
 
 ###########################################################]
 @END
@@ -123,18 +120,40 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Dec 17 13:24:41 2020
+# Wed Jan  6 16:36:16 2021
 
 ###########################################################]
+###########################################################[
 
-@A: multi_srs_gen output is up to date. No run necessary.
-To force a re-synthesis, select [Resynthesize All] in menu [Run].
-Click link to view previous log file.
-Multi-srs Generator Report
-@R:"C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synlog\sccb_design_multi_srs_gen.srr"
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+File C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\sccb_design_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Jan  6 16:36:17 2021
+
+###########################################################]
 Premap Report
 
-# Thu Dec 17 13:24:41 2020
+# Wed Jan  6 16:36:18 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -155,10 +174,10 @@ Synopsys Generic Technology Pre-mapping, Version mapact2018q4p1, Build 026R, Bui
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-Reading constraint file: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design\synthesis.fdc
+Reading constraint file: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\designer\sccb_design\synthesis.fdc
 @N: MF284 |Setting synthesis effort to medium for the design
-@L: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design_scck.rpt 
-Printing clock  summary report in "C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design_scck.rpt" file 
+@L: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design_scck.rpt 
+Printing clock  summary report in "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design_scck.rpt" file 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
@@ -172,15 +191,15 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
 
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: BN362 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":111:4:111:9|Removing sequential instance data_out_1[0] (in view: work.SCCB_CTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":120:4:120:9|Removing sequential instance data_out_1[0] (in view: work.SCCB_CTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 syn_allowed_resources : blockrams=31  set on top level netlist sccb_design
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
 
@@ -190,9 +209,9 @@ Clock Summary
           Start                                 Requested     Requested     Clock        Clock                   Clock
 Level     Clock                                 Frequency     Period        Type         Group                   Load 
 ----------------------------------------------------------------------------------------------------------------------
-0 -       SCCB_CTRL|SCCB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     11   
+0 -       sccb_design|xclk                      100.0 MHz     10.000        inferred     Inferred_clkgroup_0     18   
                                                                                                                       
-0 -       sccb_design|xclk                      100.0 MHz     10.000        inferred     Inferred_clkgroup_0     9    
+0 -       SCCB_CTRL|SCCB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     4    
 ======================================================================================================================
 
 
@@ -200,20 +219,20 @@ Level     Clock                                 Frequency     Period        Type
 Clock Load Summary
 ***********************
 
-                                      Clock     Source                               Clock Pin                  Non-clock Pin     Non-clock Pin              
-Clock                                 Load      Pin                                  Seq Example                Seq Example       Comb Example               
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-SCCB_CTRL|SCCB_CLK_inferred_clock     11        SCCB_CTRL_0.SCCB_CLK.Q[0](dffre)     SCCB_CTRL_0.idle.C         -                 SCCB_CTRL_0.SIO_C.A[0](mux)
-                                                                                                                                                             
-sccb_design|xclk                      9         xclk(port)                           SCCB_CTRL_0.SCCB_CLK.C     -                 -                          
-=============================================================================================================================================================
+                                      Clock     Source                               Clock Pin                        Non-clock Pin                       Non-clock Pin                   
+Clock                                 Load      Pin                                  Seq Example                      Seq Example                         Comb Example                    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sccb_design|xclk                      18        xclk(port)                           SCCB_CTRL_0.SCCB_MID_PULSE.C     -                                   -                               
+                                                                                                                                                                                          
+SCCB_CTRL|SCCB_CLK_inferred_clock     4         SCCB_CTRL_0.SCCB_CLK.Q[0](dffre)     SCCB_CTRL_0.idle.C               SCCB_CTRL_0.SCCB_MID_PULSE.D[0]     SCCB_CTRL_0.SCCB_CLK_2.I[0](inv)
+==========================================================================================================================================================================================
 
-@W: MT530 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":68:4:68:9|Found inferred clock sccb_design|xclk which controls 9 sequential elements including SCCB_CTRL_0.SCCB_CLK_cnt[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":111:4:111:9|Found inferred clock SCCB_CTRL|SCCB_CLK_inferred_clock which controls 11 sequential elements including SCCB_CTRL_0.data_send. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":106:4:106:9|Found inferred clock sccb_design|xclk which controls 18 sequential elements including SCCB_CTRL_0.step[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":120:4:120:9|Found inferred clock SCCB_CTRL|SCCB_CLK_inferred_clock which controls 4 sequential elements including SCCB_CTRL_0.data_send. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design.sap.
+@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
@@ -230,12 +249,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Dec 17 13:24:42 2020
+# Wed Jan  6 16:36:18 2021
 
 ###########################################################]
 Map & Optimize Report
 
-# Thu Dec 17 13:24:42 2020
+# Wed Jan  6 16:36:18 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -267,10 +286,10 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
 
 @N: MF284 |Setting synthesis effort to medium for the design
 
@@ -281,12 +300,11 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: FX1172 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":68:4:68:9|User-specified initial value defined for instance SCCB_CTRL_0.SCCB_CLK_cnt[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":70:4:70:9|User-specified initial value defined for instance SCCB_CTRL_0.SCCB_CLK_CNT[7:0] is being ignored due to limitations in architecture. 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
-@N: MO231 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":97:4:97:9|Found counter in view:work.SCCB_CTRL(verilog) instance step[7:0] 
-@N: MO231 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":68:4:68:9|Found counter in view:work.SCCB_CTRL(verilog) instance SCCB_CLK_cnt[7:0] 
+@N: MO231 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":70:4:70:9|Found counter in view:work.SCCB_CTRL(verilog) instance SCCB_CLK_CNT[7:0] 
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
@@ -294,44 +312,44 @@ Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; M
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		     4.77ns		  40 /        20
-@N: FP130 |Promoting Net SCCB_CTRL_0.SCCB_CLK on CLKINT  I_21 
-@N: FP130 |Promoting Net xclk_c on CLKINT  I_22 
+   1		0h:00m:00s		     5.70ns		  49 /        21
+@N: FP130 |Promoting Net xclk_c on CLKINT  I_12 
+@N: FP130 |Promoting Net SCCB_CTRL_0.SCCB_CLK on CLKINT  I_13 
 
 Added 0 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 
 
@@ -341,46 +359,46 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 9 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 11 clock pin(s) of sequential element(s)
-0 instances converted, 11 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 18 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 3 clock pin(s) of sequential element(s)
+0 instances converted, 3 sequential instances remain driven by gated/generated clocks
 
 ================================= Non-Gated/Non-Generated Clocks ==================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance            
 ---------------------------------------------------------------------------------------------------
-@K:CKID0002       xclk                port                   9          SCCB_CTRL_0.SCCB_CLK_cnt[7]
+@K:CKID0002       xclk                port                   18         SCCB_CTRL_0.SCCB_CLK_CNT[7]
 ===================================================================================================
 ============================================================================= Gated/Generated Clocks ==============================================================================
 Clock Tree ID     Driving Element          Drive Element Type     Fanout     Sample Instance               Explanation                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       SCCB_CTRL_0.SCCB_CLK     SLE                    11         SCCB_CTRL_0.sccb_clk_step     No generated or derived clock directive on output of sequential instance
+@K:CKID0001       SCCB_CTRL_0.SCCB_CLK     SLE                    3          SCCB_CTRL_0.sccb_clk_step     No generated or derived clock directive on output of sequential instance
 ===================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 134MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 134MB)
 
-Writing Analyst data base C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synwork\sccb_design_m.srm
+Writing Analyst data base C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\synwork\sccb_design_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 @W: MT420 |Found inferred clock sccb_design|xclk with period 10.00ns. Please declare a user-defined clock on port xclk.
 @W: MT420 |Found inferred clock SCCB_CTRL|SCCB_CLK_inferred_clock with period 10.00ns. Please declare a user-defined clock on net SCCB_CTRL_0.SCCB_CLK_0.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Thu Dec 17 13:24:42 2020
+# Timing report written on Wed Jan  6 16:36:19 2021
 #
 
 
@@ -388,7 +406,7 @@ Top view:               sccb_design
 Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design\synthesis.fdc
+Constraint File(s):    C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\designer\sccb_design\synthesis.fdc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -400,13 +418,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 6.521
+Worst slack in design: 6.332
 
                                       Requested     Estimated     Requested     Estimated               Clock        Clock              
 Starting Clock                        Frequency     Frequency     Period        Period        Slack     Type         Group              
 ----------------------------------------------------------------------------------------------------------------------------------------
-SCCB_CTRL|SCCB_CLK_inferred_clock     100.0 MHz     287.5 MHz     10.000        3.479         6.521     inferred     Inferred_clkgroup_1
-sccb_design|xclk                      100.0 MHz     292.2 MHz     10.000        3.423         6.577     inferred     Inferred_clkgroup_0
+SCCB_CTRL|SCCB_CLK_inferred_clock     100.0 MHz     417.9 MHz     10.000        2.393         7.607     inferred     Inferred_clkgroup_1
+sccb_design|xclk                      100.0 MHz     272.6 MHz     10.000        3.668         6.332     inferred     Inferred_clkgroup_0
 ========================================================================================================================================
 
 
@@ -420,8 +438,9 @@ Clocks                                                                |    rise 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                           Ending                             |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-sccb_design|xclk                   sccb_design|xclk                   |  10.000      6.577  |  No paths    -      |  No paths    -      |  No paths    -    
-SCCB_CTRL|SCCB_CLK_inferred_clock  SCCB_CTRL|SCCB_CLK_inferred_clock  |  10.000      6.521  |  No paths    -      |  No paths    -      |  No paths    -    
+sccb_design|xclk                   sccb_design|xclk                   |  10.000      6.332  |  No paths    -      |  No paths    -      |  No paths    -    
+sccb_design|xclk                   SCCB_CTRL|SCCB_CLK_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+SCCB_CTRL|SCCB_CLK_inferred_clock  SCCB_CTRL|SCCB_CLK_inferred_clock  |  10.000      7.607  |  No paths    -      |  No paths    -      |  No paths    -    
 ============================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -444,39 +463,27 @@ Detailed Report for Clock: SCCB_CTRL|SCCB_CLK_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                        Starting                                                           Arrival          
-Instance                Reference                             Type     Pin     Net         Time        Slack
-                        Clock                                                                               
-------------------------------------------------------------------------------------------------------------
-SCCB_CTRL_0.step[4]     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       step[4]     0.108       6.521
-SCCB_CTRL_0.step[3]     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       step[3]     0.108       6.550
-SCCB_CTRL_0.step[0]     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       step[0]     0.108       6.570
-SCCB_CTRL_0.step[2]     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       step[2]     0.108       6.595
-SCCB_CTRL_0.step[5]     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       step[5]     0.087       6.760
-SCCB_CTRL_0.step[7]     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       step[7]     0.087       7.001
-SCCB_CTRL_0.step[6]     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       step[6]     0.087       7.089
-SCCB_CTRL_0.step[1]     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       step[1]     0.108       7.176
-============================================================================================================
+                              Starting                                                                 Arrival          
+Instance                      Reference                             Type     Pin     Net               Time        Slack
+                              Clock                                                                                     
+------------------------------------------------------------------------------------------------------------------------
+SCCB_CTRL_0.data_send         SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       data_send         0.087       7.607
+SCCB_CTRL_0.idle              SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       idle              0.087       8.460
+SCCB_CTRL_0.sccb_clk_step     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      Q       sccb_clk_step     0.087       8.709
+========================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                              Starting                                                                         Required          
-Instance                      Reference                             Type     Pin     Net                       Time         Slack
-                              Clock                                                                                              
----------------------------------------------------------------------------------------------------------------------------------
-SCCB_CTRL_0.data_send         SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      EN      un1_data_send42_1_0_i     9.662        6.521
-SCCB_CTRL_0.sccb_clk_step     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      EN      un1_data_send42_0         9.662        6.770
-SCCB_CTRL_0.idle              SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      EN      un1_data_send40_0         9.662        7.084
-SCCB_CTRL_0.data_send         SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       data_send_26              9.745        7.139
-SCCB_CTRL_0.step[5]           SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       step_s[5]                 9.745        8.063
-SCCB_CTRL_0.step[7]           SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       step_s[7]                 9.745        8.081
-SCCB_CTRL_0.step[6]           SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       step_s[6]                 9.745        8.097
-SCCB_CTRL_0.step[3]           SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       step_s[3]                 9.745        8.103
-SCCB_CTRL_0.step[4]           SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       step_s[4]                 9.745        8.137
-SCCB_CTRL_0.sccb_clk_step     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       data_send79_2_0_i         9.745        8.161
-=================================================================================================================================
+                              Starting                                                                        Required          
+Instance                      Reference                             Type     Pin     Net                      Time         Slack
+                              Clock                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------
+SCCB_CTRL_0.data_send         SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       data_send_26             9.745        7.607
+SCCB_CTRL_0.idle              SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       idle_2                   9.745        8.460
+SCCB_CTRL_0.sccb_clk_step     SCCB_CTRL|SCCB_CLK_inferred_clock     SLE      D       sccb_clk_step_2_iv_i     9.745        8.709
+================================================================================================================================
 
 
 
@@ -486,40 +493,34 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.338
+    - Setup time:                            0.255
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.662
+    = Required time:                         9.745
 
-    - Propagation time:                      3.141
+    - Propagation time:                      2.138
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     6.521
+    = Slack (non-critical) :                 7.607
 
-    Number of logic level(s):                4
-    Starting point:                          SCCB_CTRL_0.step[4] / Q
-    Ending point:                            SCCB_CTRL_0.data_send / EN
+    Number of logic level(s):                2
+    Starting point:                          SCCB_CTRL_0.data_send / Q
+    Ending point:                            SCCB_CTRL_0.data_send / D
     The start point is clocked by            SCCB_CTRL|SCCB_CLK_inferred_clock [rising] on pin CLK
     The end   point is clocked by            SCCB_CTRL|SCCB_CLK_inferred_clock [rising] on pin CLK
 
 Instance / Net                                   Pin      Pin               Arrival     No. of    
 Name                                    Type     Name     Dir     Delay     Time        Fan Out(s)
 --------------------------------------------------------------------------------------------------
-SCCB_CTRL_0.step[4]                     SLE      Q        Out     0.108     0.108       -         
-step[4]                                 Net      -        -       0.896     -           6         
-SCCB_CTRL_0.un1_data_send42_0_a2_1      CFG2     B        In      -         1.004       -         
-SCCB_CTRL_0.un1_data_send42_0_a2_1      CFG2     Y        Out     0.148     1.152       -         
-N_32                                    Net      -        -       0.497     -           2         
-SCCB_CTRL_0.un1_data_send42_0_a4_2      CFG4     D        In      -         1.649       -         
-SCCB_CTRL_0.un1_data_send42_0_a4_2      CFG4     Y        Out     0.271     1.921       -         
-N_21                                    Net      -        -       0.497     -           2         
-SCCB_CTRL_0.un1_data_send42_1_1_0_1     CFG3     A        In      -         2.418       -         
-SCCB_CTRL_0.un1_data_send42_1_1_0_1     CFG3     Y        Out     0.077     2.495       -         
-un1_data_send42_1_1_0_1                 Net      -        -       0.248     -           1         
-SCCB_CTRL_0.data_send_RNO               CFG4     B        In      -         2.743       -         
-SCCB_CTRL_0.data_send_RNO               CFG4     Y        Out     0.143     2.887       -         
-un1_data_send42_1_0_i                   Net      -        -       0.254     -           1         
-SCCB_CTRL_0.data_send                   SLE      EN       In      -         3.141       -         
+SCCB_CTRL_0.data_send                   SLE      Q        Out     0.087     0.087       -         
+data_send                               Net      -        -       1.117     -           3         
+SCCB_CTRL_0.data_send_26_0_iv_0_0_1     CFG4     B        In      -         1.205       -         
+SCCB_CTRL_0.data_send_26_0_iv_0_0_1     CFG4     Y        Out     0.165     1.369       -         
+data_send_26_0_iv_0_0_1                 Net      -        -       0.248     -           1         
+SCCB_CTRL_0.data_send_26_0_iv_0_0       CFG4     D        In      -         1.618       -         
+SCCB_CTRL_0.data_send_26_0_iv_0_0       CFG4     Y        Out     0.271     1.889       -         
+data_send_26                            Net      -        -       0.248     -           1         
+SCCB_CTRL_0.data_send                   SLE      D        In      -         2.138       -         
 ==================================================================================================
-Total path delay (propagation time + setup) of 3.479 is 1.086(31.2%) logic and 2.392(68.8%) route.
+Total path delay (propagation time + setup) of 2.393 is 0.779(32.5%) logic and 1.614(67.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -538,15 +539,16 @@ Starting Points with Worst Slack
 Instance                        Reference            Type     Pin     Net                 Time        Slack
                                 Clock                                                                      
 -----------------------------------------------------------------------------------------------------------
-SCCB_CTRL_0.SCCB_CLK_cnt[3]     sccb_design|xclk     SLE      Q       SCCB_CLK_cnt[3]     0.087       6.577
-SCCB_CTRL_0.SCCB_CLK_cnt[4]     sccb_design|xclk     SLE      Q       SCCB_CLK_cnt[4]     0.087       6.678
-SCCB_CTRL_0.SCCB_CLK_cnt[6]     sccb_design|xclk     SLE      Q       SCCB_CLK_cnt[6]     0.087       6.760
-SCCB_CTRL_0.SCCB_CLK_cnt[7]     sccb_design|xclk     SLE      Q       SCCB_CLK_cnt[7]     0.087       6.803
-SCCB_CTRL_0.SCCB_CLK_cnt[1]     sccb_design|xclk     SLE      Q       SCCB_CLK_cnt[1]     0.108       7.211
-SCCB_CTRL_0.SCCB_CLK_cnt[2]     sccb_design|xclk     SLE      Q       SCCB_CLK_cnt[2]     0.108       7.285
-SCCB_CTRL_0.SCCB_CLK_cnt[5]     sccb_design|xclk     SLE      Q       SCCB_CLK_cnt[5]     0.108       7.334
-SCCB_CTRL_0.SCCB_CLK            sccb_design|xclk     SLE      Q       SCCB_CLK_i          0.108       8.106
-SCCB_CTRL_0.SCCB_CLK_cnt[0]     sccb_design|xclk     SLE      Q       SCCB_CLK_cnt[0]     0.108       8.768
+SCCB_CTRL_0.SCCB_CLK_CNT[1]     sccb_design|xclk     SLE      Q       SCCB_CLK_CNT[1]     0.108       6.332
+SCCB_CTRL_0.SCCB_CLK_CNT[2]     sccb_design|xclk     SLE      Q       SCCB_CLK_CNT[2]     0.108       6.410
+SCCB_CTRL_0.SCCB_CLK_CNT[5]     sccb_design|xclk     SLE      Q       SCCB_CLK_CNT[5]     0.087       6.452
+SCCB_CTRL_0.SCCB_CLK_CNT[6]     sccb_design|xclk     SLE      Q       SCCB_CLK_CNT[6]     0.108       6.533
+SCCB_CTRL_0.SCCB_CLK_CNT[3]     sccb_design|xclk     SLE      Q       SCCB_CLK_CNT[3]     0.108       6.963
+SCCB_CTRL_0.SCCB_CLK_CNT[4]     sccb_design|xclk     SLE      Q       SCCB_CLK_CNT[4]     0.108       7.037
+SCCB_CTRL_0.SCCB_CLK_CNT[7]     sccb_design|xclk     SLE      Q       SCCB_CLK_CNT[7]     0.108       7.086
+SCCB_CTRL_0.step[0]             sccb_design|xclk     SLE      Q       step[0]             0.087       7.097
+SCCB_CTRL_0.step[1]             sccb_design|xclk     SLE      Q       step[1]             0.087       7.157
+SCCB_CTRL_0.step[5]             sccb_design|xclk     SLE      Q       step[5]             0.087       7.197
 ===========================================================================================================
 
 
@@ -557,15 +559,16 @@ Ending Points with Worst Slack
 Instance                        Reference            Type     Pin     Net                   Time         Slack
                                 Clock                                                                         
 --------------------------------------------------------------------------------------------------------------
-SCCB_CTRL_0.SCCB_CLK_cnt[7]     sccb_design|xclk     SLE      D       SCCB_CLK_cnt_s[7]     9.745        6.577
-SCCB_CTRL_0.SCCB_CLK_cnt[6]     sccb_design|xclk     SLE      D       SCCB_CLK_cnt_s[6]     9.745        6.594
-SCCB_CTRL_0.SCCB_CLK_cnt[5]     sccb_design|xclk     SLE      D       SCCB_CLK_cnt_s[5]     9.745        6.610
-SCCB_CTRL_0.SCCB_CLK_cnt[0]     sccb_design|xclk     SLE      D       SCCB_CLK_cnt_s[0]     9.745        6.623
-SCCB_CTRL_0.SCCB_CLK_cnt[1]     sccb_design|xclk     SLE      D       SCCB_CLK_cnt_s[1]     9.745        6.623
-SCCB_CTRL_0.SCCB_CLK_cnt[2]     sccb_design|xclk     SLE      D       SCCB_CLK_cnt_s[2]     9.745        6.623
-SCCB_CTRL_0.SCCB_CLK_cnt[3]     sccb_design|xclk     SLE      D       SCCB_CLK_cnt_s[3]     9.745        6.623
-SCCB_CTRL_0.SCCB_CLK_cnt[4]     sccb_design|xclk     SLE      D       SCCB_CLK_cnt_s[4]     9.745        6.623
-SCCB_CTRL_0.SCCB_CLK            sccb_design|xclk     SLE      D       N_8_i                 9.745        6.891
+SCCB_CTRL_0.SCCB_CLK_CNT[7]     sccb_design|xclk     SLE      D       SCCB_CLK_CNT_s[7]     9.745        6.332
+SCCB_CTRL_0.SCCB_CLK_CNT[6]     sccb_design|xclk     SLE      D       SCCB_CLK_CNT_s[6]     9.745        6.347
+SCCB_CTRL_0.SCCB_CLK_CNT[5]     sccb_design|xclk     SLE      D       SCCB_CLK_CNT_s[5]     9.745        6.361
+SCCB_CTRL_0.SCCB_CLK_CNT[0]     sccb_design|xclk     SLE      D       SCCB_CLK_CNT_s[0]     9.745        6.362
+SCCB_CTRL_0.SCCB_CLK_CNT[1]     sccb_design|xclk     SLE      D       SCCB_CLK_CNT_s[1]     9.745        6.362
+SCCB_CTRL_0.SCCB_CLK_CNT[2]     sccb_design|xclk     SLE      D       SCCB_CLK_CNT_s[2]     9.745        6.362
+SCCB_CTRL_0.SCCB_CLK_CNT[3]     sccb_design|xclk     SLE      D       SCCB_CLK_CNT_s[3]     9.745        6.362
+SCCB_CTRL_0.SCCB_CLK_CNT[4]     sccb_design|xclk     SLE      D       SCCB_CLK_CNT_s[4]     9.745        6.362
+SCCB_CTRL_0.SCCB_CLK            sccb_design|xclk     SLE      D       N_8_i                 9.745        6.631
+SCCB_CTRL_0.step[4]             sccb_design|xclk     SLE      D       step_3[4]             9.745        7.097
 ==============================================================================================================
 
 
@@ -580,54 +583,54 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.745
 
-    - Propagation time:                      3.167
+    - Propagation time:                      3.413
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 6.577
+    = Slack (critical) :                     6.332
 
     Number of logic level(s):                10
-    Starting point:                          SCCB_CTRL_0.SCCB_CLK_cnt[3] / Q
-    Ending point:                            SCCB_CTRL_0.SCCB_CLK_cnt[7] / D
+    Starting point:                          SCCB_CTRL_0.SCCB_CLK_CNT[1] / Q
+    Ending point:                            SCCB_CTRL_0.SCCB_CLK_CNT[7] / D
     The start point is clocked by            sccb_design|xclk [rising] on pin CLK
     The end   point is clocked by            sccb_design|xclk [rising] on pin CLK
 
-Instance / Net                                Pin      Pin               Arrival     No. of    
-Name                                 Type     Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------
-SCCB_CTRL_0.SCCB_CLK_cnt[3]          SLE      Q        Out     0.087     0.087       -         
-SCCB_CLK_cnt[3]                      Net      -        -       0.497     -           2         
-SCCB_CTRL_0.SCCB_CLK_cnt12lto7_3     CFG4     D        In      -         0.584       -         
-SCCB_CTRL_0.SCCB_CLK_cnt12lto7_3     CFG4     Y        Out     0.326     0.911       -         
-SCCB_CLK_cnt12lto7_3                 Net      -        -       0.248     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt12lto7       CFG4     D        In      -         1.159       -         
-SCCB_CTRL_0.SCCB_CLK_cnt12lto7       CFG4     Y        Out     0.288     1.447       -         
-SCCB_CLK_cnt_lcry                    Net      -        -       1.058     -           10        
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[0]      ARI1     C        In      -         2.505       -         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[0]      ARI1     FCO      Out     0.243     2.748       -         
-SCCB_CLK_cnt_cry[0]                  Net      -        -       0.000     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[1]      ARI1     FCI      In      -         2.748       -         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[1]      ARI1     FCO      Out     0.016     2.764       -         
-SCCB_CLK_cnt_cry[1]                  Net      -        -       0.000     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[2]      ARI1     FCI      In      -         2.764       -         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[2]      ARI1     FCO      Out     0.016     2.781       -         
-SCCB_CLK_cnt_cry[2]                  Net      -        -       0.000     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[3]      ARI1     FCI      In      -         2.781       -         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[3]      ARI1     FCO      Out     0.016     2.797       -         
-SCCB_CLK_cnt_cry[3]                  Net      -        -       0.000     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[4]      ARI1     FCI      In      -         2.797       -         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[4]      ARI1     FCO      Out     0.016     2.813       -         
-SCCB_CLK_cnt_cry[4]                  Net      -        -       0.000     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[5]      ARI1     FCI      In      -         2.813       -         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[5]      ARI1     FCO      Out     0.016     2.829       -         
-SCCB_CLK_cnt_cry[5]                  Net      -        -       0.000     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[6]      ARI1     FCI      In      -         2.829       -         
-SCCB_CTRL_0.SCCB_CLK_cnt_cry[6]      ARI1     FCO      Out     0.016     2.846       -         
-SCCB_CLK_cnt_cry[6]                  Net      -        -       0.000     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt_s[7]        ARI1     FCI      In      -         2.846       -         
-SCCB_CTRL_0.SCCB_CLK_cnt_s[7]        ARI1     S        Out     0.073     2.919       -         
-SCCB_CLK_cnt_s[7]                    Net      -        -       0.248     -           1         
-SCCB_CTRL_0.SCCB_CLK_cnt[7]          SLE      D        In      -         3.167       -         
-===============================================================================================
-Total path delay (propagation time + setup) of 3.423 is 1.371(40.1%) logic and 2.052(59.9%) route.
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                      Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+SCCB_CTRL_0.SCCB_CLK_CNT[1]               SLE      Q        Out     0.108     0.108       -         
+SCCB_CLK_CNT[1]                           Net      -        -       0.745     -           3         
+SCCB_CTRL_0.SCCB_CLK_CNT12lto7_i_a2_3     CFG4     D        In      -         0.854       -         
+SCCB_CTRL_0.SCCB_CLK_CNT12lto7_i_a2_3     CFG4     Y        Out     0.288     1.141       -         
+SCCB_CLK_CNT12lto7_i_a2_3                 Net      -        -       0.248     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT12lto7_i_a2       CFG4     D        In      -         1.390       -         
+SCCB_CTRL_0.SCCB_CLK_CNT12lto7_i_a2       CFG4     Y        Out     0.317     1.707       -         
+SCCB_CLK_CNT_lcry                         Net      -        -       1.058     -           10        
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[0]           ARI1     C        In      -         2.765       -         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[0]           ARI1     FCO      Out     0.238     3.003       -         
+SCCB_CLK_CNT_cry[0]                       Net      -        -       0.000     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[1]           ARI1     FCI      In      -         3.003       -         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[1]           ARI1     FCO      Out     0.015     3.018       -         
+SCCB_CLK_CNT_cry[1]                       Net      -        -       0.000     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[2]           ARI1     FCI      In      -         3.018       -         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[2]           ARI1     FCO      Out     0.015     3.033       -         
+SCCB_CLK_CNT_cry[2]                       Net      -        -       0.000     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[3]           ARI1     FCI      In      -         3.033       -         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[3]           ARI1     FCO      Out     0.015     3.047       -         
+SCCB_CLK_CNT_cry[3]                       Net      -        -       0.000     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[4]           ARI1     FCI      In      -         3.047       -         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[4]           ARI1     FCO      Out     0.015     3.062       -         
+SCCB_CLK_CNT_cry[4]                       Net      -        -       0.000     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[5]           ARI1     FCI      In      -         3.062       -         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[5]           ARI1     FCO      Out     0.015     3.076       -         
+SCCB_CLK_CNT_cry[5]                       Net      -        -       0.000     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[6]           ARI1     FCI      In      -         3.076       -         
+SCCB_CTRL_0.SCCB_CLK_CNT_cry[6]           ARI1     FCO      Out     0.015     3.091       -         
+SCCB_CLK_CNT_cry[6]                       Net      -        -       0.000     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT_s[7]             ARI1     FCI      In      -         3.091       -         
+SCCB_CTRL_0.SCCB_CLK_CNT_s[7]             ARI1     S        Out     0.073     3.164       -         
+SCCB_CLK_CNT_s[7]                         Net      -        -       0.248     -           1         
+SCCB_CTRL_0.SCCB_CLK_CNT[7]               SLE      D        In      -         3.413       -         
+====================================================================================================
+Total path delay (propagation time + setup) of 3.668 is 1.368(37.3%) logic and 2.300(62.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -649,16 +652,16 @@ Mapping to part: m2gl025vf400std
 Cell usage:
 CLKINT          2 uses
 CFG1           2 uses
-CFG2           6 uses
-CFG3           4 uses
-CFG4           12 uses
+CFG2           5 uses
+CFG3           8 uses
+CFG4           20 uses
 
 Carry cells:
 ARI1            17 uses - used for arithmetic functions
 
 
 Sequential Cells: 
-SLE            20 uses
+SLE            21 uses
 
 DSP Blocks:    0 of 34 (0%)
 
@@ -671,7 +674,7 @@ TRIBUFF        1 use
 
 Global Clock Buffers: 2
 
-Total LUTs:    41
+Total LUTs:    52
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -679,14 +682,14 @@ RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  20 + 0 + 0 + 0 = 20;
-Total number of LUTs after P&R:  41 + 0 + 0 + 0 = 41;
+Total number of SLEs after P&R:  21 + 0 + 0 + 0 = 21;
+Total number of LUTs after P&R:  52 + 0 + 0 + 0 = 52;
 
 Mapper successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Dec 17 13:24:43 2020
+# Wed Jan  6 16:36:19 2021
 
 ###########################################################]

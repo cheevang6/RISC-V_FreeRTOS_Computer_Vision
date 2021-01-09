@@ -13,12 +13,12 @@ Hostname: DESKTOP-95FBL6H
 
 Implementation : synthesis
 
-# Written on Thu Dec 17 13:24:42 2020
+# Written on Wed Jan  6 16:36:18 2021
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "sccb_design"
-Constraint File(s):      "C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design\synthesis.fdc"
+Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\designer\sccb_design\synthesis.fdc"
 
 
 
@@ -38,6 +38,7 @@ Clock Relationships
 Starting                              Ending                                |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 sccb_design|xclk                      sccb_design|xclk                      |     10.000           |     No paths         |     No paths         |     No paths                         
+sccb_design|xclk                      SCCB_CTRL|SCCB_CLK_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 SCCB_CTRL|SCCB_CLK_inferred_clock     SCCB_CTRL|SCCB_CLK_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
 =======================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.

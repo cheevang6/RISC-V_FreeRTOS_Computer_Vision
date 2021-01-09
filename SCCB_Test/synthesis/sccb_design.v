@@ -4,202 +4,244 @@
 
 module SCCB_CTRL(
        sio_c_c,
-       xclk_c,
        data_send_1z,
+       xclk_c,
        idle_i
     );
 output sio_c_c;
-input  xclk_c;
 output data_send_1z;
+input  xclk_c;
 output idle_i;
 
     wire [7:0] step;
-    wire [7:0] step_s;
-    wire [7:0] SCCB_CLK_cnt;
-    wire [7:0] SCCB_CLK_cnt_s;
-    wire [6:0] SCCB_CLK_cnt_cry;
-    wire [6:0] SCCB_CLK_cnt_cry_Y;
-    wire [7:7] SCCB_CLK_cnt_s_FCO;
-    wire [7:7] SCCB_CLK_cnt_s_Y;
-    wire [6:1] step_cry;
-    wire [6:1] step_cry_Y;
-    wire [7:7] step_s_FCO;
-    wire [7:7] step_s_Y;
-    wire SCCB_CLK_Z, SCCB_CLK_0, idle_Z, VCC, data_send_26, 
-        un1_data_send42_1_0_i, GND, sccb_clk_step_Z, data_send79_2_0_i, 
-        un1_data_send42_0_Z, N_92_i, un1_data_send40_0_Z, N_8_i, 
-        SCCB_CLK_cnt_s_19_FCO, SCCB_CLK_cnt_s_19_S, 
-        SCCB_CLK_cnt_s_19_Y, SCCB_CLK_cnt_lcry, step_s_20_FCO, 
-        step_s_20_S, step_s_20_Y, N_18, N_14, N_21, 
-        un1_data_send42_0_1_0_Z, N_31, N_32, N_9, N_10, 
-        SCCB_CLK_cnt12lto7_3_Z, un1_data_send40_0_a4_0_1_Z, N_24, N_13, 
-        un1_data_send42_1_1_0_1_Z, N_27;
+    wire [0:0] step_i_0;
+    wire [5:1] step_3;
+    wire [7:0] SCCB_CLK_CNT;
+    wire [7:0] SCCB_CLK_CNT_s;
+    wire [6:0] SCCB_CLK_CNT_cry;
+    wire [6:0] SCCB_CLK_CNT_cry_Y;
+    wire [7:7] SCCB_CLK_CNT_s_FCO;
+    wire [7:7] SCCB_CLK_CNT_s_Y;
+    wire SCCB_CLK_Z, SCCB_CLK_0, idle_Z, VCC, GND, un4_step_cry_2_S, 
+        un4_step_cry_3_S, un4_step_cry_6_S, un4_step_s_7_S, 
+        data_send_26, SCCB_MID_PULSE_Z, sccb_clk_step_Z, 
+        sccb_clk_step_2_iv_i_Z, idle_2, N_8_i, N_16_i, 
+        SCCB_CLK_CNT_s_10_FCO, SCCB_CLK_CNT_s_10_S, 
+        SCCB_CLK_CNT_s_10_Y, SCCB_CLK_CNT_lcry, un4_step_s_1_11_FCO, 
+        un4_step_s_1_11_S, un4_step_s_1_11_Y, un4_step_cry_1_Z, 
+        un4_step_cry_1_S, un4_step_cry_1_Y, un4_step_cry_2_Z, 
+        un4_step_cry_2_Y, un4_step_cry_3_Z, un4_step_cry_3_Y, 
+        un4_step_cry_4_Z, un4_step_cry_4_S, un4_step_cry_4_Y, 
+        un4_step_cry_5_Z, un4_step_cry_5_S, un4_step_cry_5_Y, 
+        un4_step_s_7_FCO, un4_step_s_7_Y, un4_step_cry_6_Z, 
+        un4_step_cry_6_Y, data_send80, un1_data_send82_0, un1_step_3_i, 
+        un1_data_send42_1_i, N_26, N_53, N_52, N_48, 
+        data_send60_0_a2_2_Z, SCCB_CLK_CNT12lto7_i_a2_3_Z, 
+        SCCB_MID_PULSE4_i_a2_4_Z, SCCB_MID_PULSE4_i_a2_3_Z, 
+        data_send_26_0_iv_0_a2_1_2_Z, N_19, N_56, N_50, data_send82, 
+        data_send40, data_send_26_0_iv_0_a2_3_2_Z, 
+        data_send_26_0_iv_0_a2_0_0_Z, un1_data_send82_2_0_0_Z, 
+        data_send_26_0_iv_0_0_1_Z, data_send_26_0_iv_0_1_0_Z, N_26_0;
     
-    CFG4 #( .INIT(16'h0400) )  un1_data_send42_0_a4_2 (.A(step[5]), .B(
-        step[1]), .C(N_10), .D(N_32), .Y(N_21));
-    ARI1 #( .INIT(20'h4AA00) )  \step_cry[3]  (.A(VCC), .B(step[3]), 
-        .C(GND), .D(GND), .FCI(step_cry[2]), .S(step_s[3]), .Y(
-        step_cry_Y[3]), .FCO(step_cry[3]));
-    SLE \SCCB_CLK_cnt[6]  (.D(SCCB_CLK_cnt_s[6]), .CLK(xclk_c), .EN(
+    CFG3 #( .INIT(8'h54) )  sccb_clk_step_2_iv_i (.A(un1_step_3_i), .B(
+        un1_data_send42_1_i), .C(sccb_clk_step_Z), .Y(
+        sccb_clk_step_2_iv_i_Z));
+    SLE \SCCB_CLK_CNT[6]  (.D(SCCB_CLK_CNT_s[6]), .CLK(xclk_c), .EN(
         VCC), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
-        SCCB_CLK_cnt[6]));
-    SLE \SCCB_CLK_cnt[2]  (.D(SCCB_CLK_cnt_s[2]), .CLK(xclk_c), .EN(
+        SCCB_CLK_CNT[6]));
+    SLE \SCCB_CLK_CNT[2]  (.D(SCCB_CLK_CNT_s[2]), .CLK(xclk_c), .EN(
         VCC), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
-        SCCB_CLK_cnt[2]));
+        SCCB_CLK_CNT[2]));
+    CFG4 #( .INIT(16'h2000) )  data_send82_0_a2 (.A(step[1]), .B(
+        step[0]), .C(N_52), .D(N_50), .Y(data_send82));
     CFG1 #( .INIT(2'h1) )  idle_RNIAA0D (.A(idle_Z), .Y(idle_i));
     SLE data_send (.D(data_send_26), .CLK(SCCB_CLK_Z), .EN(
-        un1_data_send42_1_0_i), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(
-        GND), .LAT(GND), .Q(data_send_1z));
-    SLE \SCCB_CLK_cnt[0]  (.D(SCCB_CLK_cnt_s[0]), .CLK(xclk_c), .EN(
+        SCCB_MID_PULSE_Z), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), 
+        .LAT(GND), .Q(data_send_1z));
+    SLE \SCCB_CLK_CNT[0]  (.D(SCCB_CLK_CNT_s[0]), .CLK(xclk_c), .EN(
         VCC), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
-        SCCB_CLK_cnt[0]));
-    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_cnt_cry[1]  (.A(VCC), .B(
-        SCCB_CLK_cnt[1]), .C(SCCB_CLK_cnt_lcry), .D(GND), .FCI(
-        SCCB_CLK_cnt_cry[0]), .S(SCCB_CLK_cnt_s[1]), .Y(
-        SCCB_CLK_cnt_cry_Y[1]), .FCO(SCCB_CLK_cnt_cry[1]));
-    CFG4 #( .INIT(16'hFF57) )  SCCB_CLK_cnt12lto7 (.A(SCCB_CLK_cnt[5]), 
-        .B(SCCB_CLK_cnt[2]), .C(SCCB_CLK_cnt[1]), .D(
-        SCCB_CLK_cnt12lto7_3_Z), .Y(SCCB_CLK_cnt_lcry));
-    SLE \step[7]  (.D(step_s[7]), .CLK(SCCB_CLK_Z), .EN(VCC), .ALn(VCC)
-        , .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[7]));
-    SLE \step[0]  (.D(step_s[0]), .CLK(SCCB_CLK_Z), .EN(VCC), .ALn(VCC)
-        , .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[0]));
-    SLE \SCCB_CLK_cnt[5]  (.D(SCCB_CLK_cnt_s[5]), .CLK(xclk_c), .EN(
+        SCCB_CLK_CNT[0]));
+    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_CNT_cry[1]  (.A(VCC), .B(
+        SCCB_CLK_CNT[1]), .C(SCCB_CLK_CNT_lcry), .D(GND), .FCI(
+        SCCB_CLK_CNT_cry[0]), .S(SCCB_CLK_CNT_s[1]), .Y(
+        SCCB_CLK_CNT_cry_Y[1]), .FCO(SCCB_CLK_CNT_cry[1]));
+    ARI1 #( .INIT(20'h4AA00) )  un4_step_cry_6 (.A(VCC), .B(step[6]), 
+        .C(GND), .D(GND), .FCI(un4_step_cry_5_Z), .S(un4_step_cry_6_S), 
+        .Y(un4_step_cry_6_Y), .FCO(un4_step_cry_6_Z));
+    SLE \step[7]  (.D(un4_step_s_7_S), .CLK(xclk_c), .EN(VCC), .ALn(
+        VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[7]));
+    SLE \step[0]  (.D(step_i_0[0]), .CLK(xclk_c), .EN(VCC), .ALn(VCC), 
+        .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[0]));
+    SLE \SCCB_CLK_CNT[5]  (.D(SCCB_CLK_CNT_s[5]), .CLK(xclk_c), .EN(
         VCC), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
-        SCCB_CLK_cnt[5]));
-    CFG4 #( .INIT(16'h8000) )  un1_data_send42_1_1_0_a4_0 (.A(step[2]), 
-        .B(step[4]), .C(step[1]), .D(step[3]), .Y(N_24));
-    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_cnt_cry[2]  (.A(VCC), .B(
-        SCCB_CLK_cnt[2]), .C(SCCB_CLK_cnt_lcry), .D(GND), .FCI(
-        SCCB_CLK_cnt_cry[1]), .S(SCCB_CLK_cnt_s[2]), .Y(
-        SCCB_CLK_cnt_cry_Y[2]), .FCO(SCCB_CLK_cnt_cry[2]));
-    CFG3 #( .INIT(8'hFE) )  idle_RNO (.A(step[7]), .B(step[6]), .C(
-        step[5]), .Y(N_92_i));
-    CFG4 #( .INIT(16'hFFFE) )  sccb_clk_step_RNO (.A(step[7]), .B(
-        step[6]), .C(step[4]), .D(step[3]), .Y(data_send79_2_0_i));
-    CFG4 #( .INIT(16'h8000) )  un1_data_send42_0_a4 (.A(step[5]), .B(
-        N_10), .C(step[1]), .D(step[0]), .Y(N_18));
-    SLE \SCCB_CLK_cnt[3]  (.D(SCCB_CLK_cnt_s[3]), .CLK(xclk_c), .EN(
+        SCCB_CLK_CNT[5]));
+    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_CNT_cry[2]  (.A(VCC), .B(
+        SCCB_CLK_CNT[2]), .C(SCCB_CLK_CNT_lcry), .D(GND), .FCI(
+        SCCB_CLK_CNT_cry[1]), .S(SCCB_CLK_CNT_s[2]), .Y(
+        SCCB_CLK_CNT_cry_Y[2]), .FCO(SCCB_CLK_CNT_cry[2]));
+    ARI1 #( .INIT(20'h4AA00) )  un4_step_cry_3 (.A(VCC), .B(step[3]), 
+        .C(GND), .D(GND), .FCI(un4_step_cry_2_Z), .S(un4_step_cry_3_S), 
+        .Y(un4_step_cry_3_Y), .FCO(un4_step_cry_3_Z));
+    CFG4 #( .INIT(16'h0001) )  SCCB_MID_PULSE4_i_a2_3 (.A(
+        SCCB_CLK_CNT[4]), .B(SCCB_CLK_CNT[3]), .C(SCCB_CLK_CNT[0]), .D(
+        SCCB_CLK_CNT[5]), .Y(SCCB_MID_PULSE4_i_a2_3_Z));
+    SLE \SCCB_CLK_CNT[3]  (.D(SCCB_CLK_CNT_s[3]), .CLK(xclk_c), .EN(
         VCC), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
-        SCCB_CLK_cnt[3]));
-    ARI1 #( .INIT(20'h4AA00) )  \step_cry[1]  (.A(VCC), .B(step[1]), 
-        .C(GND), .D(GND), .FCI(step_s_20_FCO), .S(step_s[1]), .Y(
-        step_cry_Y[1]), .FCO(step_cry[1]));
-    CFG3 #( .INIT(8'h04) )  un1_data_send40_0_a4_0_1 (.A(step[5]), .B(
-        N_32), .C(step[3]), .Y(un1_data_send40_0_a4_0_1_Z));
-    SLE \step[2]  (.D(step_s[2]), .CLK(SCCB_CLK_Z), .EN(VCC), .ALn(VCC)
-        , .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[2]));
-    CFG2 #( .INIT(4'hB) )  data_send_26_0_a2_0_o2 (.A(N_9), .B(step[0])
-        , .Y(N_13));
-    CFG2 #( .INIT(4'hE) )  un1_data_send40_0_o3 (.A(step[1]), .B(
-        step[2]), .Y(N_9));
-    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_cnt_s[7]  (.A(VCC), .B(
-        SCCB_CLK_cnt[7]), .C(SCCB_CLK_cnt_lcry), .D(GND), .FCI(
-        SCCB_CLK_cnt_cry[6]), .S(SCCB_CLK_cnt_s[7]), .Y(
-        SCCB_CLK_cnt_s_Y[7]), .FCO(SCCB_CLK_cnt_s_FCO[7]));
-    SLE \SCCB_CLK_cnt[4]  (.D(SCCB_CLK_cnt_s[4]), .CLK(xclk_c), .EN(
+        SCCB_CLK_CNT[3]));
+    ARI1 #( .INIT(20'h4AA00) )  un4_step_cry_5 (.A(VCC), .B(step[5]), 
+        .C(GND), .D(GND), .FCI(un4_step_cry_4_Z), .S(un4_step_cry_5_S), 
+        .Y(un4_step_cry_5_Y), .FCO(un4_step_cry_5_Z));
+    CFG2 #( .INIT(4'h8) )  data_send82_0_a3_0 (.A(step[3]), .B(step[5])
+        , .Y(N_52));
+    SLE \step[2]  (.D(un4_step_cry_2_S), .CLK(xclk_c), .EN(VCC), .ALn(
+        VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[2]));
+    CFG4 #( .INIT(16'h1000) )  data_send40_0_a2 (.A(step[1]), .B(
+        step[0]), .C(N_53), .D(N_50), .Y(data_send40));
+    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_CNT_s[7]  (.A(VCC), .B(
+        SCCB_CLK_CNT[7]), .C(SCCB_CLK_CNT_lcry), .D(GND), .FCI(
+        SCCB_CLK_CNT_cry[6]), .S(SCCB_CLK_CNT_s[7]), .Y(
+        SCCB_CLK_CNT_s_Y[7]), .FCO(SCCB_CLK_CNT_s_FCO[7]));
+    SLE \SCCB_CLK_CNT[4]  (.D(SCCB_CLK_CNT_s[4]), .CLK(xclk_c), .EN(
         VCC), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
-        SCCB_CLK_cnt[4]));
-    SLE \step[6]  (.D(step_s[6]), .CLK(SCCB_CLK_Z), .EN(VCC), .ALn(VCC)
-        , .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[6]));
-    CFG4 #( .INIT(16'h7FFF) )  SCCB_CLK_cnt12lto7_3 (.A(
-        SCCB_CLK_cnt[7]), .B(SCCB_CLK_cnt[6]), .C(SCCB_CLK_cnt[4]), .D(
-        SCCB_CLK_cnt[3]), .Y(SCCB_CLK_cnt12lto7_3_Z));
-    ARI1 #( .INIT(20'h4AA00) )  \step_cry[2]  (.A(VCC), .B(step[2]), 
-        .C(GND), .D(GND), .FCI(step_cry[1]), .S(step_s[2]), .Y(
-        step_cry_Y[2]), .FCO(step_cry[2]));
-    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_cnt_cry[0]  (.A(VCC), .B(
-        SCCB_CLK_cnt[0]), .C(SCCB_CLK_cnt_lcry), .D(GND), .FCI(
-        SCCB_CLK_cnt_s_19_FCO), .S(SCCB_CLK_cnt_s[0]), .Y(
-        SCCB_CLK_cnt_cry_Y[0]), .FCO(SCCB_CLK_cnt_cry[0]));
-    ARI1 #( .INIT(20'h4AA00) )  \step_cry[5]  (.A(VCC), .B(step[5]), 
-        .C(GND), .D(GND), .FCI(step_cry[4]), .S(step_s[5]), .Y(
-        step_cry_Y[5]), .FCO(step_cry[5]));
+        SCCB_CLK_CNT[4]));
+    SLE \step[6]  (.D(un4_step_cry_6_S), .CLK(xclk_c), .EN(VCC), .ALn(
+        VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[6]));
+    CFG2 #( .INIT(4'hB) )  un1_data_send42_1_0_o2 (.A(data_send80), .B(
+        un1_data_send82_0), .Y(N_26));
+    CFG3 #( .INIT(8'h13) )  SCCB_MID_PULSE_RNO (.A(
+        SCCB_MID_PULSE4_i_a2_3_Z), .B(SCCB_CLK_Z), .C(
+        SCCB_MID_PULSE4_i_a2_4_Z), .Y(N_16_i));
+    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_CNT_cry[0]  (.A(VCC), .B(
+        SCCB_CLK_CNT[0]), .C(SCCB_CLK_CNT_lcry), .D(GND), .FCI(
+        SCCB_CLK_CNT_s_10_FCO), .S(SCCB_CLK_CNT_s[0]), .Y(
+        SCCB_CLK_CNT_cry_Y[0]), .FCO(SCCB_CLK_CNT_cry[0]));
     CLKINT SCCB_CLK_inferred_clock_RNIPQ8 (.A(SCCB_CLK_0), .Y(
         SCCB_CLK_Z));
-    SLE \step[4]  (.D(step_s[4]), .CLK(SCCB_CLK_Z), .EN(VCC), .ALn(VCC)
-        , .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[4]));
-    CFG2 #( .INIT(4'h1) )  un1_data_send42_0_a2_1 (.A(step[0]), .B(
-        step[4]), .Y(N_32));
-    CFG4 #( .INIT(16'h54FF) )  un1_data_send42_0_1_0 (.A(step[2]), .B(
-        step[1]), .C(step[0]), .D(N_31), .Y(un1_data_send42_0_1_0_Z));
+    SLE \step[4]  (.D(step_3[4]), .CLK(xclk_c), .EN(VCC), .ALn(VCC), 
+        .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[4]));
+    CFG4 #( .INIT(16'hEAAA) )  \step_3[5]  (.A(un4_step_cry_5_S), .B(
+        N_48), .C(data_send60_0_a2_2_Z), .D(N_53), .Y(step_3[5]));
+    CFG4 #( .INIT(16'h0001) )  SCCB_MID_PULSE4_i_a2_4 (.A(
+        SCCB_CLK_CNT[7]), .B(SCCB_CLK_CNT[6]), .C(SCCB_CLK_CNT[2]), .D(
+        SCCB_CLK_CNT[1]), .Y(SCCB_MID_PULSE4_i_a2_4_Z));
     SLE SCCB_CLK (.D(N_8_i), .CLK(xclk_c), .EN(VCC), .ALn(VCC), .ADn(
         VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(SCCB_CLK_0));
-    SLE sccb_clk_step (.D(data_send79_2_0_i), .CLK(SCCB_CLK_Z), .EN(
-        un1_data_send42_0_Z), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND)
-        , .LAT(GND), .Q(sccb_clk_step_Z));
-    SLE \SCCB_CLK_cnt[7]  (.D(SCCB_CLK_cnt_s[7]), .CLK(xclk_c), .EN(
+    CFG4 #( .INIT(16'hCC80) )  data_send_26_0_iv_0_0_1 (.A(N_56), .B(
+        data_send_1z), .C(step[5]), .D(data_send_26_0_iv_0_a2_1_2_Z), 
+        .Y(data_send_26_0_iv_0_0_1_Z));
+    SLE sccb_clk_step (.D(sccb_clk_step_2_iv_i_Z), .CLK(SCCB_CLK_Z), 
+        .EN(SCCB_MID_PULSE_Z), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(
+        GND), .LAT(GND), .Q(sccb_clk_step_Z));
+    CFG4 #( .INIT(16'hFFFE) )  un1_data_send82_2_0 (.A(
+        un1_data_send82_2_0_0_Z), .B(data_send82), .C(data_send80), .D(
+        N_56), .Y(un1_data_send82_0));
+    CFG3 #( .INIT(8'hB8) )  SIO_C_i_m2 (.A(sccb_clk_step_Z), .B(idle_Z)
+        , .C(SCCB_CLK_Z), .Y(sio_c_c));
+    SLE \SCCB_CLK_CNT[7]  (.D(SCCB_CLK_CNT_s[7]), .CLK(xclk_c), .EN(
         VCC), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
-        SCCB_CLK_cnt[7]));
-    SLE \step[1]  (.D(step_s[1]), .CLK(SCCB_CLK_Z), .EN(VCC), .ALn(VCC)
-        , .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[1]));
-    ARI1 #( .INIT(20'h4AA00) )  \step_s[7]  (.A(VCC), .B(step[7]), .C(
-        GND), .D(GND), .FCI(step_cry[6]), .S(step_s[7]), .Y(
-        step_s_Y[7]), .FCO(step_s_FCO[7]));
-    CFG4 #( .INIT(16'hFBF8) )  un1_data_send40_0 (.A(N_31), .B(N_9), 
-        .C(N_14), .D(un1_data_send40_0_a4_0_1_Z), .Y(
-        un1_data_send40_0_Z));
-    CFG4 #( .INIT(16'hFEEE) )  un1_data_send42_0_o4 (.A(step[6]), .B(
-        step[7]), .C(step[5]), .D(step[4]), .Y(N_14));
-    SLE idle (.D(N_92_i), .CLK(SCCB_CLK_Z), .EN(un1_data_send40_0_Z), 
+        SCCB_CLK_CNT[7]));
+    CFG4 #( .INIT(16'h8880) )  SCCB_CLK_CNT12lto7_i_a2_3 (.A(
+        SCCB_CLK_CNT[6]), .B(SCCB_CLK_CNT[5]), .C(SCCB_CLK_CNT[2]), .D(
+        SCCB_CLK_CNT[1]), .Y(SCCB_CLK_CNT12lto7_i_a2_3_Z));
+    SLE \step[1]  (.D(step_3[1]), .CLK(xclk_c), .EN(VCC), .ALn(VCC), 
+        .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[1]));
+    CFG4 #( .INIT(16'hCCC8) )  data_send_26_0_iv_0_1_0 (.A(N_26), .B(
+        data_send_1z), .C(data_send_26_0_iv_0_a2_3_2_Z), .D(
+        data_send82), .Y(data_send_26_0_iv_0_1_0_Z));
+    CFG4 #( .INIT(16'hFFF8) )  data_send_26_0_iv_0_0 (.A(step[0]), .B(
+        data_send_26_0_iv_0_a2_0_0_Z), .C(data_send_26_0_iv_0_1_0_Z), 
+        .D(data_send_26_0_iv_0_0_1_Z), .Y(data_send_26));
+    CFG4 #( .INIT(16'h7FFF) )  SCCB_CLK_CNT12lto7_i_a2 (.A(
+        SCCB_CLK_CNT[7]), .B(SCCB_CLK_CNT[4]), .C(SCCB_CLK_CNT[3]), .D(
+        SCCB_CLK_CNT12lto7_i_a2_3_Z), .Y(SCCB_CLK_CNT_lcry));
+    SLE idle (.D(idle_2), .CLK(SCCB_CLK_Z), .EN(SCCB_MID_PULSE_Z), 
         .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
         idle_Z));
-    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_cnt_cry[3]  (.A(VCC), .B(
-        SCCB_CLK_cnt[3]), .C(SCCB_CLK_cnt_lcry), .D(GND), .FCI(
-        SCCB_CLK_cnt_cry[2]), .S(SCCB_CLK_cnt_s[3]), .Y(
-        SCCB_CLK_cnt_cry_Y[3]), .FCO(SCCB_CLK_cnt_cry[3]));
-    CFG4 #( .INIT(16'h0203) )  data_send_26_0_a2_0_a4 (.A(step[5]), .B(
-        N_13), .C(step[4]), .D(step[3]), .Y(data_send_26));
-    CFG2 #( .INIT(4'hE) )  un1_data_send42_0_o3 (.A(step[3]), .B(
-        step[2]), .Y(N_10));
-    ARI1 #( .INIT(20'h4AA00) )  SCCB_CLK_cnt_s_19 (.A(VCC), .B(
-        SCCB_CLK_cnt_lcry), .C(GND), .D(GND), .FCI(VCC), .S(
-        SCCB_CLK_cnt_s_19_S), .Y(SCCB_CLK_cnt_s_19_Y), .FCO(
-        SCCB_CLK_cnt_s_19_FCO));
-    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_cnt_cry[5]  (.A(VCC), .B(
-        SCCB_CLK_cnt[5]), .C(SCCB_CLK_cnt_lcry), .D(GND), .FCI(
-        SCCB_CLK_cnt_cry[4]), .S(SCCB_CLK_cnt_s[5]), .Y(
-        SCCB_CLK_cnt_cry_Y[5]), .FCO(SCCB_CLK_cnt_cry[5]));
+    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_CNT_cry[3]  (.A(VCC), .B(
+        SCCB_CLK_CNT[3]), .C(SCCB_CLK_CNT_lcry), .D(GND), .FCI(
+        SCCB_CLK_CNT_cry[2]), .S(SCCB_CLK_CNT_s[3]), .Y(
+        SCCB_CLK_CNT_cry_Y[3]), .FCO(SCCB_CLK_CNT_cry[3]));
+    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_CNT_cry[5]  (.A(VCC), .B(
+        SCCB_CLK_CNT[5]), .C(SCCB_CLK_CNT_lcry), .D(GND), .FCI(
+        SCCB_CLK_CNT_cry[4]), .S(SCCB_CLK_CNT_s[5]), .Y(
+        SCCB_CLK_CNT_cry_Y[5]), .FCO(SCCB_CLK_CNT_cry[5]));
+    ARI1 #( .INIT(20'h4AA00) )  un4_step_s_7 (.A(VCC), .B(step[7]), .C(
+        GND), .D(GND), .FCI(un4_step_cry_6_Z), .S(un4_step_s_7_S), .Y(
+        un4_step_s_7_Y), .FCO(un4_step_s_7_FCO));
+    ARI1 #( .INIT(20'h4AA00) )  un4_step_cry_4 (.A(VCC), .B(step[4]), 
+        .C(GND), .D(GND), .FCI(un4_step_cry_3_Z), .S(un4_step_cry_4_S), 
+        .Y(un4_step_cry_4_Y), .FCO(un4_step_cry_4_Z));
+    CFG3 #( .INIT(8'h81) )  un1_data_send42_1_0_o2_0 (.A(step[5]), .B(
+        step[2]), .C(step[0]), .Y(N_19));
+    CFG4 #( .INIT(16'h0400) )  data_send_26_0_iv_0_a2_3_2 (.A(step[3]), 
+        .B(step[1]), .C(step[0]), .D(N_50), .Y(
+        data_send_26_0_iv_0_a2_3_2_Z));
+    CFG3 #( .INIT(8'hFB) )  un1_data_send42_1_0_0 (.A(data_send80), .B(
+        un1_data_send82_0), .C(un1_step_3_i), .Y(un1_data_send42_1_i));
     GND GND_Z (.Y(GND));
     VCC VCC_Z (.Y(VCC));
-    CFG4 #( .INIT(16'hFEFF) )  un1_data_send42_0 (.A(N_18), .B(N_14), 
-        .C(N_21), .D(un1_data_send42_0_1_0_Z), .Y(un1_data_send42_0_Z));
-    CFG2 #( .INIT(4'h8) )  un1_data_send42_0_a2_0 (.A(step[5]), .B(
-        step[3]), .Y(N_31));
-    CFG4 #( .INIT(16'h1033) )  data_send_RNO (.A(N_13), .B(
-        un1_data_send42_1_1_0_1_Z), .C(step[3]), .D(step[5]), .Y(
-        un1_data_send42_1_0_i));
-    SLE \SCCB_CLK_cnt[1]  (.D(SCCB_CLK_cnt_s[1]), .CLK(xclk_c), .EN(
+    CFG4 #( .INIT(16'h5400) )  data_send_26_0_iv_0_a2_0_0 (.A(step[1]), 
+        .B(N_53), .C(N_52), .D(N_50), .Y(data_send_26_0_iv_0_a2_0_0_Z));
+    CFG4 #( .INIT(16'hEAAA) )  \step_3[1]  (.A(un4_step_cry_1_S), .B(
+        N_48), .C(data_send60_0_a2_2_Z), .D(N_53), .Y(step_3[1]));
+    CFG3 #( .INIT(8'h10) )  data_send82_0_a3 (.A(step[4]), .B(step[2]), 
+        .C(N_48), .Y(N_50));
+    CFG4 #( .INIT(16'h1000) )  data_send80_0_a2 (.A(step[1]), .B(
+        step[0]), .C(N_52), .D(N_50), .Y(data_send80));
+    SLE \SCCB_CLK_CNT[1]  (.D(SCCB_CLK_CNT_s[1]), .CLK(xclk_c), .EN(
         VCC), .ALn(VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(
-        SCCB_CLK_cnt[1]));
-    CFG2 #( .INIT(4'h9) )  SCCB_CLK_RNO (.A(SCCB_CLK_cnt_lcry), .B(
+        SCCB_CLK_CNT[1]));
+    ARI1 #( .INIT(20'h4AA00) )  un4_step_cry_2 (.A(VCC), .B(step[2]), 
+        .C(GND), .D(GND), .FCI(un4_step_cry_1_Z), .S(un4_step_cry_2_S), 
+        .Y(un4_step_cry_2_Y), .FCO(un4_step_cry_2_Z));
+    CFG2 #( .INIT(4'h9) )  SCCB_CLK_RNO (.A(SCCB_CLK_CNT_lcry), .B(
         SCCB_CLK_0), .Y(N_8_i));
-    ARI1 #( .INIT(20'h4AA00) )  \step_cry[6]  (.A(VCC), .B(step[6]), 
-        .C(GND), .D(GND), .FCI(step_cry[5]), .S(step_s[6]), .Y(
-        step_cry_Y[6]), .FCO(step_cry[6]));
-    ARI1 #( .INIT(20'h4AA00) )  \step_cry[4]  (.A(VCC), .B(step[4]), 
-        .C(GND), .D(GND), .FCI(step_cry[3]), .S(step_s[4]), .Y(
-        step_cry_Y[4]), .FCO(step_cry[4]));
-    CFG3 #( .INIT(8'hB8) )  SIO_C (.A(sccb_clk_step_Z), .B(idle_Z), .C(
-        SCCB_CLK_Z), .Y(sio_c_c));
-    CFG3 #( .INIT(8'hFE) )  un1_data_send42_1_1_0_1 (.A(N_21), .B(N_24)
-        , .C(N_14), .Y(un1_data_send42_1_1_0_1_Z));
-    ARI1 #( .INIT(20'h4AA00) )  step_s_20 (.A(VCC), .B(step[0]), .C(
-        GND), .D(GND), .FCI(VCC), .S(step_s_20_S), .Y(step_s_20_Y), 
-        .FCO(step_s_20_FCO));
-    CFG1 #( .INIT(2'h1) )  \step_RNO[0]  (.A(step[0]), .Y(step_s[0]));
-    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_cnt_cry[4]  (.A(VCC), .B(
-        SCCB_CLK_cnt[4]), .C(SCCB_CLK_cnt_lcry), .D(GND), .FCI(
-        SCCB_CLK_cnt_cry[3]), .S(SCCB_CLK_cnt_s[4]), .Y(
-        SCCB_CLK_cnt_cry_Y[4]), .FCO(SCCB_CLK_cnt_cry[4]));
-    SLE \step[5]  (.D(step_s[5]), .CLK(SCCB_CLK_Z), .EN(VCC), .ALn(VCC)
-        , .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[5]));
-    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_cnt_cry[6]  (.A(VCC), .B(
-        SCCB_CLK_cnt[6]), .C(SCCB_CLK_cnt_lcry), .D(GND), .FCI(
-        SCCB_CLK_cnt_cry[5]), .S(SCCB_CLK_cnt_s[6]), .Y(
-        SCCB_CLK_cnt_cry_Y[6]), .FCO(SCCB_CLK_cnt_cry[6]));
-    SLE \step[3]  (.D(step_s[3]), .CLK(SCCB_CLK_Z), .EN(VCC), .ALn(VCC)
-        , .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[3]));
+    ARI1 #( .INIT(20'h4AA00) )  un4_step_s_1_11 (.A(VCC), .B(step[0]), 
+        .C(GND), .D(GND), .FCI(VCC), .S(un4_step_s_1_11_S), .Y(
+        un4_step_s_1_11_Y), .FCO(un4_step_s_1_11_FCO));
+    CFG4 #( .INIT(16'h2AAA) )  \step_3[4]  (.A(un4_step_cry_4_S), .B(
+        N_48), .C(data_send60_0_a2_2_Z), .D(N_53), .Y(step_3[4]));
+    CFG4 #( .INIT(16'h7530) )  un1_data_send82_2_0_0 (.A(step[5]), .B(
+        step[1]), .C(N_50), .D(N_48), .Y(un1_data_send82_2_0_0_Z));
+    CFG1 #( .INIT(2'h1) )  \step_RNO[0]  (.A(step[0]), .Y(step_i_0[0]));
+    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_CNT_cry[4]  (.A(VCC), .B(
+        SCCB_CLK_CNT[4]), .C(SCCB_CLK_CNT_lcry), .D(GND), .FCI(
+        SCCB_CLK_CNT_cry[3]), .S(SCCB_CLK_CNT_s[4]), .Y(
+        SCCB_CLK_CNT_cry_Y[4]), .FCO(SCCB_CLK_CNT_cry[4]));
+    SLE \step[5]  (.D(step_3[5]), .CLK(xclk_c), .EN(VCC), .ALn(VCC), 
+        .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[5]));
+    CFG3 #( .INIT(8'h10) )  un1_data_send82_2_0_a2_1 (.A(step[4]), .B(
+        step[3]), .C(N_48), .Y(N_56));
+    CFG4 #( .INIT(16'h8000) )  data_send_26_0_iv_0_a2_1_2 (.A(step[4]), 
+        .B(step[3]), .C(step[2]), .D(step[1]), .Y(
+        data_send_26_0_iv_0_a2_1_2_Z));
+    ARI1 #( .INIT(20'h48800) )  \SCCB_CLK_CNT_cry[6]  (.A(VCC), .B(
+        SCCB_CLK_CNT[6]), .C(SCCB_CLK_CNT_lcry), .D(GND), .FCI(
+        SCCB_CLK_CNT_cry[5]), .S(SCCB_CLK_CNT_s[6]), .Y(
+        SCCB_CLK_CNT_cry_Y[6]), .FCO(SCCB_CLK_CNT_cry[6]));
+    CFG2 #( .INIT(4'h1) )  un1_data_send82_2_0_a3 (.A(step[6]), .B(
+        step[7]), .Y(N_48));
+    CFG4 #( .INIT(16'h00FB) )  idle_2_f0 (.A(data_send82), .B(
+        un1_data_send82_0), .C(idle_Z), .D(data_send40), .Y(idle_2));
+    CFG3 #( .INIT(8'h80) )  un1_data_send42_1_0_a2 (.A(step[1]), .B(
+        N_56), .C(N_19), .Y(un1_step_3_i));
+    SLE SCCB_MID_PULSE (.D(N_16_i), .CLK(xclk_c), .EN(VCC), .ALn(VCC), 
+        .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(SCCB_MID_PULSE_Z)
+        );
+    CFG2 #( .INIT(4'h1) )  data_send60_0_a3 (.A(step[3]), .B(step[5]), 
+        .Y(N_53));
+    ARI1 #( .INIT(20'h4AA00) )  SCCB_CLK_CNT_s_10 (.A(VCC), .B(
+        SCCB_CLK_CNT_lcry), .C(GND), .D(GND), .FCI(VCC), .S(
+        SCCB_CLK_CNT_s_10_S), .Y(SCCB_CLK_CNT_s_10_Y), .FCO(
+        SCCB_CLK_CNT_s_10_FCO));
+    CFG4 #( .INIT(16'h0008) )  data_send60_0_a2_2 (.A(step[2]), .B(
+        step[4]), .C(step[1]), .D(step[0]), .Y(data_send60_0_a2_2_Z));
+    ARI1 #( .INIT(20'h4AA00) )  un4_step_cry_1 (.A(VCC), .B(step[1]), 
+        .C(GND), .D(GND), .FCI(un4_step_s_1_11_FCO), .S(
+        un4_step_cry_1_S), .Y(un4_step_cry_1_Y), .FCO(un4_step_cry_1_Z)
+        );
+    SLE \step[3]  (.D(un4_step_cry_3_S), .CLK(xclk_c), .EN(VCC), .ALn(
+        VCC), .ADn(VCC), .SLn(VCC), .SD(GND), .LAT(GND), .Q(step[3]));
     
 endmodule
 
@@ -220,8 +262,8 @@ output sio_d;
     OUTBUF #( .IOSTD("") )  sio_c_obuf (.D(sio_c_c), .PAD(sio_c));
     INBUF #( .IOSTD("") )  xclk_ibuf (.PAD(xclk), .Y(xclk_ibuf_Z));
     VCC VCC_Z (.Y(VCC));
-    SCCB_CTRL SCCB_CTRL_0 (.sio_c_c(sio_c_c), .xclk_c(xclk_c), 
-        .data_send_1z(data_send), .idle_i(\SCCB_CTRL_0.idle_i ));
+    SCCB_CTRL SCCB_CTRL_0 (.sio_c_c(sio_c_c), .data_send_1z(data_send), 
+        .xclk_c(xclk_c), .idle_i(\SCCB_CTRL_0.idle_i ));
     TRIBUFF #( .IOSTD("") )  sio_d_obuft (.D(data_send), .E(
         \SCCB_CTRL_0.idle_i ), .PAD(sio_d));
     GND GND_Z (.Y(GND));

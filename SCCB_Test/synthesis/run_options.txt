@@ -1,13 +1,13 @@
 #--  Synopsys, Inc.
 #--  Version O-2018.09M-SP1-1
-#--  Project file C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\run_options.txt
-#--  Written on Thu Dec 17 13:24:41 2020
+#--  Project file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\run_options.txt
+#--  Written on Wed Jan  6 16:36:16 2021
 
 
 #project files
-add_file -verilog "C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/hdl/SCCB_CTRL.v"
-add_file -verilog "C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/component/work/sccb_design/sccb_design.v"
-add_file -fpga_constraint "C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/designer/sccb_design/synthesis.fdc"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Test/hdl/SCCB_CTRL.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Test/component/work/sccb_design/sccb_design.v"
+add_file -fpga_constraint "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Test/designer/sccb_design/synthesis.fdc"
 
 
 

@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
-<text>Date: Thu Dec 17 13:24:46 2020
+<text>Date: Wed Jan  6 16:36:23 2021
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -76,7 +76,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design.vm</cell>
+ <cell>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design.vm</cell>
 </row>
 </table>
 <section><name>Options</name></section>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>41</cell>
+ <cell>52</cell>
  <cell>27696</cell>
- <cell>0.15</cell>
+ <cell>0.19</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>20</cell>
+ <cell>21</cell>
  <cell>27696</cell>
- <cell>0.07</cell>
+ <cell>0.08</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -204,8 +204,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>41</cell>
- <cell>20</cell>
+ <cell>52</cell>
+ <cell>21</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>41</cell>
- <cell>20</cell>
+ <cell>52</cell>
+ <cell>21</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -338,22 +338,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>11</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/SCCB_CLK_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/SCCB_CLK_inferred_clock_RNIPQ8/U0_RGB1</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Source: NETLIST</cell>
-</row>
-<row>
- <cell>9</cell>
+ <cell>18</cell>
  <cell>INT_NET</cell>
  <cell>Net   : xclk_c</cell>
 </row>
@@ -361,6 +346,21 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: xclk_ibuf_RNIN1HC/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/SCCB_CLK_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/SCCB_CLK_inferred_clock_RNIPQ8/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -386,15 +386,35 @@
 <row>
  <cell>10</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/SCCB_CLK_cnt_lcry</cell>
+ <cell>Net   : SCCB_CTRL_0/step[1]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SCCB_CTRL_0/SCCB_CLK_cnt12lto7</cell>
+ <cell>Driver: SCCB_CTRL_0/step[1]</cell>
+</row>
+<row>
+ <cell>10</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/SCCB_CLK_CNT_lcry</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/SCCB_CLK_CNT12lto7_i_a2</cell>
 </row>
 <row>
  <cell>9</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/step[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/step[0]</cell>
+</row>
+<row>
+ <cell>6</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SCCB_CTRL_0/step[5]</cell>
 </row>
@@ -404,7 +424,7 @@
  <cell>Driver: SCCB_CTRL_0/step[5]</cell>
 </row>
 <row>
- <cell>8</cell>
+ <cell>6</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SCCB_CTRL_0/step[3]</cell>
 </row>
@@ -416,32 +436,32 @@
 <row>
  <cell>6</cell>
  <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/N_48</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/un1_data_send82_2_0_a3</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/N_50</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/data_send82_0_a3</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>INT_NET</cell>
  <cell>Net   : SCCB_CTRL_0/step[4]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: SCCB_CTRL_0/step[4]</cell>
-</row>
-<row>
- <cell>6</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/step[1]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/step[1]</cell>
-</row>
-<row>
- <cell>6</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/step[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/step[0]</cell>
 </row>
 <row>
  <cell>5</cell>
@@ -454,34 +474,14 @@
  <cell>Driver: SCCB_CTRL_0/step[2]</cell>
 </row>
 <row>
- <cell>4</cell>
+ <cell>5</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/step[7]</cell>
+ <cell>Net   : SCCB_CTRL_0/N_53</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SCCB_CTRL_0/step[7]</cell>
-</row>
-<row>
- <cell>4</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/step[6]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/step[6]</cell>
-</row>
-<row>
- <cell>3</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/SCCB_CLK_0</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/SCCB_CLK</cell>
+ <cell>Driver: SCCB_CTRL_0/data_send60_0_a3</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -494,15 +494,35 @@
 <row>
  <cell>10</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/SCCB_CLK_cnt_lcry</cell>
+ <cell>Net   : SCCB_CTRL_0/step[1]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SCCB_CTRL_0/SCCB_CLK_cnt12lto7</cell>
+ <cell>Driver: SCCB_CTRL_0/step[1]</cell>
+</row>
+<row>
+ <cell>10</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/SCCB_CLK_CNT_lcry</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/SCCB_CLK_CNT12lto7_i_a2</cell>
 </row>
 <row>
  <cell>9</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/step[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/step[0]</cell>
+</row>
+<row>
+ <cell>6</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SCCB_CTRL_0/step[5]</cell>
 </row>
@@ -512,7 +532,7 @@
  <cell>Driver: SCCB_CTRL_0/step[5]</cell>
 </row>
 <row>
- <cell>8</cell>
+ <cell>6</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SCCB_CTRL_0/step[3]</cell>
 </row>
@@ -524,32 +544,32 @@
 <row>
  <cell>6</cell>
  <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/N_48</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/un1_data_send82_2_0_a3</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SCCB_CTRL_0/N_50</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SCCB_CTRL_0/data_send82_0_a3</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>INT_NET</cell>
  <cell>Net   : SCCB_CTRL_0/step[4]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: SCCB_CTRL_0/step[4]</cell>
-</row>
-<row>
- <cell>6</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/step[1]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/step[1]</cell>
-</row>
-<row>
- <cell>6</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/step[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/step[0]</cell>
 </row>
 <row>
  <cell>5</cell>
@@ -562,34 +582,14 @@
  <cell>Driver: SCCB_CTRL_0/step[2]</cell>
 </row>
 <row>
- <cell>4</cell>
+ <cell>5</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/step[7]</cell>
+ <cell>Net   : SCCB_CTRL_0/N_53</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SCCB_CTRL_0/step[7]</cell>
-</row>
-<row>
- <cell>4</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/step[6]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/step[6]</cell>
-</row>
-<row>
- <cell>3</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SCCB_CTRL_0/SCCB_CLK_0</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SCCB_CTRL_0/SCCB_CLK</cell>
+ <cell>Driver: SCCB_CTRL_0/data_send60_0_a3</cell>
 </row>
 </table>
 </doc>

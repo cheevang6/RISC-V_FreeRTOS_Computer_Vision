@@ -7,7 +7,7 @@ The file contains the optimization information from mapper to be displayed as pa
 <parameter tooltip="Non-gated/non-generated clock trees / Gated/generated clock trees" name="Combined Clock Conversion">
 <data>1 / 1</data>
 <report_link name="more">
-<data>C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synlog\report\sccb_design_fpga_mapper_combined_clk.rpt</data>
+<data>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\synlog\report\sccb_design_fpga_mapper_combined_clk.rpt</data>
 <title>START OF CLOCK OPTIMIZATION REPORT</title>
 </report_link>
 </parameter>

@@ -18,8 +18,8 @@ The file contains the information about resource utilization per module to be di
 </column_headers>
 <module>
 <data>sccb_design</data>
-<data>20</data>
-<data>24</data>
+<data>21</data>
+<data>35</data>
 <data>17</data>
 <data>0</data>
 <data>0</data>
@@ -29,8 +29,8 @@ The file contains the information about resource utilization per module to be di
 <data>3</data>
 <module>
 <data>SCCB_CTRL</data>
-<data>20</data>
-<data>24</data>
+<data>21</data>
+<data>35</data>
 <data>17</data>
 <data>0</data>
 <data>0</data>

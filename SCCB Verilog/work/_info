@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/cheec/Desktop/School/Fall2020/EE277A/Project/src/277A_Project/SystemVerilog
+vSCCB_CTRL
+Z0 !s110 1610167904
+!i10b 1
+!s100 JSJLjWNTXE8`^=jRzAeX[0
+!s11b mJ89W_QWWi;[>f]4aL^6B1
+IU[?Hf;[X=CLM@7QF_`^]c3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog
+w1610167902
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v
+L0 4
+Z3 OW;L;2019.2;69
+r1
+!s85 0
+31
+Z4 !s108 1610167904.000000
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -O0
+Z6 tCvgOpt 0
+n@s@c@c@b_@c@t@r@l
+vSCCB_tb
+R0
+!i10b 1
+!s100 4JT<dVoa@cR@`TKKW[T691
+!s11b FFRmRaGSDohEz1TBc[bX40
+IO8<Xfi=FgT@0hndaA<aI91
+R1
+R2
+w1610135746
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@s@c@c@b_tb

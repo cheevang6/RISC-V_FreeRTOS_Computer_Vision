@@ -1,5 +1,5 @@
 quietly set ACTELLIBNAME IGLOO2
-quietly set PROJECT_DIR "C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test"
+quietly set PROJECT_DIR "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Test"
 
 if {[file exists presynth/_info]} {
    echo "INFO: Simulation library presynth already exists"

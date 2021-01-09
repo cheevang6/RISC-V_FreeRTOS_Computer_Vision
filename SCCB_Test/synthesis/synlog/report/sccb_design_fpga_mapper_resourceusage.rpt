@@ -4,16 +4,16 @@ Mapping to part: m2gl025vf400std
 Cell usage:
 CLKINT          2 uses
 CFG1           2 uses
-CFG2           6 uses
-CFG3           4 uses
-CFG4           12 uses
+CFG2           5 uses
+CFG3           8 uses
+CFG4           20 uses
 
 Carry cells:
 ARI1            17 uses - used for arithmetic functions
 
 
 Sequential Cells: 
-SLE            20 uses
+SLE            21 uses
 
 DSP Blocks:    0 of 34 (0%)
 
@@ -26,7 +26,7 @@ TRIBUFF        1 use
 
 Global Clock Buffers: 2
 
-Total LUTs:    41
+Total LUTs:    52
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -34,6 +34,6 @@ RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  20 + 0 + 0 + 0 = 20;
-Total number of LUTs after P&R:  41 + 0 + 0 + 0 = 41;
+Total number of SLEs after P&R:  21 + 0 + 0 + 0 = 21;
+Total number of LUTs after P&R:  52 + 0 + 0 + 0 = 52;
 

@@ -6,19 +6,19 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 9 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 11 clock pin(s) of sequential element(s)
-0 instances converted, 11 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 18 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 3 clock pin(s) of sequential element(s)
+0 instances converted, 3 sequential instances remain driven by gated/generated clocks
 
 ================================= Non-Gated/Non-Generated Clocks ==================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance            
 ---------------------------------------------------------------------------------------------------
-@K:CKID0002       xclk                port                   9          SCCB_CTRL_0.SCCB_CLK_cnt[7]
+@K:CKID0002       xclk                port                   18         SCCB_CTRL_0.SCCB_CLK_CNT[7]
 ===================================================================================================
 ============================================================================= Gated/Generated Clocks ==============================================================================
 Clock Tree ID     Driving Element          Drive Element Type     Fanout     Sample Instance               Explanation                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       SCCB_CTRL_0.SCCB_CLK     SLE                    11         SCCB_CTRL_0.sccb_clk_step     No generated or derived clock directive on output of sequential instance
+@K:CKID0001       SCCB_CTRL_0.SCCB_CLK     SLE                    3          SCCB_CTRL_0.sccb_clk_step     No generated or derived clock directive on output of sequential instance
 ===================================================================================================================================================================================
 
 

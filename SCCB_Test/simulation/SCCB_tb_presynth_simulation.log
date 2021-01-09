@@ -1,5 +1,6 @@
 # Reading C:/Microsemi/Libero_SoC_v12.3/ModelSim/tcl/vsim/pref.tcl
 # do run.do
+# INFO: Simulation library presynth already exists
 # Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
 # vmap presynth presynth 
 # Modifying modelsim.ini
@@ -7,34 +8,34 @@
 # vmap IGLOO2 C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 13:35:51 on Dec 17,2020
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/hdl/SCCB_CTRL.v 
+# Start time: 09:40:52 on Jan 07,2021
+# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Test/hdl/SCCB_CTRL.v 
 # -- Compiling module SCCB_CTRL
 # 
 # Top level modules:
 # 	SCCB_CTRL
-# End time: 13:35:51 on Dec 17,2020, Elapsed time: 0:00:00
+# End time: 09:40:52 on Jan 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 13:35:51 on Dec 17,2020
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/component/work/sccb_design/sccb_design.v 
+# Start time: 09:40:52 on Jan 07,2021
+# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Test/component/work/sccb_design/sccb_design.v 
 # -- Compiling module sccb_design
 # 
 # Top level modules:
 # 	sccb_design
-# End time: 13:35:51 on Dec 17,2020, Elapsed time: 0:00:00
+# End time: 09:40:52 on Jan 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 13:35:51 on Dec 17,2020
-# vlog -reportprogress 300 "+incdir+C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus" -sv -work presynth C:/Users/cheec/Desktop/Libero_Projects/SCCB_Test/stimulus/SCCB_tb.v 
+# Start time: 09:40:52 on Jan 07,2021
+# vlog -reportprogress 300 "+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Test/stimulus" -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Test/stimulus/SCCB_tb.v 
 # -- Compiling module SCCB_tb
 # 
 # Top level modules:
 # 	SCCB_tb
-# End time: 13:35:51 on Dec 17,2020, Elapsed time: 0:00:00
+# End time: 09:40:53 on Jan 07,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -L IGLOO2 -L presynth -t 1fs presynth.SCCB_tb 
-# Start time: 13:35:52 on Dec 17,2020
+# Start time: 09:40:53 on Jan 07,2021
 # //  ModelSim Microsemi 2019.2 Apr 17 2019
 # //
 # //  Copyright 1991-2019 Mentor Graphics Corporation
@@ -51,40 +52,26 @@
 # Loading sv_std.std
 # Loading presynth.SCCB_tb
 # Loading presynth.SCCB_CTRL
-add wave -position insertpoint  \
-sim:/SCCB_tb/S0/XCLK_FREQ \
-sim:/SCCB_tb/S0/SCCB_CLK_FREQ \
-sim:/SCCB_tb/S0/SCCB_CLK_PERIOD \
-sim:/SCCB_tb/S0/XCLK \
-sim:/SCCB_tb/S0/RST_N \
-sim:/SCCB_tb/S0/RW \
-sim:/SCCB_tb/S0/data_in \
-sim:/SCCB_tb/S0/addr_id \
-sim:/SCCB_tb/S0/addr_reg \
-sim:/SCCB_tb/S0/data_out \
-sim:/SCCB_tb/S0/SIO_D \
-sim:/SCCB_tb/S0/SIO_C \
-sim:/SCCB_tb/S0/SCCB_CLK_cnt \
-sim:/SCCB_tb/S0/SCCB_CLK \
-sim:/SCCB_tb/S0/step \
-sim:/SCCB_tb/S0/idle \
-sim:/SCCB_tb/S0/data_send \
-sim:/SCCB_tb/S0/sccb_clk_step \
-sim:/SCCB_tb/S0/start
+run
+run
+run
+run
+run
 restart
+add wave -position end  sim:/SCCB_tb/S0/XCLK_FREQ
+add wave -position end  sim:/SCCB_tb/S0/SCCB_CLK_FREQ
+add wave -position end  sim:/SCCB_tb/S0/SCCB_CLK_PERIOD
+add wave -position end  sim:/SCCB_tb/S0/SCCB_MID_AMT
+add wave -position end  sim:/SCCB_tb/S0/XCLK
+add wave -position end  sim:/SCCB_tb/S0/RST_N
+add wave -position end  sim:/SCCB_tb/S0/SCCB_CLK_CNTR
+add wave -position end  sim:/SCCB_tb/S0/SCCB_CLK
+add wave -position end  sim:/SCCB_tb/S0/SCCB_MID_PULSE
+add wave -position end  sim:/SCCB_tb/S0/step
+add wave -position end  sim:/SCCB_tb/S0/idle
+add wave -position end  sim:/SCCB_tb/S0/data_send
+add wave -position end  sim:/SCCB_tb/S0/sccb_clk_step
 run
-run -all
-restart
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 15:23:04 on Dec 17,2020, Elapsed time: 1:47:12
-# Errors: 2, Warnings: 0
+# End time: 10:34:22 on Jan 08,2021, Elapsed time: 24:53:29
+# Errors: 8, Warnings: 0

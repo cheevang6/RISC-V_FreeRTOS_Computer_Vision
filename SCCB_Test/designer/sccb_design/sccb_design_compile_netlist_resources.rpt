@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
-Date: Thu Dec 17 13:24:46 2020
+Date: Wed Jan  6 16:36:23 2021
 
 Device Selection
 +--------------------------------+----------------+
@@ -20,11 +20,11 @@ Device Selection
 +--------------------------------+----------------+
 
 Source Files
-+---------+---------------------------------------------------------------------------+
-| Topcell | sccb_design                                                               |
-| Format  | Verilog                                                                   |
-| Source  | C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design.vm |
-+---------+---------------------------------------------------------------------------+
++---------+--------------------------------------------------------------------------------------------------+
+| Topcell | sccb_design                                                                                      |
+| Format  | Verilog                                                                                          |
+| Source  | C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design.vm |
++---------+--------------------------------------------------------------------------------------------------+
 
 Options
 +----------------------------------------------------+-------+
@@ -37,8 +37,8 @@ Resource Usage
 +---------------------------+------+-------+------------+
 | Type                      | Used | Total | Percentage |
 +---------------------------+------+-------+------------+
-| 4LUT                      | 41   | 27696 | 0.15       |
-| DFF                       | 20   | 27696 | 0.07       |
+| 4LUT                      | 52   | 27696 | 0.19       |
+| DFF                       | 21   | 27696 | 0.08       |
 | I/O Register              | 0    | 414   | 0.00       |
 | User I/O                  | 3    | 138   | 2.17       |
 | -- Single-ended I/O       | 3    | 138   | 2.17       |
@@ -58,11 +58,11 @@ Detailed Logic Resource Usage
 +--------------------------+------+-----+
 | Type                     | 4LUT | DFF |
 +--------------------------+------+-----+
-| Fabric Logic             | 41   | 20  |
+| Fabric Logic             | 52   | 21  |
 | RAM64x18 Interface Logic | 0    | 0   |
 | RAM1K18 Interface Logic  | 0    | 0   |
 | MACC Interface Logic     | 0    | 0   |
-| Total Used               | 41   | 20  |
+| Total Used               | 52   | 21  |
 +--------------------------+------+-----+
 
 Detailed Carry Chains Resource Usage
@@ -104,11 +104,11 @@ Nets assigned to chip global resources
 +--------+---------+------------------------------------------------------------+
 | Fanout | Type    | Name                                                       |
 +--------+---------+------------------------------------------------------------+
-| 11     | INT_NET | Net   : SCCB_CTRL_0/SCCB_CLK_Z                             |
-|        |         | Driver: SCCB_CTRL_0/SCCB_CLK_inferred_clock_RNIPQ8/U0_RGB1 |
-|        |         | Source: NETLIST                                            |
-| 9      | INT_NET | Net   : xclk_c                                             |
+| 18     | INT_NET | Net   : xclk_c                                             |
 |        |         | Driver: xclk_ibuf_RNIN1HC/U0_RGB1                          |
+|        |         | Source: NETLIST                                            |
+| 3      | INT_NET | Net   : SCCB_CTRL_0/SCCB_CLK_Z                             |
+|        |         | Driver: SCCB_CTRL_0/SCCB_CLK_inferred_clock_RNIPQ8/U0_RGB1 |
 |        |         | Source: NETLIST                                            |
 +--------+---------+------------------------------------------------------------+
 
@@ -119,54 +119,54 @@ Nets assigned to row global resources
 +--------+------+------+
 
 High fanout nets
-+--------+---------+----------------------------------------+
-| Fanout | Type    | Name                                   |
-+--------+---------+----------------------------------------+
-| 10     | INT_NET | Net   : SCCB_CTRL_0/SCCB_CLK_cnt_lcry  |
-|        |         | Driver: SCCB_CTRL_0/SCCB_CLK_cnt12lto7 |
-| 9      | INT_NET | Net   : SCCB_CTRL_0/step[5]            |
-|        |         | Driver: SCCB_CTRL_0/step[5]            |
-| 8      | INT_NET | Net   : SCCB_CTRL_0/step[3]            |
-|        |         | Driver: SCCB_CTRL_0/step[3]            |
-| 6      | INT_NET | Net   : SCCB_CTRL_0/step[4]            |
-|        |         | Driver: SCCB_CTRL_0/step[4]            |
-| 6      | INT_NET | Net   : SCCB_CTRL_0/step[1]            |
-|        |         | Driver: SCCB_CTRL_0/step[1]            |
-| 6      | INT_NET | Net   : SCCB_CTRL_0/step[0]            |
-|        |         | Driver: SCCB_CTRL_0/step[0]            |
-| 5      | INT_NET | Net   : SCCB_CTRL_0/step[2]            |
-|        |         | Driver: SCCB_CTRL_0/step[2]            |
-| 4      | INT_NET | Net   : SCCB_CTRL_0/step[7]            |
-|        |         | Driver: SCCB_CTRL_0/step[7]            |
-| 4      | INT_NET | Net   : SCCB_CTRL_0/step[6]            |
-|        |         | Driver: SCCB_CTRL_0/step[6]            |
-| 3      | INT_NET | Net   : SCCB_CTRL_0/SCCB_CLK_0         |
-|        |         | Driver: SCCB_CTRL_0/SCCB_CLK           |
-+--------+---------+----------------------------------------+
++--------+---------+---------------------------------------------+
+| Fanout | Type    | Name                                        |
++--------+---------+---------------------------------------------+
+| 10     | INT_NET | Net   : SCCB_CTRL_0/step[1]                 |
+|        |         | Driver: SCCB_CTRL_0/step[1]                 |
+| 10     | INT_NET | Net   : SCCB_CTRL_0/SCCB_CLK_CNT_lcry       |
+|        |         | Driver: SCCB_CTRL_0/SCCB_CLK_CNT12lto7_i_a2 |
+| 9      | INT_NET | Net   : SCCB_CTRL_0/step[0]                 |
+|        |         | Driver: SCCB_CTRL_0/step[0]                 |
+| 6      | INT_NET | Net   : SCCB_CTRL_0/step[5]                 |
+|        |         | Driver: SCCB_CTRL_0/step[5]                 |
+| 6      | INT_NET | Net   : SCCB_CTRL_0/step[3]                 |
+|        |         | Driver: SCCB_CTRL_0/step[3]                 |
+| 6      | INT_NET | Net   : SCCB_CTRL_0/N_48                    |
+|        |         | Driver: SCCB_CTRL_0/un1_data_send82_2_0_a3  |
+| 6      | INT_NET | Net   : SCCB_CTRL_0/N_50                    |
+|        |         | Driver: SCCB_CTRL_0/data_send82_0_a3        |
+| 5      | INT_NET | Net   : SCCB_CTRL_0/step[4]                 |
+|        |         | Driver: SCCB_CTRL_0/step[4]                 |
+| 5      | INT_NET | Net   : SCCB_CTRL_0/step[2]                 |
+|        |         | Driver: SCCB_CTRL_0/step[2]                 |
+| 5      | INT_NET | Net   : SCCB_CTRL_0/N_53                    |
+|        |         | Driver: SCCB_CTRL_0/data_send60_0_a3        |
++--------+---------+---------------------------------------------+
 
 High fanout nets (through buffer trees)
-+--------+---------+----------------------------------------+
-| Fanout | Type    | Name                                   |
-+--------+---------+----------------------------------------+
-| 10     | INT_NET | Net   : SCCB_CTRL_0/SCCB_CLK_cnt_lcry  |
-|        |         | Driver: SCCB_CTRL_0/SCCB_CLK_cnt12lto7 |
-| 9      | INT_NET | Net   : SCCB_CTRL_0/step[5]            |
-|        |         | Driver: SCCB_CTRL_0/step[5]            |
-| 8      | INT_NET | Net   : SCCB_CTRL_0/step[3]            |
-|        |         | Driver: SCCB_CTRL_0/step[3]            |
-| 6      | INT_NET | Net   : SCCB_CTRL_0/step[4]            |
-|        |         | Driver: SCCB_CTRL_0/step[4]            |
-| 6      | INT_NET | Net   : SCCB_CTRL_0/step[1]            |
-|        |         | Driver: SCCB_CTRL_0/step[1]            |
-| 6      | INT_NET | Net   : SCCB_CTRL_0/step[0]            |
-|        |         | Driver: SCCB_CTRL_0/step[0]            |
-| 5      | INT_NET | Net   : SCCB_CTRL_0/step[2]            |
-|        |         | Driver: SCCB_CTRL_0/step[2]            |
-| 4      | INT_NET | Net   : SCCB_CTRL_0/step[7]            |
-|        |         | Driver: SCCB_CTRL_0/step[7]            |
-| 4      | INT_NET | Net   : SCCB_CTRL_0/step[6]            |
-|        |         | Driver: SCCB_CTRL_0/step[6]            |
-| 3      | INT_NET | Net   : SCCB_CTRL_0/SCCB_CLK_0         |
-|        |         | Driver: SCCB_CTRL_0/SCCB_CLK           |
-+--------+---------+----------------------------------------+
++--------+---------+---------------------------------------------+
+| Fanout | Type    | Name                                        |
++--------+---------+---------------------------------------------+
+| 10     | INT_NET | Net   : SCCB_CTRL_0/step[1]                 |
+|        |         | Driver: SCCB_CTRL_0/step[1]                 |
+| 10     | INT_NET | Net   : SCCB_CTRL_0/SCCB_CLK_CNT_lcry       |
+|        |         | Driver: SCCB_CTRL_0/SCCB_CLK_CNT12lto7_i_a2 |
+| 9      | INT_NET | Net   : SCCB_CTRL_0/step[0]                 |
+|        |         | Driver: SCCB_CTRL_0/step[0]                 |
+| 6      | INT_NET | Net   : SCCB_CTRL_0/step[5]                 |
+|        |         | Driver: SCCB_CTRL_0/step[5]                 |
+| 6      | INT_NET | Net   : SCCB_CTRL_0/step[3]                 |
+|        |         | Driver: SCCB_CTRL_0/step[3]                 |
+| 6      | INT_NET | Net   : SCCB_CTRL_0/N_48                    |
+|        |         | Driver: SCCB_CTRL_0/un1_data_send82_2_0_a3  |
+| 6      | INT_NET | Net   : SCCB_CTRL_0/N_50                    |
+|        |         | Driver: SCCB_CTRL_0/data_send82_0_a3        |
+| 5      | INT_NET | Net   : SCCB_CTRL_0/step[4]                 |
+|        |         | Driver: SCCB_CTRL_0/step[4]                 |
+| 5      | INT_NET | Net   : SCCB_CTRL_0/step[2]                 |
+|        |         | Driver: SCCB_CTRL_0/step[2]                 |
+| 5      | INT_NET | Net   : SCCB_CTRL_0/N_53                    |
+|        |         | Driver: SCCB_CTRL_0/data_send60_0_a3        |
++--------+---------+---------------------------------------------+
 

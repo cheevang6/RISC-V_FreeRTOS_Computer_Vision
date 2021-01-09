@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Dec  4 17:33:41 2020
+// Created by SmartDesign Wed Jan  6 16:36:05 2021
 // Version: v12.3 12.800.0.16
 //////////////////////////////////////////////////////////////////////
 
@@ -61,7 +61,6 @@ SCCB_CTRL SCCB_CTRL_0(
         // Inputs
         .XCLK     ( xclk ),
         .RST_N    ( VCC_net ),
-        .RW       ( VCC_net ),
         .data_in  ( data_in_const_net_0 ),
         .addr_id  ( addr_id_const_net_0 ),
         .addr_reg ( addr_reg_const_net_0 ),

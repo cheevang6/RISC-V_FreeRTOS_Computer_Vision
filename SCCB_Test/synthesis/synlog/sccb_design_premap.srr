@@ -1,4 +1,4 @@
-# Thu Dec 17 13:24:41 2020
+# Wed Jan  6 16:36:18 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -19,10 +19,10 @@ Synopsys Generic Technology Pre-mapping, Version mapact2018q4p1, Build 026R, Bui
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-Reading constraint file: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design\synthesis.fdc
+Reading constraint file: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\designer\sccb_design\synthesis.fdc
 @N: MF284 |Setting synthesis effort to medium for the design
-@L: C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design_scck.rpt 
-Printing clock  summary report in "C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design_scck.rpt" file 
+@L: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design_scck.rpt 
+Printing clock  summary report in "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design_scck.rpt" file 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
@@ -36,15 +36,15 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
 
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: BN362 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":111:4:111:9|Removing sequential instance data_out_1[0] (in view: work.SCCB_CTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":120:4:120:9|Removing sequential instance data_out_1[0] (in view: work.SCCB_CTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 syn_allowed_resources : blockrams=31  set on top level netlist sccb_design
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
 
@@ -54,9 +54,9 @@ Clock Summary
           Start                                 Requested     Requested     Clock        Clock                   Clock
 Level     Clock                                 Frequency     Period        Type         Group                   Load 
 ----------------------------------------------------------------------------------------------------------------------
-0 -       SCCB_CTRL|SCCB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     11   
+0 -       sccb_design|xclk                      100.0 MHz     10.000        inferred     Inferred_clkgroup_0     18   
                                                                                                                       
-0 -       sccb_design|xclk                      100.0 MHz     10.000        inferred     Inferred_clkgroup_0     9    
+0 -       SCCB_CTRL|SCCB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     4    
 ======================================================================================================================
 
 
@@ -64,20 +64,20 @@ Level     Clock                                 Frequency     Period        Type
 Clock Load Summary
 ***********************
 
-                                      Clock     Source                               Clock Pin                  Non-clock Pin     Non-clock Pin              
-Clock                                 Load      Pin                                  Seq Example                Seq Example       Comb Example               
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-SCCB_CTRL|SCCB_CLK_inferred_clock     11        SCCB_CTRL_0.SCCB_CLK.Q[0](dffre)     SCCB_CTRL_0.idle.C         -                 SCCB_CTRL_0.SIO_C.A[0](mux)
-                                                                                                                                                             
-sccb_design|xclk                      9         xclk(port)                           SCCB_CTRL_0.SCCB_CLK.C     -                 -                          
-=============================================================================================================================================================
+                                      Clock     Source                               Clock Pin                        Non-clock Pin                       Non-clock Pin                   
+Clock                                 Load      Pin                                  Seq Example                      Seq Example                         Comb Example                    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sccb_design|xclk                      18        xclk(port)                           SCCB_CTRL_0.SCCB_MID_PULSE.C     -                                   -                               
+                                                                                                                                                                                          
+SCCB_CTRL|SCCB_CLK_inferred_clock     4         SCCB_CTRL_0.SCCB_CLK.Q[0](dffre)     SCCB_CTRL_0.idle.C               SCCB_CTRL_0.SCCB_MID_PULSE.D[0]     SCCB_CTRL_0.SCCB_CLK_2.I[0](inv)
+==========================================================================================================================================================================================
 
-@W: MT530 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":68:4:68:9|Found inferred clock sccb_design|xclk which controls 9 sequential elements including SCCB_CTRL_0.SCCB_CLK_cnt[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":111:4:111:9|Found inferred clock SCCB_CTRL|SCCB_CLK_inferred_clock which controls 11 sequential elements including SCCB_CTRL_0.data_send. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":106:4:106:9|Found inferred clock sccb_design|xclk which controls 18 sequential elements including SCCB_CTRL_0.step[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":120:4:120:9|Found inferred clock SCCB_CTRL|SCCB_CLK_inferred_clock which controls 4 sequential elements including SCCB_CTRL_0.data_send. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design.sap.
+@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
@@ -94,6 +94,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Dec 17 13:24:42 2020
+# Wed Jan  6 16:36:18 2021
 
 ###########################################################]

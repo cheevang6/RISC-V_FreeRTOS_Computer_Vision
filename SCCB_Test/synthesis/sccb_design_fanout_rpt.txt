@@ -7,6 +7,6 @@ GLOBAL THRESHOLD - 5000
 
 NET NAME                 CLOCK LOADS     ASYNC RST LOADS     DATA LOADS     TOTAL FANOUT     GLOBAL BUFFER PRESENT
 ------------------------------------------------------------------------------------------------------------------
-SCCB_CTRL_0.SCCB_CLK     11              0                   1              12               YES                  
-xclk_c                   9               0                   0              9                YES                  
+xclk_c                   18              0                   0              18               YES                  
+SCCB_CTRL_0.SCCB_CLK     3               0                   2              5                YES                  
 ==================================================================================================================

@@ -1,0 +1,8 @@
+{C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v}
+Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module SCCB_tb
+
+Top level modules:
+	SCCB_tb
+
+} {} {}}

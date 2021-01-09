@@ -1,3 +1,3 @@
-@W: FX1172 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":68:4:68:9|User-specified initial value defined for instance SCCB_CTRL_0.SCCB_CLK_cnt[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":70:4:70:9|User-specified initial value defined for instance SCCB_CTRL_0.SCCB_CLK_CNT[7:0] is being ignored due to limitations in architecture. 
 @W: MT420 |Found inferred clock sccb_design|xclk with period 10.00ns. Please declare a user-defined clock on port xclk.
 @W: MT420 |Found inferred clock SCCB_CTRL|SCCB_CLK_inferred_clock with period 10.00ns. Please declare a user-defined clock on net SCCB_CTRL_0.SCCB_CLK_0.

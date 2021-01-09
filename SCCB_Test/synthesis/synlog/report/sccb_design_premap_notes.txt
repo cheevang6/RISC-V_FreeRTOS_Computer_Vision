@@ -5,6 +5,6 @@
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: BN362 :"c:\users\cheec\desktop\libero_projects\sccb_test\hdl\sccb_ctrl.v":111:4:111:9|Removing sequential instance data_out_1[0] (in view: work.SCCB_CTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_test\hdl\sccb_ctrl.v":120:4:120:9|Removing sequential instance data_out_1[0] (in view: work.SCCB_CTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
-@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\sccb_design.sap.
+@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\sccb_design.sap.

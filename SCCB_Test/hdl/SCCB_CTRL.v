@@ -59,22 +59,29 @@ module SCCB_CTRL
 
     // Generating clock for SCCB
     // Depending on the device, the SIO_C can go up to 40MHz
-    localparam XCLK_FREQ = 50_000_000;                  // Incoming clock = XCLK = 50MHz 
-    localparam SCCB_CLK_FREQ = 100_000;                     // divide clock such that SIO_C = 100kHz
+    localparam XCLK_FREQ = 50_000_000;                          // incoming clock = XCLK = 50MHz 
+    localparam SCCB_CLK_FREQ = 100_000;                         // divide clock such that SIO_C = 100kHz
     localparam SCCB_CLK_PERIOD = XCLK_FREQ/SCCB_CLK_FREQ/2;     // number of clocks to obtain 100kHz
-    reg [$clog2(SCCB_CLK_PERIOD):0] SCCB_CLK_cnt = 0;
+    localparam SCCB_MID_AMT = SCCB_CLK_PERIOD/2-1;              // impulse signfying the mid of SCCB_clk
+    reg [$clog2(SCCB_CLK_PERIOD):0] SCCB_CLK_CNTR = 0;
     reg SCCB_CLK;
+    reg SCCB_MID_PULSE;
 
     always @(posedge XCLK or negedge RST_N) begin
         if(!RST_N) begin // RST is acitve-low
-            SCCB_CLK_cnt <=0;
+            SCCB_CLK_CNTR <=0;
             SCCB_CLK <= 0;
         end else begin
-            if(SCCB_CLK_cnt < SCCB_CLK_PERIOD) begin
-                SCCB_CLK_cnt <= SCCB_CLK_cnt + 1;
+            if(SCCB_CLK_CNTR < SCCB_CLK_PERIOD) begin
+                SCCB_CLK_CNTR <= SCCB_CLK_CNTR + 1;
             end else begin
-                SCCB_CLK_cnt <= 0;
+                SCCB_CLK_CNTR <= 0;
                 SCCB_CLK <= ~SCCB_CLK;
+            end
+            if(SCCB_CLK_CNTR == SCCB_MID_AMT && SCCB_CLK == 0) begin
+                SCCB_MID_PULSE = 1'b1;
+            end else begin
+                SCCB_MID_PULSE = 1'b0;
             end
         end
     end
@@ -83,13 +90,13 @@ module SCCB_CTRL
     reg idle;
     reg data_send;      // data to send through SCCB
     reg sccb_clk_step;
-    reg start;
-    reg RW;
+//    reg start;
+//    reg RW;
     
     // start signal
-    assign start = (SIO_D && !SIO_C)? 1: 0;
+//    assign start = (SIO_D && !SIO_C)? 1: 0;
     // read/write signal
-    assign RW = addr_id[7];
+//    assign RW = addr_id[7];
     // tristate SIO_D bus when idle
     assign SIO_D = (idle) ? 1'bz : data_send;
     // SIO_C is driven high when idle
@@ -106,30 +113,32 @@ module SCCB_CTRL
 //            step <= 7'd30; // go directly to 2-phases read
 //        else if(RW == 1 && step == 7'd38) // 2-phase read
 //            step <= 7'd39; // stop transmission after read
+        else if(step > 42)
+            step <= 7'd0;
         else
             step <= step + 1;
     end
     
-    always @(posedge SCCB_CLK or negedge RST_N) begin
+    always @(posedge XCLK or negedge RST_N) begin
         if(!RST_N) begin
             data_send <= 0;
             data_out <= 0;
             sccb_clk_step <= 1;
             idle <= 1;
-        end else begin
+        end else if(SCCB_MID_PULSE) begin
             // default values
             
             // Note: I will number the states once I finalize total states required
             case(step)
                 // initialize
-                7'd0 : begin
-                    data_send <= 0;
-                    idle <= 0;
-                end
+                7'd0  : data_send <= 1;
                 
                 // start transaction
                 7'd1  : data_send <= 1;
-                7'd2  : sccb_clk_step <= 0;
+                7'd2  : begin
+                    sccb_clk_step <= 0;
+                    idle <= 0;
+                end
                 
                 // write device's ID address (write 0x60 OV2640)
                 7'd3  : data_send <= addr_id[7];
@@ -177,7 +186,7 @@ module SCCB_CTRL
                 7'd38 : data_out <= 1; // Don't care bit (Driven to 1 during read by master)
                 
                 // stop transaction
-                // SIO_C = = 1
+                // SIO_C = 1
                 // SIO_D = 1 (for tPCS = 15ns) before SCCB_E deasserted
                 7'd39 : sccb_clk_step <= 0;
                 7'd40 : sccb_clk_step <= 1;

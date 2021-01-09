@@ -31,7 +31,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test"
+KEY ProjectLocation "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test"
 KEY ProjectDescription "SPI4.2"
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -44,13 +44,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\work\sccb_design\sccb_design.cxf,actgen_cxf"
 STATE="utd"
-TIME="1607132021"
+TIME="1609979765"
 SIZE="1763"
 ENDFILE
 VALUE "<project>\component\work\sccb_design\sccb_design.v,hdl"
 STATE="utd"
-TIME="1607132021"
-SIZE="2577"
+TIME="1609979765"
+SIZE="2545"
 PARENT="<project>\component\work\sccb_design\sccb_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -67,37 +67,47 @@ SIZE="391"
 ENDFILE
 VALUE "<project>\hdl\SCCB_CTRL.v,hdl"
 STATE="utd"
-TIME="1608242197"
-SIZE="7774"
+TIME="1610130857"
+SIZE="8195"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1608240464"
-SIZE="661"
+TIME="1610041249"
+SIZE="745"
+ENDFILE
+VALUE "<project>\simulation\SCCB_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1610130862"
+SIZE="3426"
+ENDFILE
+VALUE "<project>\simulation\wave.do,do"
+STATE="utd"
+TIME="1609985411"
+SIZE="1886"
 ENDFILE
 VALUE "<project>\stimulus\SCCB_tb.v,tb_hdl"
 STATE="utd"
-TIME="1608241858"
+TIME="1609979994"
 SIZE="754"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design.so,so"
 STATE="utd"
-TIME="1608240283"
-SIZE="245"
+TIME="1609979779"
+SIZE="268"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design.vm,syn_vm"
 STATE="ood"
-TIME="1608240282"
-SIZE="14407"
+TIME="1609979779"
+SIZE="17807"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design_syn.prj,prj"
 STATE="utd"
-TIME="1608240283"
-SIZE="2227"
+TIME="1609979779"
+SIZE="2319"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1608240282"
+TIME="1609979779"
 SIZE="1272"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
@@ -202,8 +212,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -211,7 +221,7 @@ NAME="ModelSim"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l SCCB_tb_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -253,10 +263,7 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 HDL;hdl\SCCB_CTRL.v;0
-Reports;Reports;0
-ReportsCurrentItem;Synthesize:synplify.log
 HDL;stimulus\SCCB_tb.v;0
-Constraint Manager;Constraint Manager;0
 StartPage;StartPage;0
 SmartDesign;sccb_design;0
 ACTIVEVIEW;hdl\SCCB_CTRL.v

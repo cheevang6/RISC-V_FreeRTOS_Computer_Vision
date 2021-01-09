@@ -13,10 +13,10 @@ Hostname: DESKTOP-95FBL6H
 
 Implementation : synthesis
 
-# Written on Thu Dec 17 13:24:41 2020
+# Written on Wed Jan  6 16:36:18 2021
 
 ##### FILES SYNTAX CHECKED ##############################################
-Constraint File(s):      "C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\designer\sccb_design\synthesis.fdc"
+Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\designer\sccb_design\synthesis.fdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################
@@ -33,19 +33,19 @@ Clock Summary
           Start                                 Requested     Requested     Clock        Clock                   Clock
 Level     Clock                                 Frequency     Period        Type         Group                   Load 
 ----------------------------------------------------------------------------------------------------------------------
-0 -       SCCB_CTRL|SCCB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     11   
+0 -       sccb_design|xclk                      100.0 MHz     10.000        inferred     Inferred_clkgroup_0     18   
                                                                                                                       
-0 -       sccb_design|xclk                      100.0 MHz     10.000        inferred     Inferred_clkgroup_0     9    
+0 -       SCCB_CTRL|SCCB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     4    
 ======================================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                      Clock     Source                               Clock Pin                  Non-clock Pin     Non-clock Pin              
-Clock                                 Load      Pin                                  Seq Example                Seq Example       Comb Example               
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-SCCB_CTRL|SCCB_CLK_inferred_clock     11        SCCB_CTRL_0.SCCB_CLK.Q[0](dffre)     SCCB_CTRL_0.idle.C         -                 SCCB_CTRL_0.SIO_C.A[0](mux)
-                                                                                                                                                             
-sccb_design|xclk                      9         xclk(port)                           SCCB_CTRL_0.SCCB_CLK.C     -                 -                          
-=============================================================================================================================================================
+                                      Clock     Source                               Clock Pin                        Non-clock Pin                       Non-clock Pin                   
+Clock                                 Load      Pin                                  Seq Example                      Seq Example                         Comb Example                    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sccb_design|xclk                      18        xclk(port)                           SCCB_CTRL_0.SCCB_MID_PULSE.C     -                                   -                               
+                                                                                                                                                                                          
+SCCB_CTRL|SCCB_CLK_inferred_clock     4         SCCB_CTRL_0.SCCB_CLK.Q[0](dffre)     SCCB_CTRL_0.idle.C               SCCB_CTRL_0.SCCB_MID_PULSE.D[0]     SCCB_CTRL_0.SCCB_CLK_2.I[0](inv)
+==========================================================================================================================================================================================

@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\cheec\Desktop\Libero_Projects\SCCB_Test\synthesis\synlog\sccb_design_fpga_mapper.srr</data>
+<data>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Test\synthesis\synlog\sccb_design_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,13 +17,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>SCCB_CTRL|SCCB_CLK_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>287.5 MHz</data>
-<data>6.521</data>
+<data>417.9 MHz</data>
+<data>7.607</data>
 </row>
 <row>
 <data>sccb_design|xclk</data>
 <data>100.0 MHz</data>
-<data>292.2 MHz</data>
-<data>6.577</data>
+<data>272.6 MHz</data>
+<data>6.332</data>
 </row>
 </report_table>

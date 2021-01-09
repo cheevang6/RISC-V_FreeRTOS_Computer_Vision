@@ -1,10 +1,11 @@
 [Library]
 others = $MODEL_TECH/../modelsim.ini
 smartfusion2 = C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2
-syncad_vhdl_lib = C:\Microsemi\Libero_SoC_v12.3\Designer/lib/actel/syncad_vhdl_lib
-
 postsynth = postsynth
 IGLOO2 = C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2
+presynth = presynth
+syncad_vhdl_lib = C:\Microsemi\Libero_SoC_v12.3\Designer/lib/actel/syncad_vhdl_lib
+
 [vcom]
 VHDL93 = 1
 

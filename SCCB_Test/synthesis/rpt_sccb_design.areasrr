@@ -24,18 +24,18 @@ Part:			M2GL025VF400STD (Microsemi)
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      20                 100 %                
+SLE      21                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block sccb_design:	20 (28.17 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block sccb_design:	21 (25.30 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      24                 100 %                
+CFG      35                 100 %                
 ARI1     17                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block sccb_design:	41 (57.75 % Utilization)
+Total COMBINATIONAL LOGIC in the block sccb_design:	52 (62.65 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -43,7 +43,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block sccb_design:	2 (2.82 % Utilization)
+Total GLOBAL BUFFERS in the block sccb_design:	2 (2.41 % Utilization)
 
 
 IO PADS
@@ -51,7 +51,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 IO       3                  100 %                
 =================================================
-Total IO PADS in the block sccb_design:	3 (4.23 % Utilization)
+Total IO PADS in the block sccb_design:	3 (3.61 % Utilization)
 
 ---------------------------------------------------------------
 ########   Utilization report for  cell:   SCCB_CTRL   ########
@@ -61,18 +61,18 @@ Instance path:   sccb_design.SCCB_CTRL
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      20                 100 %                
+SLE      21                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block sccb_design.SCCB_CTRL:	20 (28.17 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block sccb_design.SCCB_CTRL:	21 (25.30 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      24                 100 %                
+CFG      35                 100 %                
 ARI1     17                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block sccb_design.SCCB_CTRL:	41 (57.75 % Utilization)
+Total COMBINATIONAL LOGIC in the block sccb_design.SCCB_CTRL:	52 (62.65 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -80,7 +80,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  50 %                 
 ===================================================
-Total GLOBAL BUFFERS in the block sccb_design.SCCB_CTRL:	1 (1.41 % Utilization)
+Total GLOBAL BUFFERS in the block sccb_design.SCCB_CTRL:	1 (1.20 % Utilization)
 
 
 ##### END OF AREA REPORT #####]
