@@ -3,32 +3,33 @@
 module SCCB_tb;
 
 reg clk, rst_n;
+reg start;
 //reg rw;
 reg [7:0] data_in;
 wire [7:0] data_out;
 reg [7:0] addr_id;
 reg [7:0] addr_reg;
-wire sio_d;
-wire sio_c;
+wire sio_d_s0, sio_d_s1;
+wire sio_c_s0, sio_c_s1;
 
-/*SCCB_CTRL S0 (
+SCCB_CTRL S0 (
     .XCLK(clk),
     .RST_N(rst_n),
+	.start(start),
 //    .RW(rw),
     .data_in(data_in),
     .addr_id(addr_id),
     .addr_reg(addr_reg),
     .data_out(data_out),
-    .SIO_D(sio_d),
-    .SIO_C(sio_c)
-);*/
+    .SIO_D(sio_d_s0),
+    .SIO_C(sio_c_s0)
+);
 
 reg [15:0] data_i;
 reg rw_i;
 wire [7:0] data_o;
 wire ack_error_o;
 wire done_o;
-reg start;
 
 // Generating clock for SCCB
 // Depending on the device, the SIO_C can go up to 40MHz
@@ -52,8 +53,8 @@ SCCBCtrl S1(
 	.start_i(start),
 	.ack_error_o(ack_error_o), 
     .done_o(done_o),
-	.sioc_o(sio_c),
-	.siod_io(sio_d)
+	.sioc_o(sio_c_s1),
+	.siod_io(sio_d_s1)
 );
 
 initial begin
@@ -74,7 +75,8 @@ initial begin
     addr_id = 8'h60; // 0x60 write and 0x61 read (OV2640)
 	rw_i = 1'b0; // write
     addr_reg = 8'hee;
-	data_i = {addr_reg,8'hfe};
+	data_in = 8'hfe;
+	data_i = {addr_reg,data_in};
 	start = 1'b1;
 end
 

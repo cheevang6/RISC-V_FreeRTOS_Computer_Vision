@@ -1,9 +1,9 @@
-{C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v}
+{C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v}
 Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module SCCBCtrl
+-- Compiling module SCCB_CTRL
 
 Top level modules:
-	SCCBCtrl
+	SCCB_CTRL
 
 } {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v}
 Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
@@ -11,5 +11,12 @@ Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
 
 Top level modules:
 	SCCB_tb
+
+} {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v}
+Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module SCCBCtrl
+
+Top level modules:
+	SCCBCtrl
 
 } {} {}}
