@@ -68,16 +68,15 @@ initial begin
     rst_n = 1'b0;
     #10; rst_n = 1'b1;
     
-    // start
-    #20; // at least 15 ns
-    
-    // write device id
+    //#20; 
     addr_id = 8'h60; // 0x60 write and 0x61 read (OV2640)
 	rw_i = 1'b0; // write
     addr_reg = 8'hee;
 	data_in = 8'hfe;
 	data_i = {addr_reg,data_in};
 	start = 1'b1;
+	
+	//
 end
 
 always @(posedge clk or negedge rst_n) begin

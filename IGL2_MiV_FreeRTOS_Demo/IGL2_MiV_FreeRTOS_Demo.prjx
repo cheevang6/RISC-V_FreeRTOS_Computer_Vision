@@ -2810,14 +2810,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+SmartDesign;Top_Level;0
 Reports;Reports;0
 ReportsCurrentItem;Generate Memory Map:Top_Level_DataSheet.xml
-HDL;hdl\SCCB_CTRL.v;0
-StartPage;StartPage;0
-HDL;hdl\SCCB_APB.v;0
 Constraint Manager;Constraint Manager;0
-SmartDesign;Top_Level;0
-ACTIVEVIEW;hdl\SCCB_CTRL.v
+StartPage;StartPage;0
+ACTIVEVIEW;Top_Level
 ENDLIST
 LIST ModuleSubBlockList
 LIST "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"

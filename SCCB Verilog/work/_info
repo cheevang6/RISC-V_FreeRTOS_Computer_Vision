@@ -11,7 +11,7 @@ z2
 cModel Technology
 dC:/Users/cheec/Desktop/School/Fall2020/EE277A/Project/src/277A_Project/SystemVerilog
 vSCCB_CTRL
-Z0 !s110 1610792393
+Z0 !s110 1610826492
 !i10b 1
 !s100 `_K`La@n7glo49_?k`GTd1
 !s11b H@0Kb6R]eTnnz`^6Foo>U1
@@ -26,7 +26,7 @@ Z3 OW;L;2019.2;69
 r1
 !s85 0
 31
-Z4 !s108 1610792393.000000
+Z4 !s108 1610826492.000000
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v|
 !s101 -O0
@@ -37,12 +37,12 @@ n@s@c@c@b_@c@t@r@l
 vSCCB_tb
 R0
 !i10b 1
-!s100 O`1AJjUb`Yk;C9b`1?6NF0
-!s11b >hajeDVz1]lh]edm=d?kM2
-IcSiMAM;25_64]NVkanile1
+!s100 kj6I5WJdP?f<IIKOcM67L3
+!s11b 2H4P=z69bf>S@BbkVBYh:0
+IM?YG3Mdf0TP=>e0zlR3gd3
 R1
 R2
-w1610792391
+w1610826490
 8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v
 FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v
 L0 3
@@ -59,7 +59,7 @@ R5
 R6
 n@s@c@c@b_tb
 vSCCBCtrl
-!s110 1610792394
+!s110 1610826493
 !i10b 1
 !s100 QFHEj6CGzSeiZfBU;CWoP2
 !s11b j_:[H[N0LGjKQVgb<]ejV2
@@ -74,7 +74,7 @@ R3
 r1
 !s85 0
 31
-!s108 1610792394.000000
+!s108 1610826493.000000
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v|
 !s101 -O0
