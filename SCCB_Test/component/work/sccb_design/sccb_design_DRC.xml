@@ -5,57 +5,8 @@
   <drc>
     <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
     <StatusMessage>Error</StatusMessage>
-    <message>Unused Instance</message>
-    <detail>SCCB_CTRL_0 output pins are not being used.  Connect or mark them unused</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/instances/SCCB_CTRL_0</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin SCCB_CTRL_0:RW</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/SCCB_CTRL_0:RW</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin SCCB_CTRL_0:data_in[7:0]</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/SCCB_CTRL_0:data_in</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin SCCB_CTRL_0:addr_id[7:0]</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/SCCB_CTRL_0:addr_id</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin SCCB_CTRL_0:addr_reg[7:0]</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/SCCB_CTRL_0:addr_reg</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output bus pin SCCB_CTRL_0:data_out[7:0]</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/SCCB_CTRL_0:data_out</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin SCCB_CTRL_0:SIO_D</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/SCCB_CTRL_0:SIO_D</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin SCCB_CTRL_0:SIO_C</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/SCCB_CTRL_0:SIO_C</crossprobe>
+    <message>No Top Level Ports</message>
+    <detail>You must create at least one port for a valid design</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/instances/sccb_design</crossprobe>
   </drc>
 </drcreport>
