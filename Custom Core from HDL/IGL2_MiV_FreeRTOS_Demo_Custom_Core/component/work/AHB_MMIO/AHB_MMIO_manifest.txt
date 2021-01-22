@@ -1,0 +1,18 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.0 (Version 12.500.0.22)
+
+Date      :  Wed Mar 27 14:03:19 2019
+Project   :  D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo
+Component :  AHB_MMIO
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_addrdec.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_defaultslavesm.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_masterstage.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_matrix4x16.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavearbiter.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavestage.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/AHB_MMIO/AHB_MMIO.v
+

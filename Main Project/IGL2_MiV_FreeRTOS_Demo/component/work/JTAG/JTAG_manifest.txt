@@ -1,0 +1,14 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.0 (Version 12.500.0.22)
+
+Date      :  Mon Mar 18 13:04:11 2019
+Project   :  D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo
+Component :  JTAG
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/COREJTAGDEBUG/3.0.100/core/corejtagdebug.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/COREJTAGDEBUG/3.0.100/core/corejtagdebug_uj_jtag.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/COREJTAGDEBUG/3.0.100/core/corejtagdebug_ujtag_wrapper.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/JTAG/JTAG.v
+

@@ -1,0 +1,25 @@
+
+########			REPORT FOR HIGH FANOUT NETS			########
+
+CLOCK GLOBAL THRESHOLD - 2
+ASYNC GLOBAL THRESHOLD - 12
+GLOBAL THRESHOLD - 5000
+
+NET NAME                                                                                                          CLOCK LOADS     ASYNC RST LOADS     DATA LOADS     TOTAL FANOUT     GLOBAL BUFFER PRESENT
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MSS_SubSystem_sb_0_FIC_0_CLK                                                                                      5629            0                   0              5629             YES                  
+JTAG_0.JTAG_0.JTAG_0_TGT_TCK_0_i                                                                                  314             0                   0              314              YES                  
+MSS_SubSystem_sb_0.MSS_SubSystem_sb_HPMS_0.CORECONFIGP_0_APB_S_PCLK                                               75              0                   0              75               YES                  
+MSS_SubSystem_sb_0.FABOSC_0_RCOSC_25_50MHZ_O2F                                                                    31              0                   0              31               YES                  
+JTAG_0.JTAG_0.genblk1\.genblk1\.genblk1\.UJTAG_inst.iUDRCK                                                        17              0                   1              18               YES                  
+MSS_SubSystem_sb_0.MSS_HPMS_READY_int_arst                                                                        0               484                 0              484              YES                  
+INIT_DONE_int_arst                                                                                                0               387                 0              387              YES                  
+MSS_SubSystem_sb_0.FIC_2_APB_M_PRESET_N_arst                                                                      0               76                  0              76               YES                  
+MiV_Core32_0.MiV_Core32_0.ChiselTop0.q_arst_0                                                                     0               40                  0              40               YES                  
+MiV_Core32_0.MiV_Core32_0.ChiselTop0.debug_1.dmInner.dmiXing.MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE._T_49_arst     0               30                  0              30               YES                  
+MSS_SubSystem_sb_0.CORERESETP_0.sm0_areset_n_clk_base_arst                                                        0               27                  0              27               YES                  
+URSTB_arst                                                                                                        0               25                  0              25               YES                  
+MiV_Core32_0.MiV_Core32_0.ChiselTop0.un1_reset_debug_arst                                                         0               24                  0              24               YES                  
+MSS_SubSystem_sb_0.CORERESETP_0.sm0_areset_n_rcosc_arst                                                           0               17                  0              17               YES                  
+MSS_SubSystem_sb_0.CORERESETP_0.sm0_areset_n_arst                                                                 0               12                  0              12               YES                  
+===========================================================================================================================================================================================================

@@ -1,0 +1,12 @@
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.0\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\hdl\PB_Debouncer.vhdl":71:7:71:18|Synthesizing work.pb_debouncer.behavioral.
+@N: CD233 :"D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\hdl\PB_Debouncer.vhdl":80:18:80:19|Using sequential encoding for type state_type.
+@N: CD604 :"D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\hdl\PB_Debouncer.vhdl":106:8:106:21|OTHERS clause is not synthesized.
+Post processing for work.pb_debouncer.behavioral
+Running optimization stage 1 on PB_Debouncer .......
+Running optimization stage 2 on PB_Debouncer .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\synthesis\synwork\layer1.rt.csv
+

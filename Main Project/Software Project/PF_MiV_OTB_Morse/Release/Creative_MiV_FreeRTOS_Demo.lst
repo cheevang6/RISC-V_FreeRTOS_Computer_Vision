@@ -1,0 +1,2408 @@
+
+Creative_MiV_FreeRTOS_Demo.elf:     file format elf32-littleriscv
+Creative_MiV_FreeRTOS_Demo.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x80000000
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x80000000 paddr 0x80000000 align 2**12
+         filesz 0x000010a0 memsz 0x000020d0 flags rwx
+
+Sections:
+Idx Name           Size      VMA       LMA       File off  Algn  Flags
+  0 .text          00001010  80000000  80000000  00001000  2**4  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .sdata         00000010  80001010  80001010  00002010  2**4  CONTENTS, ALLOC, LOAD, DATA
+  2 .data          00000080  80001020  80001020  00002020  2**4  CONTENTS, ALLOC, LOAD, DATA
+  3 .sbss          00000010  800010a0  800010a0  000020a0  2**4  ALLOC
+  4 .bss           00000020  800010b0  800010b0  000020a0  2**4  ALLOC
+  5 .heap          00000800  800010d0  800010d0  000020a0  2**4  ALLOC
+  6 .stack         00000800  800018d0  800018d0  000020a0  2**4  ALLOC
+  7 .debug_line    0000232a  00000000  00000000  000020a0  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_info    00004b6e  00000000  00000000  000043ca  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_abbrev  00001012  00000000  00000000  00008f38  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_aranges 00000280  00000000  00000000  00009f50  2**3  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str     000015c2  00000000  00000000  0000a1d0  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc     000019cd  00000000  00000000  0000b792  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges  00000308  00000000  00000000  0000d15f  2**0  CONTENTS, READONLY, DEBUGGING
+ 14 .comment       00000058  00000000  00000000  0000d467  2**0  CONTENTS, READONLY
+ 15 .debug_frame   0000092c  00000000  00000000  0000d4c0  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+80000000 l    d  .text	00000000 .text
+80001010 l    d  .sdata	00000000 .sdata
+80001020 l    d  .data	00000000 .data
+800010a0 l    d  .sbss	00000000 .sbss
+800010b0 l    d  .bss	00000000 .bss
+800010d0 l    d  .heap	00000000 .heap
+800018d0 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./riscv_hal/entry.o
+8000000c l       .text	00000000 handle_reset
+80000004 l       .text	00000000 nmi_vector
+80000008 l       .text	00000000 trap_vector
+80000034 l       .text	00000000 trap_entry
+00000000 l    df *ABS*	00000000 init.c
+00000000 l    df *ABS*	00000000 riscv_hal.c
+800010a0 l     O .sbss	00000008 g_systick_increment
+00000000 l    df *ABS*	00000000 riscv_hal_stubs.c
+00000000 l    df *ABS*	00000000 syscall.c
+00000000 l    df *ABS*	00000000 core_uart_apb.c
+00000000 l    df *ABS*	00000000 core_gpio.c
+00000000 l    df *ABS*	00000000 main.c
+800010a8 l     O .sbss	00000001 State
+00000800 g       *ABS*	00000000 STACK_SIZE
+80001018 g     O .sdata	00000004 g_MSG_DEMO
+80000448  w    F .text	00000008 External_11_IRQHandler
+80001810 g       .sdata	00000000 __global_pointer$
+80001020 g       *ABS*	00000000 __data_load
+80000b94 g     F .text	0000003c SysTick_Handler
+80000418  w    F .text	00000008 External_5_IRQHandler
+8000059c g       .text	00000000 HW_get_8bit_reg_field
+800010a0 g       .sbss	00000000 __sbss_start
+800010b0 g     O .bss	00000008 g_gpio_out_leds
+800004d4 g       .text	00000000 HW_set_32bit_reg
+80001010 g     O .sdata	00000004 g_MSG_CH0_VALUE
+80000490  w    F .text	00000008 External_20_IRQHandler
+80001010 g       .sdata	00000000 __sdata_start
+80000574 g       .text	00000000 HW_set_8bit_reg_field
+800004c0  w    F .text	00000008 External_26_IRQHandler
+8000028c g     F .text	00000154 handle_trap
+00010000 g       *ABS*	00000000 RAM_SIZE
+80000440  w    F .text	00000008 External_10_IRQHandler
+80000c24 g     F .text	00000054 External_30_IRQHandler
+80000478  w    F .text	00000008 External_17_IRQHandler
+800018d0 g       .heap	00000000 _heap_end
+800010d0 g       .bss	00000000 __bss_end
+80000160 g     F .text	000000b4 _init
+80000564 g       .text	00000000 HW_set_8bit_reg
+8000056c g       .text	00000000 HW_get_8bit_reg
+80000a68 g     F .text	00000048 GPIO_enable_irq
+800010b0 g       .sbss	00000000 __sbss_end
+800004e4 g       .text	00000000 HW_set_32bit_reg_field
+800004b8  w    F .text	00000008 External_25_IRQHandler
+800020d0 g       .stack	00000000 __stack_top
+80000c78 g     F .text	00000030 External_29_IRQHandler
+80000658 g     F .text	00000068 UART_polled_tx_string
+800010b8 g     O .bss	00000008 g_gpio_in_pbs
+8000101c g     O .sdata	00000004 g_MSG_INTRO
+80000458  w    F .text	00000008 External_13_IRQHandler
+80000400  w    F .text	00000008 External_2_IRQHandler
+00000800 g       *ABS*	00000000 HEAP_SIZE
+80000450  w    F .text	00000008 External_12_IRQHandler
+80000000 g       .text	00000000 _start
+80001010 g       *ABS*	00000000 __sdata_load
+800010a0 g       .data	00000000 __data_end
+80000480  w    F .text	00000008 External_18_IRQHandler
+8000050c g       .text	00000000 HW_get_32bit_reg_field
+800006c0 g     F .text	0000011c GPIO_init
+800004a0  w    F .text	00000008 External_22_IRQHandler
+80000468  w    F .text	00000008 External_15_IRQHandler
+800010c0 g     O .bss	00000004 g_timer_1
+80000000 g       *ABS*	00000000 RAM_START_ADDRESS
+800007fc g     F .text	000000e4 GPIO_get_outputs
+800010b0 g       .bss	00000000 __bss_start
+80000470  w    F .text	00000008 External_16_IRQHandler
+80000cac g     F .text	00000228 main
+80000ca8 g     F .text	00000004 External_28_IRQHandler
+80000524 g       .text	00000000 HW_get_16bit_reg
+80001020 g       .sdata	00000000 __sdata_end
+800018d0 g       .heap	00000000 __heap_end
+80000460  w    F .text	00000008 External_14_IRQHandler
+80000214 g     F .text	00000004 _fini
+80000ab0 g     F .text	000000e4 GPIO_clear_irq
+80001020 g     O .data	00000080 ext_irq_handler_table
+8000052c g       .text	00000000 HW_set_16bit_reg_field
+800018d0 g       .stack	00000000 __stack_bottom
+800003e0  w    F .text	00000010 Software_IRQHandler
+800004c8  w    F .text	00000008 External_27_IRQHandler
+80000430  w    F .text	00000008 External_8_IRQHandler
+80000438  w    F .text	00000008 External_9_IRQHandler
+800010d0 g       .heap	00000000 __heap_start
+800003f0  w    F .text	00000008 Invalid_IRQHandler
+80000408  w    F .text	00000008 External_3_IRQHandler
+800007dc g     F .text	00000020 GPIO_config
+800010c4 g     O .bss	00000004 g_timer_2
+80000488  w    F .text	00000008 External_19_IRQHandler
+800010d0 g       .bss	00000000 _end
+800010c8 g     O .bss	00000008 g_uart_term
+800005ac g     F .text	000000ac UART_init
+800004dc g       .text	00000000 HW_get_32bit_reg
+800004d0 g     F .text	00000004 _exit
+8000051c g       .text	00000000 HW_set_16bit_reg
+800003f8  w    F .text	00000008 External_1_IRQHandler
+80000420  w    F .text	00000008 External_6_IRQHandler
+80000bd0 g     F .text	00000054 External_31_IRQHandler
+80001020 g       .data	00000000 __data_start
+80000498  w    F .text	00000008 External_21_IRQHandler
+80000554 g       .text	00000000 HW_get_16bit_reg_field
+800004a8  w    F .text	00000008 External_23_IRQHandler
+800004b0  w    F .text	00000008 External_24_IRQHandler
+800008e0 g     F .text	00000188 GPIO_set_output
+80000410  w    F .text	00000008 External_4_IRQHandler
+80000218 g     F .text	00000074 SysTick_Config
+80001014 g     O .sdata	00000004 g_MSG_CH2_VALUE
+80000428  w    F .text	00000008 External_7_IRQHandler
+
+
+
+Disassembly of section .text:
+
+80000000 <_start>:
+_start():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:30
+
+  .section      .text.entry
+  .globl _start
+
+_start:
+  j handle_reset
+80000000:	00c0006f          	j	8000000c <handle_reset>
+
+80000004 <nmi_vector>:
+nmi_vector():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:33
+
+nmi_vector:
+  j nmi_vector
+80000004:	0000006f          	j	80000004 <nmi_vector>
+
+80000008 <trap_vector>:
+trap_vector():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:36
+
+trap_vector:
+  j trap_entry
+80000008:	02c0006f          	j	80000034 <trap_entry>
+
+8000000c <handle_reset>:
+handle_reset():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:39
+
+handle_reset:
+  la t0, trap_entry
+8000000c:	00000297          	auipc	t0,0x0
+80000010:	02828293          	addi	t0,t0,40 # 80000034 <trap_entry>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:40
+  csrw mtvec, t0
+80000014:	30529073          	csrw	mtvec,t0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:41
+  csrwi mstatus, 0
+80000018:	30005073          	csrwi	mstatus,0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:42
+  csrwi mie, 0
+8000001c:	30405073          	csrwi	mie,0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:64
+
+# Ensure the instruction is not optimized, since gp is not yet set
+
+.option norelax
+  # initialize global pointer
+  la gp, __global_pointer$
+80000020:	00001197          	auipc	gp,0x1
+80000024:	7f018193          	addi	gp,gp,2032 # 80001810 <__global_pointer$>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:69
+
+.option pop
+
+  # initialize stack pointer
+  la sp, __stack_top
+80000028:	00002117          	auipc	sp,0x2
+8000002c:	0a810113          	addi	sp,sp,168 # 800020d0 <__stack_top>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:72
+
+  # perform the rest of initialization in C
+  j _init
+80000030:	1300006f          	j	80000160 <_init>
+
+80000034 <trap_entry>:
+trap_entry():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:76
+
+
+trap_entry:
+  addi sp, sp, -32*REGBYTES
+80000034:	f8010113          	addi	sp,sp,-128
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:78
+
+  SREG x1, 0 * REGBYTES(sp)
+80000038:	00112023          	sw	ra,0(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:79
+  SREG x2, 1 * REGBYTES(sp)
+8000003c:	00212223          	sw	sp,4(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:80
+  SREG x3, 2 * REGBYTES(sp)
+80000040:	00312423          	sw	gp,8(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:81
+  SREG x4, 3 * REGBYTES(sp)
+80000044:	00412623          	sw	tp,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:82
+  SREG x5, 4 * REGBYTES(sp)
+80000048:	00512823          	sw	t0,16(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:83
+  SREG x6, 5 * REGBYTES(sp)
+8000004c:	00612a23          	sw	t1,20(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:84
+  SREG x7, 6 * REGBYTES(sp)
+80000050:	00712c23          	sw	t2,24(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:85
+  SREG x8, 7 * REGBYTES(sp)
+80000054:	00812e23          	sw	s0,28(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:86
+  SREG x9, 8 * REGBYTES(sp)
+80000058:	02912023          	sw	s1,32(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:87
+  SREG x10, 9 * REGBYTES(sp)
+8000005c:	02a12223          	sw	a0,36(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:88
+  SREG x11, 10 * REGBYTES(sp)
+80000060:	02b12423          	sw	a1,40(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:89
+  SREG x12, 11 * REGBYTES(sp)
+80000064:	02c12623          	sw	a2,44(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:90
+  SREG x13, 12 * REGBYTES(sp)
+80000068:	02d12823          	sw	a3,48(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:91
+  SREG x14, 13 * REGBYTES(sp)
+8000006c:	02e12a23          	sw	a4,52(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:92
+  SREG x15, 14 * REGBYTES(sp)
+80000070:	02f12c23          	sw	a5,56(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:93
+  SREG x16, 15 * REGBYTES(sp)
+80000074:	03012e23          	sw	a6,60(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:94
+  SREG x17, 16 * REGBYTES(sp)
+80000078:	05112023          	sw	a7,64(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:95
+  SREG x18, 17 * REGBYTES(sp)
+8000007c:	05212223          	sw	s2,68(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:96
+  SREG x19, 18 * REGBYTES(sp)
+80000080:	05312423          	sw	s3,72(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:97
+  SREG x20, 19 * REGBYTES(sp)
+80000084:	05412623          	sw	s4,76(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:98
+  SREG x21, 20 * REGBYTES(sp)
+80000088:	05512823          	sw	s5,80(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:99
+  SREG x22, 21 * REGBYTES(sp)
+8000008c:	05612a23          	sw	s6,84(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:100
+  SREG x23, 22 * REGBYTES(sp)
+80000090:	05712c23          	sw	s7,88(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:101
+  SREG x24, 23 * REGBYTES(sp)
+80000094:	05812e23          	sw	s8,92(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:102
+  SREG x25, 24 * REGBYTES(sp)
+80000098:	07912023          	sw	s9,96(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:103
+  SREG x26, 25 * REGBYTES(sp)
+8000009c:	07a12223          	sw	s10,100(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:104
+  SREG x27, 26 * REGBYTES(sp)
+800000a0:	07b12423          	sw	s11,104(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:105
+  SREG x28, 27 * REGBYTES(sp)
+800000a4:	07c12623          	sw	t3,108(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:106
+  SREG x29, 28 * REGBYTES(sp)
+800000a8:	07d12823          	sw	t4,112(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:107
+  SREG x30, 29 * REGBYTES(sp)
+800000ac:	07e12a23          	sw	t5,116(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:108
+  SREG x31, 30 * REGBYTES(sp)
+800000b0:	07f12c23          	sw	t6,120(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:111
+
+
+  csrr t0, mepc
+800000b4:	341022f3          	csrr	t0,mepc
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:112
+  SREG t0, 31 * REGBYTES(sp)
+800000b8:	06512e23          	sw	t0,124(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:114
+
+  csrr a0, mcause
+800000bc:	34202573          	csrr	a0,mcause
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:115
+  csrr a1, mepc
+800000c0:	341025f3          	csrr	a1,mepc
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:116
+  mv a2, sp
+800000c4:	00010613          	mv	a2,sp
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:117
+  jal handle_trap
+800000c8:	1c4000ef          	jal	ra,8000028c <handle_trap>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:118
+  csrw mepc, a0
+800000cc:	34151073          	csrw	mepc,a0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:121
+
+  # Remain in M-mode after mret
+  li t0, MSTATUS_MPP
+800000d0:	000022b7          	lui	t0,0x2
+800000d4:	80028293          	addi	t0,t0,-2048 # 1800 <HEAP_SIZE+0x1000>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:122
+  csrs mstatus, t0
+800000d8:	3002a073          	csrs	mstatus,t0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:124
+
+  LREG x1, 0 * REGBYTES(sp)
+800000dc:	00012083          	lw	ra,0(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:125
+  LREG x2, 1 * REGBYTES(sp)
+800000e0:	00412103          	lw	sp,4(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:126
+  LREG x3, 2 * REGBYTES(sp)
+800000e4:	00812183          	lw	gp,8(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:127
+  LREG x4, 3 * REGBYTES(sp)
+800000e8:	00c12203          	lw	tp,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:128
+  LREG x5, 4 * REGBYTES(sp)
+800000ec:	01012283          	lw	t0,16(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:129
+  LREG x6, 5 * REGBYTES(sp)
+800000f0:	01412303          	lw	t1,20(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:130
+  LREG x7, 6 * REGBYTES(sp)
+800000f4:	01812383          	lw	t2,24(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:131
+  LREG x8, 7 * REGBYTES(sp)
+800000f8:	01c12403          	lw	s0,28(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:132
+  LREG x9, 8 * REGBYTES(sp)
+800000fc:	02012483          	lw	s1,32(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:133
+  LREG x10, 9 * REGBYTES(sp)
+80000100:	02412503          	lw	a0,36(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:134
+  LREG x11, 10 * REGBYTES(sp)
+80000104:	02812583          	lw	a1,40(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:135
+  LREG x12, 11 * REGBYTES(sp)
+80000108:	02c12603          	lw	a2,44(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:136
+  LREG x13, 12 * REGBYTES(sp)
+8000010c:	03012683          	lw	a3,48(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:137
+  LREG x14, 13 * REGBYTES(sp)
+80000110:	03412703          	lw	a4,52(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:138
+  LREG x15, 14 * REGBYTES(sp)
+80000114:	03812783          	lw	a5,56(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:139
+  LREG x16, 15 * REGBYTES(sp)
+80000118:	03c12803          	lw	a6,60(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:140
+  LREG x17, 16 * REGBYTES(sp)
+8000011c:	04012883          	lw	a7,64(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:141
+  LREG x18, 17 * REGBYTES(sp)
+80000120:	04412903          	lw	s2,68(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:142
+  LREG x19, 18 * REGBYTES(sp)
+80000124:	04812983          	lw	s3,72(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:143
+  LREG x20, 19 * REGBYTES(sp)
+80000128:	04c12a03          	lw	s4,76(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:144
+  LREG x21, 20 * REGBYTES(sp)
+8000012c:	05012a83          	lw	s5,80(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:145
+  LREG x22, 21 * REGBYTES(sp)
+80000130:	05412b03          	lw	s6,84(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:146
+  LREG x23, 22 * REGBYTES(sp)
+80000134:	05812b83          	lw	s7,88(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:147
+  LREG x24, 23 * REGBYTES(sp)
+80000138:	05c12c03          	lw	s8,92(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:148
+  LREG x25, 24 * REGBYTES(sp)
+8000013c:	06012c83          	lw	s9,96(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:149
+  LREG x26, 25 * REGBYTES(sp)
+80000140:	06412d03          	lw	s10,100(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:150
+  LREG x27, 26 * REGBYTES(sp)
+80000144:	06812d83          	lw	s11,104(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:151
+  LREG x28, 27 * REGBYTES(sp)
+80000148:	06c12e03          	lw	t3,108(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:152
+  LREG x29, 28 * REGBYTES(sp)
+8000014c:	07012e83          	lw	t4,112(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:153
+  LREG x30, 29 * REGBYTES(sp)
+80000150:	07412f03          	lw	t5,116(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:154
+  LREG x31, 30 * REGBYTES(sp)
+80000154:	07812f83          	lw	t6,120(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:156
+
+  addi sp, sp, 32*REGBYTES
+80000158:	08010113          	addi	sp,sp,128
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/entry.S:157
+  mret
+8000015c:	30200073          	mret
+
+80000160 <_init>:
+_init():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:61
+
+void _init(void)
+{
+    extern int main(int, char**);
+    const char *argv0 = "hello";
+    char *argv[] = {(char *)argv0, NULL, NULL};
+80000160:	800017b7          	lui	a5,0x80001
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:58
+{
+80000164:	fe010113          	addi	sp,sp,-32
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:61
+    char *argv[] = {(char *)argv0, NULL, NULL};
+80000168:	ee078793          	addi	a5,a5,-288 # 80000ee0 <__stack_top+0xffffee10>
+8000016c:	00f12223          	sw	a5,4(sp)
+80000170:	80001737          	lui	a4,0x80001
+80000174:	800017b7          	lui	a5,0x80001
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:58
+{
+80000178:	00112e23          	sw	ra,28(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:61
+    char *argv[] = {(char *)argv0, NULL, NULL};
+8000017c:	00012423          	sw	zero,8(sp)
+80000180:	00012623          	sw	zero,12(sp)
+80000184:	01078793          	addi	a5,a5,16 # 80001010 <__stack_top+0xffffef40>
+80000188:	01070713          	addi	a4,a4,16 # 80001010 <__stack_top+0xffffef40>
+copy_section():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:38
+    while(p_vma <= p_vma_end)
+8000018c:	81018693          	addi	a3,gp,-2032 # 80001020 <__sdata_end>
+80000190:	04f6f263          	bleu	a5,a3,800001d4 <_init+0x74>
+80000194:	81018793          	addi	a5,gp,-2032 # 80001020 <__sdata_end>
+80000198:	81018713          	addi	a4,gp,-2032 # 80001020 <__sdata_end>
+8000019c:	89018693          	addi	a3,gp,-1904 # 800010a0 <__data_end>
+800001a0:	04f6f463          	bleu	a5,a3,800001e8 <_init+0x88>
+zero_section():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:48
+    uint32_t * p_zero = start;
+800001a4:	89018793          	addi	a5,gp,-1904 # 800010a0 <__data_end>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:50
+    while(p_zero <= end)
+800001a8:	8a018713          	addi	a4,gp,-1888 # 800010b0 <__sbss_end>
+800001ac:	04f77863          	bleu	a5,a4,800001fc <_init+0x9c>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:48
+    uint32_t * p_zero = start;
+800001b0:	8a018793          	addi	a5,gp,-1888 # 800010b0 <__sbss_end>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:50
+    while(p_zero <= end)
+800001b4:	8c018713          	addi	a4,gp,-1856 # 800010d0 <__bss_end>
+800001b8:	04f77863          	bleu	a5,a4,80000208 <_init+0xa8>
+_init():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:68
+    copy_section(&__sdata_load, &__sdata_start, &__sdata_end);
+    copy_section(&__data_load, &__data_start, &__data_end);
+    zero_section(&__sbss_start, &__sbss_end);
+    zero_section(&__bss_start, &__bss_end);
+    
+    main(1, argv);
+800001bc:	00410593          	addi	a1,sp,4
+800001c0:	00100513          	li	a0,1
+800001c4:	2e9000ef          	jal	ra,80000cac <main>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:69
+}
+800001c8:	01c12083          	lw	ra,28(sp)
+800001cc:	02010113          	addi	sp,sp,32
+800001d0:	00008067          	ret
+copy_section():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:40
+        *p_vma = *p_load;
+800001d4:	00072603          	lw	a2,0(a4)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:42
+        ++p_vma;
+800001d8:	00478793          	addi	a5,a5,4
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:41
+        ++p_load;
+800001dc:	00470713          	addi	a4,a4,4
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:40
+        *p_vma = *p_load;
+800001e0:	fec7ae23          	sw	a2,-4(a5)
+800001e4:	fadff06f          	j	80000190 <_init+0x30>
+800001e8:	00072603          	lw	a2,0(a4)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:42
+        ++p_vma;
+800001ec:	00478793          	addi	a5,a5,4
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:41
+        ++p_load;
+800001f0:	00470713          	addi	a4,a4,4
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:40
+        *p_vma = *p_load;
+800001f4:	fec7ae23          	sw	a2,-4(a5)
+800001f8:	fa9ff06f          	j	800001a0 <_init+0x40>
+zero_section():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:52
+        *p_zero = 0;
+800001fc:	0007a023          	sw	zero,0(a5)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:53
+        ++p_zero;
+80000200:	00478793          	addi	a5,a5,4
+80000204:	fa9ff06f          	j	800001ac <_init+0x4c>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:52
+        *p_zero = 0;
+80000208:	0007a023          	sw	zero,0(a5)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:53
+        ++p_zero;
+8000020c:	00478793          	addi	a5,a5,4
+80000210:	fa9ff06f          	j	800001b8 <_init+0x58>
+
+80000214 <_fini>:
+_fini():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/init.c:75
+
+/* Function called after main() finishes */
+void
+_fini()
+{
+}
+80000214:	00008067          	ret
+
+80000218 <SysTick_Config>:
+SysTick_Config():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:97
+ */
+uint32_t SysTick_Config(uint32_t ticks)
+{
+    uint32_t ret_val = ERROR;
+
+    g_systick_increment = (uint64_t)(ticks) / RTC_PRESCALER;
+80000218:	06400793          	li	a5,100
+8000021c:	02f55533          	divu	a0,a0,a5
+80000220:	89018793          	addi	a5,gp,-1904 # 800010a0 <__data_end>
+80000224:	0007a223          	sw	zero,4(a5)
+80000228:	00a7a023          	sw	a0,0(a5)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:99
+
+    if (g_systick_increment > 0U)
+8000022c:	04050c63          	beqz	a0,80000284 <SysTick_Config+0x6c>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:101
+    {
+        uint32_t mhart_id = read_csr(mhartid);
+80000230:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:103
+
+        PRCI->MTIMECMP[mhart_id] = PRCI->MTIME + g_systick_increment;
+80000234:	4400c737          	lui	a4,0x4400c
+80000238:	ff872803          	lw	a6,-8(a4) # 4400bff8 <RAM_SIZE+0x43ffbff8>
+8000023c:	ffc72883          	lw	a7,-4(a4)
+80000240:	01050733          	add	a4,a0,a6
+80000244:	00a73533          	sltu	a0,a4,a0
+80000248:	00070613          	mv	a2,a4
+8000024c:	00001737          	lui	a4,0x1
+80000250:	80070713          	addi	a4,a4,-2048 # 800 <HEAP_SIZE>
+80000254:	00e787b3          	add	a5,a5,a4
+80000258:	00379793          	slli	a5,a5,0x3
+8000025c:	44000737          	lui	a4,0x44000
+80000260:	00f707b3          	add	a5,a4,a5
+80000264:	00c7a023          	sw	a2,0(a5)
+80000268:	011506b3          	add	a3,a0,a7
+8000026c:	00d7a223          	sw	a3,4(a5)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:105
+
+        set_csr(mie, MIP_MTIP);
+80000270:	08000793          	li	a5,128
+80000274:	3047a7f3          	csrrs	a5,mie,a5
+__enable_irq():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:87
+    set_csr(mstatus, MSTATUS_MIE);
+80000278:	300467f3          	csrrsi	a5,mstatus,8
+SysTick_Config():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:109
+
+        __enable_irq();
+
+        ret_val = SUCCESS;
+8000027c:	00000513          	li	a0,0
+80000280:	00008067          	ret
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:95
+    uint32_t ret_val = ERROR;
+80000284:	00100513          	li	a0,1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:113
+    }
+
+    return ret_val;
+}
+80000288:	00008067          	ret
+
+8000028c <handle_trap>:
+handle_trap():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:198
+
+/*------------------------------------------------------------------------------
+ * Trap/Interrupt handler
+ */
+uintptr_t handle_trap(uintptr_t mcause, uintptr_t mepc)
+{
+8000028c:	ff010113          	addi	sp,sp,-16
+80000290:	00112623          	sw	ra,12(sp)
+80000294:	00812423          	sw	s0,8(sp)
+80000298:	00912223          	sw	s1,4(sp)
+8000029c:	01212023          	sw	s2,0(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:199
+    if ((mcause & MCAUSE_INT) && ((mcause & MCAUSE_CAUSE)  == IRQ_M_EXT))
+800002a0:	12055c63          	bgez	a0,800003d8 <handle_trap+0x14c>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:199 (discriminator 1)
+800002a4:	800007b7          	lui	a5,0x80000
+800002a8:	fff7c793          	not	a5,a5
+800002ac:	00f577b3          	and	a5,a0,a5
+800002b0:	00b00713          	li	a4,11
+800002b4:	00058493          	mv	s1,a1
+800002b8:	08e79e63          	bne	a5,a4,80000354 <handle_trap+0xc8>
+PLIC_ClaimIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_plic.h:206
+/*==============================================================================
+ * The function PLIC_ClaimIRQ() claims the interrupt from the PLIC controller.
+ */
+static inline uint32_t PLIC_ClaimIRQ(void)
+{
+    unsigned long hart_id = read_csr(mhartid);
+800002bc:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_plic.h:208
+
+    return PLIC->TARGET[hart_id].CLAIM_COMPLETE;
+800002c0:	20078793          	addi	a5,a5,512 # 80000200 <__stack_top+0xffffe130>
+800002c4:	40000437          	lui	s0,0x40000
+800002c8:	00c79793          	slli	a5,a5,0xc
+800002cc:	00f407b3          	add	a5,s0,a5
+800002d0:	0047a903          	lw	s2,4(a5)
+handle_m_ext_interrupt():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:176
+    disable = ext_irq_handler_table[int_num]();
+800002d4:	81018793          	addi	a5,gp,-2032 # 80001020 <__sdata_end>
+800002d8:	00291713          	slli	a4,s2,0x2
+800002dc:	00e787b3          	add	a5,a5,a4
+800002e0:	0007a783          	lw	a5,0(a5)
+800002e4:	000780e7          	jalr	a5
+PLIC_CompleteIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_plic.h:217
+ * The function PLIC_CompleteIRQ() indicates to the PLIC controller the interrupt
+ * is processed and claim is complete.
+ */
+static inline void PLIC_CompleteIRQ(uint32_t source)
+{
+    unsigned long hart_id = read_csr(mhartid);
+800002e8:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_plic.h:219
+
+    PLIC->TARGET[hart_id].CLAIM_COMPLETE = source;
+800002ec:	20078793          	addi	a5,a5,512
+800002f0:	00c79793          	slli	a5,a5,0xc
+800002f4:	00f407b3          	add	a5,s0,a5
+800002f8:	0127a223          	sw	s2,4(a5)
+handle_m_ext_interrupt():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:180
+    if(EXT_IRQ_DISABLE == disable)
+800002fc:	00100793          	li	a5,1
+80000300:	02f51c63          	bne	a0,a5,80000338 <handle_trap+0xac>
+PLIC_DisableIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_plic.h:175
+    unsigned long hart_id = read_csr(mhartid);
+80000304:	f14027f3          	csrr	a5,mhartid
+80000308:	00579793          	slli	a5,a5,0x5
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_plic.h:176
+    uint32_t current = PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32];
+8000030c:	00595713          	srli	a4,s2,0x5
+80000310:	00e787b3          	add	a5,a5,a4
+80000314:	00279793          	slli	a5,a5,0x2
+80000318:	00f40433          	add	s0,s0,a5
+8000031c:	000027b7          	lui	a5,0x2
+80000320:	00f40433          	add	s0,s0,a5
+80000324:	00042783          	lw	a5,0(s0) # 40000000 <RAM_SIZE+0x3fff0000>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_plic.h:178
+    current &= ~((uint32_t)1 << (IRQn % 32));
+80000328:	01251533          	sll	a0,a0,s2
+8000032c:	fff54513          	not	a0,a0
+80000330:	00f57533          	and	a0,a0,a5
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_plic.h:180
+    PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32] = current;
+80000334:	00a42023          	sw	a0,0(s0)
+handle_trap():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:247
+#else
+        _exit(1 + mcause);
+#endif
+    }
+    return mepc;
+}
+80000338:	00c12083          	lw	ra,12(sp)
+8000033c:	00812403          	lw	s0,8(sp)
+80000340:	00048513          	mv	a0,s1
+80000344:	00012903          	lw	s2,0(sp)
+80000348:	00412483          	lw	s1,4(sp)
+8000034c:	01010113          	addi	sp,sp,16
+80000350:	00008067          	ret
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:203 (discriminator 1)
+    else if ((mcause & MCAUSE_INT) && ((mcause & MCAUSE_CAUSE)  == IRQ_M_TIMER))
+80000354:	00700713          	li	a4,7
+80000358:	06e79463          	bne	a5,a4,800003c0 <handle_trap+0x134>
+handle_m_timer_interrupt():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:120
+    clear_csr(mie, MIP_MTIP);
+8000035c:	08000413          	li	s0,128
+80000360:	304437f3          	csrrc	a5,mie,s0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:122
+    SysTick_Handler();
+80000364:	031000ef          	jal	ra,80000b94 <SysTick_Handler>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:124
+    PRCI->MTIMECMP[read_csr(mhartid)] = PRCI->MTIME + g_systick_increment;
+80000368:	4400c7b7          	lui	a5,0x4400c
+8000036c:	ff87a803          	lw	a6,-8(a5) # 4400bff8 <RAM_SIZE+0x43ffbff8>
+80000370:	ffc7a883          	lw	a7,-4(a5)
+80000374:	f14027f3          	csrr	a5,mhartid
+80000378:	89018693          	addi	a3,gp,-1904 # 800010a0 <__data_end>
+8000037c:	0006a703          	lw	a4,0(a3)
+80000380:	0046a583          	lw	a1,4(a3)
+80000384:	00e80733          	add	a4,a6,a4
+80000388:	01073533          	sltu	a0,a4,a6
+8000038c:	00070613          	mv	a2,a4
+80000390:	00001737          	lui	a4,0x1
+80000394:	80070713          	addi	a4,a4,-2048 # 800 <HEAP_SIZE>
+80000398:	00e787b3          	add	a5,a5,a4
+8000039c:	00379793          	slli	a5,a5,0x3
+800003a0:	44000737          	lui	a4,0x44000
+800003a4:	00f707b3          	add	a5,a4,a5
+800003a8:	00b885b3          	add	a1,a7,a1
+800003ac:	00b506b3          	add	a3,a0,a1
+800003b0:	00c7a023          	sw	a2,0(a5)
+800003b4:	00d7a223          	sw	a3,4(a5)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:126
+    set_csr(mie, MIP_MTIP);
+800003b8:	30442473          	csrrs	s0,mie,s0
+800003bc:	f7dff06f          	j	80000338 <handle_trap+0xac>
+handle_trap():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:207 (discriminator 1)
+    else if ( (mcause & MCAUSE_INT) && ((mcause & MCAUSE_CAUSE)  == IRQ_M_SOFT))
+800003c0:	00300713          	li	a4,3
+800003c4:	00e79a63          	bne	a5,a4,800003d8 <handle_trap+0x14c>
+handle_m_soft_interrupt():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:188
+    Software_IRQHandler();
+800003c8:	018000ef          	jal	ra,800003e0 <Software_IRQHandler>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:191
+    PRCI->MSIP[0] = 0x00U;
+800003cc:	440007b7          	lui	a5,0x44000
+800003d0:	0007a023          	sw	zero,0(a5) # 44000000 <RAM_SIZE+0x43ff0000>
+800003d4:	f65ff06f          	j	80000338 <handle_trap+0xac>
+handle_trap():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal.c:243
+        _exit(1 + mcause);
+800003d8:	00150513          	addi	a0,a0,1
+800003dc:	0f4000ef          	jal	ra,800004d0 <_exit>
+
+800003e0 <Software_IRQHandler>:
+Software_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal_stubs.c:31
+
+/*Weakly linked handler. Will be replaced with user's definition if provided*/
+__attribute__((weak)) void SysTick_Handler(void)
+{
+	/*Default handler*/
+}
+800003e0:	ff010113          	addi	sp,sp,-16
+800003e4:	00a00513          	li	a0,10
+800003e8:	00112623          	sw	ra,12(sp)
+800003ec:	0e4000ef          	jal	ra,800004d0 <_exit>
+
+800003f0 <Invalid_IRQHandler>:
+Invalid_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/riscv_hal_stubs.c:37
+
+/*Weakly linked handler. Will be replaced with user's definition if provided*/
+__attribute__((weak)) uint8_t Invalid_IRQHandler(void)
+{
+    return(0U); /*Default handler*/
+}
+800003f0:	00000513          	li	a0,0
+800003f4:	00008067          	ret
+
+800003f8 <External_1_IRQHandler>:
+External_1_IRQHandler():
+800003f8:	00000513          	li	a0,0
+800003fc:	00008067          	ret
+
+80000400 <External_2_IRQHandler>:
+External_2_IRQHandler():
+80000400:	00000513          	li	a0,0
+80000404:	00008067          	ret
+
+80000408 <External_3_IRQHandler>:
+External_3_IRQHandler():
+80000408:	00000513          	li	a0,0
+8000040c:	00008067          	ret
+
+80000410 <External_4_IRQHandler>:
+External_4_IRQHandler():
+80000410:	00000513          	li	a0,0
+80000414:	00008067          	ret
+
+80000418 <External_5_IRQHandler>:
+External_5_IRQHandler():
+80000418:	00000513          	li	a0,0
+8000041c:	00008067          	ret
+
+80000420 <External_6_IRQHandler>:
+External_6_IRQHandler():
+80000420:	00000513          	li	a0,0
+80000424:	00008067          	ret
+
+80000428 <External_7_IRQHandler>:
+External_7_IRQHandler():
+80000428:	00000513          	li	a0,0
+8000042c:	00008067          	ret
+
+80000430 <External_8_IRQHandler>:
+External_8_IRQHandler():
+80000430:	00000513          	li	a0,0
+80000434:	00008067          	ret
+
+80000438 <External_9_IRQHandler>:
+External_9_IRQHandler():
+80000438:	00000513          	li	a0,0
+8000043c:	00008067          	ret
+
+80000440 <External_10_IRQHandler>:
+External_10_IRQHandler():
+80000440:	00000513          	li	a0,0
+80000444:	00008067          	ret
+
+80000448 <External_11_IRQHandler>:
+External_11_IRQHandler():
+80000448:	00000513          	li	a0,0
+8000044c:	00008067          	ret
+
+80000450 <External_12_IRQHandler>:
+External_12_IRQHandler():
+80000450:	00000513          	li	a0,0
+80000454:	00008067          	ret
+
+80000458 <External_13_IRQHandler>:
+External_13_IRQHandler():
+80000458:	00000513          	li	a0,0
+8000045c:	00008067          	ret
+
+80000460 <External_14_IRQHandler>:
+External_14_IRQHandler():
+80000460:	00000513          	li	a0,0
+80000464:	00008067          	ret
+
+80000468 <External_15_IRQHandler>:
+External_15_IRQHandler():
+80000468:	00000513          	li	a0,0
+8000046c:	00008067          	ret
+
+80000470 <External_16_IRQHandler>:
+External_16_IRQHandler():
+80000470:	00000513          	li	a0,0
+80000474:	00008067          	ret
+
+80000478 <External_17_IRQHandler>:
+External_17_IRQHandler():
+80000478:	00000513          	li	a0,0
+8000047c:	00008067          	ret
+
+80000480 <External_18_IRQHandler>:
+External_18_IRQHandler():
+80000480:	00000513          	li	a0,0
+80000484:	00008067          	ret
+
+80000488 <External_19_IRQHandler>:
+External_19_IRQHandler():
+80000488:	00000513          	li	a0,0
+8000048c:	00008067          	ret
+
+80000490 <External_20_IRQHandler>:
+External_20_IRQHandler():
+80000490:	00000513          	li	a0,0
+80000494:	00008067          	ret
+
+80000498 <External_21_IRQHandler>:
+External_21_IRQHandler():
+80000498:	00000513          	li	a0,0
+8000049c:	00008067          	ret
+
+800004a0 <External_22_IRQHandler>:
+External_22_IRQHandler():
+800004a0:	00000513          	li	a0,0
+800004a4:	00008067          	ret
+
+800004a8 <External_23_IRQHandler>:
+External_23_IRQHandler():
+800004a8:	00000513          	li	a0,0
+800004ac:	00008067          	ret
+
+800004b0 <External_24_IRQHandler>:
+External_24_IRQHandler():
+800004b0:	00000513          	li	a0,0
+800004b4:	00008067          	ret
+
+800004b8 <External_25_IRQHandler>:
+External_25_IRQHandler():
+800004b8:	00000513          	li	a0,0
+800004bc:	00008067          	ret
+
+800004c0 <External_26_IRQHandler>:
+External_26_IRQHandler():
+800004c0:	00000513          	li	a0,0
+800004c4:	00008067          	ret
+
+800004c8 <External_27_IRQHandler>:
+External_27_IRQHandler():
+800004c8:	00000513          	li	a0,0
+800004cc:	00008067          	ret
+
+800004d0 <_exit>:
+_exit():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../riscv_hal/syscall.c:74
+    }
+}
+
+               
+void _exit(int code)
+{
+800004d0:	0000006f          	j	800004d0 <_exit>
+
+800004d4 <HW_set_32bit_reg>:
+HW_set_32bit_reg():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:36
+ *
+ * a0:   addr_t reg_addr
+ * a1:   uint32_t value
+ */
+HW_set_32bit_reg:
+    sw a1, 0(a0)
+800004d4:	00b52023          	sw	a1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:37
+    ret
+800004d8:	00008067          	ret
+
+800004dc <HW_get_32bit_reg>:
+HW_get_32bit_reg():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:47
+ *
+ * R0:   addr_t reg_addr
+ * @return          32 bits value read from the peripheral register.
+ */
+HW_get_32bit_reg:
+    lw a0, 0(a0)
+800004dc:	00052503          	lw	a0,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:48
+    ret
+800004e0:	00008067          	ret
+
+800004e4 <HW_set_32bit_reg_field>:
+HW_set_32bit_reg_field():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:60
+ * a1:   int_fast8_t shift
+ * a2:   uint32_t mask
+ * a3:   uint32_t value
+ */
+HW_set_32bit_reg_field:
+    mv t3, a3
+800004e4:	00068e13          	mv	t3,a3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:61
+    sll t3, t3, a1
+800004e8:	00be1e33          	sll	t3,t3,a1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:62
+    and  t3, t3, a2
+800004ec:	00ce7e33          	and	t3,t3,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:63
+    lw t1, 0(a0)
+800004f0:	00052303          	lw	t1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:64
+    mv t2, a2
+800004f4:	00060393          	mv	t2,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:65
+    not t2, t2
+800004f8:	fff3c393          	not	t2,t2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:66
+    and t1, t1, t2
+800004fc:	00737333          	and	t1,t1,t2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:67
+    or t1, t1, t3
+80000500:	01c36333          	or	t1,t1,t3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:68
+    sw t1, 0(a0)
+80000504:	00652023          	sw	t1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:69
+    ret
+80000508:	00008067          	ret
+
+8000050c <HW_get_32bit_reg_field>:
+HW_get_32bit_reg_field():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:83
+ *
+ * @return          32 bits value containing the register field value specified
+ *                  as parameter.
+ */
+HW_get_32bit_reg_field:
+    lw a0, 0(a0)
+8000050c:	00052503          	lw	a0,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:84
+    and a0, a0, a2
+80000510:	00c57533          	and	a0,a0,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:85
+    srl a0, a0, a1
+80000514:	00b55533          	srl	a0,a0,a1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:86
+    ret
+80000518:	00008067          	ret
+
+8000051c <HW_set_16bit_reg>:
+HW_set_16bit_reg():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:96
+ *
+ * a0:   addr_t reg_addr
+ * a1:   uint_fast16_t value
+ */
+HW_set_16bit_reg:
+    sh a1, 0(a0)
+8000051c:	00b51023          	sh	a1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:97
+    ret
+80000520:	00008067          	ret
+
+80000524 <HW_get_16bit_reg>:
+HW_get_16bit_reg():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:107
+ *
+ * a0:   addr_t reg_addr
+ * @return          16 bits value read from the peripheral register.
+ */
+HW_get_16bit_reg:
+    lh a0, (a0)
+80000524:	00051503          	lh	a0,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:108
+    ret
+80000528:	00008067          	ret
+
+8000052c <HW_set_16bit_reg_field>:
+HW_set_16bit_reg_field():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:121
+ * a2:   uint_fast16_t mask
+ * a3:   uint_fast16_t value
+ * @param value     Value to be written in the specified field.
+ */
+HW_set_16bit_reg_field:
+    mv t3, a3
+8000052c:	00068e13          	mv	t3,a3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:122
+    sll t3, t3, a1
+80000530:	00be1e33          	sll	t3,t3,a1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:123
+    and  t3, t3, a2
+80000534:	00ce7e33          	and	t3,t3,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:124
+    lh t1, 0(a0)
+80000538:	00051303          	lh	t1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:125
+    mv t2, a2
+8000053c:	00060393          	mv	t2,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:126
+    not t2, t2
+80000540:	fff3c393          	not	t2,t2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:127
+    and t1, t1, t2
+80000544:	00737333          	and	t1,t1,t2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:128
+    or t1, t1, t3
+80000548:	01c36333          	or	t1,t1,t3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:129
+    sh t1, 0(a0)
+8000054c:	00651023          	sh	t1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:130
+    ret
+80000550:	00008067          	ret
+
+80000554 <HW_get_16bit_reg_field>:
+HW_get_16bit_reg_field():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:144
+ *
+ * @return          16 bits value containing the register field value specified
+ *                  as parameter.
+ */
+HW_get_16bit_reg_field:
+    lh a0, 0(a0)
+80000554:	00051503          	lh	a0,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:145
+    and a0, a0, a2
+80000558:	00c57533          	and	a0,a0,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:146
+    srl a0, a0, a1
+8000055c:	00b55533          	srl	a0,a0,a1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:147
+    ret
+80000560:	00008067          	ret
+
+80000564 <HW_set_8bit_reg>:
+HW_set_8bit_reg():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:157
+ *
+ * a0:   addr_t reg_addr
+ * a1:   uint_fast8_t value
+ */
+HW_set_8bit_reg:
+    sb a1, 0(a0)
+80000564:	00b50023          	sb	a1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:158
+    ret
+80000568:	00008067          	ret
+
+8000056c <HW_get_8bit_reg>:
+HW_get_8bit_reg():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:168
+ *
+ * a0:   addr_t reg_addr
+ * @return          8 bits value read from the peripheral register.
+ */
+HW_get_8bit_reg:
+    lb a0, 0(a0)
+8000056c:	00050503          	lb	a0,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:169
+    ret
+80000570:	00008067          	ret
+
+80000574 <HW_set_8bit_reg_field>:
+HW_set_8bit_reg_field():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:181
+ * a1:   int_fast8_t shift
+ * a2:   uint_fast8_t mask
+ * a3:   uint_fast8_t value
+ */
+HW_set_8bit_reg_field:
+    mv t3, a3
+80000574:	00068e13          	mv	t3,a3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:182
+    sll t3, t3, a1
+80000578:	00be1e33          	sll	t3,t3,a1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:183
+    and  t3, t3, a2
+8000057c:	00ce7e33          	and	t3,t3,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:184
+    lb t1, 0(a0)
+80000580:	00050303          	lb	t1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:185
+    mv t2, a2
+80000584:	00060393          	mv	t2,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:186
+    not t2, t2
+80000588:	fff3c393          	not	t2,t2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:187
+    and t1, t1, t2
+8000058c:	00737333          	and	t1,t1,t2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:188
+    or t1, t1, t3
+80000590:	01c36333          	or	t1,t1,t3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:189
+    sb t1, 0(a0)
+80000594:	00650023          	sb	t1,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:190
+    ret
+80000598:	00008067          	ret
+
+8000059c <HW_get_8bit_reg_field>:
+HW_get_8bit_reg_field():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:204
+ *
+ * @return          8 bits value containing the register field value specified
+ *                  as parameter.
+ */
+HW_get_8bit_reg_field:
+    lb a0, 0(a0)
+8000059c:	00050503          	lb	a0,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:205
+    and a0, a0, a2
+800005a0:	00c57533          	and	a0,a0,a2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:206
+    srl a0, a0, a1
+800005a4:	00b55533          	srl	a0,a0,a1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../hal/hw_reg_access.S:207
+    ret
+800005a8:	00008067          	ret
+
+800005ac <UART_init>:
+UART_init():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:226
+            this_uart->status |= new_status;
+            rx_full = new_status & STATUS_RXFULL_MASK;
+        }
+    }
+    return rx_idx;
+}
+800005ac:	0a050463          	beqz	a0,80000654 <UART_init+0xa8>
+800005b0:	00700793          	li	a5,7
+800005b4:	0ad7e063          	bltu	a5,a3,80000654 <UART_init+0xa8>
+800005b8:	000027b7          	lui	a5,0x2
+800005bc:	08f67c63          	bleu	a5,a2,80000654 <UART_init+0xa8>
+800005c0:	fe010113          	addi	sp,sp,-32
+800005c4:	00812c23          	sw	s0,24(sp)
+800005c8:	01212823          	sw	s2,16(sp)
+800005cc:	00060413          	mv	s0,a2
+800005d0:	00058913          	mv	s2,a1
+800005d4:	00912a23          	sw	s1,20(sp)
+800005d8:	0ff67593          	andi	a1,a2,255
+800005dc:	00050493          	mv	s1,a0
+800005e0:	40545413          	srai	s0,s0,0x5
+800005e4:	00890513          	addi	a0,s2,8
+800005e8:	00112e23          	sw	ra,28(sp)
+800005ec:	01312623          	sw	s3,12(sp)
+800005f0:	7f847413          	andi	s0,s0,2040
+800005f4:	00068993          	mv	s3,a3
+800005f8:	f6dff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+800005fc:	00c90513          	addi	a0,s2,12
+80000600:	013465b3          	or	a1,s0,s3
+80000604:	f61ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+80000608:	01090513          	addi	a0,s2,16
+8000060c:	0124a023          	sw	s2,0(s1)
+80000610:	f5dff0ef          	jal	ra,8000056c <HW_get_8bit_reg>
+80000614:	00257513          	andi	a0,a0,2
+80000618:	02051263          	bnez	a0,8000063c <UART_init+0x90>
+8000061c:	00048223          	sb	zero,4(s1)
+80000620:	01c12083          	lw	ra,28(sp)
+80000624:	01812403          	lw	s0,24(sp)
+80000628:	01412483          	lw	s1,20(sp)
+8000062c:	01012903          	lw	s2,16(sp)
+80000630:	00c12983          	lw	s3,12(sp)
+80000634:	02010113          	addi	sp,sp,32
+80000638:	00008067          	ret
+8000063c:	0004a503          	lw	a0,0(s1)
+80000640:	00450513          	addi	a0,a0,4
+80000644:	f29ff0ef          	jal	ra,8000056c <HW_get_8bit_reg>
+80000648:	0004a503          	lw	a0,0(s1)
+8000064c:	01050513          	addi	a0,a0,16
+80000650:	fc1ff06f          	j	80000610 <UART_init+0x64>
+80000654:	00008067          	ret
+
+80000658 <UART_polled_tx_string>:
+UART_polled_tx_string():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:245
+    uint8_t tx_ready;
+
+    HAL_ASSERT( this_uart != NULL_INSTANCE )
+    HAL_ASSERT( p_sz_string != NULL_BUFFER )
+    
+    if( ( this_uart != NULL_INSTANCE ) && ( p_sz_string != NULL_BUFFER ) )
+80000658:	06050263          	beqz	a0,800006bc <UART_polled_tx_string+0x64>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:245 (discriminator 1)
+8000065c:	06058063          	beqz	a1,800006bc <UART_polled_tx_string+0x64>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:238
+{
+80000660:	ff010113          	addi	sp,sp,-16
+80000664:	00812423          	sw	s0,8(sp)
+80000668:	00912223          	sw	s1,4(sp)
+8000066c:	00112623          	sw	ra,12(sp)
+80000670:	00050493          	mv	s1,a0
+80000674:	00058413          	mv	s0,a1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:248
+    {
+        char_idx = 0U;
+        while( 0U != p_sz_string[char_idx] )
+80000678:	00044783          	lbu	a5,0(s0)
+8000067c:	00079c63          	bnez	a5,80000694 <UART_polled_tx_string+0x3c>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:261
+            HAL_set_8bit_reg( this_uart->base_address, TXDATA,
+                              (uint_fast8_t)p_sz_string[char_idx] );
+            char_idx++;
+        }
+    }
+}
+80000680:	00c12083          	lw	ra,12(sp)
+80000684:	00812403          	lw	s0,8(sp)
+80000688:	00412483          	lw	s1,4(sp)
+8000068c:	01010113          	addi	sp,sp,16
+80000690:	00008067          	ret
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:252 (discriminator 1)
+                tx_ready = HAL_get_8bit_reg( this_uart->base_address, STATUS ) &
+80000694:	0004a503          	lw	a0,0(s1)
+80000698:	01050513          	addi	a0,a0,16
+8000069c:	ed1ff0ef          	jal	ra,8000056c <HW_get_8bit_reg>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:254 (discriminator 1)
+            } while ( !tx_ready );
+800006a0:	00157513          	andi	a0,a0,1
+800006a4:	fe0508e3          	beqz	a0,80000694 <UART_polled_tx_string+0x3c>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreUARTapb/core_uart_apb.c:256
+            HAL_set_8bit_reg( this_uart->base_address, TXDATA,
+800006a8:	00044583          	lbu	a1,0(s0)
+800006ac:	0004a503          	lw	a0,0(s1)
+800006b0:	00140413          	addi	s0,s0,1
+800006b4:	eb1ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+800006b8:	fc1ff06f          	j	80000678 <UART_polled_tx_string+0x20>
+800006bc:	00008067          	ret
+
+800006c0 <GPIO_init>:
+GPIO_init():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:422
+    if ( port_id < NB_OF_GPIO )
+    {
+        cfg_reg_addr += (port_id * 4);
+        cfg_value = HW_get_8bit_reg( cfg_reg_addr );
+        cfg_value &= ~GPIO_INT_ENABLE_MASK;
+        HW_set_8bit_reg( cfg_reg_addr, cfg_value );
+800006c0:	ff010113          	addi	sp,sp,-16
+800006c4:	00812423          	sw	s0,8(sp)
+800006c8:	00912223          	sw	s1,4(sp)
+800006cc:	01212023          	sw	s2,0(sp)
+800006d0:	00112623          	sw	ra,12(sp)
+800006d4:	00050413          	mv	s0,a0
+800006d8:	00b42023          	sw	a1,0(s0)
+800006dc:	00058493          	mv	s1,a1
+800006e0:	00c52223          	sw	a2,4(a0)
+800006e4:	08058913          	addi	s2,a1,128
+800006e8:	00048513          	mv	a0,s1
+800006ec:	00000593          	li	a1,0
+800006f0:	00448493          	addi	s1,s1,4
+800006f4:	e71ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+800006f8:	ff2498e3          	bne	s1,s2,800006e8 <GPIO_init+0x28>
+800006fc:	00442783          	lw	a5,4(s0)
+80000700:	00100713          	li	a4,1
+80000704:	02e78a63          	beq	a5,a4,80000738 <GPIO_init+0x78>
+80000708:	06078463          	beqz	a5,80000770 <GPIO_init+0xb0>
+8000070c:	00200713          	li	a4,2
+80000710:	0ae79a63          	bne	a5,a4,800007c4 <GPIO_init+0x104>
+80000714:	00042503          	lw	a0,0(s0)
+80000718:	00812403          	lw	s0,8(sp)
+8000071c:	00c12083          	lw	ra,12(sp)
+80000720:	00412483          	lw	s1,4(sp)
+80000724:	00012903          	lw	s2,0(sp)
+80000728:	fff00593          	li	a1,-1
+8000072c:	08050513          	addi	a0,a0,128
+80000730:	01010113          	addi	sp,sp,16
+80000734:	da1ff06f          	j	800004d4 <HW_set_32bit_reg>
+80000738:	00042503          	lw	a0,0(s0)
+8000073c:	000104b7          	lui	s1,0x10
+80000740:	fff48593          	addi	a1,s1,-1 # ffff <HEAP_SIZE+0xf7ff>
+80000744:	08050513          	addi	a0,a0,128
+80000748:	dd5ff0ef          	jal	ra,8000051c <HW_set_16bit_reg>
+8000074c:	00042503          	lw	a0,0(s0)
+80000750:	00812403          	lw	s0,8(sp)
+80000754:	00c12083          	lw	ra,12(sp)
+80000758:	00012903          	lw	s2,0(sp)
+8000075c:	fff48593          	addi	a1,s1,-1
+80000760:	00412483          	lw	s1,4(sp)
+80000764:	08450513          	addi	a0,a0,132
+80000768:	01010113          	addi	sp,sp,16
+8000076c:	db1ff06f          	j	8000051c <HW_set_16bit_reg>
+80000770:	00042503          	lw	a0,0(s0)
+80000774:	0ff00593          	li	a1,255
+80000778:	08050513          	addi	a0,a0,128
+8000077c:	de9ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+80000780:	00042503          	lw	a0,0(s0)
+80000784:	0ff00593          	li	a1,255
+80000788:	08450513          	addi	a0,a0,132
+8000078c:	dd9ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+80000790:	00042503          	lw	a0,0(s0)
+80000794:	0ff00593          	li	a1,255
+80000798:	08850513          	addi	a0,a0,136
+8000079c:	dc9ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+800007a0:	00042503          	lw	a0,0(s0)
+800007a4:	00812403          	lw	s0,8(sp)
+800007a8:	00c12083          	lw	ra,12(sp)
+800007ac:	00412483          	lw	s1,4(sp)
+800007b0:	00012903          	lw	s2,0(sp)
+800007b4:	0ff00593          	li	a1,255
+800007b8:	08c50513          	addi	a0,a0,140
+800007bc:	01010113          	addi	sp,sp,16
+800007c0:	da5ff06f          	j	80000564 <HW_set_8bit_reg>
+800007c4:	00c12083          	lw	ra,12(sp)
+800007c8:	00812403          	lw	s0,8(sp)
+800007cc:	00412483          	lw	s1,4(sp)
+800007d0:	00012903          	lw	s2,0(sp)
+800007d4:	01010113          	addi	sp,sp,16
+800007d8:	00008067          	ret
+
+800007dc <GPIO_config>:
+GPIO_config():
+800007dc:	01f00713          	li	a4,31
+800007e0:	00b76c63          	bltu	a4,a1,800007f8 <GPIO_config+0x1c>
+800007e4:	00052503          	lw	a0,0(a0)
+800007e8:	00259793          	slli	a5,a1,0x2
+800007ec:	00060593          	mv	a1,a2
+800007f0:	00a78533          	add	a0,a5,a0
+800007f4:	ce1ff06f          	j	800004d4 <HW_set_32bit_reg>
+800007f8:	00008067          	ret
+
+800007fc <GPIO_get_outputs>:
+GPIO_get_outputs():
+800007fc:	00452783          	lw	a5,4(a0)
+80000800:	ff010113          	addi	sp,sp,-16
+80000804:	00812423          	sw	s0,8(sp)
+80000808:	00112623          	sw	ra,12(sp)
+8000080c:	00912223          	sw	s1,4(sp)
+80000810:	01212023          	sw	s2,0(sp)
+80000814:	00100713          	li	a4,1
+80000818:	00050413          	mv	s0,a0
+8000081c:	02e78863          	beq	a5,a4,8000084c <GPIO_get_outputs+0x50>
+80000820:	06078463          	beqz	a5,80000888 <GPIO_get_outputs+0x8c>
+80000824:	00200713          	li	a4,2
+80000828:	0ae79863          	bne	a5,a4,800008d8 <GPIO_get_outputs+0xdc>
+8000082c:	00052503          	lw	a0,0(a0)
+80000830:	00812403          	lw	s0,8(sp)
+80000834:	00c12083          	lw	ra,12(sp)
+80000838:	00412483          	lw	s1,4(sp)
+8000083c:	00012903          	lw	s2,0(sp)
+80000840:	0a050513          	addi	a0,a0,160
+80000844:	01010113          	addi	sp,sp,16
+80000848:	c95ff06f          	j	800004dc <HW_get_32bit_reg>
+8000084c:	00052503          	lw	a0,0(a0)
+80000850:	0a050513          	addi	a0,a0,160
+80000854:	cd1ff0ef          	jal	ra,80000524 <HW_get_16bit_reg>
+80000858:	00050493          	mv	s1,a0
+8000085c:	00042503          	lw	a0,0(s0)
+80000860:	0a450513          	addi	a0,a0,164
+80000864:	cc1ff0ef          	jal	ra,80000524 <HW_get_16bit_reg>
+80000868:	01051513          	slli	a0,a0,0x10
+8000086c:	00956533          	or	a0,a0,s1
+80000870:	00c12083          	lw	ra,12(sp)
+80000874:	00812403          	lw	s0,8(sp)
+80000878:	00412483          	lw	s1,4(sp)
+8000087c:	00012903          	lw	s2,0(sp)
+80000880:	01010113          	addi	sp,sp,16
+80000884:	00008067          	ret
+80000888:	00052503          	lw	a0,0(a0)
+8000088c:	0a050513          	addi	a0,a0,160
+80000890:	c95ff0ef          	jal	ra,80000524 <HW_get_16bit_reg>
+80000894:	00050493          	mv	s1,a0
+80000898:	00042503          	lw	a0,0(s0)
+8000089c:	0a450513          	addi	a0,a0,164
+800008a0:	c85ff0ef          	jal	ra,80000524 <HW_get_16bit_reg>
+800008a4:	00050913          	mv	s2,a0
+800008a8:	00042503          	lw	a0,0(s0)
+800008ac:	00891913          	slli	s2,s2,0x8
+800008b0:	0a850513          	addi	a0,a0,168
+800008b4:	c71ff0ef          	jal	ra,80000524 <HW_get_16bit_reg>
+800008b8:	01051513          	slli	a0,a0,0x10
+800008bc:	00a96933          	or	s2,s2,a0
+800008c0:	00042503          	lw	a0,0(s0)
+800008c4:	009964b3          	or	s1,s2,s1
+800008c8:	0ac50513          	addi	a0,a0,172
+800008cc:	c59ff0ef          	jal	ra,80000524 <HW_get_16bit_reg>
+800008d0:	01851513          	slli	a0,a0,0x18
+800008d4:	f99ff06f          	j	8000086c <GPIO_get_outputs+0x70>
+800008d8:	00000513          	li	a0,0
+800008dc:	f95ff06f          	j	80000870 <GPIO_get_outputs+0x74>
+
+800008e0 <GPIO_set_output>:
+GPIO_set_output():
+800008e0:	fe010113          	addi	sp,sp,-32
+800008e4:	00912a23          	sw	s1,20(sp)
+800008e8:	00452483          	lw	s1,4(a0)
+800008ec:	00812c23          	sw	s0,24(sp)
+800008f0:	01212823          	sw	s2,16(sp)
+800008f4:	01312623          	sw	s3,12(sp)
+800008f8:	01512223          	sw	s5,4(sp)
+800008fc:	00112e23          	sw	ra,28(sp)
+80000900:	01412423          	sw	s4,8(sp)
+80000904:	00100413          	li	s0,1
+80000908:	00050a93          	mv	s5,a0
+8000090c:	00058913          	mv	s2,a1
+80000910:	00060993          	mv	s3,a2
+80000914:	04848e63          	beq	s1,s0,80000970 <GPIO_set_output+0x90>
+80000918:	0c048263          	beqz	s1,800009dc <GPIO_set_output+0xfc>
+8000091c:	00200793          	li	a5,2
+80000920:	12f49263          	bne	s1,a5,80000a44 <GPIO_set_output+0x164>
+80000924:	00052503          	lw	a0,0(a0)
+80000928:	01241433          	sll	s0,s0,s2
+8000092c:	0a050513          	addi	a0,a0,160
+80000930:	badff0ef          	jal	ra,800004dc <HW_get_32bit_reg>
+80000934:	00a465b3          	or	a1,s0,a0
+80000938:	00099663          	bnez	s3,80000944 <GPIO_set_output+0x64>
+8000093c:	fff44413          	not	s0,s0
+80000940:	00a475b3          	and	a1,s0,a0
+80000944:	000aa503          	lw	a0,0(s5)
+80000948:	01812403          	lw	s0,24(sp)
+8000094c:	01c12083          	lw	ra,28(sp)
+80000950:	01412483          	lw	s1,20(sp)
+80000954:	01012903          	lw	s2,16(sp)
+80000958:	00c12983          	lw	s3,12(sp)
+8000095c:	00812a03          	lw	s4,8(sp)
+80000960:	00412a83          	lw	s5,4(sp)
+80000964:	0a050513          	addi	a0,a0,160
+80000968:	02010113          	addi	sp,sp,32
+8000096c:	b69ff06f          	j	800004d4 <HW_set_32bit_reg>
+80000970:	0045da13          	srli	s4,a1,0x4
+80000974:	00052783          	lw	a5,0(a0)
+80000978:	002a1a13          	slli	s4,s4,0x2
+8000097c:	0a0a0a13          	addi	s4,s4,160
+80000980:	00f97413          	andi	s0,s2,15
+80000984:	00fa0a33          	add	s4,s4,a5
+80000988:	008494b3          	sll	s1,s1,s0
+8000098c:	000a0513          	mv	a0,s4
+80000990:	01049493          	slli	s1,s1,0x10
+80000994:	b91ff0ef          	jal	ra,80000524 <HW_get_16bit_reg>
+80000998:	4104d493          	srai	s1,s1,0x10
+8000099c:	00a4e5b3          	or	a1,s1,a0
+800009a0:	00099663          	bnez	s3,800009ac <GPIO_set_output+0xcc>
+800009a4:	fff4c593          	not	a1,s1
+800009a8:	00a5f5b3          	and	a1,a1,a0
+800009ac:	01812403          	lw	s0,24(sp)
+800009b0:	01c12083          	lw	ra,28(sp)
+800009b4:	01412483          	lw	s1,20(sp)
+800009b8:	01012903          	lw	s2,16(sp)
+800009bc:	00c12983          	lw	s3,12(sp)
+800009c0:	00412a83          	lw	s5,4(sp)
+800009c4:	000a0513          	mv	a0,s4
+800009c8:	00812a03          	lw	s4,8(sp)
+800009cc:	01059593          	slli	a1,a1,0x10
+800009d0:	0105d593          	srli	a1,a1,0x10
+800009d4:	02010113          	addi	sp,sp,32
+800009d8:	b45ff06f          	j	8000051c <HW_set_16bit_reg>
+800009dc:	0035d493          	srli	s1,a1,0x3
+800009e0:	00052783          	lw	a5,0(a0)
+800009e4:	00249493          	slli	s1,s1,0x2
+800009e8:	0a048493          	addi	s1,s1,160
+800009ec:	00797913          	andi	s2,s2,7
+800009f0:	00f484b3          	add	s1,s1,a5
+800009f4:	01241433          	sll	s0,s0,s2
+800009f8:	00048513          	mv	a0,s1
+800009fc:	01841413          	slli	s0,s0,0x18
+80000a00:	b6dff0ef          	jal	ra,8000056c <HW_get_8bit_reg>
+80000a04:	41845413          	srai	s0,s0,0x18
+80000a08:	00a465b3          	or	a1,s0,a0
+80000a0c:	00099663          	bnez	s3,80000a18 <GPIO_set_output+0x138>
+80000a10:	fff44593          	not	a1,s0
+80000a14:	00a5f5b3          	and	a1,a1,a0
+80000a18:	01812403          	lw	s0,24(sp)
+80000a1c:	01c12083          	lw	ra,28(sp)
+80000a20:	01012903          	lw	s2,16(sp)
+80000a24:	00c12983          	lw	s3,12(sp)
+80000a28:	00812a03          	lw	s4,8(sp)
+80000a2c:	00412a83          	lw	s5,4(sp)
+80000a30:	00048513          	mv	a0,s1
+80000a34:	01412483          	lw	s1,20(sp)
+80000a38:	0ff5f593          	andi	a1,a1,255
+80000a3c:	02010113          	addi	sp,sp,32
+80000a40:	b25ff06f          	j	80000564 <HW_set_8bit_reg>
+80000a44:	01c12083          	lw	ra,28(sp)
+80000a48:	01812403          	lw	s0,24(sp)
+80000a4c:	01412483          	lw	s1,20(sp)
+80000a50:	01012903          	lw	s2,16(sp)
+80000a54:	00c12983          	lw	s3,12(sp)
+80000a58:	00812a03          	lw	s4,8(sp)
+80000a5c:	00412a83          	lw	s5,4(sp)
+80000a60:	02010113          	addi	sp,sp,32
+80000a64:	00008067          	ret
+
+80000a68 <GPIO_enable_irq>:
+GPIO_enable_irq():
+80000a68:	01f00793          	li	a5,31
+80000a6c:	04b7e063          	bltu	a5,a1,80000aac <GPIO_enable_irq+0x44>
+80000a70:	00052783          	lw	a5,0(a0)
+80000a74:	ff010113          	addi	sp,sp,-16
+80000a78:	00812423          	sw	s0,8(sp)
+80000a7c:	00259413          	slli	s0,a1,0x2
+80000a80:	00f40433          	add	s0,s0,a5
+80000a84:	00040513          	mv	a0,s0
+80000a88:	00112623          	sw	ra,12(sp)
+80000a8c:	ae1ff0ef          	jal	ra,8000056c <HW_get_8bit_reg>
+80000a90:	00856593          	ori	a1,a0,8
+80000a94:	00040513          	mv	a0,s0
+80000a98:	00812403          	lw	s0,8(sp)
+80000a9c:	00c12083          	lw	ra,12(sp)
+80000aa0:	0ff5f593          	andi	a1,a1,255
+80000aa4:	01010113          	addi	sp,sp,16
+80000aa8:	abdff06f          	j	80000564 <HW_set_8bit_reg>
+80000aac:	00008067          	ret
+
+80000ab0 <GPIO_clear_irq>:
+GPIO_clear_irq():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:438
+    gpio_id_t           port_id
+)
+{
+    uint32_t irq_clr_value = ((uint32_t)1) << ((uint32_t)port_id);
+    
+    switch( this_gpio->apb_bus_width )
+80000ab0:	00452783          	lw	a5,4(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:435
+{
+80000ab4:	ff010113          	addi	sp,sp,-16
+80000ab8:	00812423          	sw	s0,8(sp)
+80000abc:	00912223          	sw	s1,4(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:436
+    uint32_t irq_clr_value = ((uint32_t)1) << ((uint32_t)port_id);
+80000ac0:	00100713          	li	a4,1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:435
+{
+80000ac4:	00112623          	sw	ra,12(sp)
+80000ac8:	00050413          	mv	s0,a0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:436
+    uint32_t irq_clr_value = ((uint32_t)1) << ((uint32_t)port_id);
+80000acc:	00b714b3          	sll	s1,a4,a1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:438
+    switch( this_gpio->apb_bus_width )
+80000ad0:	02e78863          	beq	a5,a4,80000b00 <GPIO_clear_irq+0x50>
+80000ad4:	04078e63          	beqz	a5,80000b30 <GPIO_clear_irq+0x80>
+80000ad8:	00200713          	li	a4,2
+80000adc:	0ae79263          	bne	a5,a4,80000b80 <GPIO_clear_irq+0xd0>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:441
+    {
+        case GPIO_APB_32_BITS_BUS:
+            HAL_set_32bit_reg( this_gpio->base_addr, IRQ, irq_clr_value );
+80000ae0:	00052503          	lw	a0,0(a0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+            
+        default:
+            HAL_ASSERT(0);
+            break;
+    }
+}
+80000ae4:	00812403          	lw	s0,8(sp)
+80000ae8:	00c12083          	lw	ra,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:441
+            HAL_set_32bit_reg( this_gpio->base_addr, IRQ, irq_clr_value );
+80000aec:	00048593          	mv	a1,s1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000af0:	00412483          	lw	s1,4(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:441
+            HAL_set_32bit_reg( this_gpio->base_addr, IRQ, irq_clr_value );
+80000af4:	08050513          	addi	a0,a0,128
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000af8:	01010113          	addi	sp,sp,16
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:441
+            HAL_set_32bit_reg( this_gpio->base_addr, IRQ, irq_clr_value );
+80000afc:	9d9ff06f          	j	800004d4 <HW_set_32bit_reg>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:445
+            HAL_set_16bit_reg( this_gpio->base_addr, IRQ0, irq_clr_value );
+80000b00:	00052503          	lw	a0,0(a0)
+80000b04:	00048593          	mv	a1,s1
+80000b08:	08050513          	addi	a0,a0,128
+80000b0c:	a11ff0ef          	jal	ra,8000051c <HW_set_16bit_reg>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:446
+            HAL_set_16bit_reg( this_gpio->base_addr, IRQ1, irq_clr_value >> 16 );
+80000b10:	00042503          	lw	a0,0(s0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000b14:	00812403          	lw	s0,8(sp)
+80000b18:	00c12083          	lw	ra,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:446
+            HAL_set_16bit_reg( this_gpio->base_addr, IRQ1, irq_clr_value >> 16 );
+80000b1c:	0104d593          	srli	a1,s1,0x10
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000b20:	00412483          	lw	s1,4(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:446
+            HAL_set_16bit_reg( this_gpio->base_addr, IRQ1, irq_clr_value >> 16 );
+80000b24:	08450513          	addi	a0,a0,132
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000b28:	01010113          	addi	sp,sp,16
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:446
+            HAL_set_16bit_reg( this_gpio->base_addr, IRQ1, irq_clr_value >> 16 );
+80000b2c:	9f1ff06f          	j	8000051c <HW_set_16bit_reg>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:450
+            HAL_set_8bit_reg( this_gpio->base_addr, IRQ0, irq_clr_value );
+80000b30:	00052503          	lw	a0,0(a0)
+80000b34:	00048593          	mv	a1,s1
+80000b38:	08050513          	addi	a0,a0,128
+80000b3c:	a29ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:451
+            HAL_set_8bit_reg( this_gpio->base_addr, IRQ1, irq_clr_value >> 8 );
+80000b40:	00042503          	lw	a0,0(s0)
+80000b44:	0084d593          	srli	a1,s1,0x8
+80000b48:	08450513          	addi	a0,a0,132
+80000b4c:	a19ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:452
+            HAL_set_8bit_reg( this_gpio->base_addr, IRQ2, irq_clr_value >> 16 );
+80000b50:	00042503          	lw	a0,0(s0)
+80000b54:	0104d593          	srli	a1,s1,0x10
+80000b58:	08850513          	addi	a0,a0,136
+80000b5c:	a09ff0ef          	jal	ra,80000564 <HW_set_8bit_reg>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:453
+            HAL_set_8bit_reg( this_gpio->base_addr, IRQ3, irq_clr_value >> 24 );
+80000b60:	00042503          	lw	a0,0(s0)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000b64:	00812403          	lw	s0,8(sp)
+80000b68:	00c12083          	lw	ra,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:453
+            HAL_set_8bit_reg( this_gpio->base_addr, IRQ3, irq_clr_value >> 24 );
+80000b6c:	0184d593          	srli	a1,s1,0x18
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000b70:	00412483          	lw	s1,4(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:453
+            HAL_set_8bit_reg( this_gpio->base_addr, IRQ3, irq_clr_value >> 24 );
+80000b74:	08c50513          	addi	a0,a0,140
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000b78:	01010113          	addi	sp,sp,16
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:453
+            HAL_set_8bit_reg( this_gpio->base_addr, IRQ3, irq_clr_value >> 24 );
+80000b7c:	9e9ff06f          	j	80000564 <HW_set_8bit_reg>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../drivers/CoreGPIO/core_gpio.c:460
+}
+80000b80:	00c12083          	lw	ra,12(sp)
+80000b84:	00812403          	lw	s0,8(sp)
+80000b88:	00412483          	lw	s1,4(sp)
+80000b8c:	01010113          	addi	sp,sp,16
+80000b90:	00008067          	ret
+
+80000b94 <SysTick_Handler>:
+SysTick_Handler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:118
+static uint8_t State;
+
+/*----------------------------------------------------------------------------
+ * System Tick Interrupt Handler (Heartbeat)
+ */
+void SysTick_Handler(void) {
+80000b94:	ff010113          	addi	sp,sp,-16
+80000b98:	00812423          	sw	s0,8(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:123
+
+	uint32_t gpio_pattern_leds;
+
+	// LED 2 Green heartbeat
+	gpio_pattern_leds = GPIO_get_outputs(&g_gpio_out_leds);
+80000b9c:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:118
+void SysTick_Handler(void) {
+80000ba0:	00112623          	sw	ra,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:123
+	gpio_pattern_leds = GPIO_get_outputs(&g_gpio_out_leds);
+80000ba4:	c59ff0ef          	jal	ra,800007fc <GPIO_get_outputs>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:124
+	if (gpio_pattern_leds == 0x00000010) { 		// LED on?
+80000ba8:	01000793          	li	a5,16
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:125
+		GPIO_set_output(&g_gpio_out_leds, LED2_GREEN, LED_OFF);
+80000bac:	00000613          	li	a2,0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:124
+	if (gpio_pattern_leds == 0x00000010) { 		// LED on?
+80000bb0:	00f50463          	beq	a0,a5,80000bb8 <SysTick_Handler+0x24>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:127
+	} else {
+		GPIO_set_output(&g_gpio_out_leds, LED2_GREEN, LED_ON);
+80000bb4:	00100613          	li	a2,1
+80000bb8:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:129
+	}
+}
+80000bbc:	00812403          	lw	s0,8(sp)
+80000bc0:	00c12083          	lw	ra,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:127
+		GPIO_set_output(&g_gpio_out_leds, LED2_GREEN, LED_ON);
+80000bc4:	00400593          	li	a1,4
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:129
+}
+80000bc8:	01010113          	addi	sp,sp,16
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:127
+		GPIO_set_output(&g_gpio_out_leds, LED2_GREEN, LED_ON);
+80000bcc:	d15ff06f          	j	800008e0 <GPIO_set_output>
+
+80000bd0 <External_31_IRQHandler>:
+External_31_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:134
+
+/*----------------------------------------------------------------------------
+ * User Pushbutton #1 Interrupt Handler (Read ADC channel 0)
+ */
+void External_31_IRQHandler() {
+80000bd0:	ff010113          	addi	sp,sp,-16
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:135
+	State = STATE_READ_CH0;
+80000bd4:	00200713          	li	a4,2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:136
+	GPIO_clear_irq(&g_gpio_in_pbs, PB1);
+80000bd8:	00000593          	li	a1,0
+80000bdc:	8a818513          	addi	a0,gp,-1880 # 800010b8 <g_gpio_in_pbs>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:134
+void External_31_IRQHandler() {
+80000be0:	00112623          	sw	ra,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:135
+	State = STATE_READ_CH0;
+80000be4:	88e18c23          	sb	a4,-1896(gp) # 800010a8 <State>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:136
+	GPIO_clear_irq(&g_gpio_in_pbs, PB1);
+80000be8:	ec9ff0ef          	jal	ra,80000ab0 <GPIO_clear_irq>
+PLIC_ClaimIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:206
+/*==============================================================================
+ * The function PLIC_ClaimIRQ() claims the interrupt from the PLIC controller.
+ */
+static inline uint32_t PLIC_ClaimIRQ(void)
+{
+    unsigned long hart_id = read_csr(mhartid);
+80000bec:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:208
+
+    return PLIC->TARGET[hart_id].CLAIM_COMPLETE;
+80000bf0:	20078793          	addi	a5,a5,512 # 2200 <HEAP_SIZE+0x1a00>
+80000bf4:	40000737          	lui	a4,0x40000
+80000bf8:	00c79793          	slli	a5,a5,0xc
+80000bfc:	00f707b3          	add	a5,a4,a5
+80000c00:	0047a683          	lw	a3,4(a5)
+PLIC_CompleteIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:217
+ * The function PLIC_CompleteIRQ() indicates to the PLIC controller the interrupt
+ * is processed and claim is complete.
+ */
+static inline void PLIC_CompleteIRQ(uint32_t source)
+{
+    unsigned long hart_id = read_csr(mhartid);
+80000c04:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:219
+
+    PLIC->TARGET[hart_id].CLAIM_COMPLETE = source;
+80000c08:	20078793          	addi	a5,a5,512
+External_31_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:138
+	PLIC_CompleteIRQ(PLIC_ClaimIRQ());
+}
+80000c0c:	00c12083          	lw	ra,12(sp)
+PLIC_CompleteIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:219
+80000c10:	00c79793          	slli	a5,a5,0xc
+80000c14:	00f707b3          	add	a5,a4,a5
+80000c18:	00d7a223          	sw	a3,4(a5)
+External_31_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:138
+80000c1c:	01010113          	addi	sp,sp,16
+80000c20:	00008067          	ret
+
+80000c24 <External_30_IRQHandler>:
+External_30_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:143
+
+/*----------------------------------------------------------------------------
+ * User Pushbutton #2 Interrupt Handler (Read ADC channel 2)
+ */
+void External_30_IRQHandler() {
+80000c24:	ff010113          	addi	sp,sp,-16
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:144
+	State = STATE_READ_CH2;
+80000c28:	00300713          	li	a4,3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:145
+	GPIO_clear_irq(&g_gpio_in_pbs, PB2);
+80000c2c:	00100593          	li	a1,1
+80000c30:	8a818513          	addi	a0,gp,-1880 # 800010b8 <g_gpio_in_pbs>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:143
+void External_30_IRQHandler() {
+80000c34:	00112623          	sw	ra,12(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:144
+	State = STATE_READ_CH2;
+80000c38:	88e18c23          	sb	a4,-1896(gp) # 800010a8 <State>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:145
+	GPIO_clear_irq(&g_gpio_in_pbs, PB2);
+80000c3c:	e75ff0ef          	jal	ra,80000ab0 <GPIO_clear_irq>
+PLIC_ClaimIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:206
+    unsigned long hart_id = read_csr(mhartid);
+80000c40:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:208
+    return PLIC->TARGET[hart_id].CLAIM_COMPLETE;
+80000c44:	20078793          	addi	a5,a5,512
+80000c48:	40000737          	lui	a4,0x40000
+80000c4c:	00c79793          	slli	a5,a5,0xc
+80000c50:	00f707b3          	add	a5,a4,a5
+80000c54:	0047a683          	lw	a3,4(a5)
+PLIC_CompleteIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:217
+    unsigned long hart_id = read_csr(mhartid);
+80000c58:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:219
+    PLIC->TARGET[hart_id].CLAIM_COMPLETE = source;
+80000c5c:	20078793          	addi	a5,a5,512
+External_30_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:147
+	PLIC_CompleteIRQ(PLIC_ClaimIRQ());
+}
+80000c60:	00c12083          	lw	ra,12(sp)
+PLIC_CompleteIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:219
+80000c64:	00c79793          	slli	a5,a5,0xc
+80000c68:	00f707b3          	add	a5,a4,a5
+80000c6c:	00d7a223          	sw	a3,4(a5)
+External_30_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:147
+80000c70:	01010113          	addi	sp,sp,16
+80000c74:	00008067          	ret
+
+80000c78 <External_29_IRQHandler>:
+PLIC_ClaimIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:206
+    unsigned long hart_id = read_csr(mhartid);
+80000c78:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:208
+    return PLIC->TARGET[hart_id].CLAIM_COMPLETE;
+80000c7c:	20078793          	addi	a5,a5,512
+80000c80:	40000737          	lui	a4,0x40000
+80000c84:	00c79793          	slli	a5,a5,0xc
+80000c88:	00f707b3          	add	a5,a4,a5
+80000c8c:	0047a683          	lw	a3,4(a5)
+PLIC_CompleteIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:217
+    unsigned long hart_id = read_csr(mhartid);
+80000c90:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:219
+    PLIC->TARGET[hart_id].CLAIM_COMPLETE = source;
+80000c94:	20078793          	addi	a5,a5,512
+80000c98:	00c79793          	slli	a5,a5,0xc
+80000c9c:	00f707b3          	add	a5,a4,a5
+80000ca0:	00d7a223          	sw	a3,4(a5)
+External_29_IRQHandler():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:151
+
+void External_29_IRQHandler() {
+	PLIC_CompleteIRQ(PLIC_ClaimIRQ());
+}
+80000ca4:	00008067          	ret
+
+80000ca8 <External_28_IRQHandler>:
+External_28_IRQHandler():
+80000ca8:	fd1ff06f          	j	80000c78 <External_29_IRQHandler>
+
+80000cac <main>:
+main():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:162
+
+
+/*----------------------------------------------------------------------------
+ * main
+ */
+int main() {
+80000cac:	fe010113          	addi	sp,sp,-32
+80000cb0:	00912a23          	sw	s1,20(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:169
+	int32_t ch0_reg_value;
+	int32_t ch2_reg_value;
+	int32_t temp_value;
+	char valueStr[50];
+
+	State = STATE_IDLE;
+80000cb4:	00100793          	li	a5,1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:162
+int main() {
+80000cb8:	00112e23          	sw	ra,28(sp)
+80000cbc:	00812c23          	sw	s0,24(sp)
+80000cc0:	01212823          	sw	s2,16(sp)
+80000cc4:	01312623          	sw	s3,12(sp)
+80000cc8:	01412423          	sw	s4,8(sp)
+80000ccc:	01512223          	sw	s5,4(sp)
+80000cd0:	01612023          	sw	s6,0(sp)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:169
+	State = STATE_IDLE;
+80000cd4:	88f18c23          	sb	a5,-1896(gp) # 800010a8 <State>
+PLIC_init():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:126
+    unsigned long hart_id = read_csr(mhartid);
+80000cd8:	f14027f3          	csrr	a5,mhartid
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:131
+        PLIC->TARGET_ENABLES[hart_id].ENABLES[inc] = 0;
+80000cdc:	04078713          	addi	a4,a5,64
+80000ce0:	00771693          	slli	a3,a4,0x7
+80000ce4:	40000737          	lui	a4,0x40000
+80000ce8:	00d70733          	add	a4,a4,a3
+80000cec:	00072023          	sw	zero,0(a4) # 40000000 <RAM_SIZE+0x3fff0000>
+80000cf0:	89818493          	addi	s1,gp,-1896 # 800010a8 <State>
+80000cf4:	00000713          	li	a4,0
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:139
+        PLIC->SOURCE_PRIORITY[inc] = 0;
+80000cf8:	400006b7          	lui	a3,0x40000
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:137
+    for(inc = 0; inc < PLIC_NUM_SOURCES; ++inc)
+80000cfc:	01f00593          	li	a1,31
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:139
+        PLIC->SOURCE_PRIORITY[inc] = 0;
+80000d00:	00271613          	slli	a2,a4,0x2
+80000d04:	00c68633          	add	a2,a3,a2
+80000d08:	00062023          	sw	zero,0(a2)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:137
+    for(inc = 0; inc < PLIC_NUM_SOURCES; ++inc)
+80000d0c:	00170713          	addi	a4,a4,1
+80000d10:	feb718e3          	bne	a4,a1,80000d00 <main+0x54>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:143
+    PLIC->TARGET[hart_id].PRIORITY_THRESHOLD = 0;
+80000d14:	20078793          	addi	a5,a5,512
+80000d18:	00c79793          	slli	a5,a5,0xc
+80000d1c:	00f687b3          	add	a5,a3,a5
+80000d20:	0007a023          	sw	zero,0(a5)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:146
+    set_csr(mie, MIP_MEIP);
+80000d24:	000017b7          	lui	a5,0x1
+80000d28:	80078793          	addi	a5,a5,-2048 # 800 <HEAP_SIZE>
+80000d2c:	3047a7f3          	csrrs	a5,mie,a5
+PLIC_SetPriority():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:189
+    PLIC->SOURCE_PRIORITY[IRQn] = priority;
+80000d30:	00100793          	li	a5,1
+80000d34:	06f6ae23          	sw	a5,124(a3) # 4000007c <RAM_SIZE+0x3fff007c>
+PLIC_EnableIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:155
+    unsigned long hart_id = read_csr(mhartid);
+80000d38:	f1402773          	csrr	a4,mhartid
+80000d3c:	00771713          	slli	a4,a4,0x7
+80000d40:	00e68733          	add	a4,a3,a4
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:156
+    uint32_t current = PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32];
+80000d44:	000025b7          	lui	a1,0x2
+80000d48:	00b70733          	add	a4,a4,a1
+80000d4c:	00072603          	lw	a2,0(a4)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:157
+    current |= (uint32_t)1 << (IRQn % 32);
+80000d50:	800007b7          	lui	a5,0x80000
+80000d54:	00f66633          	or	a2,a2,a5
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:158
+    PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32] = current;
+80000d58:	00c72023          	sw	a2,0(a4)
+PLIC_SetPriority():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:189
+    PLIC->SOURCE_PRIORITY[IRQn] = priority;
+80000d5c:	00200793          	li	a5,2
+80000d60:	06f6ac23          	sw	a5,120(a3)
+PLIC_EnableIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:155
+    unsigned long hart_id = read_csr(mhartid);
+80000d64:	f14027f3          	csrr	a5,mhartid
+80000d68:	00779793          	slli	a5,a5,0x7
+80000d6c:	00f687b3          	add	a5,a3,a5
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:156
+    uint32_t current = PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32];
+80000d70:	00b787b3          	add	a5,a5,a1
+80000d74:	0007a703          	lw	a4,0(a5) # 80000000 <__stack_top+0xffffdf30>
+main():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:183
+ 	PLIC_SetPriority(IRQ29_PB2, 2);
+ 	PLIC_EnableIRQ(IRQ29_PB2);
+
+ 	// -- GPIO setup -------------------------------------------------------------
+
+ 	GPIO_init(&g_gpio_in_pbs, COREGPIO_BASIC_ADDR, GPIO_APB_32_BITS_BUS);
+80000d78:	8a818513          	addi	a0,gp,-1880 # 800010b8 <g_gpio_in_pbs>
+PLIC_EnableIRQ():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:157
+    current |= (uint32_t)1 << (IRQn % 32);
+80000d7c:	00d766b3          	or	a3,a4,a3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\riscv_hal/riscv_plic.h:158
+    PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32] = current;
+80000d80:	00d7a023          	sw	a3,0(a5)
+main():
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:183
+80000d84:	00200613          	li	a2,2
+80000d88:	700005b7          	lui	a1,0x70000
+80000d8c:	935ff0ef          	jal	ra,800006c0 <GPIO_init>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:184
+ 	GPIO_init(&g_gpio_out_leds, COREGPIO_BASIC_ADDR, GPIO_APB_32_BITS_BUS);
+80000d90:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000d94:	00200613          	li	a2,2
+80000d98:	700005b7          	lui	a1,0x70000
+80000d9c:	925ff0ef          	jal	ra,800006c0 <GPIO_init>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:187
+
+  // User PB#1
+  GPIO_config(&g_gpio_in_pbs, PB1, GPIO_INPUT_MODE | GPIO_IRQ_EDGE_NEGATIVE);
+80000da0:	06200613          	li	a2,98
+80000da4:	8a818513          	addi	a0,gp,-1880 # 800010b8 <g_gpio_in_pbs>
+80000da8:	00000593          	li	a1,0
+80000dac:	a31ff0ef          	jal	ra,800007dc <GPIO_config>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:188
+  GPIO_enable_irq(&g_gpio_in_pbs, PB1);
+80000db0:	8a818513          	addi	a0,gp,-1880 # 800010b8 <g_gpio_in_pbs>
+80000db4:	00000593          	li	a1,0
+80000db8:	cb1ff0ef          	jal	ra,80000a68 <GPIO_enable_irq>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:190
+  // User PB#2
+  GPIO_config(&g_gpio_in_pbs, PB2, GPIO_INPUT_MODE | GPIO_IRQ_EDGE_NEGATIVE);
+80000dbc:	06200613          	li	a2,98
+80000dc0:	8a818513          	addi	a0,gp,-1880 # 800010b8 <g_gpio_in_pbs>
+80000dc4:	00100593          	li	a1,1
+80000dc8:	a15ff0ef          	jal	ra,800007dc <GPIO_config>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:191
+  GPIO_enable_irq(&g_gpio_in_pbs, PB2);
+80000dcc:	8a818513          	addi	a0,gp,-1880 # 800010b8 <g_gpio_in_pbs>
+80000dd0:	00100593          	li	a1,1
+80000dd4:	c95ff0ef          	jal	ra,80000a68 <GPIO_enable_irq>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:193
+  // LED 1
+  GPIO_config(&g_gpio_out_leds, LED1_GREEN, GPIO_OUTPUT_MODE);
+80000dd8:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000ddc:	00500613          	li	a2,5
+80000de0:	00200593          	li	a1,2
+80000de4:	9f9ff0ef          	jal	ra,800007dc <GPIO_config>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:194
+  GPIO_config(&g_gpio_out_leds, LED1_RED, GPIO_OUTPUT_MODE);
+80000de8:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000dec:	00500613          	li	a2,5
+80000df0:	00300593          	li	a1,3
+80000df4:	9e9ff0ef          	jal	ra,800007dc <GPIO_config>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:196
+
+  GPIO_set_output(&g_gpio_out_leds, LED1_GREEN, LED_OFF);
+80000df8:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000dfc:	00000613          	li	a2,0
+80000e00:	00200593          	li	a1,2
+80000e04:	addff0ef          	jal	ra,800008e0 <GPIO_set_output>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:197
+  GPIO_set_output(&g_gpio_out_leds, LED1_RED, LED_OFF);
+80000e08:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000e0c:	00000613          	li	a2,0
+80000e10:	00300593          	li	a1,3
+80000e14:	acdff0ef          	jal	ra,800008e0 <GPIO_set_output>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:200
+
+  // LED 2
+  GPIO_config(&g_gpio_out_leds, LED2_GREEN, GPIO_OUTPUT_MODE);
+80000e18:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000e1c:	00500613          	li	a2,5
+80000e20:	00400593          	li	a1,4
+80000e24:	9b9ff0ef          	jal	ra,800007dc <GPIO_config>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:201
+  GPIO_config(&g_gpio_out_leds, LED2_RED, GPIO_OUTPUT_MODE);
+80000e28:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000e2c:	00500613          	li	a2,5
+80000e30:	00500593          	li	a1,5
+80000e34:	9a9ff0ef          	jal	ra,800007dc <GPIO_config>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:203
+
+  GPIO_set_output(&g_gpio_out_leds, LED2_GREEN, LED_OFF);
+80000e38:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000e3c:	00000613          	li	a2,0
+80000e40:	00400593          	li	a1,4
+80000e44:	a9dff0ef          	jal	ra,800008e0 <GPIO_set_output>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:204
+  GPIO_set_output(&g_gpio_out_leds, LED2_RED, LED_OFF);
+80000e48:	8a018513          	addi	a0,gp,-1888 # 800010b0 <__sbss_end>
+80000e4c:	00000613          	li	a2,0
+80000e50:	00500593          	li	a1,5
+80000e54:	a8dff0ef          	jal	ra,800008e0 <GPIO_set_output>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:207
+
+  // Terminal UART setup
+  UART_init(&g_uart_term,
+80000e58:	00100693          	li	a3,1
+80000e5c:	01a00613          	li	a2,26
+80000e60:	700015b7          	lui	a1,0x70001
+80000e64:	8b818513          	addi	a0,gp,-1864 # 800010c8 <g_uart_term>
+80000e68:	f44ff0ef          	jal	ra,800005ac <UART_init>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:214
+						BAUD_VALUE_115200,
+            (DATA_8_BITS | NO_PARITY));
+
+
+  // System Timer setup
+  SysTick_Config(SYS_CLK_FREQ/2);
+80000e6c:	017d8537          	lui	a0,0x17d8
+80000e70:	84050513          	addi	a0,a0,-1984 # 17d7840 <RAM_SIZE+0x17c7840>
+80000e74:	ba4ff0ef          	jal	ra,80000218 <SysTick_Config>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:218
+
+  // Main process
+
+  UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_INTRO);
+80000e78:	800017b7          	lui	a5,0x80001
+80000e7c:	01c7a583          	lw	a1,28(a5) # 8000101c <__stack_top+0xffffef4c>
+80000e80:	8b818513          	addi	a0,gp,-1864 # 800010c8 <g_uart_term>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:223
+
+  UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_DEMO);
+
+  do {
+  	switch(State) {
+80000e84:	00200a13          	li	s4,2
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:218
+  UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_INTRO);
+80000e88:	fd0ff0ef          	jal	ra,80000658 <UART_polled_tx_string>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:220
+  UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_DEMO);
+80000e8c:	800017b7          	lui	a5,0x80001
+80000e90:	0187a583          	lw	a1,24(a5) # 80001018 <__stack_top+0xffffef48>
+80000e94:	8b818513          	addi	a0,gp,-1864 # 800010c8 <g_uart_term>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:223
+  	switch(State) {
+80000e98:	00300a93          	li	s5,3
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:220
+  UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_DEMO);
+80000e9c:	fbcff0ef          	jal	ra,80000658 <UART_polled_tx_string>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:228
+			case STATE_IDLE: {
+				break;
+			}
+			case STATE_READ_CH0: {
+				UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_CH0_VALUE);
+80000ea0:	80001b37          	lui	s6,0x80001
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:229
+	  		State = STATE_IDLE;
+80000ea4:	00100913          	li	s2,1
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:233
+				break;
+			}
+			case STATE_READ_CH2: {
+				UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_CH2_VALUE);
+80000ea8:	800019b7          	lui	s3,0x80001
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:223
+  	switch(State) {
+80000eac:	0004c783          	lbu	a5,0(s1)
+80000eb0:	01478863          	beq	a5,s4,80000ec0 <main+0x214>
+80000eb4:	ff579ee3          	bne	a5,s5,80000eb0 <main+0x204>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:233
+				UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_CH2_VALUE);
+80000eb8:	0149a583          	lw	a1,20(s3) # 80001014 <__stack_top+0xffffef44>
+80000ebc:	0080006f          	j	80000ec4 <main+0x218>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:228
+				UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_CH0_VALUE);
+80000ec0:	010b2583          	lw	a1,16(s6) # 80001010 <__stack_top+0xffffef40>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:233
+				UART_polled_tx_string(&g_uart_term, (const uint8_t*) g_MSG_CH2_VALUE);
+80000ec4:	8b818513          	addi	a0,gp,-1864 # 800010c8 <g_uart_term>
+80000ec8:	f90ff0ef          	jal	ra,80000658 <UART_polled_tx_string>
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:234
+	  		State = STATE_IDLE;
+80000ecc:	01248023          	sb	s2,0(s1)
+D:\Work\SoftConsole6\Creative_MiV_FreeRTOS_Demo\Release/../main.c:235
+				break;
+80000ed0:	fddff06f          	j	80000eac <main+0x200>
+	...
+80000ee0:	6568                	flw	fa0,76(a0)
+80000ee2:	6c6c                	flw	fa1,92(s0)
+80000ee4:	0000006f          	j	80000ee4 <main+0x238>
+80000ee8:	0d0a                	slli	s10,s10,0x2
+80000eea:	6854                	flw	fa3,20(s0)
+80000eec:	2065                	jal	80000f94 <main+0x2e8>
+80000eee:	6176                	flw	ft2,92(sp)
+80000ef0:	756c                	flw	fa1,108(a0)
+80000ef2:	2065                	jal	80000f9a <main+0x2ee>
+80000ef4:	6e69                	lui	t3,0x1a
+80000ef6:	6320                	flw	fs0,64(a4)
+80000ef8:	6168                	flw	fa0,68(a0)
+80000efa:	6e6e                	flw	ft8,216(sp)
+80000efc:	6c65                	lui	s8,0x19
+80000efe:	3220                	fld	fs0,96(a2)
+80000f00:	6920                	flw	fs0,80(a0)
+80000f02:	25203a73          	csrrc	s4,0x252,zero
+80000f06:	2064                	fld	fs1,192(s0)
+80000f08:	566d                	li	a2,-5
+80000f0a:	0000                	unimp
+80000f0c:	0d0a                	slli	s10,s10,0x2
+80000f0e:	6854                	flw	fa3,20(s0)
+80000f10:	2065                	jal	80000fb8 <main+0x30c>
+80000f12:	6176                	flw	ft2,92(sp)
+80000f14:	756c                	flw	fa1,108(a0)
+80000f16:	2065                	jal	80000fbe <main+0x312>
+80000f18:	6e69                	lui	t3,0x1a
+80000f1a:	6320                	flw	fs0,64(a4)
+80000f1c:	6168                	flw	fa0,68(a0)
+80000f1e:	6e6e                	flw	ft8,216(sp)
+80000f20:	6c65                	lui	s8,0x19
+80000f22:	3020                	fld	fs0,96(s0)
+80000f24:	6920                	flw	fs0,80(a0)
+80000f26:	25203a73          	csrrc	s4,0x252,zero
+80000f2a:	2064                	fld	fs1,192(s0)
+80000f2c:	566d                	li	a2,-5
+80000f2e:	0000                	unimp
+80000f30:	0d0a                	slli	s10,s10,0x2
+80000f32:	7246                	flw	ft4,112(sp)
+80000f34:	6565                	lui	a0,0x19
+80000f36:	5452                	lw	s0,52(sp)
+80000f38:	5320534f          	fnmadd.d	ft6,ft0,fs2,fa0,unknown
+80000f3c:	6d69                	lui	s10,0x1a
+80000f3e:	6c70                	flw	fa2,92(s0)
+80000f40:	2065                	jal	80000fe8 <main+0x33c>
+80000f42:	6544                	flw	fs1,12(a0)
+80000f44:	6f6d                	lui	t5,0x1b
+80000f46:	0d0a                	slli	s10,s10,0x2
+80000f48:	2020                	fld	fs0,64(s0)
+80000f4a:	6f56                	flw	ft10,84(sp)
+80000f4c:	746c                	flw	fa1,108(s0)
+80000f4e:	6761                	lui	a4,0x18
+80000f50:	2065                	jal	80000ff8 <main+0x34c>
+80000f52:	6e69                	lui	t3,0x1a
+80000f54:	7570                	flw	fa2,108(a0)
+80000f56:	2074                	fld	fa3,192(s0)
+80000f58:	6172                	flw	ft2,28(sp)
+80000f5a:	676e                	flw	fa4,216(sp)
+80000f5c:	3a65                	jal	80000914 <GPIO_set_output+0x34>
+80000f5e:	3020                	fld	fs0,96(s0)
+80000f60:	7420                	flw	fs0,104(s0)
+80000f62:	377e206f          	j	800e3ad8 <__stack_top+0xe1a08>
+80000f66:	3438                	fld	fa4,104(s0)
+80000f68:	6d20                	flw	fs0,88(a0)
+80000f6a:	0a56                	slli	s4,s4,0x15
+80000f6c:	0a0d                	addi	s4,s4,3
+80000f6e:	200d                	jal	80000f90 <main+0x2e4>
+80000f70:	5020                	lw	s0,96(s0)
+80000f72:	6572                	flw	fa0,28(sp)
+80000f74:	50207373          	csrrci	t1,0x502,0
+80000f78:	3142                	fld	ft2,48(sp)
+80000f7a:	7420                	flw	fs0,104(s0)
+80000f7c:	6173206f          	j	80033d92 <__stack_top+0x31cc2>
+80000f80:	706d                	c.lui	zero,0xffffb
+80000f82:	656c                	flw	fa1,76(a0)
+80000f84:	4120                	lw	s0,64(a0)
+80000f86:	4344                	lw	s1,4(a4)
+80000f88:	6320                	flw	fs0,64(a4)
+80000f8a:	6168                	flw	fa0,68(a0)
+80000f8c:	6e6e                	flw	ft8,216(sp)
+80000f8e:	6c65                	lui	s8,0x19
+80000f90:	3020                	fld	fs0,96(s0)
+80000f92:	7620                	flw	fs0,104(a2)
+80000f94:	61746c6f          	jal	s8,80047daa <__stack_top+0x45cda>
+80000f98:	0d0a6567          	0xd0a6567
+80000f9c:	2020                	fld	fs0,64(s0)
+80000f9e:	7250                	flw	fa2,36(a2)
+80000fa0:	7365                	lui	t1,0xffff9
+80000fa2:	42502073          	csrr	zero,0x425
+80000fa6:	2032                	fld	ft0,264(sp)
+80000fa8:	6f74                	flw	fa3,92(a4)
+80000faa:	7320                	flw	fs0,96(a4)
+80000fac:	6d61                	lui	s10,0x18
+80000fae:	6c70                	flw	fa2,92(s0)
+80000fb0:	2065                	jal	80001058 <__sdata_end+0x38>
+80000fb2:	4441                	li	s0,16
+80000fb4:	68632043          	fmadd.s	ft0,ft6,ft6,fa3,rdn
+80000fb8:	6e61                	lui	t3,0x18
+80000fba:	656e                	flw	fa0,216(sp)
+80000fbc:	206c                	fld	fa1,192(s0)
+80000fbe:	2032                	fld	ft0,264(sp)
+80000fc0:	6f76                	flw	ft10,92(sp)
+80000fc2:	746c                	flw	fa1,108(s0)
+80000fc4:	6761                	lui	a4,0x18
+80000fc6:	0a65                	addi	s4,s4,25
+80000fc8:	000d                	c.nop	3
+80000fca:	0000                	unimp
+80000fcc:	0d0a                	slli	s10,s10,0x2
+80000fce:	4328                	lw	a0,64(a4)
+80000fd0:	2029                	jal	80000fda <main+0x32e>
+80000fd2:	79706f43          	fmadd.s	ft10,ft0,fs7,fa5,unknown
+80000fd6:	6972                	flw	fs2,28(sp)
+80000fd8:	20746867          	0x20746867
+80000fdc:	3032                	fld	ft0,296(sp)
+80000fde:	3931                	jal	80000bfa <External_31_IRQHandler+0x2a>
+80000fe0:	4620                	lw	s0,72(a2)
+80000fe2:	7475                	lui	s0,0xffffd
+80000fe4:	7275                	lui	tp,0xffffd
+80000fe6:	2065                	jal	8000108e <__sdata_end+0x6e>
+80000fe8:	6c45                	lui	s8,0x11
+80000fea:	6365                	lui	t1,0x19
+80000fec:	7274                	flw	fa3,100(a2)
+80000fee:	63696e6f          	jal	t3,80097624 <__stack_top+0x95554>
+80000ff2:	202d2073          	csrs	hedeleg,s10
+80000ff6:	61657243          	fmadd.s	ft4,fa0,fs6,fa2
+80000ffa:	6974                	flw	fa3,84(a0)
+80000ffc:	6576                	flw	fa0,92(sp)
+80000ffe:	4220                	lw	s0,64(a2)
+80001000:	6472616f          	jal	sp,80027e46 <__stack_top+0x25d76>
+80001004:	0d0a                	slli	s10,s10,0x2
+	...

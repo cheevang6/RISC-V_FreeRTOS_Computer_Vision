@@ -1,0 +1,20 @@
+Software Version: 12.800.0.16
+Opened 'C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level_fp\Top_Level.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.pdb' has been loaded successfully.
+DESIGN : Top_Level;  CHECKSUM : 0BB8;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Thu Jan 21 15:10:11 2021 (Elapsed time 00:00:01)
+The 'load_programming_data' command succeeded.
+File/Folder 'C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.ppd'; file programs Fabric and eNVM.
+Fabric component bitstream digest: 9f6f7b9e16a2a0416e871ff7b856d1194a73cf8003f70b1a9391e9d461ab66c7
+eNVM component bitstream digest: d4cca9d6f7299587b19a7f9a0f9674f1008ecbe3dfc20b60b3222d769661eab9
+Finished: Thu Jan 21 15:10:22 2021 (Elapsed time 00:00:11)
+
+The 'export_single_ppd' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level_fp\Top_Level.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

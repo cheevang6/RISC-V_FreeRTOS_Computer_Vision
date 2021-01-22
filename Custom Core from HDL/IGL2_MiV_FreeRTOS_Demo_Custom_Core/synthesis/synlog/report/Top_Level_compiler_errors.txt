@@ -1,0 +1,2 @@
+@E: CS164 :"C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\hdl\AND2_GATE_APB.v":25:7:25:7|Expecting wire for output connection, found x
+

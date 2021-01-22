@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="STA"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="STA"/>
+			<item value="sta "/>
+			<item value="sta"/>
+			<item value="isr"/>
+			<item value="get_status"/>
+			<item value="get_"/>
+			<item value="get+"/>
+			<item value="I2C_isr"/>
+			<item value="ST_START"/>
+			<item value="MASTER_WRITE_TRANSACTION"/>
+			<item value="start"/>
+			<item value="I2C"/>
+			<item value="I2C_CAM"/>
+			<item value="status"/>
+			<item value="CAM"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="I2C_ADDR"/>
+			<item value="I2C"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1153"/>
+		<item key="DIALOG_Y_ORIGIN" value="220"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

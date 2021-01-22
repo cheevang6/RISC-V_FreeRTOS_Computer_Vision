@@ -1,0 +1,20 @@
+[Library]
+others = $MODEL_TECH/../modelsim.ini
+SmartFusion2 = C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2
+presynth = presynth
+IGLOO2 = C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2
+COREAHBLITE_LIB = ../component/Actel/DirectCore/CoreAHBLite/5.2.100/mti/user_vlog/COREAHBLITE_LIB
+COREAHBTOAPB3_LIB = COREAHBTOAPB3_LIB
+COREAPB3_LIB = COREAPB3_LIB
+COREJTAGDEBUG_LIB = COREJTAGDEBUG_LIB
+CORETIMER_LIB = CORETIMER_LIB
+MIRSLV2MIRMSTRBRIDGE_AHB_LIB = MIRSLV2MIRMSTRBRIDGE_AHB_LIB
+SmartFusion2 = C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2
+smartfusion2 = C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2
+syncad_vhdl_lib = C:\Microsemi\Libero_SoC_v12.3\Designer/lib/actel/syncad_vhdl_lib
+
+[vcom]
+VHDL93 = 1
+
+[vsim]
+IterationLimit = 5000
