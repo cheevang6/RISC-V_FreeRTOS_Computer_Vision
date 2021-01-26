@@ -1,8 +1,8 @@
 # Microsemi Corp.
-# Date: 2021-Jan-21 15:06:50
+# Date: 2021-Jan-22 19:42:11
 # This file was generated based on the following SDC source files:
-#   C:/Users/cheec/Desktop/Master/Creative-Eval-Board/IGL2_MiV_FreeRTOS_Demo/FPGA Design/IGL2_MiV_FreeRTOS_Demo_Custom_Core/constraint/Top_Level_derived_constraints.sdc
-#   C:/Users/cheec/Desktop/Master/Creative-Eval-Board/IGL2_MiV_FreeRTOS_Demo/FPGA Design/IGL2_MiV_FreeRTOS_Demo_Custom_Core/constraint/JTAG_tck_constraint.sdc
+#   C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/Custom Core from HDL/IGL2_MiV_FreeRTOS_Demo_Custom_Core/constraint/Top_Level_derived_constraints.sdc
+#   C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/Custom Core from HDL/IGL2_MiV_FreeRTOS_Demo_Custom_Core/constraint/JTAG_tck_constraint.sdc
 #
 
 create_clock -name {MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT} -period 20 [ get_pins { MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT } ]

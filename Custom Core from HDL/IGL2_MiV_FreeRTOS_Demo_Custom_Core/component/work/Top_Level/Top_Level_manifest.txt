@@ -1,14 +1,14 @@
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
 
-Date      :  Thu Jan 21 15:04:57 2021
-Project   :  C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core
+Date      :  Fri Jan 22 16:20:34 2021
+Project   :  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core
 Component :  Top_Level
 Family    :  IGLOO2
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/cheec/Desktop/Master/Creative-Eval-Board/IGL2_MiV_FreeRTOS_Demo/FPGA Design/IGL2_MiV_FreeRTOS_Demo_Custom_Core/component/work/Top_Level/Top_Level.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/Custom Core from HDL/IGL2_MiV_FreeRTOS_Demo_Custom_Core/component/work/Top_Level/Top_Level.v
 
 Stimulus files for all Simulation tools:
-    C:/Users/cheec/Desktop/Master/Creative-Eval-Board/IGL2_MiV_FreeRTOS_Demo/FPGA Design/IGL2_MiV_FreeRTOS_Demo_Custom_Core/component/work/Top_Level/subsystem.bfm
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/Custom Core from HDL/IGL2_MiV_FreeRTOS_Demo_Custom_Core/component/work/Top_Level/subsystem.bfm
 

@@ -1,0 +1,2278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Timing Report Max Delay Analysis
+</title>
+<text>SmartTime Version 12.600.0.14</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
+<text>Date: Wed Apr 24 08:16:27 2019
+</text>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>BasicIO_Interface</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>IGLOO2</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>M2GL025</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>256 VF</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>0 - 85 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>1.14 - 1.26 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Pre-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Min Operating Conditions</cell>
+ <cell>BEST - 1.26 V - 0 C</cell>
+</row>
+<row>
+ <cell>Max Operating Conditions</cell>
+ <cell>WORST - 1.14 V - 85 C</cell>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>WORST - 1.14 V - 85 C</cell>
+</row>
+<row>
+ <cell>Scenario for Timing Analysis</cell>
+ <cell>Primary</cell>
+</row>
+</table>
+<text></text>
+<section>
+<name>Summary</name>
+<table>
+<header>
+ <cell>Clock Domain</cell>
+ <cell>Period (ns)</cell>
+ <cell>Frequency (MHz)</cell>
+ <cell>Required Period (ns)</cell>
+ <cell>Required Frequency (MHz)</cell>
+ <cell>External Setup (ns)</cell>
+ <cell>Max Clock-To-Out (ns)</cell>
+</header>
+<row>
+ <cell>PCLK</cell>
+ <cell>7.199</cell>
+ <cell>138.908</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>4.475</cell>
+ <cell>7.470</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell></cell>
+ <cell>Min Delay (ns)</cell>
+ <cell>Max Delay (ns)</cell>
+</header>
+<row>
+ <cell>Input to Output</cell>
+ <cell>8.198</cell>
+</row>
+</table>
+</section>
+<section>
+<name>Clock Domain PCLK</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>Minimum Period (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0Il[0]:CLK</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell>6.817</cell>
+ <cell></cell>
+ <cell>9.841</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>7.199</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0Il[1]:CLK</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell>6.717</cell>
+ <cell></cell>
+ <cell>9.741</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>7.099</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0Il[2]:CLK</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell>6.664</cell>
+ <cell></cell>
+ <cell>9.688</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>7.046</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0Il[3]:CLK</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell>6.556</cell>
+ <cell></cell>
+ <cell>9.580</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>6.938</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTll0[0]:CLK</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell>6.539</cell>
+ <cell></cell>
+ <cell>9.563</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>6.921</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0Il[0]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>9.841</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>0.088</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:An</cell>
+ <cell>net</cell>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>1.001</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.440</cell>
+ <cell>1.441</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>PCLK_RNIAB1A/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.588</cell>
+ <cell>2.029</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>2.401</cell>
+ <cell>218</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0Il[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.623</cell>
+ <cell>3.024</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0Il[0]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.127</cell>
+ <cell>3.151</cell>
+ <cell>7</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0ll.CUARTI115:D</cell>
+ <cell>net</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0Il[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.960</cell>
+ <cell>4.111</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTl0ll.CUARTI115:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.338</cell>
+ <cell>4.449</cell>
+ <cell>3</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1ll.CUARTI0I23:C</cell>
+ <cell>net</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTI115</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.929</cell>
+ <cell>5.378</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1ll.CUARTI0I23:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.246</cell>
+ <cell>5.624</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1ll.CUARTI0I_8.m5_1_2:C</cell>
+ <cell>net</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTI0I23</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>6.537</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1ll.CUARTI0I_8.m5_1_2:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.261</cell>
+ <cell>6.798</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1ll.CUARTI0I_8.m5:B</cell>
+ <cell>net</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/m5_1_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>7.711</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1ll.CUARTI0I_8.m5:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.186</cell>
+ <cell>7.897</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il_1_sqmuxa_i:A</cell>
+ <cell>net</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTI0I_8</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>8.810</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il_1_sqmuxa_i:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>8.928</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell>net</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il_1_sqmuxa_i_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>9.841</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9.841</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:An</cell>
+ <cell>net</cell>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.440</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>PCLK_RNIAB1A/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.588</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>N/C</cell>
+ <cell>218</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.604</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.363</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Setup</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>External Setup (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>PADDR_in[9]</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTIO1/CUARTOl0l:EN</cell>
+ <cell>7.045</cell>
+ <cell></cell>
+ <cell>7.045</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>4.475</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>PADDR_in[9]</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTI01:EN</cell>
+ <cell>7.014</cell>
+ <cell></cell>
+ <cell>7.014</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>4.444</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>PADDR_in[9]</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTI11:EN</cell>
+ <cell>7.014</cell>
+ <cell></cell>
+ <cell>7.014</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>4.444</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>PADDR_in[9]</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO11:EN</cell>
+ <cell>7.014</cell>
+ <cell></cell>
+ <cell>7.014</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>4.444</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>PADDR_in[9]</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTO01/CUARTO1Il:EN</cell>
+ <cell>6.961</cell>
+ <cell></cell>
+ <cell>6.961</cell>
+ <cell></cell>
+ <cell>0.363</cell>
+ <cell>4.391</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: PADDR_in[9]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: UART_Term_0/UART_Term_0/CUARTlOlI/CUARTIO1/CUARTOl0l:EN</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>7.045</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PADDR_in[9]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PADDR_in[9]:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PADDR_in[9]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PADDR_in[9]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>0.088</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>APB3_Bus_0/APB3_Bus_0/m3_e:D</cell>
+ <cell>net</cell>
+ <cell>PADDR_in[9]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>1.001</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>APB3_Bus_0/APB3_Bus_0/m3_e:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.383</cell>
+ <cell>1.384</cell>
+ <cell>2</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>APB3_Bus_0/APB3_Bus_0/m4:A</cell>
+ <cell>net</cell>
+ <cell>APB3_Bus_0/APB3_Bus_0/N_9_mux</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.921</cell>
+ <cell>2.305</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>APB3_Bus_0/APB3_Bus_0/m4:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>2.407</cell>
+ <cell>11</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m7_2:C</cell>
+ <cell>net</cell>
+ <cell>APB3_Bus_0_APBmslave0_PSELx</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.991</cell>
+ <cell>3.398</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m7_2:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.246</cell>
+ <cell>3.644</cell>
+ <cell>3</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m80:D</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m7_2_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.929</cell>
+ <cell>4.573</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m80:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.338</cell>
+ <cell>4.911</cell>
+ <cell>9</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTIO1/CUARTOl0l_1_sqmuxa_i:C</cell>
+ <cell>net</cell>
+ <cell>UART_Term_0.UART_Term_0.CUARTlOlI.CUARTl10.CUARTO1I5</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.975</cell>
+ <cell>5.886</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTIO1/CUARTOl0l_1_sqmuxa_i:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.246</cell>
+ <cell>6.132</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTIO1/CUARTOl0l:EN</cell>
+ <cell>net</cell>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTIO1/CUARTOl0l_1_sqmuxa_i_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>7.045</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7.045</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.085</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:An</cell>
+ <cell>net</cell>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.886</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.427</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>PCLK_RNIAB1A/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.570</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.361</cell>
+ <cell>N/C</cell>
+ <cell>218</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTIO1/CUARTOl0l:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.604</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>UART_Term_0/UART_Term_0/CUARTlOlI/CUARTIO1/CUARTOl0l:EN</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.363</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Clock to Out (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:CLK</cell>
+ <cell>PRDATA_in[0]</cell>
+ <cell>4.446</cell>
+ <cell></cell>
+ <cell>7.470</cell>
+ <cell></cell>
+ <cell>7.470</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.INTR_reg[0]:CLK</cell>
+ <cell>PRDATA_in[0]</cell>
+ <cell>4.366</cell>
+ <cell></cell>
+ <cell>7.390</cell>
+ <cell></cell>
+ <cell>7.390</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[1].APB_32.GPOUT_reg[1]:CLK</cell>
+ <cell>PRDATA_in[1]</cell>
+ <cell>4.358</cell>
+ <cell></cell>
+ <cell>7.382</cell>
+ <cell></cell>
+ <cell>7.382</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[1].APB_32.INTR_reg[1]:CLK</cell>
+ <cell>PRDATA_in[1]</cell>
+ <cell>4.310</cell>
+ <cell></cell>
+ <cell>7.334</cell>
+ <cell></cell>
+ <cell>7.334</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3[0]:CLK</cell>
+ <cell>PRDATA_in[0]</cell>
+ <cell>3.219</cell>
+ <cell></cell>
+ <cell>6.243</cell>
+ <cell></cell>
+ <cell>6.243</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: PRDATA_in[0]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>7.470</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>0.088</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:An</cell>
+ <cell>net</cell>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>1.001</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.440</cell>
+ <cell>1.441</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>PCLK_RNIAB1A/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.588</cell>
+ <cell>2.029</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>2.401</cell>
+ <cell>218</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.623</cell>
+ <cell>3.024</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.127</cell>
+ <cell>3.151</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg_RNISKE06[0]:C</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/GPOUT_reg[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>4.064</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg_RNISKE06[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.261</cell>
+ <cell>4.325</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3_RNIJPG59[0]:B</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m47_1_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>5.238</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3_RNIJPG59[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.186</cell>
+ <cell>5.424</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3_RNIEJ2PC[0]:A</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/N_48_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>6.337</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3_RNIEJ2PC[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>6.455</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PRDATA_in[0]:A</cell>
+ <cell>net</cell>
+ <cell>PRDATA_in[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>7.368</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PRDATA_in[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>7.470</cell>
+ <cell>0</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PRDATA_in[0]</cell>
+ <cell>net</cell>
+ <cell>I_NET_PRDATA_in[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>7.470</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7.470</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PRDATA_in[0]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET External Recovery</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Recovery (ns)</cell>
+ <cell>External Recovery (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>PRESETN</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:ALn</cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>0.415</cell>
+ <cell>0.553</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>PRESETN</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.INTR_reg[0]:ALn</cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>0.415</cell>
+ <cell>0.553</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>PRESETN</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.edge_neg[0]:ALn</cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>0.415</cell>
+ <cell>0.553</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>PRESETN</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin1[0]:ALn</cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>0.415</cell>
+ <cell>0.553</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>PRESETN</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin2[0]:ALn</cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>0.415</cell>
+ <cell>0.553</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: PRESETN</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PRESETN</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PRESETN:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PRESETN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PRESETN:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>0.088</cell>
+ <cell>7</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PRESETN_RNI1MJ2:An</cell>
+ <cell>net</cell>
+ <cell>PRESETN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.960</cell>
+ <cell>1.048</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PRESETN_RNI1MJ2:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.440</cell>
+ <cell>1.488</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PRESETN_RNI1MJ2/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>PRESETN_RNI1MJ2/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.588</cell>
+ <cell>2.076</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PRESETN_RNI1MJ2/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>2.448</cell>
+ <cell>198</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:ALn</cell>
+ <cell>net</cell>
+ <cell>NN_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.623</cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3.071</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PCLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PCLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.085</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:An</cell>
+ <cell>net</cell>
+ <cell>PCLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.886</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.427</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>PCLK_RNIAB1A/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.570</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PCLK_RNIAB1A/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.361</cell>
+ <cell>N/C</cell>
+ <cell>218</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.604</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:ALn</cell>
+ <cell>Library recovery time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.415</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Path Set Pin to Pin</name>
+<section>
+<name>SET Input to Output</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>PADDR_in[0]</cell>
+ <cell>PRDATA_in[0]</cell>
+ <cell>8.198</cell>
+ <cell></cell>
+ <cell>8.198</cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>PADDR_in[0]</cell>
+ <cell>PRDATA_in[1]</cell>
+ <cell>8.198</cell>
+ <cell></cell>
+ <cell>8.198</cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>PADDR_in[2]</cell>
+ <cell>PRDATA_in[0]</cell>
+ <cell>8.108</cell>
+ <cell></cell>
+ <cell>8.108</cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>PADDR_in[2]</cell>
+ <cell>PRDATA_in[1]</cell>
+ <cell>8.108</cell>
+ <cell></cell>
+ <cell>8.108</cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>PADDR_in[1]</cell>
+ <cell>PRDATA_in[0]</cell>
+ <cell>8.080</cell>
+ <cell></cell>
+ <cell>8.080</cell>
+ <cell></cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: PADDR_in[0]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: PRDATA_in[0]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>8.198</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PADDR_in[0]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PADDR_in[0]:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PADDR_in[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PADDR_in[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>0.088</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m16_e_3:D</cell>
+ <cell>net</cell>
+ <cell>PADDR_in[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>1.001</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m16_e_3:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.383</cell>
+ <cell>1.384</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m16_e:C</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m16_e_3_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>2.297</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m16_e:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.246</cell>
+ <cell>2.543</cell>
+ <cell>3</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m20:C</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/N_135_mux</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.929</cell>
+ <cell>3.472</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m20:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.246</cell>
+ <cell>3.718</cell>
+ <cell>7</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg_RNISKE06[0]:D</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/GPOUT_reg36</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.960</cell>
+ <cell>4.678</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg_RNISKE06[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.375</cell>
+ <cell>5.053</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3_RNIJPG59[0]:B</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/m47_1_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>5.966</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3_RNIJPG59[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.186</cell>
+ <cell>6.152</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3_RNIEJ2PC[0]:A</cell>
+ <cell>net</cell>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/N_48_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>7.065</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_Basic_0/GPIO_Basic_0/xhdl1.GEN_BITS[0].gpin3_RNIEJ2PC[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>7.183</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PRDATA_in[0]:A</cell>
+ <cell>net</cell>
+ <cell>PRDATA_in[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.913</cell>
+ <cell>8.096</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PRDATA_in[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>8.198</cell>
+ <cell>0</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PRDATA_in[0]</cell>
+ <cell>net</cell>
+ <cell>I_NET_PRDATA_in[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>8.198</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8.198</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PADDR_in[0]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PRDATA_in[0]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+</section>
+<section>
+<name>Path Set User Sets</name>
+</section>
+</doc>

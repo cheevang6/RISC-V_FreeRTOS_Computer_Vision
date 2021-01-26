@@ -31,7 +31,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IGL2_MiV_FreeRTOS_Demo"
+KEY ProjectLocation "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Main Project\IGL2_MiV_FreeRTOS_Demo"
 KEY ProjectDescription "SPI4.2"
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -2712,8 +2712,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -2810,11 +2810,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-SmartDesign;Top_Level;0
 Reports;Reports;0
 ReportsCurrentItem;Generate Memory Map:Top_Level_DataSheet.xml
 Constraint Manager;Constraint Manager;0
 StartPage;StartPage;0
+SmartDesign;Top_Level;0
 ACTIVEVIEW;Top_Level
 ENDLIST
 LIST ModuleSubBlockList

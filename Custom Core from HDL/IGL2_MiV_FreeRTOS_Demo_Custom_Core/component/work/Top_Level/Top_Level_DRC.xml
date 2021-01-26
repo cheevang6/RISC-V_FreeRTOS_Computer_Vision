@@ -3,10 +3,10 @@
 <drcreport>
   <header>Top_Level</header>
   <drc>
-    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Out-of-date Instance</message>
-    <detail>Component definition is not consistent for instance AND2_GATE_APB_0</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/instances/AND2_GATE_APB_0</crossprobe>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin APB3_Bus_0:APBmslave2</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/APB3_Bus_0:APBmslave2</crossprobe>
   </drc>
 </drcreport>

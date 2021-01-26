@@ -1,0 +1,41 @@
+Software Version: 12.600.0.14
+Embedded FlashPro5 programmer detected.
+programmer 'E200IJYZG' : FlashPro5
+Opened 'D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level_fp\Top_Level.pro'
+The 'open_project' command succeeded.
+Warning: Programming is already enabled for device 'M2GL025'.
+The 'enable_device' command succeeded.
+PPD file 'D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/Top_Level.ppd' has been loaded successfully.
+DESIGN : Top_Level;  CHECKSUM : 0689;  PDB_VERSION : 1.0
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E200IJYZG' : Scan Chain...
+programmer 'E200IJYZG' : Check Chain...
+programmer 'E200IJYZG' : Scan and Check Chain PASSED.
+programmer 'E200IJYZG' : device 'M2GL025' : Executing action PROGRAM
+programmer 'E200IJYZG' : device 'M2GL025' : Family: Igloo2
+programmer 'E200IJYZG' : device 'M2GL025' : Product:      M2GL025
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT ISC_ENABLE_RESULT[32] = 007f6944
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT CRCERR[1] = 0
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT EDCERR[1] = 0
+programmer 'E200IJYZG' : device 'M2GL025' : Programming FPGA Array and eNVM...
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT Fabric component digest[256] = fc6426a11cc97fe896c1985b2071a9a56a1fbc3b081246a3a91f3205baec1ffe
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT eNVM component digest[256] = d4cca9d6f7299587b19a7f9a0f9674f1008ecbe3dfc20b60b3222d769661eab9
+programmer 'E200IJYZG' : device 'M2GL025' : ===================================================================================
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT DSN[128] = 5ce6b5d808f69a473cd78a196d07ce69
+programmer 'E200IJYZG' : device 'M2GL025' : ===================================================================================
+programmer 'E200IJYZG' : device 'M2GL025' : Finished: Wed Apr 24 09:42:12 2019 (Elapsed time 00:00:35)
+programmer 'E200IJYZG' : device 'M2GL025' : Executing action PROGRAM PASSED.
+programmer 'E200IJYZG' : Chain programming PASSED.
+Chain Programming Finished: Wed Apr 24 09:42:13 2019 (Elapsed time 00:00:36)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level_fp\Top_Level.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

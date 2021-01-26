@@ -1,5 +1,5 @@
-INFO: Reading User SDC file C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\Top_Level_derived_constraints.sdc.
-INFO: Reading User SDC file C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\JTAG_tck_constraint.sdc.
+INFO: Reading User SDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\Top_Level_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\JTAG_tck_constraint.sdc.
 INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
 
 No errors or warnings found.
@@ -14,11 +14,11 @@ Incremental              : OFF
 Inter-clock optimization : ON
 TDPR scenario            : place_and_route
 
-INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.block.io.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\io\Creative_Rev1_IOs_def.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\fp\Top_Level_derived_constraints.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.block.fp.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.block.io.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\io\Creative_Rev1_IOs_def.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\constraint\fp\Top_Level_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.block.fp.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
 Info:  I/O Bank and Globals Assigner identified 57 fixed I/O macros, 0 unfixed I/O macros
@@ -27,7 +27,7 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 1 seconds
 
 Placer V5.0 - 12.800.0 
-Design: Top_Level                       Started: Thu Jan 21 15:07:05 2021
+Design: Top_Level                       Started: Fri Jan 22 19:42:26 2021
 
 Initializing Normal-Effort Timing-Driven Placement ...
 Clustering ...
@@ -43,22 +43,23 @@ Improvement              : 23 seconds
 Placer completed successfully.
 
 Design: Top_Level                       
-Finished: Thu Jan 21 15:08:02 2021
+Finished: Fri Jan 22 19:43:23 2021
 Total CPU Time:     00:01:07            Total Elapsed Time: 00:00:57
-Total Memory Usage: 547.4 Mbytes
+Total Memory Usage: 546.6 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_LevelStarted: Thu Jan 21 15:08:09 2021
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_LevelStarted: Fri Jan 22 19:43:31 2021
 
+@TIVITY 1007 15699 0
 
 Router completed successfully.
 
-Design: C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level
-Finished: Thu Jan 21 15:08:31 2021
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level
+Finished: Fri Jan 22 19:43:53 2021
 Total CPU Time:     00:00:21            Total Elapsed Time: 00:00:22
-Total Memory Usage: 895.4 Mbytes
+Total Memory Usage: 896.0 Mbytes
                         o - o - o - o - o - o
 
 Info: Iteration 1:

@@ -18,7 +18,7 @@
         </version>
     </header>
     <nvm>
-        <region name="MiV_Boot" address="0x000000" retrieveAddressFromFile="false" size="12400" format="HEX" type="Data Storage" wordSize="8" numberWords="12400" memFile="C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\hex\Creative_MiV_FreeRTOS_Demo.hex" memType="INTELHEX" memFileTimeStamp="" clientType="public" program="true">
+        <region name="MiV_Boot" address="0x000000" retrieveAddressFromFile="false" size="12400" format="HEX" type="Data Storage" wordSize="8" numberWords="12400" memFile="C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\hex\Creative_MiV_FreeRTOS_Demo.hex" memType="INTELHEX" memFileTimeStamp="" clientType="public" program="true">
             6f00c0006f0000006f00c002970200009382820273905230735000307350
             4030970100209381017e17b101201301811b6f00001e130101f823201100
             23222100232431002326410023285100232a6100232c7100232e81002320
@@ -437,7 +437,7 @@
                 f585
             </crc>
         </region>
-        <region name="ACTEL_INIT_CONFIG_ENVM" address="0x07d000" retrieveAddressFromFile="false" size="688" format="HEX" type="Data Storage" wordSize="32" numberWords="172" memFile="C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.efc.init.mem" memType="BINARY" memFileTimeStamp="1611270603" clientType="private" program="true">
+        <region name="ACTEL_INIT_CONFIG_ENVM" address="0x07d000" retrieveAddressFromFile="false" size="688" format="HEX" type="Data Storage" wordSize="32" numberWords="172" memFile="C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level.efc.init.mem" memType="BINARY" memFileTimeStamp="1611373526" clientType="private" program="true">
             040024000008024000000000240024000808024008110000900200000200
             000000000000010000009f0900000000000033330000ffff000004002400
             7808024000330000b00024002c08024077770000ff0f0000010000000042

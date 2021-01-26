@@ -1,6 +1,6 @@
 <project name="Top_Level" version="1.2">
     <ProjectDirectory>
-        C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level_fp
+        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level_fp
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,7 +9,7 @@
         M2GL025
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level_fp\Top_Level.log
+        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\designer\Top_Level\Top_Level_fp\Top_Level.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -17,7 +17,7 @@
     <ProgrammingInterface>
         JTAGMode
     </ProgrammingInterface>
-    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb1.1">
+    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="UndefConn">
         <name>
             E20047SIR8
         </name>

@@ -1,0 +1,111 @@
+INFO: Reading User SDC file D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\constraint\Top_Level_derived_constraints.sdc.
+INFO: Reading User SDC file D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\constraint\JTAG_tck_constraint.sdc.
+INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
+
+No errors or warnings found.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+I/O Register Combining   : ON
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.block.io.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\constraint\io\Creative_Rev1_IOs_def.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\constraint\fp\Top_Level_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.block.fp.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 57 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V5.0 - 12.600.0 
+Design: Top_Level                       Started: Wed Apr 24 09:22:14 2019
+
+Initializing Normal-Effort Timing-Driven Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 4 seconds
+Placement                : 15 seconds
+Improvement              : 27 seconds
+
+Placer completed successfully.
+
+Design: Top_Level                       
+Finished: Wed Apr 24 09:23:33 2019
+Total CPU Time:     00:01:27            Total Elapsed Time: 00:01:19
+Total Memory Usage: 591.7 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_LevelStarted: Wed Apr 24 09:23:42 2019
+
+
+Router completed successfully.
+
+Design: D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level
+Finished: Wed Apr 24 09:24:38 2019
+Total CPU Time:     00:00:55            Total Elapsed Time: 00:00:56
+Total Memory Usage: 897.1 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 7
+  Worst minimum delay slack: -0.115 ns
+
+Router 
+Design: D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_LevelStarted: Wed Apr 24 09:25:10 2019
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 14.
+
+Router completed successfully.
+
+Design: D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level
+Finished: Wed Apr 24 09:25:21 2019
+Total CPU Time:     00:00:11            Total Elapsed Time: 00:00:11
+Total Memory Usage: 918.0 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 2:
+  Total violating paths eligible for improvement: 1
+  Worst minimum delay slack: -0.041 ns
+
+Router 
+Design: D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_LevelStarted: Wed Apr 24 09:25:54 2019
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 2.
+
+Router completed successfully.
+
+Design: D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level
+Finished: Wed Apr 24 09:26:07 2019
+Total CPU Time:     00:00:12            Total Elapsed Time: 00:00:13
+Total Memory Usage: 918.3 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 3:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+-------+-------+------------+
+| Type          | Used  | Total | Percentage |
++---------------+-------+-------+------------+
+| 4LUT          | 12693 | 27696 | 45.83      |
+| DFF           | 6818  | 27696 | 24.62      |
+| I/O Register  | 0     | 408   | 0.00       |
+| Logic Element | 13599 | 27696 | 49.10      |
++---------------+-------+-------+------------+
+

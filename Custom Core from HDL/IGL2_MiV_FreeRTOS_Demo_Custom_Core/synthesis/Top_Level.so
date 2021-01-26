@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>Top_Level</design>
-	<target_verilog>C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.vm</target_verilog>
+	<target_verilog>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.vm</target_verilog>
 </SynplifyOutput>

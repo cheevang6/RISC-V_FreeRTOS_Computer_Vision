@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
-Date: Thu Jan 21 15:06:43 2021
+Date: Fri Jan 22 16:22:17 2021
 
 Device Selection
 +--------------------------------+----------------+
@@ -20,12 +20,12 @@ Device Selection
 +--------------------------------+----------------+
 
 Source Files
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Topcell | Top_Level                                                                                                                                                                        |
-| Format  | Verilog                                                                                                                                                                          |
-| Source  | C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\component\work\BasicIO_Interface\BasicIO_Interface_syn.v |
-| Source  | C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.vm                                   |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Topcell | Top_Level                                                                                                                                                                      |
+| Format  | Verilog                                                                                                                                                                        |
+| Source  | C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\component\work\BasicIO_Interface\BasicIO_Interface_syn.v |
+| Source  | C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.vm                                   |
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Options
 +----------------------------------------------------+-------+

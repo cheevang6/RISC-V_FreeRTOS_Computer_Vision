@@ -1,7 +1,6 @@
 m255
 K4
 z2
-!s11e vcom 2019.2 2019.04, Apr 17 2019
 !s11f vlog 2019.2 2019.04, Apr 17 2019
 13
 !s112 1.1
@@ -9,74 +8,170 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/cheec/Desktop/School/Fall2020/EE277A/Project/src/277A_Project/SystemVerilog
-vSCCB_CTRL
-Z0 !s110 1610826492
+dC:/Microsemi/Libero_SoC_v12.3/ModelSim/win32acoem
+vCoreSCCB
+Z0 !s110 1611701399
 !i10b 1
-!s100 `_K`La@n7glo49_?k`GTd1
-!s11b H@0Kb6R]eTnnz`^6Foo>U1
-Id;0mjW^AA?o93lF`gA]>P3
+!s100 MXeGA2Yaf@DO48MTWnU5]1
+!s11b @RiInH1_=@MinFlNBW7j52
+InB74gbE:mfhD?7GNEY=ZC1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog
-w1610792174
-8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v
-FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v
+Z2 dC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog
+w1611700422
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB.v
 L0 4
 Z3 OW;L;2019.2;69
 r1
 !s85 0
 31
-Z4 !s108 1610826492.000000
-!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_CTRL.v|
+Z4 !s108 1611701399.000000
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB.v|
 !s101 -O0
 !i113 1
 Z5 o-work work -O0
 Z6 tCvgOpt 0
-n@s@c@c@b_@c@t@r@l
-vSCCB_tb
+n@core@s@c@c@b
+vCoreSCCB_APB
 R0
 !i10b 1
-!s100 kj6I5WJdP?f<IIKOcM67L3
-!s11b 2H4P=z69bf>S@BbkVBYh:0
-IM?YG3Mdf0TP=>e0zlR3gd3
+!s100 bJUe<VGCS3D=k4^k8YSQ60
+!s11b 6bliE2:]8Ii;fGOSFKh3D2
+IH1f=aBP;M^YWfRG505m2Q0
 R1
 R2
-w1610826490
-8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v
-FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v
+w1611700339
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB_APB.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB_APB.v
 L0 3
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCB_tb.v|
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB_APB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB_APB.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@core@s@c@c@b_@a@p@b
+vSCCB_APB_tb
+R0
+!i10b 1
+!s100 o>6z`kbN:L4@?Hh>56V;@1
+!s11b j_5jV6J_mQOYA2EzPZe8]2
+IKhzW^bmGadzIOVJWmVlz41
+R1
+R2
+w1611693031
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_APB_tb.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_APB_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_APB_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_APB_tb.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@s@c@c@b_@a@p@b_tb
+vSCCB_CTRL
+!s110 1611643209
+!i10b 1
+!s100 Pmn_HD6TMdmZ5>Ook:oaK1
+!s11b k2WPz6c57aVG`SW;RGD>J0
+I>Mk>jYOMPiE1S>]f]732h0
+R1
+R2
+w1611643198
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_CTRL2.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_CTRL2.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1611643209.000000
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_CTRL2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_CTRL2.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@s@c@c@b_@c@t@r@l
+vSCCB_slave
+R0
+!i10b 1
+!s100 5`d3Ih_^2>Yn@mFQa4ZJ<2
+!s11b ]blJmLFAAllMPI38h7FzN3
+IgRjh^=0L2VPGeJfV4J5Ga3
+R1
+R2
+w1611633436
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_slave.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_slave.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_slave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_slave.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@s@c@c@b_slave
+vSCCB_tb
+R0
+!i10b 1
+!s100 H1BiB6Hn6OndFi7Z`a3F03
+!s11b ==<5e4FWBml4C0Q[LLBnP3
+IJM]bjzjY;Ba]VM:AnS0;B2
+R1
+R2
+w1611701397
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v|
 !s101 -O0
 !i113 1
 R5
 R6
 n@s@c@c@b_tb
 vSCCBCtrl
-!s110 1610826493
+R0
 !i10b 1
 !s100 QFHEj6CGzSeiZfBU;CWoP2
 !s11b j_:[H[N0LGjKQVgb<]ejV2
-I3h69AmzGfVo8IZzY_`5SU1
+IE45kmEB;<W;^l4o;e9Dja1
 R1
 R2
 w1610655022
-8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v
-FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v
 L0 30
 R3
 r1
 !s85 0
 31
-!s108 1610826493.000000
-!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Verilog/SCCBCtrl.v|
+R4
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v|
 !s101 -O0
 !i113 1
 R5

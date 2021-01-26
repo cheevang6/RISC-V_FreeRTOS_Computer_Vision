@@ -1,0 +1,57 @@
+#===========================================================
+# Created by Microsemi SmartDesign Wed Apr 24 09:08:08 2019
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+#-----------------------------------------------------------
+# Memory Map
+# Define name and base address of each resource.
+#-----------------------------------------------------------
+
+memmap MSS_SubSystem_sb_HPMS_0 0x40020800;
+#-----------------------------------------------------------
+# Include resource scriptlets
+#-----------------------------------------------------------
+
+
+
+#-----------------------------------------------------------
+# Secondary subsystems.  To test this subsystem, uncomment the following code.
+#-----------------------------------------------------------
+# memmap MSS_SubSystem_sb_HPMS_0_FIC_0_AHB_SLAVE 0x00000000;
+#-----------------------------------------------------------
+# Include resource scriptlets
+#-----------------------------------------------------------
+
+
+
+#-----------------------------------------------------------
+# Secondary subsystems.  To test this subsystem, uncomment the following code.
+#-----------------------------------------------------------
+# memmap MSS_SubSystem_sb_0 0x80000000;
+#-----------------------------------------------------------
+# Include resource scriptlets
+#-----------------------------------------------------------
+
+# # 
+
+#-----------------------------------------------------------
+# Secondary subsystems.  To test this subsystem, uncomment the following code.
+#-----------------------------------------------------------
+# memmap AHB_Slave2MasterBridge_0 0x60000000;
+# memmap BasicIO_Interface_0 0x70000000;
+# memmap Timer_0 0x70001000;
+#-----------------------------------------------------------
+# Include resource scriptlets
+#-----------------------------------------------------------
+
+# # # # 

@@ -2,7 +2,7 @@
 Starting:    C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
 Hostname:    DESKTOP-95FBL6H
-Date:        Thu Jan 21 15:05:11 2021
+Date:        Fri Jan 22 16:20:46 2021
 Version:     O-2018.09M-SP1-1
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log Top_Level_syn.tcl
@@ -16,61 +16,61 @@ License Option: actel_oem
 Running in Vendor Mode
 
 auto_infer_blackbox is not supported in current product.
-log file: "C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.srr"
+log file: "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.srr"
 Running: synthesis in foreground
 
 Running Top_Level_syn|synthesis
 
 Running Flow: compile (Compile) on Top_Level_syn|synthesis
-# Thu Jan 21 15:05:12 2021
+# Fri Jan 22 16:20:47 2021
 
 Running Flow: compile_flow (Compile Process) on Top_Level_syn|synthesis
-# Thu Jan 21 15:05:12 2021
+# Fri Jan 22 16:20:47 2021
 
 Running: compiler (Compile Input) on Top_Level_syn|synthesis
-# Thu Jan 21 15:05:12 2021
-Copied C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\synwork\Top_Level_comp.srs to C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.srs
+# Fri Jan 22 16:20:47 2021
+Copied C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\synwork\Top_Level_comp.srs to C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.srs
 
 compiler completed
-# Thu Jan 21 15:05:22 2021
+# Fri Jan 22 16:20:57 2021
 
 Return Code: 0
 Run Time:00h:00m:10s
 
 Running: multi_srs_gen (Multi-srs Generator) on Top_Level_syn|synthesis
-# Thu Jan 21 15:05:22 2021
+# Fri Jan 22 16:20:57 2021
 
 multi_srs_gen completed
-# Thu Jan 21 15:05:23 2021
+# Fri Jan 22 16:20:58 2021
 
 Return Code: 0
 Run Time:00h:00m:01s
-Copied C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\synwork\Top_Level_mult.srs to C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.srs
+Copied C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\synwork\Top_Level_mult.srs to C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.srs
 Complete: Compile Process on Top_Level_syn|synthesis
 
 Running: premap (Premap) on Top_Level_syn|synthesis
-# Thu Jan 21 15:05:23 2021
+# Fri Jan 22 16:20:58 2021
 
 premap completed with warnings
-# Thu Jan 21 15:05:28 2021
+# Fri Jan 22 16:21:03 2021
 
 Return Code: 1
 Run Time:00h:00m:05s
 Complete: Compile on Top_Level_syn|synthesis
 
 Running Flow: map (Map) on Top_Level_syn|synthesis
-# Thu Jan 21 15:05:28 2021
+# Fri Jan 22 16:21:03 2021
 License granted for 4 parallel jobs
 
 Running: fpga_mapper (Map & Optimize) on Top_Level_syn|synthesis
-# Thu Jan 21 15:05:28 2021
-Copied C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\synwork\Top_Level_m.srm to C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.srm
+# Fri Jan 22 16:21:03 2021
+Copied C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\synwork\Top_Level_m.srm to C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.srm
 
 fpga_mapper completed with warnings
-# Thu Jan 21 15:06:30 2021
+# Fri Jan 22 16:22:04 2021
 
 Return Code: 1
-Run Time:00h:01m:02s
+Run Time:00h:01m:01s
 Complete: Map on Top_Level_syn|synthesis
 Complete: Logic Synthesis on Top_Level_syn|synthesis
 TCL script complete: "Top_Level_syn.tcl"

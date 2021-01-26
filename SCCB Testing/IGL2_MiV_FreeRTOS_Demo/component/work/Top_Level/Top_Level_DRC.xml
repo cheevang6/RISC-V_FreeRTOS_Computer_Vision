@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>Top_Level</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.0\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin AHBtoAPB3_0:APBmaster</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/AHBtoAPB3_0:APBmaster</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.0\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin GPIO_Basic_0:APB_bif</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/GPIO_Basic_0:APB_bif</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.0\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin Timer_0:APBslave</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/Timer_0:APBslave</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.0\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin UART_Term_0:APB_bif</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/UART_Term_0:APB_bif</crossprobe>
+  </drc>
+</drcreport>

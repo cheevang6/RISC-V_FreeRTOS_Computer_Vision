@@ -31,7 +31,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core"
+KEY ProjectLocation "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core"
 KEY ProjectDescription "SPI4.2"
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -355,13 +355,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1611173609"
+TIME="1611267226"
 SIZE="2769"
 PARENT="<project>\component\work\APB3_Bus\APB3_Bus.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1611173609"
+TIME="1611267226"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -814,12 +814,12 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\APB3_Bus\APB3_Bus.cxf,actgen_cxf"
 STATE="utd"
-TIME="1611173610"
+TIME="1611267227"
 SIZE="11837"
 ENDFILE
 VALUE "<project>\component\work\APB3_Bus\APB3_Bus.v,hdl"
 STATE="utd"
-TIME="1611173609"
+TIME="1611267226"
 SIZE="12051"
 PARENT="<project>\component\work\APB3_Bus\APB3_Bus.cxf"
 IS_READONLY="TRUE"
@@ -1873,13 +1873,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Top_Level\Top_Level.cxf,actgen_cxf"
 STATE="utd"
-TIME="1611262280"
-SIZE="10826"
+TIME="1611361234"
+SIZE="10811"
 ENDFILE
 VALUE "<project>\component\work\Top_Level\Top_Level.v,hdl"
 STATE="utd"
-TIME="1611262279"
-SIZE="32082"
+TIME="1611361233"
+SIZE="32109"
 PARENT="<project>\component\work\Top_Level\Top_Level.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -1916,18 +1916,23 @@ SIZE="1650"
 ENDFILE
 VALUE "<project>\designer\Top_Level\Top_Level.block.fp.pdc,fp_pdc"
 STATE="utd"
-TIME="1611262392"
+TIME="1611270403"
 SIZE="674"
 ENDFILE
 VALUE "<project>\designer\Top_Level\Top_Level.block.io.pdc,io_pdc"
 STATE="utd"
-TIME="1611262392"
+TIME="1611270403"
 SIZE="3780"
 ENDFILE
 VALUE "<project>\hdl\ADD2.v,hdl"
 STATE="utd"
-TIME="1611259670"
-SIZE="265"
+TIME="1611263809"
+SIZE="255"
+ENDFILE
+VALUE "<project>\hdl\ADD2_APB.v,hdl"
+STATE="utd"
+TIME="1611270288"
+SIZE="935"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.log,log"
 STATE="utd"
@@ -1997,8 +2002,8 @@ SIZE="24424"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1611262279"
-SIZE="2174"
+TIME="1611270296"
+SIZE="2169"
 PARENT="<project>\component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.cxf"
 PARENT="<project>\component\work\Top_Level\Top_Level.cxf"
 ENDFILE
@@ -2021,22 +2026,22 @@ SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level.so,so"
 STATE="utd"
-TIME="1611262377"
+TIME="1611270390"
 SIZE="312"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level.vm,syn_vm"
-STATE="ood"
-TIME="1611262375"
-SIZE="5466720"
+STATE="utd"
+TIME="1611270388"
+SIZE="5512885"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level_syn.prj,prj"
 STATE="utd"
-TIME="1611262378"
-SIZE="39328"
+TIME="1611270391"
+SIZE="39318"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1611262376"
+TIME="1611270389"
 SIZE="3871"
 ENDFILE
 ENDLIST
@@ -2116,6 +2121,7 @@ ENDLIST
 LIST ProjectState5.1
 LIST Impl1
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Top_Level.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -2468,8 +2474,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -2508,6 +2514,7 @@ ENDLIST
 LIST "Top_Level::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Top_Level.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -2578,10 +2585,19 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Bitstream:Top_Level_generateBitstream.log
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;hdl\ADD2_APB.v;0
+SmartDesign;Top_Level;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
+LIST "ADD2::work","hdl\ADD2.v","FALSE","FALSE"
+ENDLIST
+LIST "ADD2_APB::work","hdl\ADD2_APB.v","FALSE","FALSE"
+SUBBLOCK "ADD2::work","hdl\ADD2.v","FALSE","FALSE"
+ENDLIST
 LIST "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
 SUBBLOCK "CoreAHBLite::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite.v","FALSE","FALSE"
 ENDLIST
@@ -2593,10 +2609,6 @@ SUBBLOCK "MIRSLV2MIRMSTRBRIDGE_AHB::MIRSLV2MIRMSTRBRIDGE_AHB_LIB","component\USE
 ENDLIST
 LIST "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
 SUBBLOCK "COREAHBTOAPB3::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\core\coreahbtoapb3.v","FALSE","FALSE"
-ENDLIST
-LIST "AND2_GATE::work","hdl\ADD2.v","FALSE","FALSE"
-ENDLIST
-LIST "AND2_GATE_APB::work","","FALSE","FALSE"
 ENDLIST
 LIST "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.v","TRUE","FALSE"
 SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
@@ -3065,11 +3077,11 @@ LIST "Timer::work","component\work\Timer\Timer.v","TRUE","FALSE"
 SUBBLOCK "CoreTimer::CORETIMER_LIB","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v","FALSE","FALSE"
 ENDLIST
 LIST "Top_Level::work","component\work\Top_Level\Top_Level.v","TRUE","FALSE"
+SUBBLOCK "ADD2_APB::work","hdl\ADD2_APB.v","FALSE","FALSE"
 SUBBLOCK "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
 SUBBLOCK "AHB_MMIO::work","component\work\AHB_MMIO\AHB_MMIO.v","TRUE","FALSE"
 SUBBLOCK "AHB_Slave2MasterBridge::work","component\work\AHB_Slave2MasterBridge\AHB_Slave2MasterBridge.v","TRUE","FALSE"
 SUBBLOCK "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
-SUBBLOCK "AND2_GATE_APB::work","","FALSE","FALSE"
 SUBBLOCK "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.v","TRUE","FALSE"
 SUBBLOCK "BasicIO_Interface::work","component\work\BasicIO_Interface\BasicIO_Interface_syn.v","TRUE","FALSE"
 SUBBLOCK "JTAG::work","component\work\JTAG\JTAG.v","TRUE","FALSE"
@@ -3105,12 +3117,6 @@ SUBBLOCK "COREAHBLITE_SLAVESTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\C
 SUBBLOCK "COREAHBLITE_MASTERSTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v","FALSE","FALSE"
 SUBBLOCK "COREAHBLITE_MASTERSTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v","FALSE","FALSE"
 ENDLIST
-LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
-SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_AHBSLAVE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbslave.v","FALSE","TRUE"
-SUBBLOCK "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
-ENDLIST
 LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
@@ -3119,11 +3125,7 @@ SUBBLOCK "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBL
 ENDLIST
 LIST "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
 ENDLIST
-LIST "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
-ENDLIST
 LIST "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"

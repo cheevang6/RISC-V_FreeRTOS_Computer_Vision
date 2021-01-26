@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Jan 21 15:04:56 2021
+// Created by SmartDesign Fri Jan 22 16:20:33 2021
 // Version: v12.3 12.800.0.16
 //////////////////////////////////////////////////////////////////////
 
@@ -150,9 +150,9 @@ wire          APB3_Bus_0_APBmslave0_0_PSLVERR;
 wire          APB3_Bus_0_APBmslave0_0_PWRITE;
 wire   [31:0] APB3_Bus_0_APBmslave1_PRDATA;
 wire          APB3_Bus_0_APBmslave1_PSELx;
-wire          APB3_Bus_0_APBmslave2_0_PREADY;
-wire          APB3_Bus_0_APBmslave2_0_PSELx;
-wire          APB3_Bus_0_APBmslave2_0_PSLVERR;
+wire          APB3_Bus_0_APBmslave2_1_PREADY;
+wire          APB3_Bus_0_APBmslave2_1_PSELx;
+wire          APB3_Bus_0_APBmslave2_1_PSLVERR;
 wire          BasicIO_Interface_0_USER_PB1_IRQ;
 wire          BasicIO_Interface_0_USER_PB2_IRQ;
 wire          DEVRST_N;
@@ -204,7 +204,7 @@ wire   [31:0] MiV_Core32_0_AHB_MST_MMIO_HWDATA;
 wire          MiV_Core32_0_AHB_MST_MMIO_HWRITE;
 wire          MiV_Core32_0_TDO;
 wire          MSS_SubSystem_sb_0_FIC_0_CLK;
-wire          MSS_SubSystem_sb_0_INIT_DONE_1;
+wire          MSS_SubSystem_sb_0_INIT_DONE_0;
 wire          TCK;
 wire          TDI;
 wire          TDO_net_0;
@@ -245,31 +245,31 @@ wire   [1:1]  AHB_MEM_0_AHBmslave16_HRESP_0_1to1;
 wire   [0:0]  AHB_MEM_0_AHBmslave16_HRESP_0_0to0;
 wire   [1:0]  AHB_MEM_0_AHBmslave16_HRESP_0;
 wire          AHB_MEM_0_AHBmslave16_HRESP;
-wire   [2:0]  AHB_MEM_0_AHBmslave16_HSIZE;
 wire   [1:0]  AHB_MEM_0_AHBmslave16_HSIZE_0_1to0;
 wire   [1:0]  AHB_MEM_0_AHBmslave16_HSIZE_0;
+wire   [2:0]  AHB_MEM_0_AHBmslave16_HSIZE;
+wire   [31:0] APB3_Bus_0_APBmslave0_0_PADDR;
 wire   [4:2]  APB3_Bus_0_APBmslave0_0_PADDR_0_4to2;
 wire   [4:2]  APB3_Bus_0_APBmslave0_0_PADDR_0;
-wire   [31:0] APB3_Bus_0_APBmslave0_0_PADDR;
 wire   [7:0]  APB3_Bus_0_APBmslave0_0_PADDR_1_7to0;
 wire   [7:0]  APB3_Bus_0_APBmslave0_0_PADDR_1;
 wire   [31:0] APB3_Bus_0_APBmslave0_0_PWDATA;
 wire   [7:0]  APB3_Bus_0_APBmslave0_0_PWDATA_0_7to0;
 wire   [7:0]  APB3_Bus_0_APBmslave0_0_PWDATA_0;
-wire   [7:0]  APB3_Bus_0_APBmslave2_0_PRDATA;
-wire   [31:8] APB3_Bus_0_APBmslave2_0_PRDATA_0_31to8;
-wire   [7:0]  APB3_Bus_0_APBmslave2_0_PRDATA_0_7to0;
-wire   [31:0] APB3_Bus_0_APBmslave2_0_PRDATA_0;
+wire   [31:8] APB3_Bus_0_APBmslave2_1_PRDATA_0_31to8;
+wire   [7:0]  APB3_Bus_0_APBmslave2_1_PRDATA_0_7to0;
+wire   [31:0] APB3_Bus_0_APBmslave2_1_PRDATA_0;
+wire   [7:0]  APB3_Bus_0_APBmslave2_1_PRDATA;
+wire   [1:0]  MiV_Core32_0_AHB_MST_MEM_HRESP;
 wire   [0:0]  MiV_Core32_0_AHB_MST_MEM_HRESP_0_0to0;
 wire          MiV_Core32_0_AHB_MST_MEM_HRESP_0;
-wire   [1:0]  MiV_Core32_0_AHB_MST_MEM_HRESP;
-wire   [30:0] MiV_Core32_0_AHB_MST_MMIO_HADDR;
 wire   [31:31]MiV_Core32_0_AHB_MST_MMIO_HADDR_0_31to31;
 wire   [30:0] MiV_Core32_0_AHB_MST_MMIO_HADDR_0_30to0;
 wire   [31:0] MiV_Core32_0_AHB_MST_MMIO_HADDR_0;
+wire   [30:0] MiV_Core32_0_AHB_MST_MMIO_HADDR;
+wire   [1:0]  MiV_Core32_0_AHB_MST_MMIO_HRESP;
 wire   [0:0]  MiV_Core32_0_AHB_MST_MMIO_HRESP_0_0to0;
 wire          MiV_Core32_0_AHB_MST_MMIO_HRESP_0;
-wire   [1:0]  MiV_Core32_0_AHB_MST_MMIO_HRESP;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -337,9 +337,9 @@ assign APB3_Bus_0_APBmslave0_0_PADDR_1 = { APB3_Bus_0_APBmslave0_0_PADDR_1_7to0 
 assign APB3_Bus_0_APBmslave0_0_PWDATA_0_7to0 = APB3_Bus_0_APBmslave0_0_PWDATA[7:0];
 assign APB3_Bus_0_APBmslave0_0_PWDATA_0 = { APB3_Bus_0_APBmslave0_0_PWDATA_0_7to0 };
 
-assign APB3_Bus_0_APBmslave2_0_PRDATA_0_31to8 = 24'h0;
-assign APB3_Bus_0_APBmslave2_0_PRDATA_0_7to0 = APB3_Bus_0_APBmslave2_0_PRDATA[7:0];
-assign APB3_Bus_0_APBmslave2_0_PRDATA_0 = { APB3_Bus_0_APBmslave2_0_PRDATA_0_31to8, APB3_Bus_0_APBmslave2_0_PRDATA_0_7to0 };
+assign APB3_Bus_0_APBmslave2_1_PRDATA_0_31to8 = 24'h0;
+assign APB3_Bus_0_APBmslave2_1_PRDATA_0_7to0 = APB3_Bus_0_APBmslave2_1_PRDATA[7:0];
+assign APB3_Bus_0_APBmslave2_1_PRDATA_0 = { APB3_Bus_0_APBmslave2_1_PRDATA_0_31to8, APB3_Bus_0_APBmslave2_1_PRDATA_0_7to0 };
 
 assign MiV_Core32_0_AHB_MST_MEM_HRESP_0_0to0 = MiV_Core32_0_AHB_MST_MEM_HRESP[0:0];
 assign MiV_Core32_0_AHB_MST_MEM_HRESP_0 = { MiV_Core32_0_AHB_MST_MEM_HRESP_0_0to0 };
@@ -357,24 +357,24 @@ assign MiV_Core32_0_AHB_MST_MMIO_HRESP_0 = { MiV_Core32_0_AHB_MST_MMIO_HRESP_0_0
 //--------ADD2_APB
 ADD2_APB ADD2_APB_0(
         // Inputs
-        .PRESETN ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .PRESETN ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .PCLK    ( MSS_SubSystem_sb_0_FIC_0_CLK ),
-        .PSEL    ( APB3_Bus_0_APBmslave2_0_PSELx ),
+        .PSEL    ( APB3_Bus_0_APBmslave2_1_PSELx ),
         .PENABLE ( APB3_Bus_0_APBmslave0_0_PENABLE ),
         .PWRITE  ( APB3_Bus_0_APBmslave0_0_PWRITE ),
         .PADDR   ( APB3_Bus_0_APBmslave0_0_PADDR_1 ),
         .PWDATA  ( APB3_Bus_0_APBmslave0_0_PWDATA_0 ),
         // Outputs
-        .PSLVERR ( APB3_Bus_0_APBmslave2_0_PSLVERR ),
-        .PREADY  ( APB3_Bus_0_APBmslave2_0_PREADY ),
-        .PRDATA  ( APB3_Bus_0_APBmslave2_0_PRDATA ) 
+        .PSLVERR ( APB3_Bus_0_APBmslave2_1_PSLVERR ),
+        .PREADY  ( APB3_Bus_0_APBmslave2_1_PREADY ),
+        .PRDATA  ( APB3_Bus_0_APBmslave2_1_PRDATA ) 
         );
 
 //--------AHB_MEM
 AHB_MEM AHB_MEM_0(
         // Inputs
         .HCLK          ( MSS_SubSystem_sb_0_FIC_0_CLK ),
-        .HRESETN       ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .HRESETN       ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .REMAP_M0      ( GND_net ),
         .HWRITE_M0     ( MiV_Core32_0_AHB_MST_MEM_HWRITE ),
         .HMASTLOCK_M0  ( MiV_Core32_0_AHB_MST_MEM_HLOCK ),
@@ -407,7 +407,7 @@ AHB_MEM AHB_MEM_0(
 AHB_MMIO AHB_MMIO_0(
         // Inputs
         .HCLK         ( MSS_SubSystem_sb_0_FIC_0_CLK ),
-        .HRESETN      ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .HRESETN      ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .REMAP_M0     ( GND_net ),
         .HWRITE_M0    ( MiV_Core32_0_AHB_MST_MMIO_HWRITE ),
         .HMASTLOCK_M0 ( MiV_Core32_0_AHB_MST_MMIO_HLOCK ),
@@ -453,7 +453,7 @@ AHB_MMIO AHB_MMIO_0(
 AHB_Slave2MasterBridge AHB_Slave2MasterBridge_0(
         // Inputs
         .clock            ( MSS_SubSystem_sb_0_FIC_0_CLK ),
-        .resetn           ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .resetn           ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .HREADY_MASTER    ( AHB_Slave2MasterBridge_0_MASTER_HREADY ),
         .HWRITE_SLAVE     ( AHB_MMIO_0_AHBmslave6_HWRITE ),
         .HSEL_SLAVE       ( AHB_MMIO_0_AHBmslave6_HSELx ),
@@ -485,7 +485,7 @@ AHB_Slave2MasterBridge AHB_Slave2MasterBridge_0(
 AHBtoAPB3 AHBtoAPB3_0(
         // Inputs
         .HCLK      ( MSS_SubSystem_sb_0_FIC_0_CLK ),
-        .HRESETN   ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .HRESETN   ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .HWRITE    ( AHB_MMIO_0_AHBmslave7_HWRITE ),
         .HSEL      ( AHB_MMIO_0_AHBmslave7_HSELx ),
         .HREADY    ( AHB_MMIO_0_AHBmslave7_HREADY ),
@@ -509,31 +509,31 @@ AHBtoAPB3 AHBtoAPB3_0(
 //--------APB3_Bus
 APB3_Bus APB3_Bus_0(
         // Inputs
-        .PADDR     ( AHBtoAPB3_0_APBmaster_PADDR ),
         .PSEL      ( AHBtoAPB3_0_APBmaster_PSELx ),
         .PENABLE   ( AHBtoAPB3_0_APBmaster_PENABLE ),
         .PWRITE    ( AHBtoAPB3_0_APBmaster_PWRITE ),
-        .PWDATA    ( AHBtoAPB3_0_APBmaster_PWDATA ),
-        .PRDATAS0  ( APB3_Bus_0_APBmslave0_0_PRDATA ),
         .PREADYS0  ( APB3_Bus_0_APBmslave0_0_PREADY ),
         .PSLVERRS0 ( APB3_Bus_0_APBmslave0_0_PSLVERR ),
-        .PRDATAS1  ( APB3_Bus_0_APBmslave1_PRDATA ),
         .PREADYS1  ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS1 ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS2  ( APB3_Bus_0_APBmslave2_0_PRDATA_0 ),
-        .PREADYS2  ( APB3_Bus_0_APBmslave2_0_PREADY ),
-        .PSLVERRS2 ( APB3_Bus_0_APBmslave2_0_PSLVERR ),
+        .PREADYS2  ( APB3_Bus_0_APBmslave2_1_PREADY ),
+        .PSLVERRS2 ( APB3_Bus_0_APBmslave2_1_PSLVERR ),
+        .PADDR     ( AHBtoAPB3_0_APBmaster_PADDR ),
+        .PWDATA    ( AHBtoAPB3_0_APBmaster_PWDATA ),
+        .PRDATAS0  ( APB3_Bus_0_APBmslave0_0_PRDATA ),
+        .PRDATAS1  ( APB3_Bus_0_APBmslave1_PRDATA ),
+        .PRDATAS2  ( APB3_Bus_0_APBmslave2_1_PRDATA_0 ),
         // Outputs
-        .PRDATA    ( AHBtoAPB3_0_APBmaster_PRDATA ),
         .PREADY    ( AHBtoAPB3_0_APBmaster_PREADY ),
         .PSLVERR   ( AHBtoAPB3_0_APBmaster_PSLVERR ),
-        .PADDRS    ( APB3_Bus_0_APBmslave0_0_PADDR ),
         .PSELS0    ( APB3_Bus_0_APBmslave0_0_PSELx ),
         .PENABLES  ( APB3_Bus_0_APBmslave0_0_PENABLE ),
         .PWRITES   ( APB3_Bus_0_APBmslave0_0_PWRITE ),
-        .PWDATAS   ( APB3_Bus_0_APBmslave0_0_PWDATA ),
         .PSELS1    ( APB3_Bus_0_APBmslave1_PSELx ),
-        .PSELS2    ( APB3_Bus_0_APBmslave2_0_PSELx ) 
+        .PSELS2    ( APB3_Bus_0_APBmslave2_1_PSELx ),
+        .PRDATA    ( AHBtoAPB3_0_APBmaster_PRDATA ),
+        .PADDRS    ( APB3_Bus_0_APBmslave0_0_PADDR ),
+        .PWDATAS   ( APB3_Bus_0_APBmslave0_0_PWDATA ) 
         );
 
 //--------BasicIO_Interface
@@ -542,7 +542,7 @@ BasicIO_Interface BasicIO_Interface_0(
         .FTDI_UART0_TXD ( FTDI_UART0_TXD ),
         .PCLK           ( MSS_SubSystem_sb_0_FIC_0_CLK ),
         .PENABLE_in     ( APB3_Bus_0_APBmslave0_0_PENABLE ),
-        .PRESETN        ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .PRESETN        ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .PSEL_in        ( APB3_Bus_0_APBmslave0_0_PSELx ),
         .PWRITE_in      ( APB3_Bus_0_APBmslave0_0_PWRITE ),
         .USER_BUTTON1   ( USER_BUTTON1 ),
@@ -582,7 +582,7 @@ JTAG JTAG_0(
 MiV_Core32 MiV_Core32_0(
         // Inputs
         .CLK                 ( MSS_SubSystem_sb_0_FIC_0_CLK ),
-        .RESETN              ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .RESETN              ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .TDI                 ( JTAG_0_TGT_TDI_0 ),
         .TCK                 ( JTAG_0_TGT_TCK_0 ),
         .TMS                 ( JTAG_0_TGT_TMS_0 ),
@@ -653,7 +653,7 @@ MSS_SubSystem_sb MSS_SubSystem_sb_0(
         .MDDR_RESET_N                ( MDDR_RESET_N_net_0 ),
         .MDDR_WE_N                   ( MDDR_WE_N_net_0 ),
         .POWER_ON_RESET_N            (  ),
-        .INIT_DONE                   ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .INIT_DONE                   ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .HPMS_DDR_FIC_SUBSYSTEM_CLK  (  ),
         .HPMS_DDR_FIC_SUBSYSTEM_LOCK (  ),
         .HREADY_M0                   ( AHB_Slave2MasterBridge_0_MASTER_HREADY ),
@@ -681,7 +681,7 @@ MSS_SubSystem_sb MSS_SubSystem_sb_0(
 Timer Timer_0(
         // Inputs
         .PCLK    ( MSS_SubSystem_sb_0_FIC_0_CLK ),
-        .PRESETn ( MSS_SubSystem_sb_0_INIT_DONE_1 ),
+        .PRESETn ( MSS_SubSystem_sb_0_INIT_DONE_0 ),
         .PSEL    ( APB3_Bus_0_APBmslave1_PSELx ),
         .PENABLE ( APB3_Bus_0_APBmslave0_0_PENABLE ),
         .PWRITE  ( APB3_Bus_0_APBmslave0_0_PWRITE ),

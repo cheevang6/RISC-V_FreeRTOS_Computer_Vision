@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
-<text>Date: Thu Jan 21 15:06:43 2021
+<text>Date: Fri Jan 22 16:22:17 2021
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -76,11 +76,11 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\component\work\BasicIO_Interface\BasicIO_Interface_syn.v</cell>
+ <cell>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\component\work\BasicIO_Interface\BasicIO_Interface_syn.v</cell>
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\FPGA Design\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.vm</cell>
+ <cell>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\IGL2_MiV_FreeRTOS_Demo_Custom_Core\synthesis\Top_Level.vm</cell>
 </row>
 </table>
 <section><name>Options</name></section>

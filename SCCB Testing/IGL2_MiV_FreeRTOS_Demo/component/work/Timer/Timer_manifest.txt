@@ -1,0 +1,12 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.0 (Version 12.500.0.22)
+
+Date      :  Mon Mar 18 13:32:27 2019
+Project   :  D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo
+Component :  Timer
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/core/coretimer.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/Timer/Timer.v
+

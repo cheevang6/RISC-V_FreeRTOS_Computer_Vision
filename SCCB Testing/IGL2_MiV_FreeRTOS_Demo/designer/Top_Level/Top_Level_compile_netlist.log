@@ -1,0 +1,126 @@
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(6942): WARNING: net 'N_9086' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(8321): WARNING: net 'N_9093' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(25254): WARNING: net 'N_9098' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(25255): WARNING: net 'N_9099' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(25256): WARNING: net 'N_9100' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(30951): WARNING: net 'N_9112' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(30952): WARNING: net 'N_9113' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(30953): WARNING: net 'N_9114' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(31706): WARNING: net 'N_9115' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(31707): WARNING: net 'N_9116' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(31708): WARNING: net 'N_9117' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(50533): WARNING: net 'N_9151' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(50534): WARNING: net 'N_9152' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(50535): WARNING: net 'N_9153' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51880): WARNING: net 'N_9128' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51881): WARNING: net 'N_9129' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51882): WARNING: net 'N_9130' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51883): WARNING: net 'N_9131' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51884): WARNING: net 'N_9132' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51885): WARNING: net 'N_9133' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51909): WARNING: net 'N_9138' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51910): WARNING: net 'N_9139' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51911): WARNING: net 'N_9140' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51924): WARNING: net 'N_9145' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51925): WARNING: net 'N_9146' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51926): WARNING: net 'N_9147' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51930): WARNING: net 'N_9154' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51931): WARNING: net 'N_9155' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(51932): WARNING: net 'N_9156' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(54291): WARNING: net 'N_9173' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(69341): WARNING: net 'N_9180' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(108564): WARNING: net 'N_9211' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(108565): WARNING: net 'N_9212' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(108566): WARNING: net 'N_9213' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(108567): WARNING: net 'N_9214' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(116713): WARNING: net 'N_9224' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(117227): WARNING: net 'N_9225' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164183): WARNING: net 'N_9233' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164184): WARNING: net 'N_9234' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164185): WARNING: net 'N_9235' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164186): WARNING: net 'N_9236' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164187): WARNING: net 'N_9237' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164189): WARNING: net 'N_9238' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164190): WARNING: net 'N_9239' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164191): WARNING: net 'N_9240' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164192): WARNING: net 'N_9241' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(164193): WARNING: net 'N_9242' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(179426): WARNING: net 'N_9243' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(179427): WARNING: net 'N_9244' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(179428): WARNING: net 'N_9245' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(179429): WARNING: net 'N_9246' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(179430): WARNING: net 'N_9247' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(179431): WARNING: net 'N_9248' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(193845): WARNING: net 'N_9256' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(193846): WARNING: net 'N_9257' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(193847): WARNING: net 'N_9258' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195368): WARNING: net 'N_9118' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195369): WARNING: net 'N_9119' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195370): WARNING: net 'N_9120' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195453): WARNING: net 'N_9160' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195454): WARNING: net 'N_9161' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195455): WARNING: net 'N_9162' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195456): WARNING: net 'N_9163' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195460): WARNING: net 'N_9167' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195461): WARNING: net 'N_9168' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195462): WARNING: net 'N_9169' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195463): WARNING: net 'N_9170' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195464): WARNING: net 'N_9171' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195465): WARNING: net 'N_9172' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195582): WARNING: net 'N_9176' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195587): WARNING: net 'N_9177' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195588): WARNING: net 'N_9178' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195619): WARNING: net 'N_9252' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195620): WARNING: net 'N_9253' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195621): WARNING: net 'N_9254' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195622): WARNING: net 'N_9255' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195623): WARNING: net 'N_9259' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195624): WARNING: net 'N_9260' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(195625): WARNING: net 'N_9261' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(218027): WARNING: net 'N_9262' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(218028): WARNING: net 'N_9263' does not have a driver (VDB-1002)
+D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level.vm(221419): WARNING: net 'N_9094' does not have a driver (VDB-1002)
+Info: Loaded the definition of the cell BasicIO_Interface from the block.
+Warning: CMPG4-047: Deleted the global instance 'BasicIO_Interface_0/PRESETN_RNI1MJ2' because it's driven by a global net.
+Warning: CMPG4-047: Deleted the global instance 'BasicIO_Interface_0/PCLK_RNIAB1A' because it's driven by a global net.
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       13 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     12 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    5801   0      0      'MSS_SubSystem_sb_0/CCC_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    297    0      0      'JTAG_0/JTAG_0/genblk3.genblk1.TGT_TCK_GLB' 
+    75     0      0      'MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST_RNI6K52' 
+    22     0      0      'MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT' 
+    17     0      1      'JTAG_0/JTAG_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIK1C2' 
+    0      558    16     'MSS_SubSystem_sb_0/CORERESETP_0/INIT_DONE_int_RNIE3K6' 
+    0      484    1      'MSS_SubSystem_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIJ4BE' 
+    0      77     0      'MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/FIC_2_APB_M_PRESET_N_keep_RNIV4UA' 
+    0      34     2      'MiV_Core32_0/MiV_Core32_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AHB_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_RNI76Q4' 
+    0      26     0      'MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_clk_base_RNIUDL' 
+    0      24     0      'JTAG_0/JTAG_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNIQRO2' 
+    0      18     18     'MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmOuter/source1/un1_reset_debug_RNIKN81' 
+    0      17     0      'MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4UVB' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'JTAG_0/JTAG_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIK1C2'. 
+      Disconnected 16 data pins from global 'MSS_SubSystem_sb_0/CORERESETP_0/INIT_DONE_int_RNIE3K6'. 
+      Disconnected 1 data pins from global 'MSS_SubSystem_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIJ4BE'. 
+      Disconnected 2 data pins from global 'MiV_Core32_0/MiV_Core32_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AHB_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_RNI76Q4'. 
+      Disconnected 18 data pins from global 'MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmOuter/source1/un1_reset_debug_RNIKN81'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+
