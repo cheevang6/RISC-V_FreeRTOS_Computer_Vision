@@ -19,45 +19,18 @@ module CoreSCCB
 	input			 SCCB_MID_PULSE,
 	input			 SCCB_CLK
 );    
-
-/*     // Generating clock for SCCB and mid pulse
-    // Depending on the device, the SIO_C can go up to 40MHz
-    localparam XCLK_FREQ = 50_000_000;                          // incoming clock = XCLK = 50MHz 
-    localparam SCCB_CLK_FREQ = 100_000;                         // divide clock such that SIO_C = 100kHz
-    localparam SCCB_CLK_PERIOD = XCLK_FREQ/SCCB_CLK_FREQ/2;     // number of clocks to obtain 100kHz
-    localparam SCCB_MID_AMT = SCCB_CLK_PERIOD/2-1;              // amount of clk for mid of SCCB_clk
-    reg [$clog2(SCCB_CLK_PERIOD):0] SCCB_CLK_CNTR = 0;
-    reg SCCB_CLK;
-    reg SCCB_MID_PULSE;
-
-    always @(posedge XCLK or negedge RST_N) begin
-        if(!RST_N) begin // RST is acitve-low
-            SCCB_CLK_CNTR <= 0;
-            SCCB_CLK <= 0;
-			SCCB_MID_PULSE <= 0;
-        end else begin
-            if(SCCB_CLK_CNTR < SCCB_CLK_PERIOD) begin
-                SCCB_CLK_CNTR <= SCCB_CLK_CNTR + 1;
-            end else begin
-                SCCB_CLK_CNTR <= 0;
-                SCCB_CLK <= ~SCCB_CLK;
-            end
-            if(SCCB_CLK_CNTR == SCCB_MID_AMT && SCCB_CLK == 0) begin
-                SCCB_MID_PULSE <= 1'b1;
-            end else begin
-                SCCB_MID_PULSE <= 1'b0;
-            end
-        end
-    end */
     
     reg [6:0] step;     // state machine identifier
     reg data_send;      // data to send through SCCB
     reg sccb_clk_step;
     
     // tristate SIO_D bus when idle
-    assign SIO_D = ((step >= 42  && step <= 50)) ? 1'bz : data_send;
+    assign SIO_D =	(step == 13 || step == 22 || step == 31 || 
+					 step == 46 || (step == 55 && !RW) ||
+					(step > 46  && step <= 54)) ? 1'bz : data_send;
     // SIO_C is driven high when idle
-    assign SIO_C = (start && (step >= 5  && step <= 30 || step >= 33 && step <= 50)) ? SCCB_CLK : sccb_clk_step;
+    assign SIO_C = (start && (step > 4  && step <= 31 ||
+					step > 37 && step <= 55)) ? SCCB_CLK : sccb_clk_step;
     //assign done = (step == 53 && start)? 1'b1 : 1'b0;
 	
 	assign PWDN = 1'b0;
@@ -70,12 +43,10 @@ module CoreSCCB
 			step <= 6'd0;
 			done <= 1'b0;
         end else if(SCCB_MID_PULSE) begin
-			if(!start || step > 53 || done)
-				step <= 6'd0;
-            else if(start == 1'bx)
+			if(!start || step > 57 || done)
 				step <= 6'd0;
 			else if(RW == 0 && step == 6'd30) // 3-phase write
-				step <= 6'd51; // stop transmission
+				step <= 6'd55; // stop transmission
 	        else if(RW == 1 && step == 6'd21) // 2-phase write
 	            step <= 6'd31; // 2-phase read
 			else
@@ -92,6 +63,7 @@ module CoreSCCB
 					// start transaction
 					6'd2  : data_send <= 1'b0;
 					6'd3  : sccb_clk_step <= 1'b0;
+					
 					//ID Address
 					6'd4  : data_send <= ip_addr[7];
 					6'd5  : data_send <= ip_addr[6];
@@ -125,37 +97,46 @@ module CoreSCCB
 					6'd29 : data_send <= data_in[0];
 					6'd30 : data_send <= 0; // Don't care bit
 					
+					// stop transaction for 2-phase write 
+					// (continues to 2-phase read)
+					6'd31 : data_send <= 1'b0;
+					//6'd33 : sccb_clk_step <= 1'b0;
+					6'd32 : sccb_clk_step <= 1'b1;
+					6'd33 : data_send <= 1'b1;
+					
 					// 2-phase read
 					// Phase 1: ID Address
 					// start transaction
-					6'd31  : data_send <= 1'b0;
-					6'd32 : sccb_clk_step <= 1'b0;
+					6'd34 : sccb_clk_step <= 1'b1;
+					6'd35 : data_send <= 1'b0;
+					6'd36 : sccb_clk_step <= 1'b0;
 					// ID Address
-					6'd33 : data_send <= ip_addr[7];
-					6'd34 : data_send <= ip_addr[6];
-					6'd35 : data_send <= ip_addr[5];
-					6'd36 : data_send <= ip_addr[4];
-					6'd37 : data_send <= ip_addr[3];
-					6'd38 : data_send <= ip_addr[2];
-					6'd39 : data_send <= ip_addr[1];
-					6'd40 : data_send <= RW; // read/write bit
-					6'd41 : data_send <= 0;// Don't care bit
-					
+					6'd37 : data_send <= ip_addr[7];
+					6'd38 : data_send <= ip_addr[6];
+					6'd39 : data_send <= ip_addr[5];
+					6'd40 : data_send <= ip_addr[4];
+					6'd41 : data_send <= ip_addr[3];
+					6'd42 : data_send <= ip_addr[2];
+					6'd43 : data_send <= ip_addr[1];
+					6'd44 : data_send <= RW; // read/write bit
+					6'd45 : data_send <= 0;// Don't care bit
+			
 					// Phase 2: Read Data
-					6'd42 : data_out <= SIO_D;
-					6'd43 : data_out <= SIO_D;
-					6'd44 : data_out <= SIO_D;
-					6'd45 : data_out <= SIO_D;
 					6'd46 : data_out <= SIO_D;
 					6'd47 : data_out <= SIO_D;
 					6'd48 : data_out <= SIO_D;
 					6'd49 : data_out <= SIO_D;
-					6'd50 : data_out <= 1'b1; // Don't care bit (Driven to 1 by master during read)
+					6'd50 : data_out <= SIO_D;
+					6'd51 : data_out <= SIO_D;
+					6'd52 : data_out <= SIO_D;
+					6'd53 : data_out <= SIO_D;
+					6'd54 : data_send <= 1'b1; // Don't care bit (Driven to 1 by master during read)
 					
 					// stop transaction
-					6'd51 : sccb_clk_step <= 1'b0;
-					6'd52 : sccb_clk_step <= 1'b1;
-					6'd53 : begin
+					6'd55 : data_send <= 1'b0;
+					//6'58 : sccb_clk_step <= 1'b0;
+					6'd56 : sccb_clk_step <= 1'b1;
+					6'd57 : begin
 						data_send <= 1'b1;
 						done <= 1'b1;
 					end

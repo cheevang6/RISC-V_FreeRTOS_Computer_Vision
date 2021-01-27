@@ -44,9 +44,11 @@ wire 			pwdn;
 reg				start = 1'b0;
 reg				rw;
 reg     [7:0]   data_in, ip_addr, sub_addr;
+wire			done_c;
+reg				done;
 wire	[7:0]	data_out;
 
-// this modules variables
+// this module's variables
 wire			sio_c_o;
 reg		[3:0]	state;
 
@@ -71,7 +73,7 @@ CoreSCCB coresccb_c0(
     .ip_addr(ip_addr),      // Device ID + RW signal
     .sub_addr(sub_addr),    // Register address
     .data_out(data_out),    // Data read from register
-    .done(done),            // basically, this is ACK
+    .done(done_c),            // basically, this is ACK
     .SIO_D(SIO_D),          // SCCB data
     .SIO_C(sio_c_o),         // SCCB clock
 	.SCCB_CLK(SCCB_CLK),
@@ -111,9 +113,10 @@ assign PRDATA = (PADDR[7:0] == START_REG)  ? {7'd0,start} :
                 (PADDR[7:0] == SUBADDR_REG)? sub_addr :
                 (PADDR[7:0] == WDATA_REG)  ? data_in :
                 (PADDR[7:0] == RDATA_REG)  ? data_out :
-                (PADDR[7:0] == DONE_REG)   ? done : 8'hff; // I'm using 0xff for testing
+                (PADDR[7:0] == DONE_REG)   ? done_c : 8'hff; // I'm using 0xff for testing
 
 // APB Write Registers
+// To stop data transfer, PWDATA = 24'bff_ff_ff
 always @(posedge PCLK or negedge PRESETN) begin
     if(!PRESETN) begin
 		start <= 1'b0;
@@ -122,7 +125,8 @@ always @(posedge PCLK or negedge PRESETN) begin
 		data_in <= 8'b0000_0000;
 		state <= 2'b00;
     end else if(PWRITE && PENABLE && PSEL) begin
-		if(SCCB_MID_PULSE) begin
+		if(SCCB_MID_PULSE && (PWDATA[23:0] != 24'hff_ff_ff)) begin
+			done <= 0;
 			case(state)
 				INIT : begin
 						ip_addr <= PWDATA[23:16];
@@ -130,18 +134,24 @@ always @(posedge PCLK or negedge PRESETN) begin
 						sub_addr <= PWDATA[15:8];
 						data_in <= PWDATA[7:0];
 						
-						state <= TRANSFER;
-					end
-				TRANSFER : begin
-						start <= 1'b1;
-						if(done)
-							state <= DONE;
+						if(done_c)
+							state <= INIT;
 						else
 							state <= TRANSFER;
+					end
+				TRANSFER : begin
+						if(done_c) begin
+							state <= DONE;
+							start <= 1'b0;
+						end else begin
+							state <= TRANSFER;
+							start <= 1'b1;
+						end
 					end
 				DONE : begin
 						start <= 1'b0;
 						state <= INIT;
+						done <= 1;
 					end
 				default : begin
 						

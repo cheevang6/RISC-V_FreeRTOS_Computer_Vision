@@ -17,12 +17,12 @@ wire sio_d_s0, sio_c_s0;
 wire done_s0;
 
 // variables for github
-/* reg [15:0] data_i;
+reg [15:0] data_i;
 wire [7:0] data_o;
 wire ack_error_o;
 wire sio_d_s1, sio_c_s1;
-wire done_s1; 
-*/
+wire done_s1;
+
 
 // Generating clock for SCCB
 // Depending on the device, the SIO_C can go up to 40MHz
@@ -79,25 +79,24 @@ initial begin
     #10; rst_n = 1'b1;
     
     // write
-    ip_addr = 8'h60; // 0x60 write and 0x61 read (OV2640)
+     ip_addr = 8'h60; // 0x60 write and 0x61 read (OV2640)
 	rw = 1'b0; // write
     sub_addr = 8'h02;
 	data_in = 8'hfe3;
-	//data_i = {sub_addr,data_in};
+	data_i = {sub_addr,data_in};
 	start = 1'b1;
 	
 	// read
  	@(done_s0);
 	start = 1'b0;
-	ip_addr = 8'h34; // 0x60 write and 0x61 read (OV2640)
+	ip_addr = 8'h86; // 0x60 write and 0x61 read (OV2640)
 	rw = 1'b1; // write
-    sub_addr = 8'hee;
+    sub_addr = 8'h02;
 	data_in = 8'h44;
 	//data_i = {sub_addr,data_in};
 	@(SCCB_MID_PULSE);
 	@(SCCB_MID_PULSE);
 	start = 1'b1;
-	//
 end
 
 always @(posedge clk or negedge rst_n) begin
