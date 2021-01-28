@@ -1,5 +1,5 @@
 /*
- * AND2_GATE.h
+ * ADD2.h
  *
  *  Created on: Jan 20, 2021
  *      Author: cheec
@@ -11,33 +11,33 @@
 #include <stdint.h>
 #include "cpu_types.h"
 
-#define AND2_GATE_BASE_ADDR		0x70002000UL
+#define ADD2_BASE_ADDR		0x70002000UL
 
-typedef struct and2_gate_instance and2_gate_instance_t;
+typedef struct add2_instance add2_instance_t;
 
-struct and2_gate_instance
+struct add2_instance
 {
-    addr_t              base_addr;
+    addr_t base_addr;
 };
 
-void AND2_GATE_init
+void ADD2_init
 (
-    and2_gate_instance_t *   this_and2_gate,
+	add2_instance_t * this_add2,
 	addr_t base_addr
 );
 void set_A
 (
-	and2_gate_instance_t *   this_and2_gate,
+	add2_instance_t * this_add2,
 	uint8_t aValue
 );
 void set_B
 (
-	and2_gate_instance_t *   this_and2_gate,
+	add2_instance_t * this_add2,
 	uint8_t bValue
 );
 uint8_t get_ABX
 (
-	and2_gate_instance_t *   this_and2_gate,
+	add2_instance_t * this_add2,
 	uint8_t value
 );
 

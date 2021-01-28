@@ -3,20 +3,20 @@
  * File        : main.c
  *
  * Description : The Creative FreeRTOS demo features a port of FreeRTOS 8.2.3
- * 							 on the Mi-V softcore. The program is very simple.
+ * 				 on the Mi-V softcore. The program is very simple.
  *
- * 							 Upon power-up of the board, introduction messages will be sent
- * 							 to the Terminal. Then three tasks will be created and the
- * 							 scheduler will be started. LED1 red, LED2 green and LED2 red
- * 							 will start blinking at different rates. The blinking will be
- * 							 influence also by the task scheduler.
+ * 				 Upon power-up of the board, introduction messages will be sent
+ * 				 to the Terminal. Then three tasks will be created and the
+ * 				 scheduler will be started. LED1 red, LED2 green and LED2 red
+ * 				 will start blinking at different rates. The blinking will be
+ * 				 influence also by the task scheduler.
  *
- * 							 There is some commented code related to the pushbuttons and
- * 							 the timer implemented in the FPGA. This is provided to help
- * 							 you exploring the different FreeRTOS possibilities.
+ * 				 There is some commented code related to the pushbuttons and
+ * 				 the timer implemented in the FPGA. This is provided to help
+ * 				 you exploring the different FreeRTOS possibilities.
  *
- * 							 Terminal setup: Serial Terminal, 115200/8/1, no parity,
- * 							 no flow control.
+ * 				 Terminal setup: Serial Terminal, 115200/8/1, no parity,
+ * 				 no flow control.
  *
  * Created on  : Apr 23, 2019
  * Author      : Frederic.Vachon  
@@ -137,9 +137,9 @@ void External_29_IRQHandler() {
 }
 
 /*-----------------------------------------------------------*/
-#define AND2_GATE_BASE_ADDR 0x70002000UL
-#define AND2_GATE &and2_gate_inst
-static and2_gate_instance_t and2_gate_inst;
+#define ADD2_BASE_ADDR 0x70002000UL
+#define ADD2 &add2_inst
+static add2_instance_t add2_inst;
 
 int main(void) {
 
@@ -148,7 +148,7 @@ int main(void) {
 	// -- Hardware setup -------------------------------------------------------
 
 	BasicIO_Init(BASIC_IO_INTR_ADDR);
-	AND2_GATE_init(AND2_GATE, AND2_GATE_BASE_ADDR);
+	ADD2_init(ADD2, ADD2_BASE_ADDR);
 
 	// -- Main program ---------------------------------------------------------
 
@@ -167,12 +167,12 @@ int main(void) {
 	uint8_t a = 2;
 	uint8_t b = 5;
 
-	set_A(AND2_GATE,a);
-	set_B(AND2_GATE,b);
+	set_A(ADD2,a);
+	set_B(ADD2,b);
 
-	outA = get_ABX(AND2_GATE,0);
-	outB = get_ABX(AND2_GATE,1);
-	outX = get_ABX(AND2_GATE,2);
+	outA = get_ABX(ADD2,0);
+	outB = get_ABX(ADD2,1);
+	outX = get_ABX(ADD2,2);
 
 	char message[50];
 

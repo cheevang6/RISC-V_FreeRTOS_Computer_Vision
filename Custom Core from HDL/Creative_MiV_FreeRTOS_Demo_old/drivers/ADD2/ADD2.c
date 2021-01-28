@@ -1,5 +1,5 @@
 /*
- * AND2_GATE.c
+ * ADD2.c
  *
  *  Created on: Jan 20, 2021
  *      Author: cheec
@@ -9,55 +9,55 @@
 #include "../../hal/hal.h"
 #include "../../hal/hal_assert.h"
 
-void AND2_GATE_init
+void ADD2_init
 (
-    and2_gate_instance_t *   this_and2_gate,
+	add2_instance_t * this_add2,
 	addr_t base_addr
 )
 {
-	this_and2_gate->base_addr = base_addr;
+	this_add2->base_addr = base_addr;
 
 	// clear all
-	HAL_set_8bit_reg(this_and2_gate->base_addr, A, 0x00);
-	HAL_set_8bit_reg(this_and2_gate->base_addr, B, 0x00);
+	HAL_set_8bit_reg(this_add2->base_addr, A, 0x00);
+	HAL_set_8bit_reg(this_add2->base_addr, B, 0x00);
 
 }
 
 void set_A
 (
-	and2_gate_instance_t *   this_and2_gate,
+	add2_instance_t * this_add2,
 	uint8_t aValue
 )
 {
-	HAL_set_8bit_reg(this_and2_gate->base_addr, A, aValue);
-	HAL_ASSERT( set_AB( this_and2_gate ) == aValue );
+	HAL_set_8bit_reg(this_add2->base_addr, A, aValue);
+	HAL_ASSERT( set_AB( this_add2 ) == aValue );
 
 }
 
 void set_B
 (
-	and2_gate_instance_t *   this_and2_gate,
+	add2_instance_t * this_add2,
 	uint8_t bValue
 )
 {
-	HAL_set_8bit_reg(this_and2_gate->base_addr, B, bValue);
-	HAL_ASSERT( set_AB( this_and2_gate ) == bValue );
+	HAL_set_8bit_reg(this_add2->base_addr, B, bValue);
+	HAL_ASSERT( set_AB( this_add2 ) == bValue );
 
 }
 
 uint8_t get_ABX
 (
-	and2_gate_instance_t *   this_and2_gate,
+	add2_instance_t * this_add2,
 	uint8_t value
 )
 {
 	uint8_t output_x = 0;
 	if(value == 0)
-		output_x = HAL_get_8bit_reg(this_and2_gate->base_addr, A);
+		output_x = HAL_get_8bit_reg(this_add2->base_addr, A);
 	else if(value == 1)
-		output_x = HAL_get_8bit_reg(this_and2_gate->base_addr, B);
+		output_x = HAL_get_8bit_reg(this_add2->base_addr, B);
 	else if(value == 2)
-		output_x = HAL_get_8bit_reg(this_and2_gate->base_addr, X);
+		output_x = HAL_get_8bit_reg(this_add2->base_addr, X);
 	else
 		HAL_ASSERT(0);
 

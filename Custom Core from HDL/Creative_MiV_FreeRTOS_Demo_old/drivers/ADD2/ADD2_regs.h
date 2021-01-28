@@ -1,5 +1,5 @@
 /*
- * and2_gate_regs.h
+ * ADD2_regs.h
  *
  *  Created on: Jan 20, 2021
  *      Author: cheec
