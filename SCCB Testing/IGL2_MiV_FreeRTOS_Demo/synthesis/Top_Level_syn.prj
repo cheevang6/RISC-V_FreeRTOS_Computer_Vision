@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
-#--  Version N-2018.03M-SP1-1
+#--  Version O-2018.09M-SP1-1
 #--  Project file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\Top_Level_syn.prj
-#--  Written on Wed Apr 24 09:21:35 2019
+#--  Written on Wed Jan 27 16:58:26 2021
 
 
 #project files
@@ -168,6 +168,8 @@ add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision
 add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/component/work/MiV_Core32/MiV_Core32.v"
 add_file -verilog -lib CORETIMER_LIB "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/core/coretimer.v"
 add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/component/work/Timer/Timer.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/hdl/CoreSCCB.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/hdl/CoreSCCB_APB.v"
 add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/component/work/Top_Level/Top_Level.v"
 add_file -fpga_constraint "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/synthesis.fdc"
 
@@ -184,7 +186,7 @@ set_option -vlog_std v2001
 #device options
 set_option -technology IGLOO2
 set_option -part M2GL025
-set_option -package VF256
+set_option -package VF400
 set_option -speed_grade STD
 set_option -part_companion ""
 
@@ -221,7 +223,9 @@ set_option -report_path 4000
 set_option -update_models_cp 0
 set_option -preserve_registers 0
 set_option -disable_ramindex 0
+set_option -rep_clkint_driver 1
 set_option -microsemi_enhanced_flow 1
+set_option -ternary_adder_decomp 66
 
 # NFilter
 set_option -no_sequential_opt 0

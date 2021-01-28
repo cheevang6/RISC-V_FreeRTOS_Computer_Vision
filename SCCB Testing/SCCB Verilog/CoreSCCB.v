@@ -1,5 +1,4 @@
-// SCCB_CTRL.v
-
+// CoreSCCB.v
 // 2-Wire SCCB Interface only
 module CoreSCCB
 (
@@ -7,12 +6,12 @@ module CoreSCCB
     input			 RST_N,			// Reset 
     output           PWDN,			// Power down
 	input			 start,
-    input            RW,			// Read/Write request
+    //input            RW,			// Read/Write request
     input	   [7:0] data_in,		// Data write to register
     input	   [7:0] ip_addr,		// Device ID + RW signal
     input 	   [7:0] sub_addr,		// Register address
     output reg [7:0] data_out,		// Data read from register
-    //output VSYNC, HREF, PCLK,			// used when retrieving pixels
+    //output VSYNC, HREF, PCLK,		// used when retrieving pixels
 	output reg		 done,
     inout            SIO_D,			// SCCB data
     output			 SIO_C,			// SCCB clock
@@ -23,10 +22,11 @@ module CoreSCCB
     reg [6:0] step;     // state machine identifier
     reg data_send;      // data to send through SCCB
     reg sccb_clk_step;
+	wire R;
     
     // tristate SIO_D bus when idle
     assign SIO_D =	(step == 13 || step == 22 || step == 31 || 
-					 step == 46 || (step == 55 && !RW) ||
+					 step == 46 || (step == 55 && !ip_addr[0]) ||
 					(step > 46  && step <= 54)) ? 1'bz : data_send;
     // SIO_C is driven high when idle
     assign SIO_C = (start && (step > 4  && step <= 31 ||
@@ -34,6 +34,7 @@ module CoreSCCB
     //assign done = (step == 53 && start)? 1'b1 : 1'b0;
 	
 	assign PWDN = 1'b0;
+	//assign RW = ip_addr[0];
 	
     always @(posedge XCLK or negedge RST_N) begin
         if(!RST_N) begin
@@ -45,9 +46,11 @@ module CoreSCCB
         end else if(SCCB_MID_PULSE) begin
 			if(!start || step > 57 || done)
 				step <= 6'd0;
-			else if(RW == 0 && step == 6'd30) // 3-phase write
+			//else if(RW == 0 && step == 6'd30) // 3-phase write
+			else if(ip_addr[0] == 0 && step == 6'd30) // 3-phase write
 				step <= 6'd55; // stop transmission
-	        else if(RW == 1 && step == 6'd21) // 2-phase write
+	        //else if(RW == 1 && step == 6'd21) // 2-phase write
+			else if(ip_addr[0] == 1 && step == 6'd21) // 2-phase write
 	            step <= 6'd31; // 2-phase read
 			else
 				step <= step + 1;
@@ -72,7 +75,7 @@ module CoreSCCB
 					6'd8  : data_send <= ip_addr[3];
 					6'd9  : data_send <= ip_addr[2];
 					6'd10 : data_send <= ip_addr[1];
-					6'd11 : data_send <= RW; // read/write bit
+					6'd11 : data_send <= ip_addr[0];//RW; // read/write bit
 					6'd12 : data_send <= 0;// Don't care bit
 					
 					// Phase 2: Sub-Address
@@ -118,7 +121,7 @@ module CoreSCCB
 					6'd41 : data_send <= ip_addr[3];
 					6'd42 : data_send <= ip_addr[2];
 					6'd43 : data_send <= ip_addr[1];
-					6'd44 : data_send <= RW; // read/write bit
+					6'd44 : data_send <= ip_addr[0];//RW; // read/write bit
 					6'd45 : data_send <= 0;// Don't care bit
 			
 					// Phase 2: Read Data

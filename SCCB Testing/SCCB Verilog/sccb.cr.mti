@@ -5,6 +5,13 @@ Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
 Top level modules:
 	SCCB_slave
 
+} {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_APB_tb.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_APB_tb.v}
+Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module SCCB_APB_tb
+
+Top level modules:
+	SCCB_APB_tb
+
 } {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB_APB.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB_APB.v}
 Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
 -- Compiling module CoreSCCB_APB
@@ -12,19 +19,12 @@ Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
 Top level modules:
 	CoreSCCB_APB
 
-} {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_APB_tb.v} {1 {vlog -work work -stats=none {C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\SCCB Verilog\SCCB_APB_tb.v}
+} {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v}
 Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module SCCB_APB_tb
+-- Compiling module SCCBCtrl
 
 Top level modules:
-	SCCB_APB_tb
-
-} {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/CoreSCCB.v}
-Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module CoreSCCB
-
-Top level modules:
-	CoreSCCB
+	SCCBCtrl
 
 } {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v} {2 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v}
 Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
@@ -33,12 +33,5 @@ Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
 
 Top level modules:
 	SCCB_tb
-
-} {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v}
-Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module SCCBCtrl
-
-Top level modules:
-	SCCBCtrl
 
 } {} {}}

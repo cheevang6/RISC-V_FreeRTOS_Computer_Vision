@@ -1,4 +1,4 @@
-# Written by Synplify Pro version mapact, Build 2461R. Synopsys Run ID: sid1556112014 
+# Written by Synplify Pro version mapact2018q4p1, Build 026R. Synopsys Run ID: sid1611795426 
 # Top Level Design Parameters 
 
 # Clocks 
@@ -19,9 +19,9 @@ create_generated_clock -name {MSS_SubSystem_sb_0/CCC_0/GL0} -multiply_by {4} -di
 # Point-to-point Delay Constraints 
 
 # False Path Constraints 
-set_false_path -through [get_pins {MSS_SubSystem_sb_0/CORERESETP_0/INIT_DONE_int_RNIE3K6/Y}] 
+set_false_path -through [get_pins {MSS_SubSystem_sb_0/CORERESETP_0/INIT_DONE_int/Q}] 
 set_false_path -through [get_pins {MSS_SubSystem_sb_0/CORECONFIGP_0/soft_reset_reg[1]/Q MSS_SubSystem_sb_0/CORECONFIGP_0/control_reg_1[0]/Q MSS_SubSystem_sb_0/CORECONFIGP_0/control_reg_1[1]/Q MSS_SubSystem_sb_0/CORECONFIGP_0/soft_reset_reg[3]/Q}] 
-set_false_path -through [get_pins {MSS_SubSystem_sb_0/CORERESETP_0/count_ddr_enable/Q MSS_SubSystem_sb_0/CORERESETP_0/ddr_settled/Q MSS_SubSystem_sb_0/CORERESETP_0/release_sdif0_core/Q MSS_SubSystem_sb_0/CORERESETP_0/release_sdif0_core/Q MSS_SubSystem_sb_0/CORERESETP_0/release_sdif0_core/Q MSS_SubSystem_sb_0/CORERESETP_0/release_sdif0_core/Q}] 
+set_false_path -through [get_pins {MSS_SubSystem_sb_0/CORERESETP_0/count_ddr_enable/Q MSS_SubSystem_sb_0/CORERESETP_0/ddr_settled/Q MSS_SubSystem_sb_0/CORERESETP_0/release_sdif0_core/Q MSS_SubSystem_sb_0/CORERESETP_0/release_sdif1_core/Q MSS_SubSystem_sb_0/CORERESETP_0/release_sdif2_core/Q MSS_SubSystem_sb_0/CORERESETP_0/release_sdif3_core/Q}] 
 
 # Output Load Constraints 
 

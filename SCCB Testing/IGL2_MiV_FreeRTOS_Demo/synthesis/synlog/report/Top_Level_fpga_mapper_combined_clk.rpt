@@ -6,23 +6,23 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-3 non-gated/non-generated clock tree(s) driving 114 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 5881 clock pin(s) of sequential element(s)
-0 instances converted, 5881 sequential instances remain driven by gated/generated clocks
+3 non-gated/non-generated clock tree(s) driving 123 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 5950 clock pin(s) of sequential element(s)
+0 instances converted, 5950 sequential instances remain driven by gated/generated clocks
 
 =========================================================================== Non-Gated/Non-Generated Clocks ===========================================================================
 Clock Tree ID     Driving Element                                                    Drive Element Type                     Fanout     Sample Instance                                
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @K:CKID0003       JTAG_0.JTAG_0.genblk1\.genblk1\.genblk1\.UJTAG_inst.UJTAG_inst     UJTAG                                  17         JTAG_0.JTAG_0.genblk3\.genblk1\.UJ_JTAG.UTDODRV
 @K:CKID0004       MSS_SubSystem_sb_0.MSS_SubSystem_sb_HPMS_0.MSS_ADLIB_INST          clock definition on MSS_025            75         MSS_SubSystem_sb_0.CORECONFIGP_0.INIT_DONE_q2  
-@K:CKID0005       MSS_SubSystem_sb_0.FABOSC_0.I_RCOSC_25_50MHZ                       clock definition on RCOSC_25_50MHZ     22         MSS_SubSystem_sb_0.CORERESETP_0.count_ddr[13]  
+@K:CKID0005       MSS_SubSystem_sb_0.FABOSC_0.I_RCOSC_25_50MHZ                       clock definition on RCOSC_25_50MHZ     31         MSS_SubSystem_sb_0.CORERESETP_0.count_ddr[13]  
 ======================================================================================================================================================================================
-================================================================================================================================ Gated/Generated Clocks =================================================================================================================================
-Clock Tree ID     Driving Element                                         Drive Element Type     Fanout     Sample Instance                                                Explanation                                                                                                   
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       MSS_SubSystem_sb_0.CCC_0.CCC_INST                       CCC                    5584       MSS_SubSystem_sb_0.CORERESETP_0.POWER_ON_RESET_N_q1            Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0002       JTAG_0.JTAG_0.genblk3\.genblk1\.UJ_JTAG.un1_DUT_TCK     CFG4                   297        MiV_Core32_0.MiV_Core32_0.ChiselTop0.dtm.dmiReqReg_addr[0]     Clock conversion disabled                                                                                     
-=========================================================================================================================================================================================================================================================================================
+============================================================================================================================= Gated/Generated Clocks ==============================================================================================================================
+Clock Tree ID     Driving Element                                           Drive Element Type     Fanout     Sample Instance                                        Explanation                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       MSS_SubSystem_sb_0.CCC_0.CCC_INST                         CCC                    5638       MSS_SubSystem_sb_0.CORERESETP_0.CONFIG2_DONE_q1        Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       JTAG_0.JTAG_0.genblk3\.genblk1\.UJ_JTAG.un1_DUT_TCK_0     CFG4                   312        MiV_Core32_0.MiV_Core32_0.ChiselTop0.dtm.skipOpReg     Clock conversion disabled                                                                                     
+===================================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

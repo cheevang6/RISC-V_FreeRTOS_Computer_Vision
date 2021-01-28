@@ -5,27 +5,27 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\synthesis\synlog\report\Top_Level_fpga_mapper_resourceusage.rpt</data>
+<data>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\synlog\report\Top_Level_fpga_mapper_resourceusage.rpt</data>
 <title>Resource Usage</title>
 </report_link>
 <report_link name="Hierarchical Area report">
-<data>D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\synthesis\synlog\report\Top_Level_fpga_mapper_hier_area_report.xml</data>
+<data>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\synlog\report\Top_Level_fpga_mapper_hier_area_report.xml</data>
 <title>Hierarchical Area Report</title>
 </report_link>
 <parameter tooltip="Total Carry Cells used" name="Carry Cells">
-<data>1341</data>
+<data>1362</data>
 </parameter>
 <parameter tooltip="Total Sequential Cells used" name="Sequential Cells">
-<data>5952</data>
+<data>6030</data>
 </parameter>
 <parameter tcl_name="dsp_used" tooltip="Total DSP Blocks used" name="DSP Blocks">
 <data>2</data>
 </parameter>
 <parameter tooltip="Total I/O Cells used" name="I/O Cells">
-<data>57</data>
+<data>59</data>
 </parameter>
 <parameter tooltip="Total Global Clock Buffers used" name="Global Clock Buffers">
-<data>13</data>
+<data>15</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total RAM1K18 used" name="RAM1K18">
 <data>8</data>
@@ -34,6 +34,6 @@ The file contains the area information from mapper to be displayed as part of th
 <data>8</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total LUTs used" name="LUTs">
-<data>11694</data>
+<data>12007</data>
 </parameter>
 </report_table>

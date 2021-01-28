@@ -1,3 +1,3 @@
-project -load "D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level_syn.prj"
+project -load "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/synthesis/Top_Level_syn.prj"
 project -run
 project -save

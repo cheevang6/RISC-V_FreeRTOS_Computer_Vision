@@ -1,8 +1,8 @@
 # Microsemi Corp.
-# Date: 2019-Apr-24 09:20:06
+# Date: 2021-Jan-27 16:56:48
 # This file was generated based on the following SDC source files:
-#   D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/constraint/Top_Level_derived_constraints.sdc
-#   D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/constraint/JTAG_tck_constraint.sdc
+#   C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/constraint/Top_Level_derived_constraints.sdc
+#   C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/IGL2_MiV_FreeRTOS_Demo/constraint/JTAG_tck_constraint.sdc
 #
 
 create_clock -name {MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT} -period 20 [ get_pins { MSS_SubSystem_sb_0.FABOSC_0.I_RCOSC_25_50MHZ.CLKOUT } ]

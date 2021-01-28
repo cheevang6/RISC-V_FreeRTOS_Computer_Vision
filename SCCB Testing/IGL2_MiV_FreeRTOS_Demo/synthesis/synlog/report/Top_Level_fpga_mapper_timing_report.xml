@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\synthesis\synlog\Top_Level_fpga_mapper.srr</data>
+<data>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\synlog\Top_Level_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,14 +17,14 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>94.9 MHz</data>
-<data>-0.270</data>
+<data>95.8 MHz</data>
+<data>-0.221</data>
 </row>
 <row>
 <data>MSS_SubSystem_sb_0/CCC_0/GL0</data>
 <data>50.0 MHz</data>
-<data>58.8 MHz</data>
-<data>3.001</data>
+<data>59.1 MHz</data>
+<data>3.067</data>
 </row>
 <row>
 <data>MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT</data>
@@ -47,7 +47,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>System</data>
 <data>100.0 MHz</data>
-<data>174.9 MHz</data>
-<data>4.284</data>
+<data>172.5 MHz</data>
+<data>4.201</data>
 </row>
 </report_table>

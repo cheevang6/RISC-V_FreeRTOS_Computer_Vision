@@ -82,11 +82,11 @@ set_compile_info \
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\component\work\BasicIO_Interface\BasicIO_Interface_syn.v"}
+    -value {"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\component\work\BasicIO_Interface\BasicIO_Interface_syn.v"}
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\synthesis\Top_Level.vm"}
+    -value {"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\Top_Level.vm"}
 set_compile_info \
     -category {"Options"} \
     -name {"Enable Single Event Transient mitigation"} \
@@ -100,7 +100,7 @@ set_compile_info \
     -name {"Limit the number of high fanout nets to display to"} \
     -value {"10"}
 compile \
-    -desdir {D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level} \
+    -desdir {C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level} \
     -design Top_Level \
     -fam IGLOO2 \
     -die PA4MGL2500_N \

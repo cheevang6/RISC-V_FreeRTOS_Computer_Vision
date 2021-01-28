@@ -355,13 +355,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1556125520"
+TIME="1611795268"
 SIZE="2769"
 PARENT="<project>\component\work\APB3_Bus\APB3_Bus.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1556125520"
+TIME="1611795268"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -369,14 +369,14 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 STATE="utd"
-TIME="1517902144"
+TIME="1603770665"
 SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="4636"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -384,7 +384,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="9073"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -392,7 +392,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="25129"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -400,7 +400,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="36275"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -408,7 +408,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="122456"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -416,7 +416,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="32806"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -424,7 +424,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="3556"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -432,7 +432,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="6765"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -440,7 +440,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1533055840"
+TIME="1603770665"
 SIZE="23651"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -814,13 +814,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\APB3_Bus\APB3_Bus.cxf,actgen_cxf"
 STATE="utd"
-TIME="1556125522"
-SIZE="10141"
+TIME="1611795269"
+SIZE="11837"
 ENDFILE
 VALUE "<project>\component\work\APB3_Bus\APB3_Bus.v,hdl"
 STATE="utd"
-TIME="1556125520"
-SIZE="11799"
+TIME="1611795268"
+SIZE="12051"
 PARENT="<project>\component\work\APB3_Bus\APB3_Bus.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -1873,13 +1873,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Top_Level\Top_Level.cxf,actgen_cxf"
 STATE="utd"
-TIME="1556125690"
-SIZE="10637"
+TIME="1611795332"
+SIZE="11131"
 ENDFILE
 VALUE "<project>\component\work\Top_Level\Top_Level.v,hdl"
 STATE="utd"
-TIME="1556125688"
-SIZE="30087"
+TIME="1611795330"
+SIZE="32685"
 PARENT="<project>\component\work\Top_Level\Top_Level.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -1920,13 +1920,13 @@ SIZE="3780"
 ENDFILE
 VALUE "<project>\hdl\CoreSCCB.v,hdl"
 STATE="utd"
-TIME="1611643364"
-SIZE="5850"
+TIME="1611795200"
+SIZE="5280"
 ENDFILE
 VALUE "<project>\hdl\CoreSCCB_APB.v,hdl"
 STATE="utd"
-TIME="1611653298"
-SIZE="2143"
+TIME="1611795175"
+SIZE="5286"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -2416,8 +2416,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -2514,8 +2514,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:synplify.log
+HDL;hdl\CoreSCCB.v;0
+HDL;hdl\CoreSCCB_APB.v;0
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;Top_Level;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
@@ -2545,6 +2550,9 @@ LIST "CoreConfigP::work","component\Actel\DirectCore\CoreConfigP\7.1.100\rtl\vlo
 ENDLIST
 LIST "CoreResetP::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v","FALSE","FALSE"
 SUBBLOCK "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v","FALSE","FALSE"
+ENDLIST
+LIST "CoreSCCB_APB::work","hdl\CoreSCCB_APB.v","FALSE","FALSE"
+SUBBLOCK "CoreSCCB::work","hdl\CoreSCCB.v","FALSE","FALSE"
 ENDLIST
 LIST "MiV_Core32_MiV_Core32_0_MIV_RV32IMA_L1_AHB_PLUSARG_READER::work","component\work\MiV_Core32\MiV_Core32_0\core\miv_rv32ima_l1_ahb_plusarg_reader.v","FALSE","FALSE"
 ENDLIST
@@ -3009,6 +3017,7 @@ SUBBLOCK "JTAG::work","component\work\JTAG\JTAG.v","TRUE","FALSE"
 SUBBLOCK "MSS_SubSystem_sb::work","component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.v","TRUE","FALSE"
 SUBBLOCK "MiV_Core32::work","component\work\MiV_Core32\MiV_Core32.v","TRUE","FALSE"
 SUBBLOCK "Timer::work","component\work\Timer\Timer.v","TRUE","FALSE"
+SUBBLOCK "CoreSCCB_APB::work","hdl\CoreSCCB_APB.v","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
 ENDLIST
@@ -3038,12 +3047,6 @@ SUBBLOCK "COREAHBLITE_SLAVESTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\C
 SUBBLOCK "COREAHBLITE_MASTERSTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v","FALSE","FALSE"
 SUBBLOCK "COREAHBLITE_MASTERSTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v","FALSE","FALSE"
 ENDLIST
-LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
-SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_AHBSLAVE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbslave.v","FALSE","TRUE"
-SUBBLOCK "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
-ENDLIST
 LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
@@ -3052,11 +3055,7 @@ SUBBLOCK "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBL
 ENDLIST
 LIST "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
 ENDLIST
-LIST "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
-ENDLIST
 LIST "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
