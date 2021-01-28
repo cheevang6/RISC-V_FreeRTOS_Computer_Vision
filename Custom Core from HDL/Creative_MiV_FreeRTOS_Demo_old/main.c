@@ -85,7 +85,7 @@ char *g_MSG_DEMO =
 		"\n\r  This demo creates 3 blinking LED tasks and activate the FreeRTOS"
 		"\n\r  scheduler. LED1 Red, LED2 Green and Red should start blinking.\n\r";
 
-char *Checking = "Checking...";
+char *Checking = "Checking...\n\r";
 
 // -- Timer instance data ----------------------------------------------------
 timer_instance_t g_timer_0;
@@ -176,7 +176,7 @@ int main(void) {
 
 	char message[50];
 
-	sprintf(message,"%d %d %d",outA,outB,outX);
+	sprintf(message,"%d + %d = %d\n\r",outA,outB,outX);
 	UART_Tx_Msg(message, 1);
 
 	/* Start the kernel.  From here on, only tasks and interrupts will run. */

@@ -53,7 +53,7 @@ all: Creative_MiV_FreeRTOS_Demo_old.elf secondary-outputs
 Creative_MiV_FreeRTOS_Demo_old.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU RISC-V Cross C Linker'
-	riscv64-unknown-elf-gcc -march=rv32im -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\cheec\Desktop\Master\Creative-Eval-Board\IGL2_MiV_FreeRTOS_Demo\Software Project\Creative_MiV_FreeRTOS_Demo_old\riscv_hal\microsemi-riscv-igloo2.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"Creative_MiV_FreeRTOS_Demo_old.map" --specs=nano.specs -o "Creative_MiV_FreeRTOS_Demo_old.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	riscv64-unknown-elf-gcc -march=rv32im -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Custom Core from HDL\Creative_MiV_FreeRTOS_Demo_old\riscv_hal\microsemi-riscv-igloo2.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"Creative_MiV_FreeRTOS_Demo_old.map" --specs=nano.specs -o "Creative_MiV_FreeRTOS_Demo_old.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

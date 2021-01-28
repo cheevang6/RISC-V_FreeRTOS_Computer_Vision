@@ -1916,12 +1916,12 @@ SIZE="1650"
 ENDFILE
 VALUE "<project>\designer\Top_Level\Top_Level.block.fp.pdc,fp_pdc"
 STATE="utd"
-TIME="1611270403"
+TIME="1611361337"
 SIZE="674"
 ENDFILE
 VALUE "<project>\designer\Top_Level\Top_Level.block.io.pdc,io_pdc"
 STATE="utd"
-TIME="1611270403"
+TIME="1611361337"
 SIZE="3780"
 ENDFILE
 VALUE "<project>\hdl\ADD2.v,hdl"
@@ -2002,7 +2002,7 @@ SIZE="24424"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1611270296"
+TIME="1611361233"
 SIZE="2169"
 PARENT="<project>\component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.cxf"
 PARENT="<project>\component\work\Top_Level\Top_Level.cxf"
@@ -2026,22 +2026,22 @@ SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level.so,so"
 STATE="utd"
-TIME="1611270390"
-SIZE="312"
+TIME="1611361324"
+SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level.vm,syn_vm"
 STATE="utd"
-TIME="1611270388"
-SIZE="5512885"
+TIME="1611361322"
+SIZE="5512549"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level_syn.prj,prj"
 STATE="utd"
-TIME="1611270391"
-SIZE="39318"
+TIME="1611361324"
+SIZE="38982"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1611270389"
+TIME="1611361323"
 SIZE="3871"
 ENDFILE
 ENDLIST
@@ -2474,8 +2474,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -2586,9 +2586,9 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Bitstream:Top_Level_generateBitstream.log
-StartPage;StartPage;0
+ReportsCurrentItem;Run Programming Action:Top_Level_PROGRAM.log
 HDL;hdl\ADD2_APB.v;0
+StartPage;StartPage;0
 SmartDesign;Top_Level;0
 ACTIVEVIEW;Reports
 ENDLIST
@@ -3117,6 +3117,12 @@ SUBBLOCK "COREAHBLITE_SLAVESTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\C
 SUBBLOCK "COREAHBLITE_MASTERSTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v","FALSE","FALSE"
 SUBBLOCK "COREAHBLITE_MASTERSTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v","FALSE","FALSE"
 ENDLIST
+LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
+SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_AHBSLAVE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
+ENDLIST
 LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
@@ -3125,7 +3131,11 @@ SUBBLOCK "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBL
 ENDLIST
 LIST "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
 ENDLIST
+LIST "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
+ENDLIST
 LIST "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"

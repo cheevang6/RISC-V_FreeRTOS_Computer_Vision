@@ -51,15 +51,15 @@ uint8_t get_ABX
 	uint8_t value
 )
 {
-	uint8_t output_x = 0;
+	uint8_t output = 0;
 	if(value == 0)
-		output_x = HAL_get_8bit_reg(this_add2->base_addr, A);
+		output = HAL_get_8bit_reg(this_add2->base_addr, A);
 	else if(value == 1)
-		output_x = HAL_get_8bit_reg(this_add2->base_addr, B);
+		output = HAL_get_8bit_reg(this_add2->base_addr, B);
 	else if(value == 2)
-		output_x = HAL_get_8bit_reg(this_add2->base_addr, X);
+		output = HAL_get_8bit_reg(this_add2->base_addr, X);
 	else
 		HAL_ASSERT(0);
 
-	return output_x;
+	return output;
 }
