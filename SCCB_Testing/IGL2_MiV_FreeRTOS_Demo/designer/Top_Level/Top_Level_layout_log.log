@@ -1,0 +1,79 @@
+INFO: Reading User SDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\constraint\Top_Level_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\constraint\JTAG_tck_constraint.sdc.
+INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
+
+No errors or warnings found.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+I/O Register Combining   : ON
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.block.io.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\constraint\io\Creative_Rev1_IOs_def.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\constraint\fp\Top_Level_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.block.fp.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 59 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V5.0 - 12.800.0 
+Design: Top_Level                       Started: Wed Jan 27 18:56:06 2021
+
+Initializing Normal-Effort Timing-Driven Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 3 seconds
+Placement                : 10 seconds
+Improvement              : 21 seconds
+
+Placer completed successfully.
+
+Design: Top_Level                       
+Finished: Wed Jan 27 18:57:00 2021
+Total CPU Time:     00:01:06            Total Elapsed Time: 00:00:54
+Total Memory Usage: 549.2 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_LevelStarted: Wed Jan 27 18:57:08 2021
+
+
+Router completed successfully.
+
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level
+Finished: Wed Jan 27 18:57:29 2021
+Total CPU Time:     00:00:21            Total Elapsed Time: 00:00:21
+Total Memory Usage: 895.5 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 68
+  Worst minimum delay slack: -0.068 ns
+Info: Iteration 2:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+-------+-------+------------+
+| Type          | Used  | Total | Percentage |
++---------------+-------+-------+------------+
+| 4LUT          | 13064 | 27696 | 47.17      |
+| DFF           | 6896  | 27696 | 24.90      |
+| I/O Register  | 0     | 408   | 0.00       |
+| Logic Element | 13853 | 27696 | 50.02      |
++---------------+-------+-------+------------+
+

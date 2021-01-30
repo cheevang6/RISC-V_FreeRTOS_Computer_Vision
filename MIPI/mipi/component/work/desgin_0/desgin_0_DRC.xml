@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>desgin_0</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>No Top Level Ports</message>
+    <detail>You must create at least one port for a valid design</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/instances/desgin_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>FCCC_C0_0 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/instances/FCCC_C0_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin FCCC_C0_0:GL0</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/FCCC_C0_0:GL0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin FCCC_C0_0:LOCK</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/FCCC_C0_0:LOCK</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>mipi_csi2_rxdecoder_C0_0 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/instances/mipi_csi2_rxdecoder_C0_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin mipi_csi2_rxdecoder_C0_0:CAM_CLOCK_I</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:CAM_CLOCK_I</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin mipi_csi2_rxdecoder_C0_0:READ_CLOCK_I</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:READ_CLOCK_I</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin mipi_csi2_rxdecoder_C0_0:RESET_n_I</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:RESET_n_I</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin mipi_csi2_rxdecoder_C0_0:Num_of_Lanes_i[2:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:Num_of_Lanes_i</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin mipi_csi2_rxdecoder_C0_0:ChannelA_i[7:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:ChannelA_i</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin mipi_csi2_rxdecoder_C0_0:ChannelB_i[7:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:ChannelB_i</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin mipi_csi2_rxdecoder_C0_0:ChannelC_i[7:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:ChannelC_i</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin mipi_csi2_rxdecoder_C0_0:ChannelD_i[7:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:ChannelD_i</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin mipi_csi2_rxdecoder_C0_0:data_out_o[7:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:data_out_o</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin mipi_csi2_rxdecoder_C0_0:word_count_o[15:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:word_count_o</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin mipi_csi2_rxdecoder_C0_0:pixel_valid_o</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:pixel_valid_o</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin mipi_csi2_rxdecoder_C0_0:frame_start_o</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:frame_start_o</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin mipi_csi2_rxdecoder_C0_0:frame_end_o</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:frame_end_o</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin mipi_csi2_rxdecoder_C0_0:line_start_o</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:line_start_o</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin mipi_csi2_rxdecoder_C0_0:line_end_o</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:line_end_o</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin mipi_csi2_rxdecoder_C0_0:frame_number_o[15:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/desgin_0/pins/mipi_csi2_rxdecoder_C0_0:frame_number_o</crossprobe>
+  </drc>
+</drcreport>

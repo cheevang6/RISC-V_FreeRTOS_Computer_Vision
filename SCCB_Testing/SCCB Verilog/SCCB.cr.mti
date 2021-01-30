@@ -1,0 +1,23 @@
+{C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_slave.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_slave.v}
+Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module SCCB_slave
+
+Top level modules:
+	SCCB_slave
+
+} {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v} {2 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v}
+Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module SCCB_tb
+** Warning: C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCB_tb.v(85): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	SCCB_tb
+
+} {} {}} {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v} {1 {vlog -work work -stats=none {C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB Testing/SCCB Verilog/SCCBCtrl.v}
+Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module SCCBCtrl
+
+Top level modules:
+	SCCBCtrl
+
+} {} {}}

@@ -1,0 +1,275 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+Date: Wed Jan 27 18:54:33 2021
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | IGLOO2         |
+| Device                         | M2GL025        |
+| Package                        | 256 VF         |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 3.3V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Topcell | Top_Level                                                                                                                                                  |
+| Format  | Verilog                                                                                                                                                    |
+| Source  | C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\component\work\BasicIO_Interface\BasicIO_Interface_syn.v |
+| Source  | C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\Top_Level.vm                                   |
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+-------+-------+------------+
+| Type                      | Used  | Total | Percentage |
++---------------------------+-------+-------+------------+
+| 4LUT                      | 12997 | 27696 | 46.93      |
+| DFF                       | 6896  | 27696 | 24.90      |
+| I/O Register              | 0     | 414   | 0.00       |
+| User I/O                  | 62    | 138   | 44.93      |
+| -- Single-ended I/O       | 56    | 138   | 40.58      |
+| -- Differential I/O Pairs | 3     | 65    | 4.62       |
+| RAM64x18                  | 8     | 34    | 23.53      |
+| RAM1K18                   | 8     | 31    | 25.81      |
+| MACC                      | 2     | 34    | 5.88       |
+| Chip Globals              | 16    | 16    | 100.00     |
+| CCC                       | 1     | 6     | 16.67      |
+| RCOSC_25_50MHZ            | 1     | 1     | 100.00     |
+| RCOSC_1MHZ                | 0     | 1     | 0.00       |
+| XTLOSC                    | 0     | 1     | 0.00       |
+| HPMS                      | 1     | 1     | 100.00     |
++---------------------------+-------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+-------+------+
+| Type                     | 4LUT  | DFF  |
++--------------------------+-------+------+
+| Fabric Logic             | 12349 | 6248 |
+| RAM64x18 Interface Logic | 288   | 288  |
+| RAM1K18 Interface Logic  | 288   | 288  |
+| MACC Interface Logic     | 72    | 72   |
+| Total Used               | 12997 | 6896 |
++--------------------------+-------+------+
+
+HPMS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| eNVM (256KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| SPI           | 0    | 1     |
+| MDDR          | 1    | 1     |
+| HPDMA         | 1    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the HPMS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 106  |
+| 5      | 36   |
+| 6      | 1    |
+| 7      | 3    |
+| 8      | 1    |
+| 9      | 1    |
+| 10     | 8    |
+| 11     | 7    |
+| 14     | 3    |
+| 16     | 1    |
+| 17     | 5    |
+| 30     | 3    |
+| 32     | 6    |
+| 33     | 8    |
+| 49     | 1    |
+| 64     | 1    |
+| 65     | 1    |
+| Total  | 192  |
++--------+------+
+
+Detailed MACC Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 1    |
+| Total  | 1    |
++--------+------+
+
+I/O Function
++--------------------------------------+--------------+-------------+-----------------+
+| Type                                 | w/o register | w/ register | w/ DDR register |
++--------------------------------------+--------------+-------------+-----------------+
+| Input I/O                            | 4            | 0           | 0               |
+| Output I/O                           | 33           | 0           | 0               |
+| Bidirectional I/O                    | 19           | 0           | 0               |
+| Differential Input I/O Pairs         | 0            | 0           | 0               |
+| Differential Output I/O Pairs        | 1            | 0           | 0               |
+| Differential Bidirectional I/O Pairs | 2            | 0           | 0               |
++--------------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------------------------+--------+--------+-------+--------+---------------+
+| I/O Standard                   | Vddi   | Vref   | Input | Output | Bidirectional |
++--------------------------------+--------+--------+-------+--------+---------------+
+| LVCMOS33                       |  3.30v |  N/A   |  3    |  6     |  1            |
+| SSTL18II (Input/Bidirectional) |  1.80v |  0.90v |  1    |  0     |  22           |
+| SSTL18II (Output)              |  1.80v |  N/A   |  0    |  29    |  0            |
++--------------------------------+--------+--------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  52   | 83.87%     |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  10   | 16.13%     |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                         |
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 5855   | INT_NET | Net   : MSS_SubSystem_sb_0_FIC_0_CLK                                                                                                                         |
+|        |         | Driver: MSS_SubSystem_sb_0/CCC_0/GL0_INST/U0_RGB1                                                                                                            |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 484    | INT_NET | Net   : MSS_SubSystem_sb_0/MSS_HPMS_READY_int_arst                                                                                                           |
+|        |         | Driver: MSS_SubSystem_sb_0/CORERESETP_0/MSS_HPMS_READY_int_rep_RNIP3IE/U0_RGB1                                                                               |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 398    | INT_NET | Net   : INIT_DONE_int_arst                                                                                                                                   |
+|        |         | Driver: MSS_SubSystem_sb_0/CORERESETP_0/INIT_DONE_int_rep_RNIKEOF/U0_RGB1                                                                                    |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 312    | INT_NET | Net   : JTAG_0_TGT_TCK_0_i                                                                                                                                   |
+|        |         | Driver: JTAG_0/JTAG_0/genblk3.genblk1.TGT_TCK_GLB/U0_RGB1                                                                                                    |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 198    | INT_NET | Net   : BasicIO_Interface_0/PRESETN_RNI1MJ2\/U0_YWn                                                                                                          |
+|        |         | Driver: BasicIO_Interface_0/PRESETN_RNI1MJ2\/U0_RGB1                                                                                                         |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 76     | INT_NET | Net   : MSS_SubSystem_sb_0/FIC_2_APB_M_PRESET_N_arst                                                                                                         |
+|        |         | Driver: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/FIC_2_APB_M_PRESET_N_keep_RNIV4UA/U0_RGB1                                                                 |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 75     | INT_NET | Net   : MSS_SubSystem_sb_0/CORECONFIGP_0_APB_S_PCLK                                                                                                          |
+|        |         | Driver: MSS_SubSystem_sb_0/MSS_SubSystem_sb_HPMS_0/MSS_ADLIB_INST_RNI6K52/U0_RGB1                                                                            |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 40     | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/q_arst_0                                                                                                        |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AHB_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep_RNIDLVA/U0_RGB1 |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 31     | INT_NET | Net   : MSS_SubSystem_sb_0/FABOSC_0_RCOSC_25_50MHZ_O2F                                                                                                       |
+|        |         | Driver: MSS_SubSystem_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1                                                                                      |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 30     | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/_T_49_arst                                                                                      |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_49_RNICHDE/U0_RGB1                                       |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 27     | INT_NET | Net   : MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_clk_base_arst                                                                                           |
+|        |         | Driver: MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_clk_base_RNIUDL/U0_RGB1                                                                                 |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 25     | INT_NET | Net   : URSTB_arst                                                                                                                                           |
+|        |         | Driver: JTAG_0/JTAG_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNIQRO2/U0_RGB1                                                                          |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 24     | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/un1_reset_debug_arst                                                                                            |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/un1_reset_debug_RNIHR84/U0_RGB1                                                                                 |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 17     | INT_NET | Net   : JTAG_0/JTAG_0/iUDRCK                                                                                                                                 |
+|        |         | Driver: JTAG_0/JTAG_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIK1C2/U0_RGB1                                                                |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 17     | INT_NET | Net   : MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_rcosc_arst                                                                                              |
+|        |         | Driver: MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4UVB/U0_RGB1                                                                                   |
+|        |         | Source: NETLIST                                                                                                                                              |
+| 12     | INT_NET | Net   : MSS_SubSystem_sb_0/CORERESETP_0/sm0_areset_n_arst                                                                                                    |
+|        |         | Driver: MSS_SubSystem_sb_0/CORERESETP_0/sdif0_areset_n_RNIHQEF/U0_RGB1                                                                                       |
+|        |         | Source: NETLIST                                                                                                                                              |
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                    |
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 782    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/reset_arst                                                                                                 |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/reset                                                                                                      |
+| 616    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/N_8610_i                                                                                   |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmactiveSync/MIV_RV32IMA_L1_AHB_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q |
+| 248    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmiXing_auto_out_a_bits_address[3]                                                         |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[39]                        |
+| 173    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmiXing_auto_out_a_bits_address[2]                                                         |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[38]                        |
+| 150    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/valid_0                                                                                               |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/fq/valid_0                                                                                   |
+| 131    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend_auto_icache_master_out_a_bits_address[12]                                                    |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/refill_addr[12]                                                                       |
+| 128    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/un1__GEN_13_2_sqmuxa_or                                                               |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/refill_one_beat_0_o2_RNIFFDO                                                          |
+| 128    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/N_8199_i                                                                              |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/vb_array_1429_fast                                                                    |
+| 128    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/_T_232                                                                                |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/_T_232_0_a2                                                                           |
+| 108    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/core/mem_reg_pc_291                                                                                   |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/core/bypass_mux_1_185_0                                                                               |
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                    |
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 782    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/reset_arst                                                                                                 |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/reset                                                                                                      |
+| 616    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/N_8610_i                                                                                   |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmactiveSync/MIV_RV32IMA_L1_AHB_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q |
+| 248    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmiXing_auto_out_a_bits_address[3]                                                         |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[39]                        |
+| 173    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmiXing_auto_out_a_bits_address[2]                                                         |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[38]                        |
+| 150    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/valid_0                                                                                               |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/fq/valid_0                                                                                   |
+| 131    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend_auto_icache_master_out_a_bits_address[12]                                                    |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/refill_addr[12]                                                                       |
+| 128    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/un1__GEN_13_2_sqmuxa_or                                                               |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/refill_one_beat_0_o2_RNIFFDO                                                          |
+| 128    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/N_8199_i                                                                              |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/vb_array_1429_fast                                                                    |
+| 128    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/_T_232                                                                                |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/frontend/icache/_T_232_0_a2                                                                           |
+| 108    | INT_NET | Net   : MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/core/mem_reg_pc_291                                                                                   |
+|        |         | Driver: MiV_Core32_0/MiV_Core32_0/ChiselTop0/tile/core/bypass_mux_1_185_0                                                                               |
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Block Conflict Resolution from Compile Options
++-----------+--------------------------------------------------------+
+| Placement | Error if conflict                                      |
+| Routing   | Resolve conflict/Keep and Lock non conflicting routing |
++-----------+--------------------------------------------------------+
+
+Block Information Report
+----------------------------------------------------------------
++----------------+---------------------+
+|  Block Name    | BasicIO_Interface   |
+|  Instance Name | BasicIO_Interface_0 |
++----------------+---------------------+
+
+ 
++-----------+---------+-------------+
+|           | Locked  | Total       |
+| Instances | 0       | 475 (0.00%) |
+| Nets      | 0       | 616 (0.00%) |
++-----------+---------+-------------+
+
+

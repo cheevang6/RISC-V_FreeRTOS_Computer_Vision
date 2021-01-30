@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>tb</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>sccb_design_0 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/tb/instances/sccb_design_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin sccb_design_0:sio_c</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/tb/pins/sccb_design_0:sio_c</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin sccb_design_0:sio_d</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/tb/pins/sccb_design_0:sio_d</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin sccb_design_0:DEVRST_N</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/tb/pins/sccb_design_0:DEVRST_N</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin sccb_design_0:sioc</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/tb/pins/sccb_design_0:sioc</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin sccb_design_0:siod</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/tb/pins/sccb_design_0:siod</crossprobe>
+  </drc>
+</drcreport>

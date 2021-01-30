@@ -1,0 +1,18 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Fri Jan 29 14:16:11 2021
+Project   :  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\MIPI\mipi
+Component :  OSC_C0
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/work/OSC_C0/OSC_C0.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Actel/SgCore/OSC/2.0.101/osc_comps.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+

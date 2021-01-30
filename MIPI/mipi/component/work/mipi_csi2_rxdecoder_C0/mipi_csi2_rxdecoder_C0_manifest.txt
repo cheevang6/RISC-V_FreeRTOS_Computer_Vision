@@ -1,0 +1,15 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Fri Jan 29 14:14:40 2021
+Project   :  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\MIPI\mipi
+Component :  mipi_csi2_rxdecoder_C0
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/mipi_csi2_rxdecoder/2.0.0/Obfuscated/bus_cdc_synchronizer.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/mipi_csi2_rxdecoder/2.0.0/Obfuscated/cdc_fifo_logic.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/mipi_csi2_rxdecoder/2.0.0/Obfuscated/mipi_csi2_rxdecoder.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/mipi_csi2_rxdecoder/2.0.0/Obfuscated/ram2Port_cam.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/work/mipi_csi2_rxdecoder_C0/mipi_csi2_rxdecoder_C0.v
+

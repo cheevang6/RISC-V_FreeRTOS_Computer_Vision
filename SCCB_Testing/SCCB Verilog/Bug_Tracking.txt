@@ -1,0 +1,59 @@
+Bug Tracking
+
+01/2021
+- data from SIO_D are transmitted when SIO_C is low
+	- added code create a pulse at middle of SIO_C when low
+	- called "SCCB_MID_PULSE"
+- added separate start sequence for 2-phase read
+- added stop sequence for 2-phase write
+	- taken out (01/28/2021) since phase 2 of 2-phase write does
+	  not have stop
+
+01/20/2021
+- in order to program FPGA on software side, need to create 
+  APB wrapper for SCCB
+	- To build APB3 Core from HDL, goto: https://www.microsemi.com/product-directory/design-resources/1750-libero-soc#documents
+		- On Applications Notes >> ACC335: Building an APB3 Core 
+		  for SmartFusion Microcontroller Subsystem App Note
+		- the information and its design files are given
+	- A PPT was made using these information to create and ADD2 core
+	  and programming it in C to send numbers to the core
+	  https://github.com/cheevang6/RISC-V_FreeRTOS_Computer_Vision/blob/main/Custom%20Core%20from%20HDL%20with%20APB%20Interface.pptx
+	  
+01/21/2021
+- moved SCCB_CLK and SCCB_MID_PULSE generating code to Core_APB
+	- This might change later where only signals needed are 
+	  done and ready (IN PROGRESS)
+	- not sure how to design this to make sure data sent at correct time
+
+01/24/2021
+- made sure SCCB_CLK still asserted during Don't Care or NA bits
+- fixed start and stop conditions such that it is asserted after 
+  one SCCB_MID_PULSE cycle (instead of 3)
+  
+01/25/2021
+- included Don't Care bits during write when floate since they driven by slaves
+
+01/26/2021
+- removed RW signal and replaced it with ip_addr[0]
+- added PWDN signal
+
+01/28/2021
+- using logic analyzer with I2C protocol selected (without camera)
+	- write works fine
+	- read occurs twice (was expecting only one read)
+	- found out that there should be no stop sequence between
+	  2-phase write and 2-phase read
+- testing with camera
+	- changed XCLK from 50MHz to 24MHz to test OV2640
+	- will remove stop sequence after 2-phase write
+	
+01/29/2021
+- somewhere online says for a successful read for a 0v7670:
+	1. 
+	
+Stuff I need to do:
+- On software side (SoftConsole), how does it know when it's ready to
+  be given new data
+	- done and ready signals???
+ 

@@ -1,0 +1,41 @@
+Software Version: 12.800.0.16
+Embedded FlashPro5 programmer detected.
+programmer 'E20047SIR8' : FlashPro5
+Opened 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design_fp\sccb_design.pro'
+The 'open_project' command succeeded.
+Warning: Programming is already enabled for device 'M2GL025'.
+The 'enable_device' command succeeded.
+PPD file 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/designer/sccb_design/sccb_design.ppd' has been loaded successfully.
+DESIGN : sccb_design;  CHECKSUM : 0B46;  PDB_VERSION : 1.0
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E20047SIR8' : Scan Chain...
+programmer 'E20047SIR8' : Check Chain...
+programmer 'E20047SIR8' : Scan and Check Chain PASSED.
+programmer 'E20047SIR8' : device 'M2GL025' : Executing action PROGRAM
+programmer 'E20047SIR8' : device 'M2GL025' : Family: Igloo2
+programmer 'E20047SIR8' : device 'M2GL025' : Product:      M2GL005
+programmer 'E20047SIR8' : device 'M2GL025' : Cortex-M3 Disabled (M3_ALLOWED = 0)
+programmer 'E20047SIR8' : device 'M2GL025' : EXPORT ISC_ENABLE_RESULT[32] = 00736244
+programmer 'E20047SIR8' : device 'M2GL025' : EXPORT CRCERR[1] = 0
+programmer 'E20047SIR8' : device 'M2GL025' : EXPORT EDCERR[1] = 0
+programmer 'E20047SIR8' : device 'M2GL025' : Programming FPGA Array...
+programmer 'E20047SIR8' : device 'M2GL025' : EXPORT eNVM component digest[256] = 5d32483689ecd157863f42732bb70faae28da10567ea64bebe8840d316d4d613
+programmer 'E20047SIR8' : device 'M2GL025' : EXPORT Fabric component digest[256] = 38623d7b594ca42688187f1c0dbb5717136aab6858d185745028938bbc620ac5
+programmer 'E20047SIR8' : device 'M2GL025' : ===================================================================================
+programmer 'E20047SIR8' : device 'M2GL025' : EXPORT DSN[128] = 1896717087d122639c0446098adccf8b
+programmer 'E20047SIR8' : device 'M2GL025' : ===================================================================================
+programmer 'E20047SIR8' : device 'M2GL025' : Finished: Fri Jan 29 16:54:11 2021 (Elapsed time 00:00:30)
+programmer 'E20047SIR8' : device 'M2GL025' : Executing action PROGRAM PASSED.
+programmer 'E20047SIR8' : Chain programming PASSED.
+Chain Programming Finished: Fri Jan 29 16:54:11 2021 (Elapsed time 00:00:30)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design_fp\sccb_design.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

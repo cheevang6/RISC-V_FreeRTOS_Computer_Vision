@@ -1,0 +1,17 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Fri Jan 29 14:26:22 2021
+Project   :  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\MIPI\mipi
+Component :  LVDS_RX_7_1_C0
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/LVDS_RX_7_1/1.0.1/Obfuscated/Deserializer.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/LVDS_RX_7_1/1.0.1/Obfuscated/LVDS_RX_7_1.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/LVDS_RX_7_1/1.0.1/Obfuscated/RX_SYNC.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/LVDS_RX_7_1/1.0.1/Obfuscated/RX_TOP.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/LVDS_RX_7_1/1.0.1/Obfuscated/cdcfifo.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/Microsemi/SolutionCore/LVDS_RX_7_1/1.0.1/Obfuscated/cdcfiforam.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/MIPI/mipi/component/work/LVDS_RX_7_1_C0/LVDS_RX_7_1_C0.v
+
