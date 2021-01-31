@@ -8,9 +8,10 @@ CLKINT          2 uses
 LIVE_PROBE_FB   1 use
 RCOSC_25_50MHZ  1 use
 SYSRESET        1 use
-CFG2           14 uses
+CFG1           1 use
+CFG2           11 uses
 CFG3           12 uses
-CFG4           36 uses
+CFG4           32 uses
 
 Carry cells:
 ARI1            14 uses - used for arithmetic functions
@@ -21,15 +22,15 @@ SLE            21 uses
 
 DSP Blocks:    0 of 34 (0%)
 
-I/O ports: 6
-I/O primitives: 5
-OUTBUF         4 uses
-TRIBUFF        1 use
+I/O ports: 7
+I/O primitives: 6
+BIBUF          1 use
+OUTBUF         5 uses
 
 
 Global Clock Buffers: 2
 
-Total LUTs:    76
+Total LUTs:    70
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -38,5 +39,5 @@ RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
 Total number of SLEs after P&R:  21 + 0 + 0 + 0 = 21;
-Total number of LUTs after P&R:  76 + 0 + 0 + 0 = 76;
+Total number of LUTs after P&R:  70 + 0 + 0 + 0 = 70;
 

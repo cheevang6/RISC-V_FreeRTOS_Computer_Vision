@@ -19,14 +19,14 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>sccb_design</data>
 <data>21</data>
-<data>62</data>
+<data>56</data>
 <data>14</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
 <data>2</data>
-<data>5</data>
+<data>6</data>
 <module>
 <data>FCCC_C0</data>
 <data>0</data>
@@ -78,7 +78,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>config_sccb</data>
 <data>21</data>
-<data>62</data>
+<data>56</data>
 <data>14</data>
 <data>0</data>
 <data>0</data>
@@ -89,7 +89,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>CoreSCCB</data>
 <data>9</data>
-<data>54</data>
+<data>53</data>
 <data>6</data>
 <data>0</data>
 <data>0</data>

@@ -9,7 +9,7 @@ Build: O-2018.09M-SP1-1
 Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
 OS: Windows 6.2
 
-Hostname: DESKTOP-95FBL6H
+Hostname: DESKTOP-TCQTHCR
 
 Implementation : synthesis
 
@@ -26,17 +26,17 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      21                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block sccb_design:	21 (16.94 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block sccb_design:	21 (17.65 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           62                 100 %                
+CFG           56                 100 %                
 ARI1          14                 100 %                
 BLACK BOX     5                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block sccb_design:	81 (65.32 % Utilization)
+Total COMBINATIONAL LOGIC in the block sccb_design:	75 (63.03 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -44,15 +44,15 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block sccb_design:	2 (1.61 % Utilization)
+Total GLOBAL BUFFERS in the block sccb_design:	2 (1.68 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-IO       5                  100 %                
+IO       6                  100 %                
 =================================================
-Total IO PADS in the block sccb_design:	5 (4.03 % Utilization)
+Total IO PADS in the block sccb_design:	6 (5.04 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0   ########
@@ -64,7 +64,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  20 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block sccb_design.FCCC_C0:	1 (0.81 % Utilization)
+Total COMBINATIONAL LOGIC in the block sccb_design.FCCC_C0:	1 (0.84 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -72,7 +72,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  50 %                 
 ===================================================
-Total GLOBAL BUFFERS in the block sccb_design.FCCC_C0:	1 (0.81 % Utilization)
+Total GLOBAL BUFFERS in the block sccb_design.FCCC_C0:	1 (0.84 % Utilization)
 
 ----------------------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0_FCCC_C0_0_FCCC   ########
@@ -84,7 +84,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  20 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.81 % Utilization)
+Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.84 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -92,7 +92,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  50 %                 
 ===================================================
-Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.81 % Utilization)
+Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.84 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0   ########
@@ -104,7 +104,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  20 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block sccb_design.OSC_C0:	1 (0.81 % Utilization)
+Total COMBINATIONAL LOGIC in the block sccb_design.OSC_C0:	1 (0.84 % Utilization)
 
 -------------------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0_OSC_C0_0_OSC   ########
@@ -116,7 +116,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  20 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.81 % Utilization)
+Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.84 % Utilization)
 
 -----------------------------------------------------------------
 ########   Utilization report for  cell:   config_sccb   ########
@@ -128,16 +128,16 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      21                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block sccb_design.config_sccb:	21 (16.94 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block sccb_design.config_sccb:	21 (17.65 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      62                 100 %                
+CFG      56                 100 %                
 ARI1     14                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block sccb_design.config_sccb:	76 (61.29 % Utilization)
+Total COMBINATIONAL LOGIC in the block sccb_design.config_sccb:	70 (58.82 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   CoreSCCB   ########
@@ -149,16 +149,16 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      9                  42.9 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block config_sccb.CoreSCCB:	9 (7.26 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block config_sccb.CoreSCCB:	9 (7.56 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      54                 87.1 %               
+CFG      53                 94.6 %               
 ARI1     6                  42.9 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block config_sccb.CoreSCCB:	60 (48.39 % Utilization)
+Total COMBINATIONAL LOGIC in the block config_sccb.CoreSCCB:	59 (49.58 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

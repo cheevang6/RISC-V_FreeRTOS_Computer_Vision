@@ -9,14 +9,14 @@ Build: O-2018.09M-SP1-1
 Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
 OS: Windows 6.2
 
-Hostname: DESKTOP-95FBL6H
+Hostname: DESKTOP-TCQTHCR
 
 Implementation : synthesis
 
-# Written on Fri Jan 29 16:52:34 2021
+# Written on Sat Jan 30 22:33:01 2021
 
 ##### FILES SYNTAX CHECKED ##############################################
-Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\synthesis.fdc"
+Constraint File(s):      "C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\synthesis.fdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################

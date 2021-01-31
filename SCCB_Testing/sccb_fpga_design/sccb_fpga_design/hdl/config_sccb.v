@@ -4,7 +4,9 @@ module config_sccb(
     input PCLK,
     input PRESETN,
     output SIO_C,
-    inout SIO_D
+    input SIO_DI,
+    output SIO_DO,
+    output SIO_DE
 );
 
 wire        pwdn;
@@ -36,7 +38,9 @@ CoreSCCB coresccb_c0(
     .sub_addr(sub_addr),    // Register address
     .data_out(data_out),    // Data read from register
     .done(done),          // basically, this is ACK
-    .SIO_D(SIO_D),          // SCCB data
+    .SIO_DI(SIO_DI),          // SCCB data
+    .SIO_DO(SIO_DO),          // SCCB data
+    .SIO_DE(SIO_DE),
     .SIO_C(SIO_C),        // SCCB clock
 	.SCCB_CLK(SCCB_CLK),
 	.SCCB_MID_PULSE(SCCB_MID_PULSE)

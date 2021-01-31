@@ -13,7 +13,10 @@ module CoreSCCB
     output reg [7:0] data_out,		// Data read from register
     //output VSYNC, HREF, PCLK,		// used when retrieving pixels
 	output reg		 done,
-    inout            SIO_D,			// SCCB data
+    //inout            SIO_D,			// SCCB data
+    input            SIO_DI,        //SCCB Data input
+    output           SIO_DO,        //SCCB Data output
+    output           SIO_DE,        //SCCB Data Enable
     output			 SIO_C,			// SCCB clock
 	input			 SCCB_MID_PULSE,
 	input			 SCCB_CLK
@@ -25,9 +28,13 @@ module CoreSCCB
     reg sccb_clk_step;
     
     // tristate SIO_D bus when idle
-    assign SIO_D =	(//step == 13 || step == 22 || step == 31 || step == 45 || 
+    assign SIO_DO =	(//step == 13 || step == 22 || step == 31 || step == 45 || 
                     (step == 54 && !ip_addr[0]) ||
-					(step > 45  && step <= 53)) ? 1'bz : data_send;
+					(step > 45  && step <= 53)) ? 0 : data_send;
+    assign SIO_DE =	(//step == 13 || step == 22 || step == 31 || step == 45 || 
+                    (step == 54 && !ip_addr[0]) ||
+					(step > 45  && step <= 53)) ? 0 : 1;
+                    
     // SIO_C is driven high when idle
     assign SIO_C = (start && (step > 4  && step <= 31 ||
 					step > 36 && step <= 54)) ? SCCB_CLK : sccb_clk_step;
@@ -101,16 +108,16 @@ module CoreSCCB
 					
 					// stop transaction for 2-phase write 
 					// (continues to 2-phase read)
-				/*	6'd31 : data_send <= 1'b0;
+					6'd31 : data_send <= 1'b0;
 					//6'd33 : sccb_clk_step <= 1'b0;
 					6'd32 : sccb_clk_step <= 1'b1;
 					6'd33 : data_send <= 1'b1;
-				*/	
+					
 					// 2-phase read
 					// Phase 1: ID Address
 					// start transaction
-                    6'd31 : sccb_clk_step <= 1'b0;
-                    6'd32 : data_send <= 1'b1;
+                    //6'd31 : sccb_clk_step <= 1'b0;
+                    //6'd32 : data_send <= 1'b1;
 					6'd33 : sccb_clk_step <= 1'b1;
 					6'd34 : data_send <= 1'b0;
 					6'd35 : sccb_clk_step <= 1'b0;
@@ -126,14 +133,14 @@ module CoreSCCB
 					6'd44 : data_send <= 0;// Don't care bit
         
 					// Phase 2: Read Data
-					6'd45 : data_out <= SIO_D;
-					6'd46 : data_out <= SIO_D;
-					6'd47 : data_out <= SIO_D;
-					6'd48 : data_out <= SIO_D;
-					6'd49 : data_out <= SIO_D;
-					6'd50 : data_out <= SIO_D;
-					6'd51 : data_out <= SIO_D;
-					6'd52 : data_out <= SIO_D;
+					6'd45 : data_out <= SIO_DI;
+					6'd46 : data_out <= SIO_DI;
+					6'd47 : data_out <= SIO_DI;
+					6'd48 : data_out <= SIO_DI;
+					6'd49 : data_out <= SIO_DI;
+					6'd50 : data_out <= SIO_DI;
+					6'd51 : data_out <= SIO_DI;
+					6'd52 : data_out <= SIO_DI;
 					6'd53 : data_send <= 1'b1; // Don't care bit (Driven to 1 by master during read)
                 
 					// stop transaction

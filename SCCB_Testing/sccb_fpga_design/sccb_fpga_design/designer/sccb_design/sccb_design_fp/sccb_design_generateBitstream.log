@@ -1,19 +1,19 @@
 Software Version: 12.800.0.16
-Opened 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design_fp\sccb_design.pro'
+Opened 'C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design_fp\sccb_design.pro'
 The 'open_project' command succeeded.
-PDB file 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design.pdb' has been loaded successfully.
-DESIGN : sccb_design;  CHECKSUM : 0B46;  PDB_VERSION : 1.9
-Load Programming Data(s) Finished : Fri Jan 29 16:53:17 2021 (Elapsed time 00:00:01)
+PDB file 'C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design.pdb' has been loaded successfully.
+DESIGN : sccb_design;  CHECKSUM : E439;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Sat Jan 30 22:35:37 2021 (Elapsed time 00:00:02)
 The 'load_programming_data' command succeeded.
-File/Folder 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design.ppd' will be overwritten.
-Successfully exported PPD file for currently secured device: 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design.ppd'; file programs Fabric.
-Fabric component bitstream digest: 38623d7b594ca42688187f1c0dbb5717136aab6858d185745028938bbc620ac5
-Finished: Fri Jan 29 16:53:28 2021 (Elapsed time 00:00:11)
+File/Folder 'C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design.ppd'; file programs Fabric.
+Fabric component bitstream digest: 172f106641169d3b8b1345e1144f9699c5116531c2a5d4d4977561e09844791a
+Finished: Sat Jan 30 22:35:51 2021 (Elapsed time 00:00:14)
 
 The 'export_single_ppd' command succeeded.
 Project saved.
 The 'save_project' command succeeded.
 Project closed.
-Exported log file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design_fp\sccb_design.log.
+Exported log file C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design_fp\sccb_design.log.
 The 'close_project' command succeeded.
 The Execute Script command succeeded.
