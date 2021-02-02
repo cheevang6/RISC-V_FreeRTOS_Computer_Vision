@@ -3,7 +3,7 @@
 <doc>
 <title>Global Net Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
-<text>Date: Sat Jan 30 22:34:52 2021
+<text>Date: Tue Feb  2 00:47:05 2021
 </text>
 <section>
 <name>Global Nets Information</name>
@@ -20,14 +20,14 @@
  <cell>GB[3] </cell>
  <cell>(293, 72)</cell>
  <cell>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</cell>
- <cell>22</cell>
+ <cell>35</cell>
 </row>
 <row>
  <cell>2</cell>
  <cell>GB[7] </cell>
  <cell>(297, 72)</cell>
  <cell>AND2_0_RNIKOS1/U0_YWn_GEast</cell>
- <cell>21</cell>
+ <cell>34</cell>
 </row>
 </table>
 <text></text>
@@ -51,7 +51,7 @@
 <row>
  <cell>1</cell>
  <cell>AND2_0:Y</cell>
- <cell>(315, 45)</cell>
+ <cell>(300, 42)</cell>
  <cell>GB[7] </cell>
  <cell>AND2_0_Z</cell>
  <cell>ROUTED</cell>
@@ -134,7 +134,7 @@
  <cell>GB[3] </cell>
  <cell>(293, 72)</cell>
  <cell>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</cell>
- <cell>22</cell>
+ <cell>35</cell>
  <cell>1</cell>
  <cell>(446, 0)</cell>
  <cell>1</cell>
@@ -146,8 +146,8 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
- <cell>(447, 39)</cell>
- <cell>6</cell>
+ <cell>(447, 42)</cell>
+ <cell>13</cell>
 </row>
 <row>
  <cell> </cell>
@@ -157,17 +157,17 @@
  <cell></cell>
  <cell>3</cell>
  <cell>(447, 45)</cell>
- <cell>15</cell>
+ <cell>21</cell>
 </row>
 <row>
  <cell>2</cell>
  <cell>GB[7] </cell>
  <cell>(297, 72)</cell>
  <cell>AND2_0_RNIKOS1/U0_YWn_GEast</cell>
- <cell>21</cell>
+ <cell>34</cell>
  <cell>1</cell>
- <cell>(446, 39)</cell>
- <cell>6</cell>
+ <cell>(446, 42)</cell>
+ <cell>13</cell>
 </row>
 <row>
  <cell> </cell>
@@ -177,7 +177,7 @@
  <cell></cell>
  <cell>2</cell>
  <cell>(446, 45)</cell>
- <cell>15</cell>
+ <cell>21</cell>
 </row>
 </table>
 <text></text>

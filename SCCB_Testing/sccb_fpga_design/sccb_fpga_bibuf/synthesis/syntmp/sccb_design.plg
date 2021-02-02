@@ -1,0 +1,16 @@
+@P:  Worst Slack : 4.889
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Estimated Frequency : 195.6 MHz
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Estimated Period : 5.111
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Requested Period : 10.000
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Slack : 4.889
+@P:  System - Estimated Frequency : 895.2 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 1.117
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 8.883
+@P: sccb_design Part : m2gl025vf400std
+@P: sccb_design Register bits  : 34 
+@P: sccb_design DSP Blocks  : 0
+@P: sccb_design I/O primitives : 5
+@P:  CPU Time : 0h:00m:00s

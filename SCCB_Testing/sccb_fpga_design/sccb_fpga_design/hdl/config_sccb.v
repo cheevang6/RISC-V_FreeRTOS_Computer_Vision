@@ -4,9 +4,7 @@ module config_sccb(
     input PCLK,
     input PRESETN,
     output SIO_C,
-    input SIO_DI,
-    output SIO_DO,
-    output SIO_DE
+    inout SIO_D
 );
 
 wire        pwdn;
@@ -19,10 +17,10 @@ wire [7:0]  data_out;
 wire        done; 
 
 // varaibles to calculate SCCB_CLK and SCCB_MID_PULSE
-localparam XCLK_FREQ = 24_000_000;                          // incoming clock = XCLK = 50MHz 
+localparam XCLK_FREQ = 8_000_000;                          // incoming clock = XCLK = 50MHz 
 localparam SCCB_CLK_FREQ = 100_000;                         // divide clock such that SIO_C = 100kHz
 localparam SCCB_CLK_PERIOD = XCLK_FREQ/SCCB_CLK_FREQ/2;     // number of clocks to obtain 100kHz
-localparam SCCB_MID_AMT = SCCB_CLK_PERIOD/2-1;              // amount of clk for mid of SCCB_clk
+localparam SCCB_MID_AMT = SCCB_CLK_PERIOD/2;              // amount of clk for mid of SCCB_clk
 reg [$clog2(SCCB_CLK_PERIOD):0] SCCB_CLK_CNTR = 0;
 reg SCCB_CLK;
 reg SCCB_MID_PULSE;
@@ -38,13 +36,10 @@ CoreSCCB coresccb_c0(
     .sub_addr(sub_addr),    // Register address
     .data_out(data_out),    // Data read from register
     .done(done),          // basically, this is ACK
-    .SIO_DI(SIO_DI),          // SCCB data
-    .SIO_DO(SIO_DO),          // SCCB data
-    .SIO_DE(SIO_DE),
+    .SIO_D(SIO_D),          // SCCB data
     .SIO_C(SIO_C),        // SCCB clock
 	.SCCB_CLK(SCCB_CLK),
 	.SCCB_MID_PULSE(SCCB_MID_PULSE)
-    //.step(step)
 );
 
 assign pwdn = 1'b0;
@@ -90,9 +85,10 @@ always @(posedge PCLK or negedge PRESETN) begin
         state <= idle;
         case(state)
         init_w : begin
-                ip_addr <= 8'h60; // write for ov2640
-                sub_addr <= 8'hff; // register bank select (default: 0x00)
-                data_in <= 8'h01;
+                // SCCB IP address for ov7670 = 0x21
+                ip_addr <= 8'h42; // write for ov7670
+                sub_addr <= 8'h12; // COMCTRL7 - SCCB Register Reset
+                data_in <= 8'h80;
                 rw <= 0;
                 start <= 1'b0;
                 state <= write;
@@ -107,9 +103,8 @@ always @(posedge PCLK or negedge PRESETN) begin
                 end
             end
         init_r : begin
-                ip_addr <= 8'h61; // read for ov2640
-                // regiser f7 = SCCB Slave ID register (default value 0x60)
-                sub_addr <= 8'hf7; // register bank select (default: 0x00)
+                ip_addr <= 8'h43; // read for ov7670
+                sub_addr <= 8'h0a; // Product ID Number MSB (default 0x76)
                 rw <= 1;
                 start <= 1'b0;
                 state <= read;

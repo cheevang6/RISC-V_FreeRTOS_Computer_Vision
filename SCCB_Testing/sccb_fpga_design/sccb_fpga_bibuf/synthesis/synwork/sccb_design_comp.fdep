@@ -1,0 +1,60 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\synthesis\\synwork\\sccb_design_comp.srs|-top|sccb_design|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-I|C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\generic\\igloo2.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\bin64\\c_ver.exe":1562075633
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\generic\\igloo2.v":1562075649
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\vlog\\hypermods.v":1562075650
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\vlog\\umr_capim.v":1562075650
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1562075650
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1562075650
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.v":1612156164
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\component\\work\\FCCC_C0\\FCCC_C0.v":1612156164
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.v":1611128981
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\component\\work\\OSC_C0\\OSC_C0_0\\OSC_C0_OSC_C0_0_OSC.v":1611827248
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\component\\work\\OSC_C0\\OSC_C0.v":1611827248
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\hdl\\CoreSCCB.v":1612240694
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\hdl\\config_sccb.v":1612230396
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\component\\work\\SCCB\\SCCB.v":1612236276
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_design\\component\\work\\sccb_design\\sccb_design.v":1612241526
+0			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v" verilog
+1			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\component\work\FCCC_C0\FCCC_C0.v" verilog
+2			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" verilog
+3			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v" verilog
+4			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\component\work\OSC_C0\OSC_C0.v" verilog
+5			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\hdl\CoreSCCB.v" verilog
+6			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\hdl\config_sccb.v" verilog
+7			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\component\work\SCCB\SCCB.v" verilog
+8			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\component\work\sccb_design\sccb_design.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 0
+2 -1
+3 2
+4 3
+5 -1
+6 5
+7 6
+8 7 4 1
+#Dependency Lists(Users Of)
+0 1
+1 8
+2 3
+3 4
+4 8
+5 6
+6 7
+7 8
+8 -1
+#Design Unit to File Association
+module work sccb_design 8
+module work SCCB 7
+module work config_sccb 6
+module work CoreSCCB 5
+module work OSC_C0 4
+module work OSC_C0_OSC_C0_0_OSC 3
+module work XTLOSC_FAB 2
+module work RCOSC_25_50MHZ_FAB 2
+module work RCOSC_1MHZ_FAB 2
+module work XTLOSC 2
+module work RCOSC_25_50MHZ 2
+module work RCOSC_1MHZ 2
+module work FCCC_C0 1
+module work FCCC_C0_FCCC_C0_0_FCCC 0

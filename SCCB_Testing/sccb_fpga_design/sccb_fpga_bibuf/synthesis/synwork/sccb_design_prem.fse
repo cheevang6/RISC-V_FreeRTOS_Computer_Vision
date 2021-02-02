@@ -1,0 +1,8 @@
+
+fsm_encoding {11830831} sequential
+
+fsm_state_encoding {11830831} init_r {0}
+
+fsm_state_encoding {11830831} read {1}
+
+fsm_registers {11830831} {state[0]} 

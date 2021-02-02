@@ -10,12 +10,12 @@ Info: Global design data:
 Info: List of globals that cannot be demoted: 
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
-    21     0      1      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
+    34     0      1      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
 
 Info: List of globals considered for demotion: 
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
-    0      21     0      'AND2_0_RNIKOS1' 
+    0      34     0      'AND2_0_RNIKOS1' 
 
 Info: Demotion information: 
 Info: CMPG4-302: Added 0 row global instances.

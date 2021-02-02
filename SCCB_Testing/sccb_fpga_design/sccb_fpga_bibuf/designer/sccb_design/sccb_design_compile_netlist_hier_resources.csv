@@ -1,0 +1,8 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,PLLs and CCCs,Chip Globals,RCOSC_50MHZ
+FCCC_C0_0/FCCC_C0_0/Primitives,0,0,0,1,1,0
+OSC_C0_0/OSC_C0_0/Primitives,0,0,0,0,0,1
+Primitives/Primitives,1,0,4,0,1,0
+SCCB_0/Primitives,0,0,1,0,0,0
+SCCB_0/config_sccb_0/Primitives,14,11,0,0,0,0
+SCCB_0/config_sccb_0/coresccb_c0/Primitives,77,23,0,0,0,0

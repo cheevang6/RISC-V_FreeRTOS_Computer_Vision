@@ -1,0 +1,173 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+Date: Mon Feb  1 20:52:18 2021
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | IGLOO2         |
+| Device                         | M2GL025        |
+| Package                        | 256 VF         |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 3.3V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Topcell | sccb_design                                                                                                                           |
+| Format  | Verilog                                                                                                                               |
+| Source  | C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\synthesis\sccb_design.vm |
++---------+---------------------------------------------------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 92   | 27696 | 0.33       |
+| DFF                       | 34   | 27696 | 0.12       |
+| I/O Register              | 0    | 414   | 0.00       |
+| User I/O                  | 5    | 138   | 3.62       |
+| -- Single-ended I/O       | 5    | 138   | 3.62       |
+| -- Differential I/O Pairs | 0    | 65    | 0.00       |
+| RAM64x18                  | 0    | 34    | 0.00       |
+| RAM1K18                   | 0    | 31    | 0.00       |
+| MACC                      | 0    | 34    | 0.00       |
+| Chip Globals              | 2    | 16    | 12.50      |
+| CCC                       | 1    | 6     | 16.67      |
+| RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 0    | 1     | 0.00       |
+| HPMS                      | 0    | 1     | 0.00       |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+-----+
+| Type                     | 4LUT | DFF |
++--------------------------+------+-----+
+| Fabric Logic             | 92   | 34  |
+| RAM64x18 Interface Logic | 0    | 0   |
+| RAM1K18 Interface Logic  | 0    | 0   |
+| MACC Interface Logic     | 0    | 0   |
+| Total Used               | 92   | 34  |
++--------------------------+------+-----+
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 6      | 1    |
+| 7      | 1    |
+| 15     | 1    |
+| Total  | 3    |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 0            | 0           | 0               |
+| Output I/O                    | 4            | 0           | 0               |
+| Bidirectional I/O             | 1            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS33     |  3.30v |  N/A |  0    |  4     |  1            |
++--------------+--------+------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  0    | 0.00%      |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  5    | 100.00%    |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+----------------------------------------------+
+| Fanout | Type    | Name                                         |
++--------+---------+----------------------------------------------+
+| 35     | INT_NET | Net   : xclk_c                               |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 |
+|        |         | Source: NETLIST                              |
+| 34     | INT_NET | Net   : AND2_0_Y_arst                        |
+|        |         | Driver: AND2_0_RNIKOS1/U0_RGB1               |
+|        |         | Source: NETLIST                              |
++--------+---------+----------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+-----------------------------------------------------------------+
+| Fanout | Type    | Name                                                            |
++--------+---------+-----------------------------------------------------------------+
+| 15     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[0]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[0]                |
+| 15     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/delay_cntr_lcry        |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/delay_cntr14_0_a2      |
+| 14     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[4]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[4]                |
+| 13     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[3]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[3]                |
+| 13     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[1]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[1]                |
+| 12     | INT_NET | Net   : SCCB_0/config_sccb_0/SCCB_MID_PULSE_Z                   |
+|        |         | Driver: SCCB_0/config_sccb_0/SCCB_MID_PULSE                     |
+| 12     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[5]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[5]                |
+| 11     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[2]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[2]                |
+| 8      | INT_NET | Net   : SCCB_0/config_sccb_0/SCCB_CLK_CNTR_lcry                 |
+|        |         | Driver: SCCB_0/config_sccb_0/SCCB_CLK_CNTR12lto5                |
+| 7      | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/N_35                   |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_o2 |
++--------+---------+-----------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+-----------------------------------------------------------------+
+| Fanout | Type    | Name                                                            |
++--------+---------+-----------------------------------------------------------------+
+| 15     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[0]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[0]                |
+| 15     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/delay_cntr_lcry        |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/delay_cntr14_0_a2      |
+| 14     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[4]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[4]                |
+| 13     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[3]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[3]                |
+| 13     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[1]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[1]                |
+| 12     | INT_NET | Net   : SCCB_0/config_sccb_0/SCCB_MID_PULSE_Z                   |
+|        |         | Driver: SCCB_0/config_sccb_0/SCCB_MID_PULSE                     |
+| 12     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[5]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[5]                |
+| 11     | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/step[2]                |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/step[2]                |
+| 8      | INT_NET | Net   : SCCB_0/config_sccb_0/SCCB_CLK_CNTR_lcry                 |
+|        |         | Driver: SCCB_0/config_sccb_0/SCCB_CLK_CNTR12lto5                |
+| 7      | INT_NET | Net   : SCCB_0/config_sccb_0/coresccb_c0/N_35                   |
+|        |         | Driver: SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_o2 |
++--------+---------+-----------------------------------------------------------------+
+

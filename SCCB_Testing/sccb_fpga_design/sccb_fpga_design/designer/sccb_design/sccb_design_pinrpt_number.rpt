@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Sat Jan 30 22:35:06 2021 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Tue Feb  2 00:47:16 2021 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v12.3
 -Version: 12.800.0.16
@@ -227,7 +227,7 @@ P5                VSS                                      Reserved
 P6                MSIO121PB4/PROBE_A                       Unassigned  
 P7                MSIO121NB4/PROBE_B                       Unassigned  
 P8                MSIO126NB4                               Unassigned  
-P9      test      MSIO131PB4/GB11/VCCC_SE0_CLKI            Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+P9                MSIO131PB4/GB11/VCCC_SE0_CLKI            Special     
 P10               MSIO133PB4/GB15/VCCC_SE1_CLKI            Special     
 P11               VDDI4                                    Reserved    
 P12               MSIO143PB4                               Unassigned  
@@ -259,7 +259,7 @@ T5                VSS                                      Reserved
 T6      sio_c     MSIO120NB4/CCC_SW0_CLKI2                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 T7                MSIO122PB4                               Unassigned  
 T8                MSIO122NB4                               Unassigned  
-T9      sio_d     MSIO130PB4/VCCC_SE0_CLKI                 Special     LVCMOS33  Inout      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           4                  5                 
+T9      sio_d     MSIO130PB4/VCCC_SE0_CLKI                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 T10               VSS                                      Reserved    
 T11               MSIO134PB4/VCCC_SE1_CLKI                 Special     
 T12               MSIO138PB4                               Unassigned  

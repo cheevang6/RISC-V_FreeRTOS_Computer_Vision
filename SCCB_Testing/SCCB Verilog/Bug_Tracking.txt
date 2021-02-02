@@ -49,8 +49,26 @@ Bug Tracking
 	- will remove stop sequence after 2-phase write
 	
 01/29/2021
+- requirements
+	1. XCLK required to communicate with SCCB
+	2. need to enable clock
+	3. set SIO_D to input mode (done in arduino so not in this case tristate this line)
 - somewhere online says for a successful read for a 0v7670:
-	1. 
+	1.  START
+	2.  8-bits IP address for write
+	3.  1-bit DC
+	4.  8-bits register address
+	5.  1-bit DC
+	6.  STOP
+	7.  START
+	8.  8-bits IP address for read
+	9.  pulse SIOC to read 8-bits
+	10. 1-bit NACK/ACK
+	11. STOP
+	
+01/30/2021
+- added back stop for 2-write
+
 	
 Stuff I need to do:
 - On software side (SoftConsole), how does it know when it's ready to

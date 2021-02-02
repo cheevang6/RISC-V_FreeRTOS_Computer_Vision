@@ -1,0 +1,152 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.3 12.800.0.16
+
+# Design Name: sccb_design 
+
+# Input Netlist Format: EDIF 
+
+# Family: IGLOO2 , Die: M2GL025 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Mon Feb  1 14:28:40 2021 
+
+
+#
+# I/O constraints
+#
+
+set_io led1 -DIRECTION OUTPUT -pinname J16 -fixed no
+set_io led2 -DIRECTION OUTPUT -pinname M16 -fixed no
+set_io sio_c -DIRECTION OUTPUT -pinname T6 -fixed no
+set_io sio_d -DIRECTION INOUT -pinname T9 -fixed no
+set_io xclk -DIRECTION OUTPUT -pinname M9 -fixed no
+
+#
+# Core cell constraints
+#
+
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_o2 -fixed no 299 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_step15_4_0 -fixed no 290 48
+set_location SCCB_0/config_sccb_0/coresccb_c0/step\[1\] -fixed no 297 46
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR12lto5_0_o3 -fixed no 277 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_2_0_0_0_o2 -fixed no 294 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_delay_cntrlto7 -fixed no 264 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_lm_0\[1\] -fixed no 297 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[0\] -fixed no 266 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_2_0_0_0 -fixed no 305 42
+set_location AND2_0_RNIKOS1/U0_RGB1 -fixed no 146 45
+set_location SCCB_0/config_sccb_0/SCCB_MID_PULSE -fixed no 276 46
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR\[0\] -fixed no 280 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_a3 -fixed no 299 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_DE_1_0_0 -fixed no 308 45
+set_location SCCB_0/config_sccb_0/start_3_0_a2 -fixed no 281 42
+set_location SCCB_0/config_sccb_0/ip_addr_2_sqmuxa_0_a2 -fixed no 278 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_lm_0_1_0\[0\] -fixed no 289 48
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_2_0_0_a2_1 -fixed no 307 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/un13lto5_i_a2_RNI1BP41 -fixed no 298 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_2_0_0_0_0 -fixed no 302 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_a3_7_1 -fixed no 297 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr14_0_a3 -fixed no 284 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/step\[2\] -fixed no 295 46
+set_location SCCB_0/config_sccb_0/ip_addr\[0\] -fixed no 278 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send80_0_a4_0_a3_0 -fixed no 292 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_C_i_a3_0_1 -fixed no 296 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_step15_4_1 -fixed no 288 48
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_4_1 -fixed no 306 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/step\[4\] -fixed no 298 46
+set_location SCCB_0/config_sccb_0/start -fixed no 281 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[11\] -fixed no 277 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/done -fixed no 285 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/sccb_clk_step_3_iv_i_0 -fixed no 307 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_C_i_a3_5 -fixed no 295 39
+set_location SCCB_0/config_sccb_0/SCCB_CLK_RNO -fixed no 287 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[2\] -fixed no 268 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_lm_0\[4\] -fixed no 298 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[3\] -fixed no 269 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send59_0_a3_1_0 -fixed no 283 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_C_i_a2 -fixed no 298 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_a3_1 -fixed no 296 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[13\] -fixed no 279 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_C_i_a3_RNIKI8B1 -fixed no 289 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[1\] -fixed no 267 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_o2_5 -fixed no 300 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/done_RNO -fixed no 285 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_a2 -fixed no 304 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send92_0_a3 -fixed no 287 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/un13lto5_i_a2 -fixed no 295 42
+set_location SCCB_0/config_sccb_0/SCCB_CLK -fixed no 287 46
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 -fixed no 147 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send59_0_a3 -fixed no 286 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[4\] -fixed no 270 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_C_i_a3_0_1_RNITN741 -fixed no 290 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_9 -fixed no 303 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_lm_0\[5\] -fixed no 294 45
+set_location SCCB_0/config_sccb_0/SCCB_MID_PULSE5_0_a3 -fixed no 276 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_0_0_0_a3_0 -fixed no 300 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[9\] -fixed no 275 43
+set_location ip_interface_inst -fixed no 203 0
+set_location OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ -fixed no 24 134
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_5 -fixed no 301 42
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR\[5\] -fixed no 285 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/step\[5\] -fixed no 294 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1 -fixed no 308 42
+set_location LIVE_PROBE_FB_0/U0/U_PRBB -fixed no 315 0
+set_location AND2_0_RNIKOS1 -fixed no 297 72
+set_location SCCB_0/config_sccb_0/state_ns_0\[0\] -fixed no 282 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_5_1 -fixed no 311 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send -fixed no 308 43
+set_location SCCB_0/config_sccb_0/SCCB_MID_PULSE5_0_a3_4 -fixed no 286 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_1 -fixed no 294 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_0_0_0_a2 -fixed no 306 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_C_i_a3 -fixed no 291 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[12\] -fixed no 278 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_a3_4 -fixed no 293 42
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR\[3\] -fixed no 283 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_0_0_0_a3 -fixed no 309 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_o2_6 -fixed no 304 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_lm_0\[0\] -fixed no 299 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send116_0_a3_0 -fixed no 292 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[7\] -fixed no 273 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[8\] -fixed no 274 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_2_0_0_0_1 -fixed no 303 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_lm_0\[3\] -fixed no 296 45
+set_location AND2_0 -fixed no 305 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[6\] -fixed no 272 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/sccb_clk_step -fixed no 307 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send80_0_a4_0_a3 -fixed no 293 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_1_6 -fixed no 291 42
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR\[4\] -fixed no 284 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/step\[0\] -fixed no 299 46
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR\[1\] -fixed no 281 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/step\[3\] -fixed no 296 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_0_0_0 -fixed no 310 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_C_i_0_tz_0 -fixed no 288 39
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[5\] -fixed no 271 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_a3_3_2 -fixed no 290 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_a3_0 -fixed no 302 45
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR\[2\] -fixed no 282 46
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr\[10\] -fixed no 276 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_C_i_1 -fixed no 297 39
+set_location SCCB_0/config_sccb_0/state\[0\] -fixed no 282 43
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_data_send62_2_0_0_0_a3 -fixed no 301 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_lm_0\[2\] -fixed no 295 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send_33_1_iv_0_a3_5 -fixed no 289 42
+set_location LIVE_PROBE_FB_0/U0/U_PRBA -fixed no 312 0
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST -fixed no 293 72
+set_location SCCB_0/config_sccb_0/coresccb_c0/data_send116_0_a3 -fixed no 288 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/un1_delay_cntrlto12_3 -fixed no 280 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/SIO_DE_1_0_0_o3 -fixed no 309 45
+set_location FCCC_C0_0/FCCC_C0_0/CCC_INST -fixed no 18 134
+set_location SYSRESET_0 -fixed no 624 8
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR_s_27 -fixed no 279 45
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr_s_28 -fixed no 265 42
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_s_29 -fixed no 288 45
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB0 -fixed no 146 42
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB1 -fixed no 446 42
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0 -fixed no 147 42
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB1 -fixed no 447 42
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB2 -fixed no 446 0
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr_s_28_CC_0 -fixed no 265 44
+set_location SCCB_0/config_sccb_0/coresccb_c0/delay_cntr_s_28_CC_1 -fixed no 276 44
+set_location SCCB_0/config_sccb_0/coresccb_c0/step_s_29_CC_0 -fixed no 288 47
+set_location SCCB_0/config_sccb_0/SCCB_CLK_CNTR_s_27_CC_0 -fixed no 279 47
