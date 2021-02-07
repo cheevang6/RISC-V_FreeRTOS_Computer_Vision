@@ -3,7 +3,7 @@
 <doc>
 <title>Configuration Report for MSS, SERDES(s), Fabric DDR and Fabric CCC(s)</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
-<text>Date: Tue Feb  2 00:47:18 2021
+<text>Date: Sun Feb  7 02:17:22 2021
 </text>
 <section><name>FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP</name></section>
 <table>
@@ -215,7 +215,7 @@
  <cell>FCCC_PLL_CR5</cell>
  <cell>MODE_3V3</cell>
  <cell>INIT[151:151]</cell>
- <cell>1&apos;h0</cell>
+ <cell>1&apos;h1</cell>
 </row>
 <row>
  <cell>FCCC_PLL_CR6</cell>
@@ -3565,7 +3565,7 @@
  <cell>MSSDDR_PLL_STATUS_HIGH</cell>
  <cell>FACC_PLL_MODE_3V3</cell>
  <cell>INIT[578:578]</cell>
- <cell>1&apos;h0</cell>
+ <cell>1&apos;h1</cell>
  <cell>INIT[63]</cell>
  <cell>1</cell>
 </row>
@@ -8595,7 +8595,7 @@
  <cell>SER_PLL_CONFIG_HIGH</cell>
  <cell>PLL_MODE_3V3</cell>
  <cell>INIT[113:113]</cell>
- <cell>1&apos;h0</cell>
+ <cell>1&apos;h1</cell>
  <cell>INIT[9]</cell>
  <cell>1</cell>
 </row>

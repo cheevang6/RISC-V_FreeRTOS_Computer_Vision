@@ -355,13 +355,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1611795268"
+TIME="1612553173"
 SIZE="2769"
 PARENT="<project>\component\work\APB3_Bus\APB3_Bus.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1611795268"
+TIME="1612553173"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -473,6 +473,12 @@ TIME="1521676868"
 SIZE="25365"
 PARENT="<project>\component\Actel\DirectCore\CoreConfigP\7.1.100\CoreConfigP.cxf"
 IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreGPIO\3.2.102\CoreGPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1612553309"
+SIZE="752"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREJTAGDEBUG\3.0.100\COREJTAGDEBUG.cxf,actgen_cxf"
 STATE="utd"
@@ -814,13 +820,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\APB3_Bus\APB3_Bus.cxf,actgen_cxf"
 STATE="utd"
-TIME="1611795269"
-SIZE="11837"
+TIME="1612553174"
+SIZE="13533"
 ENDFILE
 VALUE "<project>\component\work\APB3_Bus\APB3_Bus.v,hdl"
 STATE="utd"
-TIME="1611795268"
-SIZE="12051"
+TIME="1612553173"
+SIZE="12303"
 PARENT="<project>\component\work\APB3_Bus\APB3_Bus.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -878,6 +884,132 @@ STATE="utd"
 TIME="1556125386"
 SIZE="402"
 PARENT="<project>\component\work\BasicIO_Interface\BasicIO_Interface.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1612553310"
+SIZE="12804"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0.v,hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="7830"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\bfmtovec_compile.do,do"
+STATE="utd"
+TIME="1612553309"
+SIZE="1218"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1612553309"
+SIZE="3320"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="4039"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+STATE="utd"
+TIME="1612553308"
+SIZE="8110"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahblapb.v,tb_hdl"
+STATE="utd"
+TIME="1612553308"
+SIZE="11232"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
+STATE="utd"
+TIME="1612553308"
+SIZE="2487"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v,tb_hdl"
+STATE="utd"
+TIME="1612553308"
+SIZE="48776"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="4661"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="9150"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="25153"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="36299"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v,tb_hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="4724"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="122557"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\core\coregpio.v,hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="29302"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1612553309"
+SIZE="13862"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\wave_vlog.do,do"
+STATE="utd"
+TIME="1612553309"
+SIZE="1452"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\JTAG\JTAG.cxf,actgen_cxf"
@@ -1873,13 +2005,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Top_Level\Top_Level.cxf,actgen_cxf"
 STATE="utd"
-TIME="1611795332"
-SIZE="11131"
+TIME="1612553443"
+SIZE="11522"
 ENDFILE
 VALUE "<project>\component\work\Top_Level\Top_Level.v,hdl"
 STATE="utd"
-TIME="1611795330"
-SIZE="32685"
+TIME="1612553441"
+SIZE="34928"
 PARENT="<project>\component\work\Top_Level\Top_Level.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -1924,6 +2056,11 @@ STATE="utd"
 TIME="1611802473"
 SIZE="3780"
 ENDFILE
+VALUE "<project>\hdl\clock_divider.v,hdl"
+STATE="utd"
+TIME="1612551554"
+SIZE="1249"
+ENDFILE
 VALUE "<project>\hdl\CoreSCCB.v,hdl"
 STATE="utd"
 TIME="1611795200"
@@ -1931,8 +2068,8 @@ SIZE="5280"
 ENDFILE
 VALUE "<project>\hdl\CoreSCCB_APB.v,hdl"
 STATE="utd"
-TIME="1611795175"
-SIZE="5286"
+TIME="1612551996"
+SIZE="4464"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -1978,6 +2115,18 @@ TIME="1548461614"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
+VALUE "<project>\simulation\coregpio_usertb_apb_master.bfm,sim"
+STATE="utd"
+TIME="1552944602"
+SIZE="2823"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+ENDFILE
+VALUE "<project>\simulation\coregpio_usertb_include.bfm,sim"
+STATE="utd"
+TIME="1552944602"
+SIZE="23755"
+PARENT="<project>\component\work\CoreGPIO_C0\CoreGPIO_C0_0\CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO.cxf"
+ENDFILE
 VALUE "<project>\simulation\master.bfm,sim"
 STATE="utd"
 TIME="1552933690"
@@ -2015,13 +2164,13 @@ TIME="1611802456"
 SIZE="290"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level.vm,syn_vm"
-STATE="utd"
+STATE="ood"
 TIME="1611802454"
 SIZE="5589183"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level_syn.prj,prj"
 STATE="utd"
-TIME="1611802457"
+TIME="1611963682"
 SIZE="35630"
 ENDFILE
 VALUE "<project>\synthesis\Top_Level_vm.sdc,syn_sdc"
@@ -2088,10 +2237,7 @@ VALUE "<project>\simulation\peripheral_init.bfm,sim"
 ENDLIST
 ENDLIST
 LIST "Top_Level::work"
-FILE "<project>\component\work\Top_Level\Top_Level.v,hdl"
-LIST Other_Association
-VALUE "<project>\simulation\subsystem.bfm,sim"
-ENDLIST
+FILE "<project>\component\work\Top_Level\Top_Level.cxf,actgen_cxf"
 LIST SynthesisConstraints
 VALUE "<project>\constraint\Top_Level_derived_constraints.sdc,sdc"
 VALUE "<project>\constraint\JTAG_tck_constraint.sdc,sdc"
@@ -2099,18 +2245,6 @@ ENDLIST
 LIST TimingConstraints
 VALUE "<project>\constraint\Top_Level_derived_constraints.sdc,sdc"
 VALUE "<project>\constraint\JTAG_tck_constraint.sdc,sdc"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\Top_Level.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 LIST "CoreAHBLite::COREAHBLITE_LIB"
@@ -2162,21 +2296,6 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
-ENDLIST
-ENDLIST
-LIST "CoreAPB3::COREAPB3_LIB"
-FILE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
-LIST Other_Association
-VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
-VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 ENDLIST
 ENDLIST
 LIST "COREJTAGDEBUG::COREJTAGDEBUG_LIB"
@@ -2272,8 +2391,15 @@ VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\test\test
 ENDLIST
 ENDLIST
 LIST Other_Association
-LIST Top_Level
-VALUE "<project>\simulation\subsystem.bfm,sim"
+LIST COREAHBTOAPB3
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
 LIST CoreAHBLite
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
@@ -2289,28 +2415,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bf
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\mti\scripts\wave_user.do,do"
-ENDLIST
-LIST COREAHBTOAPB3
-VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
-VALUE "<project>\simulation\master.bfm,sim"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\coreparameters.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-ENDLIST
-LIST CoreAPB3
-VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
-VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 ENDLIST
 LIST BasicIO_Interface
 VALUE "<project>\component\work\BasicIO_Interface\BasicIO_Interface.sdc,sdc"
@@ -2459,18 +2563,6 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "Top_Level::work"
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\Top_Level.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 LIST "COREAHBTOAPB3::COREAHBTOAPB3_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -2527,7 +2619,8 @@ HDL;hdl\CoreSCCB.v;0
 HDL;hdl\CoreSCCB_APB.v;0
 Constraint Manager;Constraint Manager;0
 StartPage;StartPage;0
-ACTIVEVIEW;Top_Level
+HDL;hdl\clock_divider.v;0
+ACTIVEVIEW;hdl\CoreSCCB.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
@@ -2542,10 +2635,11 @@ ENDLIST
 LIST "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
 SUBBLOCK "COREAHBTOAPB3::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\core\coreahbtoapb3.v","FALSE","FALSE"
 ENDLIST
-LIST "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.v","TRUE","FALSE"
-SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
+LIST "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.cxf","TRUE","FALSE"
 ENDLIST
 LIST "BasicIO_Interface::work","component\work\BasicIO_Interface\BasicIO_Interface_syn.v","TRUE","FALSE"
+ENDLIST
+LIST "CoreGPIO_C0::work","component\work\CoreGPIO_C0\CoreGPIO_C0.cxf","TRUE","FALSE"
 ENDLIST
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v","FALSE","FALSE"
 ENDLIST
@@ -3013,16 +3107,17 @@ ENDLIST
 LIST "Timer::work","component\work\Timer\Timer.v","TRUE","FALSE"
 SUBBLOCK "CoreTimer::CORETIMER_LIB","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v","FALSE","FALSE"
 ENDLIST
-LIST "Top_Level::work","component\work\Top_Level\Top_Level.v","TRUE","FALSE"
+LIST "Top_Level::work","component\work\Top_Level\Top_Level.cxf","TRUE","FALSE"
+SUBBLOCK "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
 SUBBLOCK "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
 SUBBLOCK "AHB_MMIO::work","component\work\AHB_MMIO\AHB_MMIO.v","TRUE","FALSE"
 SUBBLOCK "AHB_Slave2MasterBridge::work","component\work\AHB_Slave2MasterBridge\AHB_Slave2MasterBridge.v","TRUE","FALSE"
-SUBBLOCK "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
-SUBBLOCK "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.v","TRUE","FALSE"
+SUBBLOCK "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.cxf","TRUE","FALSE"
 SUBBLOCK "BasicIO_Interface::work","component\work\BasicIO_Interface\BasicIO_Interface_syn.v","TRUE","FALSE"
+SUBBLOCK "CoreGPIO_C0::work","component\work\CoreGPIO_C0\CoreGPIO_C0.cxf","TRUE","FALSE"
 SUBBLOCK "JTAG::work","component\work\JTAG\JTAG.v","TRUE","FALSE"
-SUBBLOCK "MSS_SubSystem_sb::work","component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.v","TRUE","FALSE"
 SUBBLOCK "MiV_Core32::work","component\work\MiV_Core32\MiV_Core32.v","TRUE","FALSE"
+SUBBLOCK "MSS_SubSystem_sb::work","component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.v","TRUE","FALSE"
 SUBBLOCK "Timer::work","component\work\Timer\Timer.v","TRUE","FALSE"
 SUBBLOCK "CoreSCCB_APB::work","hdl\CoreSCCB_APB.v","FALSE","FALSE"
 ENDLIST
@@ -3129,32 +3224,6 @@ LIST "testbench::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.
 SUBBLOCK "BFM_APBSLAVE::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
 SUBBLOCK "COREAHBTOAPB3::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\core\coreahbtoapb3.v","FALSE","FALSE"
 SUBBLOCK "BFM_AHBL::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
-ENDLIST
-LIST "CAPB3II::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v","FALSE","FALSE"
-ENDLIST
-LIST "CAPB3O::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v","FALSE","FALSE"
-ENDLIST
-LIST "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
-SUBBLOCK "CAPB3II::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v","FALSE","FALSE"
-SUBBLOCK "CAPB3O::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v","FALSE","FALSE"
-ENDLIST
-LIST "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
-SUBBLOCK "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
-SUBBLOCK "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
-SUBBLOCK "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
-ENDLIST
-LIST "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
-ENDLIST
-LIST "testbench::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
-SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
-SUBBLOCK "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
-SUBBLOCK "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
 ENDLIST
 LIST "COREJTAGDEBUG::COREJTAGDEBUG_LIB","component\Actel\DirectCore\COREJTAGDEBUG\3.0.100\core\corejtagdebug.v","FALSE","FALSE"
 SUBBLOCK "COREJTAGDEBUG_UJTAG_WRAPPER::COREJTAGDEBUG_LIB","component\Actel\DirectCore\COREJTAGDEBUG\3.0.100\core\corejtagdebug_ujtag_wrapper.v","FALSE","FALSE"

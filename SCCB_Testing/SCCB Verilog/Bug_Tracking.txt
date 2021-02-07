@@ -56,19 +56,24 @@ Bug Tracking
 - somewhere online says for a successful read for a 0v7670:
 	1.  START
 	2.  8-bits IP address for write
-	3.  1-bit DC
+	3.  1-bit DC (slave ACK)
 	4.  8-bits register address
-	5.  1-bit DC
+	5.  1-bit DC (slave ACK)
 	6.  STOP
 	7.  START
 	8.  8-bits IP address for read
 	9.  pulse SIOC to read 8-bits
-	10. 1-bit NACK/ACK
+	10. 1-bit NA (master NACK))
 	11. STOP
 	
 01/30/2021
 - added back stop for 2-write
 
+02/01/2021
+- slave device is not responding, need to hold clock line low until ACK received
+	- solutions:
+		- repeated WRITE until ACK
+		- add delay
 	
 Stuff I need to do:
 - On software side (SoftConsole), how does it know when it's ready to

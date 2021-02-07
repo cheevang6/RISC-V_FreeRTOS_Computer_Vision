@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
-<text>Date: Tue Feb  2 00:46:59 2021
+<text>Date: Sun Feb  7 02:17:04 2021
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -47,7 +47,7 @@
 </row>
 <row>
  <cell>PLL Supply Voltage</cell>
- <cell>2.5V</cell>
+ <cell>3.3V</cell>
 </row>
 <row>
  <cell>Default I/O technology</cell>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>98</cell>
+ <cell>97</cell>
  <cell>27696</cell>
  <cell>0.35</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>34</cell>
+ <cell>54</cell>
  <cell>27696</cell>
- <cell>0.12</cell>
+ <cell>0.19</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -204,8 +204,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>98</cell>
- <cell>34</cell>
+ <cell>97</cell>
+ <cell>54</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>98</cell>
- <cell>34</cell>
+ <cell>97</cell>
+ <cell>54</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -237,24 +237,12 @@
  <cell>Used</cell>
 </row>
 <row>
- <cell>2</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>6</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>7</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>15</cell>
+ <cell>10</cell>
  <cell>1</cell>
 </row>
 <row>
  <cell>Total</cell>
- <cell>4</cell>
+ <cell>1</cell>
 </row>
 </table>
 <section><name>I/O Function</name></section>
@@ -273,13 +261,13 @@
 </row>
 <row>
  <cell>Output I/O</cell>
- <cell>5</cell>
+ <cell>4</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
 <row>
  <cell>Bidirectional I/O</cell>
- <cell>0</cell>
+ <cell>1</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
@@ -311,8 +299,8 @@
  <cell> 3.30v</cell>
  <cell> N/A</cell>
  <cell> 0</cell>
- <cell> 5</cell>
- <cell> 0</cell>
+ <cell> 4</cell>
+ <cell> 1</cell>
 </row>
 </table>
 <section><name>I/O Placement</name></section>
@@ -346,14 +334,14 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>35</cell>
+ <cell>31</cell>
  <cell>INT_NET</cell>
- <cell>Net   : xclk_c</cell>
+ <cell>Net   : config_sccb_0/mid_pulse</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1</cell>
+ <cell>Driver: config_sccb_0/sccb_clk_0/mid_pulse_inferred_clock_RNIPF73/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -361,14 +349,14 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>34</cell>
+ <cell>23</cell>
  <cell>INT_NET</cell>
- <cell>Net   : AND2_0_Y_arst</cell>
+ <cell>Net   : xclk_c</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: AND2_0_RNIKOS1/U0_RGB1</cell>
+ <cell>Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -392,104 +380,104 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>18</cell>
+ <cell>24</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[4]</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/N_213</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[4]</cell>
+ <cell>Driver: config_sccb_0/coresccb_0/state_25_sqmuxa_i_o4</cell>
 </row>
 <row>
- <cell>16</cell>
+ <cell>22</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[5]</cell>
+ <cell>Net   : AND2_0_Y_arst</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[5]</cell>
-</row>
-<row>
- <cell>15</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[3]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[3]</cell>
-</row>
-<row>
- <cell>15</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/delay_cntr_lcry</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/data_send115_0_a4_3_0_RNI9O6Q</cell>
-</row>
-<row>
- <cell>14</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[0]</cell>
-</row>
-<row>
- <cell>13</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[2]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[2]</cell>
-</row>
-<row>
- <cell>12</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/SCCB_MID_PULSE_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/SCCB_MID_PULSE</cell>
+ <cell>Driver: AND2_0</cell>
 </row>
 <row>
  <cell>11</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[1]</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/data_in_saved_dec[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[1]</cell>
+ <cell>Driver: config_sccb_0/coresccb_0/data_in_saved_dec_0_0_a2_0_a2</cell>
 </row>
 <row>
- <cell>8</cell>
+ <cell>10</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/SCCB_CLK_CNTR_lcry</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/siod_o65_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/SCCB_CLK_0_0_o2</cell>
+ <cell>Driver: config_sccb_0/coresccb_0/siod_o65</cell>
 </row>
 <row>
- <cell>8</cell>
+ <cell>9</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/N_14_0</cell>
+ <cell>Net   : config_sccb_0/sccb_clk_0/mid_pulse_0</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/data_send115_0_a4_3_0</cell>
+ <cell>Driver: config_sccb_0/sccb_clk_0/mid_pulse</cell>
+</row>
+<row>
+ <cell>9</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/count_Z[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/coresccb_0/count[0]</cell>
+</row>
+<row>
+ <cell>7</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/sccb_clk_0/sccb_clk3</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/sccb_clk_0/count_RNI3L3Q[1]</cell>
+</row>
+<row>
+ <cell>7</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/count_Z[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/coresccb_0/count[1]</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/count_Z[2]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/coresccb_0/count[2]</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/N_125</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/coresccb_0/un27_i_a2_0_o2[2]</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -500,104 +488,104 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>18</cell>
+ <cell>24</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[4]</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/N_213</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[4]</cell>
+ <cell>Driver: config_sccb_0/coresccb_0/state_25_sqmuxa_i_o4</cell>
 </row>
 <row>
- <cell>16</cell>
+ <cell>22</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[5]</cell>
+ <cell>Net   : AND2_0_Y_arst</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[5]</cell>
-</row>
-<row>
- <cell>15</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[3]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[3]</cell>
-</row>
-<row>
- <cell>15</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/delay_cntr_lcry</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/data_send115_0_a4_3_0_RNI9O6Q</cell>
-</row>
-<row>
- <cell>14</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[0]</cell>
-</row>
-<row>
- <cell>13</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[2]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[2]</cell>
-</row>
-<row>
- <cell>12</cell>
- <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/SCCB_MID_PULSE_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: config_sccb_0/SCCB_MID_PULSE</cell>
+ <cell>Driver: AND2_0</cell>
 </row>
 <row>
  <cell>11</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/step[1]</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/data_in_saved_dec[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/step[1]</cell>
+ <cell>Driver: config_sccb_0/coresccb_0/data_in_saved_dec_0_0_a2_0_a2</cell>
 </row>
 <row>
- <cell>8</cell>
+ <cell>10</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/SCCB_CLK_CNTR_lcry</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/siod_o65_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/SCCB_CLK_0_0_o2</cell>
+ <cell>Driver: config_sccb_0/coresccb_0/siod_o65</cell>
 </row>
 <row>
- <cell>8</cell>
+ <cell>9</cell>
  <cell>INT_NET</cell>
- <cell>Net   : config_sccb_0/coresccb_c0/N_14_0</cell>
+ <cell>Net   : config_sccb_0/sccb_clk_0/mid_pulse_0</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: config_sccb_0/coresccb_c0/data_send115_0_a4_3_0</cell>
+ <cell>Driver: config_sccb_0/sccb_clk_0/mid_pulse</cell>
+</row>
+<row>
+ <cell>9</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/count_Z[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/coresccb_0/count[0]</cell>
+</row>
+<row>
+ <cell>7</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/sccb_clk_0/sccb_clk3</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/sccb_clk_0/count_RNI3L3Q[1]</cell>
+</row>
+<row>
+ <cell>7</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/count_Z[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/coresccb_0/count[1]</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/count_Z[2]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/coresccb_0/count[2]</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : config_sccb_0/coresccb_0/N_125</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: config_sccb_0/coresccb_0/un27_i_a2_0_o2[2]</cell>
 </row>
 </table>
 </doc>

@@ -1,6 +1,6 @@
 Configuration Report for MSS, SERDES(s), Fabric DDR and Fabric CCC(s)
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
-Date: Tue Feb  2 00:47:18 2021
+Date: Sun Feb  7 02:17:22 2021
 
 FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP
 +-------------------+--------------------+---------------+-------+
@@ -39,7 +39,7 @@ FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP
 | FCCC_PLL_CR7      | DIVQ[2:0]          | INIT[148:146] | 3'h5  |
 | FCCC_PLL_CR5      | MODE32K            | INIT[149:149] | 1'h0  |
 | FCCC_PLL_CR5      | MODE_1V2           | INIT[150:150] | 1'h1  |
-| FCCC_PLL_CR5      | MODE_3V3           | INIT[151:151] | 1'h0  |
+| FCCC_PLL_CR5      | MODE_3V3           | INIT[151:151] | 1'h1  |
 | FCCC_PLL_CR6      | FSE                | INIT[152:152] | 1'h0  |
 | FCCC_PLL_CR4      | SSE                | INIT[153:153] | 1'h0  |
 | FCCC_PLL_CR3      | SSMD[1:0]          | INIT[155:154] | 2'h1  |
@@ -576,7 +576,7 @@ HPMS/MDDR ( Unused )
 | MSSDDR_PLL_STATUS_LOW   | FACC_PLL_LOCKCNT            | INIT[575:572]   | 4'h0         | INIT[62]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_BYPASS             | INIT[576:576]   | 1'h0         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_MODE_1V2           | INIT[577:577]   | 1'h1         | INIT[63]  | 1             |
-| MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_MODE_3V3           | INIT[578:578]   | 1'h0         | INIT[63]  | 1             |
+| MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_MODE_3V3           | INIT[578:578]   | 1'h1         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_FSE                | INIT[579:579]   | 1'h0         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_PD                 | INIT[580:580]   | 1'h1         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_SSE                | INIT[581:581]   | 1'h0         | INIT[63]  | 1             |
@@ -1212,7 +1212,7 @@ SERDES_IF_0 ( Unused )
 | SER_PLL_CONFIG_HIGH    | PLL_RESET                | INIT[110:110] | 1'h1     | INIT[6]   | 1             |
 | SER_PLL_CONFIG_HIGH    | PLL_BYPASS               | INIT[111:111] | 1'h1     | INIT[7]   | 1             |
 | SER_PLL_CONFIG_HIGH    | PLL_MODE_1V2             | INIT[112:112] | 1'h1     | INIT[8]   | 1             |
-| SER_PLL_CONFIG_HIGH    | PLL_MODE_3V3             | INIT[113:113] | 1'h0     | INIT[9]   | 1             |
+| SER_PLL_CONFIG_HIGH    | PLL_MODE_3V3             | INIT[113:113] | 1'h1     | INIT[9]   | 1             |
 | SER_PLL_CONFIG_HIGH    | PLL_FSE                  | INIT[114:114] | 1'h0     | INIT[10]  | 1             |
 | SER_PLL_CONFIG_HIGH    | PLL_PD                   | INIT[115:115] | 1'h0     | INIT[11]  | 1             |
 | SERDESIF_SOFT_RESET    | PCIE_CTLR_SOFTRESET      | INIT[116:116] | 1'h1     | INIT[12]  | 1             |

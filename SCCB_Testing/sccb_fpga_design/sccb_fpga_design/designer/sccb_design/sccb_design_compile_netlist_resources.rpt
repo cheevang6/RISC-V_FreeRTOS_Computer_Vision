@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
-Date: Tue Feb  2 00:46:59 2021
+Date: Sun Feb  7 02:17:04 2021
 
 Device Selection
 +--------------------------------+----------------+
@@ -13,7 +13,7 @@ Device Selection
 | Core Voltage                   | 1.2V           |
 | Ramp Rate                      | 100ms Minimum  |
 | System Controller Suspend Mode | No             |
-| PLL Supply Voltage             | 2.5V           |
+| PLL Supply Voltage             | 3.3V           |
 | Default I/O technology         | LVCMOS 3.3V    |
 | Restrict Probe Pins            | Yes            |
 | Restrict SPI Pins              | No             |
@@ -37,8 +37,8 @@ Resource Usage
 +---------------------------+------+-------+------------+
 | Type                      | Used | Total | Percentage |
 +---------------------------+------+-------+------------+
-| 4LUT                      | 98   | 27696 | 0.35       |
-| DFF                       | 34   | 27696 | 0.12       |
+| 4LUT                      | 97   | 27696 | 0.35       |
+| DFF                       | 54   | 27696 | 0.19       |
 | I/O Register              | 0    | 414   | 0.00       |
 | User I/O                  | 5    | 138   | 3.62       |
 | -- Single-ended I/O       | 5    | 138   | 3.62       |
@@ -58,21 +58,18 @@ Detailed Logic Resource Usage
 +--------------------------+------+-----+
 | Type                     | 4LUT | DFF |
 +--------------------------+------+-----+
-| Fabric Logic             | 98   | 34  |
+| Fabric Logic             | 97   | 54  |
 | RAM64x18 Interface Logic | 0    | 0   |
 | RAM1K18 Interface Logic  | 0    | 0   |
 | MACC Interface Logic     | 0    | 0   |
-| Total Used               | 98   | 34  |
+| Total Used               | 97   | 54  |
 +--------------------------+------+-----+
 
 Detailed Carry Chains Resource Usage
 +--------+------+
 | Length | Used |
-| 2      | 1    |
-| 6      | 1    |
-| 7      | 1    |
-| 15     | 1    |
-| Total  | 4    |
+| 10     | 1    |
+| Total  | 1    |
 +--------+------+
 
 I/O Function
@@ -80,8 +77,8 @@ I/O Function
 | Type                          | w/o register | w/ register | w/ DDR register |
 +-------------------------------+--------------+-------------+-----------------+
 | Input I/O                     | 0            | 0           | 0               |
-| Output I/O                    | 5            | 0           | 0               |
-| Bidirectional I/O             | 0            | 0           | 0               |
+| Output I/O                    | 4            | 0           | 0               |
+| Bidirectional I/O             | 1            | 0           | 0               |
 | Differential Input I/O Pairs  | 0            | 0           | 0               |
 | Differential Output I/O Pairs | 0            | 0           | 0               |
 +-------------------------------+--------------+-------------+-----------------+
@@ -90,7 +87,7 @@ I/O Technology
 +--------------+--------+------+-------+--------+---------------+
 | I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
 +--------------+--------+------+-------+--------+---------------+
-| LVCMOS33     |  3.30v |  N/A |  0    |  5     |  0            |
+| LVCMOS33     |  3.30v |  N/A |  0    |  4     |  1            |
 +--------------+--------+------+-------+--------+---------------+
 
 I/O Placement
@@ -103,16 +100,16 @@ I/O Placement
 +----------+-------+------------+
 
 Nets assigned to chip global resources
-+--------+---------+----------------------------------------------+
-| Fanout | Type    | Name                                         |
-+--------+---------+----------------------------------------------+
-| 35     | INT_NET | Net   : xclk_c                               |
-|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 |
-|        |         | Source: NETLIST                              |
-| 34     | INT_NET | Net   : AND2_0_Y_arst                        |
-|        |         | Driver: AND2_0_RNIKOS1/U0_RGB1               |
-|        |         | Source: NETLIST                              |
-+--------+---------+----------------------------------------------+
++--------+---------+---------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                      |
++--------+---------+---------------------------------------------------------------------------+
+| 31     | INT_NET | Net   : config_sccb_0/mid_pulse                                           |
+|        |         | Driver: config_sccb_0/sccb_clk_0/mid_pulse_inferred_clock_RNIPF73/U0_RGB1 |
+|        |         | Source: NETLIST                                                           |
+| 23     | INT_NET | Net   : xclk_c                                                            |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1                              |
+|        |         | Source: NETLIST                                                           |
++--------+---------+---------------------------------------------------------------------------+
 
 Nets assigned to row global resources
 +--------+------+------+
@@ -121,54 +118,54 @@ Nets assigned to row global resources
 +--------+------+------+
 
 High fanout nets
-+--------+---------+-----------------------------------------------------------------+
-| Fanout | Type    | Name                                                            |
-+--------+---------+-----------------------------------------------------------------+
-| 18     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[4]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[4]                       |
-| 16     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[5]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[5]                       |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[3]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[3]                       |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_c0/delay_cntr_lcry               |
-|        |         | Driver: config_sccb_0/coresccb_c0/data_send115_0_a4_3_0_RNI9O6Q |
-| 14     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[0]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[0]                       |
-| 13     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[2]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[2]                       |
-| 12     | INT_NET | Net   : config_sccb_0/SCCB_MID_PULSE_Z                          |
-|        |         | Driver: config_sccb_0/SCCB_MID_PULSE                            |
-| 11     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[1]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[1]                       |
-| 8      | INT_NET | Net   : config_sccb_0/SCCB_CLK_CNTR_lcry                        |
-|        |         | Driver: config_sccb_0/SCCB_CLK_0_0_o2                           |
-| 8      | INT_NET | Net   : config_sccb_0/coresccb_c0/N_14_0                        |
-|        |         | Driver: config_sccb_0/coresccb_c0/data_send115_0_a4_3_0         |
-+--------+---------+-----------------------------------------------------------------+
++--------+---------+----------------------------------------------------------------+
+| Fanout | Type    | Name                                                           |
++--------+---------+----------------------------------------------------------------+
+| 24     | INT_NET | Net   : config_sccb_0/coresccb_0/N_213                         |
+|        |         | Driver: config_sccb_0/coresccb_0/state_25_sqmuxa_i_o4          |
+| 22     | INT_NET | Net   : AND2_0_Y_arst                                          |
+|        |         | Driver: AND2_0                                                 |
+| 11     | INT_NET | Net   : config_sccb_0/coresccb_0/data_in_saved_dec[0]          |
+|        |         | Driver: config_sccb_0/coresccb_0/data_in_saved_dec_0_0_a2_0_a2 |
+| 10     | INT_NET | Net   : config_sccb_0/coresccb_0/siod_o65_Z                    |
+|        |         | Driver: config_sccb_0/coresccb_0/siod_o65                      |
+| 9      | INT_NET | Net   : config_sccb_0/sccb_clk_0/mid_pulse_0                   |
+|        |         | Driver: config_sccb_0/sccb_clk_0/mid_pulse                     |
+| 9      | INT_NET | Net   : config_sccb_0/coresccb_0/count_Z[0]                    |
+|        |         | Driver: config_sccb_0/coresccb_0/count[0]                      |
+| 7      | INT_NET | Net   : config_sccb_0/sccb_clk_0/sccb_clk3                     |
+|        |         | Driver: config_sccb_0/sccb_clk_0/count_RNI3L3Q[1]              |
+| 7      | INT_NET | Net   : config_sccb_0/coresccb_0/count_Z[1]                    |
+|        |         | Driver: config_sccb_0/coresccb_0/count[1]                      |
+| 6      | INT_NET | Net   : config_sccb_0/coresccb_0/count_Z[2]                    |
+|        |         | Driver: config_sccb_0/coresccb_0/count[2]                      |
+| 6      | INT_NET | Net   : config_sccb_0/coresccb_0/N_125                         |
+|        |         | Driver: config_sccb_0/coresccb_0/un27_i_a2_0_o2[2]             |
++--------+---------+----------------------------------------------------------------+
 
 High fanout nets (through buffer trees)
-+--------+---------+-----------------------------------------------------------------+
-| Fanout | Type    | Name                                                            |
-+--------+---------+-----------------------------------------------------------------+
-| 18     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[4]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[4]                       |
-| 16     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[5]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[5]                       |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[3]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[3]                       |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_c0/delay_cntr_lcry               |
-|        |         | Driver: config_sccb_0/coresccb_c0/data_send115_0_a4_3_0_RNI9O6Q |
-| 14     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[0]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[0]                       |
-| 13     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[2]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[2]                       |
-| 12     | INT_NET | Net   : config_sccb_0/SCCB_MID_PULSE_Z                          |
-|        |         | Driver: config_sccb_0/SCCB_MID_PULSE                            |
-| 11     | INT_NET | Net   : config_sccb_0/coresccb_c0/step[1]                       |
-|        |         | Driver: config_sccb_0/coresccb_c0/step[1]                       |
-| 8      | INT_NET | Net   : config_sccb_0/SCCB_CLK_CNTR_lcry                        |
-|        |         | Driver: config_sccb_0/SCCB_CLK_0_0_o2                           |
-| 8      | INT_NET | Net   : config_sccb_0/coresccb_c0/N_14_0                        |
-|        |         | Driver: config_sccb_0/coresccb_c0/data_send115_0_a4_3_0         |
-+--------+---------+-----------------------------------------------------------------+
++--------+---------+----------------------------------------------------------------+
+| Fanout | Type    | Name                                                           |
++--------+---------+----------------------------------------------------------------+
+| 24     | INT_NET | Net   : config_sccb_0/coresccb_0/N_213                         |
+|        |         | Driver: config_sccb_0/coresccb_0/state_25_sqmuxa_i_o4          |
+| 22     | INT_NET | Net   : AND2_0_Y_arst                                          |
+|        |         | Driver: AND2_0                                                 |
+| 11     | INT_NET | Net   : config_sccb_0/coresccb_0/data_in_saved_dec[0]          |
+|        |         | Driver: config_sccb_0/coresccb_0/data_in_saved_dec_0_0_a2_0_a2 |
+| 10     | INT_NET | Net   : config_sccb_0/coresccb_0/siod_o65_Z                    |
+|        |         | Driver: config_sccb_0/coresccb_0/siod_o65                      |
+| 9      | INT_NET | Net   : config_sccb_0/sccb_clk_0/mid_pulse_0                   |
+|        |         | Driver: config_sccb_0/sccb_clk_0/mid_pulse                     |
+| 9      | INT_NET | Net   : config_sccb_0/coresccb_0/count_Z[0]                    |
+|        |         | Driver: config_sccb_0/coresccb_0/count[0]                      |
+| 7      | INT_NET | Net   : config_sccb_0/sccb_clk_0/sccb_clk3                     |
+|        |         | Driver: config_sccb_0/sccb_clk_0/count_RNI3L3Q[1]              |
+| 7      | INT_NET | Net   : config_sccb_0/coresccb_0/count_Z[1]                    |
+|        |         | Driver: config_sccb_0/coresccb_0/count[1]                      |
+| 6      | INT_NET | Net   : config_sccb_0/coresccb_0/count_Z[2]                    |
+|        |         | Driver: config_sccb_0/coresccb_0/count[2]                      |
+| 6      | INT_NET | Net   : config_sccb_0/coresccb_0/N_125                         |
+|        |         | Driver: config_sccb_0/coresccb_0/un27_i_a2_0_o2[2]             |
++--------+---------+----------------------------------------------------------------+
 

@@ -7,14 +7,16 @@
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 34 clock pin(s) of sequential element(s)
-0 instances converted, 34 sequential instances remain driven by gated/generated clocks
+3 gated/generated clock tree(s) driving 54 clock pin(s) of sequential element(s)
+0 instances converted, 54 sequential instances remain driven by gated/generated clocks
 
-======================================================================================================= Gated/Generated Clocks =======================================================================================================
-Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance                    Explanation                                                                                                   
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    34         config_sccb_0.SCCB_CLK_CNTR[5]     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
-======================================================================================================================================================================================================================================
+=========================================================================================================== Gated/Generated Clocks ============================================================================================================
+Clock Tree ID     Driving Element                        Drive Element Type     Fanout     Sample Instance                       Explanation                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       config_sccb_0.sccb_clk_0.mid_pulse     SLE                    31         config_sccb_0.coresccb_0.rw_saved     No generated or derived clock directive on output of sequential instance                                      
+@K:CKID0002       FCCC_C0_0.FCCC_C0_0.CCC_INST           CCC                    22         config_sccb_0.state[2]                Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0003       config_sccb_0.sccb_clk_0.sccb_clk      SLE                    1          config_sccb_0.coresccb_0.sioc_en      No generated or derived clock directive on output of sequential instance                                      
+===============================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

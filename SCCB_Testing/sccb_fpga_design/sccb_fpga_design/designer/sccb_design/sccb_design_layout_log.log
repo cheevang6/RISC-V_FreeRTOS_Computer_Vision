@@ -17,7 +17,7 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 12.800.0 
-Design: sccb_design                     Started: Tue Feb  2 00:47:02 2021
+Design: sccb_design                     Started: Sun Feb  7 02:17:06 2021
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -33,21 +33,26 @@ Improvement              : 0 seconds
 Placer completed successfully.
 
 Design: sccb_design                     
-Finished: Tue Feb  2 00:47:05 2021
+Finished: Sun Feb  7 02:17:09 2021
 Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
-Total Memory Usage: 132.6 Mbytes
+Total Memory Usage: 132.7 Mbytes
                         o - o - o - o - o - o
 
+
+Warning:  The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to noise than those using dedicated global resources. Microchip recommends promoting these signals to dedicated global resources.
+    Driver: config_sccb_0/sccb_clk_0/sccb_clk:Q
+       Net: config_sccb_0/sccb_clk
+Clock pins: 1
 
 Router 
-Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_designStarted: Tue Feb  2 00:47:07 2021
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_designStarted: Sun Feb  7 02:17:11 2021
 
 
 Router completed successfully.
 
 Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\sccb_design
-Finished: Tue Feb  2 00:47:14 2021
-Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:07
+Finished: Sun Feb  7 02:17:19 2021
+Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:08
 Total Memory Usage: 895.3 Mbytes
                         o - o - o - o - o - o
 
@@ -55,9 +60,9 @@ Resource Usage
 +---------------+------+-------+------------+
 | Type          | Used | Total | Percentage |
 +---------------+------+-------+------------+
-| 4LUT          | 98   | 27696 | 0.35       |
-| DFF           | 34   | 27696 | 0.12       |
+| 4LUT          | 97   | 27696 | 0.35       |
+| DFF           | 54   | 27696 | 0.19       |
 | I/O Register  | 0    | 408   | 0.00       |
-| Logic Element | 98   | 27696 | 0.35       |
+| Logic Element | 97   | 27696 | 0.35       |
 +---------------+------+-------+------------+
 

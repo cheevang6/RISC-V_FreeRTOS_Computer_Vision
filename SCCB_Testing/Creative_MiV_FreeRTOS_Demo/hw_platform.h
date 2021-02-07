@@ -42,7 +42,9 @@
  * <corename>_<instance>_BASE_ADDR
  */
 #define BASIC_IO_INTR_ADDR              0x70000000UL
-#define CORETIMER_0_ADDR 								0x70001000UL
+#define CORETIMER_0_ADDR 				0x70001000UL
+#define GPIO_BASE_ADDR					0x70002000UL
+#define SCCB_BASE_ADDR					0x70003000UL
 
 /***************************************************************************//**
  * Peripheral Interrupts are mapped to the corresponding CoreRISCV_AXI4 interrupt

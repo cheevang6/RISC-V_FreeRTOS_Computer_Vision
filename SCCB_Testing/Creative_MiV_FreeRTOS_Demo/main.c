@@ -134,9 +134,6 @@ void External_29_IRQHandler() {
 }
 
 /*-----------------------------------------------------------*/
-#define SCCB_BASE_ADDR	0x70002000UL
-
-
 int main(void) {
 
 	PLIC_init();

@@ -25,13 +25,14 @@ output          SIO_C;
 inout           SIO_D;
 
 // APB registers
-parameter   START_REG       = 8'h04;//8'h00;
-parameter   IPADDR_REG      = 8'h08;//8'h01;
-parameter   SUBADDR_REG     = 8'h0C;//8'h02;
-parameter   WDATA_REG       = 8'h10;//8'h03;
-parameter   RDATA_REG       = 8'h14;//8'h04;
-parameter   DONE_REG        = 8'h18;//8'h05;
-//parameter   READWRITE_REG   = 8'h1C;//8'h06;
+parameter   START_REG       = 8'h04;
+parameter   IPADDR_REG      = 8'h08;
+parameter   READWRITE_REG   = 8'h0C;
+parameter   SUBADDR_REG     = 8'h10;
+parameter   WDATA_REG       = 8'h14;
+parameter   RDATA_REG       = 8'h18;
+parameter   DONE_REG        = 8'h1C;
+
 
 // States
 parameter	INIT		= 4'd0;
@@ -43,7 +44,7 @@ parameter   DONE        = 4'd2;
 // variables for CoreSCCB
 wire 			pwdn;
 reg				start = 1'b0;
-//reg				rw;
+reg				rw;
 reg     [7:0]   data_in, ip_addr, sub_addr;
 wire			done_c;
 reg				done;
@@ -52,15 +53,8 @@ wire	[7:0]	data_out;
 // this module's variables
 wire			sio_c_o;
 reg		[3:0]	state;
-
-// varaibles to calculate SCCB_CLK and SCCB_MID_PULSE
-localparam XCLK_FREQ = 50_000_000;                          // incoming clock = XCLK = 50MHz 
-localparam SCCB_CLK_FREQ = 100_000;                         // divide clock such that SIO_C = 100kHz
-localparam SCCB_CLK_PERIOD = XCLK_FREQ/SCCB_CLK_FREQ/2;     // number of clocks to obtain 100kHz
-localparam SCCB_MID_AMT = SCCB_CLK_PERIOD/2-1;              // amount of clk for mid of SCCB_clk
-reg [$clog2(SCCB_CLK_PERIOD):0] SCCB_CLK_CNTR = 0;
-reg SCCB_CLK;
-reg SCCB_MID_PULSE;
+wire            SCCB_CLK;
+wire            SCCB_MID_PULSE;
 
 assign SIO_C = sio_c_o;
 
@@ -69,7 +63,7 @@ CoreSCCB coresccb_c0(
     .RST_N(PRESETN),        // Reset 
     .PWDN(pwdn),            // Power down (camera)
     .start(start),
-    //.RW(rw),                // Read/Write request
+    .RW(rw),                // Read/Write request
     .data_in(data_in),      // Data write to register
     .ip_addr(ip_addr),      // Device ID + RW signal
     .sub_addr(sub_addr),    // Register address
@@ -81,36 +75,21 @@ CoreSCCB coresccb_c0(
 	.SCCB_MID_PULSE(SCCB_MID_PULSE)
 );
 
-
-// Generating clock for SCCB and mid pulse
-// Depending on the device, the SIO_C can go up to 40MHz
-always @(posedge PCLK or negedge PRESETN) begin
-	if(!PRESETN) begin // RST is acitve-low
-		SCCB_CLK_CNTR <= 0;
-		SCCB_CLK <= 0;
-		SCCB_MID_PULSE <= 0;
-	end else begin
-		if(SCCB_CLK_CNTR < SCCB_CLK_PERIOD) begin
-			SCCB_CLK_CNTR <= SCCB_CLK_CNTR + 1;
-		end else begin
-			SCCB_CLK_CNTR <= 0;
-			SCCB_CLK <= ~SCCB_CLK;
-		end
-		if(SCCB_CLK_CNTR == SCCB_MID_AMT && SCCB_CLK == 0) begin
-			SCCB_MID_PULSE <= 1'b1;
-		end else begin
-			SCCB_MID_PULSE <= 1'b0;
-		end
-	end
-end
-
+clock_divider #(10_000_000, 100_000) cd_0(
+    .PCLK(PCLK),
+    .PRESETN(PRESETN),
+    .SCCB_CLK(SCCB_CLK),
+    .SCCB_MID_PULSE(SCCB_MID_PULSE)
+);
 
 //assign PREADY = 1'b1;
 assign PSLVERR = 1'b0;
 // assign PWRITE = rw;
 // assign done = (state == DONE)? 1'b1 : 1'b0;
 
-// APB Read Registers
+
+
+// Read Registers
 assign PRDATA = (PADDR[7:0] == START_REG)  ? {7'd0,start} :
                 (PADDR[7:0] == IPADDR_REG) ? ip_addr :
                 (PADDR[7:0] == SUBADDR_REG)? sub_addr :
@@ -118,7 +97,7 @@ assign PRDATA = (PADDR[7:0] == START_REG)  ? {7'd0,start} :
                 (PADDR[7:0] == RDATA_REG)  ? data_out :
                 (PADDR[7:0] == DONE_REG)   ? done : 8'hff; // I'm using 0xff for testing
 
-// APB Write Registers
+// Write Registers
 // To stop data transfer, PWDATA = 24'bff_ff_ff
 always @(posedge PCLK or negedge PRESETN) begin
     if(!PRESETN) begin
@@ -131,10 +110,12 @@ always @(posedge PCLK or negedge PRESETN) begin
     end else if(PWRITE && PENABLE && PSEL) begin
 		if(SCCB_MID_PULSE && (PWDATA[23:0] != 24'hff_ff_ff)) begin
 			done <= 1'b0;
+            
+            // Testing SCCB on FPGA only
 			case(state)
 				INIT : begin
 						ip_addr <= PWDATA[23:16];
-						//rw <= PWDATA[16];
+						rw <= PWDATA[16];
 						sub_addr <= PWDATA[15:8];
 						data_in <= PWDATA[7:0];
 						
@@ -167,6 +148,7 @@ always @(posedge PCLK or negedge PRESETN) begin
 			endcase
 		end
 		
+        
 		/* if(done) begin
 			start <= 1'b0;
 		end else begin
@@ -177,20 +159,22 @@ always @(posedge PCLK or negedge PRESETN) begin
 			start <= 1'b1;
 		end */
 		
-		// if we want to write registers separately
+		// Actual SCCB Registers when used on software side
         /* case(PADDR[7:0])
-            START   : begin
+            START_REG   : begin
                     start <= PWDATA[0];
                 end
-            IPADDR  : begin
-                    ip_addr <= PWDATA;
+            IPADDR_REG  : begin
+                    ip_addr <= PWDATA[7:0];
+                end
+            READWRITE_REG : begin
                     rw  <= PWDATA[0];
                 end
-            SUBADDR : begin
-                    sub_addr <= PWDATA;
+            SUBADDR_REG : begin
+                    sub_addr <= PWDATA[7:0];
                 end
-            WDATA   : begin
-                    data_in <= PWDATA;
+            WDATA_REG   : begin
+                    data_in <= PWDATA[7:0];
                 end
             default : begin
                 end

@@ -34,7 +34,7 @@ reg [$clog2(SCCB_CLK_PERIOD):0] SCCB_CLK_CNTR = 0;
 reg SCCB_CLK;
 reg SCCB_MID_PULSE;
 
-CoreSCCB S0 (
+/*CoreSCCB S0 (
 	.XCLK(clk),
     .RST_N(rst_n),
     .PWDN(pwdn), 
@@ -49,9 +49,9 @@ CoreSCCB S0 (
     .SIO_C(sio_c_s0),
 	.SCCB_CLK(SCCB_CLK),
 	.SCCB_MID_PULSE(SCCB_MID_PULSE)
-);
+);*/
 
-/* SCCBCtrl S1(
+SCCBCtrl S1(
 	.clk_i(clk),
 	.rst_i(rst_n), 
 	.sccb_clk_i(SCCB_CLK),
@@ -65,7 +65,7 @@ CoreSCCB S0 (
     .done_o(done_s1),
 	.sioc_o(sio_c_sl),
 	.siod_io(sio_d_s1)
-); */
+);
 
 initial begin
     clk = 1'b1;

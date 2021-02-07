@@ -58,7 +58,7 @@ set_compile_info \
 set_compile_info \
     -category {"Device Selection"} \
     -name {"PLL Supply Voltage"} \
-    -value {"2.5V"}
+    -value {"3.3V"}
 set_compile_info \
     -category {"Device Selection"} \
     -name {"Default I/O technology"} \

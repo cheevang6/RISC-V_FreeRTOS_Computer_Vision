@@ -1,6 +1,6 @@
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
 
-Date      :  Tue Feb  2 11:26:08 2021
+Date      :  Sun Feb  7 02:16:52 2021
 Project   :  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design
 Component :  sccb_design
 Family    :  IGLOO2

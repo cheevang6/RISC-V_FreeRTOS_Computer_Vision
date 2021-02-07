@@ -31,7 +31,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Main Project\IGL2_MiV_FreeRTOS_Demo"
+KEY ProjectLocation "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\Main_Project\IGL2_MiV_FreeRTOS_Demo"
 KEY ProjectDescription "SPI4.2"
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -492,32 +492,10 @@ TIME="1604351799"
 SIZE="752"
 PARENT="<project>\component\work\CoreGPIO_C1\CoreGPIO_C1.cxf"
 ENDFILE
-VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\COREI2C.cxf,actgen_cxf"
-STATE="utd"
-TIME="1604351799"
-SIZE="949"
-PARENT="<project>\component\work\COREI2C_C0\COREI2C_C0.cxf"
-ENDFILE
-VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\mti\scripts\wave_usertb_vlog.do,do"
-STATE="utd"
-TIME="1604351799"
-SIZE="870"
-PARENT="<project>\component\Actel\DirectCore\COREI2C\7.2.101\COREI2C.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v,hdl"
-STATE="utd"
-TIME="1604351799"
-SIZE="102338"
-PARENT="<project>\component\Actel\DirectCore\COREI2C\7.2.101\COREI2C.cxf"
-IS_READONLY="TRUE"
-ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
 STATE="utd"
 TIME="1604351799"
 SIZE="2117"
-PARENT="<project>\component\Actel\DirectCore\COREI2C\7.2.101\COREI2C.cxf"
-PARENT="<project>\component\work\COREI2C_C0\COREI2C_C0_0\COREI2C_C0_COREI2C_C0_0_COREI2C.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREJTAGDEBUG\3.0.100\COREJTAGDEBUG.cxf,actgen_cxf"
@@ -1050,48 +1028,6 @@ STATE="utd"
 TIME="1604351802"
 SIZE="1452"
 PARENT="<project>\component\work\CoreGPIO_C1\CoreGPIO_C1_0\CoreGPIO_C1_CoreGPIO_C1_0_CoreGPIO.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0.cxf,actgen_cxf"
-STATE="utd"
-TIME="1604351802"
-SIZE="5487"
-ENDFILE
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0.v,hdl"
-STATE="utd"
-TIME="1604351802"
-SIZE="4267"
-PARENT="<project>\component\work\COREI2C_C0\COREI2C_C0.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\COREI2C_C0_COREI2C_C0_0_COREI2C.cxf,actgen_cxf"
-STATE="utd"
-TIME="1604351802"
-SIZE="1171"
-PARENT="<project>\component\work\COREI2C_C0\COREI2C_C0.cxf"
-ENDFILE
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\coreparameters.v,tb_hdl"
-STATE="utd"
-TIME="1604351802"
-SIZE="717"
-PARENT="<project>\component\work\COREI2C_C0\COREI2C_C0_0\COREI2C_C0_COREI2C_C0_0_COREI2C.cxf"
-IS_READONLY="TRUE"
-IS_INCLUDED="TRUE"
-ENDFILE
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\core\corei2c.v,hdl"
-STATE="utd"
-TIME="1604351802"
-SIZE="17969"
-PARENT="<project>\component\work\COREI2C_C0\COREI2C_C0_0\COREI2C_C0_COREI2C_C0_0_COREI2C.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v,tb_hdl"
-STATE="utd"
-TIME="1604351803"
-SIZE="25888"
-PARENT="<project>\component\work\COREI2C_C0\COREI2C_C0_0\COREI2C_C0_COREI2C_C0_0_COREI2C.cxf"
-MODULE_UNDER_TEST="testbench"
-SIMULATION_TIME="-all"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\JTAG\JTAG.cxf,actgen_cxf"
@@ -2138,16 +2074,6 @@ STATE="utd"
 TIME="1604351807"
 SIZE="3780"
 ENDFILE
-VALUE "<project>\hdl\SCCB_APB.v,hdl"
-STATE="utd"
-TIME="1607135149"
-SIZE="1338"
-ENDFILE
-VALUE "<project>\hdl\SCCB_CTRL.v,hdl"
-STATE="utd"
-TIME="1606591065"
-SIZE="6659"
-ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
 TIME="1604351809"
@@ -2288,14 +2214,6 @@ VALUE "<project>\component\work\CoreGPIO_C1\CoreGPIO_C1_0\bfmtovec_compile.do,do
 VALUE "<project>\component\work\CoreGPIO_C1\CoreGPIO_C1_0\wave_vlog.do,do"
 ENDLIST
 ENDLIST
-LIST "COREI2C_C0_COREI2C_C0_0_COREI2C::work"
-FILE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\core\corei2c.v,hdl"
-LIST Other_Association
-VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v,tb_hdl"
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\coreparameters.v,tb_hdl"
-ENDLIST
-ENDLIST
 LIST "MSS_SubSystem_sb::work"
 FILE "<project>\component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.v,hdl"
 LIST Other_Association
@@ -2344,6 +2262,9 @@ ENDLIST
 ENDLIST
 LIST "Top_Level::work"
 FILE "<project>\component\work\Top_Level\Top_Level.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
 LIST SynthesisConstraints
 VALUE "<project>\constraint\Top_Level_derived_constraints.sdc,sdc"
 VALUE "<project>\constraint\JTAG_tck_constraint.sdc,sdc"
@@ -2542,6 +2463,9 @@ VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\test\test
 ENDLIST
 ENDLIST
 LIST Other_Association
+LIST Top_Level
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
 LIST CoreAHBLite
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 VALUE "<project>\simulation\coreahblite_usertb_include.bfm,sim"
@@ -2638,11 +2562,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\amba_bfm\
 VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\test\testbench.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\bfmtovec_compile.do,do"
 VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\wave.do,do"
-ENDLIST
-LIST COREI2C_C0_COREI2C_C0_0_COREI2C
-VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v,tb_hdl"
-VALUE "<project>\component\work\COREI2C_C0\COREI2C_C0_0\coreparameters.v,tb_hdl"
 ENDLIST
 ENDLIST
 LIST SimulationOptions
@@ -2811,11 +2730,9 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Constraint Manager;Constraint Manager;0
-Reports;Reports;0
-ReportsCurrentItem;Generate Memory Map:Top_Level_DataSheet.xml
 StartPage;StartPage;0
 SmartDesign;Top_Level;0
-ACTIVEVIEW;Constraint Manager
+ACTIVEVIEW;Top_Level
 ENDLIST
 LIST ModuleSubBlockList
 LIST "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
@@ -2840,20 +2757,11 @@ SUBBLOCK "CoreGPIO_C1_CoreGPIO_C1_0_CoreGPIO::work","component\work\CoreGPIO_C1\
 ENDLIST
 LIST "CoreGPIO_C1_CoreGPIO_C1_0_CoreGPIO::work","component\work\CoreGPIO_C1\CoreGPIO_C1_0\rtl\vlog\core\coregpio.v","FALSE","FALSE"
 ENDLIST
-LIST "COREI2C_C0::work","component\work\COREI2C_C0\COREI2C_C0.v","TRUE","FALSE"
-SUBBLOCK "COREI2C_C0_COREI2C_C0_0_COREI2C::work","component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\core\corei2c.v","FALSE","FALSE"
-ENDLIST
-LIST "COREI2C_C0_COREI2C_C0_0_COREI2C::work","component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\core\corei2c.v","FALSE","FALSE"
-SUBBLOCK "COREI2C_COREI2CREAL::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v","FALSE","FALSE"
-SUBBLOCK "COREI2C_COREI2CREAL::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v","FALSE","FALSE"
-ENDLIST
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v","FALSE","FALSE"
 ENDLIST
 LIST "CoreConfigMaster::work","component\Actel\DirectCore\CoreConfigMaster\2.1.102\rtl\vlog\core\coreconfigmaster.v","FALSE","FALSE"
 ENDLIST
 LIST "CoreConfigP::work","component\Actel\DirectCore\CoreConfigP\7.1.100\rtl\vlog\core\coreconfigp.v","FALSE","FALSE"
-ENDLIST
-LIST "COREI2C_COREI2CREAL::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v","FALSE","FALSE"
 ENDLIST
 LIST "CoreResetP::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v","FALSE","FALSE"
 SUBBLOCK "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v","FALSE","FALSE"
@@ -3362,19 +3270,9 @@ LIST "CoreGPIO_C1_CoreGPIO_C1_0_BFMA1l1OII::work","component\work\CoreGPIO_C1\Co
 ENDLIST
 LIST "CoreGPIO_C1_CoreGPIO_C1_0_BFM_MAIN::work","component\work\CoreGPIO_C1\CoreGPIO_C1_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
-LIST "COREI2C_COREI2CREAL::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v","FALSE","FALSE"
-ENDLIST
-LIST "i2c_spk::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v","FALSE","TRUE"
-ENDLIST
-LIST "testbench::work","component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v","FALSE","TRUE"
-SUBBLOCK "COREI2C_C0_COREI2C_C0_0_COREI2C::work","component\work\COREI2C_C0\COREI2C_C0_0\rtl\vlog\core\corei2c.v","FALSE","FALSE"
-SUBBLOCK "i2c_spk::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v","FALSE","TRUE"
-ENDLIST
 LIST "testbench::work","component\work\CoreGPIO_C1\CoreGPIO_C1_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
 SUBBLOCK "CoreGPIO_C1_CoreGPIO_C1_0_CoreGPIO::work","component\work\CoreGPIO_C1\CoreGPIO_C1_0\rtl\vlog\core\coregpio.v","FALSE","FALSE"
 SUBBLOCK "CoreGPIO_C1_CoreGPIO_C1_0_BFM_APB::work","component\work\CoreGPIO_C1\CoreGPIO_C1_0\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
-ENDLIST
-LIST "TESTRAM::work","component\Actel\DirectCore\CORE10100\5.1.105\rtl\vlog\test\user\testram.v","FALSE","TRUE"
 ENDLIST
 LIST "CoreAHBLite::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite.v","FALSE","FALSE"
 SUBBLOCK "COREAHBLITE_MATRIX4X16::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v","FALSE","FALSE"
@@ -3400,12 +3298,6 @@ SUBBLOCK "COREAHBLITE_SLAVESTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\C
 SUBBLOCK "COREAHBLITE_MASTERSTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v","FALSE","FALSE"
 SUBBLOCK "COREAHBLITE_MASTERSTAGE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v","FALSE","FALSE"
 ENDLIST
-LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
-SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_AHBSLAVE::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbslave.v","FALSE","TRUE"
-SUBBLOCK "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
-ENDLIST
 LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
@@ -3414,11 +3306,7 @@ SUBBLOCK "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBL
 ENDLIST
 LIST "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
 ENDLIST
-LIST "BFM_AHBSLAVEEXT::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
-ENDLIST
 LIST "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
-ENDLIST
-LIST "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.3.101\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_AHBL::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"

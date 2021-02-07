@@ -92,10 +92,11 @@
     <spirit:hwParameters>
       <spirit:hwParameter spirit:id="START_REG" spirit:name="START_REG" spirit:prompt="START_REG:" spirit:dataType="int" spirit:resolve="user">4</spirit:hwParameter>
       <spirit:hwParameter spirit:id="IPADDR_REG" spirit:name="IPADDR_REG" spirit:prompt="IPADDR_REG:" spirit:dataType="int" spirit:resolve="user">8</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="SUBADDR_REG" spirit:name="SUBADDR_REG" spirit:prompt="SUBADDR_REG:" spirit:dataType="int" spirit:resolve="user">12</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="WDATA_REG" spirit:name="WDATA_REG" spirit:prompt="WDATA_REG:" spirit:dataType="int" spirit:resolve="user">16</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="RDATA_REG" spirit:name="RDATA_REG" spirit:prompt="RDATA_REG:" spirit:dataType="int" spirit:resolve="user">20</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="DONE_REG" spirit:name="DONE_REG" spirit:prompt="DONE_REG:" spirit:dataType="int" spirit:resolve="user">24</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="READWRITE_REG" spirit:name="READWRITE_REG" spirit:prompt="READWRITE_REG:" spirit:dataType="int" spirit:resolve="user">12</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="SUBADDR_REG" spirit:name="SUBADDR_REG" spirit:prompt="SUBADDR_REG:" spirit:dataType="int" spirit:resolve="user">16</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="WDATA_REG" spirit:name="WDATA_REG" spirit:prompt="WDATA_REG:" spirit:dataType="int" spirit:resolve="user">20</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="RDATA_REG" spirit:name="RDATA_REG" spirit:prompt="RDATA_REG:" spirit:dataType="int" spirit:resolve="user">24</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="DONE_REG" spirit:name="DONE_REG" spirit:prompt="DONE_REG:" spirit:dataType="int" spirit:resolve="user">28</spirit:hwParameter>
       <spirit:hwParameter spirit:id="INIT" spirit:name="INIT" spirit:prompt="INIT:" spirit:dataType="int" spirit:resolve="user">0</spirit:hwParameter>
       <spirit:hwParameter spirit:id="TRANSFER" spirit:name="TRANSFER" spirit:prompt="TRANSFER:" spirit:dataType="int" spirit:resolve="user">1</spirit:hwParameter>
       <spirit:hwParameter spirit:id="DONE" spirit:name="DONE" spirit:prompt="DONE:" spirit:dataType="int" spirit:resolve="user">2</spirit:hwParameter>

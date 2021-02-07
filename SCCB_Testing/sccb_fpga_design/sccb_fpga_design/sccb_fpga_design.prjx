@@ -16,7 +16,7 @@ KEY VendorTechnology_PART_RANGE "COM"
 KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
 KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
 KEY VendorTechnology_OPCONR ""
-KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_33"
 KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
@@ -32,7 +32,7 @@ KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
 KEY ProjectLocation "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design"
-KEY ProjectDescription ""
+KEY ProjectDescription "SPI4.2"
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
@@ -42,9 +42,15 @@ VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
+STATE="utd"
+TIME="1603836568"
+SIZE="2117"
+IS_READONLY="TRUE"
+ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612156164"
+TIME="1612478256"
 SIZE="241"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
@@ -80,25 +86,25 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612156164"
+TIME="1612478256"
 SIZE="10445"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.v,hdl"
 STATE="utd"
-TIME="1612156164"
+TIME="1612478256"
 SIZE="2269"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612156164"
+TIME="1612478256"
 SIZE="706"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v,hdl"
 STATE="utd"
-TIME="1612156164"
+TIME="1612478256"
 SIZE="1725"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
 IS_READONLY="TRUE"
@@ -130,24 +136,24 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\sccb_design\sccb_design.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612255610"
-SIZE="2454"
+TIME="1612693012"
+SIZE="2508"
 ENDFILE
 VALUE "<project>\component\work\sccb_design\sccb_design.v,hdl"
 STATE="utd"
-TIME="1612255610"
-SIZE="3300"
+TIME="1612693011"
+SIZE="3718"
 PARENT="<project>\component\work\sccb_design\sccb_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\tb\tb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612247631"
+TIME="1612674286"
 SIZE="2274"
 ENDFILE
 VALUE "<project>\component\work\tb\tb.v,tb_hdl"
 STATE="utd"
-TIME="1612247631"
+TIME="1612674286"
 SIZE="2235"
 PARENT="<project>\component\work\tb\tb.cxf"
 IS_READONLY="TRUE"
@@ -163,49 +169,69 @@ STATE="utd"
 TIME="1611826448"
 SIZE="571"
 ENDFILE
+VALUE "<project>\hdl\clock_divider.v,hdl"
+STATE="utd"
+TIME="1612692910"
+SIZE="625"
+ENDFILE
 VALUE "<project>\hdl\config_sccb.v,hdl"
 STATE="utd"
-TIME="1612255111"
-SIZE="3999"
+TIME="1612692922"
+SIZE="2842"
 ENDFILE
 VALUE "<project>\hdl\CoreSCCB.v,hdl"
 STATE="utd"
-TIME="1612255601"
-SIZE="6134"
+TIME="1612691865"
+SIZE="6653"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1612247672"
-SIZE="1296"
+TIME="1612674545"
+SIZE="1286"
+ENDFILE
+VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
+STATE="utd"
+TIME="1612728564"
+SIZE="3141246"
 ENDFILE
 VALUE "<project>\simulation\wave.do,do"
 STATE="utd"
-TIME="1612250599"
-SIZE="4640"
+TIME="1612583560"
+SIZE="4216"
+ENDFILE
+VALUE "<project>\simulation\wave2.do,do"
+STATE="utd"
+TIME="1612676527"
+SIZE="2675"
+ENDFILE
+VALUE "<project>\simulation\wave3.do,do"
+STATE="utd"
+TIME="1612680541"
+SIZE="4498"
 ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1612254585"
-SIZE="1454"
+TIME="1612690106"
+SIZE="337"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design.so,so"
 STATE="utd"
-TIME="1612255616"
+TIME="1612558706"
 SIZE="305"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design.vm,syn_vm"
 STATE="utd"
-TIME="1612255616"
-SIZE="35094"
+TIME="1612558706"
+SIZE="46913"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design_syn.prj,prj"
 STATE="utd"
-TIME="1612255616"
-SIZE="3486"
+TIME="1612558706"
+SIZE="3636"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1612255616"
+TIME="1612558706"
 SIZE="959"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
@@ -219,12 +245,8 @@ ENDLIST
 LIST NewModulesInfo
 LIST "sccb_design::work"
 FILE "<project>\component\work\sccb_design\sccb_design.v,hdl"
-LIST AssociatedStimulus
-VALUE "<project>\stimulus\testbench.v,tb_hdl"
-ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-ideSTIMULUS=StateSuccess
 ideSYNTHESIS(<project>\synthesis\sccb_design.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
@@ -238,9 +260,6 @@ ENDLIST
 ENDLIST
 ENDLIST
 LIST AssociatedStimulus
-LIST sccb_design
-VALUE "<project>\stimulus\testbench.v,tb_hdl"
-ENDLIST
 ENDLIST
 LIST Other_Association
 ENDLIST
@@ -248,7 +267,7 @@ LIST SimulationOptions
 UseAutomaticDoFile=true
 IncludeWaveDo=false
 Type=max
-RunTime=1000ns
+RunTime=500ns
 Resolution=1fs
 VsimOpt=
 EntityName=testbench
@@ -311,8 +330,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -338,7 +357,6 @@ ENDLIST
 LIST ProjectState5.1
 LIST "sccb_design::work"
 LIST Impl1
-ideSTIMULUS=StateSuccess
 ideSYNTHESIS(<project>\synthesis\sccb_design.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
@@ -362,14 +380,26 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Run Programming Action:sccb_design_PROGRAM.log
+SmartDesign;sccb_design;0
+HDL;hdl\config_sccb.v;0
+HDL;stimulus\testbench.v;0
+HDL;hdl\clock_divider.v;0
+HDL;hdl\CoreSCCB.v;0
+Constraint Manager;Constraint Manager;0
+SmartDesign;tb;0
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "config_sccb::work","hdl\config_sccb.v","FALSE","FALSE"
 SUBBLOCK "CoreSCCB::work","hdl\CoreSCCB.v","FALSE","FALSE"
+SUBBLOCK "clock_divider::work","hdl\clock_divider.v","FALSE","FALSE"
 ENDLIST
 LIST "CoreSCCB::work","hdl\CoreSCCB.v","FALSE","FALSE"
+ENDLIST
+LIST "clock_divider::work","hdl\clock_divider.v","FALSE","FALSE"
 ENDLIST
 LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"
 SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v","FALSE","FALSE"

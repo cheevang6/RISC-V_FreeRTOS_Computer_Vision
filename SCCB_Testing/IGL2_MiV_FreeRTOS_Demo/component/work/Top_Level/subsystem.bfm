@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Microsemi SmartDesign Wed Jan 27 16:55:31 2021
+# Created by Microsemi SmartDesign Fri Feb  5 11:30:42 2021
 #
 # Syntax: 
 # ------- 
@@ -50,9 +50,10 @@ memmap MSS_SubSystem_sb_HPMS_0 0x40020800;
 # memmap AHB_Slave2MasterBridge_0 0x60000000;
 # memmap BasicIO_Interface_0 0x70000000;
 # memmap Timer_0 0x70001000;
-# memmap CoreSCCB_APB_0 0x70002000;
+# memmap CoreGPIO_C0_0 0x70002000;
+# memmap CoreSCCB_APB_0 0x70003000;
 #-----------------------------------------------------------
 # Include resource scriptlets
 #-----------------------------------------------------------
 
-# # # # # # 
+# # # # # # # # 
