@@ -5,8 +5,43 @@
   <drc>
     <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
     <StatusMessage>Error</StatusMessage>
-    <message>Out-of-date Instance</message>
-    <detail>Component definition is not consistent for instance config_sccb_0</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/instances/config_sccb_0</crossprobe>
+    <message>Undriven Pin</message>
+    <detail>Unconnected top level output port sccb_design:xclk</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/sccb_design:xclk</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin config_sccb_0:PCLK</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/config_sccb_0:PCLK</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin FCCC_C0_0:GL0</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/FCCC_C0_0:GL0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>INV_0 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/instances/INV_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin INV_0:A</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/INV_0:A</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin INV_0:Y</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_design/pins/INV_0:Y</crossprobe>
   </drc>
 </drcreport>

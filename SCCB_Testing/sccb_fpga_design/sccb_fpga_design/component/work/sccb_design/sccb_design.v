@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sun Feb  7 02:16:51 2021
+// Created by SmartDesign Sun Feb  7 22:37:09 2021
 // Version: v12.3 12.800.0.16
 //////////////////////////////////////////////////////////////////////
 
@@ -39,9 +39,10 @@ inout  sio_d;
 wire   AND2_0_Y;
 wire   BIBUF_0_Y;
 wire   config_sccb_0_siod_o_0;
-wire   config_sccb_0_siod_o_en;
 wire   DEVRST_N;
+wire   FCCC_C0_0_GL0_1;
 wire   FCCC_C0_0_LOCK;
+wire   INV_1_Y;
 wire   led1_net_0;
 wire   led2_net_0;
 wire   OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC;
@@ -53,6 +54,14 @@ wire   sio_c_net_1;
 wire   led1_net_1;
 wire   xclk_net_1;
 wire   led2_net_1;
+//--------------------------------------------------------------------
+// TiedOff Nets
+//--------------------------------------------------------------------
+wire   GND_net;
+//--------------------------------------------------------------------
+// Constant assignments
+//--------------------------------------------------------------------
+assign GND_net = 1'b0;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
@@ -79,8 +88,8 @@ AND2 AND2_0(
 //--------BIBUF
 BIBUF BIBUF_0(
         // Inputs
-        .D   ( config_sccb_0_siod_o_0 ),
-        .E   ( config_sccb_0_siod_o_en ),
+        .D   ( GND_net ),
+        .E   ( INV_1_Y ),
         // Outputs
         .Y   ( BIBUF_0_Y ),
         // Inouts
@@ -90,13 +99,13 @@ BIBUF BIBUF_0(
 //--------config_sccb
 config_sccb config_sccb_0(
         // Inputs
-        .PCLK      ( xclk_net_0 ),
+        .PCLK      ( FCCC_C0_0_GL0_1 ),
         .PRESETN   ( AND2_0_Y ),
         .siod_i    ( BIBUF_0_Y ),
         // Outputs
         .sioc      ( sio_c_net_0 ),
         .siod_o    ( config_sccb_0_siod_o_0 ),
-        .siod_o_en ( config_sccb_0_siod_o_en ) 
+        .siod_o_en (  ) 
         );
 
 //--------FCCC_C0
@@ -104,8 +113,24 @@ FCCC_C0 FCCC_C0_0(
         // Inputs
         .RCOSC_25_50MHZ ( OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC ),
         // Outputs
-        .GL0            ( xclk_net_0 ),
+        .GL0            ( FCCC_C0_0_GL0_1 ),
         .LOCK           ( FCCC_C0_0_LOCK ) 
+        );
+
+//--------INV
+INV INV_0(
+        // Inputs
+        .A ( FCCC_C0_0_GL0_1 ),
+        // Outputs
+        .Y ( xclk_net_0 ) 
+        );
+
+//--------INV
+INV INV_1(
+        // Inputs
+        .A ( config_sccb_0_siod_o_0 ),
+        // Outputs
+        .Y ( INV_1_Y ) 
         );
 
 //--------LIVE_PROBE_FB

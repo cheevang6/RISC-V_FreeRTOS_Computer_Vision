@@ -9,16 +9,16 @@ Build: O-2018.09M-SP1-1
 Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
 OS: Windows 6.2
 
-Hostname: DESKTOP-95FBL6H
+Hostname: DESKTOP-TCQTHCR
 
 Implementation : synthesis
 
-# Written on Sun Feb  7 02:16:59 2021
+# Written on Sun Feb  7 22:37:21 2021
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "sccb_design"
-Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\synthesis.fdc"
+Constraint File(s):      "C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\synthesis.fdc"
 
 
 
@@ -35,18 +35,18 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting                                                              Ending                                                                |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                                System                                                                |     10.000           |     No paths         |     No paths         |     No paths                         
-System                                                                FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                         |     10.000           |     No paths         |     No paths         |     No paths                         
-System                                                                clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
-System                                                                clock_divider_10000000s_10000s_499s_249s|sccb_clk_inferred_clock      |     No paths         |     No paths         |     10.000           |     No paths                         
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                         |     10.000           |     No paths         |     No paths         |     No paths                         
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                         clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                         |     Diff grp         |     No paths         |     No paths         |     No paths                         
-clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock     clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
-clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock     clock_divider_10000000s_10000s_499s_249s|sccb_clk_inferred_clock      |     No paths         |     No paths         |     Diff grp         |     No paths                         
-=======================================================================================================================================================================================================================================================
+Starting                                                            Ending                                                              |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                              System                                                              |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                                              FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                       |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                                              clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                                              clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock      |     No paths         |     No paths         |     10.000           |     No paths                         
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                       |     10.000           |     No paths         |     No paths         |     No paths                         
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                       clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                       |     Diff grp         |     No paths         |     No paths         |     No paths                         
+clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock     clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock     clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock      |     No paths         |     No paths         |     Diff grp         |     No paths                         
+===================================================================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 

@@ -19,6 +19,7 @@ module CoreSCCB (
 	//input sccb_clk
 );
 
+localparam  ST_WAIT_300     = 7'd20;
 localparam	ST_INIT			= 7'd0;
 localparam	ST_START_W		= 7'd1;
 localparam	ST_IPADDR_W		= 7'd2;
@@ -39,6 +40,7 @@ localparam	ST_RDATA_NA		= 7'd16;
 localparam	ST_STOP_3W2R_L	= 7'd17;
 localparam	ST_STOP_3W2R_H	= 7'd18;
 localparam	ST_DONE			= 7'd19;
+localparam  ST_WAIT2_300    = 7'd21;
 			
 reg [7:0] state;
 reg [4:0] count;
@@ -48,6 +50,10 @@ reg [6:0] ip_addr_saved;
 reg [7:0] sub_addr_saved;
 reg [7:0] data_in_saved;
 reg rw_saved;
+reg [15:0] count_300 = 0;
+
+localparam DELAY_300 = 30;
+
 
 assign pwdn = 0;
 assign sioc = (sioc_en)? ~clk : 1;
@@ -70,7 +76,7 @@ end
 // siod_o block
 always @(posedge mid_pulse) begin
 	if(!resetn) begin
-		state = ST_INIT;
+		state = ST_WAIT_300;
 		siod_o = 1;
 		count = 0;
 		data_out = 0;
@@ -79,12 +85,22 @@ always @(posedge mid_pulse) begin
         sub_addr_saved = 0;
         data_in_saved = 0;
         rw_saved = 0;
+        count_300 = 0;
 	end else begin
         siod_o_en = (state == ST_IPADDR_W_DC || state == ST_SUBADDR_DC ||
 					state == ST_WDATA_DC || state == ST_IPADDR_R_DC ||
 					state == ST_RDATA)? 0 : 1;
         if(start && !done) begin
             case(state)
+                ST_WAIT_300 : begin
+                        state = ST_WAIT_300;
+                        if(count_300 < DELAY_300-1)
+                            count_300 = count_300 + 1;
+                        else begin
+                            count_300 = 0;
+                            state = ST_INIT;
+                        end
+                    end
                 ST_INIT : begin
                         siod_o = 1;
                         state = ST_START_W;
@@ -138,7 +154,17 @@ always @(posedge mid_pulse) begin
                     end
                 ST_STOP_2W_H : begin // stop for 2-phase write
                         siod_o = 1;
-                        state = ST_START_R;
+                        count_300 = 0;
+                        state = ST_WAIT2_300;
+                    end
+                ST_WAIT2_300 : begin
+                        state = ST_WAIT2_300;
+                        if(count_300 < DELAY_300-1)
+                            count_300 = count_300 + 1;
+                        else begin
+                            count_300 = 0;
+                            state = ST_START_R;
+                        end
                     end
                 ST_START_R : begin
                         siod_o = 0;
@@ -181,15 +207,15 @@ always @(posedge mid_pulse) begin
                         done = 1;
                         //if(!start) state <= ST_INIT;
                         //else state <= ST_DONE;
-                        state = ST_INIT;
+                        state = ST_WAIT_300;
                     end
                 default : begin
                         siod_o = 1;
-                        state = ST_INIT;
+                        state = ST_WAIT_300;
                     end
             endcase
         end else begin            
-            state = ST_INIT;
+            state = ST_WAIT_300;
             siod_o = 1;
             count = 0;
             data_out = data_out;

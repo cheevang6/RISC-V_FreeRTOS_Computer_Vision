@@ -1,6 +1,6 @@
 G5PLACER_32_64_BIT_EXT=64
 DESIGN=sccb_design
-DESDIR=C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design
+DESDIR=C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design
 FAM=IGLOO2
 DIE=PA4MGL2500_N
 PACKAGE=vf256
@@ -30,7 +30,7 @@ NETLIST_TYPE=EDIF
 MINDELAYG4_REPAIR=0
 MINDELAYG5_REPAIR=0
 LAYOUT_STATE=NOT_VALID
-PDC_FILE=C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\constraint\io\user.pdc,,
+PDC_FILE=C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\constraint\io\user.pdc,,
 USE_CONSTRAINT_FLOW=1
 TARGET_DEVICES_FOR_MIGRATION='PA4MGL2500_N '
 RESTRICTPROBEPINS=1

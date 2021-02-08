@@ -18,8 +18,8 @@ The file contains the information about resource utilization per module to be di
 </column_headers>
 <module>
 <data>sccb_design</data>
-<data>54</data>
-<data>86</data>
+<data>58</data>
+<data>93</data>
 <data>10</data>
 <data>0</data>
 <data>0</data>
@@ -77,8 +77,8 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>config_sccb</data>
-<data>54</data>
-<data>86</data>
+<data>58</data>
+<data>93</data>
 <data>10</data>
 <data>0</data>
 <data>0</data>
@@ -88,8 +88,8 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <module>
 <data>CoreSCCB</data>
-<data>32</data>
-<data>65</data>
+<data>38</data>
+<data>78</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -99,9 +99,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 </module>
 <module>
-<data>clock_divider_10000000s_10000s_499s_249s</data>
+<data>clock_divider_10000000s_300000s_15s_7s</data>
 <data>12</data>
-<data>14</data>
+<data>8</data>
 <data>10</data>
 <data>0</data>
 <data>0</data>

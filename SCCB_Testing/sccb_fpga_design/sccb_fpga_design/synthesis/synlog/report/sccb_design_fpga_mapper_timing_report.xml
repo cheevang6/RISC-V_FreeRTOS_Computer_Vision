@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\synthesis\synlog\sccb_design_fpga_mapper.srr</data>
+<data>C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\synthesis\synlog\sccb_design_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,17 +17,17 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>274.1 MHz</data>
-<data>6.352</data>
+<data>325.3 MHz</data>
+<data>6.926</data>
 </row>
 <row>
-<data>clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock</data>
+<data>clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>216.1 MHz</data>
-<data>5.372</data>
+<data>178.1 MHz</data>
+<data>4.387</data>
 </row>
 <row>
-<data>clock_divider_10000000s_10000s_499s_249s|sccb_clk_inferred_clock</data>
+<data>clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock</data>
 <data>100.0 MHz</data>
 <data>NA</data>
 <data>NA</data>

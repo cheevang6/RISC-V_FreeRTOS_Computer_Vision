@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Sun Feb  7 02:17:20 2021 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Sun Feb  7 22:37:54 2021 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v12.3
 -Version: 12.800.0.16
@@ -256,10 +256,10 @@ T2                DNC                                      Reserved
 T3                VSS                                      Reserved    
 T4                DNC                                      Reserved    
 T5                VSS                                      Reserved    
-T6      sio_c     MSIO120NB4/CCC_SW0_CLKI2                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+T6      sio_c     MSIO120NB4/CCC_SW0_CLKI2                 Special     LVCMOS33  Output     TRISTATE                        Up             No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 T7                MSIO122PB4                               Unassigned  
 T8                MSIO122NB4                               Unassigned  
-T9      sio_d     MSIO130PB4/VCCC_SE0_CLKI                 Special     LVCMOS33  Inout      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           4                  5                 
+T9      sio_d     MSIO130PB4/VCCC_SE0_CLKI                 Special     LVCMOS33  Inout      TRISTATE                        Down           No                                  Off              ---         ---            Off             Off          ---   ---           4                  5                 
 T10               VSS                                      Reserved    
 T11               MSIO134PB4/VCCC_SE1_CLKI                 Special     
 T12               MSIO138PB4                               Unassigned  

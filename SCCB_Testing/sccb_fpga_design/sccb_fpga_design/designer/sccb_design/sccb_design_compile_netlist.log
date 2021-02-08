@@ -11,15 +11,15 @@ Info: Global design data:
 Info: List of globals that cannot be demoted: 
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
-    22     0      1      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
+    20     0      1      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
 
 Info: List of globals considered for demotion: 
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
-    31     0      8      'config_sccb_0/sccb_clk_0/mid_pulse_inferred_clock_RNIPF73' 
+    37     0      5      'config_sccb_0/sccb_clk_0/mid_pulse_inferred_clock_RNIPF73' 
 
 Info: Demotion information: 
-      Disconnected 8 data pins from global 'config_sccb_0/sccb_clk_0/mid_pulse_inferred_clock_RNIPF73'. 
+      Disconnected 5 data pins from global 'config_sccb_0/sccb_clk_0/mid_pulse_inferred_clock_RNIPF73'. 
 Info: CMPG4-302: Added 0 row global instances.
 Info: CMPG4-303: Deleted 0 global instances.
 

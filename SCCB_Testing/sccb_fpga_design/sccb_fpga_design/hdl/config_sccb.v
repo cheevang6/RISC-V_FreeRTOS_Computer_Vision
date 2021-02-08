@@ -22,7 +22,7 @@ wire        done;
 wire sccb_clk;
 wire mid_pulse;
 
-clock_divider #(.clk_freq(10_000_000),.sccb_clk_freq(10_000)) sccb_clk_0(
+clock_divider #(.clk_freq(10_000_000),.sccb_clk_freq(300_000)) sccb_clk_0(
 	.clk(PCLK),
 	.resetn(PRESETN),
 	.sccb_clk(sccb_clk),
@@ -98,7 +98,7 @@ always @(posedge PCLK or negedge PRESETN) begin
                 start <= 1'b1;
                 if(done) begin
                     start <= 1'b0;
-                    state <= idle; //idle;
+                    state <= init_w; //idle;
                 end else begin
                     state <= read;
                 end

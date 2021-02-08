@@ -1,58 +1,60 @@
 
-fsm_encoding {10710712} onehot
+fsm_encoding {10770772} onehot
 
-fsm_state_encoding {10710712} 00000000 {00000000000000000000}
+fsm_state_encoding {10770772} 00000000 {0000000000000000000000}
 
-fsm_state_encoding {10710712} 00000001 {00000000000000000011}
+fsm_state_encoding {10770772} 00000001 {0000000000000000000011}
 
-fsm_state_encoding {10710712} 00000010 {00000000000000000101}
+fsm_state_encoding {10770772} 00000010 {0000000000000000000101}
 
-fsm_state_encoding {10710712} 00000011 {00000000000000001001}
+fsm_state_encoding {10770772} 00000011 {0000000000000000001001}
 
-fsm_state_encoding {10710712} 00000100 {00000000000000010001}
+fsm_state_encoding {10770772} 00000100 {0000000000000000010001}
 
-fsm_state_encoding {10710712} 00000101 {00000000000000100001}
+fsm_state_encoding {10770772} 00000101 {0000000000000000100001}
 
-fsm_state_encoding {10710712} 00000110 {00000000000001000001}
+fsm_state_encoding {10770772} 00000110 {0000000000000001000001}
 
-fsm_state_encoding {10710712} 00000111 {00000000000010000001}
+fsm_state_encoding {10770772} 00000111 {0000000000000010000001}
 
-fsm_state_encoding {10710712} 00001000 {00000000000100000001}
+fsm_state_encoding {10770772} 00001000 {0000000000000100000001}
 
-fsm_state_encoding {10710712} 00001001 {00000000001000000001}
+fsm_state_encoding {10770772} 00001001 {0000000000001000000001}
 
-fsm_state_encoding {10710712} 00001010 {00000000010000000001}
+fsm_state_encoding {10770772} 00001010 {0000000000010000000001}
 
-fsm_state_encoding {10710712} 00001011 {00000000100000000001}
+fsm_state_encoding {10770772} 00001011 {0000000000100000000001}
 
-fsm_state_encoding {10710712} 00001100 {00000001000000000001}
+fsm_state_encoding {10770772} 00001100 {0000000001000000000001}
 
-fsm_state_encoding {10710712} 00001101 {00000010000000000001}
+fsm_state_encoding {10770772} 00001101 {0000000010000000000001}
 
-fsm_state_encoding {10710712} 00001110 {00000100000000000001}
+fsm_state_encoding {10770772} 00001110 {0000000100000000000001}
 
-fsm_state_encoding {10710712} 00001111 {00001000000000000001}
+fsm_state_encoding {10770772} 00001111 {0000001000000000000001}
 
-fsm_state_encoding {10710712} 00010000 {00010000000000000001}
+fsm_state_encoding {10770772} 00010000 {0000010000000000000001}
 
-fsm_state_encoding {10710712} 00010001 {00100000000000000001}
+fsm_state_encoding {10770772} 00010001 {0000100000000000000001}
 
-fsm_state_encoding {10710712} 00010010 {01000000000000000001}
+fsm_state_encoding {10770772} 00010010 {0001000000000000000001}
 
-fsm_state_encoding {10710712} 00010011 {10000000000000000001}
+fsm_state_encoding {10770772} 00010011 {0010000000000000000001}
 
-fsm_registers {10710712} {state[19]}  {state[18]}  {state[17]}  {state[16]}  {state[15]}  {state[14]}  {state[13]}  {state[12]}  {state[11]}  {state[10]}  {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state_i[0]} 
+fsm_state_encoding {10770772} 00010100 {0100000000000000000001}
 
-fsm_encoding {12610611} onehot
+fsm_state_encoding {10770772} 00010101 {1000000000000000000001}
 
-fsm_state_encoding {12610611} init_w {00001}
+fsm_registers {10770772} {state[21]}  {state[20]}  {state[19]}  {state[18]}  {state[17]}  {state[16]}  {state[15]}  {state[14]}  {state[13]}  {state[12]}  {state[11]}  {state[10]}  {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state_i[0]} 
 
-fsm_state_encoding {12610611} write {00010}
+fsm_encoding {12610611} sequential
 
-fsm_state_encoding {12610611} init_r {00100}
+fsm_state_encoding {12610611} init_w {00}
 
-fsm_state_encoding {12610611} read {01000}
+fsm_state_encoding {12610611} write {01}
 
-fsm_state_encoding {12610611} idle {10000}
+fsm_state_encoding {12610611} init_r {10}
 
-fsm_registers {12610611} {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+fsm_state_encoding {12610611} read {11}
+
+fsm_registers {12610611} {state[1]}  {state[0]} 

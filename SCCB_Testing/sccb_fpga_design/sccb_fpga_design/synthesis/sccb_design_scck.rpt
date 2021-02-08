@@ -9,14 +9,14 @@ Build: O-2018.09M-SP1-1
 Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
 OS: Windows 6.2
 
-Hostname: DESKTOP-95FBL6H
+Hostname: DESKTOP-TCQTHCR
 
 Implementation : synthesis
 
-# Written on Sun Feb  7 02:16:59 2021
+# Written on Sun Feb  7 22:37:20 2021
 
 ##### FILES SYNTAX CHECKED ##############################################
-Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\synthesis.fdc"
+Constraint File(s):      "C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\designer\sccb_design\synthesis.fdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################
@@ -30,30 +30,30 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start                                                                 Requested     Requested     Clock        Clock                   Clock
-Level     Clock                                                                 Frequency     Period        Type         Group                   Load 
-------------------------------------------------------------------------------------------------------------------------------------------------------
-0 -       System                                                                100.0 MHz     10.000        system       system_clkgroup         0    
-                                                                                                                                                      
-0 -       clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     62   
-                                                                                                                                                      
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                         100.0 MHz     10.000        inferred     Inferred_clkgroup_0     23   
-                                                                                                                                                      
-0 -       clock_divider_10000000s_10000s_499s_249s|sccb_clk_inferred_clock      100.0 MHz     10.000        inferred     Inferred_clkgroup_2     2    
-======================================================================================================================================================
+          Start                                                               Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                                               Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                              100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                                    
+0 -       clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     67   
+                                                                                                                                                    
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                       100.0 MHz     10.000        inferred     Inferred_clkgroup_0     22   
+                                                                                                                                                    
+0 -       clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock      100.0 MHz     10.000        inferred     Inferred_clkgroup_2     2    
+====================================================================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                                                      Clock     Source                                           Clock Pin                                Non-clock Pin                               Non-clock Pin                             
-Clock                                                                 Load      Pin                                              Seq Example                              Seq Example                                 Comb Example                              
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                                0         -                                                -                                        -                                           -                                         
-                                                                                                                                                                                                                                                                
-clock_divider_10000000s_10000s_499s_249s|mid_pulse_inferred_clock     62        config_sccb_0.sccb_clk_0.mid_pulse.Q[0](dff)     config_sccb_0.coresccb_0.siod_o_en.C     config_sccb_0.state[4:0].I[0]               config_sccb_0.sub_addr_0_sqmuxa.I[0](and) 
-                                                                                                                                                                                                                                                                
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                         23        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)            config_sccb_0.state[4:0].C               -                                           FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)      
-                                                                                                                                                                                                                                                                
-clock_divider_10000000s_10000s_499s_249s|sccb_clk_inferred_clock      2         config_sccb_0.sccb_clk_0.sccb_clk.Q[0](dffe)     config_sccb_0.coresccb_0.sioc_en.C       config_sccb_0.sccb_clk_0.mid_pulse.D[0]     config_sccb_0.coresccb_0.un1_clk.I[0](inv)
-================================================================================================================================================================================================================================================================
+                                                                    Clock     Source                                           Clock Pin                              Non-clock Pin                               Non-clock Pin                             
+Clock                                                               Load      Pin                                              Seq Example                            Seq Example                                 Comb Example                              
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                              0         -                                                -                                      -                                           -                                         
+                                                                                                                                                                                                                                                            
+clock_divider_10000000s_300000s_15s_7s|mid_pulse_inferred_clock     67        config_sccb_0.sccb_clk_0.mid_pulse.Q[0](dff)     config_sccb_0.coresccb_0.done.C        config_sccb_0.state[3:0].I[0]               config_sccb_0.sub_addr_0_sqmuxa.I[0](and) 
+                                                                                                                                                                                                                                                            
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                       22        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)            config_sccb_0.state[3:0].C             -                                           INV_0.A(INV)                              
+                                                                                                                                                                                                                                                            
+clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock      2         config_sccb_0.sccb_clk_0.sccb_clk.Q[0](dffe)     config_sccb_0.coresccb_0.sioc_en.C     config_sccb_0.sccb_clk_0.mid_pulse.D[0]     config_sccb_0.coresccb_0.un1_clk.I[0](inv)
+============================================================================================================================================================================================================================================================

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Sun Feb  7 02:17:20 2021 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Sun Feb  7 22:37:54 2021 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v12.3
 -Version: 12.800.0.16
@@ -14,6 +14,6 @@ Port     |Pin |Fixed |Function                 |Bank     |I/O Std   |Direction  
 DEVRST_N  M11  Fixed  DEVRST_N                  ---       
 led1      J16  Yes    MSIO11PB2//CCC_NE0_CLKI0  Bank2     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
 led2      M16  Yes    MSIO1NB2                  Bank2     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
-sio_c     T6   Yes    MSIO120NB4/CCC_SW0_CLKI2  Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
-sio_d     T9   Yes    MSIO130PB4/VCCC_SE0_CLKI  Bank4     LVCMOS33   Inout                           TRISTATE                        None                                No                                  Off              ---            ---             Off             Off          ---           ---                4                  5                 
+sio_c     T6   Yes    MSIO120NB4/CCC_SW0_CLKI2  Bank4     LVCMOS33   Output                          TRISTATE                        Up                                  No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+sio_d     T9   Yes    MSIO130PB4/VCCC_SE0_CLKI  Bank4     LVCMOS33   Inout                           TRISTATE                        Down                                No                                  Off              ---            ---             Off             Off          ---           ---                4                  5                 
 xclk      M9   Yes    MSIO132PB4                Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
