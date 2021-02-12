@@ -1,0 +1,63 @@
+Info: No timing constraint has been associated to the 'Place and Route' tool. 'Place and Route' will be run in non Timing Driven mode.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+***** Place and Route Configurations *****
+Timing-driven            : OFF
+Power-driven             : OFF
+I/O Register Combining   : OFF
+High-effort              : OFF
+Repair min-delay         : OFF
+Incremental              : OFF
+
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 5 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V5.0 - 12.800.0 
+Design: sccb_design                     Started: Mon Feb  8 19:23:23 2021
+
+Initializing Normal-Effort Standard Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 0 seconds
+Placement                : 0 seconds
+Improvement              : 0 seconds
+
+Placer completed successfully.
+
+Design: sccb_design                     
+Finished: Mon Feb  8 19:23:25 2021
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:02
+Total Memory Usage: 132.8 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design\sccb_designStarted: Mon Feb  8 19:23:27 2021
+
+
+Router completed successfully.
+
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design\sccb_design
+Finished: Mon Feb  8 19:23:35 2021
+Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:08
+Total Memory Usage: 895.4 Mbytes
+                        o - o - o - o - o - o
+
+Resource Usage
++---------------+------+-------+------------+
+| Type          | Used | Total | Percentage |
++---------------+------+-------+------------+
+| 4LUT          | 168  | 27696 | 0.61       |
+| DFF           | 39   | 27696 | 0.14       |
+| I/O Register  | 0    | 408   | 0.00       |
+| Logic Element | 168  | 27696 | 0.61       |
++---------------+------+-------+------------+
+

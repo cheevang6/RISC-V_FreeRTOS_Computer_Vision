@@ -1,0 +1,18 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Tue Feb  9 14:45:57 2021
+Project   :  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot
+Component :  OSC_C0
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/OSC_C0/OSC_C0.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/Actel/SgCore/OSC/2.0.101/osc_comps.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+

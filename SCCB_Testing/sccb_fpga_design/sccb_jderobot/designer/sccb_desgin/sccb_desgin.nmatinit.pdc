@@ -1,0 +1,267 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.3 12.800.0.16
+
+# Design Name: sccb_desgin 
+
+# Input Netlist Format: EDIF 
+
+# Family: IGLOO2 , Die: M2GL025 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Tue Feb  9 14:52:24 2021 
+
+
+#
+# I/O constraints
+#
+
+set_io done -DIRECTION OUTPUT -pinname J16 -fixed no
+set_io ov7670_pwdn -DIRECTION OUTPUT -pinname P9 -fixed no
+set_io ov7670_rst_n -DIRECTION OUTPUT -pinname N8 -fixed no
+set_io sioc -DIRECTION OUTPUT -pinname M10 -fixed no
+set_io siod -DIRECTION OUTPUT -pinname M9 -fixed no
+set_io xclk -DIRECTION OUTPUT -pinname P8 -fixed no
+
+#
+# Core cell constraints
+#
+
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[13\] -fixed no 398 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[7\] -fixed no 431 51
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[11\] -fixed no 428 45
+set_location top_ov7670_0/ctrl/i_sccb/un1_sclk_end_i_a4_i_0 -fixed no 416 42
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_RNO\[2\] -fixed no 419 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_o2\[1\] -fixed no 442 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[2\] -fixed no 430 51
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st_ns_i_0_0_a2\[0\] -fixed no 413 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_o5\[13\] -fixed no 420 45
+set_location top_ov7670_0/ctrl/i_regs/cnt_reg\[2\] -fixed no 435 43
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[2\] -fixed no 436 49
+set_location AND2_0_RNIKOS1/U0_RGB1 -fixed no 446 51
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNIBKCU\[14\] -fixed no 415 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_a5\[6\] -fixed no 437 45
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_i_a2 -fixed no 410 48
+set_location top_ov7670_0/ctrl/i_regs/cnt_reg\[4\] -fixed no 437 43
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_3\[10\] -fixed no 439 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_o5\[11\] -fixed no 442 48
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_i_0_0\[2\] -fixed no 427 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_2\[5\] -fixed no 438 45
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[8\] -fixed no 393 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_o5\[0\] -fixed no 430 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[12\] -fixed no 435 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[22\] -fixed no 411 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[4\] -fixed no 429 51
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[17\] -fixed no 402 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[5\] -fixed no 428 51
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[11\] -fixed no 428 46
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_a2_0\[8\] -fixed no 441 45
+set_location top_ov7670_0/ctrl/i_sccb/cnt_8bits\[2\] -fixed no 411 43
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[7\] -fixed no 392 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_a5\[11\] -fixed no 423 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_0\[7\] -fixed no 420 48
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[6\] -fixed no 420 52
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[14\] -fixed no 422 48
+set_location top_ov7670_0/ctrl/i_sccb/cnt_8bits_3_0\[0\] -fixed no 412 42
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4\[5\] -fixed no 402 43
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_1\[6\] -fixed no 440 48
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st\[4\] -fixed no 422 43
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[22\] -fixed no 407 49
+set_location top_ov7670_0/ctrl/i_sccb/un1_send_rg15_1_0_0_0 -fixed no 431 42
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st\[3\] -fixed no 414 43
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[10\] -fixed no 431 45
+set_location top_ov7670_0/ctrl/i_sccb/cnt_phases_3_0_0\[0\] -fixed no 430 42
+set_location top_ov7670_0/ctrl/i_regs/sw_regs_st\[0\] -fixed no 439 43
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[15\] -fixed no 417 46
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0_0\[1\] -fixed no 426 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[15\] -fixed no 426 45
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4_1_sqmuxa_0_a2_0_a2 -fixed no 404 42
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[7\] -fixed no 431 52
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0_a2_0_0\[3\] -fixed no 418 42
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4\[0\] -fixed no 397 43
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_o5\[4\] -fixed no 433 45
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st\[1\] -fixed no 426 43
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st_ns_i_i_i_a2_0_0\[2\] -fixed no 411 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[0\] -fixed no 424 48
+set_location top_ov7670_0/ctrl/i_regs/cnt_reg\[3\] -fixed no 436 43
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[21\] -fixed no 406 49
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[19\] -fixed no 404 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_m5\[0\] -fixed no 429 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0\[11\] -fixed no 434 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_m2\[10\] -fixed no 443 45
+set_location top_ov7670_0/ctrl/i_sccb/cnt_8bits\[0\] -fixed no 412 43
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0_a2\[3\] -fixed no 410 42
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[12\] -fixed no 397 49
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_o3_15 -fixed no 399 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNIDFAO\[23\] -fixed no 413 45
+set_location top_ov7670_0/ctrl/i_sccb/cnt_phases\[0\] -fixed no 430 43
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[0\] -fixed no 422 52
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0_o2_0\[3\] -fixed no 406 42
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_5_1_0\[15\] -fixed no 417 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[7\] -fixed no 427 49
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st_RNIK4R91\[2\] -fixed no 414 48
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4\[3\] -fixed no 400 43
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st_RNO\[0\] -fixed no 418 48
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[11\] -fixed no 396 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[8\] -fixed no 425 52
+set_location top_ov7670_0/ctrl/i_sccb/cnt_phases\[1\] -fixed no 420 43
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st\[2\] -fixed no 419 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[3\] -fixed no 430 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0\[5\] -fixed no 427 51
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_5_1\[21\] -fixed no 409 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[16\] -fixed no 414 46
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_o2_0\[9\] -fixed no 431 48
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[16\] -fixed no 401 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[14\] -fixed no 422 49
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4\[2\] -fixed no 399 43
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_0\[5\] -fixed no 436 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[7\] -fixed no 427 48
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0_0_a2\[1\] -fixed no 425 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[4\] -fixed no 437 49
+set_location top_ov7670_0/ctrl/i_sccb/cnt_8bits_3_0\[1\] -fixed no 417 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_o2\[2\] -fixed no 443 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[10\] -fixed no 431 46
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[9\] -fixed no 394 49
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[18\] -fixed no 403 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0\[4\] -fixed no 437 48
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[14\] -fixed no 419 46
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0\[6\] -fixed no 426 51
+set_location top_ov7670_0/ctrl/i_sccb/cnt_8bits\[1\] -fixed no 417 43
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[0\] -fixed no 385 49
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_RNIFTQI\[3\] -fixed no 415 42
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 -fixed no 447 51
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[15\] -fixed no 426 46
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st\[3\] -fixed no 416 49
+set_location top_ov7670_0/ctrl/i_sccb/un13_sclk_div4_end_3 -fixed no 407 42
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_5_1_0\[23\] -fixed no 415 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_a5\[2\] -fixed no 441 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[9\] -fixed no 426 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[11\] -fixed no 434 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[12\] -fixed no 424 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_5_1\[19\] -fixed no 416 45
+set_location top_ov7670_0/ctrl/i_sccb/cnt_4sclk_RNO\[0\] -fixed no 408 42
+set_location top_ov7670_0/ctrl/i_sccb/cnt_phases_3_0_0\[1\] -fixed no 420 42
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[20\] -fixed no 412 46
+set_location top_ov7670_0/ctrl/i_sccb/ready -fixed no 403 45
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st\[0\] -fixed no 418 49
+set_location ip_interface_inst -fixed no 203 0
+set_location top_ov7670_0/ctrl/i_sccb/cnt_phases_3_0_0_o2\[0\] -fixed no 421 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[8\] -fixed no 421 48
+set_location OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ -fixed no 24 134
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[4\] -fixed no 389 49
+set_location top_ov7670_0/ctrl/i_sccb/sdat_out_iv_0_0_0 -fixed no 410 45
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_i_0_o2\[2\] -fixed no 429 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_a2\[12\] -fixed no 434 45
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[3\] -fixed no 388 49
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[6\] -fixed no 391 49
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[20\] -fixed no 405 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[13\] -fixed no 422 45
+set_location top_ov7670_0/ctrl/i_sccb/cnt_8bits_3_0_o2\[1\] -fixed no 409 42
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[9\] -fixed no 423 52
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[4\] -fixed no 429 52
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0_0_a2_1\[4\] -fixed no 424 42
+set_location top_ov7670_0/ctrl/i_regs/cnt_reg\[1\] -fixed no 434 43
+set_location AND2_0_RNIKOS1 -fixed no 297 72
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0_0\[4\] -fixed no 422 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_a5\[12\] -fixed no 440 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[8\] -fixed no 425 51
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4\[6\] -fixed no 403 43
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st\[2\] -fixed no 419 43
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_o3_16 -fixed no 391 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_1\[1\] -fixed no 432 48
+set_location top_ov7670_0/ctrl/i_sccb/un13_sclk_div4_end_2 -fixed no 405 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_o2\[9\] -fixed no 427 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[3\] -fixed no 421 52
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4\[1\] -fixed no 398 43
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_o3 -fixed no 393 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[1\] -fixed no 424 51
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_5_1\[20\] -fixed no 412 45
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st\[0\] -fixed no 423 43
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[6\] -fixed no 426 52
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[24\] -fixed no 409 49
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st_ns_i_i_i_o2\[2\] -fixed no 412 48
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[10\] -fixed no 395 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[9\] -fixed no 423 51
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[15\] -fixed no 400 49
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_o3_13 -fixed no 404 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_o5\[1\] -fixed no 439 48
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[0\] -fixed no 422 51
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_5_1_0\[14\] -fixed no 419 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[10\] -fixed no 423 46
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0\[1\] -fixed no 438 48
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_o3_17 -fixed no 388 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[17\] -fixed no 408 46
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[19\] -fixed no 416 46
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[0\] -fixed no 424 49
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[2\] -fixed no 387 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0\[2\] -fixed no 436 48
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[23\] -fixed no 415 46
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_o5\[2\] -fixed no 433 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_o5\[8\] -fixed no 425 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[5\] -fixed no 427 52
+set_location top_ov7670_0/ctrl/i_sccb/cnt_8bits_3_0\[2\] -fixed no 411 42
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0_2\[9\] -fixed no 428 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[3\] -fixed no 430 46
+set_location top_ov7670_0/ctrl/i_regs/cnt_reg\[5\] -fixed no 438 43
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[14\] -fixed no 399 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[10\] -fixed no 423 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_1\[10\] -fixed no 435 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[22\] -fixed no 411 46
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st\[1\] -fixed no 411 49
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_o3_14 -fixed no 397 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[5\] -fixed no 428 52
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[1\] -fixed no 424 52
+set_location AND2_0 -fixed no 407 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[13\] -fixed no 422 46
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st\[4\] -fixed no 417 49
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st_RNO\[3\] -fixed no 416 48
+set_location top_ov7670_0/ctrl/i_sccb/cnt_4sclk\[1\] -fixed no 413 43
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[5\] -fixed no 390 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_5_1\[16\] -fixed no 414 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_o5\[15\] -fixed no 425 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[8\] -fixed no 421 49
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0_o2\[3\] -fixed no 428 42
+set_location top_ov7670_0/ctrl/i_regs/sw_regs_st_RNIEGGN1\[0\] -fixed no 439 42
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_o3_21 -fixed no 401 45
+set_location top_ov7670_0/ctrl/i_regs/reg_i_RNO\[12\] -fixed no 435 48
+set_location top_ov7670_0/ctrl/i_regs/reg_i\[1\] -fixed no 438 49
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st_RNO\[4\] -fixed no 417 48
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[23\] -fixed no 408 49
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[17\] -fixed no 408 45
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_1_sqmuxa_i_o3_12 -fixed no 395 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[13\] -fixed no 421 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[2\] -fixed no 430 52
+set_location top_ov7670_0/ctrl/i_regs/pr_ctrl_st_RNO\[2\] -fixed no 419 48
+set_location top_ov7670_0/ctrl/i_regs/cnt_reg\[0\] -fixed no 433 43
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4\[4\] -fixed no 401 43
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_0\[15\] -fixed no 429 45
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[3\] -fixed no 421 51
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[13\] -fixed no 421 46
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST -fixed no 293 72
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_5_1\[18\] -fixed no 418 45
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms\[1\] -fixed no 386 49
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_0\[9\] -fixed no 426 48
+set_location top_ov7670_0/ctrl/i_sccb/send_rg_RNO\[6\] -fixed no 420 51
+set_location top_ov7670_0/ctrl/i_sccb/cnt_4sclk\[0\] -fixed no 408 43
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_0\[3\] -fixed no 414 42
+set_location top_ov7670_0/ctrl/i_sccb/cnt_4sclk_RNO\[1\] -fixed no 413 42
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[21\] -fixed no 409 46
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[18\] -fixed no 418 46
+set_location top_ov7670_0/ctrl/i_sccb/send_rg\[12\] -fixed no 424 46
+set_location top_ov7670_0/ctrl/i_regs/reg_i_6_i_o2\[10\] -fixed no 432 45
+set_location top_ov7670_0/ctrl/i_sccb/pr_sccb_st_ns_i_i_0\[0\] -fixed no 423 42
+set_location FCCC_C0_0/FCCC_C0_0/CCC_INST -fixed no 18 134
+set_location SYSRESET_0 -fixed no 624 8
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_s_110 -fixed no 384 48
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4_s_112 -fixed no 396 42
+set_location top_ov7670_0/ctrl/i_regs/cnt_reg_s_111 -fixed no 432 42
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB0 -fixed no 446 48
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB1 -fixed no 446 45
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB2 -fixed no 446 42
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0 -fixed no 447 48
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB1 -fixed no 447 45
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB2 -fixed no 447 42
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_s_110_CC_0 -fixed no 384 50
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_s_110_CC_1 -fixed no 396 50
+set_location top_ov7670_0/ctrl/i_regs/cnt300ms_s_110_CC_2 -fixed no 408 50
+set_location top_ov7670_0/ctrl/i_regs/cnt_reg_s_111_CC_0 -fixed no 432 44
+set_location top_ov7670_0/ctrl/i_sccb/cnt_sclk_div4_s_112_CC_0 -fixed no 396 44

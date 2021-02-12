@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <style>
+      body { font-family:arial; font-size:10pt; text-align:left; }
+      h1, h2 {
+          padding-top: 30px;
+      }
+      h3 {
+          padding-top: 20px;
+      }
+      h4, h5, h6 {
+          padding-top: 10px;
+          font-size:12pt;
+      }
+      table {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          border-collapse:collapse;
+      }
+      table th, table td {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          padding: 4px;
+      }
+     </style>
+    </head>
+    <body>
+        <h1 align="center">Global Net Report</h1>
+        <p>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</p>
+        <p>Date: Tue Feb  9 14:52:15 2021
+</p>
+        <h2>Global Nets Information</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> GB Location </th>
+                <th> Net Name </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>GB[3] </td>
+                <td>(293, 72)</td>
+                <td>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</td>
+                <td>96</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>GB[7] </td>
+                <td>(297, 72)</td>
+                <td>AND2_0_RNIKOS1/U0_YWn_GEast</td>
+                <td>96</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>I/O to GB Connections</h2>
+        <p>(none)</p>
+        <h2>Fabric to GB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> To </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AND2_0:Y</td>
+                <td>(407, 45)</td>
+                <td>GB[7] </td>
+                <td>AND2_0_Z</td>
+                <td>ROUTED</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>CCC to GB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th>Pin Swapped for Back Annotation Only</th>
+                <th> To </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td>CCC-NW1 (18, 134)</td>
+                <td>GL0 =&gt; GL3</td>
+                <td>GB[3] </td>
+                <td>FCCC_C0_0/FCCC_C0_0/GL0_net</td>
+                <td>HARDWIRED</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>CCC Input Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> To (Pin Swapped for Back Annotation Only) </th>
+                <th> CCC Location </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ:CLKOUT</td>
+                <td>(24, 134)</td>
+                <td>FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:RCOSC_25_50MHZ</td>
+                <td>CCC-NW1 (18, 134)</td>
+                <td>OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC</td>
+                <td>HARDWIRED</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>Local Clock Nets to RGB Connections</h2>
+        <p>(none)</p>
+        <h2>Global Clock Nets to RGB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> Net Name </th>
+                <th> Fanout </th>
+                <th/>
+                <th> RGB Location </th>
+                <th> Local Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>GB[3] </td>
+                <td>(293, 72)</td>
+                <td>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</td>
+                <td>96</td>
+                <td>1</td>
+                <td>(447, 42)</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(447, 45)</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(447, 48)</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(447, 51)</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>GB[7] </td>
+                <td>(297, 72)</td>
+                <td>AND2_0_RNIKOS1/U0_YWn_GEast</td>
+                <td>96</td>
+                <td>1</td>
+                <td>(446, 42)</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(446, 45)</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(446, 48)</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(446, 51)</td>
+                <td>12</td>
+            </tr>
+        </table>
+        <p/>
+    </body>
+</html>

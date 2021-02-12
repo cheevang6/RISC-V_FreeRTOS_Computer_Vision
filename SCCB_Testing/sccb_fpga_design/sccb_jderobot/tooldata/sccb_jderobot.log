@@ -1,0 +1,16 @@
+Project Name: sccb_jderobot
+Location: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2GL025-VF256
+Family         : IGLOO2
+Die            : M2GL025
+Package        : 256 VF
+Speed          : STD
+Core Voltage   : 1.2
+Range          : COM

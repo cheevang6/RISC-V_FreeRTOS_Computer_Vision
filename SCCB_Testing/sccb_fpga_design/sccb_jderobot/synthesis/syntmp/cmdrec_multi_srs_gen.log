@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  sccb_desgin  -multisrs  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\synthesis\synwork\sccb_desgin_comp.srs  -osyn  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\synthesis\synwork\sccb_desgin_mult.srs  -log  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\synthesis\synlog\sccb_desgin_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe -link -top sccb_desgin -multisrs ..\synwork\sccb_desgin_comp.srs -osyn ..\synwork\sccb_desgin_mult.srs -log ..\synlog\sccb_desgin_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\sccb_desgin_comp.srs|io:i|time:1612923042|size:23806|exec:0|csum:7FE81DC741F9207143F787BEC0EEDC8D
+file:..\synwork\sccb_desgin_mult.srs|io:o|time:1612923043|size:3700|exec:0|csum:
+file:..\synlog\sccb_desgin_multi_srs_gen.srr|io:o|time:1612923043|size:1226|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1562075633|size:8810496|exec:1|csum:20DB59B568B25441B8251D61083745CC

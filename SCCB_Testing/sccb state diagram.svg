@@ -632,6 +632,118 @@
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path3455-81-1-96" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1055-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1053-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleInM-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1301-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1045-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1043-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1055-2-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1053-2-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1055-5-29"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1053-0-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleInM-5-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1301-3-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1045-0-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1043-7-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1055-5-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1053-0-3" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -640,13 +752,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="1434.0745"
-     inkscape:cy="-98.725552"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-643.43314"
+     inkscape:cy="-239.47565"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
-     showgrid="false"
+     showgrid="true"
      inkscape:snap-text-baseline="true"
      inkscape:snap-center="false"
      inkscape:snap-object-midpoints="false"
@@ -656,7 +768,7 @@
      inkscape:window-y="11"
      inkscape:window-maximized="0"
      inkscape:lockguides="true"
-     inkscape:snap-global="false">
+     inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
        id="grid1605" />
@@ -760,16 +872,19 @@
          x="-131.34909"
          y="-149.55159"
          style="font-size:4.23333px;stroke-width:0.264583">SIO_D</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m -195.79167,-156.10416 h -2.64583"
-       id="path1583"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.85208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker1055-2)"
-       d="m -195.79167,-156.10416 h -5.29167"
-       id="path1039-3"
-       sodipodi:nodetypes="cc" />
+    <g
+       id="g1605">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m -195.79167,-156.10416 h -2.64583"
+         id="path1583"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.85208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker1055-2)"
+         d="m -195.79167,-156.10416 h -5.29167"
+         id="path1039-3"
+         sodipodi:nodetypes="cc" />
+    </g>
     <text
        xml:space="preserve"
        style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
@@ -1571,5 +1686,221 @@
        d="m 387.61458,9.2604167 0,26.4583333"
        id="path1747-23-9-0"
        sodipodi:nodetypes="cc" />
+    <g
+       id="g2311"
+       transform="translate(-4.4836173,-1.466334)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round"
+         id="rect983-3"
+         width="42.333328"
+         height="26.45834"
+         x="-93.412216"
+         y="-83.200333" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+         x="-72.245552"
+         y="-72.616989"
+         id="text987-1"><tspan
+           sodipodi:role="line"
+           id="tspan985-4"
+           x="-72.245552"
+           y="-72.616989"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">Slave</tspan><tspan
+           sodipodi:role="line"
+           x="-72.245552"
+           y="-65.56144"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           id="tspan989-0">Device</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker1055-5)"
+       d="m -142.61042,-79.375 h 42.06875"
+       id="path1039-32"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#TriangleInM-5);marker-end:url(#marker1045-0)"
+       d="m -140.22917,-63.5 h 39.6875"
+       id="path1041-5"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+       x="-129.81375"
+       y="-81.551949"
+       id="text1563-6"><tspan
+         sodipodi:role="line"
+         id="tspan1561-7"
+         x="-129.81375"
+         y="-81.551949"
+         style="font-size:4.23333px;stroke-width:0.264583">SIO_C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+       x="-129.81375"
+       y="-65.649414"
+       id="text1563-1-5"><tspan
+         sodipodi:role="line"
+         id="tspan1561-1-9"
+         x="-129.81375"
+         y="-65.649414"
+         style="font-size:4.23333px;stroke-width:0.264583">SIO_D</tspan></text>
+    <g
+       id="g2311-1"
+       transform="translate(-91.796117,-1.466334)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round"
+         id="rect983-3-1"
+         width="42.333328"
+         height="26.45834"
+         x="-93.412216"
+         y="-83.200333" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+         x="-72.245552"
+         y="-72.616989"
+         id="text987-1-6"><tspan
+           sodipodi:role="line"
+           id="tspan985-4-4"
+           x="-72.245552"
+           y="-72.616989"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">Master</tspan><tspan
+           sodipodi:role="line"
+           x="-72.245552"
+           y="-65.56144"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           id="tspan989-0-6">Device</tspan></text>
+    </g>
+    <g
+       id="g2311-7"
+       transform="translate(-4.4836141,36.898249)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round"
+         id="rect983-3-6"
+         width="42.333328"
+         height="26.45834"
+         x="-93.412216"
+         y="-83.200333" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+         x="-72.245552"
+         y="-72.616989"
+         id="text987-1-1"><tspan
+           sodipodi:role="line"
+           id="tspan985-4-5"
+           x="-72.245552"
+           y="-72.616989"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">Slave</tspan><tspan
+           sodipodi:role="line"
+           x="-72.245552"
+           y="-65.56144"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           id="tspan989-0-0">Device</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker1055-5-29)"
+       d="m -142.61041,-42.333335 h 42.06874"
+       id="path1039-32-36"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#TriangleInM-5-9);marker-end:url(#marker1045-0-9)"
+       d="m -140.22916,-23.812501 h 39.68749"
+       id="path1041-5-6"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+       x="-129.81377"
+       y="-44.510281"
+       id="text1563-6-5"><tspan
+         sodipodi:role="line"
+         id="tspan1561-7-5"
+         x="-129.81377"
+         y="-44.510281"
+         style="font-size:4.23333px;stroke-width:0.264583">SCCB_E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+       x="-129.81377"
+       y="-25.961916"
+       id="text1563-1-5-9"><tspan
+         sodipodi:role="line"
+         id="tspan1561-1-9-1"
+         x="-129.81377"
+         y="-25.961916"
+         style="font-size:4.23333px;stroke-width:0.264583">SIO_D</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round"
+       id="rect983-3-1-1"
+       width="42.333328"
+       height="26.45834"
+       x="-185.20833"
+       y="-46.302086" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+       x="-164.04167"
+       y="-35.718742"
+       id="text987-1-6-6"><tspan
+         sodipodi:role="line"
+         id="tspan985-4-4-4"
+         x="-164.04167"
+         y="-35.718742"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583">Master</tspan><tspan
+         sodipodi:role="line"
+         x="-164.04167"
+         y="-28.663191"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan989-0-6-1">Device</tspan></text>
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       d="m -206.375,26.458333 h 26.45834 l 10.58333,21.166666 52.91666,10e-7"
+       id="path4334"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.794001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker1055-5-2)"
+       d="m -142.61041,-33.072917 h 42.06874"
+       id="path1039-32-3"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+       x="-129.81377"
+       y="-35.249866"
+       id="text1563-6-4"><tspan
+         sodipodi:role="line"
+         id="tspan1561-7-8"
+         x="-129.81377"
+         y="-35.249866"
+         style="font-size:4.23333px;stroke-width:0.264583">SIO_C</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m -206.375,-5.2916667 47.625,1e-7 10.58334,21.1666666 31.74999,0"
+       id="path4332"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="-232.83333"
+       y="39.6875"
+       id="text4637"><tspan
+         sodipodi:role="line"
+         id="tspan4635"
+         x="-232.83333"
+         y="39.6875"
+         style="font-size:5.64444px;stroke-width:0.264583">SIO_D</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="-232.83333"
+       y="7.9375"
+       id="text4641"><tspan
+         sodipodi:role="line"
+         id="tspan4639"
+         x="-232.83333"
+         y="7.9375"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">SIO_C</tspan></text>
   </g>
 </svg>

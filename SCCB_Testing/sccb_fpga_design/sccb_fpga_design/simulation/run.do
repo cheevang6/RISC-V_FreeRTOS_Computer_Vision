@@ -1,5 +1,5 @@
 quietly set ACTELLIBNAME IGLOO2
-quietly set PROJECT_DIR "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design"
+quietly set PROJECT_DIR "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design"
 
 if {[file exists presynth/_info]} {
    echo "INFO: Simulation library presynth already exists"
@@ -19,8 +19,8 @@ vlog -sv -work presynth "${PROJECT_DIR}/hdl/CoreSCCB.v"
 vlog -sv -work presynth "${PROJECT_DIR}/hdl/clock_divider.v"
 vlog -sv -work presynth "${PROJECT_DIR}/hdl/config_sccb.v"
 vlog -sv -work presynth "${PROJECT_DIR}/component/work/sccb_design/sccb_design.v"
-vlog "+incdir+${PROJECT_DIR}/stimulus" -sv -work presynth "${PROJECT_DIR}/stimulus/testbench.v"
+vlog "+incdir+${PROJECT_DIR}/component/work/tb" -sv -work presynth "${PROJECT_DIR}/component/work/tb/tb.v"
 
-vsim -L IGLOO2 -L presynth  -t 1fs presynth.testbench
-add wave /testbench/*
+vsim -L IGLOO2 -L presynth  -t 1fs presynth.tb
+add wave /tb/*
 run 500ns

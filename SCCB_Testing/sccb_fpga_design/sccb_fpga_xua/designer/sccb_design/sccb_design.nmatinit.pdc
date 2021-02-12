@@ -1,0 +1,234 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.3 12.800.0.16
+
+# Design Name: sccb_design 
+
+# Input Netlist Format: EDIF 
+
+# Family: IGLOO2 , Die: M2GL025 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Mon Feb  8 19:23:35 2021 
+
+
+#
+# I/O constraints
+#
+
+set_io led1 -DIRECTION OUTPUT -pinname J16 -fixed no
+set_io led2 -DIRECTION OUTPUT -pinname M16 -fixed no
+set_io sio_c -DIRECTION OUTPUT -pinname P9 -fixed no
+set_io sio_d -DIRECTION INOUT -pinname M8 -fixed no
+set_io xclk -DIRECTION OUTPUT -pinname M9 -fixed no
+
+#
+# Core cell constraints
+#
+
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_3 -fixed no 365 57
+set_location config_sccb_0/coresccb_0/un1_step_7_0_0_0 -fixed no 359 51
+set_location config_sccb_0/un1_ip_addr16_1_0_a2 -fixed no 346 51
+set_location config_sccb_0/coresccb_0/step\[4\] -fixed no 347 58
+set_location config_sccb_0/coresccb_0/un1_delay_cntrlto9_3 -fixed no 325 51
+set_location config_sccb_0/sccb_clk_0/count_RNO\[1\] -fixed no 357 48
+set_location AND2_0_RNIKOS1/U0_RGB1 -fixed no 446 57
+set_location INV_1 -fixed no 378 51
+set_location config_sccb_0/coresccb_0/sioc_i_m2 -fixed no 370 54
+set_location config_sccb_0/start -fixed no 354 49
+set_location config_sccb_0/coresccb_0/delay_cntr\[2\] -fixed no 329 52
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_0 -fixed no 383 54
+set_location config_sccb_0/coresccb_0/sioc_i_a2 -fixed no 373 54
+set_location config_sccb_0/coresccb_0/delay_cntr\[13\] -fixed no 340 52
+set_location config_sccb_0/sccb_clk_0/count_RNO\[0\] -fixed no 351 48
+set_location config_sccb_0/coresccb_0/un1_step_7_0_0 -fixed no 362 51
+set_location config_sccb_0/sccb_clk_0/sccb_clk_RNO_0 -fixed no 350 48
+set_location config_sccb_0/sccb_clk_0/count_RNO\[2\] -fixed no 349 48
+set_location config_sccb_0/sub_addr\[1\] -fixed no 357 58
+set_location config_sccb_0/coresccb_0/delay_cntr\[8\] -fixed no 335 52
+set_location config_sccb_0/sccb_clk_0/sccb_clk_RNO -fixed no 355 48
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_4 -fixed no 358 51
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0_1_1\[0\] -fixed no 381 51
+set_location config_sccb_0/coresccb_0/sioc_i_5 -fixed no 376 54
+set_location config_sccb_0/coresccb_0/sioc_i_10 -fixed no 366 54
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_4_1 -fixed no 357 51
+set_location config_sccb_0/coresccb_0/un1_step_7_0_a7_0 -fixed no 356 51
+set_location config_sccb_0/coresccb_0/step\[2\] -fixed no 346 58
+set_location config_sccb_0/coresccb_0/step_lm_0\[0\] -fixed no 336 54
+set_location config_sccb_0/coresccb_0/step_cnst_sm0_i_i_a2_1 -fixed no 346 54
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0_1\[0\] -fixed no 380 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a2 -fixed no 359 54
+set_location config_sccb_0/coresccb_0/un1_bit_send60_0_0_0 -fixed no 366 51
+set_location config_sccb_0/coresccb_0/sioc_i_a7_10_1 -fixed no 360 57
+set_location config_sccb_0/coresccb_0/step_cnst_i_o7_0\[1\] -fixed no 340 54
+set_location config_sccb_0/coresccb_0/un1_step23_4_i_a7 -fixed no 344 54
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_9_tz -fixed no 370 57
+set_location config_sccb_0/coresccb_0/step\[5\] -fixed no 345 58
+set_location config_sccb_0/coresccb_0/sioc_i_11 -fixed no 381 54
+set_location config_sccb_0/coresccb_0/sccb_clk_step_3_iv_i_0 -fixed no 360 51
+set_location config_sccb_0/coresccb_0/delay_cntr\[12\] -fixed no 339 52
+set_location config_sccb_0/coresccb_0/un1_bit_send60_0_0_0_a7 -fixed no 361 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_7 -fixed no 371 57
+set_location config_sccb_0/coresccb_0/step\[6\] -fixed no 343 58
+set_location config_sccb_0/coresccb_0/delay_cntr14_0_a2_1 -fixed no 357 54
+set_location config_sccb_0/state\[0\] -fixed no 352 49
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_1 -fixed no 349 57
+set_location config_sccb_0/coresccb_0/sioc_i_a7_14 -fixed no 349 60
+set_location config_sccb_0/coresccb_0/sioc_i_7 -fixed no 362 54
+set_location config_sccb_0/coresccb_0/sioc_i_a7_0_1 -fixed no 369 60
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_m2 -fixed no 358 57
+set_location config_sccb_0/coresccb_0/sioc_i_a2_2 -fixed no 368 54
+set_location config_sccb_0/coresccb_0/sioc_i_a7_14_1 -fixed no 366 60
+set_location config_sccb_0/coresccb_0/un1_bit_send60_0_0_0_a2 -fixed no 362 57
+set_location config_sccb_0/coresccb_0/step_cnst_0_a7\[6\] -fixed no 339 54
+set_location config_sccb_0/un1_PRESETN -fixed no 342 51
+set_location config_sccb_0/coresccb_0/un1_delay_cntrlto9 -fixed no 326 51
+set_location config_sccb_0/coresccb_0/sioc_i_10_RNIMCSJ1 -fixed no 367 54
+set_location config_sccb_0/coresccb_0/delay_cntr14_0_a2_0 -fixed no 356 54
+set_location config_sccb_0/coresccb_0/sioc_i_a7_11_0 -fixed no 361 60
+set_location config_sccb_0/ip_addr\[2\] -fixed no 348 58
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0_a7_0_0\[0\] -fixed no 377 51
+set_location config_sccb_0/coresccb_0/sioc_i_a2_0 -fixed no 355 57
+set_location config_sccb_0/coresccb_0/sioc_i_13 -fixed no 368 60
+set_location config_sccb_0/coresccb_0/un1_bit_send60_0_0_0_a7_0 -fixed no 355 51
+set_location config_sccb_0/coresccb_0/step_lm_0\[3\] -fixed no 344 57
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_13_1_0 -fixed no 357 57
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a2_0 -fixed no 354 51
+set_location config_sccb_0/coresccb_0/sioc_i_13_1 -fixed no 367 60
+set_location config_sccb_0/state\[1\] -fixed no 356 49
+set_location config_sccb_0/coresccb_0/sioc_i_o2_5 -fixed no 351 57
+set_location config_sccb_0/coresccb_0/step_lm_0\[2\] -fixed no 346 57
+set_location config_sccb_0/coresccb_0/delay_cntr\[5\] -fixed no 332 52
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_15 -fixed no 369 51
+set_location config_sccb_0/coresccb_0/sioc_i_a2_8 -fixed no 371 54
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_10_tz -fixed no 367 57
+set_location config_sccb_0/coresccb_0/step_cnst_i_o7\[1\] -fixed no 341 54
+set_location config_sccb_0/coresccb_0/step_cnst_sm0_i_i_o7_1 -fixed no 347 54
+set_location config_sccb_0/coresccb_0/step_cnst_0_o2\[6\] -fixed no 365 54
+set_location config_sccb_0/sccb_clk_0/mid_pulse6_0_a7 -fixed no 359 48
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0_o2_0\[0\] -fixed no 382 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0 -fixed no 363 51
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0_a7_1_0\[0\] -fixed no 372 51
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 -fixed no 447 57
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_11_1 -fixed no 350 57
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_3_0 -fixed no 375 51
+set_location config_sccb_0/coresccb_0/delay_cntr\[6\] -fixed no 333 52
+set_location config_sccb_0/coresccb_0/done_RNO -fixed no 365 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_6_1 -fixed no 379 54
+set_location config_sccb_0/coresccb_0/bit_send -fixed no 363 52
+set_location config_sccb_0/coresccb_0/step_lm_0\[5\] -fixed no 345 57
+set_location config_sccb_0/coresccb_0/sioc_i_a7_6_0 -fixed no 378 54
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0_a7_0\[0\] -fixed no 376 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_3 -fixed no 359 57
+set_location config_sccb_0/coresccb_0/step_lm_0\[6\] -fixed no 343 57
+set_location config_sccb_0/coresccb_0/sioc_i_a7_1 -fixed no 363 60
+set_location config_sccb_0/coresccb_0/sioc_i_a2_3 -fixed no 377 54
+set_location config_sccb_0/coresccb_0/sioc_i_o2_5_RNIRH5T -fixed no 355 54
+set_location config_sccb_0/coresccb_0/sioc_i_a7 -fixed no 364 54
+set_location config_sccb_0/sccb_clk_0/count\[1\] -fixed no 357 49
+set_location config_sccb_0/sccb_clk_0/mid_pulse -fixed no 359 49
+set_location ip_interface_inst -fixed no 203 0
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a2_7 -fixed no 365 60
+set_location config_sccb_0/sccb_clk_0/mid_pulse6_0_a7_1 -fixed no 358 48
+set_location config_sccb_0/sccb_clk_0/count_RNO\[3\] -fixed no 353 48
+set_location OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ -fixed no 24 134
+set_location config_sccb_0/coresccb_0/step_lm_0\[1\] -fixed no 337 54
+set_location config_sccb_0/coresccb_0/delay_cntr\[7\] -fixed no 334 52
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_8 -fixed no 371 51
+set_location config_sccb_0/sccb_clk_0/sccb_clk -fixed no 355 49
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_1_2 -fixed no 368 57
+set_location config_sccb_0/coresccb_0/un1_delay_cntrlto14_2 -fixed no 344 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_10 -fixed no 352 57
+set_location config_sccb_0/coresccb_0/un1_delay_cntrlto14 -fixed no 347 51
+set_location config_sccb_0/coresccb_0/sioc_i_2 -fixed no 357 60
+set_location config_sccb_0/coresccb_0/delay_cntr\[0\] -fixed no 324 52
+set_location config_sccb_0/ip_addr_RNO\[2\] -fixed no 348 57
+set_location config_sccb_0/coresccb_0/sioc_i_a7_5_0 -fixed no 382 54
+set_location config_sccb_0/coresccb_0/step_lm_0_1_0\[0\] -fixed no 338 54
+set_location config_sccb_0/coresccb_0/sioc_i_a7_12 -fixed no 364 60
+set_location LIVE_PROBE_FB_0/U0/U_PRBB -fixed no 315 0
+set_location config_sccb_0/coresccb_0/sccb_clk_step -fixed no 360 52
+set_location config_sccb_0/coresccb_0/sioc_i_a7_5 -fixed no 375 54
+set_location config_sccb_0/coresccb_0/sioc_i_a2_9 -fixed no 371 60
+set_location config_sccb_0/coresccb_0/step\[1\] -fixed no 337 55
+set_location config_sccb_0/state_RNO\[1\] -fixed no 356 48
+set_location config_sccb_0/coresccb_0/delay_cntr14_0_a2 -fixed no 354 54
+set_location AND2_0_RNIKOS1 -fixed no 297 72
+set_location config_sccb_0/coresccb_0/sioc_i_a7_3_1 -fixed no 362 60
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_1 -fixed no 366 57
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_0 -fixed no 353 51
+set_location config_sccb_0/coresccb_0/un1_step_7_0_a7_1_2 -fixed no 352 51
+set_location config_sccb_0/coresccb_0/bit_send127_0_a3_0_a7 -fixed no 367 51
+set_location config_sccb_0/ip_addr\[1\] -fixed no 355 58
+set_location config_sccb_0/coresccb_0/un1_step_7_0_a7_0_0 -fixed no 368 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_o2_0 -fixed no 351 51
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0\[0\] -fixed no 383 51
+set_location config_sccb_0/coresccb_0/delay_cntr\[11\] -fixed no 338 52
+set_location config_sccb_0/coresccb_0/sioc_i_a7_13_2 -fixed no 374 54
+set_location config_sccb_0/coresccb_0/sioc_i_o2_2 -fixed no 364 57
+set_location config_sccb_0/coresccb_0/delay_cntr\[3\] -fixed no 330 52
+set_location config_sccb_0/coresccb_0/step_cnst_sm0_i_i_a2_d_1 -fixed no 345 54
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_9_0 -fixed no 353 54
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_7 -fixed no 380 54
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7 -fixed no 363 57
+set_location config_sccb_0/coresccb_0/bit_send127_0_a3_0_a2 -fixed no 363 54
+set_location config_sccb_0/coresccb_0/delay_cntr\[1\] -fixed no 328 52
+set_location config_sccb_0/sccb_clk_0/count\[2\] -fixed no 349 49
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_2_1 -fixed no 354 57
+set_location config_sccb_0/coresccb_0/sioc_i_a7_9 -fixed no 369 54
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a2_6 -fixed no 358 54
+set_location config_sccb_0/ip_addr_0_sqmuxa_0_a2 -fixed no 343 51
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0_2\[0\] -fixed no 374 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_1_1 -fixed no 352 54
+set_location config_sccb_0/data_in\[7\] -fixed no 358 58
+set_location config_sccb_0/coresccb_0/step\[0\] -fixed no 336 55
+set_location config_sccb_0/coresccb_0/sioc_i_12 -fixed no 361 54
+set_location config_sccb_0/coresccb_0/delay_cntr14_0 -fixed no 351 54
+set_location config_sccb_0/start_4_0_a2 -fixed no 354 48
+set_location config_sccb_0/coresccb_0/un117_siod_o_0_0_a7_3\[0\] -fixed no 373 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_3_tz -fixed no 353 57
+set_location config_sccb_0/coresccb_0/delay_cntr\[14\] -fixed no 341 52
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_10_0 -fixed no 350 51
+set_location AND2_0 -fixed no 345 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_2 -fixed no 356 57
+set_location config_sccb_0/coresccb_0/un1_bit_send60_0_0_0_a2_0 -fixed no 349 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_6 -fixed no 361 57
+set_location config_sccb_0/coresccb_0/done -fixed no 365 52
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_14_1 -fixed no 379 51
+set_location config_sccb_0/coresccb_0/delay_cntr\[10\] -fixed no 337 52
+set_location config_sccb_0/coresccb_0/step_cnst_0_a7_0\[6\] -fixed no 343 54
+set_location config_sccb_0/sccb_clk_0/count\[3\] -fixed no 353 49
+set_location config_sccb_0/coresccb_0/step\[3\] -fixed no 344 58
+set_location config_sccb_0/sccb_clk_0/count\[0\] -fixed no 351 49
+set_location config_sccb_0/coresccb_0/delay_cntr_lm_0_fast\[0\] -fixed no 324 51
+set_location config_sccb_0/coresccb_0/sioc_i_0 -fixed no 370 60
+set_location config_sccb_0/coresccb_0/delay_cntr\[4\] -fixed no 331 52
+set_location config_sccb_0/coresccb_0/sioc_i_a2_7 -fixed no 360 60
+set_location config_sccb_0/state_ns_0_o2\[0\] -fixed no 352 48
+set_location config_sccb_0/coresccb_0/sioc_i_5_1 -fixed no 372 54
+set_location LIVE_PROBE_FB_0/U0/U_PRBA -fixed no 312 0
+set_location config_sccb_0/coresccb_0/sioc_i_10_1 -fixed no 360 54
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST -fixed no 293 72
+set_location config_sccb_0/coresccb_0/step_lm_0\[4\] -fixed no 347 57
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_1_0 -fixed no 350 54
+set_location config_sccb_0/coresccb_0/sioc_i_o2 -fixed no 349 54
+set_location config_sccb_0/coresccb_0/sioc_i_a2_5 -fixed no 370 51
+set_location config_sccb_0/coresccb_0/un1_bit_send60_0_0_0_1 -fixed no 348 51
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_a7_10_1 -fixed no 348 54
+set_location config_sccb_0/coresccb_0/step_cnst_i_a2_0\[1\] -fixed no 342 54
+set_location config_sccb_0/coresccb_0/delay_cntr\[9\] -fixed no 336 52
+set_location config_sccb_0/rw -fixed no 343 52
+set_location config_sccb_0/coresccb_0/bit_send_33_1_iv_0_0_9 -fixed no 369 57
+set_location FCCC_C0_0/FCCC_C0_0/CCC_INST -fixed no 18 134
+set_location SYSRESET_0 -fixed no 624 8
+set_location config_sccb_0/coresccb_0/delay_cntr_s_58 -fixed no 327 51
+set_location config_sccb_0/coresccb_0/step_s_59 -fixed no 336 57
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB0 -fixed no 446 54
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB1 -fixed no 446 51
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB2 -fixed no 446 48
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0 -fixed no 447 54
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB1 -fixed no 447 51
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB2 -fixed no 447 48
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB3 -fixed no 446 0
+set_location config_sccb_0/coresccb_0/delay_cntr_s_58_CC_0 -fixed no 327 53
+set_location config_sccb_0/coresccb_0/delay_cntr_s_58_CC_1 -fixed no 336 53
+set_location config_sccb_0/coresccb_0/step_s_59_CC_0 -fixed no 336 59

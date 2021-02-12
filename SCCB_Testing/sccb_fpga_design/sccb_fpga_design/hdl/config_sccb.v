@@ -22,7 +22,7 @@ wire        done;
 wire sccb_clk;
 wire mid_pulse;
 
-clock_divider #(.clk_freq(10_000_000),.sccb_clk_freq(300_000)) sccb_clk_0(
+clock_divider #(.CLK_FREQ(10_000_000),.SCCB_CLK_FREQ(300_000)) sccb_clk_0(
 	.clk(PCLK),
 	.resetn(PRESETN),
 	.sccb_clk(sccb_clk),

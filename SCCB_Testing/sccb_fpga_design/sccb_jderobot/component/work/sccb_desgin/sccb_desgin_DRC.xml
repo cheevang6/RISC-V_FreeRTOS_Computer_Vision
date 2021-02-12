@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>sccb_desgin</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected top level output port sccb_desgin:done</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_desgin/pins/sccb_desgin:done</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin top_ov7670_0:done</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sccb_desgin/pins/top_ov7670_0:done</crossprobe>
+  </drc>
+</drcreport>

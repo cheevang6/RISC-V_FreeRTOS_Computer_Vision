@@ -1,0 +1,456 @@
+KEY LIBERO "12.800"
+KEY CAPTURE "12.800.0.16"
+KEY DEFAULT_IMPORT_LOC "E:\Naveen\Projects\G4_i\G4i_AnalogPairs\trunk\HW\VL_33V_18V\proj01\hdl"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "SYSTEMVERILOG"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "IGLOO2"
+KEY VendorTechnology_Die "PA4MGL2500_N"
+KEY VendorTechnology_Package "vf256"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_33"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4MGL2500_N"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_write_only"
+KEY ProjectDescription "SPI4.2"
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "sccb_design::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
+STATE="utd"
+TIME="1603836568"
+SIZE="2117"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1612478256"
+SIZE="241"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1611827248"
+SIZE="684"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.v,hdl"
+STATE="utd"
+TIME="1611128981"
+SIZE="924"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.v,hdl"
+STATE="utd"
+TIME="1611128981"
+SIZE="726"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1612478256"
+SIZE="10445"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.v,hdl"
+STATE="utd"
+TIME="1612478256"
+SIZE="2269"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1612478256"
+SIZE="706"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v,hdl"
+STATE="utd"
+TIME="1612478256"
+SIZE="1725"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1611827248"
+SIZE="2910"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.v,hdl"
+STATE="utd"
+TIME="1611827248"
+SIZE="2185"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1611827248"
+SIZE="461"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v,hdl"
+STATE="utd"
+TIME="1611827248"
+SIZE="535"
+PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\sccb_design\sccb_design.cxf,actgen_cxf"
+STATE="utd"
+TIME="1612998684"
+SIZE="2215"
+ENDFILE
+VALUE "<project>\component\work\tb\tb.cxf,actgen_cxf"
+STATE="utd"
+TIME="1612924619"
+SIZE="2090"
+ENDFILE
+VALUE "<project>\component\work\tb\tb.v,tb_hdl"
+STATE="utd"
+TIME="1612924619"
+SIZE="2236"
+PARENT="<project>\component\work\tb\tb.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
+STATE="utd"
+TIME="1612816266"
+SIZE="1358"
+IS_TARGET="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\sccb_design.ide_des,ide_des"
+STATE="utd"
+TIME="1611826448"
+SIZE="571"
+ENDFILE
+VALUE "<project>\hdl\clock_divider.v,hdl"
+STATE="utd"
+TIME="1612825280"
+SIZE="625"
+ENDFILE
+VALUE "<project>\hdl\config_sccb.v,hdl"
+STATE="utd"
+TIME="1612825257"
+SIZE="2845"
+ENDFILE
+VALUE "<project>\hdl\CoreSCCB.v,hdl"
+STATE="utd"
+TIME="1612918510"
+SIZE="7673"
+ENDFILE
+VALUE "<project>\hdl\svTest.sv,hdl"
+STATE="utd"
+TIME="1612815228"
+SIZE="61"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1612924622"
+SIZE="1354"
+ENDFILE
+VALUE "<project>\simulation\tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1612925131"
+SIZE="205123"
+ENDFILE
+VALUE "<project>\simulation\wave.do,do"
+STATE="utd"
+TIME="1612583560"
+SIZE="4216"
+ENDFILE
+VALUE "<project>\simulation\wave2.do,do"
+STATE="utd"
+TIME="1612678378"
+SIZE="4380"
+ENDFILE
+VALUE "<project>\simulation\wave3.do,do"
+STATE="utd"
+TIME="1612825730"
+SIZE="5214"
+ENDFILE
+VALUE "<project>\simulation\wave4.do,do"
+STATE="utd"
+TIME="1612814189"
+SIZE="2451"
+ENDFILE
+VALUE "<project>\stimulus\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1612690106"
+SIZE="337"
+ENDFILE
+VALUE "<project>\synthesis\sccb_design.so,so"
+STATE="utd"
+TIME="1612834551"
+SIZE="305"
+ENDFILE
+VALUE "<project>\synthesis\sccb_design.vm,syn_vm"
+STATE="ood"
+TIME="1612834550"
+SIZE="43477"
+ENDFILE
+VALUE "<project>\synthesis\sccb_design_syn.prj,prj"
+STATE="utd"
+TIME="1612834551"
+SIZE="3636"
+ENDFILE
+VALUE "<project>\synthesis\sccb_design_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1612834550"
+SIZE="1428"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1612215873"
+SIZE="159"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "sccb_design::work"
+FILE "<project>\component\work\sccb_design\sccb_design.cxf,actgen_cxf"
+LIST AssociatedStimulus
+VALUE "<project>\component\work\tb\tb.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST sccb_design
+VALUE "<project>\component\work\tb\tb.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=500ns
+Resolution=1fs
+VsimOpt=
+EntityName=tb
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v12.3\ModelSim\win32acoem\modelsim.exe"
+PARAM=" -l testbench_presynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v12.3\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "sccb_design::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
+ENDLIST
+LIST ModuleSubBlockList
+LIST "config_sccb::work","hdl\config_sccb.v","FALSE","FALSE"
+SUBBLOCK "CoreSCCB::work","hdl\CoreSCCB.v","FALSE","FALSE"
+SUBBLOCK "clock_divider::work","hdl\clock_divider.v","FALSE","FALSE"
+ENDLIST
+LIST "CoreSCCB::work","hdl\CoreSCCB.v","FALSE","FALSE"
+ENDLIST
+LIST "clock_divider::work","hdl\clock_divider.v","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"
+SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.v","TRUE","FALSE"
+SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v","FALSE","FALSE"
+SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "sccb_design::work","component\work\sccb_design\sccb_design.cxf","TRUE","FALSE"
+SUBBLOCK "config_sccb::work","hdl\config_sccb.v","FALSE","FALSE"
+SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.v","TRUE","FALSE"
+ENDLIST
+LIST "svTest::work","hdl\svTest.sv","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "i2c_spk::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v","FALSE","TRUE"
+ENDLIST
+LIST "tb::work","component\work\tb\tb.v","TRUE","TRUE"
+SUBBLOCK "sccb_design::work","component\work\sccb_design\sccb_design.cxf","TRUE","FALSE"
+ENDLIST
+LIST "testbench::work","stimulus\testbench.v","FALSE","TRUE"
+SUBBLOCK "sccb_design::work","component\work\sccb_design\sccb_design.cxf","TRUE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+LIST "sccb_design::work"
+ACTIVETESTBENCH "tb::work","component\work\tb\tb.v","TRUE"
+ENDLIST
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\user.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

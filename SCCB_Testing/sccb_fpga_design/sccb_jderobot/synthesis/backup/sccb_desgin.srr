@@ -1,0 +1,806 @@
+#Build: Synplify Pro (R) O-2018.09M-SP1-1, Build 205R, Apr 25 2019
+#install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-95FBL6H
+
+# Tue Feb  9 14:49:48 2021
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Verilog Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\FCCC_C0\FCCC_C0.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_ctrl_reg.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\sccb_master.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_top_ctrl.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v" (library work)
+@I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\sccb_desgin\sccb_desgin.v" (library work)
+Verilog syntax check successful!
+Selecting top level module sccb_desgin
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":126:7:126:10|Synthesizing module AND2 in library work.
+Running optimization stage 1 on AND2 .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":376:7:376:9|Synthesizing module VCC in library work.
+Running optimization stage 1 on VCC .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":372:7:372:9|Synthesizing module GND in library work.
+Running optimization stage 1 on GND .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":362:7:362:12|Synthesizing module CLKINT in library work.
+Running optimization stage 1 on CLKINT .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":729:7:729:9|Synthesizing module CCC in library work.
+Running optimization stage 1 on CCC .......
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v":5:7:5:28|Synthesizing module FCCC_C0_FCCC_C0_0_FCCC in library work.
+Running optimization stage 1 on FCCC_C0_FCCC_C0_0_FCCC .......
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\FCCC_C0\FCCC_C0.v":9:7:9:13|Synthesizing module FCCC_C0 in library work.
+Running optimization stage 1 on FCCC_C0 .......
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":11:7:11:20|Synthesizing module RCOSC_25_50MHZ in library work.
+Running optimization stage 1 on RCOSC_25_50MHZ .......
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":5:7:5:25|Synthesizing module OSC_C0_OSC_C0_0_OSC in library work.
+Running optimization stage 1 on OSC_C0_OSC_C0_0_OSC .......
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":16:7:16:24|*Output RCOSC_25_50MHZ_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":17:7:17:20|*Output RCOSC_1MHZ_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":18:7:18:20|*Output RCOSC_1MHZ_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":19:7:19:16|*Output XTLOSC_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":20:7:20:16|*Output XTLOSC_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0.v":9:7:9:12|Synthesizing module OSC_C0 in library work.
+Running optimization stage 1 on OSC_C0 .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":720:7:720:14|Synthesizing module SYSRESET in library work.
+Running optimization stage 1 on SYSRESET .......
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\sccb_master.v":56:7:56:17|Synthesizing module sccb_master in library work.
+Running optimization stage 1 on sccb_master .......
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_ctrl_reg.v":25:7:25:21|Synthesizing module ov7670_ctrl_reg in library work.
+Running optimization stage 1 on ov7670_ctrl_reg .......
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_top_ctrl.v":13:7:13:21|Synthesizing module ov7670_top_ctrl in library work.
+Running optimization stage 1 on ov7670_top_ctrl .......
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":4:7:4:16|Synthesizing module top_ov7670 in library work.
+@W: CG360 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":7:11:7:21|Removing wire ov7670_sioc, as there is no assignment to it.
+@W: CG360 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":9:11:9:22|Removing wire ov7670_rst_n, as there is no assignment to it.
+@W: CG360 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":10:11:10:21|Removing wire ov7670_pwdn, as there is no assignment to it.
+@W: CG360 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":11:11:11:21|Removing wire ov7670_xclk, as there is no assignment to it.
+Running optimization stage 1 on top_ov7670 .......
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":7:11:7:21|*Output ov7670_sioc has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":9:11:9:22|*Output ov7670_rst_n has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":10:11:10:21|*Output ov7670_pwdn has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":11:11:11:21|*Output ov7670_xclk has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\sccb_desgin\sccb_desgin.v":9:7:9:17|Synthesizing module sccb_desgin in library work.
+Running optimization stage 1 on sccb_desgin .......
+Running optimization stage 2 on sccb_desgin .......
+Running optimization stage 2 on top_ov7670 .......
+Running optimization stage 2 on ov7670_top_ctrl .......
+Running optimization stage 2 on ov7670_ctrl_reg .......
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_ctrl_reg.v":455:2:455:7|Optimizing register bit cnt_cam_clk[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_ctrl_reg.v":455:2:455:7|Pruning register bit 2 of cnt_cam_clk[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_ctrl_reg.v":536:2:536:7|Trying to extract state machine for register pr_ctrl_st.
+Extracted state machine for register pr_ctrl_st
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+Running optimization stage 2 on sccb_master .......
+@N: CL201 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\hdl\sccb_master.v":234:2:234:7|Trying to extract state machine for register pr_sccb_st.
+Extracted state machine for register pr_sccb_st
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+Running optimization stage 2 on SYSRESET .......
+Running optimization stage 2 on OSC_C0 .......
+Running optimization stage 2 on OSC_C0_OSC_C0_0_OSC .......
+@N: CL159 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":14:7:14:9|Input XTL is unused.
+Running optimization stage 2 on RCOSC_25_50MHZ .......
+Running optimization stage 2 on FCCC_C0 .......
+Running optimization stage 2 on FCCC_C0_FCCC_C0_0_FCCC .......
+Running optimization stage 2 on CCC .......
+Running optimization stage 2 on CLKINT .......
+Running optimization stage 2 on GND .......
+Running optimization stage 2 on VCC .......
+Running optimization stage 2 on AND2 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\synthesis\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb  9 14:49:49 2021
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb  9 14:49:49 2021
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb  9 14:49:49 2021
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb  9 14:49:50 2021
+
+###########################################################]
+Premap Report
+
+# Tue Feb  9 14:49:50 2021
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact2018q4p1, Build 026R, Built Apr 25 2019 10:01:09
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\designer\sccb_desgin\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\synthesis\sccb_desgin_scck.rpt 
+Printing clock  summary report in "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\synthesis\sccb_desgin_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":20:7:20:16|Tristate driver XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":10:11:10:21|Tristate driver ov7670_pwdn (in view: work.top_ov7670(verilog)) on net ov7670_pwdn (in view: work.top_ov7670(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":9:11:9:22|Tristate driver ov7670_rst_n (in view: work.top_ov7670(verilog)) on net ov7670_rst_n (in view: work.top_ov7670(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":7:11:7:21|Tristate driver ov7670_sioc (in view: work.top_ov7670(verilog)) on net ov7670_sioc (in view: work.top_ov7670(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":11:11:11:21|Tristate driver ov7670_xclk (in view: work.top_ov7670(verilog)) on net ov7670_xclk (in view: work.top_ov7670(verilog)) has its enable tied to GND.
+syn_allowed_resources : blockrams=31  set on top level netlist sccb_desgin
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                             Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     99   
+==================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                  Clock     Source                                    Clock Pin                                      Non-clock Pin     Non-clock Pin                       
+Clock                                             Load      Pin                                       Seq Example                                    Seq Example       Comb Example                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                         -                                              -                 -                                   
+                                                                                                                                                                                                           
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     99        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     top_ov7670_0.ctrl.i_regs.sw_regs_st[1:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
+===========================================================================================================================================================================================================
+
+@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\sccb_master.v":234:2:234:7|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 99 sequential elements including top_ov7670_0.ctrl.i_sccb.pr_sccb_st[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: MO111 :|Tristate driver sioc_t (in view: work.sccb_desgin(verilog)) on net sioc (in view: work.sccb_desgin(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\synthesis\sccb_desgin.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+Encoding state machine pr_sccb_st[4:0] (in view: work.sccb_master(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine pr_ctrl_st[4:0] (in view: work.ov7670_ctrl_reg(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 136MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Feb  9 14:49:51 2021
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Feb  9 14:49:51 2021
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact2018q4p1, Build 026R, Built Apr 25 2019 10:01:09
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":20:7:20:16|Tristate driver XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":11:11:11:21|Tristate driver ov7670_xclk (in view: work.top_ov7670(verilog)) on net ov7670_xclk (in view: work.top_ov7670(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":10:11:10:21|Tristate driver ov7670_pwdn (in view: work.top_ov7670(verilog)) on net ov7670_pwdn (in view: work.top_ov7670(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":9:11:9:22|Tristate driver ov7670_rst_n (in view: work.top_ov7670(verilog)) on net ov7670_rst_n (in view: work.top_ov7670(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\top_ov7670.v":7:11:7:21|Tristate driver ov7670_sioc (in view: work.top_ov7670(verilog)) on net ov7670_sioc (in view: work.top_ov7670(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver sioc_t (in view: work.sccb_desgin(verilog)) on net sioc (in view: work.sccb_desgin(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: BN362 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_ctrl_reg.v":455:2:455:7|Removing sequential instance cnt_cam_clk[1:0] (in view: work.ov7670_ctrl_reg(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+Encoding state machine pr_sccb_st[4:0] (in view: work.sccb_master(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+@N: MO231 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\sccb_master.v":160:2:160:7|Found counter in view:work.sccb_master(verilog) instance cnt_sclk_div4[6:0] 
+Encoding state machine pr_ctrl_st[4:0] (in view: work.ov7670_ctrl_reg(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+@N: MO231 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_ctrl_reg.v":486:2:486:7|Found counter in view:work.ov7670_ctrl_reg(verilog) instance cnt_reg[5:0] 
+@N: MO231 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\hdl\ov7670_ctrl_reg.v":592:2:592:7|Found counter in view:work.ov7670_ctrl_reg(verilog) instance cnt300ms[24:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     3.53ns		 158 /        96
+@N: FP130 |Promoting Net AND2_0_Y_arst on CLKINT  I_113 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 96 clock pin(s) of sequential element(s)
+0 instances converted, 96 sequential instances remain driven by gated/generated clocks
+
+========================================================================================================== Gated/Generated Clocks ===========================================================================================================
+Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance                           Explanation                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    96         top_ov7670_0.ctrl.i_regs.cnt300ms[24]     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+=============================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 141MB)
+
+Writing Analyst data base C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\synthesis\synwork\sccb_desgin_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 141MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+@W: MT246 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_jderobot\component\work\fccc_c0\fccc_c0_0\fccc_c0_fccc_c0_0_fccc.v":20:36:20:43|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C0_0.FCCC_C0_0.GL0_net.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Tue Feb  9 14:49:52 2021
+#
+
+
+Top view:               sccb_desgin
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_jderobot\designer\sccb_desgin\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 3.746
+
+                                                  Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                    Frequency     Frequency     Period        Period        Slack     Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     174.0 MHz     10.000        5.746         4.254     inferred     Inferred_clkgroup_0
+System                                            100.0 MHz     895.2 MHz     10.000        1.117         8.883     system       system_clkgroup    
+====================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                       Ending                                         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                         System                                         |  10.000      8.883  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      3.746  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      4.254  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                              Starting                                                                                Arrival          
+Instance                                      Reference                                         Type     Pin     Net                  Time        Slack
+                                              Clock                                                                                                    
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+top_ov7670_0.ctrl.i_sccb.cnt_sclk_div4[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt_sclk_div4[1]     0.087       4.254
+top_ov7670_0.ctrl.i_sccb.cnt_sclk_div4[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt_sclk_div4[4]     0.087       4.354
+top_ov7670_0.ctrl.i_sccb.cnt_sclk_div4[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt_sclk_div4[5]     0.087       4.437
+top_ov7670_0.ctrl.i_sccb.cnt_sclk_div4[6]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt_sclk_div4[6]     0.108       4.472
+top_ov7670_0.ctrl.i_regs.cnt300ms[16]         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt300ms[16]         0.087       4.688
+top_ov7670_0.ctrl.i_regs.cnt300ms[7]          FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt300ms[7]          0.087       4.766
+top_ov7670_0.ctrl.i_regs.cnt300ms[19]         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt300ms[19]         0.087       4.789
+top_ov7670_0.ctrl.i_regs.cnt300ms[12]         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt300ms[12]         0.108       4.829
+top_ov7670_0.ctrl.i_sccb.pr_sccb_st[0]        FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       pr_sccb_st[0]        0.108       4.865
+top_ov7670_0.ctrl.i_regs.cnt300ms[8]          FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       cnt300ms[8]          0.087       4.867
+=======================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                        Starting                                                                                     Required          
+Instance                                Reference                                         Type     Pin     Net                       Time         Slack
+                                        Clock                                                                                                          
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+top_ov7670_0.ctrl.i_sccb.send_rg[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[2]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[3]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[6]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[7]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[8]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+top_ov7670_0.ctrl.i_sccb.send_rg[9]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      un1_send_rg15_1_0_0_0     9.662        4.254
+=======================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.338
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.662
+
+    - Propagation time:                      5.409
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 4.254
+
+    Number of logic level(s):                4
+    Starting point:                          top_ov7670_0.ctrl.i_sccb.cnt_sclk_div4[1] / Q
+    Ending point:                            top_ov7670_0.ctrl.i_sccb.send_rg[0] / EN
+    The start point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                Pin      Pin               Arrival     No. of    
+Name                                                 Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------
+top_ov7670_0.ctrl.i_sccb.cnt_sclk_div4[1]            SLE      Q        Out     0.087     0.087       -         
+cnt_sclk_div4[1]                                     Net      -        -       0.497     -           2         
+top_ov7670_0.ctrl.i_sccb.un13_sclk_div4_end_3        CFG4     D        In      -         0.584       -         
+top_ov7670_0.ctrl.i_sccb.un13_sclk_div4_end_3        CFG4     Y        Out     0.326     0.911       -         
+un13_sclk_div4_end_3                                 Net      -        -       0.745     -           3         
+top_ov7670_0.ctrl.i_sccb.pr_sccb_st_ns_0_o2_0[3]     CFG4     D        In      -         1.656       -         
+top_ov7670_0.ctrl.i_sccb.pr_sccb_st_ns_0_o2_0[3]     CFG4     Y        Out     0.317     1.973       -         
+N_167                                                Net      -        -       0.977     -           8         
+top_ov7670_0.ctrl.i_sccb.pr_sccb_st_ns_0_o2[3]       CFG2     A        In      -         2.950       -         
+top_ov7670_0.ctrl.i_sccb.pr_sccb_st_ns_0_o2[3]       CFG2     Y        Out     0.077     3.027       -         
+pr_sccb_st_ns_0_o2[3]                                Net      -        -       0.815     -           4         
+top_ov7670_0.ctrl.i_sccb.un1_send_rg15_1_0_0_0       CFG4     D        In      -         3.842       -         
+top_ov7670_0.ctrl.i_sccb.un1_send_rg15_1_0_0_0       CFG4     Y        Out     0.326     4.168       -         
+un1_send_rg15_1_0_0_0                                Net      -        -       1.241     -           24        
+top_ov7670_0.ctrl.i_sccb.send_rg[0]                  SLE      EN       In      -         5.409       -         
+===============================================================================================================
+Total path delay (propagation time + setup) of 5.746 is 1.472(25.6%) logic and 4.274(74.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                       Starting                                                                                           Arrival          
+Instance                               Reference     Type               Pin        Net                                                    Time        Slack
+                                       Clock                                                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                LOCK       FCCC_C0_0_LOCK                                         0.000       3.746
+OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ     System        RCOSC_25_50MHZ     CLKOUT     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     0.000       8.883
+===========================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                        Starting                                                 Required          
+Instance                                Reference     Type     Pin     Net                       Time         Slack
+                                        Clock                                                                      
+-------------------------------------------------------------------------------------------------------------------
+top_ov7670_0.ctrl.i_sccb.send_rg[0]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[1]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[2]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[3]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[4]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[5]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[6]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[7]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[8]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+top_ov7670_0.ctrl.i_sccb.send_rg[9]     System        SLE      EN      un1_send_rg15_1_0_0_0     9.662        3.746
+===================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.338
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.662
+
+    - Propagation time:                      5.917
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     3.746
+
+    Number of logic level(s):                5
+    Starting point:                          FCCC_C0_0.FCCC_C0_0.CCC_INST / LOCK
+    Ending point:                            top_ov7670_0.ctrl.i_sccb.send_rg[0] / EN
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                Pin      Pin               Arrival     No. of    
+Name                                                 Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------
+FCCC_C0_0.FCCC_C0_0.CCC_INST                         CCC      LOCK     Out     0.000     0.000       -         
+FCCC_C0_0_LOCK                                       Net      -        -       1.117     -           1         
+AND2_0                                               AND2     A        In      -         1.117       -         
+AND2_0                                               AND2     Y        Out     0.075     1.192       -         
+AND2_0                                               Net      -        -       1.117     -           2         
+top_ov7670_0.ctrl.i_sccb.ready                       CFG2     A        In      -         2.309       -         
+top_ov7670_0.ctrl.i_sccb.ready                       CFG2     Y        Out     0.100     2.409       -         
+sccb_ready                                           Net      -        -       0.497     -           2         
+top_ov7670_0.ctrl.i_regs.pr_ctrl_st_RNIK4R91[2]      CFG4     B        In      -         2.906       -         
+top_ov7670_0.ctrl.i_regs.pr_ctrl_st_RNIK4R91[2]      CFG4     Y        Out     0.148     3.055       -         
+pr_ctrl_st_RNIK4R91[2]                               Net      -        -       0.815     -           4         
+top_ov7670_0.ctrl.i_sccb.pr_sccb_st_ns_0_0_a2[1]     CFG2     A        In      -         3.869       -         
+top_ov7670_0.ctrl.i_sccb.pr_sccb_st_ns_0_0_a2[1]     CFG2     Y        Out     0.100     3.970       -         
+N_213                                                Net      -        -       0.497     -           2         
+top_ov7670_0.ctrl.i_sccb.un1_send_rg15_1_0_0_0       CFG4     C        In      -         4.467       -         
+top_ov7670_0.ctrl.i_sccb.un1_send_rg15_1_0_0_0       CFG4     Y        Out     0.210     4.676       -         
+un1_send_rg15_1_0_0_0                                Net      -        -       1.241     -           24        
+top_ov7670_0.ctrl.i_sccb.send_rg[0]                  SLE      EN       In      -         5.917       -         
+===============================================================================================================
+Total path delay (propagation time + setup) of 6.254 is 0.971(15.5%) logic and 5.283(84.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+---------------------------------------
+Resource Usage Report for sccb_desgin 
+
+Mapping to part: m2gl025vf400std
+Cell usage:
+AND2            1 use
+CCC             1 use
+CLKINT          2 uses
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+CFG1           1 use
+CFG2           22 uses
+CFG3           33 uses
+CFG4           65 uses
+
+Carry cells:
+ARI1            41 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            96 uses
+
+DSP Blocks:    0 of 34 (0%)
+
+I/O ports: 7
+I/O primitives: 6
+OUTBUF         1 use
+TRIBUFF        5 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    162
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  96 + 0 + 0 + 0 = 96;
+Total number of LUTs after P&R:  162 + 0 + 0 + 0 = 162;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 29MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Feb  9 14:49:52 2021
+
+###########################################################]

@@ -1,0 +1,20 @@
+----------------------------------------------------------------
+-Pin Report - Date: Tue Feb  9 14:52:25 2021 Pinchecksum: NOT-AVAILABLE
+-Product: Designer
+-Release: v12.3
+-Version: 12.800.0.16
+-Design Name: sccb_desgin
+-Family: IGLOO2
+-Die: M2GL025
+-Package: 256 VF
+-----------------------------------------------------------------
+
+Port         |Pin |Fixed |Function                      |Bank     |I/O Std   |Direction                      |I/O state in Flash*Freeze mode |Resistor Pull                      |I/O available in Flash*Freeze mode |Schmitt Trigger |Odt_Static    |Odt Imp (Ohm)  |Low Power Exit |Input Delay |Slew         |Pre-Emphasis      |Output Drive (mA) |Output Load (pF) |
+-------------|----|------|------------------------------|---------|----------|-------------------------------|-------------------------------|-----------------------------------|-----------------------------------|----------------|--------------|---------------|---------------|------------|-------------|------------------|------------------|-----------------|
+DEVRST_N      M11  Fixed  DEVRST_N                       ---       
+done          J16  Yes    MSIO11PB2//CCC_NE0_CLKI0       Bank2     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+ov7670_pwdn   P9   Yes    MSIO131PB4/GB11/VCCC_SE0_CLKI  Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+ov7670_rst_n  N8   Yes    MSIO129PB4/CCC_SW1_CLKI3       Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+sioc          M10  Yes    MSIO132NB4                     Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+siod          M9   Yes    MSIO132PB4                     Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+xclk          P8   Yes    MSIO126NB4                     Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
