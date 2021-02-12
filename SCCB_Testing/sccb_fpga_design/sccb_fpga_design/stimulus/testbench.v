@@ -12,16 +12,18 @@ end
 
 wire led1;
 wire led2;
-wire sio_c;
-wire sio_d;
+wire sioc;
+wire siod;
 
 sccb_design design_0 (
     .DEVRST_N(resetn),
-    .sio_c(sio_c),
+    .sioc(sioc),
     .led1(led1),
     .xclk(xclk),
     .led2(led2),
-    .sio_d(sio_d)
+    .siod(siod),
+    .cam_rstn(cam_rstn),
+    .pwdn(pwdn)
 );
 
 endmodule

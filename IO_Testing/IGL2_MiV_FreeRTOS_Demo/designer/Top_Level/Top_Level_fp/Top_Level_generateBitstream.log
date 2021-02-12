@@ -1,0 +1,21 @@
+Software Version: 12.800.0.16
+Opened 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level_fp\Top_Level.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.pdb' has been loaded successfully.
+DESIGN : Top_Level;  CHECKSUM : 6BF3;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Fri Feb 12 00:22:07 2021 (Elapsed time 00:00:01)
+The 'load_programming_data' command succeeded.
+File/Folder 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level.ppd'; file programs Fabric and eNVM.
+Fabric component bitstream digest: ff1cc2ca6bc671be7a1f1fd39ce35ade5126ccb6ba0b4016b94fb51ab0b8cb27
+eNVM component bitstream digest: d4cca9d6f7299587b19a7f9a0f9674f1008ecbe3dfc20b60b3222d769661eab9
+Finished: Fri Feb 12 00:22:19 2021 (Elapsed time 00:00:12)
+
+The 'export_single_ppd' command succeeded.
+creating folder: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level_fp\projectData
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\designer\Top_Level\Top_Level_fp\Top_Level.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

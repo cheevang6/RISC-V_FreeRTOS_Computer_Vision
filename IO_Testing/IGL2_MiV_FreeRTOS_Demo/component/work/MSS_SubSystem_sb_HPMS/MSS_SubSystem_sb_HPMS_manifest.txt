@@ -1,0 +1,28 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.0 (Version 12.500.0.22)
+
+Date      :  Wed Mar 27 14:26:23 2019
+Project   :  D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo
+Component :  MSS_SubSystem_sb_HPMS
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MSS_SubSystem_sb_HPMS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MSS_SubSystem_sb_HPMS_syn.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MSS_SubSystem_sb_HPMS_pre.v
+
+Configuration files to be used for Programming:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/ENVM.cfg
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MDDR_init.reg
+
+Configuration files to be used for all Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/ENVM.cfg
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MDDR_init.reg
+
+Configuration files to be used for Power Analysis:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MDDR_init.reg
+

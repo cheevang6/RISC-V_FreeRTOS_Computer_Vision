@@ -6,7 +6,7 @@
 
 # Family: IGLOO2 , Die: M2GL025 , Package: 256 VF
 
-# Date generated: Tue Feb  9 15:20:41 2021 
+# Date generated: Fri Feb 12 11:10:48 2021 
 
 
 # 
@@ -43,10 +43,10 @@ set_io sio_c           \
     -DIRECTION OUTPUT
 
 
-set_io sio_d          \
-    -pinname M8       \
-    -fixed yes        \
-    -DIRECTION INOUT
+set_io sio_d           \
+    -pinname N8        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
 
 
 set_io xclk            \

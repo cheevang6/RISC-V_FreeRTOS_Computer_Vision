@@ -3,6 +3,6 @@ Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,PLLs and CCCs,Chip Globals,R
 FCCC_C0_0/FCCC_C0_0/Primitives,0,0,0,1,1,0
 OSC_C0_0/OSC_C0_0/Primitives,0,0,0,0,0,1
 Primitives/Primitives,2,0,5,0,1,0
-config_sccb_0/Primitives,7,8,0,0,0,0
-config_sccb_0/coresccb_0/Primitives,151,25,0,0,0,0
-config_sccb_0/sccb_clk_0/Primitives,8,6,0,0,0,0
+config_sccb_0/Primitives,3,13,0,0,0,0
+config_sccb_0/coresccb_0/Primitives,145,25,0,0,0,0
+config_sccb_0/sccb_clk_0/Primitives,7,8,0,0,0,0

@@ -6,7 +6,7 @@ The 'open_project' command succeeded.
 Warning: Programming is already enabled for device 'M2GL025'.
 The 'enable_device' command succeeded.
 PPD file 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/designer/sccb_design/sccb_design.ppd' has been loaded successfully.
-DESIGN : sccb_design;  CHECKSUM : D673;  PDB_VERSION : 1.0
+DESIGN : sccb_design;  CHECKSUM : 656A;  PDB_VERSION : 1.0
 The 'set_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer 'E20047SIR8' : Scan Chain...
@@ -16,19 +16,19 @@ programmer 'E20047SIR8' : device 'M2GL025' : Executing action PROGRAM
 programmer 'E20047SIR8' : device 'M2GL025' : Family: Igloo2
 programmer 'E20047SIR8' : device 'M2GL025' : Product:      M2GL005
 programmer 'E20047SIR8' : device 'M2GL025' : Cortex-M3 Disabled (M3_ALLOWED = 0)
-programmer 'E20047SIR8' : device 'M2GL025' : EXPORT ISC_ENABLE_RESULT[32] = 00736344
+programmer 'E20047SIR8' : device 'M2GL025' : EXPORT ISC_ENABLE_RESULT[32] = 00726344
 programmer 'E20047SIR8' : device 'M2GL025' : EXPORT CRCERR[1] = 0
 programmer 'E20047SIR8' : device 'M2GL025' : EXPORT EDCERR[1] = 0
 programmer 'E20047SIR8' : device 'M2GL025' : Programming FPGA Array...
 programmer 'E20047SIR8' : device 'M2GL025' : EXPORT eNVM component digest[256] = 5d32483689ecd157863f42732bb70faae28da10567ea64bebe8840d316d4d613
-programmer 'E20047SIR8' : device 'M2GL025' : EXPORT Fabric component digest[256] = 49a3ae283a42c5c761613f1d7a32160f120f363d13532d4c416e9dc10e0f3d50
+programmer 'E20047SIR8' : device 'M2GL025' : EXPORT Fabric component digest[256] = 63e3afaf2e61f2539d720cb083f5a7c597aa711fd18a7ab633067354847d6c3c
 programmer 'E20047SIR8' : device 'M2GL025' : ===================================================================================
 programmer 'E20047SIR8' : device 'M2GL025' : EXPORT DSN[128] = 1896717087d122639c0446098adccf8b
 programmer 'E20047SIR8' : device 'M2GL025' : ===================================================================================
-programmer 'E20047SIR8' : device 'M2GL025' : Finished: Tue Feb  9 15:25:41 2021 (Elapsed time 00:00:31)
+programmer 'E20047SIR8' : device 'M2GL025' : Finished: Fri Feb 12 14:21:14 2021 (Elapsed time 00:00:30)
 programmer 'E20047SIR8' : device 'M2GL025' : Executing action PROGRAM PASSED.
 programmer 'E20047SIR8' : Chain programming PASSED.
-Chain Programming Finished: Tue Feb  9 15:25:41 2021 (Elapsed time 00:00:31)
+Chain Programming Finished: Fri Feb 12 14:21:14 2021 (Elapsed time 00:00:30)
 
                         o - o - o - o - o - o
 

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Mon Feb  8 19:23:36 2021 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Fri Feb 12 11:26:44 2021 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v12.3
 -Version: 12.800.0.16
@@ -194,7 +194,7 @@ M4                VDD                                      Reserved
 M5                VDD                                      Reserved    
 M6                VDD                                      Reserved    
 M7                MSIO125PB4/GB3/CCC_SW0_CLKI3             Special     
-M8      sio_d     MSIO129NB4                               Fixed       LVCMOS33  Inout      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           4                  5                 
+M8                MSIO129NB4                               Unassigned  
 M9      xclk      MSIO132PB4                               Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 M10               MSIO132NB4                               Unassigned  
 M11     DEVRST_N  DEVRST_N                                 Dedicated   
@@ -210,7 +210,7 @@ N4                VSS                                      Reserved
 N5                VDD                                      Reserved    
 N6                VSS                                      Reserved    
 N7                MSIO125NB4/GB7/CCC_SW1_CLKI2             Special     
-N8                MSIO129PB4/CCC_SW1_CLKI3                 Special     
+N8      sio_d     MSIO129PB4/CCC_SW1_CLKI3                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 N9                VSS                                      Reserved    
 N10               MSIO133NB4                               Unassigned  
 N11               JTAG_TMS                                 Reserved    

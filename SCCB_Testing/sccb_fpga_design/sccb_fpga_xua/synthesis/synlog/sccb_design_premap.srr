@@ -1,4 +1,4 @@
-# Mon Feb  8 19:23:14 2021
+# Fri Feb 12 11:26:23 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -60,7 +60,7 @@ Level     Clock                                             Frequency     Period
 ----------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     54   
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     57   
 ==================================================================================================================================
 
 
@@ -73,24 +73,25 @@ Clock                                             Load      Pin                 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                            0         -                                         -                              -                 -                                   
                                                                                                                                                                                            
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     54        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     config_sccb_0.state[3:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     57        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     config_sccb_0.state[5:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
 ===========================================================================================================================================================================================
 
-@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":20:0:20:5|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 54 sequential elements including config_sccb_0.sccb_clk_0.count[3:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":20:0:20:5|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 57 sequential elements including config_sccb_0.sccb_clk_0.count[5:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
-Encoding state machine state[3:0] (in view: work.config_sccb(verilog))
+Encoding state machine state[5:0] (in view: work.config_sccb(verilog))
 original code -> new code
-   000 -> 00
-   001 -> 01
-   010 -> 10
-   011 -> 11
-@N: MO225 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|There are no possible illegal states for state machine state[3:0] (in view: work.config_sccb(verilog)); safe FSM implementation is not required.
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
 
@@ -101,9 +102,9 @@ Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 135MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Feb  8 19:23:14 2021
+# Fri Feb 12 11:26:23 2021
 
 ###########################################################]

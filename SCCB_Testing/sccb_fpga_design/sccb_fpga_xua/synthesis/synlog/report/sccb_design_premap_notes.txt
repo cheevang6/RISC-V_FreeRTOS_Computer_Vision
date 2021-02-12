@@ -12,4 +12,3 @@
 @N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":20:7:20:16|Tristate driver XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 @N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.sap.
-@N: MO225 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|There are no possible illegal states for state machine state[3:0] (in view: work.config_sccb(verilog)); safe FSM implementation is not required.

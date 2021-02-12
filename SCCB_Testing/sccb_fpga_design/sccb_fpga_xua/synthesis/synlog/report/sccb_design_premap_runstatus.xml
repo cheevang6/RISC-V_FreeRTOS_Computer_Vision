@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>15</data>
+<data>14</data>
 <report_link name="more">
 <data>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\synlog\report\sccb_design_premap_notes.txt</data>
 </report_link>
@@ -40,7 +40,7 @@ The file contains the job information from mapper to be displayed as part of the
 <data>135MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1612840994</data>
+<data type="timestamp">1613157983</data>
 </info>
 </job_info>
 </job_run_status>

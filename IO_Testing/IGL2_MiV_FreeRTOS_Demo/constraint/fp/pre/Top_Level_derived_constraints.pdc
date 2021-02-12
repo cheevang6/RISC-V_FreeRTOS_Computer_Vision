@@ -1,0 +1,34 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.3 12.800.0.16
+
+# Design Name: Top_Level 
+
+# Input Netlist Format: EDIF 
+
+# Family: IGLOO2 , Die: M2GL025 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Fri Feb 12 01:53:47 2021 
+
+
+#
+# Block Instantiation constraints
+#
+
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+define_region -name auto_coreconfigp -type inclusive -color 2147442270 456 75 623 131
+assign_region auto_coreconfigp MSS_SubSystem_sb_0/CORECONFIGP_0
+
+#
+# Core cell constraints
+#
+

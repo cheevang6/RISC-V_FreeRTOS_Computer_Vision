@@ -1,44 +1,43 @@
 Selecting top level module sccb_design
 @N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":126:7:126:10|Synthesizing module AND2 in library work.
 Running optimization stage 1 on AND2 .......
-@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":286:7:286:11|Synthesizing module BIBUF in library work.
-Running optimization stage 1 on BIBUF .......
 @N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":3:7:3:19|Synthesizing module clock_divider in library work.
 
 	CLK_FREQ=32'b00000000100110001001011010000000
-	SCCB_CLK_FREQ=32'b00000000000001001001001111100000
-	SCCB_CLK_PERIOD=32'b00000000000000000000000000001111
-	SCCB_MID_AMT=32'b00000000000000000000000000000110
-   Generated name = clock_divider_10000000s_300000s_15s_6s
-Running optimization stage 1 on clock_divider_10000000s_300000s_15s_6s .......
+	SCCB_CLK_FREQ=32'b00000000000000011000011010100000
+	SCCB_CLK_PERIOD=32'b00000000000000000000000000110001
+	SCCB_MID_AMT=32'b00000000000000000000000000010111
+   Generated name = clock_divider_10000000s_100000s_49s_23s
+Running optimization stage 1 on clock_divider_10000000s_100000s_49s_23s .......
 @N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":3:7:3:14|Synthesizing module CoreSCCB in library work.
-@N: CG179 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":190:18:190:25|Removing redundant assignment.
-@N: CG179 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":197:16:197:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":192:18:192:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":199:16:199:23|Removing redundant assignment.
 Running optimization stage 1 on CoreSCCB .......
-@W: CL169 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":64:4:64:9|Pruning unused register ack. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":66:4:66:9|Pruning unused register ack. Make sure that there are no unused intermediate registers.
 @N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":3:7:3:17|Synthesizing module config_sccb in library work.
 Running optimization stage 1 on config_sccb .......
-@A: CL282 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Feedback mux created for signal rw. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit data_in[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit data_in[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit data_in[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit data_in[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit data_in[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit data_in[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit data_in[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit ip_addr[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit ip_addr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit sub_addr[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit sub_addr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit sub_addr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit sub_addr[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Optimizing register bit sub_addr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Pruning register bit 7 of ip_addr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Pruning register bit 3 of ip_addr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL279 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Pruning register bits 7 to 5 of sub_addr[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Pruning register bit 2 of sub_addr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Pruning register bit 0 of sub_addr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL279 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Pruning register bits 6 to 0 of data_in[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@A: CL282 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Feedback mux created for signal rw. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit data_in[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit data_in[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit data_in[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit data_in[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit data_in[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit data_in[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit data_in[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit ip_addr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit ip_addr[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit ip_addr[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit ip_addr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit ip_addr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit sub_addr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit sub_addr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit sub_addr[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Optimizing register bit sub_addr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Pruning register bit 7 of ip_addr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Pruning register bits 5 to 2 of ip_addr[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Pruning register bits 7 to 5 of sub_addr[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Pruning register bit 2 of sub_addr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Pruning register bits 6 to 0 of data_in[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":376:7:376:9|Synthesizing module VCC in library work.
 Running optimization stage 1 on VCC .......
 @N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":372:7:372:9|Synthesizing module GND in library work.
@@ -51,8 +50,6 @@ Running optimization stage 1 on CCC .......
 Running optimization stage 1 on FCCC_C0_FCCC_C0_0_FCCC .......
 @N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\FCCC_C0\FCCC_C0.v":9:7:9:13|Synthesizing module FCCC_C0 in library work.
 Running optimization stage 1 on FCCC_C0 .......
-@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":228:7:228:9|Synthesizing module INV in library work.
-Running optimization stage 1 on INV .......
 @N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":879:7:879:19|Synthesizing module LIVE_PROBE_FB in library work.
 Running optimization stage 1 on LIVE_PROBE_FB .......
 @N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":11:7:11:20|Synthesizing module RCOSC_25_50MHZ in library work.
@@ -77,7 +74,6 @@ Running optimization stage 2 on OSC_C0_OSC_C0_0_OSC .......
 @N: CL159 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":14:7:14:9|Input XTL is unused.
 Running optimization stage 2 on RCOSC_25_50MHZ .......
 Running optimization stage 2 on LIVE_PROBE_FB .......
-Running optimization stage 2 on INV .......
 Running optimization stage 2 on FCCC_C0 .......
 Running optimization stage 2 on FCCC_C0_FCCC_C0_0_FCCC .......
 Running optimization stage 2 on CCC .......
@@ -85,21 +81,21 @@ Running optimization stage 2 on CLKINT .......
 Running optimization stage 2 on GND .......
 Running optimization stage 2 on VCC .......
 Running optimization stage 2 on config_sccb .......
-@N: CL201 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Trying to extract state machine for register state.
 Extracted state machine for register state
-State machine has 4 reachable states with original encodings of:
+State machine has 6 reachable states with original encodings of:
    000
    001
    010
    011
-@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":59:0:59:5|Pruning register bit 5 of ip_addr[6:4]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+   100
+   101
 Running optimization stage 2 on CoreSCCB .......
-@W: CL247 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":11:19:11:25|Input port bit 0 of ip_addr[7:0] is unused
+@W: CL247 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":12:19:12:25|Input port bit 0 of ip_addr[7:0] is unused
 
-Running optimization stage 2 on clock_divider_10000000s_300000s_15s_6s .......
-@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":20:0:20:5|Optimizing register bit count[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":20:0:20:5|Pruning register bit 4 of count[4:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Running optimization stage 2 on BIBUF .......
+Running optimization stage 2 on clock_divider_10000000s_100000s_49s_23s .......
+@W: CL190 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":20:0:20:5|Optimizing register bit count[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":20:0:20:5|Pruning register bit 6 of count[6:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 Running optimization stage 2 on AND2 .......
 
 For a summary of runtime and memory usage per design unit, please see file:

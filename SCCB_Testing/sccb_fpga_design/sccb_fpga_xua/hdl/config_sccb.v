@@ -22,7 +22,7 @@ wire        done;
 wire sccb_clk;
 wire mid_pulse;
 
-clock_divider #(.CLK_FREQ(10_000_000),.SCCB_CLK_FREQ(300_000)) sccb_clk_0(
+clock_divider #(.CLK_FREQ(10_000_000),.SCCB_CLK_FREQ(100_000)) sccb_clk_0(
 	.clk(PCLK),
 	.resetn(PRESETN),
 	.sccb_clk(sccb_clk),
@@ -32,7 +32,7 @@ clock_divider #(.CLK_FREQ(10_000_000),.SCCB_CLK_FREQ(300_000)) sccb_clk_0(
 CoreSCCB coresccb_0(
 	.xclk(PCLK),
 	.resetn(PRESETN),
-	.pwdn(pwdn),
+	//.pwdn(pwdn),
 	.start(start),
 	.rw(rw),
 	.ip_addr(ip_addr),
@@ -50,11 +50,13 @@ CoreSCCB coresccb_0(
 
 assign pwdn = 1'b0;
 
-parameter   init_w  = 3'd0,
-            write   = 3'd1,
-            init_r  = 3'd2,
-            read    = 3'd3,
-            idle    = 3'd4;
+parameter   init_w   = 3'd0,
+            write    = 3'd1,
+            init_r1  = 3'd2,
+            read1    = 3'd3,
+            init_r2  = 3'd4,
+            read2    = 3'd5,
+            idle     = 3'd6;
             
 reg [2:0] state;
 
@@ -70,7 +72,7 @@ always @(posedge PCLK or negedge PRESETN) begin
         case(state)
         init_w : begin
                 // SCCB IP address for ov7670 = 0x42 (write)
-                ip_addr <= 7'h35; // write for ov7670
+                ip_addr <= 7'h42; // write for ov7670
                 sub_addr <= 8'h12; // COMCTRL7 - SCCB Register Reset
                 data_in <= 8'h80;
                 rw <= 0;
@@ -81,25 +83,41 @@ always @(posedge PCLK or negedge PRESETN) begin
                 start <= 1'b1;
                 if(done) begin
                     start <= 1'b0;
-                    state <= init_r;
+                    state <= init_r1;
                 end else begin
                     state <= write;
                 end
             end
-        init_r : begin
+        init_r1 : begin
                 ip_addr <= 7'h43; // read for ov7670
                 sub_addr <= 8'h0a; // Product ID Number MSB (default 0x76)
                 rw <= 1;
                 start <= 1'b0;
-                state <= read;
+                state <= read1;
             end
-        read : begin
+        read1 : begin
                 start <= 1'b1;
                 if(done) begin
                     start <= 1'b0;
-                    state <= init_w;
+                    state <= init_r2;
                 end else begin
-                    state <= read;
+                    state <= read1;
+                end
+            end
+        init_r2 : begin
+                ip_addr <= 7'h43; // read for ov7670
+                sub_addr <= 8'h0b; // Product ID Number MSB (default 0x76)
+                rw <= 1;
+                start <= 1'b0;
+                state <= read2;
+            end
+        read2 : begin
+                start <= 1'b1;
+                if(done) begin
+                    start <= 1'b0;
+                    state <= init_r1;
+                end else begin
+                    state <= read2;
                 end
             end
         idle : begin

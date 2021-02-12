@@ -1,0 +1,2444 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o)
+                              ./main.o (sprintf)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sysisatty.o)
+                              ./riscv_hal/syscall.o (isatty)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-syswrite.o)
+                              ./riscv_hal/syscall.o (write)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-writer.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-syswrite.o) (_write_r)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-impure.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o) (_impure_ptr)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o) (_svfprintf_r)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o) (_printf_i)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memchr.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o) (memchr)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memmove.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o) (memmove)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-freer.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o) (_free_r)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o) (_malloc_r)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o) (_realloc_r)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sbrkr.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-mlock.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-msizer.o)
+                              c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               ./riscv_hal/syscall.o
+g_timer_0           0x4               ./main.o
+xQueueRegistry      0x40              ./FreeRTOS/queue.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 ./riscv_hal/entry.o
+ .data          0x0000000000000000        0x0 ./riscv_hal/entry.o
+ .bss           0x0000000000000000        0x0 ./riscv_hal/entry.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/init.o
+ .text          0x0000000000000000        0x0 ./riscv_hal/init.o
+ .data          0x0000000000000000        0x0 ./riscv_hal/init.o
+ .bss           0x0000000000000000        0x0 ./riscv_hal/init.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal.o
+ .text          0x0000000000000000        0x0 ./riscv_hal/riscv_hal.o
+ .data          0x0000000000000000        0x0 ./riscv_hal/riscv_hal.o
+ .bss           0x0000000000000000        0x0 ./riscv_hal/riscv_hal.o
+ .text.__disable_irq
+                0x0000000000000000       0x30 ./riscv_hal/riscv_hal.o
+ .text.SysTick_Config
+                0x0000000000000000       0xf8 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000      0x748 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x19 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x22 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x52 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x94 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x34 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x34 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x16 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000      0x10e ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x8d ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x57 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x58 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x1f ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x43 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x20 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000      0x18e ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000      0x330 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x16 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x29 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0xef ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x6a ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000      0x1df ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x16 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x10 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x35 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x1c ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x52 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x40 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x10 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x40 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0xd7 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x1c ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000       0x3d ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000      0x51a ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000000000      0x2dc ./riscv_hal/riscv_hal.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/riscv_hal_stubs.o
+ .text          0x0000000000000000        0x0 ./riscv_hal/riscv_hal_stubs.o
+ .data          0x0000000000000000        0x0 ./riscv_hal/riscv_hal_stubs.o
+ .bss           0x0000000000000000        0x0 ./riscv_hal/riscv_hal_stubs.o
+ .text.Software_IRQHandler
+                0x0000000000000000       0x1c ./riscv_hal/riscv_hal_stubs.o
+ .text.SysTick_Handler
+                0x0000000000000000       0x1c ./riscv_hal/riscv_hal_stubs.o
+ .text.External_29_IRQHandler
+                0x0000000000000000       0x20 ./riscv_hal/riscv_hal_stubs.o
+ .text.External_30_IRQHandler
+                0x0000000000000000       0x20 ./riscv_hal/riscv_hal_stubs.o
+ .text.External_31_IRQHandler
+                0x0000000000000000       0x20 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000      0x748 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x22 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x52 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x19 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x94 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x34 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x34 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x57 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000      0x330 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x10 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x58 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x1f ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x43 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x20 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x6a ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x1c ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x52 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x40 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x10 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x40 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0xd7 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x1c ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000       0x3d ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x0000000000000000      0x51a ./riscv_hal/riscv_hal_stubs.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./riscv_hal/syscall.o
+ .text          0x0000000000000000        0x0 ./riscv_hal/syscall.o
+ .data          0x0000000000000000        0x0 ./riscv_hal/syscall.o
+ .bss           0x0000000000000000        0x0 ./riscv_hal/syscall.o
+ .sbss.g_stdio_uart
+                0x0000000000000000        0x8 ./riscv_hal/syscall.o
+ .sbss.g_stdio_uart_init_done
+                0x0000000000000000        0x4 ./riscv_hal/syscall.o
+ .sbss.__env    0x0000000000000000        0x4 ./riscv_hal/syscall.o
+ .sdata.environ
+                0x0000000000000000        0x4 ./riscv_hal/syscall.o
+ .rodata        0x0000000000000000       0x26 ./riscv_hal/syscall.o
+ .text.write_hex
+                0x0000000000000000       0xf0 ./riscv_hal/syscall.o
+ .text._exit    0x0000000000000000       0x5c ./riscv_hal/syscall.o
+ .text._isatty  0x0000000000000000       0x50 ./riscv_hal/syscall.o
+ .text.stub     0x0000000000000000       0x30 ./riscv_hal/syscall.o
+ .text._open    0x0000000000000000       0x40 ./riscv_hal/syscall.o
+ .text._openat  0x0000000000000000       0x44 ./riscv_hal/syscall.o
+ .text._close   0x0000000000000000       0x38 ./riscv_hal/syscall.o
+ .text._execve  0x0000000000000000       0x40 ./riscv_hal/syscall.o
+ .text._fork    0x0000000000000000       0x34 ./riscv_hal/syscall.o
+ .text._fstat   0x0000000000000000       0x64 ./riscv_hal/syscall.o
+ .text._getpid  0x0000000000000000       0x20 ./riscv_hal/syscall.o
+ .text._kill    0x0000000000000000       0x3c ./riscv_hal/syscall.o
+ .text._link    0x0000000000000000       0x3c ./riscv_hal/syscall.o
+ .text._lseek   0x0000000000000000       0x5c ./riscv_hal/syscall.o
+ .text._read    0x0000000000000000       0xa8 ./riscv_hal/syscall.o
+ .text._stat    0x0000000000000000       0x3c ./riscv_hal/syscall.o
+ .text._times   0x0000000000000000       0x38 ./riscv_hal/syscall.o
+ .text._unlink  0x0000000000000000       0x38 ./riscv_hal/syscall.o
+ .text._wait    0x0000000000000000       0x38 ./riscv_hal/syscall.o
+ .text._write   0x0000000000000000      0x110 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000      0x748 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x22 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0xef ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x6a ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000      0x1df ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x19 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x34 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x34 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x16 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000      0x10e ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x8d ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x58 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x1f ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x43 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x20 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000      0x18e ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000      0x330 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x16 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x29 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x16 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x10 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x35 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x1c ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x52 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x40 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x10 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x40 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0xd7 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x1c ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000       0x3d ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000      0x51a ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000000000      0x2dc ./riscv_hal/syscall.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .group         0x0000000000000000        0xc ./hal/hal_irq.o
+ .text          0x0000000000000000        0x0 ./hal/hal_irq.o
+ .data          0x0000000000000000        0x0 ./hal/hal_irq.o
+ .bss           0x0000000000000000        0x0 ./hal/hal_irq.o
+ .text.HAL_enable_interrupts
+                0x0000000000000000       0x2c ./hal/hal_irq.o
+ .text.HAL_disable_interrupts
+                0x0000000000000000       0x40 ./hal/hal_irq.o
+ .text.HAL_restore_interrupts
+                0x0000000000000000       0x28 ./hal/hal_irq.o
+ .debug_info    0x0000000000000000       0xf7 ./hal/hal_irq.o
+ .debug_abbrev  0x0000000000000000       0xcc ./hal/hal_irq.o
+ .debug_aranges
+                0x0000000000000000       0x30 ./hal/hal_irq.o
+ .debug_ranges  0x0000000000000000       0x20 ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0xad ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000      0x748 ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0x22 ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0x8e ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0x51 ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0xef ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0x6a ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000      0x1df ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0x64 ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000      0x2dc ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0x28 ./hal/hal_irq.o
+ .debug_macro   0x0000000000000000       0x10 ./hal/hal_irq.o
+ .debug_line    0x0000000000000000      0x338 ./hal/hal_irq.o
+ .debug_str     0x0000000000000000     0x4b21 ./hal/hal_irq.o
+ .comment       0x0000000000000000       0x44 ./hal/hal_irq.o
+ .debug_frame   0x0000000000000000       0x78 ./hal/hal_irq.o
+ .riscv.attributes
+                0x0000000000000000       0x1f ./hal/hal_irq.o
+ .data          0x0000000000000000        0x0 ./hal/hw_reg_access.o
+ .bss           0x0000000000000000        0x0 ./hal/hw_reg_access.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreUARTapb/core_uart_apb.o
+ .text          0x0000000000000000        0x0 ./drivers/CoreUARTapb/core_uart_apb.o
+ .data          0x0000000000000000        0x0 ./drivers/CoreUARTapb/core_uart_apb.o
+ .bss           0x0000000000000000        0x0 ./drivers/CoreUARTapb/core_uart_apb.o
+ .text.UART_fill_tx_fifo
+                0x0000000000000000       0xe8 ./drivers/CoreUARTapb/core_uart_apb.o
+ .text.UART_get_rx
+                0x0000000000000000      0x13c ./drivers/CoreUARTapb/core_uart_apb.o
+ .text.UART_get_rx_status
+                0x0000000000000000       0x54 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000      0x748 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000       0x22 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000       0x8e ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000       0x51 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000       0xef ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000       0x6a ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000      0x1df ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000       0x64 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000000000       0x40 ./drivers/CoreUARTapb/core_uart_apb.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreTimer/core_timer.o
+ .text          0x0000000000000000        0x0 ./drivers/CoreTimer/core_timer.o
+ .data          0x0000000000000000        0x0 ./drivers/CoreTimer/core_timer.o
+ .bss           0x0000000000000000        0x0 ./drivers/CoreTimer/core_timer.o
+ .text.TMR_init
+                0x0000000000000000      0x114 ./drivers/CoreTimer/core_timer.o
+ .text.TMR_start
+                0x0000000000000000       0x4c ./drivers/CoreTimer/core_timer.o
+ .text.TMR_stop
+                0x0000000000000000       0x4c ./drivers/CoreTimer/core_timer.o
+ .text.TMR_enable_int
+                0x0000000000000000       0x4c ./drivers/CoreTimer/core_timer.o
+ .text.TMR_clear_int
+                0x0000000000000000       0x44 ./drivers/CoreTimer/core_timer.o
+ .text.TMR_current_value
+                0x0000000000000000       0x4c ./drivers/CoreTimer/core_timer.o
+ .text.TMR_reload
+                0x0000000000000000       0x44 ./drivers/CoreTimer/core_timer.o
+ .debug_info    0x0000000000000000      0x23d ./drivers/CoreTimer/core_timer.o
+ .debug_abbrev  0x0000000000000000       0xdd ./drivers/CoreTimer/core_timer.o
+ .debug_aranges
+                0x0000000000000000       0x50 ./drivers/CoreTimer/core_timer.o
+ .debug_ranges  0x0000000000000000       0x40 ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0xab ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000      0x748 ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0x22 ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0x8e ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0x51 ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0xef ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0x6a ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000      0x1df ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0x4c ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0xd6 ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0x64 ./drivers/CoreTimer/core_timer.o
+ .debug_macro   0x0000000000000000       0x16 ./drivers/CoreTimer/core_timer.o
+ .debug_line    0x0000000000000000      0x410 ./drivers/CoreTimer/core_timer.o
+ .debug_str     0x0000000000000000     0x4090 ./drivers/CoreTimer/core_timer.o
+ .comment       0x0000000000000000       0x44 ./drivers/CoreTimer/core_timer.o
+ .debug_frame   0x0000000000000000      0x10c ./drivers/CoreTimer/core_timer.o
+ .riscv.attributes
+                0x0000000000000000       0x1f ./drivers/CoreTimer/core_timer.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./drivers/CoreGPIO/core_gpio.o
+ .text          0x0000000000000000        0x0 ./drivers/CoreGPIO/core_gpio.o
+ .data          0x0000000000000000        0x0 ./drivers/CoreGPIO/core_gpio.o
+ .bss           0x0000000000000000        0x0 ./drivers/CoreGPIO/core_gpio.o
+ .text.GPIO_config
+                0x0000000000000000       0x6c ./drivers/CoreGPIO/core_gpio.o
+ .text.GPIO_set_outputs
+                0x0000000000000000      0x164 ./drivers/CoreGPIO/core_gpio.o
+ .text.GPIO_get_outputs
+                0x0000000000000000      0x190 ./drivers/CoreGPIO/core_gpio.o
+ .text.GPIO_drive_inout
+                0x0000000000000000      0x16c ./drivers/CoreGPIO/core_gpio.o
+ .text.GPIO_disable_irq
+                0x0000000000000000       0x88 ./drivers/CoreGPIO/core_gpio.o
+ .text.GPIO_clear_irq
+                0x0000000000000000      0x14c ./drivers/CoreGPIO/core_gpio.o
+ .text.GPIO_get_irq_sources
+                0x0000000000000000      0x190 ./drivers/CoreGPIO/core_gpio.o
+ .text.GPIO_clear_all_irq_sources
+                0x0000000000000000      0x144 ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000      0x748 ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000       0x22 ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000       0x8e ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000       0x51 ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000       0xef ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000       0x6a ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000      0x1df ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000       0x64 ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000000000       0x16 ./drivers/CoreGPIO/core_gpio.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/MemMang/heap_2.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/portable/MemMang/heap_2.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/portable/MemMang/heap_2.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/portable/MemMang/heap_2.o
+ .sdata2.heapSTRUCT_SIZE
+                0x0000000000000000        0x2 ./FreeRTOS/portable/MemMang/heap_2.o
+ .text.xPortGetFreeHeapSize
+                0x0000000000000000       0x24 ./FreeRTOS/portable/MemMang/heap_2.o
+ .text.vPortInitialiseBlocks
+                0x0000000000000000       0x1c ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x52 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x94 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000      0x10e ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x8d ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x57 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x29 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000      0x2dc ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000000000       0x28 ./FreeRTOS/portable/MemMang/heap_2.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .text.vPortClearInterruptMask
+                0x0000000000000000       0x28 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .text.vPortSetInterruptMask
+                0x0000000000000000       0x2c ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x8e ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x51 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000      0x2dc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x28 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0xfa ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000      0x15d ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0xa6 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000      0x3ca ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0xc0 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x9a ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .text          0x0000000000000000        0x4 ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .debug_line    0x0000000000000000       0x5a ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .debug_info    0x0000000000000000       0x26 ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .debug_abbrev  0x0000000000000000       0x14 ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .debug_aranges
+                0x0000000000000000       0x20 ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .debug_str     0x0000000000000000       0x9f ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .riscv.attributes
+                0x0000000000000000       0x1f ./FreeRTOS/portable/GCC/RISCV/portasm.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/croutine.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/croutine.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/croutine.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/croutine.o
+ .debug_info    0x0000000000000000      0x941 ./FreeRTOS/croutine.o
+ .debug_abbrev  0x0000000000000000      0x1b4 ./FreeRTOS/croutine.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x1c4 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x174 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x8e ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x51 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x2dc ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x28 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0xfa ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x15d ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0xa6 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000      0x3ca ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0xc0 ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x9a ./FreeRTOS/croutine.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/croutine.o
+ .debug_line    0x0000000000000000      0x521 ./FreeRTOS/croutine.o
+ .debug_str     0x0000000000000000     0xac28 ./FreeRTOS/croutine.o
+ .comment       0x0000000000000000       0x44 ./FreeRTOS/croutine.o
+ .riscv.attributes
+                0x0000000000000000       0x1f ./FreeRTOS/croutine.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/event_groups.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/event_groups.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/event_groups.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/event_groups.o
+ .text.xEventGroupCreate
+                0x0000000000000000       0x5c ./FreeRTOS/event_groups.o
+ .text.xEventGroupSync
+                0x0000000000000000      0x1cc ./FreeRTOS/event_groups.o
+ .text.xEventGroupWaitBits
+                0x0000000000000000      0x210 ./FreeRTOS/event_groups.o
+ .text.xEventGroupClearBits
+                0x0000000000000000       0x98 ./FreeRTOS/event_groups.o
+ .text.xEventGroupGetBitsFromISR
+                0x0000000000000000       0x60 ./FreeRTOS/event_groups.o
+ .text.xEventGroupSetBits
+                0x0000000000000000      0x1c4 ./FreeRTOS/event_groups.o
+ .text.vEventGroupDelete
+                0x0000000000000000       0x9c ./FreeRTOS/event_groups.o
+ .text.vEventGroupSetBitsCallback
+                0x0000000000000000       0x3c ./FreeRTOS/event_groups.o
+ .text.vEventGroupClearBitsCallback
+                0x0000000000000000       0x3c ./FreeRTOS/event_groups.o
+ .text.prvTestWaitCondition
+                0x0000000000000000       0x70 ./FreeRTOS/event_groups.o
+ .text.uxEventGroupGetNumber
+                0x0000000000000000       0x48 ./FreeRTOS/event_groups.o
+ .debug_info    0x0000000000000000      0xf81 ./FreeRTOS/event_groups.o
+ .debug_abbrev  0x0000000000000000      0x2b3 ./FreeRTOS/event_groups.o
+ .debug_aranges
+                0x0000000000000000       0x70 ./FreeRTOS/event_groups.o
+ .debug_ranges  0x0000000000000000       0x60 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x225 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x52 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x94 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x10e ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x8d ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x57 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x29 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x2dc ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x28 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0xfa ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x15d ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0xa6 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000      0x3ca ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0xc0 ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x9a ./FreeRTOS/event_groups.o
+ .debug_macro   0x0000000000000000       0x91 ./FreeRTOS/event_groups.o
+ .debug_line    0x0000000000000000      0xc4e ./FreeRTOS/event_groups.o
+ .debug_str     0x0000000000000000     0xb3ae ./FreeRTOS/event_groups.o
+ .comment       0x0000000000000000       0x44 ./FreeRTOS/event_groups.o
+ .debug_frame   0x0000000000000000      0x1a0 ./FreeRTOS/event_groups.o
+ .riscv.attributes
+                0x0000000000000000       0x1f ./FreeRTOS/event_groups.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/list.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/list.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/list.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x52 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x94 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000      0x10e ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x8d ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x57 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x29 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000      0x2dc ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x28 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0xfa ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000      0x15d ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0xa6 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000      0x3ca ./FreeRTOS/list.o
+ .debug_macro   0x0000000000000000       0xc0 ./FreeRTOS/list.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/queue.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/queue.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/queue.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/queue.o
+ .text.xQueueGenericReset
+                0x0000000000000000      0x144 ./FreeRTOS/queue.o
+ .text.xQueueGenericCreate
+                0x0000000000000000      0x104 ./FreeRTOS/queue.o
+ .text.xQueueCreateMutex
+                0x0000000000000000       0xe8 ./FreeRTOS/queue.o
+ .text.xQueueGiveMutexRecursive
+                0x0000000000000000       0xac ./FreeRTOS/queue.o
+ .text.xQueueTakeMutexRecursive
+                0x0000000000000000       0xc4 ./FreeRTOS/queue.o
+ .text.xQueueCreateCountingSemaphore
+                0x0000000000000000       0x90 ./FreeRTOS/queue.o
+ .text.xQueueGenericSend
+                0x0000000000000000      0x278 ./FreeRTOS/queue.o
+ .text.xQueueGenericSendFromISR
+                0x0000000000000000      0x178 ./FreeRTOS/queue.o
+ .text.xQueueGiveFromISR
+                0x0000000000000000      0x148 ./FreeRTOS/queue.o
+ .text.xQueueGenericReceive
+                0x0000000000000000      0x2cc ./FreeRTOS/queue.o
+ .text.xQueueReceiveFromISR
+                0x0000000000000000      0x13c ./FreeRTOS/queue.o
+ .text.xQueuePeekFromISR
+                0x0000000000000000       0xec ./FreeRTOS/queue.o
+ .text.uxQueueMessagesWaiting
+                0x0000000000000000       0x58 ./FreeRTOS/queue.o
+ .text.uxQueueSpacesAvailable
+                0x0000000000000000       0x6c ./FreeRTOS/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x0000000000000000       0x40 ./FreeRTOS/queue.o
+ .text.vQueueDelete
+                0x0000000000000000       0x58 ./FreeRTOS/queue.o
+ .text.uxQueueGetQueueNumber
+                0x0000000000000000       0x28 ./FreeRTOS/queue.o
+ .text.vQueueSetQueueNumber
+                0x0000000000000000       0x30 ./FreeRTOS/queue.o
+ .text.ucQueueGetQueueType
+                0x0000000000000000       0x28 ./FreeRTOS/queue.o
+ .text.prvCopyDataToQueue
+                0x0000000000000000      0x19c ./FreeRTOS/queue.o
+ .text.prvCopyDataFromQueue
+                0x0000000000000000       0x9c ./FreeRTOS/queue.o
+ .text.prvUnlockQueue
+                0x0000000000000000      0x118 ./FreeRTOS/queue.o
+ .text.prvIsQueueEmpty
+                0x0000000000000000       0x58 ./FreeRTOS/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x0000000000000000       0x50 ./FreeRTOS/queue.o
+ .text.prvIsQueueFull
+                0x0000000000000000       0x60 ./FreeRTOS/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x0000000000000000       0x58 ./FreeRTOS/queue.o
+ .text.vQueueAddToRegistry
+                0x0000000000000000       0x9c ./FreeRTOS/queue.o
+ .text.vQueueUnregisterQueue
+                0x0000000000000000       0x7c ./FreeRTOS/queue.o
+ .debug_info    0x0000000000000000     0x1557 ./FreeRTOS/queue.o
+ .debug_abbrev  0x0000000000000000      0x2d0 ./FreeRTOS/queue.o
+ .debug_aranges
+                0x0000000000000000       0xf8 ./FreeRTOS/queue.o
+ .debug_ranges  0x0000000000000000       0xe8 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x225 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x52 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x94 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x10e ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x8d ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x57 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x29 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x2dc ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x28 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0xfa ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x15d ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0xa6 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000      0x3ca ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0xc0 ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0x9a ./FreeRTOS/queue.o
+ .debug_macro   0x0000000000000000       0xb0 ./FreeRTOS/queue.o
+ .debug_line    0x0000000000000000     0x19ac ./FreeRTOS/queue.o
+ .debug_str     0x0000000000000000     0xb991 ./FreeRTOS/queue.o
+ .comment       0x0000000000000000       0x44 ./FreeRTOS/queue.o
+ .debug_frame   0x0000000000000000      0x404 ./FreeRTOS/queue.o
+ .riscv.attributes
+                0x0000000000000000       0x1f ./FreeRTOS/queue.o
+ COMMON         0x0000000000000000       0x40 ./FreeRTOS/queue.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/string.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/string.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/string.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/string.o
+ .text.strlen   0x0000000000000000       0x50 ./FreeRTOS/string.o
+ .text.strcmp   0x0000000000000000       0x6c ./FreeRTOS/string.o
+ .text.strcpy   0x0000000000000000       0x5c ./FreeRTOS/string.o
+ .text.atol     0x0000000000000000       0xec ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x52 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x94 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000      0x174 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x57 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/string.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/string.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/tasks.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/tasks.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/tasks.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/tasks.o
+ .text.vTaskDelete
+                0x0000000000000000      0x120 ./FreeRTOS/tasks.o
+ .text.vTaskDelayUntil
+                0x0000000000000000      0x13c ./FreeRTOS/tasks.o
+ .text.eTaskGetState
+                0x0000000000000000       0xfc ./FreeRTOS/tasks.o
+ .text.uxTaskPriorityGet
+                0x0000000000000000       0x64 ./FreeRTOS/tasks.o
+ .text.uxTaskPriorityGetFromISR
+                0x0000000000000000       0x74 ./FreeRTOS/tasks.o
+ .text.vTaskPrioritySet
+                0x0000000000000000      0x20c ./FreeRTOS/tasks.o
+ .text.vTaskSuspend
+                0x0000000000000000      0x130 ./FreeRTOS/tasks.o
+ .text.prvTaskIsTaskSuspended
+                0x0000000000000000       0x9c ./FreeRTOS/tasks.o
+ .text.vTaskResume
+                0x0000000000000000      0x114 ./FreeRTOS/tasks.o
+ .text.xTaskResumeFromISR
+                0x0000000000000000      0x140 ./FreeRTOS/tasks.o
+ .text.vTaskEndScheduler
+                0x0000000000000000       0x38 ./FreeRTOS/tasks.o
+ .text.xTaskGetTickCount
+                0x0000000000000000       0x44 ./FreeRTOS/tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x0000000000000000       0x54 ./FreeRTOS/tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x0000000000000000       0x24 ./FreeRTOS/tasks.o
+ .text.uxTaskGetSystemState
+                0x0000000000000000      0x1c0 ./FreeRTOS/tasks.o
+ .text.vTaskPlaceOnEventList
+                0x0000000000000000       0xc0 ./FreeRTOS/tasks.o
+ .text.vTaskPlaceOnUnorderedEventList
+                0x0000000000000000       0xf0 ./FreeRTOS/tasks.o
+ .text.xTaskRemoveFromEventList
+                0x0000000000000000      0x134 ./FreeRTOS/tasks.o
+ .text.xTaskRemoveFromUnorderedEventList
+                0x0000000000000000      0x128 ./FreeRTOS/tasks.o
+ .text.vTaskSetTimeOutState
+                0x0000000000000000       0x50 ./FreeRTOS/tasks.o
+ .text.xTaskCheckForTimeOut
+                0x0000000000000000      0x110 ./FreeRTOS/tasks.o
+ .text.vTaskMissedYield
+                0x0000000000000000       0x28 ./FreeRTOS/tasks.o
+ .text.uxTaskGetTaskNumber
+                0x0000000000000000       0x48 ./FreeRTOS/tasks.o
+ .text.vTaskSetTaskNumber
+                0x0000000000000000       0x40 ./FreeRTOS/tasks.o
+ .text.prvListTaskWithinSingleList
+                0x0000000000000000      0x21c ./FreeRTOS/tasks.o
+ .text.prvTaskCheckFreeStackSpace
+                0x0000000000000000       0x68 ./FreeRTOS/tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x0000000000000000       0x2c ./FreeRTOS/tasks.o
+ .text.vTaskPriorityInherit
+                0x0000000000000000      0x158 ./FreeRTOS/tasks.o
+ .text.xTaskPriorityDisinherit
+                0x0000000000000000      0x144 ./FreeRTOS/tasks.o
+ .text.vTaskEnterCritical
+                0x0000000000000000       0x48 ./FreeRTOS/tasks.o
+ .text.vTaskExitCritical
+                0x0000000000000000       0x60 ./FreeRTOS/tasks.o
+ .text.uxTaskResetEventItemValue
+                0x0000000000000000       0x50 ./FreeRTOS/tasks.o
+ .text.pvTaskIncrementMutexHeldCount
+                0x0000000000000000       0x44 ./FreeRTOS/tasks.o
+ .text.ulTaskNotifyTake
+                0x0000000000000000      0x138 ./FreeRTOS/tasks.o
+ .text.xTaskNotifyWait
+                0x0000000000000000      0x178 ./FreeRTOS/tasks.o
+ .text.xTaskGenericNotify
+                0x0000000000000000      0x1e0 ./FreeRTOS/tasks.o
+ .rodata.xTaskGenericNotify
+                0x0000000000000000       0x14 ./FreeRTOS/tasks.o
+ .text.xTaskGenericNotifyFromISR
+                0x0000000000000000      0x22c ./FreeRTOS/tasks.o
+ .rodata.xTaskGenericNotifyFromISR
+                0x0000000000000000       0x14 ./FreeRTOS/tasks.o
+ .text.vTaskNotifyGiveFromISR
+                0x0000000000000000      0x17c ./FreeRTOS/tasks.o
+ .text.xTaskNotifyStateClear
+                0x0000000000000000       0x88 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x52 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x94 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000      0x10e ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x8d ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x57 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x29 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000      0x2dc ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x28 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0xfa ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000      0x15d ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0xa6 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000      0x3ca ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0xc0 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x9a ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000000000       0x91 ./FreeRTOS/tasks.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./FreeRTOS/timers.o
+ .text          0x0000000000000000        0x0 ./FreeRTOS/timers.o
+ .data          0x0000000000000000        0x0 ./FreeRTOS/timers.o
+ .bss           0x0000000000000000        0x0 ./FreeRTOS/timers.o
+ .debug_info    0x0000000000000000      0x94d ./FreeRTOS/timers.o
+ .debug_abbrev  0x0000000000000000      0x1b4 ./FreeRTOS/timers.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x201 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x748 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x19 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x22 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x52 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x94 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x34 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x10e ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x8d ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x57 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x58 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x43 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x20 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x18e ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x330 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x29 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0xef ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x6a ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x1df ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x16 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x35 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x2dc ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x28 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0xfa ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x15d ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0xa6 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x10 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x1f ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000      0x3ca ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0xc0 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x9a ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0xb0 ./FreeRTOS/timers.o
+ .debug_macro   0x0000000000000000       0x91 ./FreeRTOS/timers.o
+ .debug_line    0x0000000000000000      0x54c ./FreeRTOS/timers.o
+ .debug_str     0x0000000000000000     0xb93a ./FreeRTOS/timers.o
+ .comment       0x0000000000000000       0x44 ./FreeRTOS/timers.o
+ .riscv.attributes
+                0x0000000000000000       0x1f ./FreeRTOS/timers.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./Creative/BasicIO.o
+ .text          0x0000000000000000        0x0 ./Creative/BasicIO.o
+ .data          0x0000000000000000        0x0 ./Creative/BasicIO.o
+ .bss           0x0000000000000000        0x0 ./Creative/BasicIO.o
+ .text.getPBstatuses
+                0x0000000000000000       0x38 ./Creative/BasicIO.o
+ .text.clearPB1_IRQ
+                0x0000000000000000       0x38 ./Creative/BasicIO.o
+ .text.clearPB2_IRQ
+                0x0000000000000000       0x38 ./Creative/BasicIO.o
+ .text.getLEDsPattern
+                0x0000000000000000       0x38 ./Creative/BasicIO.o
+ .text.setLED1_GREEN
+                0x0000000000000000       0x3c ./Creative/BasicIO.o
+ .text.clearLED1_GREEN
+                0x0000000000000000       0x3c ./Creative/BasicIO.o
+ .text.setLED1_RED
+                0x0000000000000000       0x3c ./Creative/BasicIO.o
+ .text.clearLED1_RED
+                0x0000000000000000       0x3c ./Creative/BasicIO.o
+ .text.setLED2_GREEN
+                0x0000000000000000       0x3c ./Creative/BasicIO.o
+ .text.clearLED2_GREEN
+                0x0000000000000000       0x3c ./Creative/BasicIO.o
+ .text.setLED2_RED
+                0x0000000000000000       0x3c ./Creative/BasicIO.o
+ .text.clearLED2_RED
+                0x0000000000000000       0x3c ./Creative/BasicIO.o
+ .text.UART_Rx_Msg
+                0x0000000000000000       0x44 ./Creative/BasicIO.o
+ .debug_macro   0x0000000000000000      0x748 ./Creative/BasicIO.o
+ .debug_macro   0x0000000000000000       0x22 ./Creative/BasicIO.o
+ .debug_macro   0x0000000000000000       0x8e ./Creative/BasicIO.o
+ .debug_macro   0x0000000000000000       0x51 ./Creative/BasicIO.o
+ .debug_macro   0x0000000000000000       0xef ./Creative/BasicIO.o
+ .debug_macro   0x0000000000000000       0x6a ./Creative/BasicIO.o
+ .debug_macro   0x0000000000000000      0x1df ./Creative/BasicIO.o
+ .debug_macro   0x0000000000000000       0x46 ./Creative/BasicIO.o
+ .group         0x0000000000000000        0xc ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .text          0x0000000000000000        0x0 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .data          0x0000000000000000        0x0 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .bss           0x0000000000000000        0x0 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_info    0x0000000000000000       0x21 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_abbrev  0x0000000000000000       0x13 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_macro   0x0000000000000000       0x11 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_macro   0x0000000000000000      0x748 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_line    0x0000000000000000       0x58 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_str     0x0000000000000000     0x2500 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .comment       0x0000000000000000       0x44 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .riscv.attributes
+                0x0000000000000000       0x1f ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .group         0x0000000000000000        0xc ./main.o
+ .text          0x0000000000000000        0x0 ./main.o
+ .data          0x0000000000000000        0x0 ./main.o
+ .bss           0x0000000000000000        0x0 ./main.o
+ .sdata.g_MSG_INTRO
+                0x0000000000000000        0x4 ./main.o
+ .sdata.g_MSG_DEMO
+                0x0000000000000000        0x4 ./main.o
+ .text.vApplicationStackOverflowHook
+                0x0000000000000000       0x1c ./main.o
+ .debug_macro   0x0000000000000000      0x748 ./main.o
+ .debug_macro   0x0000000000000000      0x174 ./main.o
+ .debug_macro   0x0000000000000000       0x22 ./main.o
+ .debug_macro   0x0000000000000000       0x8e ./main.o
+ .debug_macro   0x0000000000000000       0x51 ./main.o
+ .debug_macro   0x0000000000000000       0xef ./main.o
+ .debug_macro   0x0000000000000000       0x6a ./main.o
+ .debug_macro   0x0000000000000000      0x1df ./main.o
+ .debug_macro   0x0000000000000000       0x58 ./main.o
+ .debug_macro   0x0000000000000000       0x19 ./main.o
+ .debug_macro   0x0000000000000000       0x34 ./main.o
+ .debug_macro   0x0000000000000000       0x34 ./main.o
+ .debug_macro   0x0000000000000000       0x58 ./main.o
+ .debug_macro   0x0000000000000000       0x1f ./main.o
+ .debug_macro   0x0000000000000000       0x43 ./main.o
+ .debug_macro   0x0000000000000000       0x20 ./main.o
+ .debug_macro   0x0000000000000000      0x18e ./main.o
+ .debug_macro   0x0000000000000000      0x330 ./main.o
+ .debug_macro   0x0000000000000000       0x10 ./main.o
+ .debug_macro   0x0000000000000000       0x35 ./main.o
+ .debug_macro   0x0000000000000000      0x2dc ./main.o
+ .debug_macro   0x0000000000000000       0x28 ./main.o
+ .debug_macro   0x0000000000000000       0xfa ./main.o
+ .debug_macro   0x0000000000000000      0x15d ./main.o
+ .debug_macro   0x0000000000000000       0xa6 ./main.o
+ .debug_macro   0x0000000000000000       0x10 ./main.o
+ .debug_macro   0x0000000000000000       0x1f ./main.o
+ .debug_macro   0x0000000000000000      0x3ca ./main.o
+ .debug_macro   0x0000000000000000       0xc0 ./main.o
+ .debug_macro   0x0000000000000000       0x9a ./main.o
+ .debug_macro   0x0000000000000000       0xb0 ./main.o
+ .debug_macro   0x0000000000000000       0x91 ./main.o
+ .debug_macro   0x0000000000000000       0x46 ./main.o
+ .debug_macro   0x0000000000000000      0x122 ./main.o
+ .debug_macro   0x0000000000000000       0x1c ./main.o
+ .debug_macro   0x0000000000000000       0x10 ./main.o
+ .debug_macro   0x0000000000000000       0x10 ./main.o
+ .debug_macro   0x0000000000000000       0x1c ./main.o
+ .debug_macro   0x0000000000000000       0x52 ./main.o
+ .debug_macro   0x0000000000000000       0x40 ./main.o
+ .debug_macro   0x0000000000000000       0x10 ./main.o
+ .debug_macro   0x0000000000000000       0x40 ./main.o
+ .debug_macro   0x0000000000000000       0xd7 ./main.o
+ .debug_macro   0x0000000000000000       0x1c ./main.o
+ .debug_macro   0x0000000000000000       0x3d ./main.o
+ .debug_macro   0x0000000000000000       0x16 ./main.o
+ COMMON         0x0000000000000000        0x4 ./main.o
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o)
+ .text._sprintf_r
+                0x0000000000000000       0x68 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sysisatty.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sysisatty.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sysisatty.o)
+ .text.isatty   0x0000000000000000        0x8 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sysisatty.o)
+ .debug_frame   0x0000000000000000       0x20 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sysisatty.o)
+ .riscv.attributes
+                0x0000000000000000       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sysisatty.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-syswrite.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-syswrite.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-syswrite.o)
+ .text.write    0x0000000000000000       0x20 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-syswrite.o)
+ .debug_frame   0x0000000000000000       0x20 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-syswrite.o)
+ .riscv.attributes
+                0x0000000000000000       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-syswrite.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-writer.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-writer.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-writer.o)
+ .text._write_r
+                0x0000000000000000       0x58 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-writer.o)
+ .debug_frame   0x0000000000000000       0x30 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-writer.o)
+ .riscv.attributes
+                0x0000000000000000       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-writer.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-impure.o)
+ .sdata2._global_impure_ptr
+                0x0000000000000000        0x4 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+ .text.__ssprint_r
+                0x0000000000000000      0x1dc c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memchr.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memchr.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memchr.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memmove.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-freer.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-freer.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-freer.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sbrkr.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-mlock.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-msizer.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-msizer.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-msizer.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+envm             0x0000000060000000 0x000000000003c000 xr
+ram              0x0000000080000000 0x0000000000100000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ./riscv_hal/entry.o
+LOAD ./riscv_hal/init.o
+LOAD ./riscv_hal/riscv_hal.o
+LOAD ./riscv_hal/riscv_hal_stubs.o
+LOAD ./riscv_hal/syscall.o
+LOAD ./hal/hal_irq.o
+LOAD ./hal/hw_reg_access.o
+LOAD ./drivers/CoreUARTapb/core_uart_apb.o
+LOAD ./drivers/CoreTimer/core_timer.o
+LOAD ./drivers/CoreGPIO/core_gpio.o
+LOAD ./FreeRTOS/portable/MemMang/heap_2.o
+LOAD ./FreeRTOS/portable/GCC/RISCV/port.o
+LOAD ./FreeRTOS/portable/GCC/RISCV/portasm.o
+LOAD ./FreeRTOS/croutine.o
+LOAD ./FreeRTOS/event_groups.o
+LOAD ./FreeRTOS/list.o
+LOAD ./FreeRTOS/queue.o
+LOAD ./FreeRTOS/string.o
+LOAD ./FreeRTOS/tasks.o
+LOAD ./FreeRTOS/timers.o
+LOAD ./Creative/BasicIO.o
+LOAD ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+LOAD ./main.o
+LOAD c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/rv32im/ilp32\libgcc.a
+LOAD c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a
+LOAD c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libc_nano.a
+LOAD c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/rv32im/ilp32\libgcc.a
+START GROUP
+LOAD c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/rv32im/ilp32\libgcc.a
+LOAD c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libc_nano.a
+END GROUP
+                0x0000000080000000                RAM_START_ADDRESS = 0x80000000
+                0x0000000000100000                RAM_SIZE = 0x100000
+                0x0000000000001000                STACK_SIZE = 0x1000
+                0x0000000000001000                HEAP_SIZE = 0x1000
+
+.text           0x0000000060000000     0x4050
+ *(SORT_NONE(.text.entry))
+ .text.entry    0x0000000060000000      0x160 ./riscv_hal/entry.o
+                0x0000000060000000                _start
+                0x0000000060000160                . = ALIGN (0x10)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.copy_section
+                0x0000000060000160       0x60 ./riscv_hal/init.o
+ .text.zero_section
+                0x00000000600001c0       0x50 ./riscv_hal/init.o
+ .text._init    0x0000000060000210       0x98 ./riscv_hal/init.o
+                0x0000000060000210                _init
+ .text._fini    0x00000000600002a8       0x1c ./riscv_hal/init.o
+                0x00000000600002a8                _fini
+ .text.PLIC_DisableIRQ
+                0x00000000600002c4       0xb8 ./riscv_hal/riscv_hal.o
+ .text.PLIC_ClaimIRQ
+                0x000000006000037c       0x44 ./riscv_hal/riscv_hal.o
+ .text.PLIC_CompleteIRQ
+                0x00000000600003c0       0x4c ./riscv_hal/riscv_hal.o
+ .text.__enable_irq
+                0x000000006000040c       0x24 ./riscv_hal/riscv_hal.o
+                0x000000006000040c                __enable_irq
+ .text.handle_m_timer_interrupt
+                0x0000000060000430       0xa8 ./riscv_hal/riscv_hal.o
+ .text.handle_m_ext_interrupt
+                0x00000000600004d8       0x70 ./riscv_hal/riscv_hal.o
+ .text.handle_m_soft_interrupt
+                0x0000000060000548       0x30 ./riscv_hal/riscv_hal.o
+ .text.handle_trap
+                0x0000000060000578       0xfc ./riscv_hal/riscv_hal.o
+                0x0000000060000578                handle_trap
+ .text.Invalid_IRQHandler
+                0x0000000060000674       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000674                Invalid_IRQHandler
+ .text.External_1_IRQHandler
+                0x0000000060000694       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000694                External_1_IRQHandler
+ .text.External_2_IRQHandler
+                0x00000000600006b4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600006b4                External_2_IRQHandler
+ .text.External_3_IRQHandler
+                0x00000000600006d4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600006d4                External_3_IRQHandler
+ .text.External_4_IRQHandler
+                0x00000000600006f4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600006f4                External_4_IRQHandler
+ .text.External_5_IRQHandler
+                0x0000000060000714       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000714                External_5_IRQHandler
+ .text.External_6_IRQHandler
+                0x0000000060000734       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000734                External_6_IRQHandler
+ .text.External_7_IRQHandler
+                0x0000000060000754       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000754                External_7_IRQHandler
+ .text.External_8_IRQHandler
+                0x0000000060000774       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000774                External_8_IRQHandler
+ .text.External_9_IRQHandler
+                0x0000000060000794       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000794                External_9_IRQHandler
+ .text.External_10_IRQHandler
+                0x00000000600007b4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600007b4                External_10_IRQHandler
+ .text.External_11_IRQHandler
+                0x00000000600007d4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600007d4                External_11_IRQHandler
+ .text.External_12_IRQHandler
+                0x00000000600007f4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600007f4                External_12_IRQHandler
+ .text.External_13_IRQHandler
+                0x0000000060000814       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000814                External_13_IRQHandler
+ .text.External_14_IRQHandler
+                0x0000000060000834       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000834                External_14_IRQHandler
+ .text.External_15_IRQHandler
+                0x0000000060000854       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000854                External_15_IRQHandler
+ .text.External_16_IRQHandler
+                0x0000000060000874       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000874                External_16_IRQHandler
+ .text.External_17_IRQHandler
+                0x0000000060000894       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000894                External_17_IRQHandler
+ .text.External_18_IRQHandler
+                0x00000000600008b4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600008b4                External_18_IRQHandler
+ .text.External_19_IRQHandler
+                0x00000000600008d4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600008d4                External_19_IRQHandler
+ .text.External_20_IRQHandler
+                0x00000000600008f4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600008f4                External_20_IRQHandler
+ .text.External_21_IRQHandler
+                0x0000000060000914       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000914                External_21_IRQHandler
+ .text.External_22_IRQHandler
+                0x0000000060000934       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000934                External_22_IRQHandler
+ .text.External_23_IRQHandler
+                0x0000000060000954       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000954                External_23_IRQHandler
+ .text.External_24_IRQHandler
+                0x0000000060000974       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000974                External_24_IRQHandler
+ .text.External_25_IRQHandler
+                0x0000000060000994       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x0000000060000994                External_25_IRQHandler
+ .text.External_26_IRQHandler
+                0x00000000600009b4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600009b4                External_26_IRQHandler
+ .text.External_27_IRQHandler
+                0x00000000600009d4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600009d4                External_27_IRQHandler
+ .text.External_28_IRQHandler
+                0x00000000600009f4       0x20 ./riscv_hal/riscv_hal_stubs.o
+                0x00000000600009f4                External_28_IRQHandler
+ .text._sbrk    0x0000000060000a14       0x8c ./riscv_hal/syscall.o
+                0x0000000060000a14                _sbrk
+ .text          0x0000000060000aa0       0xd8 ./hal/hw_reg_access.o
+                0x0000000060000aa0                HW_set_32bit_reg
+                0x0000000060000aa8                HW_get_32bit_reg
+                0x0000000060000ab0                HW_set_32bit_reg_field
+                0x0000000060000ad8                HW_get_32bit_reg_field
+                0x0000000060000ae8                HW_set_16bit_reg
+                0x0000000060000af0                HW_get_16bit_reg
+                0x0000000060000af8                HW_set_16bit_reg_field
+                0x0000000060000b20                HW_get_16bit_reg_field
+                0x0000000060000b30                HW_set_8bit_reg
+                0x0000000060000b38                HW_get_8bit_reg
+                0x0000000060000b40                HW_set_8bit_reg_field
+                0x0000000060000b68                HW_get_8bit_reg_field
+ .text.UART_init
+                0x0000000060000b78      0x118 ./drivers/CoreUARTapb/core_uart_apb.o
+                0x0000000060000b78                UART_init
+ .text.UART_send
+                0x0000000060000c90       0xb4 ./drivers/CoreUARTapb/core_uart_apb.o
+                0x0000000060000c90                UART_send
+ .text.UART_polled_tx_string
+                0x0000000060000d44       0xb0 ./drivers/CoreUARTapb/core_uart_apb.o
+                0x0000000060000d44                UART_polled_tx_string
+ .text.GPIO_init
+                0x0000000060000df4      0x170 ./drivers/CoreGPIO/core_gpio.o
+                0x0000000060000df4                GPIO_init
+ .text.GPIO_get_inputs
+                0x0000000060000f64      0x174 ./drivers/CoreGPIO/core_gpio.o
+                0x0000000060000f64                GPIO_get_inputs
+ .text.GPIO_set_output
+                0x00000000600010d8      0x238 ./drivers/CoreGPIO/core_gpio.o
+                0x00000000600010d8                GPIO_set_output
+ .text.GPIO_enable_irq
+                0x0000000060001310       0x80 ./drivers/CoreGPIO/core_gpio.o
+                0x0000000060001310                GPIO_enable_irq
+ .text.pvPortMalloc
+                0x0000000060001390      0x1dc ./FreeRTOS/portable/MemMang/heap_2.o
+                0x0000000060001390                pvPortMalloc
+ .text.vPortFree
+                0x000000006000156c       0xcc ./FreeRTOS/portable/MemMang/heap_2.o
+                0x000000006000156c                vPortFree
+ .text.prvHeapInit
+                0x0000000060001638       0x74 ./FreeRTOS/portable/MemMang/heap_2.o
+ .text.raise_soft_interrupt
+                0x00000000600016ac       0x4c ./FreeRTOS/portable/GCC/RISCV/port.o
+ .text.vPortEnterCritical
+                0x00000000600016f8       0x34 ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x00000000600016f8                vPortEnterCritical
+ .text.vPortExitCritical
+                0x000000006000172c       0x40 ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x000000006000172c                vPortExitCritical
+ .text.prvSetNextTimerInterrupt
+                0x000000006000176c       0xcc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .text.vPortSetupTimer
+                0x0000000060001838       0xcc ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x0000000060001838                vPortSetupTimer
+ .text.prvTaskExitError
+                0x0000000060001904       0x2c ./FreeRTOS/portable/GCC/RISCV/port.o
+ .text.pxPortInitialiseStack
+                0x0000000060001930       0x94 ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x0000000060001930                pxPortInitialiseStack
+ .text.SysTick_Handler
+                0x00000000600019c4       0xcc ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x00000000600019c4                SysTick_Handler
+ .text.xPortStartScheduler
+                0x0000000060001a90       0x44 ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x0000000060001a90                xPortStartScheduler
+ .text.Software_IRQHandler
+                0x0000000060001ad4       0xec ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x0000000060001ad4                Software_IRQHandler
+ .text.vPortYield
+                0x0000000060001bc0       0x28 ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x0000000060001bc0                vPortYield
+ .text.vListInitialise
+                0x0000000060001be8       0x64 ./FreeRTOS/list.o
+                0x0000000060001be8                vListInitialise
+ .text.vListInitialiseItem
+                0x0000000060001c4c       0x28 ./FreeRTOS/list.o
+                0x0000000060001c4c                vListInitialiseItem
+ .text.vListInsertEnd
+                0x0000000060001c74       0x88 ./FreeRTOS/list.o
+                0x0000000060001c74                vListInsertEnd
+ .text.vListInsert
+                0x0000000060001cfc       0xd4 ./FreeRTOS/list.o
+                0x0000000060001cfc                vListInsert
+ .text.uxListRemove
+                0x0000000060001dd0       0x98 ./FreeRTOS/list.o
+                0x0000000060001dd0                uxListRemove
+ .text.memcpy   0x0000000060001e68       0xcc ./FreeRTOS/string.o
+                0x0000000060001e68                memcpy
+ .text.memset   0x0000000060001f34       0xe8 ./FreeRTOS/string.o
+                0x0000000060001f34                memset
+ .text.xTaskGenericCreate
+                0x000000006000201c      0x21c ./FreeRTOS/tasks.o
+                0x000000006000201c                xTaskGenericCreate
+ .text.vTaskDelay
+                0x0000000060002238       0x84 ./FreeRTOS/tasks.o
+                0x0000000060002238                vTaskDelay
+ .text.vTaskStartScheduler
+                0x00000000600022bc       0x90 ./FreeRTOS/tasks.o
+                0x00000000600022bc                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x000000006000234c       0x28 ./FreeRTOS/tasks.o
+                0x000000006000234c                vTaskSuspendAll
+ .text.xTaskResumeAll
+                0x0000000060002374      0x160 ./FreeRTOS/tasks.o
+                0x0000000060002374                xTaskResumeAll
+ .text.xTaskIncrementTick
+                0x00000000600024d4      0x1ec ./FreeRTOS/tasks.o
+                0x00000000600024d4                xTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x00000000600026c0       0xec ./FreeRTOS/tasks.o
+                0x00000000600026c0                vTaskSwitchContext
+ .text.prvIdleTask
+                0x00000000600027ac       0x34 ./FreeRTOS/tasks.o
+ .text.prvInitialiseTCBVariables
+                0x00000000600027e0      0x138 ./FreeRTOS/tasks.o
+ .text.prvInitialiseTaskLists
+                0x0000000060002918       0xc0 ./FreeRTOS/tasks.o
+ .text.prvCheckTasksWaitingTermination
+                0x00000000600029d8       0xa0 ./FreeRTOS/tasks.o
+ .text.prvAddCurrentTaskToDelayedList
+                0x0000000060002a78       0x88 ./FreeRTOS/tasks.o
+ .text.prvAllocateTCBAndStack
+                0x0000000060002b00       0xc0 ./FreeRTOS/tasks.o
+ .text.prvDeleteTCB
+                0x0000000060002bc0       0x40 ./FreeRTOS/tasks.o
+ .text.prvResetNextTaskUnblockTime
+                0x0000000060002c00       0x60 ./FreeRTOS/tasks.o
+ .text.BasicIO_Init
+                0x0000000060002c60       0xc4 ./Creative/BasicIO.o
+                0x0000000060002c60                BasicIO_Init
+ .text.UART_Tx_Msg
+                0x0000000060002d24       0x5c ./Creative/BasicIO.o
+                0x0000000060002d24                UART_Tx_Msg
+ .text.PLIC_init
+                0x0000000060002d80       0xd0 ./main.o
+ .text.External_31_IRQHandler
+                0x0000000060002e50       0x1c ./main.o
+                0x0000000060002e50                External_31_IRQHandler
+ .text.External_30_IRQHandler
+                0x0000000060002e6c       0x1c ./main.o
+                0x0000000060002e6c                External_30_IRQHandler
+ .text.External_29_IRQHandler
+                0x0000000060002e88       0x1c ./main.o
+                0x0000000060002e88                External_29_IRQHandler
+ .text.main     0x0000000060002ea4       0x84 ./main.o
+                0x0000000060002ea4                main
+ .text.vApplicationMallocFailedHook
+                0x0000000060002f28       0x14 ./main.o
+                0x0000000060002f28                vApplicationMallocFailedHook
+ .text.vApplicationIdleHook
+                0x0000000060002f3c       0x1c ./main.o
+                0x0000000060002f3c                vApplicationIdleHook
+ .text.blinkingLED
+                0x0000000060002f58       0xa4 ./main.o
+ .text.sprintf  0x0000000060002ffc       0x74 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o)
+                0x0000000060002ffc                siprintf
+                0x0000000060002ffc                sprintf
+ .text.__ssputs_r
+                0x0000000060003070      0x168 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000060003070                __ssputs_r
+ .text._svfprintf_r
+                0x00000000600031d8      0x39c c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000600031d8                _svfiprintf_r
+                0x00000000600031d8                _svfprintf_r
+ .text._printf_common
+                0x0000000060003574      0x1b0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000060003574                _printf_common
+ .text._printf_i
+                0x0000000060003724      0x3cc c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000060003724                _printf_i
+ .text.memchr   0x0000000060003af0       0x24 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memchr.o)
+                0x0000000060003af0                memchr
+ .text.memmove  0x0000000060003b14       0x5c c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memmove.o)
+                0x0000000060003b14                memmove
+ .text._free_r  0x0000000060003b70      0x104 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-freer.o)
+                0x0000000060003b70                _free_r
+ .text._malloc_r
+                0x0000000060003c74      0x14c c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+                0x0000000060003c74                _malloc_r
+ .text._realloc_r
+                0x0000000060003dc0       0x98 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+                0x0000000060003dc0                _realloc_r
+ .text._sbrk_r  0x0000000060003e58       0x4c c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sbrkr.o)
+                0x0000000060003e58                _sbrk_r
+ .text.__malloc_lock
+                0x0000000060003ea4        0x4 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-mlock.o)
+                0x0000000060003ea4                __malloc_lock
+ .text.__malloc_unlock
+                0x0000000060003ea8        0x4 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-mlock.o)
+                0x0000000060003ea8                __malloc_unlock
+ .text._malloc_usable_size_r
+                0x0000000060003eac       0x1c c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-msizer.o)
+                0x0000000060003eac                _malloc_usable_size_r
+ *(.plt)
+                0x0000000060003ed0                . = ALIGN (0x10)
+ *fill*         0x0000000060003ec8        0x8 
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *crtend.o(.dtors)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000060003ed0        0x6 ./riscv_hal/init.o
+ *fill*         0x0000000060003ed6        0x2 
+ .rodata        0x0000000060003ed8        0x5 ./FreeRTOS/tasks.o
+ *fill*         0x0000000060003edd        0x3 
+ .rodata        0x0000000060003ee0      0x126 ./main.o
+ *fill*         0x0000000060004006        0x2 
+ .rodata._svfprintf_r.str1.4
+                0x0000000060004008       0x13 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+ *fill*         0x000000006000401b        0x1 
+ .rodata._printf_i.str1.4
+                0x000000006000401c       0x28 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                                         0x25 (size before relaxing)
+ *(.gcc_except_table)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = .)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(.fini_array)
+ *(SORT_BY_NAME(.fini_array.*))
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x0000000060004050                . = ALIGN (0x10)
+ *fill*         0x0000000060004044        0xc 
+
+.rela.dyn       0x0000000060004050        0x0
+ .rela.text.entry
+                0x0000000060004050        0x0 ./riscv_hal/entry.o
+ .rela.text._init
+                0x0000000060004050        0x0 ./riscv_hal/entry.o
+ .rela.data.ext_irq_handler_table
+                0x0000000060004050        0x0 ./riscv_hal/entry.o
+ .rela.sdata.curbrk.3729
+                0x0000000060004050        0x0 ./riscv_hal/entry.o
+ .rela.text._sbrk
+                0x0000000060004050        0x0 ./riscv_hal/entry.o
+ .rela.data.impure_data
+                0x0000000060004050        0x0 ./riscv_hal/entry.o
+ .rela.text._svfprintf_r
+                0x0000000060004050        0x0 ./riscv_hal/entry.o
+ .rela.text._sbrk_r
+                0x0000000060004050        0x0 ./riscv_hal/entry.o
+
+.sdata          0x0000000080000000       0x20 load address 0x0000000060004050
+                0x0000000060004050                __sdata_load = LOADADDR (.sdata)
+                0x0000000080000000                __sdata_start = .
+                0x0000000080000800                PROVIDE (__global_pointer$ = (. + 0x800))
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata.curbrk.3729
+                0x0000000080000000        0x4 ./riscv_hal/syscall.o
+ .sdata.xFreeBytesRemaining
+                0x0000000080000004        0x4 ./FreeRTOS/portable/MemMang/heap_2.o
+ .sdata.uxCriticalNesting
+                0x0000000080000008        0x4 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .sdata.mtime   0x000000008000000c        0x4 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .sdata.mtimecmp
+                0x0000000080000010        0x4 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .sdata._impure_ptr
+                0x0000000080000014        0x4 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-impure.o)
+                0x0000000080000014                _impure_ptr
+                0x0000000080000020                . = ALIGN (0x10)
+ *fill*         0x0000000080000018        0x8 
+                0x0000000080000020                __sdata_end = .
+
+.data           0x0000000080000020       0xe0 load address 0x0000000060004070
+                0x0000000060004070                __data_load = LOADADDR (.data)
+                0x0000000080000020                __data_start = .
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.ext_irq_handler_table
+                0x0000000080000020       0x80 ./riscv_hal/riscv_hal.o
+                0x0000000080000020                ext_irq_handler_table
+ .data.impure_data
+                0x00000000800000a0       0x60 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-impure.o)
+                0x0000000080000100                . = ALIGN (0x10)
+                0x0000000080000100                __data_end = .
+
+.sbss           0x0000000080000100       0x80 load address 0x0000000060004150
+                0x0000000080000100                __sbss_start = .
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss.g_systick_increment
+                0x0000000080000100        0x8 ./riscv_hal/riscv_hal.o
+ .sbss.xStart   0x0000000080000108        0x8 ./FreeRTOS/portable/MemMang/heap_2.o
+ .sbss.xEnd     0x0000000080000110        0x8 ./FreeRTOS/portable/MemMang/heap_2.o
+ .sbss.xHeapHasBeenInitialised.2779
+                0x0000000080000118        0x4 ./FreeRTOS/portable/MemMang/heap_2.o
+ .sbss.g_startscheduler
+                0x000000008000011c        0x4 ./FreeRTOS/portable/GCC/RISCV/port.o
+                0x000000008000011c                g_startscheduler
+ .sbss.pxCurrentTCB
+                0x0000000080000120        0x4 ./FreeRTOS/tasks.o
+                0x0000000080000120                pxCurrentTCB
+ .sbss.pxDelayedTaskList
+                0x0000000080000124        0x4 ./FreeRTOS/tasks.o
+ .sbss.pxOverflowDelayedTaskList
+                0x0000000080000128        0x4 ./FreeRTOS/tasks.o
+ .sbss.uxTasksDeleted
+                0x000000008000012c        0x4 ./FreeRTOS/tasks.o
+ .sbss.uxCurrentNumberOfTasks
+                0x0000000080000130        0x4 ./FreeRTOS/tasks.o
+ .sbss.xTickCount
+                0x0000000080000134        0x4 ./FreeRTOS/tasks.o
+ .sbss.uxTopReadyPriority
+                0x0000000080000138        0x4 ./FreeRTOS/tasks.o
+ .sbss.xSchedulerRunning
+                0x000000008000013c        0x4 ./FreeRTOS/tasks.o
+ .sbss.uxPendedTicks
+                0x0000000080000140        0x4 ./FreeRTOS/tasks.o
+ .sbss.xYieldPending
+                0x0000000080000144        0x4 ./FreeRTOS/tasks.o
+ .sbss.xNumOfOverflows
+                0x0000000080000148        0x4 ./FreeRTOS/tasks.o
+ .sbss.uxTaskNumber
+                0x000000008000014c        0x4 ./FreeRTOS/tasks.o
+ .sbss.xNextTaskUnblockTime
+                0x0000000080000150        0x4 ./FreeRTOS/tasks.o
+ .sbss.uxSchedulerSuspended
+                0x0000000080000154        0x4 ./FreeRTOS/tasks.o
+ .sbss.g_gpio_in_PBs
+                0x0000000080000158        0x8 ./Creative/BasicIO.o
+ .sbss.g_gpio_out_LEDs
+                0x0000000080000160        0x8 ./Creative/BasicIO.o
+ .sbss.g_uart_term
+                0x0000000080000168        0x8 ./Creative/BasicIO.o
+ .sbss.g_gpio   0x0000000080000170        0x8 ./main.o
+ .sbss.__malloc_free_list
+                0x0000000080000178        0x4 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+                0x0000000080000178                __malloc_free_list
+ .sbss.__malloc_sbrk_start
+                0x000000008000017c        0x4 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+                0x000000008000017c                __malloc_sbrk_start
+ *(.scommon)
+                0x0000000080000180                . = ALIGN (0x10)
+                0x0000000080000180                __sbss_end = .
+
+.bss            0x0000000080000180    0x190d0 load address 0x0000000060004150
+                0x0000000080000180                __bss_start = .
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.ucHeap    0x0000000080000180    0x19000 ./FreeRTOS/portable/MemMang/heap_2.o
+ .bss.pxReadyTasksLists
+                0x0000000080019180       0x64 ./FreeRTOS/tasks.o
+ .bss.xDelayedTaskList1
+                0x00000000800191e4       0x14 ./FreeRTOS/tasks.o
+ .bss.xDelayedTaskList2
+                0x00000000800191f8       0x14 ./FreeRTOS/tasks.o
+ .bss.xPendingReadyList
+                0x000000008001920c       0x14 ./FreeRTOS/tasks.o
+ .bss.xTasksWaitingTermination
+                0x0000000080019220       0x14 ./FreeRTOS/tasks.o
+ .bss.xSuspendedTaskList
+                0x0000000080019234       0x14 ./FreeRTOS/tasks.o
+ *(COMMON)
+ COMMON         0x0000000080019248        0x4 ./riscv_hal/syscall.o
+                0x0000000080019248                errno
+                0x0000000080019250                . = ALIGN (0x10)
+ *fill*         0x000000008001924c        0x4 
+                0x0000000080019250                __bss_end = .
+                0x0000000080019250                _end = .
+
+.heap           0x0000000080019250     0x1000 load address 0x0000000060004150
+                0x0000000080019250                __heap_start = .
+                0x000000008001a250                . = (. + HEAP_SIZE)
+ *fill*         0x0000000080019250     0x1000 
+                0x000000008001a250                __heap_end = .
+                0x000000008001a250                . = ALIGN (0x10)
+                0x000000008001a250                _heap_end = __heap_end
+
+.stack          0x000000008001a250     0x1000 load address 0x0000000060004150
+                0x000000008001a250                __stack_bottom = .
+                0x000000008001b250                . = (. + STACK_SIZE)
+ *fill*         0x000000008001a250     0x1000 
+                0x000000008001b250                __stack_top = .
+OUTPUT(Creative_MiV_FreeRTOS_Demo.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x0000000000000000       0x1f
+ .riscv.attributes
+                0x0000000000000000       0x1f ./riscv_hal/entry.o
+ .riscv.attributes
+                0x000000000000001f       0x1f ./riscv_hal/init.o
+ .riscv.attributes
+                0x000000000000003e       0x1f ./riscv_hal/riscv_hal.o
+ .riscv.attributes
+                0x000000000000005d       0x1f ./riscv_hal/riscv_hal_stubs.o
+ .riscv.attributes
+                0x000000000000007c       0x1f ./riscv_hal/syscall.o
+ .riscv.attributes
+                0x000000000000009b       0x1f ./hal/hw_reg_access.o
+ .riscv.attributes
+                0x00000000000000ba       0x1f ./drivers/CoreUARTapb/core_uart_apb.o
+ .riscv.attributes
+                0x00000000000000d9       0x1f ./drivers/CoreGPIO/core_gpio.o
+ .riscv.attributes
+                0x00000000000000f8       0x1f ./FreeRTOS/portable/MemMang/heap_2.o
+ .riscv.attributes
+                0x0000000000000117       0x1f ./FreeRTOS/portable/GCC/RISCV/port.o
+ .riscv.attributes
+                0x0000000000000136       0x1f ./FreeRTOS/list.o
+ .riscv.attributes
+                0x0000000000000155       0x1f ./FreeRTOS/string.o
+ .riscv.attributes
+                0x0000000000000174       0x1f ./FreeRTOS/tasks.o
+ .riscv.attributes
+                0x0000000000000193       0x1f ./Creative/BasicIO.o
+ .riscv.attributes
+                0x00000000000001b2       0x1f ./main.o
+ .riscv.attributes
+                0x00000000000001d1       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o)
+ .riscv.attributes
+                0x00000000000001f0       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-impure.o)
+ .riscv.attributes
+                0x000000000000020f       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+ .riscv.attributes
+                0x000000000000022e       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .riscv.attributes
+                0x000000000000024d       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memchr.o)
+ .riscv.attributes
+                0x000000000000026c       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memmove.o)
+ .riscv.attributes
+                0x000000000000028b       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-freer.o)
+ .riscv.attributes
+                0x00000000000002aa       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+ .riscv.attributes
+                0x00000000000002c9       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+ .riscv.attributes
+                0x00000000000002e8       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sbrkr.o)
+ .riscv.attributes
+                0x0000000000000307       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-mlock.o)
+ .riscv.attributes
+                0x0000000000000326       0x1f c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-msizer.o)
+
+.comment        0x0000000000000000       0x43
+ .comment       0x0000000000000000       0x43 ./riscv_hal/init.o
+                                         0x44 (size before relaxing)
+ .comment       0x0000000000000043       0x44 ./riscv_hal/riscv_hal.o
+ .comment       0x0000000000000043       0x44 ./riscv_hal/riscv_hal_stubs.o
+ .comment       0x0000000000000043       0x44 ./riscv_hal/syscall.o
+ .comment       0x0000000000000043       0x44 ./drivers/CoreUARTapb/core_uart_apb.o
+ .comment       0x0000000000000043       0x44 ./drivers/CoreGPIO/core_gpio.o
+ .comment       0x0000000000000043       0x44 ./FreeRTOS/portable/MemMang/heap_2.o
+ .comment       0x0000000000000043       0x44 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .comment       0x0000000000000043       0x44 ./FreeRTOS/list.o
+ .comment       0x0000000000000043       0x44 ./FreeRTOS/string.o
+ .comment       0x0000000000000043       0x44 ./FreeRTOS/tasks.o
+ .comment       0x0000000000000043       0x44 ./Creative/BasicIO.o
+ .comment       0x0000000000000043       0x44 ./main.o
+
+.debug_line     0x0000000000000000     0x8e0c
+ .debug_line    0x0000000000000000      0x237 ./riscv_hal/entry.o
+ .debug_line    0x0000000000000237      0x432 ./riscv_hal/init.o
+ .debug_line    0x0000000000000669      0x73f ./riscv_hal/riscv_hal.o
+ .debug_line    0x0000000000000da8      0x77b ./riscv_hal/riscv_hal_stubs.o
+ .debug_line    0x0000000000001523      0xa4e ./riscv_hal/syscall.o
+ .debug_line    0x0000000000001f71      0x185 ./hal/hw_reg_access.o
+ .debug_line    0x00000000000020f6      0x627 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_line    0x000000000000271d      0xad4 ./drivers/CoreGPIO/core_gpio.o
+ .debug_line    0x00000000000031f1      0x82b ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_line    0x0000000000003a1c      0xaf7 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_line    0x0000000000004513      0x75e ./FreeRTOS/list.o
+ .debug_line    0x0000000000004c71      0x671 ./FreeRTOS/string.o
+ .debug_line    0x00000000000052e2     0x2ab2 ./FreeRTOS/tasks.o
+ .debug_line    0x0000000000007d94      0x668 ./Creative/BasicIO.o
+ .debug_line    0x00000000000083fc      0xa10 ./main.o
+
+.debug_info     0x0000000000000000     0x9c46
+ .debug_info    0x0000000000000000       0x26 ./riscv_hal/entry.o
+ .debug_info    0x0000000000000026      0xb0b ./riscv_hal/init.o
+ .debug_info    0x0000000000000b31     0x10c8 ./riscv_hal/riscv_hal.o
+ .debug_info    0x0000000000001bf9      0x3ce ./riscv_hal/riscv_hal_stubs.o
+ .debug_info    0x0000000000001fc7     0x1219 ./riscv_hal/syscall.o
+ .debug_info    0x00000000000031e0       0x26 ./hal/hw_reg_access.o
+ .debug_info    0x0000000000003206      0x34d ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_info    0x0000000000003553      0x642 ./drivers/CoreGPIO/core_gpio.o
+ .debug_info    0x0000000000003b95      0xbd6 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_info    0x000000000000476b      0xc95 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_info    0x0000000000005400      0xb83 ./FreeRTOS/list.o
+ .debug_info    0x0000000000005f83      0xb73 ./FreeRTOS/string.o
+ .debug_info    0x0000000000006af6     0x1f88 ./FreeRTOS/tasks.o
+ .debug_info    0x0000000000008a7e      0x3ca ./Creative/BasicIO.o
+ .debug_info    0x0000000000008e48      0xdfe ./main.o
+
+.debug_abbrev   0x0000000000000000     0x1e38
+ .debug_abbrev  0x0000000000000000       0x14 ./riscv_hal/entry.o
+ .debug_abbrev  0x0000000000000014      0x268 ./riscv_hal/init.o
+ .debug_abbrev  0x000000000000027c      0x330 ./riscv_hal/riscv_hal.o
+ .debug_abbrev  0x00000000000005ac       0xa8 ./riscv_hal/riscv_hal_stubs.o
+ .debug_abbrev  0x0000000000000654      0x2f8 ./riscv_hal/syscall.o
+ .debug_abbrev  0x000000000000094c       0x14 ./hal/hw_reg_access.o
+ .debug_abbrev  0x0000000000000960      0x122 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_abbrev  0x0000000000000a82      0x17c ./drivers/CoreGPIO/core_gpio.o
+ .debug_abbrev  0x0000000000000bfe      0x2c5 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_abbrev  0x0000000000000ec3      0x31d ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_abbrev  0x00000000000011e0      0x22e ./FreeRTOS/list.o
+ .debug_abbrev  0x000000000000140e      0x238 ./FreeRTOS/string.o
+ .debug_abbrev  0x0000000000001646      0x39a ./FreeRTOS/tasks.o
+ .debug_abbrev  0x00000000000019e0      0x14d ./Creative/BasicIO.o
+ .debug_abbrev  0x0000000000001b2d      0x30b ./main.o
+
+.debug_aranges  0x0000000000000000      0x788
+ .debug_aranges
+                0x0000000000000000       0x20 ./riscv_hal/entry.o
+ .debug_aranges
+                0x0000000000000020       0x38 ./riscv_hal/init.o
+ .debug_aranges
+                0x0000000000000058       0x68 ./riscv_hal/riscv_hal.o
+ .debug_aranges
+                0x00000000000000c0      0x128 ./riscv_hal/riscv_hal_stubs.o
+ .debug_aranges
+                0x00000000000001e8       0xc0 ./riscv_hal/syscall.o
+ .debug_aranges
+                0x00000000000002a8       0x20 ./hal/hw_reg_access.o
+ .debug_aranges
+                0x00000000000002c8       0x48 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_aranges
+                0x0000000000000310       0x78 ./drivers/CoreGPIO/core_gpio.o
+ .debug_aranges
+                0x0000000000000388       0x40 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_aranges
+                0x00000000000003c8       0x80 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_aranges
+                0x0000000000000448       0x40 ./FreeRTOS/list.o
+ .debug_aranges
+                0x0000000000000488       0x48 ./FreeRTOS/string.o
+ .debug_aranges
+                0x00000000000004d0      0x1c8 ./FreeRTOS/tasks.o
+ .debug_aranges
+                0x0000000000000698       0x90 ./Creative/BasicIO.o
+ .debug_aranges
+                0x0000000000000728       0x60 ./main.o
+
+.debug_str      0x0000000000000000    0x129b3
+ .debug_str     0x0000000000000000       0x8b ./riscv_hal/entry.o
+ .debug_str     0x000000000000008b     0x8bdd ./riscv_hal/init.o
+                                       0x8eaf (size before relaxing)
+ .debug_str     0x0000000000008c68      0x532 ./riscv_hal/riscv_hal.o
+                                       0x935d (size before relaxing)
+ .debug_str     0x000000000000919a      0x306 ./riscv_hal/riscv_hal_stubs.o
+                                       0x6697 (size before relaxing)
+ .debug_str     0x00000000000094a0     0x13b7 ./riscv_hal/syscall.o
+                                       0xa3b3 (size before relaxing)
+ .debug_str     0x000000000000a857       0x17 ./hal/hw_reg_access.o
+                                         0x8d (size before relaxing)
+ .debug_str     0x000000000000a86e      0xe47 ./drivers/CoreUARTapb/core_uart_apb.o
+                                       0x4378 (size before relaxing)
+ .debug_str     0x000000000000b6b5      0x9ad ./drivers/CoreGPIO/core_gpio.o
+                                       0x458b (size before relaxing)
+ .debug_str     0x000000000000c062     0x37ce ./FreeRTOS/portable/MemMang/heap_2.o
+                                       0xab16 (size before relaxing)
+ .debug_str     0x000000000000f830      0x1a5 ./FreeRTOS/portable/GCC/RISCV/port.o
+                                       0xa8ab (size before relaxing)
+ .debug_str     0x000000000000f9d5      0x11e ./FreeRTOS/list.o
+                                       0xa10c (size before relaxing)
+ .debug_str     0x000000000000faf3      0x85e ./FreeRTOS/string.o
+                                       0x6afe (size before relaxing)
+ .debug_str     0x0000000000010351     0x186c ./FreeRTOS/tasks.o
+                                       0xc18e (size before relaxing)
+ .debug_str     0x0000000000011bbd      0x22d ./Creative/BasicIO.o
+                                       0x3edf (size before relaxing)
+ .debug_str     0x0000000000011dea      0xbc9 ./main.o
+                                       0xd51a (size before relaxing)
+
+.debug_ranges   0x0000000000000000      0x678
+ .debug_ranges  0x0000000000000000       0x28 ./riscv_hal/init.o
+ .debug_ranges  0x0000000000000028       0x58 ./riscv_hal/riscv_hal.o
+ .debug_ranges  0x0000000000000080      0x118 ./riscv_hal/riscv_hal_stubs.o
+ .debug_ranges  0x0000000000000198       0xb0 ./riscv_hal/syscall.o
+ .debug_ranges  0x0000000000000248       0x38 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_ranges  0x0000000000000280       0x68 ./drivers/CoreGPIO/core_gpio.o
+ .debug_ranges  0x00000000000002e8       0x30 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_ranges  0x0000000000000318       0x70 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_ranges  0x0000000000000388       0x30 ./FreeRTOS/list.o
+ .debug_ranges  0x00000000000003b8       0x38 ./FreeRTOS/string.o
+ .debug_ranges  0x00000000000003f0      0x1b8 ./FreeRTOS/tasks.o
+ .debug_ranges  0x00000000000005a8       0x80 ./Creative/BasicIO.o
+ .debug_ranges  0x0000000000000628       0x50 ./main.o
+
+.debug_macro    0x0000000000000000     0x4ef7
+ .debug_macro   0x0000000000000000      0x1d5 ./riscv_hal/init.o
+ .debug_macro   0x00000000000001d5      0x748 ./riscv_hal/init.o
+ .debug_macro   0x000000000000091d       0x19 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000936       0x22 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000958       0x52 ./riscv_hal/init.o
+ .debug_macro   0x00000000000009aa       0x94 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000a3e       0x34 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000a72       0x34 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000aa6       0x16 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000abc      0x10e ./riscv_hal/init.o
+ .debug_macro   0x0000000000000bca       0x8d ./riscv_hal/init.o
+ .debug_macro   0x0000000000000c57       0x57 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000cae       0x58 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000d06       0x1f ./riscv_hal/init.o
+ .debug_macro   0x0000000000000d25       0x43 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000d68       0x20 ./riscv_hal/init.o
+ .debug_macro   0x0000000000000d88      0x18e ./riscv_hal/init.o
+ .debug_macro   0x0000000000000f16      0x330 ./riscv_hal/init.o
+ .debug_macro   0x0000000000001246       0x16 ./riscv_hal/init.o
+ .debug_macro   0x000000000000125c       0x29 ./riscv_hal/init.o
+ .debug_macro   0x0000000000001285       0xef ./riscv_hal/init.o
+ .debug_macro   0x0000000000001374       0x6a ./riscv_hal/init.o
+ .debug_macro   0x00000000000013de      0x1df ./riscv_hal/init.o
+ .debug_macro   0x00000000000015bd       0x16 ./riscv_hal/init.o
+ .debug_macro   0x00000000000015d3       0x10 ./riscv_hal/init.o
+ .debug_macro   0x00000000000015e3       0x35 ./riscv_hal/init.o
+ .debug_macro   0x0000000000001618       0x1c ./riscv_hal/init.o
+ .debug_macro   0x0000000000001634       0x52 ./riscv_hal/init.o
+ .debug_macro   0x0000000000001686       0x40 ./riscv_hal/init.o
+ .debug_macro   0x00000000000016c6       0x10 ./riscv_hal/init.o
+ .debug_macro   0x00000000000016d6       0x40 ./riscv_hal/init.o
+ .debug_macro   0x0000000000001716       0xd7 ./riscv_hal/init.o
+ .debug_macro   0x00000000000017ed       0x1c ./riscv_hal/init.o
+ .debug_macro   0x0000000000001809       0x3d ./riscv_hal/init.o
+ .debug_macro   0x0000000000001846      0x51a ./riscv_hal/init.o
+ .debug_macro   0x0000000000001d60      0x2dc ./riscv_hal/init.o
+ .debug_macro   0x000000000000203c      0x205 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000002241       0x28 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000002269       0x10 ./riscv_hal/riscv_hal.o
+ .debug_macro   0x0000000000002279      0x165 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x00000000000023de       0x10 ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x00000000000023ee       0xcf ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x00000000000024bd       0xbe ./riscv_hal/riscv_hal_stubs.o
+ .debug_macro   0x000000000000257b      0x2bc ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002837       0x8e ./riscv_hal/syscall.o
+ .debug_macro   0x00000000000028c5       0x51 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002916       0x58 ./riscv_hal/syscall.o
+ .debug_macro   0x000000000000296e       0x10 ./riscv_hal/syscall.o
+ .debug_macro   0x000000000000297e      0x241 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002bbf       0x16 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002bd5       0x10 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002be5       0x10 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002bf5       0x35 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002c2a      0x122 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002d4c       0x1c ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002d68       0x10 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002d78       0x10 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002d88       0x16 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002d9e      0x15a ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002ef8       0x16 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002f0e       0x40 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002f4e       0x46 ./riscv_hal/syscall.o
+ .debug_macro   0x0000000000002f94       0xe1 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000003075      0x106 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x000000000000317b       0x16 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_macro   0x0000000000003191       0xcf ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x0000000000003260      0x11c ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x000000000000337c       0x64 ./drivers/CoreGPIO/core_gpio.o
+ .debug_macro   0x00000000000033e0      0x1f8 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000000035d8       0xfa ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000000036d2      0x15d ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x000000000000382f       0xa6 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000000038d5       0x10 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000000038e5       0x1f ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000003904      0x3ca ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000003cce       0xc0 ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000003d8e       0x9a ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macro   0x0000000000003e28      0x1da ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000004002      0x174 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000004176       0x10 ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_macro   0x0000000000004186      0x1ca ./FreeRTOS/list.o
+ .debug_macro   0x0000000000004350      0x12d ./FreeRTOS/string.o
+ .debug_macro   0x000000000000447d      0x111 ./FreeRTOS/string.o
+ .debug_macro   0x000000000000458e      0x268 ./FreeRTOS/tasks.o
+ .debug_macro   0x00000000000047f6       0x11 ./FreeRTOS/tasks.o
+ .debug_macro   0x0000000000004807       0xf2 ./Creative/BasicIO.o
+ .debug_macro   0x00000000000048f9      0x122 ./Creative/BasicIO.o
+ .debug_macro   0x0000000000004a1b       0x46 ./Creative/BasicIO.o
+ .debug_macro   0x0000000000004a61      0x2d5 ./main.o
+ .debug_macro   0x0000000000004d36       0x52 ./main.o
+ .debug_macro   0x0000000000004d88      0x16f ./main.o
+
+.debug_frame    0x0000000000000000     0x1e44
+ .debug_frame   0x0000000000000000       0x94 ./riscv_hal/init.o
+ .debug_frame   0x0000000000000094      0x164 ./riscv_hal/riscv_hal.o
+ .debug_frame   0x00000000000001f8      0x44c ./riscv_hal/riscv_hal_stubs.o
+ .debug_frame   0x0000000000000644      0x2ec ./riscv_hal/syscall.o
+ .debug_frame   0x0000000000000930       0xf0 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_frame   0x0000000000000a20      0x1e4 ./drivers/CoreGPIO/core_gpio.o
+ .debug_frame   0x0000000000000c04       0xbc ./FreeRTOS/portable/MemMang/heap_2.o
+ .debug_frame   0x0000000000000cc0      0x1bc ./FreeRTOS/portable/GCC/RISCV/port.o
+ .debug_frame   0x0000000000000e7c       0xb0 ./FreeRTOS/list.o
+ .debug_frame   0x0000000000000f2c       0xd0 ./FreeRTOS/string.o
+ .debug_frame   0x0000000000000ffc      0x7b8 ./FreeRTOS/tasks.o
+ .debug_frame   0x00000000000017b4      0x22c ./Creative/BasicIO.o
+ .debug_frame   0x00000000000019e0      0x128 ./main.o
+ .debug_frame   0x0000000000001b08       0x4c c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x0000000000001b54       0xe0 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x0000000000001c34       0x90 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000001cc4       0x20 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memchr.o)
+ .debug_frame   0x0000000000001ce4       0x20 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000001d04       0x40 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000001d44       0x40 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000001d84       0x40 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x0000000000001dc4       0x30 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000001df4       0x30 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000001e24       0x20 c:/microsemi/softconsole_v6.2/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32\libg_nano.a(lib_a-nano-msizer.o)

@@ -19,7 +19,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>8</data>
+<data>6</data>
 <report_link name="more">
 <data>C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\synlog\report\sccb_design_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:01s</data>
 </info>
 <info name="Peak Memory">
-<data>146MB</data>
+<data>140MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1612840995</data>
+<data type="timestamp">1613157984</data>
 </info>
 </job_info>
 </job_run_status>

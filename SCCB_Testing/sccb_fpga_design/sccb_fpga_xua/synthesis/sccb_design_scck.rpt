@@ -13,7 +13,7 @@ Hostname: DESKTOP-95FBL6H
 
 Implementation : synthesis
 
-# Written on Mon Feb  8 19:23:14 2021
+# Written on Fri Feb 12 11:26:23 2021
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design\synthesis.fdc"
@@ -35,7 +35,7 @@ Level     Clock                                             Frequency     Period
 ----------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     54   
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     57   
 ==================================================================================================================================
 
 
@@ -47,5 +47,5 @@ Clock                                             Load      Pin                 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                            0         -                                         -                              -                 -                                   
                                                                                                                                                                                            
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     54        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     config_sccb_0.state[3:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     57        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     config_sccb_0.state[5:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
 ===========================================================================================================================================================================================

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>Top_Level</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected top level output port Top_Level:led</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/Top_Level:led</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin CoreGPIO_C0_0:GPIO_IN[1:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/CoreGPIO_C0_0:GPIO_IN</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin CoreGPIO_C0_0:GPIO_OUT[1:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Level/pins/CoreGPIO_C0_0:GPIO_OUT</crossprobe>
+  </drc>
+</drcreport>

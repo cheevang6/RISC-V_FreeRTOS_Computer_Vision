@@ -1,0 +1,47 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.0 (Version 12.500.0.22)
+
+Date      :  Wed Mar 27 14:26:27 2019
+Project   :  D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo
+Component :  MSS_SubSystem_sb
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_addrdec.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_defaultslavesm.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_masterstage.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_matrix4x16.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavearbiter.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavestage.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreConfigMaster/2.1.102/rtl/vlog/core/coreconfigmaster.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreConfigP/7.1.100/rtl/vlog/core/coreconfigp.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp_pcie_hotreset.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb/CCC_0/MSS_SubSystem_sb_CCC_0_FCCC.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb/FABOSC_0/MSS_SubSystem_sb_FABOSC_0_OSC.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb/MSS_SubSystem_sb.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MSS_SubSystem_sb_HPMS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/SgCore/OSC/2.0.101/osc_comps.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MSS_SubSystem_sb_HPMS_syn.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MSS_SubSystem_sb_HPMS_pre.v
+
+Stimulus files for all Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb/subsystem.bfm
+
+Configuration files to be used for Programming:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/ENVM.cfg
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MDDR_init.reg
+
+Configuration files to be used for all Simulation tools:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/ENVM.cfg
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MDDR_init.reg
+
+Configuration files to be used for Power Analysis:
+    D:/Work/Libero/IGL2_MiV_FreeRTOS_Demo/component/work/MSS_SubSystem_sb_HPMS/MDDR_init.reg
+

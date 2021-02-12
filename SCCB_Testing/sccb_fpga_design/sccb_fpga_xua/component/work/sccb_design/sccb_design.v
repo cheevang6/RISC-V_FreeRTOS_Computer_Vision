@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Feb 10 14:41:09 2021
+// Created by SmartDesign Fri Feb 12 11:26:15 2021
 // Version: v12.3 12.800.0.16
 //////////////////////////////////////////////////////////////////////
 
@@ -13,8 +13,9 @@ module sccb_design(
     led1,
     led2,
     sio_c,
-    siod,
-    xclk
+    xclk,
+    // Inouts
+    sio_d
 );
 
 //--------------------------------------------------------------------
@@ -27,8 +28,11 @@ input  DEVRST_N;
 output led1;
 output led2;
 output sio_c;
-output siod;
 output xclk;
+//--------------------------------------------------------------------
+// Inout
+//--------------------------------------------------------------------
+inout  sio_d;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -39,7 +43,7 @@ wire   led1_net_0;
 wire   led2_net_0;
 wire   OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC;
 wire   sio_c_net_0;
-wire   siod_net_0;
+wire   sio_d;
 wire   SYSRESET_0_POWER_ON_RESET_N;
 wire   xclk_net_0;
 wire   sio_c_net_1;
@@ -77,7 +81,7 @@ config_sccb config_sccb_0(
         // Outputs
         .sioc    ( sio_c_net_0 ),
         // Inouts
-        .siod    ( siod_net_0 ) 
+        .siod    ( sio_d ) 
         );
 
 //--------FCCC_C0

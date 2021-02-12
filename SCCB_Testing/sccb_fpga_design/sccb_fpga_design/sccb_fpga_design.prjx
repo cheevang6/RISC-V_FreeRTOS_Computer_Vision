@@ -136,7 +136,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\sccb_design\sccb_design.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612998684"
+TIME="1613154243"
 SIZE="2215"
 ENDFILE
 VALUE "<project>\component\work\tb\tb.cxf,actgen_cxf"
@@ -169,13 +169,13 @@ SIZE="625"
 ENDFILE
 VALUE "<project>\hdl\config_sccb.v,hdl"
 STATE="utd"
-TIME="1612825257"
-SIZE="2845"
+TIME="1613153962"
+SIZE="2800"
 ENDFILE
 VALUE "<project>\hdl\CoreSCCB.v,hdl"
 STATE="utd"
-TIME="1612918510"
-SIZE="7673"
+TIME="1613153944"
+SIZE="8175"
 ENDFILE
 VALUE "<project>\hdl\svTest.sv,hdl"
 STATE="utd"
@@ -187,10 +187,10 @@ STATE="utd"
 TIME="1612924622"
 SIZE="1354"
 ENDFILE
-VALUE "<project>\simulation\tb_presynth_simulation.log,log"
+VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
 STATE="utd"
-TIME="1612925131"
-SIZE="205123"
+TIME="1612846525"
+SIZE="1171304"
 ENDFILE
 VALUE "<project>\simulation\wave.do,do"
 STATE="utd"
@@ -214,8 +214,8 @@ SIZE="2451"
 ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1612690106"
-SIZE="337"
+TIME="1613154229"
+SIZE="375"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design.so,so"
 STATE="utd"
@@ -348,7 +348,7 @@ NAME="ModelSim"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=" -l tb_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -389,16 +389,16 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-SmartDesign;sccb_design;0
-SmartDesign;tb;0
-HDL;hdl\CoreSCCB.v;0
 Reports;Reports;0
 ReportsCurrentItem;Run Programming Action:sccb_design_PROGRAM.log
-StartPage;StartPage;0
-HDL;stimulus\testbench.v;0
+HDL;hdl\CoreSCCB.v;0
 HDL;hdl\clock_divider.v;0
 HDL;hdl\config_sccb.v;0
-ACTIVEVIEW;hdl\CoreSCCB.v
+HDL;stimulus\testbench.v;0
+StartPage;StartPage;0
+SmartDesign;sccb_design;0
+SmartDesign;tb;0
+ACTIVEVIEW;sccb_design
 ENDLIST
 LIST ModuleSubBlockList
 LIST "config_sccb::work","hdl\config_sccb.v","FALSE","FALSE"
@@ -438,8 +438,6 @@ ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
-ENDLIST
-LIST "i2c_spk::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v","FALSE","TRUE"
 ENDLIST
 LIST "tb::work","component\work\tb\tb.v","TRUE","TRUE"
 SUBBLOCK "sccb_design::work","component\work\sccb_design\sccb_design.cxf","TRUE","FALSE"
