@@ -1,0 +1,294 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/simulation
+vclock_divider
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1613155295
+!i10b 1
+!s100 k=:n;Am6A`lM0SlWGh3DO1
+!s11b YHK2n[]ckSLe607G2lX_:3
+ILzWj5aD:RnZ7feEaolEFG1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/simulation
+Z5 w1613113394
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/clock_divider.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/clock_divider.v
+L0 3
+Z6 OW;L;2019.2;69
+r1
+!s85 0
+31
+Z7 !s108 1613155295.000000
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/clock_divider.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/clock_divider.v|
+!s101 -O0
+!i113 1
+Z8 o-sv -work presynth -O0
+Z9 tCvgOpt 0
+vconfig_sccb
+R1
+R2
+!i10b 1
+!s100 X0KeD:_JV9XBGEEgiD>MO2
+!s11b WKf?MXBaI^:`L<7QZk8Xa0
+IN;S>iA^8WhKPbSe7QNch53
+R3
+S1
+R4
+w1613115863
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/config_sccb.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/config_sccb.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/config_sccb.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/config_sccb.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vCoreSCCB
+R1
+R2
+!i10b 1
+!s100 =64][nhYU7@?alaimAWHg3
+!s11b ^3HU851PzjC@IeI9bf<[g1
+IBHPHA]D0=6:2I]^`YAcE;1
+R3
+S1
+R4
+R5
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/CoreSCCB.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/CoreSCCB.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/CoreSCCB.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/hdl/CoreSCCB.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@core@s@c@c@b
+vFCCC_C0
+R1
+Z10 !s110 1613155294
+!i10b 1
+!s100 1U7ZF>TG2e^DW7Yi4oEhS0
+!s11b f2j83^I44gT:YSXQahkj20
+IH`LI@eXDPd3S5MAm5GM0W1
+R3
+S1
+R4
+Z11 w1613115853
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/FCCC_C0/FCCC_C0.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/FCCC_C0/FCCC_C0.v
+L0 9
+R6
+r1
+!s85 0
+31
+Z12 !s108 1613155294.000000
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/FCCC_C0/FCCC_C0.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/FCCC_C0/FCCC_C0.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@f@c@c@c_@c0
+vFCCC_C0_FCCC_C0_0_FCCC
+R1
+R10
+!i10b 1
+!s100 N2@aU><1]3TMARLhfkLD20
+!s11b e3:YIkXG[E8_`YMAMcND=1
+ICMGRSIfLl0ZZ^f^iJ_nMF3
+R3
+S1
+R4
+R11
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v
+L0 5
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@f@c@c@c_@c0_@f@c@c@c_@c0_0_@f@c@c@c
+vOSC_C0
+R1
+R10
+!i10b 1
+!s100 l2mPS9`Z:o9?OmWnPiX]a1
+!s11b n]BCCZ[P8Ej8JQLSI401m2
+Iz__j_[jZb31IEGheHO09K1
+R3
+S1
+R4
+R5
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/OSC_C0/OSC_C0.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/OSC_C0/OSC_C0.v
+L0 9
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/OSC_C0/OSC_C0.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/OSC_C0/OSC_C0.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@o@s@c_@c0
+vOSC_C0_OSC_C0_0_OSC
+R1
+R10
+!i10b 1
+!s100 bzQ21`e4Jjl=^dzOmcOZX2
+!s11b iTL;]@TbB_IXiXMEMem]a0
+ImE>=VYaFncn6bkPS>``Y82
+R3
+S1
+R4
+R5
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v
+L0 5
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@o@s@c_@c0_@o@s@c_@c0_0_@o@s@c
+vSCCB
+R1
+!s110 1612245539
+!i10b 1
+!s100 zDLz4X0`77Ham55Rk?`N<1
+!s11b WkmjXi:`?fLMcI?CkDRMF0
+IPom1QPU2GSXHUVIjh7[Qm3
+R3
+S1
+R0
+w1612236276
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/SCCB/SCCB.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/SCCB/SCCB.v
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1612245539.000000
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/SCCB/SCCB.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/SCCB/SCCB.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@s@c@c@b
+vsccb_design
+R1
+R2
+!i10b 1
+!s100 6TPg1F2SDR?I`3hD2[d?U2
+!s11b ^hdUO4`fISeVR_@2cc=II2
+I[EEY`o9PMeY;M^i2HJXmW2
+R3
+S1
+R4
+w1613115284
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/sccb_design/sccb_design.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/sccb_design/sccb_design.v
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/sccb_design/sccb_design.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/component/work/sccb_design/sccb_design.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vtb
+R1
+!s110 1612240706
+!i10b 1
+!s100 M>dm?`he0GIXR?O1]D=lz0
+!s11b jC]0:h_d[kB;JNj7^LcQY1
+I@EdlLUKVXkRmozmH2>]<>0
+R3
+S1
+R0
+w1612236281
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/tb/tb.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/tb/tb.v
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1612240706.000000
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/tb/tb.v|
+!s90 -reportprogress|300|+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/tb|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/tb/tb.v|
+!s101 -O0
+!i113 1
+R8
+!s92 +incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_design/component/work/tb -sv -work presynth -O0
+R9
+vtestbench
+R1
+R2
+!i10b 1
+!s100 g>2U;AH8^^hS:9NZ0XAlc3
+!s11b ZlG[gRJOl2W9:4OWSJgg61
+IoI0^5ZJg9KFiF_gobaaZd1
+R3
+S1
+R4
+w1613114170
+8C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/stimulus/testbench.v
+FC:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/stimulus/testbench.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/stimulus/testbench.v|
+!s90 -reportprogress|300|+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/stimulus|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/stimulus/testbench.v|
+!s101 -O0
+!i113 1
+R8
+!s92 +incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/stimulus -sv -work presynth -O0
+R9

@@ -1,0 +1,2 @@
+@E: CS168 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":35:6:35:6|Port pwdn does not exist
+

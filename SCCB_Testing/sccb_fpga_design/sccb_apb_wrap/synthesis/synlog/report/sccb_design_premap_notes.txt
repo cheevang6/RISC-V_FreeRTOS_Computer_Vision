@@ -1,0 +1,14 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":20:7:20:16|Tristate driver XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.sap.

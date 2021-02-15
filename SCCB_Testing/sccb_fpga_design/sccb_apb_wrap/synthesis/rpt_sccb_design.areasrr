@@ -1,0 +1,185 @@
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-95FBL6H
+
+Implementation : synthesis
+
+#### START OF AREA REPORT #####[
+
+Part:			M2GL025VF400STD (Microsemi)
+
+---------------------------------------------------------------------------
+########   Utilization report for  Top level view:   sccb_design   ########
+===========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      46                 100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block sccb_design:	46 (20.00 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           115                100 %                
+ARI1          40                 100 %                
+BLACK BOX     5                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block sccb_design:	160 (69.57 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block sccb_design:	2 (0.87 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       5                  100 %                
+=================================================
+Total IO PADS in the block sccb_design:	5 (2.17 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   FCCC_C0   ########
+Instance path:   sccb_design.FCCC_C0                         
+=============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  20 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block sccb_design.FCCC_C0:	1 (0.43 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  50 %                 
+===================================================
+Total GLOBAL BUFFERS in the block sccb_design.FCCC_C0:	1 (0.43 % Utilization)
+
+----------------------------------------------------------------------------
+########   Utilization report for  cell:   FCCC_C0_FCCC_C0_0_FCCC   ########
+Instance path:   FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC                             
+============================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  20 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.43 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  50 %                 
+===================================================
+Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.43 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   OSC_C0   ########
+Instance path:   sccb_design.OSC_C0                         
+============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  20 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block sccb_design.OSC_C0:	1 (0.43 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   OSC_C0_OSC_C0_0_OSC   ########
+Instance path:   OSC_C0.OSC_C0_OSC_C0_0_OSC                              
+=========================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  20 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.43 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   config_sccb   ########
+Instance path:   sccb_design.config_sccb                         
+=================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      46                 100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block sccb_design.config_sccb:	46 (20.00 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      115                100 %                
+ARI1     40                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block sccb_design.config_sccb:	155 (67.39 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   CoreSCCB   ########
+Instance path:   config_sccb.CoreSCCB                         
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      25                 54.3 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block config_sccb.CoreSCCB:	25 (10.87 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      112                97.4 %               
+ARI1     33                 82.5 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block config_sccb.CoreSCCB:	145 (63.04 % Utilization)
+
+---------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   clock_divider_10000000s_100000s_49s_23s   ########
+Instance path:   config_sccb.clock_divider_10000000s_100000s_49s_23s                         
+=============================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      8                  17.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block config_sccb.clock_divider_10000000s_100000s_49s_23s:	8 (3.48 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+ARI1     7                  17.5 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block config_sccb.clock_divider_10000000s_100000s_49s_23s:	7 (3.04 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

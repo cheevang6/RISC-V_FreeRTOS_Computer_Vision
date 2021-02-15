@@ -1,0 +1,45 @@
+Resource Usage Report for sccb_design 
+
+Mapping to part: m2gl025vf400std
+Cell usage:
+AND2            1 use
+CCC             1 use
+CLKINT          2 uses
+LIVE_PROBE_FB   1 use
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+CFG1           3 uses
+CFG2           22 uses
+CFG3           29 uses
+CFG4           61 uses
+
+Carry cells:
+ARI1            29 uses - used for arithmetic functions
+ARI1            11 uses - used for Wide-Mux implementation
+Total ARI1      40 uses
+
+
+Sequential Cells: 
+SLE            46 uses
+
+DSP Blocks:    0 of 34 (0%)
+
+I/O ports: 6
+I/O primitives: 5
+OUTBUF         4 uses
+TRIBUFF        1 use
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    155
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  46 + 0 + 0 + 0 = 46;
+Total number of LUTs after P&R:  155 + 0 + 0 + 0 = 155;
+

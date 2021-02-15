@@ -1,0 +1,25 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":126:7:126:10|Synthesizing module AND2 in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":3:7:3:19|Synthesizing module clock_divider in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":3:7:3:14|Synthesizing module CoreSCCB in library work.
+@N: CG179 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":192:18:192:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v":199:16:199:23|Removing redundant assignment.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":3:7:3:17|Synthesizing module config_sccb in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":376:7:376:9|Synthesizing module VCC in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":372:7:372:9|Synthesizing module GND in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":362:7:362:12|Synthesizing module CLKINT in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":729:7:729:9|Synthesizing module CCC in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v":5:7:5:28|Synthesizing module FCCC_C0_FCCC_C0_0_FCCC in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\FCCC_C0\FCCC_C0.v":9:7:9:13|Synthesizing module FCCC_C0 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":879:7:879:19|Synthesizing module LIVE_PROBE_FB in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":11:7:11:20|Synthesizing module RCOSC_25_50MHZ in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":5:7:5:25|Synthesizing module OSC_C0_OSC_C0_0_OSC in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\OSC_C0\OSC_C0.v":9:7:9:12|Synthesizing module OSC_C0 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":720:7:720:14|Synthesizing module SYSRESET in library work.
+@N: CG364 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v":9:7:9:17|Synthesizing module sccb_design in library work.
+@N: CL159 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":14:7:14:9|Input XTL is unused.
+@N: CL201 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v":63:0:63:5|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+
