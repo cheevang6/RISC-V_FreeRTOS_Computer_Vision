@@ -5,7 +5,7 @@ module CoreSCCB #(
 )(
     input            xclk,			// Master clock to camera
     input			 resetn,		// Reset
-    output           cam_resetn,	// Camera Power down
+    output           cam_rstn,	// Camera Power down
     output           cam_pwdn,		// Camera Power down
 	input			 start,
     input            rw,			// Read/Write request

@@ -103,9 +103,9 @@ always @(posedge PCLK or negedge PRESETN) begin
                     end
             endcase
 		end else begin
-            id_addr <=
-            sub_addr <=
-            data_in <=
+            id_addr <= 8'hff;
+            sub_addr <= 8'hff;
+            data_in <= 8'hff;
             start <= 0;
             done <= 0;
         end

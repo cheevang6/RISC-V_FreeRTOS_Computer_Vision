@@ -32,7 +32,7 @@ clock_divider #(.CLK_FREQ(10_000_000),.SCCB_CLK_FREQ(100_000)) sccb_clk_0(
 CoreSCCB coresccb_0(
 	.xclk(PCLK),
 	.resetn(PRESETN),
-	.cam_pwdn(pwdn),
+	.cam_pwdn(cam_pwdn),
     .cam_rstn(cam_rstn),
 	.start(start),
 	.rw(rw),

@@ -176,18 +176,18 @@ SIZE="1131"
 ENDFILE
 VALUE "<project>\hdl\config_sccb.v,hdl"
 STATE="utd"
-TIME="1613343773"
-SIZE="3400"
+TIME="1613374086"
+SIZE="3404"
 ENDFILE
 VALUE "<project>\hdl\CoreSCCB.v,hdl"
 STATE="utd"
-TIME="1613343766"
-SIZE="6904"
+TIME="1613374097"
+SIZE="6902"
 ENDFILE
 VALUE "<project>\hdl\CoreSCCB_APB.v,hdl"
 STATE="utd"
-TIME="1613357472"
-SIZE="2903"
+TIME="1613361549"
+SIZE="2924"
 ENDFILE
 VALUE "<project>\hdl\svTest.sv,hdl"
 STATE="utd"
@@ -198,6 +198,11 @@ VALUE "<project>\simulation\run.do,do"
 STATE="utd"
 TIME="1613182115"
 SIZE="1354"
+ENDFILE
+VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
+STATE="utd"
+TIME="1613374123"
+SIZE="389598"
 ENDFILE
 VALUE "<project>\simulation\wave.do,do"
 STATE="utd"
@@ -221,7 +226,7 @@ SIZE="2451"
 ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1613182115"
+TIME="1613374171"
 SIZE="396"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design.so,so"
@@ -236,7 +241,7 @@ SIZE="49150"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design_syn.prj,prj"
 STATE="utd"
-TIME="1613340198"
+TIME="1613340231"
 SIZE="3614"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design_vm.sdc,syn_sdc"
@@ -355,7 +360,7 @@ NAME="ModelSim"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\ModelSim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l testbench_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -396,15 +401,15 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-SmartDesign;sccb_design;0
-HDL;hdl\CoreSCCB_APB.v;0
-HDL;hdl\clock_divider.v;0
 HDL;hdl\config_sccb.v;0
 HDL;hdl\CoreSCCB.v;0
+HDL;stimulus\testbench.v;0
+HDL;hdl\CoreSCCB_APB.v;0
+HDL;hdl\clock_divider.v;0
 Reports;Reports;0
 ReportsCurrentItem;Run Programming Action:sccb_design_PROGRAM.log
-HDL;stimulus\testbench.v;0
-ACTIVEVIEW;hdl\CoreSCCB_APB.v
+SmartDesign;sccb_design;0
+ACTIVEVIEW;hdl\CoreSCCB.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "clock_divider::work","hdl\clock_divider.v","FALSE","FALSE"
@@ -444,8 +449,6 @@ ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
-ENDLIST
-LIST "i2c_spk::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v","FALSE","TRUE"
 ENDLIST
 LIST "tb::work","component\work\tb\tb.v","TRUE","TRUE"
 SUBBLOCK "sccb_design::work","component\work\sccb_design\sccb_design.v","TRUE","FALSE"
