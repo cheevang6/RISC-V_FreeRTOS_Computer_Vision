@@ -1,2 +1,0 @@
-CKID0001:@|S:config_sccb_0.sccb_clk_0.sccb_clk@|E:config_sccb_0.coresccb_0.count_delay[3]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:config_sccb_0.sub_addr[3]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
