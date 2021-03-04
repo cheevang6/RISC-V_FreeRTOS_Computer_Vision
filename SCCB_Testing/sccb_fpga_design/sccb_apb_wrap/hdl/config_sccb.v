@@ -1,10 +1,13 @@
 // config_sccb.v
 
 module config_sccb(
-    input PCLK,
+    input PCLK, // PCLK is usually set to 50 MHz but XCLK is only 10 - 48 MHz
     input PRESETN,
     output sioc,
-    inout siod
+    inout siod,
+    output xclk,
+    output cam_rstn,
+    output cam_pwdn
 );
 
 wire        pwdn;
@@ -19,13 +22,12 @@ wire        done;
 
 wire sccb_clk;
 wire mid_pulse;
-wire cam_pwdn;
-wire cam_rstn;
 
-clock_divider #(.CLK_FREQ(10_000_000),.SCCB_CLK_FREQ(100_000)) sccb_clk_0(
+clock_divider #(.APB_CLK_FREQ(50_000_000),.XCLK_FREQ(10_000_000),.SCCB_CLK_FREQ(100_000)) sccb_clk_0(
 	.clk(PCLK),
 	.resetn(PRESETN),
 	.sccb_clk(sccb_clk),
+    .xclk(xclk),
 	.mid_pulse(mid_pulse)
 );
 

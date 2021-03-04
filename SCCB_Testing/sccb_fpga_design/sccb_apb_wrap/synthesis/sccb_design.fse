@@ -1,16 +1,16 @@
 
-fsm_encoding {12630631} onehot
+fsm_encoding {12620621} onehot
 
-fsm_state_encoding {12630631} init_w {000001}
+fsm_state_encoding {12620621} init_w {000001}
 
-fsm_state_encoding {12630631} write {000010}
+fsm_state_encoding {12620621} write {000010}
 
-fsm_state_encoding {12630631} init_r1 {000100}
+fsm_state_encoding {12620621} init_r1 {000100}
 
-fsm_state_encoding {12630631} read1 {001000}
+fsm_state_encoding {12620621} read1 {001000}
 
-fsm_state_encoding {12630631} init_r2 {010000}
+fsm_state_encoding {12620621} init_r2 {010000}
 
-fsm_state_encoding {12630631} read2 {100000}
+fsm_state_encoding {12620621} read2 {100000}
 
-fsm_registers {12630631} {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+fsm_registers {12620621} {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

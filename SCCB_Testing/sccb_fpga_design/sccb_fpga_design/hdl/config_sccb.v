@@ -6,7 +6,7 @@ module config_sccb(
     output sioc,
     output siod,
     output cam_rstn,
-    output pwdn
+    output cam_pwdn
 );
 
 reg         start;
@@ -47,14 +47,15 @@ CoreSCCB coresccb_0(
 );
 
 assign pwdn = 1'b0;
+typedef enum {
+    INIT_W,
+    WRITE,
+    INIT_R,
+    READ,
+    IDLE
+} state_t;
 
-parameter   init_w  = 3'd0,
-            write   = 3'd1,
-            init_r  = 3'd2,
-            read    = 3'd3,
-            idle    = 3'd4;
-            
-reg [2:0] state;
+state_t state;
 
 always @(posedge PCLK or negedge PRESETN) begin
     if(!PRESETN) begin // RST is acitve-low
@@ -62,11 +63,11 @@ always @(posedge PCLK or negedge PRESETN) begin
         sub_addr <= 8'h00; // register bank select (default: 0x00)
         data_in <= 8'h00;
         start <= 1'b0;
-        state <= init_w; //init_w;
+        state <= INIT_W; //init_w;
 	end else if(mid_pulse) begin
         //state <= idle;
         case(state)
-        init_w : begin
+        INIT_W : begin
                 // SCCB IP address for ov7670 = 0x21
                 id_addr <= 7'h21; // write for ov7670
                 sub_addr <= 8'h12; // COMCTRL7 - SCCB Register Reset
@@ -74,39 +75,39 @@ always @(posedge PCLK or negedge PRESETN) begin
                 rw <= 0;
                 start <= 1'b0;
                 //if(ready) 
-                state <= write;
+                state <= WRITE;
             end
-        write : begin
+        WRITE : begin
                 start <= 1'b1;
                 if(done) begin
-                    state <= init_r;
+                    state <= INIT_R;
                 end else begin
-                    state <= write;
+                    state <= WRITE;
                 end
             end
-        init_r : begin
+        INIT_R : begin
                 id_addr <= 7'h21; // read for ov7670
                 sub_addr <= 8'h0a; // Product ID Number MSB (default 0x76)
                 rw <= 1;
                 start <= 1'b0;
                 //if(ready) 
-                state <= read;
+                state <= READ;
             end
-        read : begin
+        READ : begin
                 start <= 1'b1;
                 if(done) begin
                     start <= 1'b0;
-                    state <= init_w; //idle;
+                    state <= IDLE;
                 end else begin
-                    state <= read;
+                    state <= READ;
                 end
             end
-        idle : begin
+        IDLE : begin
                 start <= 1'b0;
             end
         default : begin
                 start <= 1'b0;
-                state <= idle;
+                state <= IDLE;
             end
         endcase
     end

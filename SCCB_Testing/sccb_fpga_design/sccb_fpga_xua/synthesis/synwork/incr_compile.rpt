@@ -14,44 +14,46 @@ Hostname: DESKTOP-95FBL6H
 Implementation : synthesis
 Synopsys HDL compiler and linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
 
-Modified Files: 1
+Modified Files: 2
 FID:  path (prevtimestamp, timestamp)
-29       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15)
+29       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06)
+30       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v (2021-02-11 23:03:14, 2021-02-16 14:47:11)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 14
 MID:  lib.cell.view
 0        work.CoreSCCB.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v (2021-02-11 23:03:14, 2021-02-16 14:47:11) <-- (module definition)
 3        work.FCCC_C0.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 4        work.FCCC_C0_FCCC_C0_0_FCCC.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 5        work.OSC_C0.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 6        work.OSC_C0_OSC_C0_0_OSC.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 7        work.RCOSC_1MHZ.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 8        work.RCOSC_1MHZ_FAB.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 9        work.RCOSC_25_50MHZ.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 10       work.RCOSC_25_50MHZ_FAB.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 11       work.XTLOSC.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 12       work.XTLOSC_FAB.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 14       work.clock_divider.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 1        work.config_sccb.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (may instantiate this module)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (may instantiate this module)
 2        work.sccb_design.verilog may have changed because the following files changed:
-                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:24:49, 2021-02-12 11:26:15) <-- (module definition)
+                        C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v (2021-02-12 11:26:15, 2021-02-21 12:10:06) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 13
+Unmodified files: 12
 FID:  path (timestamp)
 0        C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v (2019-07-02 06:54:09)
 1        C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\vlog\hypermods.v (2019-07-02 06:54:10)
@@ -63,7 +65,6 @@ FID:  path (timestamp)
 26       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v (2021-02-12 11:24:46)
 27       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\OSC_C0\OSC_C0.v (2021-02-11 23:03:14)
 28       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v (2021-02-11 23:03:14)
-30       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v (2021-02-11 23:03:14)
 31       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v (2021-02-11 23:03:14)
 32       C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v (2021-02-12 11:24:39)
 

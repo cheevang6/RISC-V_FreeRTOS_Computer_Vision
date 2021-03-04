@@ -1,6 +1,6 @@
 Project Name: IGL2_MiV_FreeRTOS_Demo
-Location: D:\Work\Libero\IGL2_MiV_FreeRTOS_Demo
-Description: 
+Location: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo
+Description: SPI4.2
 Preferred HDL Type: Verilog
 
 #-----------------------------------------------------

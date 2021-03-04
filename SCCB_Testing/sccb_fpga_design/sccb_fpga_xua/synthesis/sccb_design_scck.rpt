@@ -13,7 +13,7 @@ Hostname: DESKTOP-95FBL6H
 
 Implementation : synthesis
 
-# Written on Fri Feb 12 11:26:23 2021
+# Written on Sun Feb 21 12:10:18 2021
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design\synthesis.fdc"

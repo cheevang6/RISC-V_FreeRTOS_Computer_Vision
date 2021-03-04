@@ -1,4 +1,4 @@
-# Fri Feb 12 00:17:13 2021
+# Wed Feb 17 14:05:00 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -656,7 +656,7 @@ Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:12
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 277MB peak: 345MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 282MB peak: 345MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 282MB peak: 345MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:40s; Memory used current: 333MB peak: 345MB)
@@ -688,18 +688,18 @@ Finished Early Timing Optimization (Real Time elapsed 0h:00m:40s; CPU Time elaps
 @W: BN132 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\io_testing\igl2_miv_freertos_demo\component\work\miv_core32\miv_core32_0\core\miv_rv32ima_l1_ahb_csrfile.v":1556:2:1556:7|Removing instance MiV_Core32_0.MiV_Core32_0.ChiselTop0.tile.core.csr.reg_mcause[19] because it is equivalent to instance MiV_Core32_0.MiV_Core32_0.ChiselTop0.tile.core.csr.reg_mcause[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\io_testing\igl2_miv_freertos_demo\component\work\miv_core32\miv_core32_0\core\miv_rv32ima_l1_ahb_csrfile.v":1556:2:1556:7|Removing instance MiV_Core32_0.MiV_Core32_0.ChiselTop0.tile.core.csr.reg_mcause[18] because it is equivalent to instance MiV_Core32_0.MiV_Core32_0.ChiselTop0.tile.core.csr.reg_mcause[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:40s; Memory used current: 329MB peak: 345MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:41s; Memory used current: 329MB peak: 345MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:43s; CPU Time elapsed 0h:00m:43s; Memory used current: 329MB peak: 345MB)
+Finished preparing to map (Real Time elapsed 0h:00m:44s; CPU Time elapsed 0h:00m:44s; Memory used current: 329MB peak: 345MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:48s; CPU Time elapsed 0h:00m:48s; Memory used current: 383MB peak: 392MB)
+Finished technology mapping (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:48s; Memory used current: 383MB peak: 392MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
    1		0h:00m:49s		    -1.16ns		13115 /      6045
-   2		0h:00m:49s		    -1.16ns		11837 /      6045
+   2		0h:00m:50s		    -1.16ns		11837 /      6045
    3		0h:00m:50s		    -1.16ns		11837 /      6045
 @N: FX271 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\io_testing\igl2_miv_freertos_demo\component\work\miv_core32\miv_core32_0\core\miv_rv32ima_l1_ahb_tlcache_cork_system_bus.v":585:20:585:46|Replicating instance MiV_Core32_0.MiV_Core32_0.ChiselTop0.sbus.SystemBusFromTile.SystemBus_TLCacheCork._m5_0 (in view: work.Top_Level(verilog)) with 76 loads 2 times to improve timing.
 Timing driven replication report
@@ -709,8 +709,8 @@ Added 2 LUTs via timing driven replication
    4		0h:00m:53s		    -0.91ns		11855 /      6045
    5		0h:00m:53s		    -1.41ns		11859 /      6045
    6		0h:00m:53s		    -1.41ns		11859 /      6045
-   7		0h:00m:53s		    -1.41ns		11859 /      6045
-   8		0h:00m:53s		    -1.41ns		11859 /      6045
+   7		0h:00m:54s		    -1.41ns		11859 /      6045
+   8		0h:00m:54s		    -1.41ns		11859 /      6045
 
 
    9		0h:00m:54s		    -0.91ns		11857 /      6045
@@ -735,7 +735,7 @@ Added 0 Cells via replication
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:58s; Memory used current: 332MB peak: 392MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:58s; Memory used current: 343MB peak: 392MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:59s; Memory used current: 343MB peak: 392MB)
 
 
 
@@ -767,11 +767,11 @@ Clock Tree ID     Driving Element                                         Drive 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:59s; Memory used current: 258MB peak: 392MB)
+Start Writing Netlists (Real Time elapsed 0h:01m:00s; CPU Time elapsed 0h:01m:00s; Memory used current: 258MB peak: 392MB)
 
 Writing Analyst data base C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\synwork\Top_Level_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:01m:01s; CPU Time elapsed 0h:01m:01s; Memory used current: 310MB peak: 392MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:01m:02s; CPU Time elapsed 0h:01m:01s; Memory used current: 310MB peak: 392MB)
 
 Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
@@ -779,7 +779,7 @@ Writing Verilog Simulation files
 @W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
 @W: BW150 :|Clock COREJTAGDEBUG_UJ_JTAG_85_0_0|un1_DUT_TCK_inferred_clock in set_clock_groups command cannot be found and will not be forward annotated
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:01m:04s; CPU Time elapsed 0h:01m:03s; Memory used current: 306MB peak: 392MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:01m:05s; CPU Time elapsed 0h:01m:04s; Memory used current: 306MB peak: 392MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:01m:05s; CPU Time elapsed 0h:01m:04s; Memory used current: 303MB peak: 392MB)
@@ -793,7 +793,7 @@ Start final timing analysis (Real Time elapsed 0h:01m:05s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Feb 12 00:18:19 2021
+# Timing report written on Wed Feb 17 14:06:06 2021
 #
 
 
@@ -1502,10 +1502,10 @@ Timing exceptions that could not be applied
 @W: MT447 :"c:/users/cheec/desktop/master/risc-v_freertos_computer_vision/io_testing/igl2_miv_freertos_demo/designer/top_level/synthesis.fdc":20:0:20:0|Timing constraint (from [get_clocks { MSS_SubSystem_sb_0/CCC_0/GL0 }] to [get_clocks { TCK }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design 
 @W: MT443 :"c:/users/cheec/desktop/master/risc-v_freertos_computer_vision/io_testing/igl2_miv_freertos_demo/designer/top_level/synthesis.fdc":21:0:21:0|Timing constraint (through [get_nets { MSS_SubSystem_sb_0.CORECONFIGP_0.FIC_2_APB_M_PSEL MSS_SubSystem_sb_0.CORECONFIGP_0.FIC_2_APB_M_PENABLE }] to [get_cells { MSS_SubSystem_sb_0.CORECONFIGP_0.FIC_2_APB_M_PREADY* MSS_SubSystem_sb_0.CORECONFIGP_0.state[0] }]) (max delay 0.000000) was not applied to the design because none of the paths specified by the constraint exist in the design 
 
-Finished final timing analysis (Real Time elapsed 0h:01m:05s; CPU Time elapsed 0h:01m:04s; Memory used current: 303MB peak: 392MB)
+Finished final timing analysis (Real Time elapsed 0h:01m:06s; CPU Time elapsed 0h:01m:05s; Memory used current: 303MB peak: 392MB)
 
 
-Finished timing report (Real Time elapsed 0h:01m:05s; CPU Time elapsed 0h:01m:04s; Memory used current: 303MB peak: 392MB)
+Finished timing report (Real Time elapsed 0h:01m:06s; CPU Time elapsed 0h:01m:05s; Memory used current: 303MB peak: 392MB)
 
 ---------------------------------------
 Resource Usage Report for Top_Level 
@@ -1566,9 +1566,9 @@ Total number of LUTs after P&R:  11793 + 288 + 288 + 72 = 12441;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:01m:05s; CPU Time elapsed 0h:01m:04s; Memory used current: 117MB peak: 392MB)
+At Mapper Exit (Real Time elapsed 0h:01m:06s; CPU Time elapsed 0h:01m:05s; Memory used current: 117MB peak: 392MB)
 
-Process took 0h:01m:05s realtime, 0h:01m:04s cputime
-# Fri Feb 12 00:18:19 2021
+Process took 0h:01m:06s realtime, 0h:01m:05s cputime
+# Wed Feb 17 14:06:06 2021
 
 ###########################################################]

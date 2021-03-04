@@ -270,8 +270,29 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 ENDLIST
+LIST "sccb_test::work"
+FILE "<project>\component\work\sccb_test\sccb_test.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
+LIST sccb_test
+VALUE "<project>\stimulus\testbench.v,tb_hdl"
+ENDLIST
 LIST sccb_desgin
 VALUE "<project>\hdl\reseting.v,hdl"
 ENDLIST
@@ -285,7 +306,7 @@ Type=max
 RunTime=1000ns
 Resolution=1fs
 VsimOpt=
-EntityName=tb
+EntityName=testbench
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -382,6 +403,18 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "sccb_test::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -395,18 +428,17 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-StartPage;StartPage;0
+SmartDesign;sccb_test;0
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:synplify.log
 HDL;hdl\sccb_master.v;0
 HDL;hdl\top_ov7670.v;0
 HDL;hdl\ov7670_ctrl_reg.v;0
-Reports;Reports;0
-ReportsCurrentItem;Synthesize:synplify.log
-HDL;hdl\reseting.v;0
-SmartDesign;sccb_desgin;0
+StartPage;StartPage;0
 HDL;hdl\ov7670_top_ctrl.v;0
 HDL;stimulus\testbench.v;0
-SmartDesign;sccb_test;0
-ACTIVEVIEW;StartPage
+SmartDesign;sccb_desgin;0
+ACTIVEVIEW;stimulus\testbench.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"

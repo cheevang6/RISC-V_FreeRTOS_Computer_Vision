@@ -8,16 +8,16 @@ High-effort              : OFF
 Repair min-delay         : OFF
 Incremental              : OFF
 
-INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 5 fixed I/O macros, 0 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified 4 fixed I/O macros, 1 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 12.800.0 
-Design: sccb_design                     Started: Fri Feb 12 11:26:31 2021
+Design: sccb_design                     Started: Wed Feb 17 22:19:41 2021
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -33,31 +33,31 @@ Improvement              : 0 seconds
 Placer completed successfully.
 
 Design: sccb_design                     
-Finished: Fri Feb 12 11:26:33 2021
-Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:02
+Finished: Wed Feb 17 22:19:44 2021
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
 Total Memory Usage: 132.6 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design\sccb_designStarted: Fri Feb 12 11:26:35 2021
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\designer\sccb_design\sccb_designStarted: Wed Feb 17 22:19:46 2021
 
 
 Router completed successfully.
 
-Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design\sccb_design
-Finished: Fri Feb 12 11:26:43 2021
-Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:08
-Total Memory Usage: 895.9 Mbytes
+Design: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\designer\sccb_design\sccb_design
+Finished: Wed Feb 17 22:19:53 2021
+Total CPU Time:     00:00:06            Total Elapsed Time: 00:00:07
+Total Memory Usage: 896.0 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
 +---------------+------+-------+------------+
 | Type          | Used | Total | Percentage |
 +---------------+------+-------+------------+
-| 4LUT          | 157  | 27696 | 0.57       |
-| DFF           | 46   | 27696 | 0.17       |
-| I/O Register  | 0    | 408   | 0.00       |
-| Logic Element | 157  | 27696 | 0.57       |
+| 4LUT          | 129  | 27696 | 0.47       |
+| DFF           | 31   | 27696 | 0.11       |
+| I/O Register  | 0    | 414   | 0.00       |
+| Logic Element | 129  | 27696 | 0.47       |
 +---------------+------+-------+------------+
 

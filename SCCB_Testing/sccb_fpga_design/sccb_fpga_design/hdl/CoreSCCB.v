@@ -9,8 +9,7 @@ module CoreSCCB (
 	input [7:0] data_in,
 	output reg [7:0] data_out,
 	output sioc,
-	//input id_addr,
-	output reg siod,
+	inout siod,
     output pwdn,
     output reg cam_rstn,
 	output reg done,
@@ -19,7 +18,7 @@ module CoreSCCB (
 );
 typedef enum {
     IDLE,
-    WAIT,
+    //WAIT,
     INIT,
     START_W,
     IPADDR_W,
@@ -31,7 +30,6 @@ typedef enum {
     WDATA_DC,
     STOP_2W_L,
     STOP_2W_H,
-    WAIT2,
     START_R,
     IPADDR_R,
     RW_READ	,
@@ -45,32 +43,6 @@ typedef enum {
 
 state_t state;
 
-/*localparam  RESET       = 7'd0,
-            WAIT        = 7'd0,
-            INIT		= 7'd1,
-        	START_W		= 7'd2,
-        	IPADDR_W	= 7'd3,
-        	RW_WRITE	= 7'd4,
-        	IPADDR_W_DC	= 7'd5,
-        	SUBADDR		= 7'd6,
-        	SUBADDR_DC	= 7'd7,
-        	WDATA		= 7'd8,
-        	WDATA_DC 	= 7'd9,
-        	STOP_2W_L	= 7'd10,
-        	STOP_2W_H	= 7'd11,
-            WAIT2       = 7'd12,
-        	START_R		= 7'd13,
-        	IPADDR_R	= 7'd14,
-            RW_READ		= 7'd15,
-            IPADDR_R_DC	= 7'd16,
-            RDATA		= 7'd17,
-            RDATA_NA	= 7'd18,
-            STOP_3W2R_L	= 7'd19,
-            STOP_3W2R_H	= 7'd20,
-            DONE		= 7'd21;
-*/
-			
-//reg [7:0] state;
 reg [4:0] count_index;
 reg sioc_en = 0;
 reg bit_out;
@@ -80,7 +52,7 @@ reg [6:0] id_addr_saved;
 reg [7:0] sub_addr_saved;
 reg [7:0] data_in_saved;
 reg rw_saved;
-reg [15:0] count_delay = 0;
+//reg [15:0] count_delay = 0;
 
 // wait for 300 ms
 // sccb clk = 10 kHz = 100 us
@@ -89,13 +61,13 @@ localparam DELAY = 30;//3000;
 
 
 assign pwdn = 0;
-assign sioc = (sioc_en)? ~clk : 1;
+assign sioc = (sioc_en)? clk : 1;
 
 // if I was doing open drain
 // siod: open drain
 //  + 1: input or Z
 //  + 0: output or pulled to ground
-//assign siod = siod_en;
+// assign siod = siod_en;
 
 // siod_: tri-state
 //  + 1: output
@@ -103,7 +75,7 @@ assign sioc = (sioc_en)? ~clk : 1;
 assign siod = (siod_en)? bit_out : 1'bz;
 
 // sioc block
-always @(negedge clk) begin
+always @(posedge clk) begin
 	if(!resetn) begin
 		sioc_en <= 0;
 	end else begin
@@ -117,10 +89,10 @@ always @(negedge clk) begin
 end
 
 // siod block
-always @(posedge clk) begin
+always @(mid_pulse) begin
 	if(!resetn) begin
         bit_out = 1;
-		state = WAIT;
+		state = IDLE;
 		siod_en = 0;
 		count_index = 0;
 		data_out = 0;
@@ -129,12 +101,12 @@ always @(posedge clk) begin
         sub_addr_saved = 0;
         data_in_saved = 0;
         rw_saved = 0;
-        count_delay = 0;
+        //count_delay = 0;
         cam_rstn = 1;
 	end else begin
-        /*bit_out = 1;
-        state = WAIT;
-        siod_en = 1;
+       /* bit_out = 1;
+        state = IDLE;
+        siod_en = 0;
         count_index = 0;
         data_out = data_out;
         done = 0;
@@ -142,23 +114,32 @@ always @(posedge clk) begin
         sub_addr_saved = 0;
         data_in_saved = 0;
         rw_saved = 0;
-        cam_rstn = 1;*/
+        //count_delay = 0;
+        cam_rstn = 1; */
         case(state)
             IDLE : begin
+                    done = 0;
+                    siod_en = 0;
+                    if(start)
+                        state = INIT;
+                    else
+                        state = IDLE;
                 end
-            WAIT : begin // delay 300 ms
+ /*           WAIT : begin // delay 300 ms
                     siod_en = 0;
                     state = WAIT;
+                    done = 0;
                     if(count_delay < DELAY-1)
                         count_delay = count_delay + 1;
                     else begin
                         count_delay = 0;
                         state = INIT;
                     end
-                end
+                end */
             INIT : begin
                     siod_en = 1;
                     bit_out = 1;
+                    done <= 0;
                     state = START_W;
                     id_addr_saved = id_addr;
                     sub_addr_saved = sub_addr;
@@ -219,17 +200,7 @@ always @(posedge clk) begin
                     siod_en = 1;
                     bit_out = 1;
                     count_delay = 0;
-                    state = WAIT2;
-                end
-            WAIT2 : begin
-                    siod_en = 0;
-                    state = WAIT2;
-                    if(count_delay < DELAY-1)
-                        count_delay = count_delay + 1;
-                    else begin
-                        count_delay = 0;
-                        state = START_R;
-                    end
+                    state = START_R;
                 end
             START_R : begin
                     siod_en = 1;
@@ -281,7 +252,7 @@ always @(posedge clk) begin
                 end
             default : begin
                     siod_en = 0;
-                    state = WAIT;
+                    state = IDLE;
                 end
         endcase
 	end

@@ -1,0 +1,399 @@
+<html>
+    <head>
+        <style>
+      body { font-family:arial; font-size:10pt; text-align:left; }
+      h1, h2 {
+          padding-top: 30px;
+      }
+      h3 {
+          padding-top: 20px;
+      }
+      h4, h5, h6 {
+          padding-top: 10px;
+          font-size:12pt;
+      }
+      table {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          border-collapse:collapse;
+      }
+      table th, table td {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          padding: 4px;
+      }
+     </style>
+    </head>
+    <body>
+        <h1 align="center">Configuration report for FCCC_C0_FCCC_C0_0_</h1>
+        <table cellpadding="4">
+            <tr/>
+            <tr>
+                <td>Date:</td>
+                <td>Wed Feb 17 21:27:22 2021</td>
+            </tr>
+            <tr>
+                <td>Design:</td>
+                <td>FCCC_C0</td>
+            </tr>
+            <tr>
+                <td>Instance:</td>
+                <td>FCCC_C0_0</td>
+            </tr>
+            <tr>
+                <td>Family:</td>
+                <td>IGLOO2</td>
+            </tr>
+            <tr>
+                <td>Die:</td>
+                <td>M2GL025</td>
+            </tr>
+            <tr>
+                <td>Package:</td>
+                <td>256 VF</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>Outputs Configuration Summary</h2>
+        <table cellpadding="4">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Source</th>
+                <th>Source Frequency</th>
+                <th>Required Output Frequency</th>
+                <th>Actual Output Frequency</th>
+                <th>Divider</th>
+            </tr>
+            <tr>
+                <td>GL0</td>
+                <td>primary clock</td>
+                <td>PLL (0)</td>
+                <td>20 MHz</td>
+                <td>10 MHz</td>
+                <td>10 MHz</td>
+                <td>2 (GPD0)</td>
+            </tr>
+        </table>
+        <h2>PLL Configuration Summary</h2>
+        <table cellpadding="4">
+            <tr/>
+            <tr>
+                <td>Reference clock frequency</td>
+                <td>50 MHz</td>
+            </tr>
+            <tr>
+                <td>Reference clock source</td>
+                <td>On-chip 25/50 MHz RC Oscillator</td>
+            </tr>
+            <tr>
+                <td>Output frequency</td>
+                <td>20 MHz</td>
+            </tr>
+            <tr>
+                <td>VCO frequency</td>
+                <td>640 MHz</td>
+            </tr>
+            <tr>
+                <td>PLL reference clock divider</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>CCC reference clock divider</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Feedback source</td>
+                <td>CCC Internal</td>
+            </tr>
+            <tr>
+                <td>PLL feedback divider</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>CCC feedback divider</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>External feedback divider</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>PLL VCO divider</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Lock counter</td>
+                <td>1024 cycles</td>
+            </tr>
+            <tr>
+                <td>Lock window</td>
+                <td>32000 ppm</td>
+            </tr>
+            <tr>
+                <td>Spread Spectrum Modulation</td>
+                <td>Disable</td>
+            </tr>
+            <tr>
+                <td>Required Spread Spectrum Modulation Frequency</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>Actual Spread Spectrum Modulation Frequency</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>Spread Spectrum Modulation Depth</td>
+                <td>--</td>
+            </tr>
+        </table>
+        <h2>CCC Registers Configured Value</h2>
+        <table cellpadding="4">
+            <tr>
+                <th>Register Name</th>
+                <th>Address</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Reserved</td>
+                <td>0x00</td>
+                <td>0x00</td>
+                <td>Reserved</td>
+            </tr>
+            <tr>
+                <td>FCCC_RFMUX_CR</td>
+                <td>0x01</td>
+                <td>0x0b</td>
+                <td>RFMUX configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_RFDIV_CR</td>
+                <td>0x02</td>
+                <td>0x04</td>
+                <td>RFDIV configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_FBMUX_CR</td>
+                <td>0x03</td>
+                <td>0x07</td>
+                <td>FBMUX configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_FBDIV_CR0</td>
+                <td>0x04</td>
+                <td>0x01</td>
+                <td>FBDIV configuration register 0</td>
+            </tr>
+            <tr>
+                <td>FCCC_FBDIV_CR1</td>
+                <td>0x05</td>
+                <td>0x00</td>
+                <td>FBDIV configuration register 1</td>
+            </tr>
+            <tr>
+                <td>FCCC_NGMUX0_CR0</td>
+                <td>0x06</td>
+                <td>0x08</td>
+                <td>NGMUX0 configuration register 0</td>
+            </tr>
+            <tr>
+                <td>FCCC_NGMUX0_CR1</td>
+                <td>0x07</td>
+                <td>0x18</td>
+                <td>NGMUX0 configuration register 1</td>
+            </tr>
+            <tr>
+                <td>FCCC_NGMUX1_CR0</td>
+                <td>0x08</td>
+                <td>0x18</td>
+                <td>NGMUX1 configuration register 0</td>
+            </tr>
+            <tr>
+                <td>FCCC_NGMUX1_CR1</td>
+                <td>0x09</td>
+                <td>0x18</td>
+                <td>NGMUX1 configuration register 1</td>
+            </tr>
+            <tr>
+                <td>FCCC_NGMUX2_CR0</td>
+                <td>0x0a</td>
+                <td>0x18</td>
+                <td>NGMUX2 configuration register 0</td>
+            </tr>
+            <tr>
+                <td>FCCC_NGMUX2_CR1</td>
+                <td>0x0b</td>
+                <td>0x18</td>
+                <td>NGMUX2 configuration register 1</td>
+            </tr>
+            <tr>
+                <td>FCCC_NGMUX3_CR0</td>
+                <td>0x0c</td>
+                <td>0x18</td>
+                <td>NGMUX3 configuration register 0</td>
+            </tr>
+            <tr>
+                <td>FCCC_NGMUX3_CR1</td>
+                <td>0x0d</td>
+                <td>0x18</td>
+                <td>NGMUX3 configuration register 1</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPMUX0_CR</td>
+                <td>0x0e</td>
+                <td>0x47</td>
+                <td>GPMUX0 configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPMUX1_CR</td>
+                <td>0x0f</td>
+                <td>0x58</td>
+                <td>GPMUX1 configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPMUX2_CR</td>
+                <td>0x10</td>
+                <td>0x58</td>
+                <td>GPMUX2 configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPMUX3_CR</td>
+                <td>0x11</td>
+                <td>0x58</td>
+                <td>GPMUX3 configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPD0_CR</td>
+                <td>0x12</td>
+                <td>0x02</td>
+                <td>GPD0 configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPD1_CR</td>
+                <td>0x13</td>
+                <td>0x01</td>
+                <td>GPD1 configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPD2_CR</td>
+                <td>0x14</td>
+                <td>0x01</td>
+                <td>GPD2 configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPD3_CR</td>
+                <td>0x15</td>
+                <td>0x01</td>
+                <td>GPD3 configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR0</td>
+                <td>0x16</td>
+                <td>0x06</td>
+                <td>PLL lock window configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR1</td>
+                <td>0x17</td>
+                <td>0x05</td>
+                <td>PLL lock counter configuration and lock status register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR2</td>
+                <td>0x18</td>
+                <td>0x00</td>
+                <td>PLL SSCG modulation frequency configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR3</td>
+                <td>0x19</td>
+                <td>0x01</td>
+                <td>PLL SSCG modulation depth configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR4</td>
+                <td>0x1a</td>
+                <td>0x00</td>
+                <td>PLL SSCG functionality enable register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR5</td>
+                <td>0x1b</td>
+                <td>0x02</td>
+                <td>PLL operation mode and supply voltages configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR6</td>
+                <td>0x1c</td>
+                <td>0x00</td>
+                <td>PLL internal or external feedback path selection register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPDS_SYNC_CR</td>
+                <td>0x1d</td>
+                <td>0x00</td>
+                <td>GPDs' outputs realignment request configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR7</td>
+                <td>0x1e</td>
+                <td>0x05</td>
+                <td>PLL's internal output divider configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR8</td>
+                <td>0x1f</td>
+                <td>0x00</td>
+                <td>PLL's internal reference clock divider configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR9</td>
+                <td>0x20</td>
+                <td>0x00</td>
+                <td>PLL's internal feedback clock divider configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PLL_CR10</td>
+                <td>0x21</td>
+                <td>0x05</td>
+                <td>PLL loop filter range configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPD0_SYNC_CR</td>
+                <td>0x22</td>
+                <td>0x03</td>
+                <td>GPD0 operating mode configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPD1_SYNC_CR</td>
+                <td>0x23</td>
+                <td>0x02</td>
+                <td>GPD1 operating mode configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPD2_SYNC_CR</td>
+                <td>0x24</td>
+                <td>0x02</td>
+                <td>GPD2 operating mode configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_GPD3_SYNC_CR</td>
+                <td>0x25</td>
+                <td>0x02</td>
+                <td>GPD3 operating mode configuration register</td>
+            </tr>
+            <tr>
+                <td>FCCC_PDLY_CR</td>
+                <td>0x26</td>
+                <td>0x40</td>
+                <td>Programmable delay elements configuration register</td>
+            </tr>
+        </table>
+        <p/>
+    </body>
+</html>

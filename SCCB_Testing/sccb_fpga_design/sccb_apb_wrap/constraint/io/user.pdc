@@ -6,7 +6,7 @@
 
 # Family: IGLOO2 , Die: M2GL025 , Package: 256 VF
 
-# Date generated: Thu Feb 11 23:12:04 2021 
+# Date generated: Wed Feb 17 18:39:11 2021 
 
 
 # 
@@ -25,32 +25,26 @@
 # User Locked I/O settings
 # 
 
-set_io led1            \
-    -pinname J16       \
+set_io cam_rstn        \
+    -pinname T9        \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
-set_io led2            \
-    -pinname M16       \
+set_io sioc           \
+    -pinname P6        \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
-set_io sio_c           \
-    -pinname P9        \
-    -fixed yes         \
-    -DIRECTION OUTPUT
-
-
-set_io sio_d           \
-    -pinname N8        \
+set_io siod           \
+    -pinname P7        \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
 set_io xclk            \
-    -pinname M9        \
+    -pinname M8        \
     -fixed yes         \
     -DIRECTION OUTPUT
 

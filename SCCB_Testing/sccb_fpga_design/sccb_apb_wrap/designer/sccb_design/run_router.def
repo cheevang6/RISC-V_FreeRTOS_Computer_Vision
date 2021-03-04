@@ -1,6 +1,6 @@
 G5ROUTER_32_64_BIT_EXT=64
 DESIGN=sccb_design
-DESDIR=C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design
+DESDIR=C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\designer\sccb_design
 FAM=IGLOO2
 DIE=PA4MGL2500_N
 PACKAGE=vf256

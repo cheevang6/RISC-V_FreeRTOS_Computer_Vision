@@ -1,4 +1,4 @@
-# Fri Feb 12 00:17:09 2021
+# Wed Feb 17 14:04:55 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -411,7 +411,7 @@ COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock              363       JTAG_0.J
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\Top_Level.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 216MB peak: 232MB)
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 216MB peak: 232MB)
 
 Encoding state machine arbRegSMCurrentState[15:0] (in view: COREAHBLITE_LIB.COREAHBLITE_SLAVEARBITER_Z3_0(verilog))
 original code -> new code
@@ -582,6 +582,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 113MB peak: 242MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:03s cputime
-# Fri Feb 12 00:17:13 2021
+# Wed Feb 17 14:05:00 2021
 
 ###########################################################]

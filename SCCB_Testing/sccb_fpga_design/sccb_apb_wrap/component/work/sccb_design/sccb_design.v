@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Feb 12 11:26:15 2021
+// Created by SmartDesign Thu Feb 25 01:54:55 2021
 // Version: v12.3 12.800.0.16
 //////////////////////////////////////////////////////////////////////
 
@@ -10,12 +10,12 @@ module sccb_design(
     // Inputs
     DEVRST_N,
     // Outputs
-    led1,
-    led2,
-    sio_c,
+    cam_pwdn,
+    cam_rstn,
+    sioc,
     xclk,
     // Inouts
-    sio_d
+    siod
 );
 
 //--------------------------------------------------------------------
@@ -25,42 +25,43 @@ input  DEVRST_N;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output led1;
-output led2;
-output sio_c;
+output cam_pwdn;
+output cam_rstn;
+output sioc;
 output xclk;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
-inout  sio_d;
+inout  siod;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
 wire   AND2_0_Y;
+wire   cam_pwdn_net_0;
+wire   cam_rstn_net_0;
 wire   DEVRST_N;
+wire   FCCC_C0_0_GL0_0;
 wire   FCCC_C0_0_LOCK;
-wire   led1_net_0;
-wire   led2_net_0;
 wire   OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC;
-wire   sio_c_net_0;
-wire   sio_d;
+wire   sioc_net_0;
+wire   siod;
 wire   SYSRESET_0_POWER_ON_RESET_N;
 wire   xclk_net_0;
-wire   sio_c_net_1;
-wire   led1_net_1;
+wire   sioc_net_1;
 wire   xclk_net_1;
-wire   led2_net_1;
+wire   cam_rstn_net_1;
+wire   cam_pwdn_net_1;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign sio_c_net_1 = sio_c_net_0;
-assign sio_c       = sio_c_net_1;
-assign led1_net_1  = led1_net_0;
-assign led1        = led1_net_1;
-assign xclk_net_1  = xclk_net_0;
-assign xclk        = xclk_net_1;
-assign led2_net_1  = led2_net_0;
-assign led2        = led2_net_1;
+assign sioc_net_1     = sioc_net_0;
+assign sioc           = sioc_net_1;
+assign xclk_net_1     = xclk_net_0;
+assign xclk           = xclk_net_1;
+assign cam_rstn_net_1 = cam_rstn_net_0;
+assign cam_rstn       = cam_rstn_net_1;
+assign cam_pwdn_net_1 = cam_pwdn_net_0;
+assign cam_pwdn       = cam_pwdn_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -76,12 +77,15 @@ AND2 AND2_0(
 //--------config_sccb
 config_sccb config_sccb_0(
         // Inputs
-        .PCLK    ( xclk_net_0 ),
-        .PRESETN ( AND2_0_Y ),
+        .PCLK     ( FCCC_C0_0_GL0_0 ),
+        .PRESETN  ( AND2_0_Y ),
         // Outputs
-        .sioc    ( sio_c_net_0 ),
+        .sioc     ( sioc_net_0 ),
+        .xclk     ( xclk_net_0 ),
+        .cam_rstn ( cam_rstn_net_0 ),
+        .cam_pwdn ( cam_pwdn_net_0 ),
         // Inouts
-        .siod    ( sio_d ) 
+        .siod     ( siod ) 
         );
 
 //--------FCCC_C0
@@ -89,15 +93,8 @@ FCCC_C0 FCCC_C0_0(
         // Inputs
         .RCOSC_25_50MHZ ( OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC ),
         // Outputs
-        .GL0            ( xclk_net_0 ),
+        .GL0            ( FCCC_C0_0_GL0_0 ),
         .LOCK           ( FCCC_C0_0_LOCK ) 
-        );
-
-//--------LIVE_PROBE_FB
-LIVE_PROBE_FB LIVE_PROBE_FB_0(
-        // Outputs
-        .PROBE_A ( led1_net_0 ),
-        .PROBE_B ( led2_net_0 ) 
         );
 
 //--------OSC_C0

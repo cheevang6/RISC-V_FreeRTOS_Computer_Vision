@@ -3,7 +3,7 @@
 <doc>
 <title>Global Net Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
-<text>Date: Fri Feb 12 11:26:34 2021
+<text>Date: Wed Feb 17 22:19:44 2021
 </text>
 <section>
 <name>Global Nets Information</name>
@@ -19,15 +19,15 @@
  <cell>1</cell>
  <cell>GB[3] </cell>
  <cell>(293, 72)</cell>
- <cell>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</cell>
- <cell>47</cell>
+ <cell>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn</cell>
+ <cell>32</cell>
 </row>
 <row>
  <cell>2</cell>
  <cell>GB[7] </cell>
  <cell>(297, 72)</cell>
- <cell>AND2_0_RNIKOS1/U0_YWn_GEast</cell>
- <cell>45</cell>
+ <cell>AND2_0_RNIKOS1/U0_YWn</cell>
+ <cell>30</cell>
 </row>
 </table>
 <text></text>
@@ -51,7 +51,7 @@
 <row>
  <cell>1</cell>
  <cell>AND2_0:Y</cell>
- <cell>(395, 39)</cell>
+ <cell>(312, 39)</cell>
  <cell>GB[7] </cell>
  <cell>AND2_0_Z</cell>
  <cell>ROUTED</cell>
@@ -133,9 +133,19 @@
  <cell>1</cell>
  <cell>GB[3] </cell>
  <cell>(293, 72)</cell>
- <cell>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</cell>
- <cell>47</cell>
+ <cell>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn</cell>
+ <cell>32</cell>
  <cell>1</cell>
+ <cell>(147, 39)</cell>
+ <cell>14</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
  <cell>(446, 0)</cell>
  <cell>1</cell>
 </row>
@@ -145,9 +155,39 @@
  <cell></cell>
  <cell></cell>
  <cell></cell>
- <cell>2</cell>
+ <cell>3</cell>
  <cell>(447, 39)</cell>
+ <cell>12</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(447, 42)</cell>
+ <cell>5</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>GB[7] </cell>
+ <cell>(297, 72)</cell>
+ <cell>AND2_0_RNIKOS1/U0_YWn</cell>
  <cell>30</cell>
+ <cell>1</cell>
+ <cell>(146, 39)</cell>
+ <cell>13</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(446, 39)</cell>
+ <cell>12</cell>
 </row>
 <row>
  <cell> </cell>
@@ -156,28 +196,8 @@
  <cell></cell>
  <cell></cell>
  <cell>3</cell>
- <cell>(447, 42)</cell>
- <cell>16</cell>
-</row>
-<row>
- <cell>2</cell>
- <cell>GB[7] </cell>
- <cell>(297, 72)</cell>
- <cell>AND2_0_RNIKOS1/U0_YWn_GEast</cell>
- <cell>45</cell>
- <cell>1</cell>
- <cell>(446, 39)</cell>
- <cell>29</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>2</cell>
  <cell>(446, 42)</cell>
- <cell>16</cell>
+ <cell>5</cell>
 </row>
 </table>
 <text></text>

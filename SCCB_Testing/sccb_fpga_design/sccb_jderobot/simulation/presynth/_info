@@ -115,7 +115,7 @@ R8
 n@o@s@c_@c0_@o@s@c_@c0_0_@o@s@c
 vov7670_ctrl_reg
 R1
-R2
+Z10 !s110 1613641116
 !i10b 1
 !s100 mGb2e^obZDUP:[YXViLGf3
 !s11b D^N1WUE43V>TYP72:geoJ2
@@ -131,7 +131,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1613641116.000000
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_ctrl_reg.v|
 !s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_ctrl_reg.v|
 !s101 -O0
@@ -140,7 +140,7 @@ R7
 R8
 vov7670_top_ctrl
 R1
-R2
+R10
 !i10b 1
 !s100 BD[QPDhlGgV;igllagnLO1
 !s11b ODdG`dcf19VfnN`eKUf@G2
@@ -156,7 +156,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_top_ctrl.v|
 !s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_top_ctrl.v|
 !s101 -O0
@@ -165,7 +165,7 @@ R7
 R8
 vreseting
 R1
-Z10 !s110 1612927511
+Z12 !s110 1612927511
 !i10b 1
 !s100 Iai3KEP2S?V:31H;7JNTJ0
 !s11b H@WKQeKn^dJcnB0D94a4K2
@@ -181,7 +181,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1612927511.000000
+Z13 !s108 1612927511.000000
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/reseting.v|
 !s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/reseting.v|
 !s101 -O0
@@ -190,7 +190,7 @@ R7
 R8
 vsccb_desgin
 R1
-R10
+R12
 !i10b 1
 !s100 bl1jl`6@eM3d4;I6:<fHB0
 !s11b :YY4FgEMEWToG4h5DkH:Y0
@@ -206,7 +206,7 @@ R5
 r1
 !s85 0
 31
-R11
+R13
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/sccb_desgin/sccb_desgin.v|
 !s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/sccb_desgin/sccb_desgin.v|
 !s101 -O0
@@ -215,7 +215,7 @@ R7
 R8
 vsccb_master
 R1
-R2
+R10
 !i10b 1
 !s100 aK9WG0a=]6YdU]DB39_z<3
 !s11b U`L3adSFSZ;fNOI0DUJm_3
@@ -231,7 +231,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/sccb_master.v|
 !s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/sccb_master.v|
 !s101 -O0
@@ -240,7 +240,7 @@ R7
 R8
 vsccb_test
 R1
-Z12 !s110 1612921616
+Z14 !s110 1613641117
 !i10b 1
 !s100 0b5WI5`Q6U[b^@WRXeHbO0
 !s11b daL<UQ]feE:A_E;4:j2ae0
@@ -256,7 +256,7 @@ R5
 r1
 !s85 0
 31
-Z13 !s108 1612921616.000000
+R11
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/sccb_test/sccb_test.v|
 !s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/sccb_test/sccb_test.v|
 !s101 -O0
@@ -265,7 +265,7 @@ R7
 R8
 vtb
 R1
-R10
+R12
 !i10b 1
 !s100 WnnZ^BLL`4`lCB2Hom^`D0
 !s11b PQHYDn`mkU1>b9Jd^JZl^3
@@ -281,7 +281,7 @@ R5
 r1
 !s85 0
 31
-R11
+R13
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb/tb.v|
 !s90 -reportprogress|300|+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl|+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb/tb.v|
 !s101 -O0
@@ -291,7 +291,7 @@ R7
 R8
 vtestbench
 R1
-R12
+R14
 !i10b 1
 !s100 ooiXSOm]?e?0]6^d;SZZ23
 !s11b HX^UAi9AN?bdNg23We_Lo0
@@ -307,7 +307,7 @@ R5
 r1
 !s85 0
 31
-R13
+!s108 1613641117.000000
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/stimulus/testbench.v|
 !s90 -reportprogress|300|+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/stimulus|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/stimulus/testbench.v|
 !s101 -O0
@@ -333,7 +333,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/top_ov7670.v|
 !s90 -reportprogress|300|-sv|-work|presynth|C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/top_ov7670.v|
 !s101 -O0

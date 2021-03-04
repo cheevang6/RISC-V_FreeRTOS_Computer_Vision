@@ -2141,8 +2141,8 @@ PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1611795331"
-SIZE="2173"
+TIME="1612553442"
+SIZE="2213"
 PARENT="<project>\component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.cxf"
 PARENT="<project>\component\work\Top_Level\Top_Level.cxf"
 ENDFILE
@@ -2237,7 +2237,7 @@ VALUE "<project>\simulation\peripheral_init.bfm,sim"
 ENDLIST
 ENDLIST
 LIST "Top_Level::work"
-FILE "<project>\component\work\Top_Level\Top_Level.cxf,actgen_cxf"
+FILE "<project>\component\work\Top_Level\Top_Level.v,hdl"
 LIST SynthesisConstraints
 VALUE "<project>\constraint\Top_Level_derived_constraints.sdc,sdc"
 VALUE "<project>\constraint\JTAG_tck_constraint.sdc,sdc"
@@ -2391,16 +2391,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\test\test
 ENDLIST
 ENDLIST
 LIST Other_Association
-LIST COREAHBTOAPB3
-VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
-VALUE "<project>\simulation\master.bfm,sim"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\coreparameters.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-ENDLIST
 LIST CoreAHBLite
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 VALUE "<project>\simulation\coreahblite_usertb_include.bfm,sim"
@@ -2415,6 +2405,16 @@ VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bf
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAHBLite\5.2.100\mti\scripts\wave_user.do,do"
+ENDLIST
+LIST COREAHBTOAPB3
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
 LIST BasicIO_Interface
 VALUE "<project>\component\work\BasicIO_Interface\BasicIO_Interface.sdc,sdc"
@@ -2526,8 +2526,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -2612,7 +2612,6 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-SmartDesign;Top_Level;0
 Reports;Reports;0
 ReportsCurrentItem;Run Programming Action:Top_Level_PROGRAM.log
 HDL;hdl\CoreSCCB.v;0
@@ -2620,7 +2619,8 @@ HDL;hdl\CoreSCCB_APB.v;0
 Constraint Manager;Constraint Manager;0
 StartPage;StartPage;0
 HDL;hdl\clock_divider.v;0
-ACTIVEVIEW;hdl\CoreSCCB.v
+SmartDesign;Top_Level;0
+ACTIVEVIEW;Top_Level
 ENDLIST
 LIST ModuleSubBlockList
 LIST "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
@@ -2635,11 +2635,17 @@ ENDLIST
 LIST "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
 SUBBLOCK "COREAHBTOAPB3::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\core\coreahbtoapb3.v","FALSE","FALSE"
 ENDLIST
-LIST "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.cxf","TRUE","FALSE"
+LIST "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.v","TRUE","FALSE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
 ENDLIST
 LIST "BasicIO_Interface::work","component\work\BasicIO_Interface\BasicIO_Interface_syn.v","TRUE","FALSE"
 ENDLIST
-LIST "CoreGPIO_C0::work","component\work\CoreGPIO_C0\CoreGPIO_C0.cxf","TRUE","FALSE"
+LIST "clock_divider::work","hdl\clock_divider.v","FALSE","FALSE"
+ENDLIST
+LIST "CoreGPIO_C0::work","component\work\CoreGPIO_C0\CoreGPIO_C0.v","TRUE","FALSE"
+SUBBLOCK "CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\core\coregpio.v","FALSE","FALSE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\core\coregpio.v","FALSE","FALSE"
 ENDLIST
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v","FALSE","FALSE"
 ENDLIST
@@ -2654,6 +2660,7 @@ SUBBLOCK "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP
 ENDLIST
 LIST "CoreSCCB_APB::work","hdl\CoreSCCB_APB.v","FALSE","FALSE"
 SUBBLOCK "CoreSCCB::work","hdl\CoreSCCB.v","FALSE","FALSE"
+SUBBLOCK "clock_divider::work","hdl\clock_divider.v","FALSE","FALSE"
 ENDLIST
 LIST "MiV_Core32_MiV_Core32_0_MIV_RV32IMA_L1_AHB_PLUSARG_READER::work","component\work\MiV_Core32\MiV_Core32_0\core\miv_rv32ima_l1_ahb_plusarg_reader.v","FALSE","FALSE"
 ENDLIST
@@ -3107,23 +3114,62 @@ ENDLIST
 LIST "Timer::work","component\work\Timer\Timer.v","TRUE","FALSE"
 SUBBLOCK "CoreTimer::CORETIMER_LIB","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v","FALSE","FALSE"
 ENDLIST
-LIST "Top_Level::work","component\work\Top_Level\Top_Level.cxf","TRUE","FALSE"
-SUBBLOCK "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
+LIST "Top_Level::work","component\work\Top_Level\Top_Level.v","TRUE","FALSE"
 SUBBLOCK "AHB_MEM::work","component\work\AHB_MEM\AHB_MEM.v","TRUE","FALSE"
 SUBBLOCK "AHB_MMIO::work","component\work\AHB_MMIO\AHB_MMIO.v","TRUE","FALSE"
 SUBBLOCK "AHB_Slave2MasterBridge::work","component\work\AHB_Slave2MasterBridge\AHB_Slave2MasterBridge.v","TRUE","FALSE"
-SUBBLOCK "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.cxf","TRUE","FALSE"
+SUBBLOCK "AHBtoAPB3::work","component\work\AHBtoAPB3\AHBtoAPB3.v","TRUE","FALSE"
+SUBBLOCK "APB3_Bus::work","component\work\APB3_Bus\APB3_Bus.v","TRUE","FALSE"
 SUBBLOCK "BasicIO_Interface::work","component\work\BasicIO_Interface\BasicIO_Interface_syn.v","TRUE","FALSE"
-SUBBLOCK "CoreGPIO_C0::work","component\work\CoreGPIO_C0\CoreGPIO_C0.cxf","TRUE","FALSE"
+SUBBLOCK "CoreGPIO_C0::work","component\work\CoreGPIO_C0\CoreGPIO_C0.v","TRUE","FALSE"
 SUBBLOCK "JTAG::work","component\work\JTAG\JTAG.v","TRUE","FALSE"
-SUBBLOCK "MiV_Core32::work","component\work\MiV_Core32\MiV_Core32.v","TRUE","FALSE"
 SUBBLOCK "MSS_SubSystem_sb::work","component\work\MSS_SubSystem_sb\MSS_SubSystem_sb.v","TRUE","FALSE"
+SUBBLOCK "MiV_Core32::work","component\work\MiV_Core32\MiV_Core32.v","TRUE","FALSE"
 SUBBLOCK "Timer::work","component\work\Timer\Timer.v","TRUE","FALSE"
 SUBBLOCK "CoreSCCB_APB::work","hdl\CoreSCCB_APB.v","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "BFM_AHBSLAVEEXT::work","","FALSE","FALSE"
+ENDLIST
+LIST "BFM_APBSLAVEEXT::work","","FALSE","FALSE"
+ENDLIST
+LIST "BFMA1l1OII::work","","FALSE","FALSE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_AHBL::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
+SUBBLOCK "CoreGPIO_C0_CoreGPIO_C0_0_BFM_MAIN::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_AHBLAPB::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahblapb.v","FALSE","TRUE"
+SUBBLOCK "BFMA1l1OII::work","","FALSE","FALSE"
+SUBBLOCK "CoreGPIO_C0_CoreGPIO_C0_0_BFM_MAIN::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_AHBSLAVE::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_AHBSLAVEEXT::work","","FALSE","FALSE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_AHBSLAVEEXT::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_APB2APB::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_APBSLAVE::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVEEXT::work","","FALSE","FALSE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_APBSLAVEEXT::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_APB::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "CoreGPIO_C0_CoreGPIO_C0_0_BFMA1l1OII::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+SUBBLOCK "CoreGPIO_C0_CoreGPIO_C0_0_BFM_MAIN::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_MAIN::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFMA1l1OII::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreGPIO_C0_CoreGPIO_C0_0_BFM_MAIN::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\core\coregpio.v","FALSE","FALSE"
+SUBBLOCK "CoreGPIO_C0_CoreGPIO_C0_0_BFM_APB::work","component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
 ENDLIST
 LIST "CoreAHBLite::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite.v","FALSE","FALSE"
 SUBBLOCK "COREAHBLITE_MATRIX4X16::COREAHBLITE_LIB","component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v","FALSE","FALSE"
@@ -3224,6 +3270,32 @@ LIST "testbench::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.
 SUBBLOCK "BFM_APBSLAVE::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
 SUBBLOCK "COREAHBTOAPB3::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\core\coreahbtoapb3.v","FALSE","FALSE"
 SUBBLOCK "BFM_AHBL::COREAHBTOAPB3_LIB","component\Actel\DirectCore\COREAHBTOAPB3\3.1.100\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
+ENDLIST
+LIST "CAPB3II::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v","FALSE","FALSE"
+ENDLIST
+LIST "CAPB3O::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "CAPB3II::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v","FALSE","FALSE"
+SUBBLOCK "CAPB3O::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+SUBBLOCK "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
 ENDLIST
 LIST "COREJTAGDEBUG::COREJTAGDEBUG_LIB","component\Actel\DirectCore\COREJTAGDEBUG\3.0.100\core\corejtagdebug.v","FALSE","FALSE"
 SUBBLOCK "COREJTAGDEBUG_UJTAG_WRAPPER::COREJTAGDEBUG_LIB","component\Actel\DirectCore\COREJTAGDEBUG\3.0.100\core\corejtagdebug_ujtag_wrapper.v","FALSE","FALSE"

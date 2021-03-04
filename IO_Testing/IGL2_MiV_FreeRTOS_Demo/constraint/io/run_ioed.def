@@ -22,11 +22,10 @@ data VCCI_2.5_VOLTR COM
 data VCCI_3.3_VOLTR COM
 data FLOW_TYPE NEW
 data PLANNER_IOMODE 1
-data AFL 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/Top_Level.afl'
+data AFL 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/COMPILE/Top_Level.afl'
 data ADL 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/Top_Level.adl'
-data LOC 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/Top_Level.loc'
-data SEG 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/Top_Level.seg'
-data NMAT_PDC 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/Top_Level.nmatinit.pdc'
+data LOC 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/COMPILE/Top_Level.loc'
+data SEG 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/COMPILE/Top_Level.seg'
 
 data IO_PDC_0 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/designer/Top_Level/Top_Level.block.io.pdc'
 data IO_PDC_1 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/IO_Testing/IGL2_MiV_FreeRTOS_Demo/constraint/io/Creative_Rev1_IOs_def.pdc'
@@ -41,5 +40,5 @@ data RESTRICTSPIPINS 0
 data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
 data HIDE_MIGRATION_PINS_MENU        1 
 data PLANNER_IS_READONLY   0 
-data IO_DEFT_STD LVCMOS25
+data IO_DEFT_STD LVCMOS33
 

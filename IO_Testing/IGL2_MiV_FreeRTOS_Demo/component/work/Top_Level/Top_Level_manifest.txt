@@ -1,6 +1,6 @@
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
 
-Date      :  Fri Feb 12 00:16:43 2021
+Date      :  Wed Feb 17 13:57:00 2021
 Project   :  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo
 Component :  Top_Level
 Family    :  IGLOO2

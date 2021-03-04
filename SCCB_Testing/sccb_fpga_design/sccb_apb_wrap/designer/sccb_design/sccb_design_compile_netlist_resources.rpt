@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
-Date: Fri Feb 12 11:26:28 2021
+Date: Wed Feb 17 22:19:33 2021
 
 Device Selection
 +--------------------------------+----------------+
@@ -15,7 +15,7 @@ Device Selection
 | System Controller Suspend Mode | No             |
 | PLL Supply Voltage             | 3.3V           |
 | Default I/O technology         | LVCMOS 3.3V    |
-| Restrict Probe Pins            | Yes            |
+| Restrict Probe Pins            | No             |
 | Restrict SPI Pins              | No             |
 +--------------------------------+----------------+
 
@@ -23,7 +23,7 @@ Source Files
 +---------+------------------------------------------------------------------------------------------------------------------------------------+
 | Topcell | sccb_design                                                                                                                        |
 | Format  | Verilog                                                                                                                            |
-| Source  | C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.vm |
+| Source  | C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\synthesis\sccb_design.vm |
 +---------+------------------------------------------------------------------------------------------------------------------------------------+
 
 Options
@@ -37,8 +37,8 @@ Resource Usage
 +---------------------------+------+-------+------------+
 | Type                      | Used | Total | Percentage |
 +---------------------------+------+-------+------------+
-| 4LUT                      | 157  | 27696 | 0.57       |
-| DFF                       | 46   | 27696 | 0.17       |
+| 4LUT                      | 129  | 27696 | 0.47       |
+| DFF                       | 31   | 27696 | 0.11       |
 | I/O Register              | 0    | 414   | 0.00       |
 | User I/O                  | 5    | 138   | 3.62       |
 | -- Single-ended I/O       | 5    | 138   | 3.62       |
@@ -58,21 +58,18 @@ Detailed Logic Resource Usage
 +--------------------------+------+-----+
 | Type                     | 4LUT | DFF |
 +--------------------------+------+-----+
-| Fabric Logic             | 157  | 46  |
+| Fabric Logic             | 129  | 31  |
 | RAM64x18 Interface Logic | 0    | 0   |
 | RAM1K18 Interface Logic  | 0    | 0   |
 | MACC Interface Logic     | 0    | 0   |
-| Total Used               | 157  | 46  |
+| Total Used               | 129  | 31  |
 +--------------------------+------+-----+
 
 Detailed Carry Chains Resource Usage
 +--------+------+
 | Length | Used |
-| 2      | 3    |
-| 5      | 1    |
 | 7      | 2    |
-| 15     | 1    |
-| Total  | 7    |
+| Total  | 2    |
 +--------+------+
 
 I/O Function
@@ -106,10 +103,10 @@ Nets assigned to chip global resources
 +--------+---------+----------------------------------------------+
 | Fanout | Type    | Name                                         |
 +--------+---------+----------------------------------------------+
-| 47     | INT_NET | Net   : xclk_c                               |
+| 32     | INT_NET | Net   : xclk_c                               |
 |        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 |
 |        |         | Source: NETLIST                              |
-| 45     | INT_NET | Net   : AND2_0_Y_arst                        |
+| 30     | INT_NET | Net   : AND2_0_Y_arst                        |
 |        |         | Driver: AND2_0_RNIKOS1/U0_RGB1               |
 |        |         | Source: NETLIST                              |
 +--------+---------+----------------------------------------------+
@@ -121,54 +118,54 @@ Nets assigned to row global resources
 +--------+------+------+
 
 High fanout nets
-+--------+---------+----------------------------------------------------+
-| Fanout | Type    | Name                                               |
-+--------+---------+----------------------------------------------------+
-| 37     | INT_NET | Net   : config_sccb_0/coresccb_0/step[3]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[3]           |
-| 33     | INT_NET | Net   : config_sccb_0/coresccb_0/step[1]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[1]           |
-| 32     | INT_NET | Net   : config_sccb_0/coresccb_0/step[0]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[0]           |
-| 22     | INT_NET | Net   : config_sccb_0/coresccb_0/N_8_0             |
-|        |         | Driver: config_sccb_0/coresccb_0/step_RNIF4QH_0[5] |
-| 19     | INT_NET | Net   : config_sccb_0/mid_pulse                    |
-|        |         | Driver: config_sccb_0/sccb_clk_0/mid_pulse         |
-| 19     | INT_NET | Net   : config_sccb_0/coresccb_0/step[6]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[6]           |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_0/step[5]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[5]           |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_0/step[2]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[2]           |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_0/step_RNISRRA3[1]  |
-|        |         | Driver: config_sccb_0/coresccb_0/step_RNISRRA3[1]  |
-| 13     | INT_NET | Net   : config_sccb_0/coresccb_0/step[4]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[4]           |
-+--------+---------+----------------------------------------------------+
++--------+---------+--------------------------------------------+
+| Fanout | Type    | Name                                       |
++--------+---------+--------------------------------------------+
+| 27     | INT_NET | Net   : config_sccb_0/coresccb_0/step[6]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[6]   |
+| 25     | INT_NET | Net   : config_sccb_0/coresccb_0/step[4]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[4]   |
+| 25     | INT_NET | Net   : config_sccb_0/coresccb_0/step[3]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[3]   |
+| 25     | INT_NET | Net   : config_sccb_0/coresccb_0/step[2]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[2]   |
+| 23     | INT_NET | Net   : config_sccb_0/coresccb_0/step[5]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[5]   |
+| 23     | INT_NET | Net   : config_sccb_0/coresccb_0/step[0]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[0]   |
+| 20     | INT_NET | Net   : config_sccb_0/coresccb_0/step[1]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[1]   |
+| 19     | INT_NET | Net   : config_sccb_0/mid_pulse            |
+|        |         | Driver: config_sccb_0/sccb_clk_0/mid_pulse |
+| 9      | INT_NET | Net   : bit_send                           |
+|        |         | Driver: config_sccb_0/coresccb_0/bit_send  |
+| 9      | INT_NET | Net   : config_sccb_0/start_Z              |
+|        |         | Driver: config_sccb_0/start                |
++--------+---------+--------------------------------------------+
 
 High fanout nets (through buffer trees)
-+--------+---------+----------------------------------------------------+
-| Fanout | Type    | Name                                               |
-+--------+---------+----------------------------------------------------+
-| 37     | INT_NET | Net   : config_sccb_0/coresccb_0/step[3]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[3]           |
-| 33     | INT_NET | Net   : config_sccb_0/coresccb_0/step[1]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[1]           |
-| 32     | INT_NET | Net   : config_sccb_0/coresccb_0/step[0]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[0]           |
-| 22     | INT_NET | Net   : config_sccb_0/coresccb_0/N_8_0             |
-|        |         | Driver: config_sccb_0/coresccb_0/step_RNIF4QH_0[5] |
-| 19     | INT_NET | Net   : config_sccb_0/mid_pulse                    |
-|        |         | Driver: config_sccb_0/sccb_clk_0/mid_pulse         |
-| 19     | INT_NET | Net   : config_sccb_0/coresccb_0/step[6]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[6]           |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_0/step[5]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[5]           |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_0/step[2]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[2]           |
-| 15     | INT_NET | Net   : config_sccb_0/coresccb_0/step_RNISRRA3[1]  |
-|        |         | Driver: config_sccb_0/coresccb_0/step_RNISRRA3[1]  |
-| 13     | INT_NET | Net   : config_sccb_0/coresccb_0/step[4]           |
-|        |         | Driver: config_sccb_0/coresccb_0/step[4]           |
-+--------+---------+----------------------------------------------------+
++--------+---------+--------------------------------------------+
+| Fanout | Type    | Name                                       |
++--------+---------+--------------------------------------------+
+| 27     | INT_NET | Net   : config_sccb_0/coresccb_0/step[6]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[6]   |
+| 25     | INT_NET | Net   : config_sccb_0/coresccb_0/step[4]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[4]   |
+| 25     | INT_NET | Net   : config_sccb_0/coresccb_0/step[3]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[3]   |
+| 25     | INT_NET | Net   : config_sccb_0/coresccb_0/step[2]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[2]   |
+| 23     | INT_NET | Net   : config_sccb_0/coresccb_0/step[5]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[5]   |
+| 23     | INT_NET | Net   : config_sccb_0/coresccb_0/step[0]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[0]   |
+| 20     | INT_NET | Net   : config_sccb_0/coresccb_0/step[1]   |
+|        |         | Driver: config_sccb_0/coresccb_0/step[1]   |
+| 19     | INT_NET | Net   : config_sccb_0/mid_pulse            |
+|        |         | Driver: config_sccb_0/sccb_clk_0/mid_pulse |
+| 9      | INT_NET | Net   : bit_send                           |
+|        |         | Driver: config_sccb_0/coresccb_0/bit_send  |
+| 9      | INT_NET | Net   : config_sccb_0/start_Z              |
+|        |         | Driver: config_sccb_0/start                |
++--------+---------+--------------------------------------------+
 

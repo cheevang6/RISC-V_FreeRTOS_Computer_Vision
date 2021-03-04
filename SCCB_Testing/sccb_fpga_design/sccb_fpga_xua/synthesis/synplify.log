@@ -2,7 +2,7 @@
 Starting:    C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
 Hostname:    DESKTOP-95FBL6H
-Date:        Fri Feb 12 11:26:21 2021
+Date:        Sun Feb 21 12:10:16 2021
 Version:     O-2018.09M-SP1-1
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log sccb_design_syn.tcl
@@ -22,55 +22,55 @@ Running: synthesis in foreground
 Running sccb_design_syn|synthesis
 
 Running Flow: compile (Compile) on sccb_design_syn|synthesis
-# Fri Feb 12 11:26:21 2021
+# Sun Feb 21 12:10:16 2021
 
 Running Flow: compile_flow (Compile Process) on sccb_design_syn|synthesis
-# Fri Feb 12 11:26:21 2021
+# Sun Feb 21 12:10:16 2021
 
 Running: compiler (Compile Input) on sccb_design_syn|synthesis
-# Fri Feb 12 11:26:21 2021
+# Sun Feb 21 12:10:16 2021
 Copied C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\synwork\sccb_design_comp.srs to C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.srs
 
 compiler completed
-# Fri Feb 12 11:26:22 2021
+# Sun Feb 21 12:10:18 2021
 
 Return Code: 0
-Run Time:00h:00m:01s
+Run Time:00h:00m:02s
 
 Running: multi_srs_gen (Multi-srs Generator) on sccb_design_syn|synthesis
-# Fri Feb 12 11:26:22 2021
+# Sun Feb 21 12:10:18 2021
 
 multi_srs_gen completed
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:18 2021
 
 Return Code: 0
-Run Time:00h:00m:01s
+Run Time:00h:00m:00s
 Copied C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\synwork\sccb_design_mult.srs to C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.srs
 Complete: Compile Process on sccb_design_syn|synthesis
 
 Running: premap (Premap) on sccb_design_syn|synthesis
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:18 2021
 
 premap completed with warnings
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:19 2021
 
 Return Code: 1
-Run Time:00h:00m:00s
+Run Time:00h:00m:01s
 Complete: Compile on sccb_design_syn|synthesis
 
 Running Flow: map (Map) on sccb_design_syn|synthesis
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:19 2021
 License granted for 4 parallel jobs
 
 Running: fpga_mapper (Map & Optimize) on sccb_design_syn|synthesis
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:19 2021
 Copied C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\synwork\sccb_design_m.srm to C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.srm
 
 fpga_mapper completed with warnings
-# Fri Feb 12 11:26:25 2021
+# Sun Feb 21 12:10:20 2021
 
 Return Code: 1
-Run Time:00h:00m:02s
+Run Time:00h:00m:01s
 Complete: Map on sccb_design_syn|synthesis
 Complete: Logic Synthesis on sccb_design_syn|synthesis
 TCL script complete: "sccb_design_syn.tcl"

@@ -1,20 +1,20 @@
 #--  Synopsys, Inc.
 #--  Version O-2018.09M-SP1-1
-#--  Project file C:\Users\cheec\Desktop\Masters\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\synthesis\sccb_design_syn.prj
-#--  Written on Fri Feb 12 11:26:25 2021
+#--  Project file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\synthesis\sccb_design_syn.prj
+#--  Written on Wed Feb 17 22:19:30 2021
 
 
 #project files
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v"
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/FCCC_C0/FCCC_C0.v"
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/Actel/SgCore/OSC/2.0.101/osc_comps.v"
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v"
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/OSC_C0/OSC_C0.v"
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/hdl/CoreSCCB.v"
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/hdl/clock_divider.v"
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/hdl/config_sccb.v"
-add_file -verilog "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/sccb_design/sccb_design.v"
-add_file -fpga_constraint "C:/Users/cheec/Desktop/Masters/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/designer/sccb_design/synthesis.fdc"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/FCCC_C0/FCCC_C0.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/Actel/SgCore/OSC/2.0.101/osc_comps.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/OSC_C0/OSC_C0.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/hdl/CoreSCCB.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/hdl/clock_divider.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/hdl/config_sccb.v"
+add_file -verilog "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/sccb_design/sccb_design.v"
+add_file -fpga_constraint "C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/designer/sccb_design/synthesis.fdc"
 
 
 

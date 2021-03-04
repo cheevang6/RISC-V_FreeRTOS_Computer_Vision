@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Feb 12 11:26:15 2021
+// Created by SmartDesign Sun Feb 21 12:10:06 2021
 // Version: v12.3 12.800.0.16
 //////////////////////////////////////////////////////////////////////
 
@@ -10,8 +10,8 @@ module sccb_design(
     // Inputs
     DEVRST_N,
     // Outputs
-    led1,
-    led2,
+    probeA,
+    probeB,
     sio_c,
     xclk,
     // Inouts
@@ -25,8 +25,8 @@ input  DEVRST_N;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output led1;
-output led2;
+output probeA;
+output probeB;
 output sio_c;
 output xclk;
 //--------------------------------------------------------------------
@@ -39,28 +39,28 @@ inout  sio_d;
 wire   AND2_0_Y;
 wire   DEVRST_N;
 wire   FCCC_C0_0_LOCK;
-wire   led1_net_0;
-wire   led2_net_0;
 wire   OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC;
+wire   probeA_net_0;
+wire   probeB_net_0;
 wire   sio_c_net_0;
 wire   sio_d;
 wire   SYSRESET_0_POWER_ON_RESET_N;
 wire   xclk_net_0;
 wire   sio_c_net_1;
-wire   led1_net_1;
+wire   probeA_net_1;
 wire   xclk_net_1;
-wire   led2_net_1;
+wire   probeB_net_1;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign sio_c_net_1 = sio_c_net_0;
-assign sio_c       = sio_c_net_1;
-assign led1_net_1  = led1_net_0;
-assign led1        = led1_net_1;
-assign xclk_net_1  = xclk_net_0;
-assign xclk        = xclk_net_1;
-assign led2_net_1  = led2_net_0;
-assign led2        = led2_net_1;
+assign sio_c_net_1  = sio_c_net_0;
+assign sio_c        = sio_c_net_1;
+assign probeA_net_1 = probeA_net_0;
+assign probeA       = probeA_net_1;
+assign xclk_net_1   = xclk_net_0;
+assign xclk         = xclk_net_1;
+assign probeB_net_1 = probeB_net_0;
+assign probeB       = probeB_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -96,8 +96,8 @@ FCCC_C0 FCCC_C0_0(
 //--------LIVE_PROBE_FB
 LIVE_PROBE_FB LIVE_PROBE_FB_0(
         // Outputs
-        .PROBE_A ( led1_net_0 ),
-        .PROBE_B ( led2_net_0 ) 
+        .PROBE_A ( probeA_net_0 ),
+        .PROBE_B ( probeB_net_0 ) 
         );
 
 //--------OSC_C0

@@ -1,2 +1,2 @@
-@E: CS168 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\hdl\config_sccb.v":42:10:42:10|Port SIO_D does not exist
+@E: CG749 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_design\hdl\CoreSCCB.v":12:11:12:14|An inout port (siod) must be a net type
 

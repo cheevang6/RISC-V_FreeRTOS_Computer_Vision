@@ -206,7 +206,9 @@ Synopsys Verilog Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 0
 @I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\component\work\Timer\Timer.v" (library work)
 @I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\component\work\Top_Level\Top_Level.v" (library work)
 Verilog syntax check successful!
-File C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\component\work\Top_Level\Top_Level.v changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module Top_Level
 @N: CG775 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite.v":23:7:23:17|Component CoreAHBLite not found in library "work" or "__hyper__lib__", but found in library COREAHBLITE_LIB
 @W: CG1283 :"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\component\Actel\DirectCore\CoreAHBLite\5.2.100\rtl\vlog\core\coreahblite.v":541:2:541:11|Type of parameter M0_AHBSLOTENABLE on the instance matrix4x16 is not in accordance with the type of parameter on corresponding module. Please update RTL with correct parameter type 
@@ -2710,12 +2712,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 186MB peak: 228MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
 
-Process took 0h:00m:08s realtime, 0h:00m:08s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 12 00:17:05 2021
+# Wed Feb 17 14:04:54 2021
 
 ###########################################################]
 ###########################################################[
@@ -2736,23 +2738,25 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
 
 @N|Running in 64-bit mode
-File C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\IO_Testing\IGL2_MiV_FreeRTOS_Demo\synthesis\synwork\layer0.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 117MB)
+Linker output is up to date. No re-linking necessary
+
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 12 00:17:06 2021
+# Wed Feb 17 14:04:55 2021
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:09s realtime, 0h:00m:08s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 12 00:17:06 2021
+# Wed Feb 17 14:04:55 2021
 
 ###########################################################]

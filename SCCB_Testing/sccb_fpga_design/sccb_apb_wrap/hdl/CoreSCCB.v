@@ -6,7 +6,7 @@ module CoreSCCB #(
     input            xclk,			// Master clock to camera
     input			 resetn,		// Reset
     output           cam_rstn,	// Camera Power down
-    output           cam_pwdn,		// Camera Power down
+    output           cam_pwdn,		// Camera Power down (Grounded)
 	input			 start,
     input            rw,			// Read/Write request
     input	   [7:0] id_addr,		// Device ID + rw signal
@@ -23,10 +23,25 @@ module CoreSCCB #(
     reg [6:0] step;    // state machine identifier
     reg bit_send;      // data to send through SCCB
     reg sccb_clk_step;
-    reg ack;
+    reg ack_id, ack_sub, ack_wr;
     
-    // 1 ms delay
-    localparam DELAY_FREQ = 1_000;
+    // TIMING REQUIREMENTS:
+    //   Need at least 1.3 us delay before new START.
+    //   However, each sccb_clk period is: 
+    //        10 us (f_SIO_C = 100 kHz) -- to -- 2.5 us (f_SIO_C = 400 kHz)
+    //   and there are multiple sccb_clk period between each START and STOP, hence 
+    //   we do not need to delay it here. Possibly, the only delay needed is to 
+    //   wait after system reset (t_S:RESET = 1 ms) and settling time for register
+    //   to change (t_S:REG = 300 ms). (is this after each register or for the whole???)
+    //
+    // MAXIMUM f_SIO_C:
+    //   Note that SIOC needs to be low for at least t_LOW = 1.3 us. This means 
+    //   that for f_SIO_C = 400kHz, the period is 2.5 us and half of that time
+    //   (1.25 us) is when this clock is low. Meaning that for 400 kHz, the clock
+    //   is too fast for for t_LOW. Maximum f_SIO_C is actually 
+    //                 1/(2*t_LOW) = 1/(2.6 us) = 384,615 kHz.
+    
+    localparam DELAY_FREQ = 4; // 1/(300 ms) = 3.33333 Hz (rounded to 4)
     localparam DELAY = XCLK_FREQ/DELAY_FREQ;
     reg [$clog2(DELAY):0] delay_cntr;
     
@@ -34,7 +49,7 @@ module CoreSCCB #(
         if(!resetn) begin
             delay_cntr <= 0;
         end else begin
-            if(step == 39 || step == 0) begin
+            if((step == 39 || step == 0) && start) begin
             //if(step == 0) begin
                 delay_cntr <= delay_cntr + 1;
             end else begin
@@ -59,7 +74,8 @@ module CoreSCCB #(
                     (step > 43  && step <= 51) || step == 53 ||
                     (step > 54  && step <= 62) || step == 64) ? sccb_clk : sccb_clk_step;
 	
-	assign pwdn = 1'b0;
+	assign cam_pwdn = 1'b0;
+    assign cam_rstn = 1'b1; // active-low camera reset
     
     always @(posedge xclk or negedge resetn) begin
         if(!resetn) begin
@@ -68,7 +84,9 @@ module CoreSCCB #(
             sccb_clk_step <= 1;
 			step <= 0;
 			done <= 0;
-            ack <= 1;
+            ack_id <= 1;
+            ack_sub <= 1;
+            ack_wr <= 1;
         end else if(mid_pulse) begin
 			if(!start || step > 67 )//|| done)
 				step <= 0;
@@ -76,10 +94,10 @@ module CoreSCCB #(
 				step <= 65; // stop transmission
 	        else if(rw == 1 && step == 25) // 2-phase write
 	            step <= 37; // 2-phase read
-            else if(step == 39 && delay_cntr < DELAY/10)
-                step <= 39; // delay between 2-write and 2-read
-            else if(step == 0 && delay_cntr < DELAY/10)
-                step <= 0; // delay between 2-write and 2-read
+            //else if(step == 39 && delay_cntr < DELAY)
+            //    step <= 39; // delay between 2-write and 2-read
+            //else if(step == 0 && delay_cntr < DELAY)
+            //    step <= 0; // delay between 2-write and 2-read
 			else begin
 				step <= step + 1;
             end
@@ -109,7 +127,7 @@ module CoreSCCB #(
 					7'd10 : bit_send <= id_addr[1];
 					7'd11 : bit_send <= 1'b0; // read/write bit (Write)
                     7'd12 : bit_send <= 1'b0;
-					7'd13 : ack <= siod;// Don't care bit
+					7'd13 : ack_id <= siod;// Don't care bit
                     7'd14 : bit_send <= 1'b0;
 					
 					// Phase 2: Sub-Address
@@ -122,7 +140,7 @@ module CoreSCCB #(
 					7'd21 : bit_send <= sub_addr[1];
 					7'd22 : bit_send <= sub_addr[0];
                     7'd23 : bit_send <= 1'b0;
-					7'd24 : ack <= siod; // Don't care bit
+					7'd24 : ack_sub <= siod; // Don't care bit
                     7'd25 : bit_send <= 1'b0;
 					
 					// Phase 3: Write Data
@@ -135,7 +153,7 @@ module CoreSCCB #(
 					7'd32 : bit_send <= data_in[1];
 					7'd33 : bit_send <= data_in[0];
                     7'd34 : bit_send <= 1'b0;
-					7'd35 : ack <= siod; // Don't care bit
+					7'd35 : ack_wr <= siod; // Don't care bit
                     7'd36 : bit_send <= 1'b0;
 					
 					// stop transaction for 2-phase write 
@@ -161,7 +179,7 @@ module CoreSCCB #(
 					7'd49 : bit_send <= id_addr[1];
 					7'd50 : bit_send <= 1'b1; // read/write bit (Read)
                     7'd51 : bit_send <= 1'b0;
-					7'd52 : ack <= siod;// Don't care bit
+					7'd52 : ack_id <= siod;// Don't care bit
                     7'd53 : bit_send <= 1'b0;
                     
 					// Phase 2: Read Data
@@ -197,6 +215,9 @@ module CoreSCCB #(
 				data_out <= data_out;
 				sccb_clk_step <= 1'b1;
 				done <= 1'b0;
+                ack_id <= 1;
+                ack_sub <= 1;
+                ack_wr <= 1;
 			end
         end
     end

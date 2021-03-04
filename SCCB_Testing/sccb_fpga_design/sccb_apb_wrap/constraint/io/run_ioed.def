@@ -1,8 +1,8 @@
 data HELP_TYPE_DES 2
 data DESIGN sccb_design
-data HPATH 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/designer/sccb_design'
-data CPATH 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/constraint/io'
-data CDIR 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/constraint'
+data HPATH 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/designer/sccb_design'
+data CPATH 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/constraint/io'
+data CDIR 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/constraint'
 data NLV_HIDE_OPTION_DLG 1
 data REGION_DEFCOLOR_EMPTY 2143322112
 data REGION_DEFCOLOR_INCLUSIVE 2147442270
@@ -22,17 +22,15 @@ data VCCI_2.5_VOLTR COM
 data VCCI_3.3_VOLTR COM
 data FLOW_TYPE NEW
 data PLANNER_IOMODE 1
-data AFL 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/designer/sccb_design/sccb_design.afl'
-data ADL 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/designer/sccb_design/sccb_design.adl'
-data LOC 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/designer/sccb_design/sccb_design.loc'
-data SEG 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/designer/sccb_design/sccb_design.seg'
-data NMAT_PDC 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/designer/sccb_design/sccb_design.nmatinit.pdc'
+data AFL 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/designer/sccb_design/COMPILE/sccb_design.afl'
+data ADL 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/designer/sccb_design/sccb_design.adl'
+data LOC 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/designer/sccb_design/COMPILE/sccb_design.loc'
+data SEG 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/designer/sccb_design/COMPILE/sccb_design.seg'
 
-data IO_PDC_0 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/constraint/io/user.pdc'
-data TARGET_IOPDC  'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/constraint/io/user.pdc'
-data TARGET_FPPDC  'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_fpga_xua/constraint/fp/user.pdc'
-data TARGET_DEVICES_FOR_MIGRATION 'PA4MGL2500_N '
-data RESTRICTPROBEPINS 1
+data IO_PDC_0 'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/constraint/io/user.pdc'
+data TARGET_IOPDC  'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/constraint/io/user.pdc'
+data TARGET_FPPDC  'C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/constraint/fp/user.pdc'
+data RESTRICTPROBEPINS 0
 data RESTRICTSPIPINS 0
 data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
 data HIDE_MIGRATION_PINS_MENU        1 

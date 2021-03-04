@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Feb 12 00:16:42 2021
+// Created by SmartDesign Wed Feb 17 13:56:58 2021
 // Version: v12.3 12.800.0.16
 //////////////////////////////////////////////////////////////////////
 
@@ -253,10 +253,10 @@ wire          VCC_net;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire          AHB_MEM_0_AHBmslave16_HRESP;
 wire   [1:1]  AHB_MEM_0_AHBmslave16_HRESP_0_1to1;
 wire   [0:0]  AHB_MEM_0_AHBmslave16_HRESP_0_0to0;
 wire   [1:0]  AHB_MEM_0_AHBmslave16_HRESP_0;
-wire          AHB_MEM_0_AHBmslave16_HRESP;
 wire   [2:0]  AHB_MEM_0_AHBmslave16_HSIZE;
 wire   [1:0]  AHB_MEM_0_AHBmslave16_HSIZE_0_1to0;
 wire   [1:0]  AHB_MEM_0_AHBmslave16_HSIZE_0;
@@ -265,9 +265,9 @@ wire   [7:0]  APB3_Bus_0_APBmslave0_0_PADDR_1_7to0;
 wire   [7:0]  APB3_Bus_0_APBmslave0_0_PADDR_1;
 wire   [4:2]  APB3_Bus_0_APBmslave0_0_PADDR_0_4to2;
 wire   [4:2]  APB3_Bus_0_APBmslave0_0_PADDR_0;
-wire   [1:0]  MiV_Core32_0_AHB_MST_MEM_HRESP;
 wire   [0:0]  MiV_Core32_0_AHB_MST_MEM_HRESP_0_0to0;
 wire          MiV_Core32_0_AHB_MST_MEM_HRESP_0;
+wire   [1:0]  MiV_Core32_0_AHB_MST_MEM_HRESP;
 wire   [31:31]MiV_Core32_0_AHB_MST_MMIO_HADDR_0_31to31;
 wire   [30:0] MiV_Core32_0_AHB_MST_MMIO_HADDR_0_30to0;
 wire   [31:0] MiV_Core32_0_AHB_MST_MMIO_HADDR_0;

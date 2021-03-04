@@ -6,7 +6,7 @@
 
 # Family: IGLOO2 , Die: M2GL025 , Package: 256 VF
 
-# Date generated: Fri Feb 12 01:53:47 2021 
+# Date generated: Wed Feb 17 14:08:20 2021 
 
 
 # 
@@ -28,56 +28,48 @@
 set_io FTDI_UART0_RXD  \
     -pinname G3        \
     -fixed yes         \
-    -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io FTDI_UART0_TXD  \
     -pinname H3        \
     -fixed yes         \
-    -iostd LVCMOS33    \
     -DIRECTION INPUT
 
 
 set_io LED1_GREEN      \
     -pinname J16       \
     -fixed yes         \
-    -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io LED1_RED        \
     -pinname K16       \
     -fixed yes         \
-    -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io LED2_GREEN      \
     -pinname M16       \
     -fixed yes         \
-    -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io LED2_RED        \
     -pinname N16       \
     -fixed yes         \
-    -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io USER_BUTTON1   \
     -pinname H12      \
     -fixed yes        \
-    -iostd LVCMOS33   \
     -DIRECTION INPUT
 
 
 set_io USER_BUTTON2   \
     -pinname H13      \
     -fixed yes        \
-    -iostd LVCMOS33   \
     -DIRECTION INPUT
 
 

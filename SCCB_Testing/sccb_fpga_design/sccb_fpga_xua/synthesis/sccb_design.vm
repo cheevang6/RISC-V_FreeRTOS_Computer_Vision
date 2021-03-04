@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "O-2018.09M-SP1-1"
 // Program "Synplify Pro", Mapper "mapact2018q4p1, Build 026R"
-// Fri Feb 12 11:26:24 2021
+// Sun Feb 21 12:10:20 2021
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -2482,22 +2482,22 @@ endmodule /* config_sccb */
 
 module sccb_design (
   DEVRST_N,
-  led1,
-  led2,
+  probeA,
+  probeB,
   sio_c,
   xclk,
   sio_d
 )
 ;
 input DEVRST_N ;
-output led1 ;
-output led2 ;
+output probeA ;
+output probeB ;
 output sio_c ;
 output xclk ;
 output sio_d ;
 wire DEVRST_N ;
-wire led1 ;
-wire led2 ;
+wire probeA ;
+wire probeB ;
 wire sio_c ;
 wire xclk ;
 wire sio_d ;
@@ -2510,8 +2510,8 @@ wire AND2_0_Y_arst ;
 wire AND2_0_Z ;
 wire bit_send ;
 wire i25_mux ;
-wire led1_c ;
-wire led2_c ;
+wire probeA_c ;
+wire probeB_c ;
 wire xclk_c ;
 wire \config_sccb_0.coresccb_0.siod_1_i  ;
   CLKINT AND2_0_RNIKOS1 (
@@ -2519,14 +2519,14 @@ wire \config_sccb_0.coresccb_0.siod_1_i  ;
 	.A(AND2_0_Z)
 );
 // @13:28
-  OUTBUF led1_obuf (
-	.PAD(led1),
-	.D(led1_c)
+  OUTBUF probeA_obuf (
+	.PAD(probeA),
+	.D(probeA_c)
 );
 // @13:29
-  OUTBUF led2_obuf (
-	.PAD(led2),
-	.D(led2_c)
+  OUTBUF probeB_obuf (
+	.PAD(probeB),
+	.D(probeB_c)
 );
 // @13:30
   OUTBUF sio_c_obuf (
@@ -2551,8 +2551,8 @@ wire \config_sccb_0.coresccb_0.siod_1_i  ;
 );
 // @13:97
   LIVE_PROBE_FB LIVE_PROBE_FB_0 (
-	.PROBE_A(led1_c),
-	.PROBE_B(led2_c)
+	.PROBE_A(probeA_c),
+	.PROBE_B(probeB_c)
 );
 // @13:68
   AND2 AND2_0 (

@@ -66,7 +66,7 @@ set_compile_info \
 set_compile_info \
     -category {"Device Selection"} \
     -name {"Restrict Probe Pins"} \
-    -value {"Yes"}
+    -value {"No"}
 set_compile_info \
     -category {"Device Selection"} \
     -name {"Restrict SPI Pins"} \
@@ -82,7 +82,7 @@ set_compile_info \
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.vm"}
+    -value {"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\synthesis\sccb_design.vm"}
 set_compile_info \
     -category {"Options"} \
     -name {"Enable Single Event Transient mitigation"} \
@@ -96,7 +96,7 @@ set_compile_info \
     -name {"Limit the number of high fanout nets to display to"} \
     -value {"10"}
 compile \
-    -desdir {C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design} \
+    -desdir {C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\designer\sccb_design} \
     -design sccb_design \
     -fam IGLOO2 \
     -die PA4MGL2500_N \

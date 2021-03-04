@@ -1,0 +1,12 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Thu Feb 25 02:10:13 2021
+Project   :  C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap
+Component :  FCCC_C1
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/FCCC_C1/FCCC_C1.v
+    C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_apb_wrap/component/work/FCCC_C1/FCCC_C1_0/FCCC_C1_FCCC_C1_0_FCCC.v
+

@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
-<text>Date: Fri Feb 12 00:18:33 2021
+<text>Date: Wed Feb 17 14:06:22 2021
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -51,7 +51,7 @@
 </row>
 <row>
  <cell>Default I/O technology</cell>
- <cell>LVCMOS 2.5V</cell>
+ <cell>LVCMOS 3.3V</cell>
 </row>
 <row>
  <cell>Restrict Probe Pins</cell>
@@ -422,8 +422,8 @@
  <cell>Bidirectional</cell>
 </header>
 <row>
- <cell>LVCMOS25</cell>
- <cell> 2.50v</cell>
+ <cell>LVCMOS33</cell>
+ <cell> 3.30v</cell>
  <cell> N/A</cell>
  <cell> 4</cell>
  <cell> 6</cell>

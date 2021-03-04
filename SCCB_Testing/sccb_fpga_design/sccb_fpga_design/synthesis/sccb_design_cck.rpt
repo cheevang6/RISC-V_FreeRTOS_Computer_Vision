@@ -13,7 +13,7 @@ Hostname: DESKTOP-95FBL6H
 
 Implementation : synthesis
 
-# Written on Mon Feb  8 17:35:49 2021
+# Written on Wed Feb 17 22:06:28 2021
 
 ##### DESIGN INFO #######################################################
 
@@ -35,16 +35,10 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting                                                           Ending                                                             |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                             System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
-System                                                             FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                      |     10.000           |     No paths         |     No paths         |     No paths                         
-System                                                             clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock     |     10.000           |     No paths         |     10.000           |     No paths                         
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                      |     10.000           |     No paths         |     No paths         |     No paths                         
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                      clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock                      |     Diff grp         |     No paths         |     No paths         |     No paths                         
-clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock     clock_divider_10000000s_300000s_15s_7s|sccb_clk_inferred_clock     |     10.000           |     No paths         |     5.000            |     No paths                         
-=================================================================================================================================================================================================================================================
+Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------
+System       System     |     10.000           |     No paths         |     No paths         |     No paths                         
+===================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -53,10 +47,11 @@ Unconstrained Start/End Points
 ******************************
 
 p:DEVRST_N
-p:led1
-p:led2
-p:sio_d (bidir end point)
-p:sio_d (bidir start point)
+p:cam_pwdn
+p:cam_rstn
+p:sioc
+p:siod
+p:xclk
 
 
 Inapplicable constraints

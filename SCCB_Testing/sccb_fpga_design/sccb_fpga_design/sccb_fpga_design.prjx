@@ -50,7 +50,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612478256"
+TIME="1613626043"
 SIZE="241"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
@@ -86,25 +86,25 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612478256"
-SIZE="10445"
+TIME="1613626044"
+SIZE="10446"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.v,hdl"
 STATE="utd"
-TIME="1612478256"
+TIME="1613626043"
 SIZE="2269"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1612478256"
+TIME="1613626043"
 SIZE="706"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v,hdl"
 STATE="utd"
-TIME="1612478256"
+TIME="1613626043"
 SIZE="1725"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
 IS_READONLY="TRUE"
@@ -136,19 +136,14 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\sccb_design\sccb_design.cxf,actgen_cxf"
 STATE="utd"
-TIME="1613154243"
-SIZE="2215"
+TIME="1613624542"
+SIZE="2460"
 ENDFILE
-VALUE "<project>\component\work\tb\tb.cxf,actgen_cxf"
+VALUE "<project>\component\work\sccb_design\sccb_design.v,hdl"
 STATE="utd"
-TIME="1612924619"
-SIZE="2090"
-ENDFILE
-VALUE "<project>\component\work\tb\tb.v,tb_hdl"
-STATE="utd"
-TIME="1612924619"
-SIZE="2236"
-PARENT="<project>\component\work\tb\tb.cxf"
+TIME="1613624542"
+SIZE="3371"
+PARENT="<project>\component\work\sccb_design\sccb_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\constraint\io\user.pdc,io_pdc"
@@ -164,33 +159,23 @@ SIZE="571"
 ENDFILE
 VALUE "<project>\hdl\clock_divider.v,hdl"
 STATE="utd"
-TIME="1612825280"
-SIZE="625"
+TIME="1613627381"
+SIZE="621"
 ENDFILE
 VALUE "<project>\hdl\config_sccb.v,hdl"
 STATE="utd"
-TIME="1613153962"
-SIZE="2800"
+TIME="1613625597"
+SIZE="2720"
 ENDFILE
 VALUE "<project>\hdl\CoreSCCB.v,hdl"
 STATE="utd"
-TIME="1613153944"
-SIZE="8175"
-ENDFILE
-VALUE "<project>\hdl\svTest.sv,hdl"
-STATE="utd"
-TIME="1612815228"
-SIZE="61"
+TIME="1613629660"
+SIZE="7367"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1612924622"
-SIZE="1354"
-ENDFILE
-VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
-STATE="utd"
-TIME="1612846525"
-SIZE="1171304"
+TIME="1613624363"
+SIZE="1343"
 ENDFILE
 VALUE "<project>\simulation\wave.do,do"
 STATE="utd"
@@ -214,8 +199,8 @@ SIZE="2451"
 ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1613154229"
-SIZE="375"
+TIME="1613625807"
+SIZE="322"
 ENDFILE
 VALUE "<project>\synthesis\sccb_design.so,so"
 STATE="utd"
@@ -247,9 +232,9 @@ LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
 LIST "sccb_design::work"
-FILE "<project>\component\work\sccb_design\sccb_design.cxf,actgen_cxf"
+FILE "<project>\component\work\sccb_design\sccb_design.v,hdl"
 LIST AssociatedStimulus
-VALUE "<project>\component\work\tb\tb.v,tb_hdl"
+VALUE "<project>\stimulus\testbench.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
@@ -267,7 +252,7 @@ ENDLIST
 ENDLIST
 LIST AssociatedStimulus
 LIST sccb_design
-VALUE "<project>\component\work\tb\tb.v,tb_hdl"
+VALUE "<project>\stimulus\testbench.v,tb_hdl"
 ENDLIST
 ENDLIST
 LIST Other_Association
@@ -279,7 +264,7 @@ Type=max
 RunTime=500ns
 Resolution=1fs
 VsimOpt=
-EntityName=tb
+EntityName=testbench
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -339,8 +324,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -348,7 +333,7 @@ NAME="ModelSim"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.3\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l tb_presynth_simulation.log "
+PARAM=" -l testbench_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -390,15 +375,13 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Run Programming Action:sccb_design_PROGRAM.log
-HDL;hdl\CoreSCCB.v;0
+ReportsCurrentItem;Synthesize:sccb_design_compile_netlist.log
 HDL;hdl\clock_divider.v;0
-HDL;hdl\config_sccb.v;0
 HDL;stimulus\testbench.v;0
-StartPage;StartPage;0
 SmartDesign;sccb_design;0
-SmartDesign;tb;0
-ACTIVEVIEW;sccb_design
+HDL;hdl\config_sccb.v;0
+HDL;hdl\CoreSCCB.v;0
+ACTIVEVIEW;hdl\CoreSCCB.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "config_sccb::work","hdl\config_sccb.v","FALSE","FALSE"
@@ -428,28 +411,20 @@ LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FA
 ENDLIST
 LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
 ENDLIST
-LIST "sccb_design::work","component\work\sccb_design\sccb_design.cxf","TRUE","FALSE"
-SUBBLOCK "config_sccb::work","hdl\config_sccb.v","FALSE","FALSE"
+LIST "sccb_design::work","component\work\sccb_design\sccb_design.v","TRUE","FALSE"
 SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"
 SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.v","TRUE","FALSE"
-ENDLIST
-LIST "svTest::work","hdl\svTest.sv","FALSE","FALSE"
+SUBBLOCK "config_sccb::work","hdl\config_sccb.v","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
 ENDLIST
-LIST "tb::work","component\work\tb\tb.v","TRUE","TRUE"
-SUBBLOCK "sccb_design::work","component\work\sccb_design\sccb_design.cxf","TRUE","FALSE"
-ENDLIST
 LIST "testbench::work","stimulus\testbench.v","FALSE","TRUE"
-SUBBLOCK "sccb_design::work","component\work\sccb_design\sccb_design.cxf","TRUE","FALSE"
+SUBBLOCK "sccb_design::work","component\work\sccb_design\sccb_design.v","TRUE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
-LIST "sccb_design::work"
-ACTIVETESTBENCH "tb::work","component\work\tb\tb.v","TRUE"
-ENDLIST
 ENDLIST
 LIST IOTabList
 VALUE "constraint\io\user.pdc"

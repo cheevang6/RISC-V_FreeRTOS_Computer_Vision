@@ -13,7 +13,7 @@ Hostname: DESKTOP-95FBL6H
 
 Implementation : synthesis
 
-# Written on Fri Feb 12 11:26:23 2021
+# Written on Sun Feb 21 12:10:19 2021
 
 ##### DESIGN INFO #######################################################
 
@@ -49,8 +49,8 @@ Unconstrained Start/End Points
 ******************************
 
 p:DEVRST_N
-p:led1
-p:led2
+p:probeA
+p:probeB
 p:sio_c
 p:sio_d (bidir end point)
 p:sio_d (bidir start point)

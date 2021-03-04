@@ -1,30 +1,30 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\synthesis\\synwork\\sccb_design_comp.srs|-top|sccb_design|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-I|C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\generic\\igloo2.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\synthesis\\synwork\\sccb_design_comp.srs|-top|sccb_design|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-I|C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\generic\\igloo2.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\bin64\\c_ver.exe":1562075633
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\generic\\igloo2.v":1562075649
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\vlog\\hypermods.v":1562075650
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\vlog\\umr_capim.v":1562075650
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1562075650
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.3\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1562075650
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.v":1613157886
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\component\\work\\FCCC_C0\\FCCC_C0.v":1613157886
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.v":1613113394
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\component\\work\\OSC_C0\\OSC_C0_0\\OSC_C0_OSC_C0_0_OSC.v":1613113394
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\component\\work\\OSC_C0\\OSC_C0.v":1613113394
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\hdl\\CoreSCCB.v":1613113394
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\hdl\\clock_divider.v":1613113394
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\hdl\\config_sccb.v":1613157879
-#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_fpga_xua\\component\\work\\sccb_design\\sccb_design.v":1613157975
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.v":1613515640
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\component\\work\\FCCC_C0\\FCCC_C0.v":1613515640
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.v":1613515639
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\component\\work\\OSC_C0\\OSC_C0_0\\OSC_C0_OSC_C0_0_OSC.v":1613515640
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\component\\work\\OSC_C0\\OSC_C0.v":1613515640
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\hdl\\CoreSCCB.v":1613623910
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\hdl\\clock_divider.v":1613614819
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\hdl\\config_sccb.v":1613614627
+#CUR:"C:\\Users\\cheec\\Desktop\\Master\\RISC-V_FreeRTOS_Computer_Vision\\SCCB_Testing\\sccb_fpga_design\\sccb_apb_wrap\\component\\work\\sccb_design\\sccb_design.v":1613617104
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v" verilog
-1			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\FCCC_C0\FCCC_C0.v" verilog
-2			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" verilog
-3			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v" verilog
-4			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\OSC_C0\OSC_C0.v" verilog
-5			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v" verilog
-6			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v" verilog
-7			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v" verilog
-8			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v" verilog
+0			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v" verilog
+1			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\component\work\FCCC_C0\FCCC_C0.v" verilog
+2			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" verilog
+3			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v" verilog
+4			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\component\work\OSC_C0\OSC_C0.v" verilog
+5			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\hdl\CoreSCCB.v" verilog
+6			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\hdl\clock_divider.v" verilog
+7			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\hdl\config_sccb.v" verilog
+8			"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\component\work\sccb_design\sccb_design.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 0

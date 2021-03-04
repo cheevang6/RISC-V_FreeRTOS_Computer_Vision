@@ -19,8 +19,8 @@ vlog -sv -work presynth "${PROJECT_DIR}/hdl/CoreSCCB.v"
 vlog -sv -work presynth "${PROJECT_DIR}/hdl/clock_divider.v"
 vlog -sv -work presynth "${PROJECT_DIR}/hdl/config_sccb.v"
 vlog -sv -work presynth "${PROJECT_DIR}/component/work/sccb_design/sccb_design.v"
-vlog "+incdir+${PROJECT_DIR}/component/work/tb" -sv -work presynth "${PROJECT_DIR}/component/work/tb/tb.v"
+vlog "+incdir+${PROJECT_DIR}/stimulus" -sv -work presynth "${PROJECT_DIR}/stimulus/testbench.v"
 
-vsim -L IGLOO2 -L presynth  -t 1fs presynth.tb
-add wave /tb/*
+vsim -L IGLOO2 -L presynth  -t 1fs presynth.testbench
+add wave /testbench/*
 run 500ns

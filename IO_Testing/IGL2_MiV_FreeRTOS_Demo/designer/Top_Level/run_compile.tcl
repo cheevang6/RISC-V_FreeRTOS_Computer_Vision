@@ -2,7 +2,7 @@ set_defvar -name {SPEED}   -value {STD}
 set_defvar -name {VOLTAGE} -value {1.2}
 set_defvar -name {TEMPR}   -value {COM}
 set_defvar -name {PART_RANGE}   -value {COM}
-set_defvar -name {IO_DEFT_STD} -value {LVCMOS25}
+set_defvar -name {IO_DEFT_STD} -value {LVCMOS33}
 set_defvar -name {PACOMP_PARPT_MAX_NET} -value {10}
 set_defvar -name {PA4_GB_MAX_RCLKINT_INSERTION} -value {16}
 set_defvar -name {PA4_GB_MIN_GB_FANOUT_TO_USE_RCLKINT} -value {300}
@@ -62,7 +62,7 @@ set_compile_info \
 set_compile_info \
     -category {"Device Selection"} \
     -name {"Default I/O technology"} \
-    -value {"LVCMOS 2.5V"}
+    -value {"LVCMOS 3.3V"}
 set_compile_info \
     -category {"Device Selection"} \
     -name {"Restrict Probe Pins"} \

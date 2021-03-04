@@ -1,4 +1,4 @@
-# Fri Feb 12 11:26:23 2021
+# Wed Feb 17 22:19:28 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -19,10 +19,10 @@ Synopsys Generic Technology Pre-mapping, Version mapact2018q4p1, Build 026R, Bui
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-Reading constraint file: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design\synthesis.fdc
+Reading constraint file: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\designer\sccb_design\synthesis.fdc
 @N: MF284 |Setting synthesis effort to medium for the design
-@L: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design_scck.rpt 
-Printing clock  summary report in "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design_scck.rpt" file 
+@L: C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\synthesis\sccb_design_scck.rpt 
+Printing clock  summary report in "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\synthesis\sccb_design_scck.rpt" file 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
@@ -41,14 +41,14 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":20:7:20:16|Tristate driver XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_apb_wrap\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_apb_wrap\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_apb_wrap\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_apb_wrap\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_apb_wrap\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":20:7:20:16|Tristate driver XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
 syn_allowed_resources : blockrams=31  set on top level netlist sccb_design
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
 
 
@@ -60,7 +60,7 @@ Level     Clock                                             Frequency     Period
 ----------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     57   
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     42   
 ==================================================================================================================================
 
 
@@ -73,14 +73,14 @@ Clock                                             Load      Pin                 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                            0         -                                         -                              -                 -                                   
                                                                                                                                                                                            
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     57        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     config_sccb_0.state[5:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     42        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     config_sccb_0.state[5:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
 ===========================================================================================================================================================================================
 
-@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_fpga_xua\hdl\clock_divider.v":20:0:20:5|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 57 sequential elements including config_sccb_0.sccb_clk_0.count[5:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\cheec\desktop\master\risc-v_freertos_computer_vision\sccb_testing\sccb_fpga_design\sccb_apb_wrap\hdl\clock_divider.v":20:0:20:5|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 42 sequential elements including config_sccb_0.sccb_clk_0.count[5:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\sccb_design.sap.
+@N: BN225 |Writing default property annotation file C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\synthesis\sccb_design.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
@@ -102,9 +102,9 @@ Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Feb 12 11:26:23 2021
+# Wed Feb 17 22:19:28 2021
 
 ###########################################################]

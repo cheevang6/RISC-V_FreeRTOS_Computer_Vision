@@ -13,7 +13,7 @@ localparam MID_AMT	= (SCCB_AMT+1)/2 - 1;
 
 reg [9:0] count = 0;
 
-initial sccb_clk = 0;
+initial sccb_clk = 1;
 initial mid_pulse = 0;
 
 always @(posedge clk) begin
@@ -24,7 +24,7 @@ always @(posedge clk) begin
 		count <= count + 1;
 	end
 	
-	if(count == MID_AMT && sccb_clk == 1) begin
+	if(count == MID_AMT && !sccb_clk) begin
 		mid_pulse <= 1;
 	end else begin
 		mid_pulse <= 0;

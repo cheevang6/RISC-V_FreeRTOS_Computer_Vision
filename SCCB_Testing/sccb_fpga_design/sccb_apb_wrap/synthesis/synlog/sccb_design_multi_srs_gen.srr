@@ -16,13 +16,13 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 221R, Built Apr 25 2019 09:13:02
 
 @N|Running in 64-bit mode
-File C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\synthesis\synwork\sccb_design_comp.srs changed - recompiling
+File C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\synthesis\synwork\sccb_design_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 12 11:26:23 2021
+# Wed Feb 17 22:19:27 2021
 
 ###########################################################]

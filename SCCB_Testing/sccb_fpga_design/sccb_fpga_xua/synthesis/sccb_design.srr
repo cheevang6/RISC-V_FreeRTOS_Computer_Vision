@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-95FBL6H
 
-# Fri Feb 12 11:26:21 2021
+# Sun Feb 21 12:10:16 2021
 
 #Implementation: synthesis
 
@@ -60,6 +60,7 @@ Synopsys Verilog Compiler, Version comp2018q4p1, Build 221R, Built Apr 25 2019 0
 @I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\config_sccb.v" (library work)
 @I::"C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v" (library work)
 Verilog syntax check successful!
+File C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\hdl\CoreSCCB.v changed - recompiling
 File C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\component\work\sccb_design\sccb_design.v changed - recompiling
 Selecting top level module sccb_design
 @N: CG364 :"C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\lib\generic\igloo2.v":126:7:126:10|Synthesizing module AND2 in library work.
@@ -171,7 +172,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 12 11:26:21 2021
+# Sun Feb 21 12:10:17 2021
 
 ###########################################################]
 ###########################################################[
@@ -199,7 +200,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 12 11:26:21 2021
+# Sun Feb 21 12:10:17 2021
 
 ###########################################################]
 @END
@@ -209,7 +210,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 12 11:26:21 2021
+# Sun Feb 21 12:10:17 2021
 
 ###########################################################]
 ###########################################################[
@@ -237,12 +238,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:18 2021
 
 ###########################################################]
 Premap Report
 
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:18 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -349,12 +350,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:19 2021
 
 ###########################################################]
 Map & Optimize Report
 
-# Fri Feb 12 11:26:23 2021
+# Sun Feb 21 12:10:19 2021
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -512,7 +513,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Feb 12 11:26:24 2021
+# Timing report written on Sun Feb 21 12:10:20 2021
 #
 
 
@@ -797,6 +798,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 28MB peak: 140MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Feb 12 11:26:24 2021
+# Sun Feb 21 12:10:20 2021
 
 ###########################################################]

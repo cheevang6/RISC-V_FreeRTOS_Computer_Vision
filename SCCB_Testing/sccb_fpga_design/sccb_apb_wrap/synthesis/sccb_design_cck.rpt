@@ -13,12 +13,12 @@ Hostname: DESKTOP-95FBL6H
 
 Implementation : synthesis
 
-# Written on Fri Feb 12 11:26:23 2021
+# Written on Wed Feb 17 22:19:28 2021
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "sccb_design"
-Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_fpga_xua\designer\sccb_design\synthesis.fdc"
+Constraint File(s):      "C:\Users\cheec\Desktop\Master\RISC-V_FreeRTOS_Computer_Vision\SCCB_Testing\sccb_fpga_design\sccb_apb_wrap\designer\sccb_design\synthesis.fdc"
 
 
 
@@ -49,11 +49,11 @@ Unconstrained Start/End Points
 ******************************
 
 p:DEVRST_N
-p:led1
-p:led2
-p:sio_c
-p:sio_d (bidir end point)
-p:sio_d (bidir start point)
+p:cam_pwdn
+p:cam_rstn
+p:sioc
+p:siod (bidir end point)
+p:siod (bidir start point)
 
 
 Inapplicable constraints

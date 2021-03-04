@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
-Date: Fri Feb 12 00:18:33 2021
+Date: Wed Feb 17 14:06:22 2021
 
 Device Selection
 +--------------------------------+----------------+
@@ -14,7 +14,7 @@ Device Selection
 | Ramp Rate                      | 100ms Minimum  |
 | System Controller Suspend Mode | No             |
 | PLL Supply Voltage             | 2.5V           |
-| Default I/O technology         | LVCMOS 2.5V    |
+| Default I/O technology         | LVCMOS 3.3V    |
 | Restrict Probe Pins            | Yes            |
 | Restrict SPI Pins              | No             |
 +--------------------------------+----------------+
@@ -125,7 +125,7 @@ I/O Technology
 +--------------------------------+--------+--------+-------+--------+---------------+
 | I/O Standard                   | Vddi   | Vref   | Input | Output | Bidirectional |
 +--------------------------------+--------+--------+-------+--------+---------------+
-| LVCMOS25                       |  2.50v |  N/A   |  4    |  6     |  0            |
+| LVCMOS33                       |  3.30v |  N/A   |  4    |  6     |  0            |
 | SSTL18II (Input/Bidirectional) |  1.80v |  0.90v |  1    |  0     |  22           |
 | SSTL18II (Output)              |  1.80v |  N/A   |  0    |  29    |  0            |
 +--------------------------------+--------+--------+-------+--------+---------------+

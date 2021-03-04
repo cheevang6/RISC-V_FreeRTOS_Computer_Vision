@@ -1,116 +1,79 @@
+# ** Warning: Multiple occurences of ini variable SmartFusion2 are found, only first occurence will be considered.
+# ** Warning: Multiple occurences of ini variable SmartFusion2 are found, only first occurence will be considered.
 # Reading C:/Microsemi/Libero_SoC_v12.3/ModelSim/tcl/vsim/pref.tcl
 # do run.do
 # INFO: Simulation library presynth already exists
+# ** Warning: Multiple occurences of ini variable SmartFusion2 are found, only first occurence will be considered.
+# ** Warning: Multiple occurences of ini variable SmartFusion2 are found, only first occurence will be considered.
 # Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
 # vmap presynth presynth 
 # Modifying modelsim.ini
+# ** Warning: Multiple occurences of ini variable SmartFusion2 are found, only first occurence will be considered.
+# ** Warning: Multiple occurences of ini variable SmartFusion2 are found, only first occurence will be considered.
 # Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
 # vmap IGLOO2 C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2 
 # Modifying modelsim.ini
+# ** Warning: Multiple occurences of ini variable SmartFusion2 are found, only first occurence will be considered.
+# ** Warning: Multiple occurences of ini variable SmartFusion2 are found, only first occurence will be considered.
 # Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
 # vmap SmartFusion2 C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:57 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v 
-# -- Compiling module FCCC_C0_FCCC_C0_0_FCCC
-# 
-# Top level modules:
-# 	FCCC_C0_FCCC_C0_0_FCCC
-# End time: 19:19:57 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/FCCC_C0/FCCC_C0.v 
-# -- Compiling module FCCC_C0
-# 
-# Top level modules:
-# 	FCCC_C0
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v 
-# -- Compiling module OSC_C0_OSC_C0_0_OSC
-# 
-# Top level modules:
-# 	OSC_C0_OSC_C0_0_OSC
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/OSC_C0/OSC_C0.v 
-# -- Compiling module OSC_C0
-# 
-# Top level modules:
-# 	OSC_C0
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
+# Start time: 01:38:02 on Feb 18,2021
 # vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_ctrl_reg.v 
 # -- Compiling module ov7670_ctrl_reg
 # 
 # Top level modules:
 # 	ov7670_ctrl_reg
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
+# End time: 01:38:02 on Feb 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
+# Start time: 01:38:02 on Feb 18,2021
 # vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/sccb_master.v 
 # -- Compiling module sccb_master
 # 
 # Top level modules:
 # 	sccb_master
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
+# End time: 01:38:02 on Feb 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
+# Start time: 01:38:02 on Feb 18,2021
 # vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_top_ctrl.v 
 # -- Compiling module ov7670_top_ctrl
 # 
 # Top level modules:
 # 	ov7670_top_ctrl
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
+# End time: 01:38:03 on Feb 18,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
+# Start time: 01:38:03 on Feb 18,2021
 # vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/top_ov7670.v 
 # -- Compiling module top_ov7670
 # 
 # Top level modules:
 # 	top_ov7670
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
+# End time: 01:38:03 on Feb 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/sccb_desgin/sccb_desgin.v 
-# -- Compiling module sccb_desgin
+# Start time: 01:38:03 on Feb 18,2021
+# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/sccb_test/sccb_test.v 
+# -- Compiling module sccb_test
 # 
 # Top level modules:
-# 	sccb_desgin
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
+# 	sccb_test
+# End time: 01:38:03 on Feb 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/reseting.v 
-# -- Compiling module reseting
+# Start time: 01:38:03 on Feb 18,2021
+# vlog -reportprogress 300 "+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/stimulus" -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/stimulus/testbench.v 
+# -- Compiling module testbench
 # 
 # Top level modules:
-# 	reseting
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:19:58 on Feb 09,2021
-# vlog -reportprogress 300 "+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl" "+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb" -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb/tb.v 
-# -- Compiling module tb
-# 
-# Top level modules:
-# 	tb
-# End time: 19:19:58 on Feb 09,2021, Elapsed time: 0:00:00
+# 	testbench
+# End time: 01:38:03 on Feb 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -L IGLOO2 -L presynth -t 1fs presynth.tb 
-# Start time: 19:19:58 on Feb 09,2021
+# Start time: 01:38:03 on Feb 18,2021
 # //  ModelSim Microsemi 2019.2 Apr 17 2019
 # //
 # //  Copyright 1991-2019 Mentor Graphics Corporation
@@ -181,365 +144,5 @@
 # Loading presynth.sccb_master
 # Loading presynth.ov7670_ctrl_reg
 # Loading IGLOO2.UDP_MUX2
-restart
-do wave_tb.do
-run
-do run.do
-# INFO: Simulation library presynth already exists
-# Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
-# vmap presynth presynth 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
-# vmap IGLOO2 C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
-# vmap SmartFusion2 C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:16 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v 
-# -- Compiling module FCCC_C0_FCCC_C0_0_FCCC
-# 
-# Top level modules:
-# 	FCCC_C0_FCCC_C0_0_FCCC
-# End time: 19:21:16 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:16 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/FCCC_C0/FCCC_C0.v 
-# -- Compiling module FCCC_C0
-# 
-# Top level modules:
-# 	FCCC_C0
-# End time: 19:21:16 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:16 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v 
-# -- Compiling module OSC_C0_OSC_C0_0_OSC
-# 
-# Top level modules:
-# 	OSC_C0_OSC_C0_0_OSC
-# End time: 19:21:16 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:16 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/OSC_C0/OSC_C0.v 
-# -- Compiling module OSC_C0
-# 
-# Top level modules:
-# 	OSC_C0
-# End time: 19:21:16 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:16 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_ctrl_reg.v 
-# -- Compiling module ov7670_ctrl_reg
-# 
-# Top level modules:
-# 	ov7670_ctrl_reg
-# End time: 19:21:17 on Feb 09,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:17 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/sccb_master.v 
-# -- Compiling module sccb_master
-# 
-# Top level modules:
-# 	sccb_master
-# End time: 19:21:17 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:17 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_top_ctrl.v 
-# -- Compiling module ov7670_top_ctrl
-# 
-# Top level modules:
-# 	ov7670_top_ctrl
-# End time: 19:21:17 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:17 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/top_ov7670.v 
-# -- Compiling module top_ov7670
-# 
-# Top level modules:
-# 	top_ov7670
-# End time: 19:21:17 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:17 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/sccb_desgin/sccb_desgin.v 
-# -- Compiling module sccb_desgin
-# 
-# Top level modules:
-# 	sccb_desgin
-# End time: 19:21:17 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:17 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/reseting.v 
-# -- Compiling module reseting
-# 
-# Top level modules:
-# 	reseting
-# End time: 19:21:17 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:21:17 on Feb 09,2021
-# vlog -reportprogress 300 "+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl" "+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb" -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb/tb.v 
-# -- Compiling module tb
-# 
-# Top level modules:
-# 	tb
-# End time: 19:21:17 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:21:18 on Feb 09,2021, Elapsed time: 0:01:20
-# Errors: 1, Warnings: 0
-# vsim -L IGLOO2 -L presynth -t 1fs presynth.tb 
-# Start time: 19:21:18 on Feb 09,2021
-# Loading sv_std.std
-# Loading presynth.tb
-# Loading presynth.reseting
-# Loading presynth.sccb_desgin
-# Loading IGLOO2.AND2
-# Loading IGLOO2.CFG2
-# Loading presynth.FCCC_C0
-# Loading presynth.FCCC_C0_FCCC_C0_0_FCCC
-# Loading IGLOO2.VCC
-# Loading IGLOO2.GND
-# Loading IGLOO2.CLKINT
-# Loading IGLOO2.CCC
-# Loading IGLOO2.CCC_PLL
-# Loading IGLOO2.ABISCB82
-# Loading IGLOO2.ABI_PLL_FRONT
-# Loading IGLOO2.refstop
-# Loading IGLOO2.Divide_2
-# Loading IGLOO2.ABI_PHASE
-# Loading IGLOO2.CCC_FB_DELAY
-# Loading IGLOO2.CCC_DELAY
-# Loading IGLOO2.CCC_RF_DELAY
-# Loading IGLOO2.CCC_RF_DIV
-# Loading IGLOO2.Freq_Divider
-# Loading IGLOO2.Even_Divider
-# Loading IGLOO2.Odd_Divider
-# Loading IGLOO2.CCC_FB_DIV
-# Loading IGLOO2.CCC_RF_MUX
-# Loading IGLOO2.CCC_FB_MUX
-# Loading IGLOO2.CCC_GPD0
-# Loading IGLOO2.CCC_GPD
-# Loading IGLOO2.CCC_GPD1
-# Loading IGLOO2.CCC_GPD2
-# Loading IGLOO2.CCC_GPD3
-# Loading IGLOO2.CCC_SYNCB_GEN
-# Loading IGLOO2.RSTN_SYNC
-# Loading IGLOO2.SYNCGEN_CNT14
-# Loading IGLOO2.CCC_GPD_MUX0
-# Loading IGLOO2.CCC_GPD_MUX
-# Loading IGLOO2.CCC_GPD_MUX1
-# Loading IGLOO2.CCC_GPD_MUX2
-# Loading IGLOO2.CCC_GPD_MUX3
-# Loading IGLOO2.CCC_NGMUX0
-# Loading IGLOO2.CCC_NGMUX
-# Loading IGLOO2.CCC_NGPREMUX
-# Loading IGLOO2.CCC_NGMUX1
-# Loading IGLOO2.CCC_NGMUX2
-# Loading IGLOO2.CCC_NGMUX3
-# Loading IGLOO2.CCC_CONFIG
-# Loading presynth.OSC_C0
-# Loading presynth.OSC_C0_OSC_C0_0_OSC
-# Loading IGLOO2.RCOSC_25_50MHZ
-# Loading IGLOO2.SYSRESET
-# Loading presynth.top_ov7670
-# Loading presynth.ov7670_top_ctrl
-# Loading presynth.sccb_master
-# Loading presynth.ov7670_ctrl_reg
-# Loading IGLOO2.UDP_MUX2
-do wave_tb.do
-restart
-run
-add wave -position 6  sim:/tb/reseting_0/resetn
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-add wave -position 7  sim:/tb/sccb_desgin_0/DEVRST_N
-add wave -position 8  sim:/tb/sccb_desgin_0/SYSRESET_0/DEVRST_N
-add wave -position 9  sim:/tb/sccb_desgin_0/SYSRESET_0/reset_n_int
-do run.do
-# INFO: Simulation library presynth already exists
-# Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
-# vmap presynth presynth 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
-# vmap IGLOO2 C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
-# vmap SmartFusion2 C:/Microsemi/Libero_SoC_v12.3/Designer/lib/modelsimpro/precompiled/vlog/smartfusion2 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:10 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.v 
-# -- Compiling module FCCC_C0_FCCC_C0_0_FCCC
-# 
-# Top level modules:
-# 	FCCC_C0_FCCC_C0_0_FCCC
-# End time: 19:25:10 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:10 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/FCCC_C0/FCCC_C0.v 
-# -- Compiling module FCCC_C0
-# 
-# Top level modules:
-# 	FCCC_C0
-# End time: 19:25:10 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:10 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v 
-# -- Compiling module OSC_C0_OSC_C0_0_OSC
-# 
-# Top level modules:
-# 	OSC_C0_OSC_C0_0_OSC
-# End time: 19:25:10 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:10 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/OSC_C0/OSC_C0.v 
-# -- Compiling module OSC_C0
-# 
-# Top level modules:
-# 	OSC_C0
-# End time: 19:25:10 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:10 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_ctrl_reg.v 
-# -- Compiling module ov7670_ctrl_reg
-# 
-# Top level modules:
-# 	ov7670_ctrl_reg
-# End time: 19:25:10 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:10 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/sccb_master.v 
-# -- Compiling module sccb_master
-# 
-# Top level modules:
-# 	sccb_master
-# End time: 19:25:10 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:10 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/ov7670_top_ctrl.v 
-# -- Compiling module ov7670_top_ctrl
-# 
-# Top level modules:
-# 	ov7670_top_ctrl
-# End time: 19:25:10 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:10 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/top_ov7670.v 
-# -- Compiling module top_ov7670
-# 
-# Top level modules:
-# 	top_ov7670
-# End time: 19:25:11 on Feb 09,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:11 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/sccb_desgin/sccb_desgin.v 
-# -- Compiling module sccb_desgin
-# 
-# Top level modules:
-# 	sccb_desgin
-# End time: 19:25:11 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:11 on Feb 09,2021
-# vlog -reportprogress 300 -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl/reseting.v 
-# -- Compiling module reseting
-# 
-# Top level modules:
-# 	reseting
-# End time: 19:25:11 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 19:25:11 on Feb 09,2021
-# vlog -reportprogress 300 "+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/hdl" "+incdir+C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb" -sv -work presynth C:/Users/cheec/Desktop/Master/RISC-V_FreeRTOS_Computer_Vision/SCCB_Testing/sccb_fpga_design/sccb_jderobot/component/work/tb/tb.v 
-# -- Compiling module tb
-# 
-# Top level modules:
-# 	tb
-# End time: 19:25:11 on Feb 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:25:11 on Feb 09,2021, Elapsed time: 0:03:53
-# Errors: 16, Warnings: 0
-# vsim -L IGLOO2 -L presynth -t 1fs presynth.tb 
-# Start time: 19:25:11 on Feb 09,2021
-# Loading sv_std.std
-# Loading presynth.tb
-# Loading presynth.reseting
-# Loading presynth.sccb_desgin
-# Loading IGLOO2.AND2
-# Loading IGLOO2.CFG2
-# Loading presynth.FCCC_C0
-# Loading presynth.FCCC_C0_FCCC_C0_0_FCCC
-# Loading IGLOO2.VCC
-# Loading IGLOO2.GND
-# Loading IGLOO2.CLKINT
-# Loading IGLOO2.CCC
-# Loading IGLOO2.CCC_PLL
-# Loading IGLOO2.ABISCB82
-# Loading IGLOO2.ABI_PLL_FRONT
-# Loading IGLOO2.refstop
-# Loading IGLOO2.Divide_2
-# Loading IGLOO2.ABI_PHASE
-# Loading IGLOO2.CCC_FB_DELAY
-# Loading IGLOO2.CCC_DELAY
-# Loading IGLOO2.CCC_RF_DELAY
-# Loading IGLOO2.CCC_RF_DIV
-# Loading IGLOO2.Freq_Divider
-# Loading IGLOO2.Even_Divider
-# Loading IGLOO2.Odd_Divider
-# Loading IGLOO2.CCC_FB_DIV
-# Loading IGLOO2.CCC_RF_MUX
-# Loading IGLOO2.CCC_FB_MUX
-# Loading IGLOO2.CCC_GPD0
-# Loading IGLOO2.CCC_GPD
-# Loading IGLOO2.CCC_GPD1
-# Loading IGLOO2.CCC_GPD2
-# Loading IGLOO2.CCC_GPD3
-# Loading IGLOO2.CCC_SYNCB_GEN
-# Loading IGLOO2.RSTN_SYNC
-# Loading IGLOO2.SYNCGEN_CNT14
-# Loading IGLOO2.CCC_GPD_MUX0
-# Loading IGLOO2.CCC_GPD_MUX
-# Loading IGLOO2.CCC_GPD_MUX1
-# Loading IGLOO2.CCC_GPD_MUX2
-# Loading IGLOO2.CCC_GPD_MUX3
-# Loading IGLOO2.CCC_NGMUX0
-# Loading IGLOO2.CCC_NGMUX
-# Loading IGLOO2.CCC_NGPREMUX
-# Loading IGLOO2.CCC_NGMUX1
-# Loading IGLOO2.CCC_NGMUX2
-# Loading IGLOO2.CCC_NGMUX3
-# Loading IGLOO2.CCC_CONFIG
-# Loading presynth.OSC_C0
-# Loading presynth.OSC_C0_OSC_C0_0_OSC
-# Loading IGLOO2.RCOSC_25_50MHZ
-# Loading IGLOO2.SYSRESET
-# Loading presynth.top_ov7670
-# Loading presynth.ov7670_top_ctrl
-# Loading presynth.sccb_master
-# Loading presynth.ov7670_ctrl_reg
-# Loading IGLOO2.UDP_MUX2
-do wave_tb.do
-add wave -position 6  sim:/tb/reseting_0/resetn
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# End time: 19:26:26 on Feb 09,2021, Elapsed time: 0:01:15
-# Errors: 9, Warnings: 0
+# End time: 01:38:15 on Feb 18,2021, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 8
